@@ -4,10 +4,10 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 
 ## Où on en est
 
-- **121 morceaux**
-- **73 artistes présentées comme transféminines**, plus **3 cas ouverts**
-- **27 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, France, Germany, Ghana, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Philippines, Portugal, Puerto Rico, Serbia, South Korea, Spain, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
-- **15 langues chantées** : Arabic, Darija, English, French, Hebrew, Japanese, Korean, Malay, Portuguese, Spanish, Thai, Turkish, Twi, Vietnamese, Zapotec
+- **131 morceaux**
+- **79 artistes présentées comme transféminines**, plus **3 cas ouverts**
+- **30 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, France, Germany, Ghana, Indonesia, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Philippines, Portugal, Puerto Rico, Serbia, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
+- **18 langues** : Arabic, Darija, English, French, German, Hebrew, Indonesian, Japanese, Korean, Malay, Portuguese, Spanish, Swedish, Thai, Turkish, Twi, Vietnamese, Zapotec
 
 Généré le 2026-09-02
 
@@ -94,6 +94,13 @@ Généré le 2026-09-02
 | **Jinkx Monsoon** | `verified` | United States | English | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Jinkx_Monsoon) |
 | **Aderet** | `verified` | Israel | Hebrew, English | 1 | [The Heroines of My Life](https://theheroines.blogspot.com/2014/05/interview-with-aderet.html) |
 | **Sonja Sajzor** | `partial` | Serbia | English | 1 | [Викицитат (sr)](https://sr.wikiquote.org/wiki/%D0%A1%D0%BE%D1%9A%D0%B0_%D0%A1%D0%B0%D1%98%D0%B7%D0%BE%D1%80) |
+| **Tone Sekelius** | `verified` | Sweden | Swedish, English | 2 | [QX](https://www.qx.se/livsstil/210409/tone-i-stor-intervju-om-dejting-frysta-spermier-och-att-ens-existens-blir-en-politisk-fraga/) |
+| **Zemmoa** | `verified` | Mexico | Spanish | 1 | [Malvestida](https://malvestida.com/2020/12/zemmoa-entrevista-ligues-en-bumble/) |
+| **Irmãs de Pau** | `verified` | Brazil | Portuguese | 2 | [Revista O Grito!](https://revistaogrito.com/irmas-de-pau-entrevista-coquetel-molotov-2023/) |
+| **Romy Haag** | `partial` | Netherlands / Germany | German | 1 | [Der Spiegel](https://www.spiegel.de/geschichte/transsexuellen-ikone-romy-haag-goettin-des-berliner-nachtlebens-a-1145891.html) |
+| **Manuela Trasobares** | `partial` | Spain | Spanish | 0 | [dosmanzanas](https://dosmanzanas.com/2021/10/manuela-trasobares-cantante-muchas-veces-hablo-de-mi-en-tercera-persona-porque-dios-soy-yo.html) |
+| **Lucinta Luna** | `partial` | Indonesia | Indonesian | 1 | [Jakarta Globe](https://jakartaglobe.id/lifestyle/transgender-celebrity-lucinta-luna-plans-to-perform-umrah-as-a-man) |
+| **Changeline** | `verified` | France | English, French | 3 | [Nos Voix Trans](https://open.spotify.com/episode/4IKPiZViahLUHKspZLCohd) |
 
 ## Crédits invités
 
@@ -115,6 +122,23 @@ Généré le 2026-09-02
 | MONĀE | United States | _aucune_ |
 | Queer Songbook Orchestra | Canada | _aucune_ |
 | Celeste | UK | _aucune_ |
+| Lia Larsson | Sweden | _aucune_ |
+| Lisa Ajax | Sweden | _aucune_ |
+| Tessa Ia | Mexico | _aucune_ |
+| Trans-X | Canada | _aucune_ |
+| Brunoso | Brazil | _aucune_ |
+| PEDRO SAMPAIO | Brazil | _aucune_ |
+| Mc Gw | Brazil | _aucune_ |
+| Tasha Kaiala | Brazil | _aucune_ |
+| Clementaum | Brazil | _aucune_ |
+| Dede Satria | Indonesia | _aucune_ |
+| Stolas | United States | _aucune_ |
+
+## Vérifiées mais sans morceau associé
+
+Prêtes à entrer dès qu'un titre leur est associé.
+
+- **Manuela Trasobares** — `partial`, Spain, Spanish. Source : [dosmanzanas](https://dosmanzanas.com/2021/10/manuela-trasobares-cantante-muchas-veces-hablo-de-mi-en-tercera-persona-porque-dios-soy-yo.html)
 
 ## Citations retenues
 
@@ -157,3 +181,8 @@ Reproduites mot pour mot.
 - **Jinkx Monsoon** — « I’ve never identified as fully male. I’ve always identified as more gender fluid or gender ambiguous. » (Wikipedia)
 - **Aderet** — « I don’t see myself as a spokesperson for the transgender community in Israel, but I’ve had a positive experience overall. I’ve lived in Israel as a woman, and I’m mostly seen as just a singer who performs in English, without much attention to my past. » (The Heroines of My Life)
 - **Sonja Sajzor** — « Транс жена која жели да уђе у медицинску транзицију није „жена заробљена у телу мушкарца”. Ми јесмо наша тела. » (Викицитат (sr))
+- **Tone Sekelius** — « Jag kände mig ju inte gay, jag var trans. — I didn’t feel gay, I was trans. » (QX)
+- **Zemmoa** — « Como mujer trans yo pensaba que no tenía esos espacios tan libres de encuentro. — As a trans woman I thought I didn’t have those free spaces to meet people. » (Malvestida)
+- **Irmãs de Pau** — « Quando a gente chega, as pessoas já sabem que são duas travestis. E são duas travestis que amam seus corpos. — When we arrive, people already know these are two travestis. And two travestis who love their bodies. » (Revista O Grito!)
+- **Lucinta Luna** — « I am Lucinta Luna, also known as Ayuna Putri, legally recognized by the court. But my real name is Muhammad Fatah, and I was born a man. » (Jakarta Globe)
+- **Changeline** — « J’ai eu une réalisation relativement tardive de ma transidentité. — I came to realise my transness relatively late. » (Nos Voix Trans)

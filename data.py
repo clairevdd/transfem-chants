@@ -419,4 +419,81 @@ ART = {
  "Darkwave singer, DJ and visual artist from \u0160abac, born 1993. She speaks from inside a \u201cwe\u201d of trans women and uses feminine grammatical forms of herself in Serbian. The quotations here are compiled on Serbian Wikiquote, which sources them to interviews that have not been opened during verification \u2014 hence partial rather than verified.",
  "\u0422\u0440\u0430\u043d\u0441 \u0436\u0435\u043d\u0430 \u043a\u043e\u0458\u0430 \u0436\u0435\u043b\u0438 \u0434\u0430 \u0443\u0452\u0435 \u0443 \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u0443 \u0442\u0440\u0430\u043d\u0437\u0438\u0446\u0438\u0458\u0443 \u043d\u0438\u0458\u0435 \u201e\u0436\u0435\u043d\u0430 \u0437\u0430\u0440\u043e\u0431\u0459\u0435\u043d\u0430 \u0443 \u0442\u0435\u043b\u0443 \u043c\u0443\u0448\u043a\u0430\u0440\u0446\u0430\u201d. \u041c\u0438 \u0458\u0435\u0441\u043c\u043e \u043d\u0430\u0448\u0430 \u0442\u0435\u043b\u0430.",
  "\u0412\u0438\u043a\u0438\u0446\u0438\u0442\u0430\u0442 (sr)","https://sr.wikiquote.org/wiki/%D0%A1%D0%BE%D1%9A%D0%B0_%D0%A1%D0%B0%D1%98%D0%B7%D0%BE%D1%80"),
+
+"Tone Sekelius": ("verified","Sweden","Swedish, English",
+ "Singer from Sundsvall, born 1997. Came out publicly in February 2021 and was the first openly trans person to compete in the Melodifestivalen, in 2022. In the same interview she speaks about hormones, freezing sperm and changing her name, so the direction of her transition is stated rather than inferred.",
+ "Jag kände mig ju inte gay, jag var trans. \u2014 I didn\u2019t feel gay, I was trans.",
+ "QX","https://www.qx.se/livsstil/210409/tone-i-stor-intervju-om-dejting-frysta-spermier-och-att-ens-existens-blir-en-politisk-fraga/"),
+
+"Zemmoa": ("verified","Mexico","Spanish",
+ "Singer-songwriter and actress from Mexico City. Speaks of herself as a trans woman in the first person, and has campaigned against the idea that a trans woman in Mexico can only be a sex worker or a hairdresser.",
+ "Como mujer trans yo pensaba que no ten\u00eda esos espacios tan libres de encuentro. \u2014 As a trans woman I thought I didn\u2019t have those free spaces to meet people.",
+ "Malvestida","https://malvestida.com/2020/12/zemmoa-entrevista-ligues-en-bumble/"),
+
+"Irm\u00e3s de Pau": ("verified","Brazil","Portuguese",
+ "Funk duo formed in 2020 in Barueri, S\u00e3o Paulo, by Isma Almeida and Vita Pereira. They call themselves travestis, a Brazilian transfeminine identity that this page keeps in their own word rather than translating it into \u201ctrans women\u201d.",
+ "Quando a gente chega, as pessoas j\u00e1 sabem que s\u00e3o duas travestis. E s\u00e3o duas travestis que amam seus corpos. \u2014 When we arrive, people already know these are two travestis. And two travestis who love their bodies.",
+ "Revista O Grito!","https://revistaogrito.com/irmas-de-pau-entrevista-coquetel-molotov-2023/"),
+
+"Romy Haag": ("partial","Netherlands / Germany","German",
+ "Dancer, singer, actress and cabaret owner, born 1948 in Scheveningen, long based in Berlin. She titled her own autobiography Eine Frau und mehr \u2014 A woman and more \u2014 and released the album So bin ich in 1981. Marked partial rather than verified because no first-person sentence naming her gender in her own words has yet been reproduced here; the exact wording of her identity is still open.",
+ None,"Der Spiegel","https://www.spiegel.de/geschichte/transsexuellen-ikone-romy-haag-goettin-des-berliner-nachtlebens-a-1145891.html"),
+
+"Manuela Trasobares": ("partial","Spain","Spanish",
+ "Dramatic mezzo-soprano, painter, sculptor and former local councillor, born 1954 in Figueres. Trained in bel canto at the conservatory in Sofia. Marked partial because the accessible interviews show her speaking about her childhood and her art rather than naming her gender identity in a sentence that can be quoted here.",
+ None,"dosmanzanas","https://dosmanzanas.com/2021/10/manuela-trasobares-cantante-muchas-veces-hablo-de-mi-en-tercera-persona-porque-dios-soy-yo.html"),
+
+"Lucinta Luna": ("partial","Indonesia","Indonesian",
+ "Singer, actress and comedian, born 1989. She says she was legally recognised as a woman by an Indonesian court, that she was assigned male at birth, and that she intends to perform the Umrah as a man. This page records both halves of that as she stated them, and does not resolve the tension on her behalf.",
+ "I am Lucinta Luna, also known as Ayuna Putri, legally recognized by the court. But my real name is Muhammad Fatah, and I was born a man.",
+ "Jakarta Globe","https://jakartaglobe.id/lifestyle/transgender-celebrity-lucinta-luna-plans-to-perform-umrah-as-a-man"),
+
+"Lia Larsson": ("guest","Sweden","Swedish",
+ "Swedish singer. Credited alongside Tone Sekelius on the 2023 World Cup song; no statement of her own about gender identity was located.",
+ None,"","")	,
+
+"Lisa Ajax": ("guest","Sweden","Swedish",
+ "Swedish singer. Credited alongside Tone Sekelius on the 2023 World Cup song; no statement of her own about gender identity was located.",
+ None,"",""),
+
+"Tessa Ia": ("guest","Mexico","Spanish",
+ "Mexican actress and singer. Featured on Zemmoa\u2019s \u201cMi Amor Soy Yo\u201d; no statement of her own about gender identity was located.",
+ None,"",""),
+
+"Trans-X": ("guest","Canada","English",
+ "Canadian synth-pop project led by Pascal Languirand. Featured on Zemmoa\u2019s \u201cMi Amor Soy Yo\u201d. The name refers to the synthesiser era, not to gender.",
+ None,"",""),
+
+"Brunoso": ("guest","Brazil","Portuguese",
+ "Brazilian producer credited with Irm\u00e3s de Pau on \u201cMedley do Submundo\u201d; no statement of his own about gender identity was located.",
+ None,"",""),
+
+"PEDRO SAMPAIO": ("guest","Brazil","Portuguese",
+ "Brazilian DJ, producer and singer, main credited artist on \u201cSEQU\u00caNCIA CUNT\u201d, on which Irm\u00e3s de Pau feature.",
+ None,"",""),
+
+"Mc Gw": ("guest","Brazil","Portuguese",
+ "Brazilian funk MC featured on \u201cSEQU\u00caNCIA CUNT\u201d.",
+ None,"",""),
+
+"Tasha Kaiala": ("guest","Brazil","Portuguese",
+ "Brazilian artist featured on \u201cSEQU\u00caNCIA CUNT\u201d.",
+ None,"",""),
+
+"Clementaum": ("guest","Brazil","Portuguese",
+ "Brazilian artist featured on \u201cSEQU\u00caNCIA CUNT\u201d.",
+ None,"",""),
+
+"Changeline": ("verified","France","English, French",
+ "Trap metal and saturated pop-rap artist from Grenoble, based in Paris, who produces and sings her own tracks, including the screamed vocals. She speaks about her transition \u2014 social, administrative and medical \u2014 openly and in the present tense.",
+ "J\u2019ai eu une r\u00e9alisation relativement tardive de ma transidentit\u00e9. \u2014 I came to realise my transness relatively late.",
+ "Nos Voix Trans","https://open.spotify.com/episode/4IKPiZViahLUHKspZLCohd"),
+
+"Dede Satria": ("guest","Indonesia","Indonesian",
+ "Indonesian singer credited with Lucinta Luna on \u201cMantan Tanpa Status\u201d; no statement of his own about gender identity was located.",
+ None,"",""),
+
+"Stolas": ("guest","United States","English",
+ "American post-hardcore band credited with Changeline on \u201cANARCONNASSE\u201d; no statement about gender identity by its members was located.",
+ None,"",""),
 }

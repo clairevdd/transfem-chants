@@ -80,8 +80,14 @@ COUNTRY_ALIASES = {"Scotland, UK": "UK"}
 def stats():
     """Compte artistes, pays et langues. Les invitées ne comptent pas : le critère
     d'inclusion ne leur applique pas. Les cas `unresolved` sont comptés à part,
-    parce que la page ne les présente justement pas comme transféminines."""
-    leads = {n: v for n, v in ART.items() if v[0] != "guest"}
+    parce que la page ne les présente justement pas comme transféminines.
+
+    Ne comptent que les artistes qui ont effectivement un morceau dans la
+    playlist. Une fiche écrite d'avance, en attente d'un titre, ne doit pas
+    gonfler un compteur public : la page annoncerait une artiste, un pays ou
+    une langue que le lecteur ne trouverait nulle part en écoutant."""
+    on_playlist = {n for _, credit in TRACKS for n in artists_of(credit)}
+    leads = {n: v for n, v in ART.items() if v[0] != "guest" and n in on_playlist}
     people = lambda names: {SAME_PERSON.get(n, n) for n in names}
 
     presented = people(n for n, v in leads.items() if v[0] in ("verified", "partial"))
@@ -181,6 +187,11 @@ def page():
 <a class="hero-link" href="{PLAYLIST}" rel="noopener">Open the playlist on Spotify</a>
 </header>
 
+<h2>The tracks</h2>
+<p>In playlist order. Each title links to Spotify; each artist name links to their entry below.</p>
+
+{tracklist()}
+
 <h2>How this list was built</h2>
 <p>Four inclusion criteria, applied artist by artist.</p>
 <ul class="plain">
@@ -198,11 +209,6 @@ def page():
 <p>A <span class="st st-ok">verified</span> mark is never permanent. It records that a source was read on a given day; it does not close the question. This page began after an artist was nearly cut from the playlist on the strength of an unsourced claim about their gender, apparently confused with a different musician entirely. The correction was made, and then sat untouched until it too had quietly stopped being true. Both mistakes came from the same habit: repeating what was already written instead of going back to look.</p>
 <p>Rechecking older entries on a schedule would not fix that, and would make something else worse. The artists easiest to recheck are the ones a press already follows; those who speak to their audience only through their own accounts would be rechecked last and least, which is the bias set out further down, reintroduced as a maintenance routine. So this page relies on being told instead. Anyone at all, artists first among them, can <a href="{ISSUES}" rel="noopener">open an issue</a> to say that someone’s identity has changed, that they now live stealth, or that they want their entry taken down.</p>
 </div>
-
-<h2>The tracks</h2>
-<p>In playlist order. Each title links to Spotify; each artist name links to their entry below.</p>
-
-{tracklist()}
 
 <h2>The artists</h2>
 <p>In order of appearance.</p>
@@ -247,7 +253,7 @@ def page():
 <h2>What this list does not show</h2>
 <p>There is a bias built into the third criterion, and it is better named than hidden. Requiring a public statement means requiring that someone was interviewed, recorded and published — which happens to artists a press has already decided are worth covering. An artist with no interviews, no profile and no biography cannot meet the criterion however out she is among the people who know her. So this page over-represents the already visible and under-represents the precarious, the very young, and anyone working outside the reach of a music press. Several artists were left off these pages for that reason alone, and their absence says nothing about them.</p>
 
-<p>Several language areas are missing: nothing in German, Persian, Indonesian, Hindi, or the languages of East Africa. That is not an absence of artists. It is an absence of usable public sources. In a number of those contexts, declaring yourself publicly carries real risk, and the shape of this page reflects that before it reflects anything about the music.</p>
+<p>Several language areas are still missing: nothing in Persian, Hindi, Mandarin, Urdu, or the languages of East Africa. That is not an absence of artists. It is an absence of usable public sources. In a number of those contexts, declaring yourself publicly carries real risk, and the shape of this page reflects that before it reflects anything about the music. The gaps do close: German and Indonesian were both named here as missing until an artist turned up who had said something about herself in public, in her own words, and could be read.</p>
 <p>Found an error, a better source, or an artist who should be here? <a href="{ISSUES}" rel="noopener">Open an issue</a>.</p>
 
 <footer>

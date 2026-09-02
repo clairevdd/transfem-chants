@@ -26,9 +26,11 @@ guests = [n for n, e in ART.items() if e[0] == "guest"]
 orphans = [n for n in mains if per_artist.get(n, 0) == 0]
 
 # comptages publics
+on_playlist = set(per_artist)
 canon = {}
 for n in mains:
-    canon[SAME_PERSON.get(n, n)] = ART[n]
+    if n in on_playlist:
+        canon[SAME_PERSON.get(n, n)] = ART[n]
 transfem = [n for n, e in canon.items() if e[0] != "unresolved"]
 open_cases = [n for n, e in canon.items() if e[0] == "unresolved"]
 countries, langs = set(), set()
@@ -49,7 +51,7 @@ L.append("- **%d morceaux**" % len(all_tracks()))
 L.append("- **%d artistes présentées comme transféminines**, plus **%d cas ouverts**"
          % (len(transfem), len(open_cases)))
 L.append("- **%d pays ou territoires** : %s" % (len(countries), ", ".join(sorted(countries))))
-L.append("- **%d langues chantées** : %s\n" % (len(langs), ", ".join(sorted(langs))))
+L.append("- **%d langues** : %s\n" % (len(langs), ", ".join(sorted(langs))))
 L.append("Généré le %s\n" % datetime.date.today().isoformat())
 
 L.append("## Artistes principales\n")

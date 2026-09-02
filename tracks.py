@@ -34,6 +34,7 @@ SECTIONS = [
             ('4xhYxKvAxtrRd83MiqOy29', "I Don't Want It At All", 'Kim Petras'),
             ('75HFFq9W7Em0dTBG8QeGcT', 'There Will Be Blood', 'Kim Petras'),
             ('71yN0yrHej3jhKXewbmtEh', 'Coconuts', 'Kim Petras'),
+            ('6yAc1rz1RXRlYJac99xusK', 'Girls & Dolls', 'Tone Sekelius'),
             ('1toNKayLMeCcVlsLGXJl7n', 'Haunted', 'Laura Les'),
             ('1w0AFg23E67l57A3RMiXjC', 'P3T', 'femtanyl'),
             ('2sVjF25Z4JTJxi9BXm5GtJ', 'ACT RIGHT', 'femtanyl'),
@@ -77,6 +78,9 @@ SECTIONS = [
             ('2DUAIlPmzV2is5OQIZASUA', 'T4T', 'Anita Velveeta'),
             ('7yeRNInEt2DOFYW0BkETEe', 'Restless Year', 'Ezra Furman'),
             ('4NYRtDYROQW2D2ctcylcri', 'Targets of Men Targets of Men', 'G.L.O.S.S.'),
+            ('3bnvoYUrPkgh0E3ZeYZ3me', 'OCTOPUS.LADY', 'Changeline'),
+            ('20JYh6XUjLjiN1CyJ32ZiY', 'ANARCONNASSE', 'Changeline, Stolas'),
+            ('7lc4ue2LiSfYRaABxq4YkT', 'JE.DÉTESTE.LA.FRANCE.pt1 (il y aura pas de pt2)', 'Changeline'),
             ('3ShIGvHRm0q9iIDowUMjls', 'The Best Ever Death Metal Band in Denton', 'Laura Jane Grace'),
             ('1IF61ped0XehHvw2CFXP3B', 'Man Enough To Be A Woman', 'Jayne County'),
             ('0VhGzYfT2ZOFz31b5IH7yJ', 'Un garçon qui pleure', 'Marie France, Chrissie Hynde'),
@@ -130,6 +134,7 @@ SECTIONS = [
         "title": 'International pop',
         "blurb": 'Portugal, Lebanon, South Korea, Vietnam, Thailand, Japan. The section furthest from the anglophone axis.',
         "tracks": [
+            ('4QnHaiWq1oJiTgMnRFE0q8', 'Mi Amor Soy Yo', 'Zemmoa, Tessa Ia, Trans-X'),
             ('0DZapO0gUF8XZpk2bu8AeL', 'היו לילות', 'Aderet'),
             ('5srzGYocC4qYFvckQm5AfC', 'To2i W Far2a3i', 'Haiifa Magic'),
             ('4X6PkqzKUvWWKoq4YiiM1V', 'Snow White', 'Harisu'),
@@ -137,8 +142,10 @@ SECTIONS = [
             ('1EPYnBjYhYHcNthEnVWk18', '됐거든', 'Harisu'),
             ('4Ykmj47fulJ1FTeCXctW91', 'Anh Ta Bỏ Em Rồi', 'Hương Giang'),
             ('0NOume8OgBz4FCnP1QVr9A', 'Paradise', 'Bell Nuntita'),
+            ('46uGvJVhYHOVRRNnRPbkYm', 'Mantan Tanpa Status - Lucinta Luna Version', 'Lucinta Luna, Dede Satria'),
             ('0GSW6V6GJc4xYi8c5jOu60', 'さそり座の女', 'Ai Haruna'),
             ('6EjxYTyXiBzJz6PeOvPiou', 'きみがすきだよ', 'Ataru Nakamura'),
+            ('4yBfzgV6YA9dTKP8KUD35j', 'VI ÄR SVERIGE (VM-låt 2023)', 'Lia Larsson, Tone Sekelius, Lisa Ajax'),
         ],
     },
     {
@@ -150,6 +157,8 @@ SECTIONS = [
             ('1RmXibCbfLIVrN8ZRdoYbW', 'Foi Mal', 'Urias'),
             ('4P9LdSPrnQl7KQwml4DUtq', 'Baby 95', 'Liniker'),
             ('1AFPmwB6mGMCcMI2hFh7c8', 'Enviadescer', 'Linn da Quebrada'),
+            ('6D7zTed8zrkuKBPca2AqSI', 'Medley do Submundo', 'Irmãs de Pau, Brunoso'),
+            ('7bNgXJ9MgGG7xOkyz9SLOY', 'SEQUÊNCIA CUNT (feat. Clementaum)', 'PEDRO SAMPAIO, Irmãs de Pau, Mc Gw, Tasha Kaiala, Clementaum'),
             ('4WhyfhjZaX6AVjAZslQAFs', 'Parceira', 'Mulher Pepita, Brabo'),
         ],
     },
@@ -174,6 +183,7 @@ SECTIONS = [
         "title": 'Closing',
         "blurb": 'A historical citation: the first French public figure to change her civil status, in 1959, singing “Chercher la femme”.',
         "tracks": [
+            ('2lgwylOpGMtkvhwdnUOArt', 'Memories Are Made Of This - Radio', 'Romy Haag'),
             ('4CuivW1JgPauXPA4wYsf5K', 'Chercher la femme', 'Coccinelle'),
         ],
     },
@@ -184,4 +194,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 121
+assert len(all_tracks()) == 131
