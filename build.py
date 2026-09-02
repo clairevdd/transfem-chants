@@ -176,7 +176,8 @@ def page():
 <header>
 <h1>Transfem chants</h1>
 <p class="sub">{count} songs <em>sung</em> by transfeminine artists: trans women, and non-binary or agender people assigned male at birth. This page gives, for every artist, the gender identity as they have made it public, and the source for it.</p>
-<p class="stats"><strong>{st["tracks"]}</strong> tracks &middot; <strong>{st["presented"]}</strong> artists presented here as transfeminine, and <strong>{st["open_cases"]}</strong> open cases counted separately &middot; <strong>{st["countries"]}</strong> countries and territories &middot; <strong>{st["languages"]}</strong> languages sung</p>
+<p class="stats"><strong>{st["tracks"]}</strong> tracks &middot; <strong>{st["presented"]}</strong> artists presented here as transfeminine, and <strong>{st["open_cases"]}</strong> open cases counted separately &middot; <strong>{st["countries"]}</strong> countries and territories &middot; <strong>{st["languages"]}</strong> languages</p>
+<p class="statnote">Countries and languages are counted per artist, not per track: they record where an artist is from and which languages she records in, so a language listed here does not guarantee a song in that language on the playlist.</p>
 <a class="hero-link" href="{PLAYLIST}" rel="noopener">Open the playlist on Spotify</a>
 </header>
 
@@ -184,7 +185,7 @@ def page():
 <p>Four inclusion criteria, applied artist by artist.</p>
 <ul class="plain">
 <li><strong>Singing, not only composing.</strong> The artist has to carry the vocal. Trans composers and producers whose relevant work is instrumental were left out for that reason alone.</li>
-<li><strong>A transfeminine identity.</strong> A trans woman, or a non-binary or agender person assigned male at birth.</li>
+<li><strong>A transfeminine identity.</strong> Anyone who does not recognise herself in the masculine gender she was assigned at birth — nearly every modern society assigns one administratively. Trans women, and non-binary or agender people assigned male at birth, but also artists whose own word for themselves comes from a tradition that maps onto none of those. Where an artist names her identity in her own terms, this page keeps her terms rather than translating them into ours.</li>
 <li><strong>Made public by the artist.</strong> An identity inferred from gender expression, with no statement or confirmation, is not enough.</li>
 <li><strong>Still current, and still willing.</strong> Artists who no longer identify this way were left out. So is anyone still trans who has since chosen to live stealth and would rather their transness not be published. That second case cannot be established from outside, so it rests on being told: any artist here who wants their entry taken down can <a href="{ISSUES}" rel="noopener">open an issue</a>, or have someone open one for them, and it will be removed without argument and without being asked to explain.</li>
 <li><strong>Arbitrary inclusions.</strong> Where a case did not resolve cleanly, the track was kept and the doubt written down instead. See the <span class="st st-her">partial</span> and <span class="st st-flag">unresolved</span> entries.</li>

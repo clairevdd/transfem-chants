@@ -409,4 +409,14 @@ ART = {
  "Trans-femme and non-binary, she/her. Singer and performer from Portland with two studio albums, moving between blues, jazz, cabaret and garage rock. She has spoken publicly about her hormone therapy and facial feminisation surgery.",
  "I\u2019ve never identified as fully male. I\u2019ve always identified as more gender fluid or gender ambiguous.",
  "Wikipedia","https://en.wikipedia.org/wiki/Jinkx_Monsoon"),
+
+"Aderet": ("verified","Israel","Hebrew, English",
+ "Hadar Babayof, born 1975. Israeli singer-songwriter, DJ and producer. She places herself inside the transgender community in Israel in her own words, while declining the role of spokesperson.",
+ "I don\u2019t see myself as a spokesperson for the transgender community in Israel, but I\u2019ve had a positive experience overall. I\u2019ve lived in Israel as a woman, and I\u2019m mostly seen as just a singer who performs in English, without much attention to my past.",
+ "The Heroines of My Life","https://theheroines.blogspot.com/2014/05/interview-with-aderet.html"),
+
+"Sonja Sajzor": ("partial","Serbia","English",
+ "Darkwave singer, DJ and visual artist from \u0160abac, born 1993. She speaks from inside a \u201cwe\u201d of trans women and uses feminine grammatical forms of herself in Serbian. The quotations here are compiled on Serbian Wikiquote, which sources them to interviews that have not been opened during verification \u2014 hence partial rather than verified.",
+ "\u0422\u0440\u0430\u043d\u0441 \u0436\u0435\u043d\u0430 \u043a\u043e\u0458\u0430 \u0436\u0435\u043b\u0438 \u0434\u0430 \u0443\u0452\u0435 \u0443 \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u0443 \u0442\u0440\u0430\u043d\u0437\u0438\u0446\u0438\u0458\u0443 \u043d\u0438\u0458\u0435 \u201e\u0436\u0435\u043d\u0430 \u0437\u0430\u0440\u043e\u0431\u0459\u0435\u043d\u0430 \u0443 \u0442\u0435\u043b\u0443 \u043c\u0443\u0448\u043a\u0430\u0440\u0446\u0430\u201d. \u041c\u0438 \u0458\u0435\u0441\u043c\u043e \u043d\u0430\u0448\u0430 \u0442\u0435\u043b\u0430.",
+ "\u0412\u0438\u043a\u0438\u0446\u0438\u0442\u0430\u0442 (sr)","https://sr.wikiquote.org/wiki/%D0%A1%D0%BE%D1%9A%D0%B0_%D0%A1%D0%B0%D1%98%D0%B7%D0%BE%D1%80"),
 }
