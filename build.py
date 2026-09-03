@@ -103,8 +103,8 @@ def stats():
                 languages.add(l.strip())
     return {"tracks": len(TRACKS), "presented": len(presented),
             "open_cases": len(open_cases), "countries": len(countries),
-            "languages": len(languages), "country_list": sorted(countries),
-            "language_list": sorted(languages)}
+            "languages": len(languages), "country_list": sorted(countries, key=str.lower),
+            "language_list": sorted(languages, key=str.lower)}
 
 
 def order_of_appearance():
@@ -253,7 +253,7 @@ def page():
 <h2>What this list does not show</h2>
 <p>There is a bias built into the third criterion, and it is better named than hidden. Requiring a public statement means requiring that someone was interviewed, recorded and published — which happens to artists a press has already decided are worth covering. An artist with no interviews, no profile and no biography cannot meet the criterion however out she is among the people who know her. So this page over-represents the already visible and under-represents the precarious, the very young, and anyone working outside the reach of a music press. Several artists were left off these pages for that reason alone, and their absence says nothing about them.</p>
 
-<p>Several language areas are still missing: nothing in Persian, Hindi, Mandarin, Urdu, or the languages of East Africa. That is not an absence of artists. It is an absence of usable public sources. In a number of those contexts, declaring yourself publicly carries real risk, and the shape of this page reflects that before it reflects anything about the music. The gaps do close: German and Indonesian were both named here as missing until an artist turned up who had said something about herself in public, in her own words, and could be read.</p>
+<p>Several language areas are still missing: nothing in Persian, Hindi, Mandarin, or the languages of East Africa, and one song each in most of what is here. That is not an absence of artists. It is an absence of usable public sources. In a number of those contexts, declaring yourself publicly carries real risk, and the shape of this page reflects that before it reflects anything about the music. The gaps do close: German, Indonesian and Urdu were each named here as missing until an artist turned up who had said something about herself in public, in her own words, and could be read.</p>
 <p>Found an error, a better source, or an artist who should be here? <a href="{ISSUES}" rel="noopener">Open an issue</a>.</p>
 
 <footer>

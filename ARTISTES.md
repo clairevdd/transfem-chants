@@ -4,10 +4,10 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 
 ## Où on en est
 
-- **138 morceaux**
-- **84 artistes présentées comme transféminines**, plus **3 cas ouverts**
-- **32 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Peru, Philippines, Portugal, Puerto Rico, Serbia, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
-- **19 langues** : Arabic, Darija, English, French, German, Hebrew, Indonesian, Italian, Japanese, Korean, Malay, Portuguese, Spanish, Swedish, Thai, Turkish, Twi, Vietnamese, Zapotec
+- **142 morceaux**
+- **88 artistes présentées comme transféminines**, plus **3 cas ouverts**
+- **34 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Pakistan, Peru, Philippines, Portugal, Puerto Rico, Serbia, South Africa, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
+- **21 langues** : Arabic, Darija, English, French, German, Hebrew, Indonesian, isiZulu, Italian, Japanese, Korean, Malay, Portuguese, Spanish, Swedish, Thai, Turkish, Twi, Urdu, Vietnamese, Zapotec
 
 Généré le 2026-09-03
 
@@ -106,6 +106,10 @@ Généré le 2026-09-03
 | **Arantxa Castilla-La Mancha** | `verified` | Spain | Spanish | 1 | [El Español](https://www.elespanol.com/corazon/bluper/20221222/arantxa-castilla-la-mancha-drag-race-espana-abiertamente/727927241_0.html) |
 | **Gad Yola** | `verified` | Peru | Spanish | 1 | [Somos Periodismo](https://somosperiodismo.com/gad-yola-una-drag-queen-decolonial/) |
 | **Samantha Hudson** | `partial` | Spain | Spanish | 1 | [leonoticias](https://www.leonoticias.com/gente-estilo/samantha-hudson-artista-20230211132401-nt.html) |
+| **Umlilo** | `partial` | South Africa | isiZulu | 1 | [Scaffold](https://www.scaffold-culture.com/scaffold-archive/umlilo) |
+| **Angel-Ho** | `verified` | South Africa | English | 1 | [The Quietus](https://thequietus.com/articles/26179-angel-ho-interview-hyperdub-death-becomes-her) |
+| **Shyraa Roy** | `verified` | Pakistan | Urdu | 1 | [Parhlo](https://www.parhlo.com/transgender-singer-shyraa-roy/) |
+| **Cindy Thái Tài** | `verified` | Vietnam | Vietnamese | 1 | [VnExpress](https://vnexpress.net/cindy-thai-tai-toi-doi-gioi-tinh-chu-khong-dong-tinh-1892073.html) |
 
 ## Crédits invités
 
@@ -141,6 +145,8 @@ Généré le 2026-09-03
 | Geraldine Boone | United States | _aucune_ |
 | Pupi Poisson | Spain | _aucune_ |
 | CARLES CUEVAS | Spain | _aucune_ |
+| K Rizz | South Africa | _aucune_ |
+| Kashif Ali | Pakistan | _aucune_ |
 
 ## Vérifiées mais sans morceau associé
 
@@ -199,3 +205,7 @@ Reproduites mot pour mot.
 - **Arantxa Castilla-La Mancha** — « Soy una chica y mi pronombre es ella. — I am a girl and my pronoun is she. » (El Español)
 - **Gad Yola** — « Yo no soy un hombre, ni mujer. — I am not a man, nor a woman. » (Somos Periodismo)
 - **Samantha Hudson** — « Transformista y travesti de guardia las 24 horas. — A transformista and a travesti on duty 24 hours a day. » (leonoticias)
+- **Umlilo** — « I’m a genderqueer mindfuck for most people. » (Scaffold)
+- **Angel-Ho** — « my identity is in assuming my trans goddess » (The Quietus)
+- **Shyraa Roy** — « It is true that I am a transgender woman. I am a girl who has changed her gender from a man to a woman. » (Parhlo)
+- **Cindy Thái Tài** — « Tôi từng là đàn ông và bây giờ là một phụ nữ trong cả thể xác lẫn tâm hồn. — I was once a man and now I am a woman, in body as in soul. » (VnExpress)

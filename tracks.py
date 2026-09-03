@@ -16,6 +16,7 @@ SECTIONS = [
             ('5rOzcHIZaF038jMeHkUZR0', 'Reverie', 'Arca'),
             ('3r0gvoaAkWmLdJO4UUv94v', 'Desafío', 'Arca'),
             ('6RJiY28t9jWpdy1JkUhNgK', 'Mequetrefe', 'Arca'),
+            ('4OI2gBlHqyNks8cbIBIKYw', 'Like A Girl', 'Angel-Ho, K Rizz'),
             ('6JZfK4Z75nZm3VcZOVrpy0', 'Drone Bomb Me', 'ANOHNI'),
             ('3IDQXyHYuX2rdLnNfVzT3g', '4 DEGREES', 'ANOHNI'),
             ('6jiumfqTwOpXW6PDzsIBKl', 'I Keep Doing This to Myself', 'Sonja Sajzor'),
@@ -66,6 +67,7 @@ SECTIONS = [
             ('376mhFeloWqzQJQsqZpm9A', 'Las Defectos', 'Pupi Poisson, Arantxa Castilla-La Mancha, CARLES CUEVAS'),
             ('78iHtTxYIK2mD6oL6lXqFF', 'Travesti del Perú', 'Gad Yola'),
             ('5PMtJGEDIO0eIToF0YRUQ5', "VENENO PA' TU PIEL", 'JEDET'),
+            ('2KryklrVDGmWL8IvoGNbb5', 'Zulu Lami', 'Umlilo'),
             ('1YsFdaP9QG9NhjYS3o0g5P', 'Olha o Boneco', 'Titica, Ary'),
             ('5lz6U9dCYBmEY6oLrW22VE', 'Olha a Banana', 'Titica, Kelmer Pastilha, Mauro Xtraga'),
         ],
@@ -149,11 +151,13 @@ SECTIONS = [
         "tracks": [
             ('4QnHaiWq1oJiTgMnRFE0q8', 'Mi Amor Soy Yo', 'Zemmoa, Tessa Ia, Trans-X'),
             ('0DZapO0gUF8XZpk2bu8AeL', 'היו לילות', 'Aderet'),
+            ('07m5UbUHOQCofRK16k83Eg', 'Duniya', 'Shyraa Roy, Kashif Ali'),
             ('5srzGYocC4qYFvckQm5AfC', 'To2i W Far2a3i', 'Haiifa Magic'),
             ('4X6PkqzKUvWWKoq4YiiM1V', 'Snow White', 'Harisu'),
             ('7l8D5tXUVsdq95VQWn034C', '애지몽', 'Harisu'),
             ('1EPYnBjYhYHcNthEnVWk18', '됐거든', 'Harisu'),
             ('4Ykmj47fulJ1FTeCXctW91', 'Anh Ta Bỏ Em Rồi', 'Hương Giang'),
+            ('1N1F6UsRGILux57U0YbxJQ', 'Giọt Tình', 'Cindy Thái Tài'),
             ('0NOume8OgBz4FCnP1QVr9A', 'Paradise', 'Bell Nuntita'),
             ('46uGvJVhYHOVRRNnRPbkYm', 'Mantan Tanpa Status - Lucinta Luna Version', 'Lucinta Luna, Dede Satria'),
             ('0GSW6V6GJc4xYi8c5jOu60', 'さそり座の女', 'Ai Haruna'),
@@ -207,4 +211,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 138
+assert len(all_tracks()) == 142

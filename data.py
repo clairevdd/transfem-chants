@@ -533,4 +533,32 @@ ART = {
 "CARLES CUEVAS": ("guest","Spain","Spanish",
  "Spanish singer and producer, credited on \u201cLas Defectos\u201d; no statement of his own about gender identity was located.",
  None,"",""),
+
+"Umlilo": ("partial","South Africa","isiZulu",
+ "Musician and performance artist from Johannesburg, who calls her own genre kwaai \u2014 a post-kwaito electronic music \u2014 and herself a kwaai diva. Founder of Future Kwaai and co-founder of the LeGrand Queer Arts Festival. She states her gender in the first person; what is not stated anywhere is the gender she was assigned at birth, which this page infers from what she says about her own childhood rather than from a declaration. Hence partial.",
+ "I\u2019m a genderqueer mindfuck for most people.",
+ "Scaffold","https://www.scaffold-culture.com/scaffold-archive/umlilo"),
+
+"Angel-Ho": ("verified","South Africa","English",
+ "Producer and singer from Cape Town, published by Hyperdub, a founder of the NON Worldwide collective. On Death Becomes Her (2019) she moved from making instrumentals for other people to singing herself, which she describes as the point of the record.",
+ "my identity is in assuming my trans goddess",
+ "The Quietus","https://thequietus.com/articles/26179-angel-ho-interview-hyperdub-death-becomes-her"),
+
+"Shyraa Roy": ("verified","Pakistan","Urdu",
+ "Singer, actress and producer from Pakistan, based in Dubai, crowned the first Miss Trans Pakistan in 2021 and again in 2022. The Pakistani press knows her as the singer of \u201cKamli\u201d and \u201cRaat\u201d.",
+ "It is true that I am a transgender woman. I am a girl who has changed her gender from a man to a woman.",
+ "Parhlo","https://www.parhlo.com/transgender-singer-shyraa-roy/"),
+
+"Cindy Th\u00e1i T\u00e0i": ("verified","Vietnam","Vietnamese",
+ "Singer and actress born 1971 as Nguy\u1ec5n Th\u00e1i T\u00e0i, the first Vietnamese public figure to make her transition public, in 2005. In the same interview she is careful to separate gender from sexuality: \u201cT\u00f4i chuy\u1ec3n \u0111\u1ed5i gi\u1edbi t\u00ednh ch\u1ee9 kh\u00f4ng \u0111\u1ed3ng t\u00ednh\u201d \u2014 I changed my gender, I am not gay.",
+ "T\u00f4i t\u1eebng l\u00e0 \u0111\u00e0n \u00f4ng v\u00e0 b\u00e2y gi\u1edd l\u00e0 m\u1ed9t ph\u1ee5 n\u1eef trong c\u1ea3 th\u1ec3 x\u00e1c l\u1eabn t\u00e2m h\u1ed3n. \u2014 I was once a man and now I am a woman, in body as in soul.",
+ "VnExpress","https://vnexpress.net/cindy-thai-tai-toi-doi-gioi-tinh-chu-khong-dong-tinh-1892073.html"),
+
+"K Rizz": ("guest","South Africa","English",
+ "South African rapper, credited with Angel-Ho on \u201cLike A Girl\u201d; no statement of her own about gender identity was located.",
+ None,"",""),
+
+"Kashif Ali": ("guest","Pakistan","Urdu",
+ "Pakistani singer, credited with Shyraa Roy on \u201cDuniya\u201d; no statement of his own about gender identity was located.",
+ None,"",""),
 }

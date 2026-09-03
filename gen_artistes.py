@@ -50,8 +50,8 @@ L.append("## Où on en est\n")
 L.append("- **%d morceaux**" % len(all_tracks()))
 L.append("- **%d artistes présentées comme transféminines**, plus **%d cas ouverts**"
          % (len(transfem), len(open_cases)))
-L.append("- **%d pays ou territoires** : %s" % (len(countries), ", ".join(sorted(countries))))
-L.append("- **%d langues** : %s\n" % (len(langs), ", ".join(sorted(langs))))
+L.append("- **%d pays ou territoires** : %s" % (len(countries), ", ".join(sorted(countries, key=str.lower))))
+L.append("- **%d langues** : %s\n" % (len(langs), ", ".join(sorted(langs, key=str.lower))))
 L.append("Généré le %s\n" % datetime.date.today().isoformat())
 
 L.append("## Artistes principales\n")
