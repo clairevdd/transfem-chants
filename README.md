@@ -6,8 +6,13 @@ Elle donne, pour chaque artiste, l'identité de genre telle que l'artiste l'a
 rendue publique, et la source de cette affirmation. La page est en anglais et
 publiée sur <https://clairevdd.github.io/transfem-chants>.
 
-`index.html` est autonome : pas de police distante, pas de script, pas de CDN.
-Elle fonctionne hors ligne et suit le thème clair ou sombre du navigateur.
+Les trois pages sont autonomes : pas de police distante, pas de script, pas de
+CDN. Elles fonctionnent hors ligne et suivent le thème clair ou sombre du
+navigateur.
+
+- `index.html` — les sources, artiste par artiste
+- `countries.html` — la même matière par pays, avec une carte du monde en aplats
+- `languages.html` — la même matière par langue
 
 ## Structure
 
@@ -16,8 +21,11 @@ Elle fonctionne hors ligne et suit le thème clair ou sombre du navigateur.
 | `data.py` | les artistes : statut, pays, langue, description, citation, source. **Fait foi.** |
 | `tracks.py` | les morceaux, groupés par section |
 | `style.css` | la feuille de style, inlinée dans la page au build |
-| `build.py` | génère `index.html` à partir des trois précédents |
+| `build.py` | génère les trois pages à partir des précédents |
+| `atlas.py` | construit `countries.html` et `languages.html` ; appelé par `build.py` |
+| `worldmap.py` | géométries des pays pour la carte, dérivées de pygal_maps_world |
 | `index.html` | la page publiée, **générée** : ne pas l'éditer à la main |
+| `countries.html`, `languages.html` | idem, **générées** |
 | `ARTISTES.md` | export lisible de `data.py`, à consulter plutôt que de mémoire |
 | `PROJET-CLAUDE.md` | critères, règles de vérification, journal des exclusions |
 
@@ -27,8 +35,13 @@ Elle fonctionne hors ligne et suit le thème clair ou sombre du navigateur.
 python3 build.py
 ```
 
-Le build échoue si un nom crédité dans `tracks.py` n'existe pas dans `data.py`,
-et signale les artistes présentes dans `data.py` sans morceau associé.
+Le build écrit les trois pages. Il échoue si un nom crédité dans `tracks.py`
+n'existe pas dans `data.py`, ou si un pays de `data.py` n'a pas de code ISO dans
+`atlas.py` — sans quoi il disparaîtrait silencieusement de la carte. Il signale
+aussi les artistes présentes dans `data.py` sans morceau associé.
+
+**Ajouter un pays** suppose donc d'ajouter son code ISO 3166-1 alpha-2 et son
+continent dans le dictionnaire `COUNTRIES` de `atlas.py`.
 
 ## Ajouter un morceau
 

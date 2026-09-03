@@ -15,6 +15,8 @@ Le build échoue si un nom crédité dans tracks.py n'existe pas dans data.py.
 import html
 import re
 
+import atlas
+
 from data import ART
 from tracks import SECTIONS, all_tracks
 
@@ -183,7 +185,6 @@ def page():
 <h1>Transfem chants</h1>
 <p class="sub">{count} songs <em>sung</em> by transfeminine artists: trans women, and non-binary or agender people assigned male at birth. This page gives, for every artist, the gender identity as they have made it public, and the source for it.</p>
 <p class="stats"><strong>{st["tracks"]}</strong> tracks &middot; <strong>{st["presented"]}</strong> artists presented here as transfeminine, and <strong>{st["open_cases"]}</strong> open cases counted separately &middot; <strong>{st["countries"]}</strong> countries and territories &middot; <strong>{st["languages"]}</strong> languages</p>
-<p class="statnote">Countries and languages are counted per artist, not per track: they record where an artist is from and which languages she records in, so a language listed here does not guarantee a song in that language on the playlist.</p>
 <a class="hero-link" href="{PLAYLIST}" rel="noopener">Open the playlist on Spotify</a>
 </header>
 
@@ -212,6 +213,7 @@ def page():
 
 <h2>The artists</h2>
 <p>In order of appearance.</p>
+<p class="statnote">Countries and languages are counted per artist, not per track: they record where an artist is from and which languages she records in, so a language listed here does not guarantee a song in that language on the playlist.</p>
 <ul class="legend">
 <li><span class="st st-ok">verified</span> source read directly</li>
 <li><span class="st st-her">partial</span> no explicit self-statement</li>
@@ -250,6 +252,13 @@ def page():
 <p>She is kept on the playlist, with the tension left visible rather than resolved in her place. A page built on the principle of taking artists at their own word cannot then quietly overwrite one of them.</p>
 </div>
 
+<h2>Two other ways in</h2>
+<p>The same artists and the same tracks, cut differently. Both pages are built from the entries above, so nothing on them is claimed that is not sourced here.</p>
+<ul class="plain">
+<li><strong><a href="countries.html">By country</a></strong> — a world map shaded by how many artists each country contributes, and the list behind it. The empty parts of that map are the argument.</li>
+<li><strong><a href="languages.html">By language</a></strong> — which languages these artists record in, and how lopsided the distribution is.</li>
+</ul>
+
 <h2>What this list does not show</h2>
 <p>There is a bias built into the third criterion, and it is better named than hidden. Requiring a public statement means requiring that someone was interviewed, recorded and published — which happens to artists a press has already decided are worth covering. An artist with no interviews, no profile and no biography cannot meet the criterion however out she is among the people who know her. So this page over-represents the already visible and under-represents the precarious, the very young, and anyone working outside the reach of a music press. Several artists were left off these pages for that reason alone, and their absence says nothing about them.</p>
 
@@ -269,10 +278,20 @@ def page():
 
 if __name__ == "__main__":
     check()
+    css = open("style.css", encoding="utf-8").read()
+    st = stats()
+
     out = page()
     open("index.html", "w", encoding="utf-8").write(out)
-    st = stats()
     print(f"index.html écrit : {st['tracks']} morceaux, {len(ART)} entrées, {len(out)} octets")
+
+    args = (css, esc, slug, artists_of, COUNTRY_ALIASES, SAME_PERSON, BADGE,
+            PLAYLIST, ISSUES)
+    for name, fn in (("countries.html", atlas.countries_page),
+                     ("languages.html", atlas.languages_page)):
+        text = fn(*args)
+        open(name, "w", encoding="utf-8").write(text)
+        print(f"{name} écrit : {len(text)} octets")
     print(f"  {st['presented']} artistes présentées comme transfem + {st['open_cases']} cas ouverts")
     print(f"  {st['countries']} pays/territoires : {', '.join(st['country_list'])}")
     print(f"  {st['languages']} langues : {', '.join(st['language_list'])}")
