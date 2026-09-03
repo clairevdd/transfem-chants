@@ -4,8 +4,8 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 
 ## Où on en est
 
-- **141 morceaux**
-- **88 artistes présentées comme transféminines**, plus **2 cas ouverts**
+- **145 morceaux**
+- **89 artistes présentées comme transféminines**, plus **2 cas ouverts**
 - **34 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Pakistan, Peru, Philippines, Portugal, Puerto Rico, Serbia, South Africa, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
 - **21 langues** : Arabic, Darija, English, French, German, Hebrew, Indonesian, isiZulu, Italian, Japanese, Korean, Malay, Portuguese, Spanish, Swedish, Thai, Turkish, Twi, Urdu, Vietnamese, Zapotec
 
@@ -109,6 +109,7 @@ Généré le 2026-09-03
 | **Angel-Ho** | `verified` | South Africa | English | 1 | [The Quietus](https://thequietus.com/articles/26179-angel-ho-interview-hyperdub-death-becomes-her) |
 | **Shyraa Roy** | `verified` | Pakistan | Urdu | 1 | [Parhlo](https://www.parhlo.com/transgender-singer-shyraa-roy/) |
 | **Cindy Thái Tài** | `verified` | Vietnam | Vietnamese | 1 | [VnExpress](https://vnexpress.net/cindy-thai-tai-toi-doi-gioi-tinh-chu-khong-dong-tinh-1892073.html) |
+| **THÉA** | `verified` | France | French | 4 | [La Sas](https://www.lasasconcerts.com/agenda-des-concerts/thea-2/) |
 
 ## Crédits invités
 
@@ -208,3 +209,4 @@ Reproduites mot pour mot.
 - **Angel-Ho** — « my identity is in assuming my trans goddess » (The Quietus)
 - **Shyraa Roy** — « It is true that I am a transgender woman. I am a girl who has changed her gender from a man to a woman. » (Parhlo)
 - **Cindy Thái Tài** — « Tôi từng là đàn ông và bây giờ là một phụ nữ trong cả thể xác lẫn tâm hồn. — I was once a man and now I am a woman, in body as in soul. » (VnExpress)
+- **THÉA** — « Je suis une fille trans qui s’habille parfois de manière un peu masculine. Une fille qui a les cheveux roses, un piercing et qui a une grosse voix. — I am a trans girl who sometimes dresses a bit masculine. A girl with pink hair, a piercing and a big voice. » (La Sas)

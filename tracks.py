@@ -85,6 +85,10 @@ SECTIONS = [
             ('3bnvoYUrPkgh0E3ZeYZ3me', 'OCTOPUS.LADY', 'Changeline'),
             ('20JYh6XUjLjiN1CyJ32ZiY', 'ANARCONNASSE', 'Changeline, Stolas'),
             ('7lc4ue2LiSfYRaABxq4YkT', 'JE.DÉTESTE.LA.FRANCE.pt1 (il y aura pas de pt2)', 'Changeline'),
+            ('0ZQLRkRyn3300WyapdPoWT', 'CAVALE! CAVALE!', 'THÉA'),
+            ('3RXajeZOzqXWrQwLDfTzKK', 'JUSTE AMIS', 'THÉA'),
+            ('0bWpWsvZeTTNLQ9nuXqKIN', 'Guillotine', 'THÉA'),
+            ('7zBUh6s2Ca8eAURfnVHCTS', 'ANXIOLYTIQUES', 'THÉA'),
             ('3ShIGvHRm0q9iIDowUMjls', 'The Best Ever Death Metal Band in Denton', 'Laura Jane Grace'),
             ('1IF61ped0XehHvw2CFXP3B', 'Man Enough To Be A Woman', 'Jayne County'),
             ('0VhGzYfT2ZOFz31b5IH7yJ', 'Un garçon qui pleure', 'Marie France, Chrissie Hynde'),
@@ -210,4 +214,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 141
+assert len(all_tracks()) == 145

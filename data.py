@@ -557,4 +557,9 @@ ART = {
 "Kashif Ali": ("guest","Pakistan","Urdu",
  "Pakistani singer, credited with Shyraa Roy on \u201cDuniya\u201d; no statement of his own about gender identity was located.",
  None,"",""),
+
+"TH\u00c9A": ("verified","France","French",
+ "Th\u00e9a Barromes, born 2001. Singer, songwriter and producer; hyperpop crossed with emo, punk and nu metal. Started posting songs on YouTube in 2019 and has played live since 2020, on the labels Pont Futur then Glory Box Music.",
+ "Je suis une fille trans qui s\u2019habille parfois de mani\u00e8re un peu masculine. Une fille qui a les cheveux roses, un piercing et qui a une grosse voix. \u2014 I am a trans girl who sometimes dresses a bit masculine. A girl with pink hair, a piercing and a big voice.",
+ "La Sas","https://www.lasasconcerts.com/agenda-des-concerts/thea-2/"),
 }
