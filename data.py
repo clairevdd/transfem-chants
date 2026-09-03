@@ -510,4 +510,27 @@ ART = {
 "Geraldine Boone": ("guest","United States","\u2014",
  "Pianist. Accompanies Tona Brown on This Is Who I Am; she plays, she does not sing.",
  None,"",""),
+
+"Arantxa Castilla-La Mancha": ("verified","Spain","Spanish",
+ "Drag performer and singer, born 1997 in Badajoz. She came out as a trans woman between her two seasons of Drag Race, and has described the moment she understood it while filming the first.",
+ "Soy una chica y mi pronombre es ella. \u2014 I am a girl and my pronoun is she.",
+ "El Espa\u00f1ol","https://www.elespanol.com/corazon/bluper/20221222/arantxa-castilla-la-mancha-drag-race-espana-abiertamente/727927241_0.html"),
+
+"Gad Yola": ("verified","Peru","Spanish",
+ "Singer and performer, born 1995 in Lima, based in Spain. Uses \u00e9l, ella and elle. The word she uses for herself is travesti \u2014 in Latin America a gender identity rather than a way of dressing \u2014 and it is the title of her 2023 album, Travesti del Per\u00fa.",
+ "Yo no soy un hombre, ni mujer. \u2014 I am not a man, nor a woman.",
+ "Somos Periodismo","https://somosperiodismo.com/gad-yola-una-drag-queen-decolonial/"),
+
+"Samantha Hudson": ("partial","Spain","Spanish",
+ "Singer, actress and performer, born 1999 in Le\u00f3n. She describes herself as a trans non-binary person and as a travesti, and explicitly declines the label mujer trans, so this page does not use it for her. She has also said she does not mind which pronouns are used for her. Marked partial because her own position is deliberately less settled than any single label, not because the sources are thin.",
+ "Transformista y travesti de guardia las 24 horas. \u2014 A transformista and a travesti on duty 24 hours a day.",
+ "leonoticias","https://www.leonoticias.com/gente-estilo/samantha-hudson-artista-20230211132401-nt.html"),
+
+"Pupi Poisson": ("guest","Spain","Spanish",
+ "Spanish drag performer and singer, credited alongside Arantxa Castilla-La Mancha on \u201cLas Defectos\u201d; no statement of their own about gender identity was located.",
+ None,"",""),
+
+"CARLES CUEVAS": ("guest","Spain","Spanish",
+ "Spanish singer and producer, credited on \u201cLas Defectos\u201d; no statement of his own about gender identity was located.",
+ None,"",""),
 }

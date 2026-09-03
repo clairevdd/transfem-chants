@@ -4,9 +4,9 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 
 ## Où on en est
 
-- **135 morceaux**
-- **81 artistes présentées comme transféminines**, plus **3 cas ouverts**
-- **31 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Philippines, Portugal, Puerto Rico, Serbia, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
+- **138 morceaux**
+- **84 artistes présentées comme transféminines**, plus **3 cas ouverts**
+- **32 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Peru, Philippines, Portugal, Puerto Rico, Serbia, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
 - **19 langues** : Arabic, Darija, English, French, German, Hebrew, Indonesian, Italian, Japanese, Korean, Malay, Portuguese, Spanish, Swedish, Thai, Turkish, Twi, Vietnamese, Zapotec
 
 Généré le 2026-09-03
@@ -27,7 +27,7 @@ Généré le 2026-09-03
 | **Chase Icon** | `verified` | United States | English | 2 | [Vice](https://www.vice.com/en/article/internet-star-celebrity-impersonator-chase-icon-profile-v28n1/) |
 | **Stef Aranas** | `verified` | Philippines | English | 1 | [The Beat Asia](https://thebeat.asia/manila/vibe/artists/the-beat-manilas-up-and-coming-artist-trans-pinay-pop-star-stef-aranas) |
 | **Ayesha Erotica** | `verified` | United States | English | 3 | [Wikipedia](https://en.wikipedia.org/wiki/Ayesha_Erotica) |
-| **Villano Antillano** | `verified` | Puerto Rico | Spanish | 2 | [NPR](https://www.npr.org/2023/03/13/1158426326/villano-antillano-la-sustancia-x-interview) |
+| **Villano Antillano** | `verified` | Puerto Rico | Spanish | 3 | [NPR](https://www.npr.org/2023/03/13/1158426326/villano-antillano-la-sustancia-x-interview) |
 | **JEDET** | `verified` | Spain | Spanish | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Jedet) |
 | **Titica** | `verified` | Angola | Portuguese | 2 | [Wikipedia](https://en.wikipedia.org/wiki/Titica) |
 | **Against Me!** | `verified` | United States | English | 4 | [Wikipedia](https://en.wikipedia.org/wiki/Laura_Jane_Grace) |
@@ -103,6 +103,9 @@ Généré le 2026-09-03
 | **Changeline** | `verified` | France | English, French | 3 | [Nos Voix Trans](https://open.spotify.com/episode/4IKPiZViahLUHKspZLCohd) |
 | **Daniela Vega** | `verified` | Chile | Spanish, Italian | 2 | [The Guardian](https://www.theguardian.com/film/2018/feb/18/daniela-vega-transgender-star-film-industry-a-fantastic-woman-interview) |
 | **Tona Brown** | `verified` | United States | English | 2 | [The Heroines of My Life](https://theheroines.blogspot.com/2014/03/interview-with-tona-brown.html) |
+| **Arantxa Castilla-La Mancha** | `verified` | Spain | Spanish | 1 | [El Español](https://www.elespanol.com/corazon/bluper/20221222/arantxa-castilla-la-mancha-drag-race-espana-abiertamente/727927241_0.html) |
+| **Gad Yola** | `verified` | Peru | Spanish | 1 | [Somos Periodismo](https://somosperiodismo.com/gad-yola-una-drag-queen-decolonial/) |
+| **Samantha Hudson** | `partial` | Spain | Spanish | 1 | [leonoticias](https://www.leonoticias.com/gente-estilo/samantha-hudson-artista-20230211132401-nt.html) |
 
 ## Crédits invités
 
@@ -136,6 +139,8 @@ Généré le 2026-09-03
 | Dede Satria | Indonesia | _aucune_ |
 | Stolas | United States | _aucune_ |
 | Geraldine Boone | United States | _aucune_ |
+| Pupi Poisson | Spain | _aucune_ |
+| CARLES CUEVAS | Spain | _aucune_ |
 
 ## Vérifiées mais sans morceau associé
 
@@ -191,3 +196,6 @@ Reproduites mot pour mot.
 - **Changeline** — « J’ai eu une réalisation relativement tardive de ma transidentité. — I came to realise my transness relatively late. » (Nos Voix Trans)
 - **Daniela Vega** — « As an actress, I don’t mind if a cisgender actor plays trans. But as a trans woman, I feel that many times we weren’t allowed to show what we can do and we can do many things. » (The Guardian)
 - **Tona Brown** — « The hardest part was knowing that, as an African American transgender woman, life would be at least three times harder. » (The Heroines of My Life)
+- **Arantxa Castilla-La Mancha** — « Soy una chica y mi pronombre es ella. — I am a girl and my pronoun is she. » (El Español)
+- **Gad Yola** — « Yo no soy un hombre, ni mujer. — I am not a man, nor a woman. » (Somos Periodismo)
+- **Samantha Hudson** — « Transformista y travesti de guardia las 24 horas. — A transformista and a travesti on duty 24 hours a day. » (leonoticias)

@@ -27,7 +27,7 @@ SECTIONS = [
     },
     {
         "title": 'Hyperpop and club',
-        "blurb": 'The dancing core of the playlist, and its largest section: Melodifestivalen pop, digicore, Puerto Rican rap and Angolan kuduro, drifting out of English into Spanish and Portuguese.',
+        "blurb": 'The dancing core of the playlist, and its largest section: Melodifestivalen pop, digicore, Puerto Rican rap, the Madrid and Lima queer scenes, and Angolan kuduro, drifting out of English into Spanish and then Portuguese.',
         "tracks": [
             ('1jFN0stMzLepoPxvPywGZj', 'Heart to Break', 'Kim Petras'),
             ('5pkemVhnBiIzMs2NLsXomQ', 'Clarity', 'Kim Petras'),
@@ -62,6 +62,9 @@ SECTIONS = [
             ('06kFuqzhMk4E6IYeO0sTfx', 'RADIO (feat. Kim Petras)', 'Frost Children, Kim Petras'),
             ('2Of9piZALXa4CC7Unxoeeg', 'KLK', 'Villano Antillano'),
             ('4hceSKjrkDTO0nMKFcb3sj', 'Villano Antillano: Bzrp Music Sessions, Vol. 51/66', 'Bizarrap, Villano Antillano'),
+            ('29Ga6IgetN8Xah85ZHZ8AC', 'Full Lace y el Tuck', 'Samantha Hudson, Villano Antillano'),
+            ('376mhFeloWqzQJQsqZpm9A', 'Las Defectos', 'Pupi Poisson, Arantxa Castilla-La Mancha, CARLES CUEVAS'),
+            ('78iHtTxYIK2mD6oL6lXqFF', 'Travesti del Perú', 'Gad Yola'),
             ('5PMtJGEDIO0eIToF0YRUQ5', "VENENO PA' TU PIEL", 'JEDET'),
             ('1YsFdaP9QG9NhjYS3o0g5P', 'Olha o Boneco', 'Titica, Ary'),
             ('5lz6U9dCYBmEY6oLrW22VE', 'Olha a Banana', 'Titica, Kelmer Pastilha, Mauro Xtraga'),
@@ -204,4 +207,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 135
+assert len(all_tracks()) == 138
