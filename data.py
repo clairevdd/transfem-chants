@@ -496,4 +496,18 @@ ART = {
 "Stolas": ("guest","United States","English",
  "American post-hardcore band credited with Changeline on \u201cANARCONNASSE\u201d; no statement about gender identity by its members was located.",
  None,"",""),
+
+"Daniela Vega": ("verified","Chile","Spanish, Italian",
+ "Actress and mezzo-soprano, born 1989 in Santiago. Known for A Fantastic Woman (2017), in which she also sings; the Handel aria that closes the film is hers. Speaks of herself as a trans woman in the first person.",
+ "As an actress, I don\u2019t mind if a cisgender actor plays trans. But as a trans woman, I feel that many times we weren\u2019t allowed to show what we can do and we can do many things.",
+ "The Guardian","https://www.theguardian.com/film/2018/feb/18/daniela-vega-transgender-star-film-industry-a-fantastic-woman-interview"),
+
+"Tona Brown": ("verified","United States","English",
+ "Violinist and mezzo-soprano, born in Norfolk, Virginia. The first Black transgender woman to perform at Carnegie Hall, and the first to perform for a sitting American president. On This Is Who I Am (2012) she sings, accompanied by the pianist Geraldine Boone.",
+ "The hardest part was knowing that, as an African American transgender woman, life would be at least three times harder.",
+ "The Heroines of My Life","https://theheroines.blogspot.com/2014/03/interview-with-tona-brown.html"),
+
+"Geraldine Boone": ("guest","United States","\u2014",
+ "Pianist. Accompanies Tona Brown on This Is Who I Am; she plays, she does not sing.",
+ None,"",""),
 }

@@ -4,7 +4,7 @@
 SECTIONS = [
     {
         "title": 'Electronic and art pop',
-        "blurb": 'From SOPHIE to Arca, with a detour into Turkish classical singing at the point where ANOHNI’s register invites it.',
+        "blurb": 'Producers who sing their own material, from SOPHIE and Arca to ANOHNI, with Serbian darkwave and Turkish classical singing folded in where the register invites them.',
         "tracks": [
             ('0QA1xpUuqHDHWZhi0eAbH7', "It's Okay To Cry", 'SOPHIE'),
             ('1huN927tTdSiwF90FBHXkT', 'Immaterial', 'SOPHIE'),
@@ -27,7 +27,7 @@ SECTIONS = [
     },
     {
         "title": 'Hyperpop and club',
-        "blurb": 'The dancing core of the playlist, shifting gradually from English into Spanish and then Angolan Portuguese.',
+        "blurb": 'The dancing core of the playlist, and its largest section: Melodifestivalen pop, digicore, Puerto Rican rap and Angolan kuduro, drifting out of English into Spanish and Portuguese.',
         "tracks": [
             ('1jFN0stMzLepoPxvPywGZj', 'Heart to Break', 'Kim Petras'),
             ('5pkemVhnBiIzMs2NLsXomQ', 'Clarity', 'Kim Petras'),
@@ -69,7 +69,7 @@ SECTIONS = [
     },
     {
         "title": 'Punk and rock',
-        "blurb": 'Three generations of trans glam and punk, from Jayne County in the 1970s to Venus De Mars in 1988, by way of Paris and the Palace.',
+        "blurb": 'Four generations of trans glam, punk and metal, from Jayne County in the 1970s to Grenoble trap metal in the 2020s, by way of Paris and the Palace.',
         "tracks": [
             ('0a0CwJBn8lmT5ifk63EUbP', 'True Trans Soul Rebel', 'Against Me!'),
             ('4b1Y41U44kP7gzO7MUNGbe', 'Transgender Dysphoria Blues', 'Against Me!'),
@@ -92,7 +92,7 @@ SECTIONS = [
     },
     {
         "title": 'Indie, folk and traditional music',
-        "blurb": 'The inward-facing stretch, where Mexican and Argentine traditional forms are reclaimed from a transfeminine position.',
+        "blurb": 'The inward-facing stretch, where American folk sits beside Mexican and Argentine traditional forms reclaimed from a transfeminine position — and where the oldest song here begins, recorded in 1973.',
         "tracks": [
             ('4dtyeDMnVKKo89QbbDtD5M', "Ballad of the Oklahoma Women's Liberation Front", 'Beth Elliott'),
             ('02L1ngagXNRt8W3Flbe9Sw', 'Boy in a Dress', 'Namoli Brennet'),
@@ -114,8 +114,18 @@ SECTIONS = [
         ],
     },
     {
+        "title": 'Classical and art song',
+        "blurb": 'Concert repertoire: a Handel aria sung on a film soundtrack, and Langston Hughes set to music by Margaret Bonds. Trans women have always sung in this idiom; they are rarely looked for in it.',
+        "tracks": [
+            ('1ovz0bZeO5YTBQTXIFf5Am', 'Ombra Mai Fu', 'Daniela Vega'),
+            ('5P9EKJfOZtuwtTR5C5362i', 'Sposa Son Disprezzata', 'Daniela Vega'),
+            ('1OpCGPKSq4IfpvLptsSMR9', 'I, Too', 'Tona Brown, Geraldine Boone'),
+            ('5l2zYkyTXtYa8xk965ofqD', 'Dream Variations', 'Tona Brown, Geraldine Boone'),
+        ],
+    },
+    {
         "title": 'Soul and R&B',
-        "blurb": 'From Jackie Shane’s 1960s soul to contemporary R&B.',
+        "blurb": 'From Jackie Shane’s 1960s soul to contemporary R&B, picking up the thread of Black American song where the previous section leaves it.',
         "tracks": [
             ('5dtUOwEmnDAzsdodWJk4DA', 'Any Other Way', 'Jackie Shane'),
             ('5NnQ2xIeHDKc1B19rxfcV3', 'I Will Survive', 'Veronica Klaus'),
@@ -132,7 +142,7 @@ SECTIONS = [
     },
     {
         "title": 'International pop',
-        "blurb": 'Portugal, Lebanon, South Korea, Vietnam, Thailand, Japan. The section furthest from the anglophone axis.',
+        "blurb": 'Mexico, Israel, Lebanon, South Korea, Vietnam, Thailand, Indonesia, Japan, Sweden. The section furthest from the anglophone axis, and the one that changes most as the list grows.',
         "tracks": [
             ('4QnHaiWq1oJiTgMnRFE0q8', 'Mi Amor Soy Yo', 'Zemmoa, Tessa Ia, Trans-X'),
             ('0DZapO0gUF8XZpk2bu8AeL', 'היו לילות', 'Aderet'),
@@ -150,7 +160,7 @@ SECTIONS = [
     },
     {
         "title": 'Lusophone',
-        "blurb": 'Funk carioca, MPB and Brazilian soul.',
+        "blurb": 'Funk carioca, MPB and Brazilian soul, plus one voice from Angola’s diaspora in Portugal.',
         "tracks": [
             ('0pe5NUU9uGwFpj637ot84D', 'Conquistador', 'Patricia Ribeiro'),
             ('4Zhxtm6x56wEiRtSMAl28n', 'Diaba', 'Urias'),
@@ -164,7 +174,7 @@ SECTIONS = [
     },
     {
         "title": 'Rap and hip-hop',
-        "blurb": 'The most directly political stretch, from Ghana to the Buenos Aires conurbano.',
+        "blurb": 'The most directly political stretch, from Ghana to the Buenos Aires conurbano, by way of Casablanca and the French rap underground.',
         "tracks": [
             ('3FysLYckiMCMzjYLIgo45U', 'BLACK SAILOR MOON', 'Backxwash'),
             ('37OSQm8Gy5strUT24vn6ef', 'I LIE HERE BURIED WITH MY RINGS AND MY DRESSES', 'Backxwash, Ada Rook'),
@@ -181,7 +191,7 @@ SECTIONS = [
     },
     {
         "title": 'Closing',
-        "blurb": 'A historical citation: the first French public figure to change her civil status, in 1959, singing “Chercher la femme”.',
+        "blurb": 'Two cabaret icons of the European post-war stage: Romy Haag, who ran her own Berlin nightclub because nowhere else would have her, and Coccinelle, the first French public figure to change her civil status, in 1959.',
         "tracks": [
             ('2lgwylOpGMtkvhwdnUOArt', 'Memories Are Made Of This - Radio', 'Romy Haag'),
             ('4CuivW1JgPauXPA4wYsf5K', 'Chercher la femme', 'Coccinelle'),
@@ -194,4 +204,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 131
+assert len(all_tracks()) == 135

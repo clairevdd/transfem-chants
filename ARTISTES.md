@@ -4,12 +4,12 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 
 ## Où on en est
 
-- **131 morceaux**
-- **79 artistes présentées comme transféminines**, plus **3 cas ouverts**
-- **30 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, France, Germany, Ghana, Indonesia, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Philippines, Portugal, Puerto Rico, Serbia, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
-- **18 langues** : Arabic, Darija, English, French, German, Hebrew, Indonesian, Japanese, Korean, Malay, Portuguese, Spanish, Swedish, Thai, Turkish, Twi, Vietnamese, Zapotec
+- **135 morceaux**
+- **81 artistes présentées comme transféminines**, plus **3 cas ouverts**
+- **31 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Philippines, Portugal, Puerto Rico, Serbia, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
+- **19 langues** : Arabic, Darija, English, French, German, Hebrew, Indonesian, Italian, Japanese, Korean, Malay, Portuguese, Spanish, Swedish, Thai, Turkish, Twi, Vietnamese, Zapotec
 
-Généré le 2026-09-02
+Généré le 2026-09-03
 
 ## Artistes principales
 
@@ -101,6 +101,8 @@ Généré le 2026-09-02
 | **Manuela Trasobares** | `partial` | Spain | Spanish | 0 | [dosmanzanas](https://dosmanzanas.com/2021/10/manuela-trasobares-cantante-muchas-veces-hablo-de-mi-en-tercera-persona-porque-dios-soy-yo.html) |
 | **Lucinta Luna** | `partial` | Indonesia | Indonesian | 1 | [Jakarta Globe](https://jakartaglobe.id/lifestyle/transgender-celebrity-lucinta-luna-plans-to-perform-umrah-as-a-man) |
 | **Changeline** | `verified` | France | English, French | 3 | [Nos Voix Trans](https://open.spotify.com/episode/4IKPiZViahLUHKspZLCohd) |
+| **Daniela Vega** | `verified` | Chile | Spanish, Italian | 2 | [The Guardian](https://www.theguardian.com/film/2018/feb/18/daniela-vega-transgender-star-film-industry-a-fantastic-woman-interview) |
+| **Tona Brown** | `verified` | United States | English | 2 | [The Heroines of My Life](https://theheroines.blogspot.com/2014/03/interview-with-tona-brown.html) |
 
 ## Crédits invités
 
@@ -133,6 +135,7 @@ Généré le 2026-09-02
 | Clementaum | Brazil | _aucune_ |
 | Dede Satria | Indonesia | _aucune_ |
 | Stolas | United States | _aucune_ |
+| Geraldine Boone | United States | _aucune_ |
 
 ## Vérifiées mais sans morceau associé
 
@@ -186,3 +189,5 @@ Reproduites mot pour mot.
 - **Irmãs de Pau** — « Quando a gente chega, as pessoas já sabem que são duas travestis. E são duas travestis que amam seus corpos. — When we arrive, people already know these are two travestis. And two travestis who love their bodies. » (Revista O Grito!)
 - **Lucinta Luna** — « I am Lucinta Luna, also known as Ayuna Putri, legally recognized by the court. But my real name is Muhammad Fatah, and I was born a man. » (Jakarta Globe)
 - **Changeline** — « J’ai eu une réalisation relativement tardive de ma transidentité. — I came to realise my transness relatively late. » (Nos Voix Trans)
+- **Daniela Vega** — « As an actress, I don’t mind if a cisgender actor plays trans. But as a trans woman, I feel that many times we weren’t allowed to show what we can do and we can do many things. » (The Guardian)
+- **Tona Brown** — « The hardest part was knowing that, as an African American transgender woman, life would be at least three times harder. » (The Heroines of My Life)
