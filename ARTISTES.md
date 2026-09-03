@@ -4,8 +4,8 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 
 ## Où on en est
 
-- **142 morceaux**
-- **88 artistes présentées comme transféminines**, plus **3 cas ouverts**
+- **141 morceaux**
+- **88 artistes présentées comme transféminines**, plus **2 cas ouverts**
 - **34 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Pakistan, Peru, Philippines, Portugal, Puerto Rico, Serbia, South Africa, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
 - **21 langues** : Arabic, Darija, English, French, German, Hebrew, Indonesian, isiZulu, Italian, Japanese, Korean, Malay, Portuguese, Spanish, Swedish, Thai, Turkish, Twi, Urdu, Vietnamese, Zapotec
 
@@ -21,8 +21,7 @@ Généré le 2026-09-03
 | **Antony and the Johnsons** | `verified` | UK / United States | English | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Anohni) |
 | **Bülent Ersoy** | `verified` | Türkiye | Turkish | 2 | [Daily Sabah](https://www.dailysabah.com/arts/portrait/bulent-ersoy-turkeys-transgender-diva) |
 | **Kim Petras** | `verified` | Germany | English | 6 | [NBC News](https://www.nbcnews.com/nbc-out/out-pop-culture/kim-petras-thanks-incredible-transgender-legends-grammy-speech-rcna69296) |
-| **femtanyl** | `verified` | Canada | English | 6 | [Metal Magazine](https://metalmagazine.eu/en/post/femtanyl) |
-| **takihasdied** | `unresolved` | Unknown | English | 1 | [None](None) |
+| **femtanyl** | `verified` | Canada | English | 5 | [Metal Magazine](https://metalmagazine.eu/en/post/femtanyl) |
 | **Petal Supply** | `partial` | Canada | English | 1 | [Era Journal](https://erajournal.co.uk/our-journal/immaterial-girls-trans-women-in-synthesis/) |
 | **Chase Icon** | `verified` | United States | English | 2 | [Vice](https://www.vice.com/en/article/internet-star-celebrity-impersonator-chase-icon-profile-v28n1/) |
 | **Stef Aranas** | `verified` | Philippines | English | 1 | [The Beat Asia](https://thebeat.asia/manila/vibe/artists/the-beat-manilas-up-and-coming-artist-trans-pinay-pop-star-stef-aranas) |

@@ -41,7 +41,6 @@ SECTIONS = [
             ('2sVjF25Z4JTJxi9BXm5GtJ', 'ACT RIGHT', 'femtanyl'),
             ('6XeW8fjwoAFQeQpYojPtVI', 'GIRL HELL 1999', 'femtanyl'),
             ('5iAE3uBqaZm9aHUx9yy6a0', 'KATAMARI', 'femtanyl'),
-            ('17iGTeBSC6VtWESUk1YqYh', 'MURDER EVERY 1 U KNOW!', 'femtanyl, takihasdied'),
             ('7kvQptbfqq5b4MWRQOMrZC', 'NASTYWERKKKK!', 'femtanyl, ISSBROKIE'),
             ('724utiMbqUfT1g3tqbfQYu', 'Spoiled little brat', 'underscores'),
             ('1PEPcLm2QEo0HCRIhQjPq1', 'Second hand embarrassment', 'underscores'),
@@ -211,4 +210,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 142
+assert len(all_tracks()) == 141

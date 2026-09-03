@@ -35,10 +35,6 @@ ART = {
  "Being a trans woman, or transfem, comes with a high level of experimentation with yourself and also through interests like music.",
  "Metal Magazine","https://metalmagazine.eu/en/post/femtanyl"),
 
-"takihasdied": ("unresolved","Unknown","English",
- "No public statement about their gender identity was found. Bandcamp, SoundCloud, Rate Your Music, Apple Music and press listings carry no bio, pronouns or identity information. Featured credit only; see the unresolved cases below.",
- None,None,None),
-
 "Petal Supply": ("partial","Canada","English",
  "Described as a “trans-femme artist” in a feature on trans women in electronic music, and has referred to herself publicly as a visibly trans person. No long-form interview with a first-person statement was located.",
  None,"Era Journal","https://erajournal.co.uk/our-journal/immaterial-girls-trans-women-in-synthesis/"),

@@ -184,7 +184,7 @@ def page():
 <header>
 <h1>Transfem chants</h1>
 <p class="sub">{count} songs <em>sung</em> by transfeminine artists: trans women, and non-binary or agender people assigned male at birth. This page gives, for every artist, the gender identity as they have made it public, and the source for it.</p>
-<p class="stats"><strong>{st["tracks"]}</strong> tracks &middot; <strong>{st["presented"]}</strong> artists presented here as transfeminine, and <strong>{st["open_cases"]}</strong> open cases counted separately &middot; <strong>{st["countries"]}</strong> countries and territories &middot; <strong>{st["languages"]}</strong> languages</p>
+<p class="stats"><strong>{st["tracks"]}</strong> tracks &middot; <strong>{st["presented"]}</strong> artists presented here as transfeminine, and <strong>{st["open_cases"]}</strong> entries marked unresolved and not counted among them &middot; <strong>{st["countries"]}</strong> countries and territories &middot; <strong>{st["languages"]}</strong> languages</p>
 <a class="hero-link" href="{PLAYLIST}" rel="noopener">Open the playlist on Spotify</a>
 </header>
 
@@ -228,12 +228,7 @@ def page():
 {guests}
 
 <h2>Unresolved cases</h2>
-
-<div class="note">
-<h4>takihasdied, featured on “MURDER EVERY 1 U KNOW!”</h4>
-<p>No public source about this artist’s gender identity was found, across Bandcamp, SoundCloud, Rate Your Music, Apple Music and press listings. That is information in itself: nobody owes a declaration.</p>
-<p>The track stays because femtanyl, a trans woman, is its lead artist. But it should be confirmed that she carries part of the vocal. Every credit source found lists takihasdied as “featured artist” with no breakdown of the role, and takihasdied is a credited co-producer elsewhere, so a production-only feature cannot be ruled out. If takihasdied sings alone, the track falls outside the criterion and should come off.</p>
-</div>
+<p>Two of these carry the <span class="st st-flag">unresolved</span> mark above and are not counted as transfeminine artists. The third, Jackie Shane, is counted and kept: what is open in her case is not whether she belongs on the playlist, but which words she would have accepted for herself.</p>
 
 <div class="note">
 <h4>Frost Children</h4>
