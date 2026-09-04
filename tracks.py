@@ -100,7 +100,7 @@ SECTIONS = [
     },
     {
         "title": 'Indie, folk and traditional music',
-        "blurb": 'The inward-facing stretch, where American folk sits beside Mexican and Argentine traditional forms reclaimed from a transfeminine position — and where the oldest songs here begin, written in 1970 and circulated from 1976.',
+        "blurb": 'The inward-facing stretch, where American folk sits beside Mexican and Argentine traditional forms reclaimed from a transfeminine position — and where the oldest songs here begin, written around 1970 and sung in rooms full of women long before anyone taped them.',
         "tracks": [
             ('73xUwV4DkcelY7seMyY0PY', 'Lady on the Subway', 'Beth Elliott'),
             ('4dtyeDMnVKKo89QbbDtD5M', "Ballad of the Oklahoma Women's Liberation Front", 'Beth Elliott'),
