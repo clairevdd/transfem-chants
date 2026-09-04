@@ -266,11 +266,12 @@ def page():
 <p>She is kept on the playlist, with the tension left visible rather than resolved in her place. A page built on the principle of taking artists at their own word cannot then quietly overwrite one of them.</p>
 </div>
 
-<h2>Two other ways in</h2>
-<p>The same artists and the same tracks, cut differently. Both pages are built from the entries above, so nothing on them is claimed that is not sourced here.</p>
+<h2>Three other ways in</h2>
+<p>The same artists and the same tracks, cut differently. All three pages are built from the entries above, so nothing on them is claimed that is not sourced here.</p>
 <ul class="plain">
 <li><strong><a href="countries.html">By country</a></strong> — a world map shaded by how many artists each country contributes, and the list behind it. The empty parts of that map are the argument.</li>
 <li><strong><a href="languages.html">By language</a></strong> — which languages these artists record in, and how lopsided the distribution is.</li>
+<li><strong><a href="years.html">By year</a></strong> — when each song first existed, on one uniform axis from 1962 to 2026, with the source that fixed every date. The empty decades are kept at full width, for the same reason the grey countries stay on the map. A second chart shows how far streaming metadata moves these songs, which is barely at all since 2010 and by decades before it.</li>
 </ul>
 
 <h2>What this list does not show</h2>
