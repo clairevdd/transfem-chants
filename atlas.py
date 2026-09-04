@@ -132,6 +132,7 @@ def _nav(here):
             + link("index.html", "Sources")
             + link("countries.html", "By country")
             + link("languages.html", "By language")
+            + link("years.html", "By year")
             + '</nav>')
 
 

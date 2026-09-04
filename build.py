@@ -16,9 +16,11 @@ import html
 import re
 
 import atlas
+import chrono
 
 from data import ART
 from tracks import SECTIONS, all_tracks
+from years import YEARS
 
 PLAYLIST = "https://open.spotify.com/playlist/4rK80rB8ycyAUdIKX6FOIk"
 ISSUES = "https://github.com/clairevdd/transfem-chants/issues"
@@ -54,6 +56,17 @@ def slug(name):
 
 
 def check():
+    ids = {sid for sid, _, _ in all_tracks()}
+    manquants = sorted(ids - set(YEARS))
+    if manquants:
+        raise SystemExit(f"build.py : morceaux absents de years.py : {manquants}")
+    orphelins = sorted(set(YEARS) - ids)
+    if orphelins:
+        raise SystemExit(f"build.py : years.py garde des morceaux retirés de la playlist : {orphelins}")
+    for sid, v in YEARS.items():
+        if v["status"] == "verified" and not (v["url"] and v["checked"] and v["first_public"]):
+            raise SystemExit(f"build.py : {sid} est verified sans source, date ou contrôle datés")
+
     """Vérifie tracks.py contre data.py avant de générer quoi que ce soit."""
     missing = sorted({a for _, c in TRACKS for a in artists_of(c) if a not in ART})
     if missing:
@@ -132,9 +145,15 @@ def tracklist():
                 cls = "guest" if ART[name][0] == "guest" else "lead"
                 links.append(f'<a class="{cls}" href="#{slug(name)}">{esc(name)}</a>')
             url = "https://open.spotify.com/track/" + sid
+            # L'année de première parution vient de years.py. La page « by year »
+            # porte la source et la réserve ; ici on ne donne que le millésime.
+            yv = YEARS[sid]
+            yr = str(yv["first_public"])[:4] if yv["first_public"] else "—"
+            ttl = "first published " + str(yv["first_public"]) if yv["first_public"] else "date not established"
             out.append(f'<tr><td class="n">{n}</td>'
                        f'<td class="ti"><a href="{esc(url)}" rel="noopener">{esc(title)}</a></td>'
-                       f'<td class="cr">{" · ".join(links)}</td></tr>')
+                       f'<td class="cr">{" · ".join(links)}</td>'
+                       f'<td class="yr"><a href="years.html" title="{esc(ttl)}">{yr}</a></td></tr>')
         out.append('</tbody></table></div>')
     return "\n".join(out)
 
@@ -180,7 +199,7 @@ def page():
 </head>
 <body>
 <div class="wrap">
-
+{atlas._nav("index.html")}
 <header>
 <h1>Transfem chants</h1>
 <p class="sub">{count} songs <em>sung</em> by transfeminine artists: trans women, and non-binary or agender people assigned male at birth. This page gives, for every artist, the gender identity as they have made it public, and the source for it.</p>
@@ -283,7 +302,8 @@ if __name__ == "__main__":
     args = (css, esc, slug, artists_of, COUNTRY_ALIASES, SAME_PERSON, BADGE,
             PLAYLIST, ISSUES)
     for name, fn in (("countries.html", atlas.countries_page),
-                     ("languages.html", atlas.languages_page)):
+                     ("languages.html", atlas.languages_page),
+                     ("years.html", chrono.years_page)):
         text = fn(*args)
         open(name, "w", encoding="utf-8").write(text)
         print(f"{name} écrit : {len(text)} octets")

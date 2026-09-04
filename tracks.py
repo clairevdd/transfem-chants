@@ -100,8 +100,9 @@ SECTIONS = [
     },
     {
         "title": 'Indie, folk and traditional music',
-        "blurb": 'The inward-facing stretch, where American folk sits beside Mexican and Argentine traditional forms reclaimed from a transfeminine position — and where the oldest song here begins, recorded in 1973.',
+        "blurb": 'The inward-facing stretch, where American folk sits beside Mexican and Argentine traditional forms reclaimed from a transfeminine position — and where the oldest songs here begin, written in 1970 and circulated from 1976.',
         "tracks": [
+            ('73xUwV4DkcelY7seMyY0PY', 'Lady on the Subway', 'Beth Elliott'),
             ('4dtyeDMnVKKo89QbbDtD5M', "Ballad of the Oklahoma Women's Liberation Front", 'Beth Elliott'),
             ('02L1ngagXNRt8W3Flbe9Sw', 'Boy in a Dress', 'Namoli Brennet'),
             ('7KtbrK74NNA4ySRZ49DC7R', 'Where the Lavender Grows', 'Mya Byrne'),
@@ -214,4 +215,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 145
+assert len(all_tracks()) == 146
