@@ -151,7 +151,7 @@ def tracklist():
             yr = str(yv["first_public"])[:4] if yv["first_public"] else "—"
             ttl = "first published " + str(yv["first_public"]) if yv["first_public"] else "date not established"
             out.append(f'<tr><td class="n">{n}</td>'
-                       f'<td class="ti"><a href="{esc(url)}" rel="noopener">{esc(title)}</a></td>'
+                       f'<td class="ti"><a href="{esc(url)}" target="_blank" rel="noopener">{esc(title)}</a></td>'
                        f'<td class="cr">{" · ".join(links)}</td>'
                        f'<td class="yr"><a href="years.html" title="{esc(ttl)}">{yr}</a></td></tr>')
         out.append('</tbody></table></div>')
@@ -167,7 +167,7 @@ def card(name):
             if lang != "—" else f'{esc(country)} &middot; {n} track{plural}')
     q = f'<blockquote>{esc(quote)}</blockquote>' if quote else ''
     if srcurl:
-        s = f'<p class="src">Source: <a href="{esc(srcurl)}" rel="noopener">{esc(src)}</a></p>'
+        s = f'<p class="src">Source: <a href="{esc(srcurl)}" target="_blank" rel="noopener">{esc(src)}</a></p>'
     elif status in ("unresolved", "guest"):
         s = '<p class="src none">No public source found.</p>'
     else:
@@ -204,7 +204,7 @@ def page():
 <h1>Transfem chants</h1>
 <p class="sub">{count} songs <em>sung</em> by transfeminine artists: trans women, and non-binary or agender people assigned male at birth. This page gives, for every artist, the gender identity as they have made it public, and the source for it.</p>
 <p class="stats"><strong>{st["tracks"]}</strong> tracks &middot; <strong>{st["presented"]}</strong> artists presented here as transfeminine, and <strong>{st["open_cases"]}</strong> entries marked unresolved and not counted among them &middot; <strong>{st["countries"]}</strong> countries and territories &middot; <strong>{st["languages"]}</strong> languages</p>
-<a class="hero-link" href="{PLAYLIST}" rel="noopener">Open the playlist on Spotify</a>
+<a class="hero-link" href="{PLAYLIST}" target="_blank" rel="noopener">Open the playlist on Spotify</a>
 </header>
 
 <h2>The tracks</h2>
@@ -218,7 +218,7 @@ def page():
 <li><strong>Singing, not only composing.</strong> The artist has to carry the vocal. Trans composers and producers whose relevant work is instrumental were left out for that reason alone.</li>
 <li><strong>A transfeminine identity.</strong> Anyone who does not recognise herself in the masculine gender she was assigned at birth — nearly every modern society assigns one administratively. Trans women, and non-binary or agender people assigned male at birth, but also artists whose own word for themselves comes from a tradition that maps onto none of those. Where an artist names her identity in her own terms, this page keeps her terms rather than translating them into ours.</li>
 <li><strong>Made public by the artist.</strong> An identity inferred from gender expression, with no statement or confirmation, is not enough.</li>
-<li><strong>Still current, and still willing.</strong> Artists who no longer identify this way were left out. So is anyone still trans who has since chosen to live stealth and would rather their transness not be published. That second case cannot be established from outside, so it rests on being told: any artist here who wants their entry taken down can <a href="{ISSUES}" rel="noopener">open an issue</a>, or have someone open one for them, and it will be removed without argument and without being asked to explain.</li>
+<li><strong>Still current, and still willing.</strong> Artists who no longer identify this way were left out. So is anyone still trans who has since chosen to live stealth and would rather their transness not be published. That second case cannot be established from outside, so it rests on being told: any artist here who wants their entry taken down can <a href="{ISSUES}" target="_blank" rel="noopener">open an issue</a>, or have someone open one for them, and it will be removed without argument and without being asked to explain.</li>
 <li><strong>Arbitrary inclusions.</strong> Where a case did not resolve cleanly, the track was kept and the doubt written down instead. See the <span class="st st-her">partial</span> and <span class="st st-flag">unresolved</span> entries.</li>
 </ul>
 
@@ -227,7 +227,7 @@ def page():
 <p>Not every line here carries the same weight, and the page says so rather than hiding it. <span class="st st-ok">verified</span> means the source was opened and read, and states the claim explicitly. <span class="st st-her">partial</span> means the source is suggestive but carries no explicit first-person statement, or the artist’s own position is more complicated than the label. <span class="st st-flag">unresolved</span> marks an open case, set out in full below. <span class="st st-note">featured</span> marks someone credited on a track without being its lead artist.</p>
 <p>Where an artist has described themselves in their own words, those words are quoted rather than paraphrased. The distinction matters: the criterion is what the artist said, not what the compiler concluded.</p>
 <p>A <span class="st st-ok">verified</span> mark is never permanent. It records that a source was read on a given day; it does not close the question. This page began after an artist was nearly cut from the playlist on the strength of an unsourced claim about their gender, apparently confused with a different musician entirely. The correction was made, and then sat untouched until it too had quietly stopped being true. Both mistakes came from the same habit: repeating what was already written instead of going back to look.</p>
-<p>Rechecking older entries on a schedule would not fix that, and would make something else worse. The artists easiest to recheck are the ones a press already follows; those who speak to their audience only through their own accounts would be rechecked last and least, which is the bias set out further down, reintroduced as a maintenance routine. So this page relies on being told instead. Anyone at all, artists first among them, can <a href="{ISSUES}" rel="noopener">open an issue</a> to say that someone’s identity has changed, that they now live stealth, or that they want their entry taken down.</p>
+<p>Rechecking older entries on a schedule would not fix that, and would make something else worse. The artists easiest to recheck are the ones a press already follows; those who speak to their audience only through their own accounts would be rechecked last and least, which is the bias set out further down, reintroduced as a maintenance routine. So this page relies on being told instead. Anyone at all, artists first among them, can <a href="{ISSUES}" target="_blank" rel="noopener">open an issue</a> to say that someone’s identity has changed, that they now live stealth, or that they want their entry taken down.</p>
 </div>
 
 <h2>The artists</h2>
@@ -266,23 +266,22 @@ def page():
 <p>She is kept on the playlist, with the tension left visible rather than resolved in her place. A page built on the principle of taking artists at their own word cannot then quietly overwrite one of them.</p>
 </div>
 
-<h2>Three other ways in</h2>
-<p>The same artists and the same tracks, cut differently. All three pages are built from the entries above, so nothing on them is claimed that is not sourced here.</p>
+<h2>Two other ways in</h2>
+<p>The same artists and the same tracks, cut differently. Both pages are built from the entries above, so nothing on them is claimed that is not sourced here.</p>
 <ul class="plain">
 <li><strong><a href="countries.html">By country</a></strong> — a world map shaded by how many artists each country contributes, and the list behind it. The empty parts of that map are the argument.</li>
 <li><strong><a href="languages.html">By language</a></strong> — which languages these artists record in, and how lopsided the distribution is.</li>
-<li><strong><a href="years.html">By year</a></strong> — when each song first existed, on one uniform axis from 1962 to 2026, with the source that fixed every date. The empty decades are kept at full width, for the same reason the grey countries stay on the map. A second chart shows how far streaming metadata moves these songs, which is barely at all since 2010 and by decades before it.</li>
 </ul>
 
 <h2>What this list does not show</h2>
 <p>There is a bias built into the third criterion, and it is better named than hidden. Requiring a public statement means requiring that someone was interviewed, recorded and published — which happens to artists a press has already decided are worth covering. An artist with no interviews, no profile and no biography cannot meet the criterion however out she is among the people who know her. So this page over-represents the already visible and under-represents the precarious, the very young, and anyone working outside the reach of a music press. Several artists were left off these pages for that reason alone, and their absence says nothing about them.</p>
 
 <p>Several language areas are still missing: nothing in Persian, Hindi, Mandarin, or the languages of East Africa, and one song each in most of what is here. That is not an absence of artists. It is an absence of usable public sources. In a number of those contexts, declaring yourself publicly carries real risk, and the shape of this page reflects that before it reflects anything about the music. The gaps do close: German, Indonesian and Urdu were each named here as missing until an artist turned up who had said something about herself in public, in her own words, and could be read.</p>
-<p>Found an error, a better source, or an artist who should be here? <a href="{ISSUES}" rel="noopener">Open an issue</a>.</p>
+<p>Found an error, a better source, or an artist who should be here? <a href="{ISSUES}" target="_blank" rel="noopener">Open an issue</a>.</p>
 
 <footer>
-<p>Companion page to the Spotify playlist <a href="{PLAYLIST}" rel="noopener"><strong>Transfem chants</strong></a>. The identities described here are the ones the artists have made public themselves; every link goes to the source for the claim beside it.</p>
-<p class="colophon">Compiled <time datetime="2026-08">August 2026</time>. The playlist is by <a href="https://github.com/clairevdd" rel="noopener">Claire</a>, who set the criteria and made every call about what stays and what goes. The source research behind this page, the verification of each artist’s public statement, and the page itself were done by Claude, Anthropic’s AI assistant, working from those criteria. Where a claim could not be verified, that is written down rather than smoothed over.</p>
+<p>Companion page to the Spotify playlist <a href="{PLAYLIST}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. The identities described here are the ones the artists have made public themselves; every link goes to the source for the claim beside it.</p>
+<p class="colophon">Compiled <time datetime="2026-08">August 2026</time>. The playlist is by <a href="https://github.com/clairevdd" target="_blank" rel="noopener">Claire</a>, who set the criteria and made every call about what stays and what goes. The source research behind this page, the verification of each artist’s public statement, and the page itself were done by Claude, Anthropic’s AI assistant, working from those criteria. Where a claim could not be verified, that is written down rather than smoothed over.</p>
 </footer>
 
 </div>

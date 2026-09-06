@@ -8,40 +8,65 @@ règles sont écrites au build.
 
 Trois panneaux :
 
-1. La frise. Axe uniforme de 1963 à 2026, années vides comprises. Une marque par
-   morceau, empilée dans la colonne de son année. La largeur de la marque dit la
-   précision de la date : un trait fin pour une date au jour, la colonne entière
-   pour une date connue à l'année près. Les anciennes sont donc visiblement plus
-   floues, et c'est de la donnée, pas de la mise en page.
+1. La frise. Axe uniforme, années vides comprises. Une marque par morceau,
+   empilée dans la colonne de son année. Toutes les marques font une année de
+   large : encoder la précision sur la largeur chargeait la frise sans être
+   lisible, arbitrage de Claire du 4 septembre 2026. La couleur dit le statut.
 
-2. Les écarts. Une ligne par morceau dont la date affichée par la plateforme, ou
-   la date d'enregistrement, s'éloigne de la parution. Même axe que la frise.
+2. Les écarts. Une ligne par morceau dont la date Spotify s'éloigne de la
+   première parution. Même axe que la frise. Ce panneau ne montre PLUS l'année
+   d'enregistrement : un seul morceau la porte, et son point restait seul sur sa
+   ligne, sans écart Spotify en face. Arbitrage de Claire du 6 septembre 2026.
+   L'année d'enregistrement continue de vivre dans la fiche du morceau.
 
-3. Le tableau des 145 morceaux, triable, chaque ligne dépliable sur sa fiche.
+3. Le tableau, triable, chaque ligne dépliable sur sa fiche. Trois tris
+   seulement : le tri « largest gap » a été retiré le 6 septembre 2026, faute de
+   colonne disant l'écart et parce qu'il faisait doublon avec le panneau 2.
 
-Le vide n'est pas recadré. Sur les 64 années de l'axe, 42 sont sans morceau, et
-cette traîne est le résultat autant que les pics. C'est le même parti pris que
-les pays gris de la carte : montrer ce qui manque à sa taille réelle.
+Aucun nombre n'est écrit en dur dans cette page : tout se recalcule depuis
+years.py. Le titre affichait « cent quarante-cinq » alors que la playlist en
+comptait cent quarante-six, ce qui est exactement le genre d'erreur qu'une
+constante recopiée fabrique toute seule.
+
+Le vide n'est pas recadré : les années sans morceau gardent leur largeur réelle.
+C'est le même parti pris que les pays gris de la carte.
 """
 from data import ART
 from tracks import SECTIONS
 from years import YEARS
 
 def _span():
-    """Bornes de l'axe : la plus ancienne date du tableau, enregistrements compris.
+    """Bornes de l'axe : les seules dates effectivement dessinées.
 
-    Jackie Shane a été enregistré en 1962 et paru en 1963 : sans cette borne,
-    son point d'enregistrement tomberait hors du graphique.
+    L'année d'enregistrement en est sortie le 6 septembre 2026, en même temps que
+    du panneau 2 : garder 1962 pour Jackie Shane ajoutait une colonne vide en tête
+    d'axe pour une donnée qui ne s'y trouve plus.
     """
     ys = []
     for v in YEARS.values():
         if v["first_public"]:
             ys.append(int(str(v["first_public"])[:4]))
-        if v["first_record"]:
-            ys.append(int(str(v["first_record"])[:4]))
         if v["spotify"]:
             ys.append(int(str(v["spotify"])[:4]))
     return min(ys), max(ys)
+
+
+UNITS = ("zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
+         "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen",
+         "sixteen", "seventeen", "eighteen", "nineteen")
+TENS = ("", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy",
+        "eighty", "ninety")
+
+
+def _words(n):
+    """Le compte en toutes lettres, pour le titre. Sous mille, ce qui suffit."""
+    if n < 20:
+        return UNITS[n]
+    if n < 100:
+        t, u = divmod(n, 10)
+        return TENS[t] + (f"-{UNITS[u]}" if u else "")
+    h, r = divmod(n, 100)
+    return UNITS[h] + " hundred" + (f" and {_words(r)}" if r else "")
 
 
 Y0, Y1 = _span()
@@ -131,23 +156,29 @@ def _timeline(rows, esc, badge):
 
     empty = NY - len(by_year)
     svg = (f'<svg class="chart" viewBox="0 0 {W:.0f} {H:.0f}" role="img" '
-           f'aria-label="Frise des 145 morceaux de 1963 à 2026, une marque par morceau">'
+           f'aria-label="Timeline of the {len(rows)} songs from {Y0} to {Y1}, '
+           f'one mark per song">'
            + "".join(g) + "".join(marks) + "</svg>")
 
-    leg = ('<ul class="legend">'
-           '<li><span class="sw m-ok"></span>verified</li>'
-           '<li><span class="sw m-her"></span>partial</li>'
-           '<li><span class="sw m-flag"></span>unresolved</li>'
-           '</ul>')
-    return svg, leg, empty, tallest
+    # La legende ne montre que les statuts effectivement presents : afficher
+    # « unresolved » quand aucune ligne ne l'est laisse croire a une categorie
+    # vide plutot qu'a une categorie absente.
+    present = {r["status"] for r in rows}
+    leg = "".join(f'<li><span class="sw {CLS[s]}"></span>{s}</li>'
+                  for s in ("verified", "partial", "unresolved", "absent")
+                  if s in present)
+    return svg, f'<ul class="legend">{leg}</ul>', empty, tallest
 
 
 # ---------------------------------------------------------------- panneau 2
 
 def _gaps(rows, esc):
-    sel = [r for r in rows
-           if (r["gap_plat"] or 0) >= 1 or (r["gap_rec"] or 0) >= 1]
-    sel.sort(key=lambda r: (r["ry"] or r["y"], r["y"]))
+    # Un seul critere : l'ecart entre la premiere parution et la date Spotify.
+    # Une ligne dont seul l'enregistrement s'ecartait — Jackie Shane — n'avait
+    # aucun point Spotify en face et ne disait donc rien de ce que le panneau
+    # mesure. Retiree le 6 septembre 2026.
+    sel = [r for r in rows if (r["gap_plat"] or 0) >= 1]
+    sel.sort(key=lambda r: (r["y"], r["sy"] or 0))
 
     W, LAB, PAD = 960.0, 272.0, 12.0
     plot = W - LAB - PAD
@@ -170,37 +201,34 @@ def _gaps(rows, esc):
         if len(name) > 36:
             name = name[:35] + "…"
         body.append(f'<text class="lb" x="{LAB - 10:.1f}" y="{yy + 4:.1f}">{esc(name)}</text>')
-        if r["ry"] is not None and r["gap_rec"] >= 1:
-            xr = sx(r["ry"])
-            body.append(f'<line class="rec" x1="{xr:.1f}" y1="{yy:.1f}" x2="{xp:.1f}" y2="{yy:.1f}"/>')
-            body.append(f'<circle class="dot-rec" cx="{xr:.1f}" cy="{yy:.1f}" r="3.1">'
-                        f'<title>recorded in {r["ry"]}</title></circle>')
-        if xs is not None and r["gap_plat"] >= 1:
+        if xs is not None:
             body.append(f'<line class="plat" x1="{xp:.1f}" y1="{yy:.1f}" x2="{xs:.1f}" y2="{yy:.1f}"/>')
             body.append(f'<circle class="dot-spot" cx="{xs:.1f}" cy="{yy:.1f}" r="3.1">'
-                        f'<title>shown as {r["spot"]} by the platform</title></circle>')
+                        f'<title>Spotify shows {r["spot"]}</title></circle>')
         body.append(f'<circle class="dot-pub" cx="{xp:.1f}" cy="{yy:.1f}" r="3.4">'
                     f'<title>first published {esc(r["pub"])}</title></circle>')
 
     svg = (f'<svg class="chart" viewBox="0 0 {W:.0f} {H:.0f}" role="img" '
-           f'aria-label="Écarts entre enregistrement, parution et date de plateforme">'
+           f'aria-label="Gap between first publication and the date Spotify shows, '
+           f'for the {len(sel)} songs where the two differ">'
            + "".join(g) + "".join(body) + "</svg>")
-    total = sum(r["gap_plat"] for r in rows if (r["gap_plat"] or 0) >= 1)
+    total = sum(r["gap_plat"] for r in sel)
     leg = ('<ul class="legend">'
-           '<li><span class="sw dot-rec"></span>recorded</li>'
            '<li><span class="sw dot-pub"></span>first published</li>'
-           '<li><span class="sw dot-spot"></span>date shown by the platform</li>'
+           '<li><span class="sw dot-spot"></span>date Spotify shows</li>'
            '</ul>')
     return svg, leg, len(sel), total
 
 
 # ---------------------------------------------------------------- panneau 3
 
+# Trois tris, pas quatre. « Largest gap » a été retiré le 6 septembre 2026 :
+# il ordonnait le tableau sur une grandeur qu'aucune colonne n'affichait, et
+# cette grandeur est déjà le sujet entier du panneau 2.
 SORTS = [
     ("s0", "Playlist order", lambda rows: list(range(len(rows)))),
     ("s1", "Earliest first", None),
     ("s2", "Latest first", None),
-    ("s3", "Largest gap", None),
 ]
 
 
@@ -209,7 +237,6 @@ def _order_css(rows):
     keys = {
         "s1": lambda r: (r["pub"], r["credit"]),
         "s2": lambda r: (tuple(-ord(c) for c in r["pub"]), r["credit"]),
-        "s3": lambda r: (-(max(r["gap_plat"] or 0, r["gap_rec"] or 0)), r["pub"]),
     }
     out = []
     for sid, key in keys.items():
@@ -217,6 +244,30 @@ def _order_css(rows):
         for i, r in enumerate(rows):
             out.append(f"#{sid}:checked~.rows>.k{i}{{order:{rank[id(r)]}}}")
     return "".join(out)
+
+
+def _sources(source, url, esc):
+    """Chaque source annoncée porte sa propre URL, ou aucune.
+
+    `url` est une chaîne pour une source unique, un tuple pour plusieurs, apparié
+    positionnellement aux segments de `source` séparés par des points-virgules.
+    Un segment sans URL reste en texte simple : mieux vaut une source sans lien
+    qu'une source pointant vers le lien d'une autre, défaut relevé par Claire le
+    6 septembre 2026 sur les deux fiches Beth Elliott.
+    """
+    if not source:
+        return ""
+    urls = [url] if isinstance(url, str) else list(url or ())
+    parts = [p.strip() for p in source.split(";")]
+    if len(urls) > len(parts):          # plus d'URL que de segments : on ne devine pas
+        parts = [source.strip()]
+        urls = urls[:1]
+    out = []
+    for i, p in enumerate(parts):
+        u = urls[i] if i < len(urls) and urls[i] else None
+        out.append(f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(p)}</a>'
+                   if u else esc(p))
+    return " · ".join(out)
 
 
 def _table(rows, esc, badge):
@@ -238,14 +289,14 @@ def _table(rows, esc, badge):
         gr = r["gap_rec"] or 0
         chips = []
         if gr >= 1:
-            chips.append(f'<span class="chip rec">recorded {r["ry"]}, {gr} years earlier</span>')
+            chips.append(f'<span class="chip rec">recorded {r["ry"]}, '
+                         f'{gr} year{"s" if gr > 1 else ""} earlier</span>')
         if gp >= 1:
-            chips.append(f'<span class="chip plat">platform says {esc(str(r["spot"]))}, {gp} years later</span>')
+            chips.append(f'<span class="chip plat">Spotify shows {esc(str(r["spot"]))}, '
+                         f'{gp} year{"s" if gp > 1 else ""} later</span>')
         if r["kind"] == "earliest_known":
             chips.append('<span class="chip kind">at the latest</span>')
-        src = esc(r["source"])
-        if r["url"]:
-            src = f'<a href="{esc(r["url"])}" rel="noopener">{src}</a>'
+        src = _sources(r["source"], r["url"], esc)
         items.append(
             f'<details class="row k{i}">'
             f'<summary><span class="yr">{r["y"]}</span>'
@@ -258,7 +309,8 @@ def _table(rows, esc, badge):
             + (f'<p class="chips">{"".join(chips)}</p>' if chips else "")
             + (f'<p class="desc">{esc(r["note"])}</p>' if r["note"] else "")
             + f'<p class="src">{src} · checked {esc(r["checked"])} · '
-            f'<a href="https://open.spotify.com/track/{r["id"]}" rel="noopener">listen</a></p>'
+            f'<a href="https://open.spotify.com/track/{r["id"]}" '
+            f'target="_blank" rel="noopener">listen</a></p>'
             f"</div></details>")
     return "".join(ctrl) + '<div class="rows">' + "".join(items) + "</div>"
 
@@ -275,19 +327,15 @@ svg.chart .ax{fill:var(--muted);font:11px ui-sans-serif,system-ui,sans-serif;tex
 svg.chart .lb{fill:var(--ink);font:11px ui-sans-serif,system-ui,sans-serif;text-anchor:end}
 svg.chart .mk{shape-rendering:crispEdges}
 .m-ok{fill:var(--ok)} .m-her{fill:var(--her)} .m-flag{fill:var(--flag)} .m-none{fill:var(--muted)}
-svg.chart .rec{stroke:var(--muted);stroke-width:1.6;stroke-dasharray:3 3}
 svg.chart .plat{stroke:var(--accent);stroke-width:1.6;opacity:.55}
 svg.chart .dot-pub{fill:var(--ink)}
-svg.chart .dot-rec{fill:var(--muted)}
 svg.chart .dot-spot{fill:var(--bg);stroke:var(--accent);stroke-width:1.6}
 .legend .sw{width:13px;height:13px;border-radius:3px;display:inline-block;flex:none}
 .legend .sw.m-ok{background:var(--ok)}
 .legend .sw.m-her{background:var(--her)}
 .legend .sw.m-flag{background:var(--flag)}
-.legend .sw.wide{background:var(--muted)}
-.legend .sw.thin{background:var(--muted);width:3px;border-radius:1px}
+.legend .sw.m-none{background:var(--muted)}
 .legend .sw.dot-pub{background:var(--ink);border-radius:99px;width:9px;height:9px}
-.legend .sw.dot-rec{background:var(--muted);border-radius:99px;width:9px;height:9px}
 .legend .sw.dot-spot{background:transparent;border:2px solid var(--accent);border-radius:99px;width:10px;height:10px}
 .sorter{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 12px;
  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.84rem}
@@ -295,7 +343,7 @@ svg.chart .dot-spot{fill:var(--bg);stroke:var(--accent);stroke-width:1.6}
 .sorter label{cursor:pointer;padding:5px 12px;border-radius:99px;
  border:1px solid var(--line);color:var(--muted);background:var(--panel)}
 #s0:checked~.sorter label[for=s0],#s1:checked~.sorter label[for=s1],
-#s2:checked~.sorter label[for=s2],#s3:checked~.sorter label[for=s3]{
+#s2:checked~.sorter label[for=s2]{
  background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:600}
 .rows{display:flex;flex-direction:column;border:1px solid var(--line);
  border-radius:9px;background:var(--panel);overflow:hidden}
@@ -342,7 +390,7 @@ def years_page(css, esc, slug, artists_of, aliases, same_person, badge,
 
     body = f"""
 <header>
-<h1>One hundred and forty-five songs, and when they first existed</h1>
+<h1>{_words(n).capitalize()} songs, and when they first existed</h1>
 <p class="sub">Every track on the playlist, placed on a single uniform axis from
 {Y0} to {Y1}. The empty stretches are kept at full width, because they are part
 of what this page measures.</p>
@@ -370,23 +418,37 @@ countries stay on the map: what is missing is not nothing, and hiding it would b
 the more misleading choice.</p>
 </div>
 
-<h2>How far the platform moves them</h2>
-<p>One line per song whose recording or streaming date sits away from its first
-publication. The scale is the same as above. <strong>{ngap}</strong> of the
-{n} songs are displaced, by <strong>{total_gap}</strong> years in total, and the
-displacement runs one way only: towards the present.</p>
+<h2>How far Spotify moves them</h2>
+<p>One line per song that Spotify dates later than its first publication: the
+filled dot is when the song first existed, the open dot is the year Spotify prints,
+and the line between them is the distance. The scale is the same as above.
+<strong>{ngap}</strong> of the {n} songs are displaced, by
+<strong>{total_gap}</strong> years in total, and every one of them moves the same
+way: towards the present. A reissue carries the date of its reissue, so a life's
+work can arrive on a streaming platform looking like a debut.</p>
 <div class="chartwrap">{gp}</div>
 {gp_leg}
 <div class="note">
 <p>Unlike the chart above, this one does not depend on how the playlist was
 assembled. Each song is compared with itself, so each artist is her own control.
 The oldest songs are moved by decades and everything after 2010 barely moves at
-all.</p>
+all — which is the point: the further back a transfeminine singer worked, the
+more the catalogue that carries her today misdates her.</p>
+<p>Songs Spotify dates correctly do not appear here, and neither does the one
+song whose recording year is documented and earlier than its first publication.
+That gap is a different measurement, and it is written on the song's own row.</p>
 </div>
 
 <h2>Every track</h2>
-<p>Sorted four ways. Each row opens on the source that fixed its date, when that
-source was last checked, and whatever doubt remains. The badge sits beside the
+<p><em>First publication</em> means the first time the song existed in public in
+any form at all: a night on a stage counts, a cassette passed hand to hand counts,
+a streaming release counts. It is not the recording date and not the release date,
+though for a song made after about 2010 the three usually fall together. For a
+cover version it is this singer's own first public performance, never the age of
+the song she is singing.</p>
+<p>Three orders: the playlist's own, oldest first, newest first. Each row opens on
+the sources that fixed its date, each one linking to the page it names, on when
+they were last checked, and on whatever doubt remains. The badge sits beside the
 year because it qualifies the year, not the artist.</p>
 {table}
 
@@ -394,9 +456,9 @@ year because it qualifies the year, not the artist.</p>
 <p class="colophon">Dates established between the sources listed on each row.
 A date marked <em>at the latest</em> means the song existed by then and may be
 older; nothing here claims to be the last word. Corrections, and requests for
-removal, are welcome as an <a href="{issues}" rel="noopener">issue on the
-repository</a>.</p>
-<p class="colophon"><a href="{playlist}" rel="noopener">Listen to the playlist</a></p>
+removal, are welcome as an <a href="{issues}" target="_blank" rel="noopener">issue on
+the repository</a>.</p>
+<p class="colophon"><a href="{playlist}" target="_blank" rel="noopener">Listen to the playlist</a></p>
 </footer>
 """
 
@@ -407,7 +469,7 @@ repository</a>.</p>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Transfem chants — by year</title>
-<meta name="description" content="When each of the 145 songs first existed, and how far streaming metadata moves them.">
+<meta name="description" content="When each of the {n} songs first existed, and how far Spotify metadata moves them.">
 <style>{full}</style>
 </head>
 <body>

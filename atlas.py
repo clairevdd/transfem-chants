@@ -89,7 +89,7 @@ def _index(esc, slug, artists_of, aliases, same_person):
 
 def _track_list(tracks, esc):
     items = "".join(
-        f'<li><a href="https://open.spotify.com/track/{sid}" rel="noopener">'
+        f'<li><a href="https://open.spotify.com/track/{sid}" target="_blank" rel="noopener">'
         f'{esc(title)}</a> <span class="cr">{esc(credit)}</span></li>'
         for sid, title, credit in tracks)
     return f'<ul class="atlas-tracks">{items}</ul>'
@@ -248,7 +248,7 @@ def countries_page(css, esc, slug, artists_of, aliases, same_person, badge,
 {''.join(blocks)}
 
 <footer>
-<p>Companion page to the Spotify playlist <a href="{playlist}" rel="noopener"><strong>Transfem chants</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
+<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
 <p class="colophon">Country boundaries derived from the public-domain world map shipped with pygal_maps_world, simplified for weight. Borders shown are those of that dataset and are not a position on any of them.</p>
 </footer>
 """
@@ -311,8 +311,8 @@ def languages_page(css, esc, slug, artists_of, aliases, same_person, badge,
 {''.join(blocks)}
 
 <footer>
-<p>Companion page to the Spotify playlist <a href="{playlist}" rel="noopener"><strong>Transfem chants</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
-<p class="colophon">A missing language is a missing source, not a missing artist. If you know of one, <a href="{issues}" rel="noopener">open an issue</a>.</p>
+<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
+<p class="colophon">A missing language is a missing source, not a missing artist. If you know of one, <a href="{issues}" target="_blank" rel="noopener">open an issue</a>.</p>
 </footer>
 """
     return _shell("Transfem chants — by language",
