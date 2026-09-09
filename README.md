@@ -47,7 +47,14 @@ Le build écrit les quatre pages. Il échoue si :
 - un morceau de `tracks.py` n'a pas d'entrée dans `years.py` ;
 - `years.py` garde un morceau retiré de la playlist ;
 - une ligne de `years.py` est `verified` sans source, sans date ou sans date de
-  contrôle.
+  contrôle ;
+- la constante `CONTACT` de `build.py` est vide, pointe vers GitHub, ou contient
+  une adresse e-mail au lieu d'une URL de formulaire ;
+- une page générée contient une adresse e-mail ou un lien `mailto:`.
+
+Ce dernier contrôle est délibéré : les pages se regénèrent, l'historique git non.
+Aucune adresse ne doit entrer dans le dépôt, et le canal privé passe donc par un
+formulaire dont le prestataire seul connaît la destination.
 
 Il signale aussi les artistes présentes dans `data.py` sans morceau associé.
 
@@ -78,6 +85,34 @@ Enfin `python3 build.py`, et committer les pages avec le reste.
 Deux gestes : la ligne de `tracks.py` **et** l'entrée de `years.py`. Le build
 échoue si l'un des deux manque.
 
+## Publier
+
+Le travail courant — ajouter un morceau, corriger une date, ajouter une source —
+se publie par l'**interface web de GitHub** : régénérer les pages avec
+`python3 build.py`, puis glisser les fichiers changés sur le dépôt comme
+d'habitude. L'historique s'accumule normalement, et c'est sans conséquence ces
+jours-là : aucun de ces commits n'y met une identité qu'on retirera ensuite.
+
+**Le jour d'un retrait d'artiste, la procédure change.** Sortir une fiche des
+pages ne suffit pas si son ancienne version reste lisible dans l'historique du
+dépôt. La garantie complète consiste alors à **supprimer le dépôt sur GitHub et
+à le recréer** (Settings, tout en bas de la page, *Delete this repository*, puis
+un nouveau dépôt du même nom) avant d'y reverser les fichiers à jour. L'URL
+publique ne change pas, puisque le compte et le nom du dépôt sont inchangés ; les
+issues et les étoiles, elles, ne survivent pas — c'est le prix d'une garantie
+réelle plutôt qu'apparente.
+
+Pour qui préfère publier depuis git en local, `publier.sh` fait la même chose en
+une commande : il régénère les pages puis remplace la branche par un commit
+unique.
+
+```sh
+sh publier.sh "état au 9 septembre 2026"
+```
+
+Ce n'est pas le chemin suivi au jour le jour sur ce dépôt, mais il reste
+disponible et documenté pour qui voudrait l'utiliser.
+
 ## Les quatre statuts
 
 Les mêmes noms servent pour l'identité dans `data.py` et pour les dates dans
@@ -103,7 +138,21 @@ circule.
 Les citations d'artistes sont reproduites mot pour mot, jamais reformulées, et
 les identités sont nommées dans les termes de l'artiste plutôt que traduites.
 
-## Signaler une erreur
+## Signaler une erreur, ou demander un retrait
 
-[Ouvrir une issue](https://github.com/clairevdd/transfem-chants/issues). Les
-demandes de retrait n'ont pas à être justifiées.
+**Deux canaux, et ils ne sont pas interchangeables.**
+
+Une date fausse, une meilleure source, une artiste à ajouter, un bug :
+[ouvrir une issue](https://github.com/clairevdd/transfem-chants/issues). Ce fil
+est public, ce qui convient très bien à ce genre de correction.
+
+**Une demande de retrait, un passage en stealth, un changement d'identité :
+surtout pas une issue.** Les fils y sont publics, indexés, et le restent :
+demander à quelqu'un d'y annoncer qu'elle passe en stealth défait exactement ce
+qu'elle demande. Ces demandes passent par le formulaire privé indiqué sur la
+page, sous [« Taking an entry down »](https://clairevdd.github.io/transfem-chants#takedown).
+
+Une demande venant de l'artiste elle-même, ou de quelqu'un écrivant pour elle,
+n'a à être ni justifiée ni prouvée. Un signalement venant d'un tiers ne retire
+personne à lui seul : il déclenche une vérification, faute de quoi une seule
+personne malveillante pourrait vider la page.

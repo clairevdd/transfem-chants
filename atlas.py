@@ -250,6 +250,7 @@ def countries_page(css, esc, slug, artists_of, aliases, same_person, badge,
 <footer>
 <p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
 <p class="colophon">Country boundaries derived from the public-domain world map shipped with pygal_maps_world, simplified for weight. Borders shown are those of that dataset and are not a position on any of them.</p>
+<p class="colophon">To have an entry taken down, or to raise anything about a person’s identity, use the <a href="index.html#takedown">private channel</a> rather than a public issue thread.</p>
 </footer>
 """
     return _shell("Transfem chants — by country",
@@ -312,7 +313,7 @@ def languages_page(css, esc, slug, artists_of, aliases, same_person, badge,
 
 <footer>
 <p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
-<p class="colophon">A missing language is a missing source, not a missing artist. If you know of one, <a href="{issues}" target="_blank" rel="noopener">open an issue</a>.</p>
+<p class="colophon">A missing language is a missing source, not a missing artist. If you know of one, <a href="{issues}" target="_blank" rel="noopener">open an issue</a>. To have an entry taken down, or to raise anything about a person’s identity, use the <a href="index.html#takedown">private channel</a> instead: issue threads are public.</p>
 </footer>
 """
     return _shell("Transfem chants — by language",

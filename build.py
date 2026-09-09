@@ -25,6 +25,21 @@ from years import YEARS
 PLAYLIST = "https://open.spotify.com/playlist/4rK80rB8ycyAUdIKX6FOIk"
 ISSUES = "https://github.com/clairevdd/transfem-chants/issues"
 
+# Canal privé pour tout ce qui touche à l'identité d'une personne : demande de
+# retrait, passage en stealth, changement d'identité.
+#
+# Les issues GitHub sont PUBLIQUES et le restent. Demander à quelqu'un d'annoncer
+# sur un fil indexé qu'elle passe en stealth défait exactement ce qu'elle
+# demande. D'où ce second canal.
+#
+# CONTRAINTE ABSOLUE : mettre ici l'URL d'un FORMULAIRE, jamais une adresse
+# e-mail. L'adresse de destination se configure chez le prestataire du
+# formulaire et ne doit apparaître dans aucun fichier du dépôt — ni dans les
+# pages générées, ni dans l'historique git, qui est public et définitif.
+# Le contrôle _no_email() ci-dessous refuse de générer les pages si une adresse
+# ou un lien mailto s'y glisse.
+CONTACT = "https://tally.so/r/2EWdyg"
+
 BADGE = {
     "verified": ("verified", "st-ok"),
     "partial": ("partial", "st-her"),
@@ -55,7 +70,45 @@ def slug(name):
     return "a-" + re.sub(r"[^a-z0-9]+", "-", s).strip("-")
 
 
+# Une adresse écrite dans un fichier du dépôt y reste : les pages se regénèrent,
+# l'historique git non. Ce motif attrape aussi bien un mailto: qu'une adresse
+# laissée en clair dans une note de data.py ou de years.py.
+MAIL = re.compile(r"mailto:|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+
+
+def _no_email(name, text):
+    """Refuse d'écrire une page qui contient une adresse e-mail ou un mailto.
+
+    Claire a demandé que son adresse personnelle n'apparaisse nulle part sur
+    internet : le canal privé passe donc par un formulaire, dont le prestataire
+    seul connaît la destination. Ce contrôle est le filet, pour le jour où une
+    adresse se glisserait dans une source, une note ou une citation.
+    """
+    hit = MAIL.search(text)
+    if hit:
+        raise SystemExit(
+            f"build.py : {name} contient une adresse e-mail ou un lien mailto "
+            f"(« {hit.group(0)} »). Le dépôt est public et son historique est "
+            f"définitif : aucune adresse ne doit y entrer. Passer par l'URL d'un "
+            f"formulaire (constante CONTACT).")
+
+
 def check():
+    if not CONTACT:
+        raise SystemExit(
+            "build.py : CONTACT est vide. Renseigner en tête de build.py l'URL du "
+            "formulaire privé avant de générer les pages. Sans elle, les demandes "
+            "de retrait repartiraient vers les issues publiques, c'est-à-dire "
+            "exactement le défaut que ce canal corrige.")
+    if "github.com" in CONTACT:
+        raise SystemExit(
+            "build.py : CONTACT pointe vers GitHub. Les issues et les discussions "
+            "y sont publiques : ce canal doit être privé.")
+    if MAIL.search(CONTACT):
+        raise SystemExit(
+            "build.py : CONTACT contient une adresse e-mail. Mettre l'URL d'un "
+            "formulaire, dont le prestataire seul connaît la destination.")
+
     ids = {sid for sid, _, _ in all_tracks()}
     manquants = sorted(ids - set(YEARS))
     if manquants:
@@ -218,7 +271,7 @@ def page():
 <li><strong>Singing, not only composing.</strong> The artist has to carry the vocal. Trans composers and producers whose relevant work is instrumental were left out for that reason alone.</li>
 <li><strong>A transfeminine identity.</strong> Anyone who does not recognise herself in the masculine gender she was assigned at birth — nearly every modern society assigns one administratively. Trans women, and non-binary or agender people assigned male at birth, but also artists whose own word for themselves comes from a tradition that maps onto none of those. Where an artist names her identity in her own terms, this page keeps her terms rather than translating them into ours.</li>
 <li><strong>Made public by the artist.</strong> An identity inferred from gender expression, with no statement or confirmation, is not enough.</li>
-<li><strong>Still current, and still willing.</strong> Artists who no longer identify this way were left out. So is anyone still trans who has since chosen to live stealth and would rather their transness not be published. That second case cannot be established from outside, so it rests on being told: any artist here who wants their entry taken down can <a href="{ISSUES}" target="_blank" rel="noopener">open an issue</a>, or have someone open one for them, and it will be removed without argument and without being asked to explain.</li>
+<li><strong>Still current, and still willing.</strong> Artists who no longer identify this way were left out. So is anyone still trans who has since chosen to live stealth and would rather their transness not be published. That second case cannot be established from outside, so it rests on being told — and on being told somewhere that costs the person telling nothing. See <a href="#takedown">taking an entry down</a>.</li>
 <li><strong>Arbitrary inclusions.</strong> Where a case did not resolve cleanly, the track was kept and the doubt written down instead. See the <span class="st st-her">partial</span> and <span class="st st-flag">unresolved</span> entries.</li>
 </ul>
 
@@ -227,7 +280,17 @@ def page():
 <p>Not every line here carries the same weight, and the page says so rather than hiding it. <span class="st st-ok">verified</span> means the source was opened and read, and states the claim explicitly. <span class="st st-her">partial</span> means the source is suggestive but carries no explicit first-person statement, or the artist’s own position is more complicated than the label. <span class="st st-flag">unresolved</span> marks an open case, set out in full below. <span class="st st-note">featured</span> marks someone credited on a track without being its lead artist.</p>
 <p>Where an artist has described themselves in their own words, those words are quoted rather than paraphrased. The distinction matters: the criterion is what the artist said, not what the compiler concluded.</p>
 <p>A <span class="st st-ok">verified</span> mark is never permanent. It records that a source was read on a given day; it does not close the question. This page began after an artist was nearly cut from the playlist on the strength of an unsourced claim about their gender, apparently confused with a different musician entirely. The correction was made, and then sat untouched until it too had quietly stopped being true. Both mistakes came from the same habit: repeating what was already written instead of going back to look.</p>
-<p>Rechecking older entries on a schedule would not fix that, and would make something else worse. The artists easiest to recheck are the ones a press already follows; those who speak to their audience only through their own accounts would be rechecked last and least, which is the bias set out further down, reintroduced as a maintenance routine. So this page relies on being told instead. Anyone at all, artists first among them, can <a href="{ISSUES}" target="_blank" rel="noopener">open an issue</a> to say that someone’s identity has changed, that they now live stealth, or that they want their entry taken down.</p>
+<p>Rechecking older entries on a schedule would not fix that, and would make something else worse. The artists easiest to recheck are the ones a press already follows; those who speak to their audience only through their own accounts would be rechecked last and least, which is the bias set out further down, reintroduced as a maintenance routine. So this page relies on being told instead — that someone’s identity has changed, that she now lives stealth, that she wants her entry gone. All of that goes through the <a href="#takedown">private channel below</a>, never through a public thread.</p>
+</div>
+
+<div class="note" id="takedown">
+<h4>Taking an entry down, or changing it</h4>
+<p><strong>If this is your entry, or you are writing for the artist:</strong> use the <a href="{CONTACT}" target="_blank" rel="noopener">private form</a>. You do not have to say why, and you will not be asked for any personal identification. Say which entry, and what you want: the whole entry gone, or only something changed. It does not have to be all or nothing, and where a wrong word is the problem, changing the word is the better repair. What helps most is anything that ties the request to the artist, such as the contact address on her own page, the account she posts from, her label, or someone in the band. With that, the entry comes off as soon as I have read it.</p>
+<p><strong>Please do not open a public issue for this.</strong> Issue threads on the repository are public, and stay public and searchable afterwards. Asking someone to announce there that she is going stealth would undo the very thing she is asking for.</p>
+<p><strong>If you cannot point to anything like that, or you are writing about someone else:</strong> write anyway. Nothing is dismissed unread, and what you tell me is what I have to weigh with. <strong>The entry comes down first, and stays down</strong> while I try to reach the artist through a channel of her own, because if the request is real then waiting is the thing that costs. It goes back only if it turns out she did not ask and does not want it gone. What I will not do is decide, blind and for good, on a message I cannot tie to her: a removal obtained by a rival, by an ex, or by anyone with a grudge would be invisible to the artist herself, who would most likely never learn she had been taken off and so could never ask to come back. Of the two mistakes available to me, that is the one that does not correct itself.</p>
+<p><strong>If your entry has gone and you did not ask for that,</strong> use the same form and it goes back up. This channel works in both directions.</p>
+<p>One thing needs no checking at all: a public statement by the artist herself that she no longer wants to be described this way. That is her word, and it settles it.</p>
+<p>Removals are complete. The entry, the quotation and the track all go, nothing is left behind saying that someone used to be here, and the repository’s history is replaced rather than left holding a copy. What other sites have already published, and what search engines have already copied, is not mine to take back, but this page will not be the thing that keeps it current.</p>
 </div>
 
 <h2>The artists</h2>
@@ -278,7 +341,7 @@ def page():
 <p>There is a bias built into the third criterion, and it is better named than hidden. Requiring a public statement means requiring that someone was interviewed, recorded and published — which happens to artists a press has already decided are worth covering. An artist with no interviews, no profile and no biography cannot meet the criterion however out she is among the people who know her. So this page over-represents the already visible and under-represents the precarious, the very young, and anyone working outside the reach of a music press. Several artists were left off these pages for that reason alone, and their absence says nothing about them.</p>
 
 <p>Several language areas are still missing: nothing in Persian, Hindi, Mandarin, or the languages of East Africa, and one song each in most of what is here. That is not an absence of artists. It is an absence of usable public sources. In a number of those contexts, declaring yourself publicly carries real risk, and the shape of this page reflects that before it reflects anything about the music. The gaps do close: German, Indonesian and Urdu were each named here as missing until an artist turned up who had said something about herself in public, in her own words, and could be read.</p>
-<p>Found an error, a better source, or an artist who should be here? <a href="{ISSUES}" target="_blank" rel="noopener">Open an issue</a>.</p>
+<p>Found an error, a better source, or an artist who should be here? <a href="{ISSUES}" target="_blank" rel="noopener">Open an issue</a> — that thread is public, which is fine for a date or a citation. Anything touching a particular person’s identity, taking an entry down first among them, goes through the <a href="#takedown">private form</a> instead.</p>
 
 <footer>
 <p>Companion page to the Spotify playlist <a href="{PLAYLIST}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. The identities described here are the ones the artists have made public themselves; every link goes to the source for the claim beside it.</p>
@@ -297,6 +360,7 @@ if __name__ == "__main__":
     st = stats()
 
     out = page()
+    _no_email("index.html", out)
     open("index.html", "w", encoding="utf-8").write(out)
     print(f"index.html écrit : {st['tracks']} morceaux, {len(ART)} entrées, {len(out)} octets")
 
@@ -306,6 +370,7 @@ if __name__ == "__main__":
                      ("languages.html", atlas.languages_page),
                      ("years.html", chrono.years_page)):
         text = fn(*args)
+        _no_email(name, text)
         open(name, "w", encoding="utf-8").write(text)
         print(f"{name} écrit : {len(text)} octets")
     print(f"  {st['presented']} artistes présentées comme transfem + {st['open_cases']} cas ouverts")
