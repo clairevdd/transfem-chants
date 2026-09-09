@@ -386,6 +386,7 @@ def years_page(css, esc, slug, artists_of, aliases, same_person, badge,
            '<a href="countries.html">By country</a>'
            '<a href="languages.html">By language</a>'
            '<span class="here">By year</span>'
+           '<a href="takedown.html">Removals</a>'
            '</nav>')
 
     body = f"""
@@ -459,7 +460,7 @@ older; nothing here claims to be the last word. Corrections are welcome as an
 <a href="{issues}" target="_blank" rel="noopener">issue on the repository</a>,
 which is a public thread. To have an entry taken down, or to raise anything about
 a person’s identity, use the
-<a href="index.html#takedown">private channel</a> instead.</p>
+<a href="takedown.html">private channel</a> instead.</p>
 <p class="colophon"><a href="{playlist}" target="_blank" rel="noopener">Listen to the playlist</a></p>
 </footer>
 """

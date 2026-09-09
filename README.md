@@ -7,7 +7,7 @@ rendue publique et la source de cette affirmation, puis la même matière par pa
 par langue et par année de première parution. Elles sont en anglais et publiées
 sur <https://clairevdd.github.io/transfem-chants>.
 
-Les quatre pages sont autonomes : pas de police distante, pas de script, pas de
+Les cinq pages sont autonomes : pas de police distante, pas de script, pas de
 CDN. Elles fonctionnent hors ligne et suivent le thème clair ou sombre du
 navigateur. Le tri du tableau chronologique se fait par boutons radio et ordre
 CSS, dont les règles sont écrites au build.
@@ -17,6 +17,7 @@ CSS, dont les règles sont écrites au build.
 - `languages.html` — la même matière par langue
 - `years.html` — quand chaque morceau a existé pour la première fois, et de
   combien les métadonnées de streaming le déplacent
+- `takedown.html` — retirer une fiche, ou en corriger la formulation
 
 ## Structure
 
@@ -26,11 +27,11 @@ CSS, dont les règles sont écrites au build.
 | `years.py` | les dates : première parution, précision, nature, statut, source, date de contrôle, réserve. **Fait foi pour les dates.** |
 | `tracks.py` | les morceaux, groupés par section |
 | `style.css` | la feuille de style, inlinée dans les pages au build |
-| `build.py` | génère les quatre pages ; porte les contrôles d'intégrité |
-| `atlas.py` | construit `countries.html` et `languages.html` ; appelé par `build.py` |
+| `build.py` | génère les cinq pages ; porte les contrôles d'intégrité |
+| `atlas.py` | construit `countries.html`, `languages.html` et `takedown.html` ; appelé par `build.py` |
 | `chrono.py` | construit `years.html` ; appelé par `build.py` |
 | `worldmap.py` | géométries des pays pour la carte, dérivées de pygal_maps_world |
-| `index.html`, `countries.html`, `languages.html`, `years.html` | les pages publiées, **générées** : ne pas les éditer à la main |
+| `index.html`, `countries.html`, `languages.html`, `years.html`, `takedown.html` | les pages publiées, **générées** : ne pas les éditer à la main |
 | `ARTISTES.md` | export lisible de `data.py`, à consulter plutôt que de mémoire |
 
 ## Régénérer les pages
@@ -150,7 +151,7 @@ est public, ce qui convient très bien à ce genre de correction.
 surtout pas une issue.** Les fils y sont publics, indexés, et le restent :
 demander à quelqu'un d'y annoncer qu'elle passe en stealth défait exactement ce
 qu'elle demande. Ces demandes passent par le formulaire privé indiqué sur la
-page, sous [« Taking an entry down »](https://clairevdd.github.io/transfem-chants#takedown).
+page dédiée, [« Taking an entry down »](https://clairevdd.github.io/transfem-chants/takedown.html).
 
 Une demande venant de l'artiste elle-même, ou de quelqu'un écrivant pour elle,
 n'a à être ni justifiée ni prouvée. Un signalement venant d'un tiers ne retire

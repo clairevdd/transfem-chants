@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transfem chants — taking an entry down</title>
+<meta name="description" content="How to have an entry removed or changed on the Transfem chants sources pages, and why it does not run through a public issue thread.">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#fbf9f7; --panel:#fff; --ink:#1a1720; --muted:#6b6478; --line:#e7e1ea;
+  --accent:#7b3fa0; --soft:#f4ecfa;
+  --ok:#1c6a46; --ok-bg:#e2f3ea; --her:#84651c; --her-bg:#f9efd6;
+  --flag:#9f3636; --flag-bg:#fbe6e6; --note:#455065; --note-bg:#edf0f4;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141118; --panel:#1e1a24; --ink:#efeaf3; --muted:#a69db2; --line:#342d3e;
+  --accent:#c99cf0; --soft:#271f33;
+  --ok:#81d8aa; --ok-bg:#16301f; --her:#e2c477; --her-bg:#332a15;
+  --flag:#f0a2a2; --flag-bg:#38191c; --note:#b5bfcd; --note-bg:#23262e;
+}}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.65 ui-serif,Georgia,"Iowan Old Style","Times New Roman",serif}
+.wrap{max-width:960px;margin:0 auto;padding:48px 20px 96px}
+header{border-bottom:2px solid var(--ink);padding-bottom:26px;margin-bottom:34px}
+h1{font-size:clamp(2rem,6vw,3.1rem);line-height:1.05;margin:0 0 .35em;letter-spacing:-.025em}
+.sub{font-size:1.05rem;color:var(--muted);margin:0;max-width:62ch}
+h2{font-size:1.45rem;margin:60px 0 .45em;letter-spacing:-.015em}
+h3.sec{font-size:1.1rem;margin:40px 0 .15em;color:var(--accent);
+ font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+p.secblurb{margin:0 0 12px;color:var(--muted);font-size:.92rem;max-width:70ch}
+p{max-width:70ch}
+a{color:var(--accent);text-underline-offset:2px}
+.note{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
+ border-radius:0 8px 8px 0;padding:15px 19px;margin:20px 0;max-width:none}
+.note p{margin:0 0 .7em;max-width:none} .note p:last-child{margin:0}
+.note h4{margin:0 0 .45em;font-size:1rem;font-family:ui-sans-serif,system-ui,sans-serif}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:9px;background:var(--panel)}
+table.tl{border-collapse:collapse;width:100%;min-width:420px;
+ font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:.9rem}
+table.tl tr{border-bottom:1px solid var(--line)}
+table.tl tr:last-child{border-bottom:0}
+table.tl td{padding:9px 14px;vertical-align:baseline}
+td.n{color:var(--muted);font-variant-numeric:tabular-nums;width:3.2ch;
+ text-align:right;font-size:.8rem;padding-right:2px}
+td.ti{font-weight:600;width:52%}
+td.cr{color:var(--muted)}
+td.cr a{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line)}
+td.cr a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+td.cr a.guest{opacity:.62;font-style:italic}
+td.yr{text-align:right;width:5ch;font-variant-numeric:tabular-nums;font-size:.82rem}
+td.yr a{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line)}
+td.yr a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.st{display:inline-block;font-size:.66rem;text-transform:uppercase;letter-spacing:.07em;
+ padding:2px 7px;border-radius:99px;font-weight:600;vertical-align:2px;
+ font-family:ui-sans-serif,system-ui,sans-serif;white-space:nowrap}
+.st-ok{color:var(--ok);background:var(--ok-bg)}
+.st-her{color:var(--her);background:var(--her-bg)}
+.st-flag{color:var(--flag);background:var(--flag-bg)}
+.st-note{color:var(--note);background:var(--note-bg)}
+.legend{display:flex;flex-wrap:wrap;gap:9px 18px;margin:16px 0 0;padding:0;list-style:none;
+ font-family:ui-sans-serif,system-ui,sans-serif;font-size:.84rem;color:var(--muted)}
+.legend li{display:flex;align-items:center;gap:7px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:12px;margin-top:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:14px 16px;
+ font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;scroll-margin-top:20px}
+.card:target{border-color:var(--accent);background:var(--soft)}
+.card-note{opacity:.72}
+.card h4{margin:0 0 4px;font-size:1rem;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.card .meta{margin:0 0 8px;font-size:.76rem;color:var(--muted);letter-spacing:.02em;max-width:none}
+.card .desc{margin:0 0 8px;font-size:.87rem;line-height:1.5;max-width:none}
+.card .src{margin:0;font-size:.79rem;color:var(--muted);max-width:none}
+.none{font-style:italic}
+footer{margin-top:72px;padding-top:22px;border-top:1px solid var(--line);
+ color:var(--muted);font-size:.86rem}
+ul.plain{padding-left:1.1em} ul.plain li{margin-bottom:.5em;max-width:70ch}
+blockquote{margin:8px 0 8px;padding:0 0 0 12px;border-left:2px solid var(--accent);
+ font-family:ui-serif,Georgia,serif;font-style:italic;font-size:.9rem;line-height:1.5;color:var(--ink)}
+.hero-link{display:inline-block;margin-top:16px;font-family:ui-sans-serif,system-ui,sans-serif;
+ font-size:.9rem;font-weight:600;background:var(--accent);color:var(--bg);
+ padding:9px 16px;border-radius:99px;text-decoration:none}
+.hero-link:hover{opacity:.88}
+.count{font-variant-numeric:tabular-nums}
+.colophon{margin-top:12px;font-size:.82rem;line-height:1.6}
+.stats{margin:14px 0 0;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:.88rem;color:var(--muted);max-width:none;line-height:1.7}
+.stats strong{color:var(--ink);font-variant-numeric:tabular-nums}
+.statnote{margin:6px 0 0;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:.78rem;color:var(--muted);max-width:62ch;line-height:1.6;opacity:.85}
+
+/* --- pages annexes : countries.html et languages.html --- */
+.pagenav{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:.85rem;
+ display:flex;gap:18px;align-items:center;margin:0 0 30px;flex-wrap:wrap}
+.pagenav a{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px}
+.pagenav a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.pagenav .here{color:var(--ink);font-weight:600;border-bottom:2px solid var(--accent);padding-bottom:1px}
+
+.mapfig{margin:26px 0 8px;padding:0}
+.worldmap{display:block;width:100%;height:auto;background:transparent}
+.worldmap .mc{stroke:var(--bg);stroke-width:1.2;vector-effect:non-scaling-stroke}
+.worldmap a{cursor:pointer}
+.worldmap a:hover path{stroke:var(--ink);stroke-width:2.2}
+:root{--l0:#e8e4e0;--l1:#ead9f5;--l2:#cfaee4;--l3:#ac7ed0;--l4:#8750b4;--l5:#5d2589}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --l0:#2b2733;--l1:#3d2f52;--l2:#553f74;--l3:#71539a;--l4:#9068bd;--l5:#c299e8}}
+.worldmap .l0{fill:var(--l0)}.worldmap .l1{fill:var(--l1)}
+.worldmap .l2{fill:var(--l2)}.worldmap .l3{fill:var(--l3)}
+.worldmap .l4{fill:var(--l4)}.worldmap .l5{fill:var(--l5)}
+
+figcaption{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+ font-size:.8rem;color:var(--muted)}
+figcaption p{margin:6px 0 0;max-width:none}
+.legend{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.key{display:inline-flex;align-items:center;gap:5px}
+.key i{width:15px;height:15px;border-radius:3px;display:inline-block;
+ border:1px solid var(--line)}
+.key i.l0{background:var(--l0)}.key i.l1{background:var(--l1)}
+.key i.l2{background:var(--l2)}.key i.l3{background:var(--l3)}
+.key i.l4{background:var(--l4)}.key i.l5{background:var(--l5)}
+
+.bars{display:flex;flex-direction:column;gap:3px}
+.bar{display:grid;grid-template-columns:9.5em 1fr 2.2em;align-items:center;gap:10px;
+ font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:.85rem;
+ text-decoration:none;color:var(--ink);padding:3px 4px;border-radius:5px}
+.bar:hover{background:var(--soft)}
+.bl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt{background:var(--l1);border-radius:3px;height:15px;overflow:hidden}
+.bf{display:block;height:100%;background:var(--accent);border-radius:3px}
+.bn{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+
+h3.cont{font-size:1.15rem;margin:44px 0 6px;color:var(--accent);
+ font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+ border-bottom:1px solid var(--line);padding-bottom:6px}
+.atlas-group{scroll-margin-top:18px;margin:0 0 18px}
+h4.ctry{font-size:1rem;margin:18px 0 6px;
+ font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.cnt{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+ font-size:.75rem;color:var(--muted);font-weight:400;font-variant-numeric:tabular-nums}
+.atlas-artist{margin:0 0 10px 0;padding-left:14px;border-left:2px solid var(--line)}
+.atlas-artist h4{margin:0 0 2px;font-size:.95rem;
+ font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-weight:600}
+.atlas-artist h4 a{text-decoration:none}
+.atlas-artist h4 a:hover{text-decoration:underline}
+ul.atlas-tracks{list-style:none;margin:0;padding:0;font-size:.88rem}
+ul.atlas-tracks li{margin:0 0 1px}
+ul.atlas-tracks .cr{color:var(--muted);font-size:.8rem}
+@media (max-width:560px){.bar{grid-template-columns:7em 1fr 2em;font-size:.8rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="pagenav"><a href="index.html">Sources</a><a href="countries.html">By country</a><a href="languages.html">By language</a><a href="years.html">By year</a><span class="here">Removals</span></nav>
+
+<header>
+<h1>Taking an entry down, or changing it</h1>
+<p class="sub">What happens when an entry needs to change, and why none of it runs through a public issue thread.</p>
+</header>
+
+<div class="note">
+<p><strong>If this is your entry, or you are writing for the artist:</strong> use the <a href="https://tally.so/r/2EWdyg" target="_blank" rel="noopener">private form</a>. You do not have to say why, and you will not be asked for any personal identification. Say which entry, and what you want: the whole entry gone, or only something changed. It does not have to be all or nothing, and where a wrong word is the problem, changing the word is the better repair. What helps most is anything that ties the request to the artist, such as the contact address on her own page, the account she posts from, her label, or someone in the band. With that, the entry comes off as soon as I have read it.</p>
+<p><strong>Please do not open a public issue for this.</strong> Issue threads on the repository are public, and stay public and searchable afterwards. Asking someone to announce there that she is going stealth would undo the very thing she is asking for.</p>
+<p><strong>If you cannot point to anything like that, or you are writing about someone else:</strong> write anyway. Nothing is dismissed unread, and what you tell me is what I have to weigh with. <strong>The entry comes down first, and stays down</strong> while I try to reach the artist through a channel of her own, because if the request is real then waiting is the thing that costs. It goes back if that attempt turns up nothing: either it becomes clear she never asked, or — the case that actually comes up for someone well known — her own channels simply do not answer within a reasonable time, which on its own is a fair sign the request was never hers to make. What I will not do is decide, blind and for good, on a message I cannot tie to her: a removal obtained by a rival, by an ex, or by anyone with a grudge would be invisible to the artist herself, who would most likely never learn she had been taken off and so could never ask to come back. Of the two mistakes available to me, that is the one that does not correct itself.</p>
+<p>One thing needs no checking at all: a public statement by the artist herself that she no longer wants to be described this way. That is her word, and it settles it.</p>
+<p>Removals are complete. The entry, the quotation and the track all go, nothing is left behind saying that someone used to be here, and the repository’s history is replaced rather than left holding a copy. What other sites have already published, and what search engines have already copied, is not mine to take back, but this page will not be the thing that keeps it current.</p>
+</div>
+
+<footer>
+<p>Companion page to the Spotify playlist <a href="https://open.spotify.com/playlist/4rK80rB8ycyAUdIKX6FOIk" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Back to <a href="index.html">the sources page</a>.</p>
+<p class="colophon">Found an error, a better source, or an artist who should be here? <a href="https://github.com/clairevdd/transfem-chants/issues" target="_blank" rel="noopener">Open an issue</a> instead — that thread is public, which is fine for a date or a citation.</p>
+</footer>
+
+</div>
+</body>
+</html>

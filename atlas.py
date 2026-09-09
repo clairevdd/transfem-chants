@@ -133,6 +133,7 @@ def _nav(here):
             + link("countries.html", "By country")
             + link("languages.html", "By language")
             + link("years.html", "By year")
+            + link("takedown.html", "Removals")
             + '</nav>')
 
 
@@ -250,7 +251,7 @@ def countries_page(css, esc, slug, artists_of, aliases, same_person, badge,
 <footer>
 <p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
 <p class="colophon">Country boundaries derived from the public-domain world map shipped with pygal_maps_world, simplified for weight. Borders shown are those of that dataset and are not a position on any of them.</p>
-<p class="colophon">To have an entry taken down, or to raise anything about a person’s identity, use the <a href="index.html#takedown">private channel</a> rather than a public issue thread.</p>
+<p class="colophon">To have an entry taken down, or to raise anything about a person’s identity, use the <a href="takedown.html">private channel</a> rather than a public issue thread.</p>
 </footer>
 """
     return _shell("Transfem chants — by country",
@@ -313,10 +314,43 @@ def languages_page(css, esc, slug, artists_of, aliases, same_person, badge,
 
 <footer>
 <p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
-<p class="colophon">A missing language is a missing source, not a missing artist. If you know of one, <a href="{issues}" target="_blank" rel="noopener">open an issue</a>. To have an entry taken down, or to raise anything about a person’s identity, use the <a href="index.html#takedown">private channel</a> instead: issue threads are public.</p>
+<p class="colophon">A missing language is a missing source, not a missing artist. If you know of one, <a href="{issues}" target="_blank" rel="noopener">open an issue</a>. To have an entry taken down, or to raise anything about a person’s identity, use the <a href="takedown.html">private channel</a> instead: issue threads are public.</p>
 </footer>
 """
     return _shell("Transfem chants — by language",
                   "The Transfem chants playlist broken down by the languages its "
                   "artists record in, and why the distribution is so uneven.",
                   css, body, _nav("languages.html"))
+
+
+def takedown_page(css, playlist, issues, contact):
+    """La politique de retrait et de correction, sur sa propre page.
+
+    Vivait auparavant comme un bloc inline dans index.html ; déplacée sur sa
+    propre page à la demande de Claire le 9 septembre 2026, la place prise sur
+    la page des sources étant devenue trop grande.
+    """
+    body = f"""
+<header>
+<h1>Taking an entry down, or changing it</h1>
+<p class="sub">What happens when an entry needs to change, and why none of it runs through a public issue thread.</p>
+</header>
+
+<div class="note">
+<p><strong>If this is your entry, or you are writing for the artist:</strong> use the <a href="{contact}" target="_blank" rel="noopener">private form</a>. You do not have to say why, and you will not be asked for any personal identification. Say which entry, and what you want: the whole entry gone, or only something changed. It does not have to be all or nothing, and where a wrong word is the problem, changing the word is the better repair. What helps most is anything that ties the request to the artist, such as the contact address on her own page, the account she posts from, her label, or someone in the band. With that, the entry comes off as soon as I have read it.</p>
+<p><strong>Please do not open a public issue for this.</strong> Issue threads on the repository are public, and stay public and searchable afterwards. Asking someone to announce there that she is going stealth would undo the very thing she is asking for.</p>
+<p><strong>If you cannot point to anything like that, or you are writing about someone else:</strong> write anyway. Nothing is dismissed unread, and what you tell me is what I have to weigh with. <strong>The entry comes down first, and stays down</strong> while I try to reach the artist through a channel of her own, because if the request is real then waiting is the thing that costs. It goes back if that attempt turns up nothing: either it becomes clear she never asked, or — the case that actually comes up for someone well known — her own channels simply do not answer within a reasonable time, which on its own is a fair sign the request was never hers to make. What I will not do is decide, blind and for good, on a message I cannot tie to her: a removal obtained by a rival, by an ex, or by anyone with a grudge would be invisible to the artist herself, who would most likely never learn she had been taken off and so could never ask to come back. Of the two mistakes available to me, that is the one that does not correct itself.</p>
+<p>One thing needs no checking at all: a public statement by the artist herself that she no longer wants to be described this way. That is her word, and it settles it.</p>
+<p>Removals are complete. The entry, the quotation and the track all go, nothing is left behind saying that someone used to be here, and the repository’s history is replaced rather than left holding a copy. What other sites have already published, and what search engines have already copied, is not mine to take back, but this page will not be the thing that keeps it current.</p>
+</div>
+
+<footer>
+<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Back to <a href="index.html">the sources page</a>.</p>
+<p class="colophon">Found an error, a better source, or an artist who should be here? <a href="{issues}" target="_blank" rel="noopener">Open an issue</a> instead — that thread is public, which is fine for a date or a citation.</p>
+</footer>
+"""
+    return _shell("Transfem chants — taking an entry down",
+                  "How to have an entry removed or changed on the Transfem "
+                  "chants sources pages, and why it does not run through a "
+                  "public issue thread.",
+                  css, body, _nav("takedown.html"))
