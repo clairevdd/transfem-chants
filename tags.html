@@ -380,14 +380,27 @@ coverage, not a gap in the music.</p>
       activeEl.appendChild(b);
     });
 
-    // Candidate pool: static (global counts) at baseline or in union mode;
-    // dynamic (recomputed on the current intersection) once a first tag is
-    // picked in intersection mode.
+    // Candidate pool, three cases:
+    //  - baseline (nothing selected, either mode): static global counts.
+    //  - intersection, once selected: dynamic count over the current
+    //    (already narrowed) matched set.
+    //  - union, once selected: marginal count — for each candidate tag,
+    //    how many tracks NOT already in the current union it would newly
+    //    add, not its raw global total. A tag whose marginal count is 0
+    //    (every track it touches is already in the union) never enters
+    //    the pool, exactly like a 0-count tag in intersection mode.
     var pool = new Map();
-    var staticPool = (m === 'union' || selected.length === 0);
-    if (staticPool) {
+    var baseline = (selected.length === 0);
+    if (baseline) {
       globalCounts.forEach(function (n, t) {
         if (selected.indexOf(t) === -1) pool.set(t, n);
+      });
+    } else if (m === 'union') {
+      items.forEach(function (it) {
+        if (matchedSet.has(it)) return;
+        it.tags.forEach(function (t) {
+          if (selected.indexOf(t) === -1) pool.set(t, (pool.get(t) || 0) + 1);
+        });
       });
     } else {
       matched.forEach(function (it) {
@@ -397,7 +410,7 @@ coverage, not a gap in the music.</p>
       });
     }
 
-    var split = splitDominant(pool, staticPool);
+    var split = splitDominant(pool, baseline);
     var counts = split.dominant.map(function (t) { return pool.get(t); });
     var lo = counts.length ? Math.min.apply(null, counts) : 0;
     var hi = counts.length ? Math.max.apply(null, counts) : 0;

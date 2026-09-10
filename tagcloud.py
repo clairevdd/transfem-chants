@@ -22,15 +22,23 @@ Deux modes de combinaison, choisis par Claire le 10 septembre 2026 :
   aucun tag choisi, la liste est vide : l'union de rien est rien. Choisir un
   tag l'agrandit toujours, jamais l'inverse.
 
-En mode intersection seulement, un mécanisme de resserrement dynamique :
-chaque tag encore cliquable affiche, non plus son volume sur toute la
-playlist, mais son volume **parmi les morceaux qui satisfont déjà la
-sélection en cours** ; un tag qui tomberait à zéro dans ces conditions
-disparaît plutôt que de rester affiché à zéro, et un tag qui n'était pas
-assez fréquent pour figurer dans le nuage peut y entrer si son volume relatif,
-recalculé, l'y qualifie désormais. Rien de tel en mode union, où le nuage
-reste construit sur les volumes globaux : la mécanique demandée par Claire
-n'a de sens que pour un resserrement, pas pour un cumul.
+Dans les deux modes, une fois un premier tag choisi, le nuage cesse de
+refléter les volumes globaux et se recalcule sur la sélection en cours :
+
+- **intersection** : chaque tag encore cliquable affiche son volume
+  **parmi les morceaux qui satisfont déjà la sélection en cours** (un
+  resserrement) ;
+- **union**, arbitrage de Claire du 10 septembre 2026 en complément du
+  premier jet : chaque tag encore cliquable affiche non pas son volume
+  global, mais le nombre de morceaux **supplémentaires** qu'il ajouterait
+  à l'union déjà affichée, c'est-à-dire les morceaux qu'il porte et qui
+  n'y figurent pas encore (un cumul marginal).
+
+Dans les deux cas, un tag dont le compteur ainsi recalculé tombe à zéro
+disparaît plutôt que de rester affiché à zéro (en union, cela veut dire que
+tous les morceaux qu'il porte sont déjà dans l'union courante), et un tag
+qui n'était pas assez fréquent pour figurer dans le nuage peut y entrer si
+son volume relatif, recalculé, l'y qualifie désormais.
 
 Deux zones de tags : un nuage pour les tags dominants (jusqu'à 30), classés
 par ordre alphabétique mais dont la taille suit le volume, plutôt qu'une
@@ -43,13 +51,13 @@ d'emblée pour un usage qui reste occasionnel.
 `unclassified`, le tag synthétique des morceaux sans source, reste toujours
 présent dans le nuage tant que son compteur n'est pas nul, quel que soit son
 rang : c'est l'absence de source elle-même qui est l'information, et elle ne
-doit pas pouvoir se retrouver reléguée dans la liste repliée simply parce
+doit pas pouvoir se retrouver reléguée dans la liste repliée simplement parce
 qu'une future augmentation de la playlist l'y ferait descendre. Cette
-garantie ne vaut que pour le nuage de départ (aucun tag choisi, ou mode
-union) : une fois un premier tag choisi en mode intersection, `unclassified`
-suit la même règle que n'importe quel autre tag et disparaît si son compteur
-recalculé tombe à zéro, ce qui est presque toujours le cas puisqu'un morceau
-`unclassified` ne porte par définition aucun autre tag.
+garantie ne vaut que pour le nuage de départ, aucun tag choisi, quel que soit
+le mode : dès qu'un premier tag est choisi, intersection comme union,
+`unclassified` suit la même règle que n'importe quel autre tag et disparaît
+si son compteur recalculé tombe à zéro, ce qui est presque toujours le cas
+puisqu'un morceau `unclassified` ne porte par définition aucun autre tag.
 
 Chaque tag affiché sous un morceau porte sa source : une ligne par source
 parmi Discogs, MusicBrainz et Last.fm qui en a fourni au moins un pour ce
@@ -302,14 +310,27 @@ SCRIPT = """
       activeEl.appendChild(b);
     });
 
-    // Candidate pool: static (global counts) at baseline or in union mode;
-    // dynamic (recomputed on the current intersection) once a first tag is
-    // picked in intersection mode.
+    // Candidate pool, three cases:
+    //  - baseline (nothing selected, either mode): static global counts.
+    //  - intersection, once selected: dynamic count over the current
+    //    (already narrowed) matched set.
+    //  - union, once selected: marginal count — for each candidate tag,
+    //    how many tracks NOT already in the current union it would newly
+    //    add, not its raw global total. A tag whose marginal count is 0
+    //    (every track it touches is already in the union) never enters
+    //    the pool, exactly like a 0-count tag in intersection mode.
     var pool = new Map();
-    var staticPool = (m === 'union' || selected.length === 0);
-    if (staticPool) {
+    var baseline = (selected.length === 0);
+    if (baseline) {
       globalCounts.forEach(function (n, t) {
         if (selected.indexOf(t) === -1) pool.set(t, n);
+      });
+    } else if (m === 'union') {
+      items.forEach(function (it) {
+        if (matchedSet.has(it)) return;
+        it.tags.forEach(function (t) {
+          if (selected.indexOf(t) === -1) pool.set(t, (pool.get(t) || 0) + 1);
+        });
       });
     } else {
       matched.forEach(function (it) {
@@ -319,7 +340,7 @@ SCRIPT = """
       });
     }
 
-    var split = splitDominant(pool, staticPool);
+    var split = splitDominant(pool, baseline);
     var counts = split.dominant.map(function (t) { return pool.get(t); });
     var lo = counts.length ? Math.min.apply(null, counts) : 0;
     var hi = counts.length ? Math.max.apply(null, counts) : 0;
