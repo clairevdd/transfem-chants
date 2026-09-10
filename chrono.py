@@ -90,7 +90,7 @@ def _parts(v):
 def _rows():
     """Une entrée par morceau, dans l'ordre de la playlist."""
     out = []
-    for si, sec in enumerate(SECTIONS):
+    for sec in SECTIONS:
         for sid, title, credit in sec["tracks"]:
             v = YEARS[sid]
             py, pf, _ = _parts(v["first_public"])
@@ -98,7 +98,6 @@ def _rows():
             ry = int(str(v["first_record"])[:4]) if v["first_record"] else None
             out.append({
                 "id": sid, "title": title, "credit": credit,
-                "section": sec["title"], "sec": si,
                 "y": py, "f": pf, "prec": v["precision"] or "year",
                 "kind": v["kind"], "status": v["status"],
                 "pub": str(v["first_public"]), "spot": v["spotify"],
@@ -305,7 +304,7 @@ def _table(rows, esc, badge):
             f'<span class="cr">{esc(r["credit"])}</span></summary>'
             f'<div class="fiche">'
             f'<p class="meta">First publication held: <strong>{esc(r["pub"])}</strong>'
-            f' · known to the {esc(r["prec"] or "year")} · {esc(r["section"])}</p>'
+            f' · known to the {esc(r["prec"] or "year")}</p>'
             + (f'<p class="chips">{"".join(chips)}</p>' if chips else "")
             + (f'<p class="desc">{esc(r["note"])}</p>' if r["note"] else "")
             + f'<p class="src">{src} · checked {esc(r["checked"])} · '

@@ -21,6 +21,7 @@ import chrono
 from data import ART
 from tracks import SECTIONS, all_tracks
 from years import YEARS
+from lyrics import LYRICS, SEARCH
 
 PLAYLIST = "https://open.spotify.com/playlist/4rK80rB8ycyAUdIKX6FOIk"
 ISSUES = "https://github.com/clairevdd/transfem-chants/issues"
@@ -116,6 +117,12 @@ def check():
     orphelins = sorted(set(YEARS) - ids)
     if orphelins:
         raise SystemExit(f"build.py : years.py garde des morceaux retirés de la playlist : {orphelins}")
+    manquants_lyrics = sorted(ids - set(LYRICS))
+    if manquants_lyrics:
+        raise SystemExit(f"build.py : morceaux absents de lyrics.py : {manquants_lyrics}")
+    orphelins_lyrics = sorted(set(LYRICS) - ids)
+    if orphelins_lyrics:
+        raise SystemExit(f"build.py : lyrics.py garde des morceaux retirés de la playlist : {orphelins_lyrics}")
     for sid, v in YEARS.items():
         if v["status"] == "verified" and not (v["url"] and v["checked"] and v["first_public"]):
             raise SystemExit(f"build.py : {sid} est verified sans source, date ou contrôle datés")
@@ -203,10 +210,21 @@ def tracklist():
             yv = YEARS[sid]
             yr = str(yv["first_public"])[:4] if yv["first_public"] else "—"
             ttl = "first published " + str(yv["first_public"]) if yv["first_public"] else "date not established"
+            # Lien externe vers les paroles. Un lien de type "recherche" (aucune
+            # fiche précise confirmée) le dit dans son titre plutôt que de se
+            # faire passer pour une fiche trouvée.
+            lyr_url = LYRICS.get(sid)
+            if lyr_url:
+                lyr_ttl = "search results, no exact page confirmed" if sid in SEARCH else "lyrics"
+                lyr_cell = (f'<a href="{esc(lyr_url)}" target="_blank" rel="noopener" '
+                           f'title="{esc(lyr_ttl)}">lyrics{"&nbsp;?" if sid in SEARCH else ""}</a>')
+            else:
+                lyr_cell = ""
             out.append(f'<tr><td class="n">{n}</td>'
                        f'<td class="ti"><a href="{esc(url)}" target="_blank" rel="noopener">{esc(title)}</a></td>'
                        f'<td class="cr">{" · ".join(links)}</td>'
-                       f'<td class="yr"><a href="years.html" title="{esc(ttl)}">{yr}</a></td></tr>')
+                       f'<td class="yr"><a href="years.html" title="{esc(ttl)}">{yr}</a></td>'
+                       f'<td class="ly">{lyr_cell}</td></tr>')
         out.append('</tbody></table></div>')
     return "\n".join(out)
 
@@ -261,7 +279,7 @@ def page():
 </header>
 
 <h2>The tracks</h2>
-<p>In playlist order. Each title links to Spotify; each artist name links to their entry below.</p>
+<p>In playlist order. Each title links to Spotify; each artist name links to their entry below; the year links to <a href="years.html">when the song first existed</a>; and, where one was found, <em>lyrics</em> links to an external page. A question mark after that link means no exact page could be confirmed, and it points to a search instead.</p>
 
 {tracklist()}
 
