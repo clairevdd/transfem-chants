@@ -4,12 +4,12 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 
 ## Où on en est
 
-- **145 morceaux**
-- **89 artistes présentées comme transféminines**, plus **2 cas ouverts**
+- **147 morceaux**
+- **90 artistes présentées comme transféminines**, plus **2 cas ouverts**
 - **34 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Pakistan, Peru, Philippines, Portugal, Puerto Rico, Serbia, South Africa, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
 - **21 langues** : Arabic, Darija, English, French, German, Hebrew, Indonesian, isiZulu, Italian, Japanese, Korean, Malay, Portuguese, Spanish, Swedish, Thai, Turkish, Twi, Urdu, Vietnamese, Zapotec
 
-Généré le 2026-09-03
+Généré le 2026-09-10
 
 ## Artistes principales
 
@@ -75,7 +75,7 @@ Généré le 2026-09-03
 | **Cae Monāe** | `verified` | United States | English | 1 | [Dazed](https://www.dazeddigital.com/beauty/article/46791/1/cae-monae-chicago-make-up-musician-artist-performer-interview) |
 | **G.L.O.S.S.** | `partial` | United States | English | 1 | [Wikipedia](https://en.wikipedia.org/wiki/G.L.O.S.S.) |
 | **Tingtongketz** | `verified` | Malaysia | Malay, English | 1 | [Malay Mail](https://www.malaymail.com/news/malaysia/2019/03/29/transgender-guitarist-strikes-a-different-note-in-conservative-malaysia/1737637) |
-| **Beth Elliott** | `verified` | United States | English | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Beth_Elliott) |
+| **Beth Elliott** | `verified` | United States | English | 2 | [Wikipedia](https://en.wikipedia.org/wiki/Beth_Elliott) |
 | **Namoli Brennet** | `verified` | United States | English | 1 | [Her own biography](https://namolibrennet.com/bio) |
 | **Vivek Shraya** | `verified` | Canada | English | 2 | [Wikipedia](https://en.wikipedia.org/wiki/Vivek_Shraya) |
 | **Veronica Klaus** | `verified` | United States | English | 1 | [SFGate](https://www.sfgate.com/performance/article/Veronica-Klaus-is-brassy-and-confident-onstage-2501415.php) |
@@ -92,7 +92,7 @@ Généré le 2026-09-03
 | **SuperKnova** | `verified` | United States | English | 1 | [Qwear](https://www.qwearfashion.com/home/superknova-on-embracing-herself-as-a-queer-trans-asian-musician) |
 | **Jinkx Monsoon** | `verified` | United States | English | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Jinkx_Monsoon) |
 | **Aderet** | `verified` | Israel | Hebrew, English | 1 | [The Heroines of My Life](https://theheroines.blogspot.com/2014/05/interview-with-aderet.html) |
-| **Sonja Sajzor** | `partial` | Serbia | English | 1 | [Викицитат (sr)](https://sr.wikiquote.org/wiki/%D0%A1%D0%BE%D1%9A%D0%B0_%D0%A1%D0%B0%D1%98%D0%B7%D0%BE%D1%80) |
+| **Sonja Sajzor** | `partial` | Serbia | English | 1 | [Википицат (sr)](https://sr.wikiquote.org/wiki/%D0%A1%D0%BE%D1%9A%D0%B0_%D0%A1%D0%B0%D1%98%D0%B7%D0%BE%D1%80) |
 | **Tone Sekelius** | `verified` | Sweden | Swedish, English | 2 | [QX](https://www.qx.se/livsstil/210409/tone-i-stor-intervju-om-dejting-frysta-spermier-och-att-ens-existens-blir-en-politisk-fraga/) |
 | **Zemmoa** | `verified` | Mexico | Spanish | 1 | [Malvestida](https://malvestida.com/2020/12/zemmoa-entrevista-ligues-en-bumble/) |
 | **Irmãs de Pau** | `verified` | Brazil | Portuguese | 2 | [Revista O Grito!](https://revistaogrito.com/irmas-de-pau-entrevista-coquetel-molotov-2023/) |
@@ -110,6 +110,7 @@ Généré le 2026-09-03
 | **Shyraa Roy** | `verified` | Pakistan | Urdu | 1 | [Parhlo](https://www.parhlo.com/transgender-singer-shyraa-roy/) |
 | **Cindy Thái Tài** | `verified` | Vietnam | Vietnamese | 1 | [VnExpress](https://vnexpress.net/cindy-thai-tai-toi-doi-gioi-tinh-chu-khong-dong-tinh-1892073.html) |
 | **THÉA** | `verified` | France | French | 4 | [La Sas](https://www.lasasconcerts.com/agenda-des-concerts/thea-2/) |
+| **TAMAGOTCHI MASSACRE** | `verified` | United States | English | 1 | [The Idle Class](http://idleclassmag.com/qa-laughing-crying-tamagotchi-massacre/) |
 
 ## Crédits invités
 
@@ -194,7 +195,7 @@ Reproduites mot pour mot.
 - **SuperKnova** — « I already was living a life so outside of people’s “normal”. » (Qwear)
 - **Jinkx Monsoon** — « I’ve never identified as fully male. I’ve always identified as more gender fluid or gender ambiguous. » (Wikipedia)
 - **Aderet** — « I don’t see myself as a spokesperson for the transgender community in Israel, but I’ve had a positive experience overall. I’ve lived in Israel as a woman, and I’m mostly seen as just a singer who performs in English, without much attention to my past. » (The Heroines of My Life)
-- **Sonja Sajzor** — « Транс жена која жели да уђе у медицинску транзицију није „жена заробљена у телу мушкарца”. Ми јесмо наша тела. » (Викицитат (sr))
+- **Sonja Sajzor** — « Транс жена која жели да уђе у медицинску транзицију није „жена заробљена у телу мушкарца“. Ми јесмо наша тела. » (Википицат (sr))
 - **Tone Sekelius** — « Jag kände mig ju inte gay, jag var trans. — I didn’t feel gay, I was trans. » (QX)
 - **Zemmoa** — « Como mujer trans yo pensaba que no tenía esos espacios tan libres de encuentro. — As a trans woman I thought I didn’t have those free spaces to meet people. » (Malvestida)
 - **Irmãs de Pau** — « Quando a gente chega, as pessoas já sabem que são duas travestis. E são duas travestis que amam seus corpos. — When we arrive, people already know these are two travestis. And two travestis who love their bodies. » (Revista O Grito!)
@@ -210,3 +211,4 @@ Reproduites mot pour mot.
 - **Shyraa Roy** — « It is true that I am a transgender woman. I am a girl who has changed her gender from a man to a woman. » (Parhlo)
 - **Cindy Thái Tài** — « Tôi từng là đàn ông và bây giờ là một phụ nữ trong cả thể xác lẫn tâm hồn. — I was once a man and now I am a woman, in body as in soul. » (VnExpress)
 - **THÉA** — « Je suis une fille trans qui s’habille parfois de manière un peu masculine. Une fille qui a les cheveux roses, un piercing et qui a une grosse voix. — I am a trans girl who sometimes dresses a bit masculine. A girl with pink hair, a piercing and a big voice. » (La Sas)
+- **TAMAGOTCHI MASSACRE** — « All through high school, the world knew me as a dude. At the beginning of quarantine, I started to realize, “Hm, something’s funky. I don’t feel that great.” » (The Idle Class)
