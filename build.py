@@ -17,11 +17,13 @@ import re
 
 import atlas
 import chrono
+import tagcloud
 
 from data import ART
 from tracks import SECTIONS, all_tracks
 from years import YEARS
 from lyrics import LYRICS, SEARCH
+from tags import TAGS
 
 PLAYLIST = "https://open.spotify.com/playlist/4rK80rB8ycyAUdIKX6FOIk"
 ISSUES = "https://github.com/clairevdd/transfem-chants/issues"
@@ -123,6 +125,12 @@ def check():
     orphelins_lyrics = sorted(set(LYRICS) - ids)
     if orphelins_lyrics:
         raise SystemExit(f"build.py : lyrics.py garde des morceaux retirés de la playlist : {orphelins_lyrics}")
+    manquants_tags = sorted(ids - set(TAGS))
+    if manquants_tags:
+        raise SystemExit(f"build.py : morceaux absents de tags.py : {manquants_tags}")
+    orphelins_tags = sorted(set(TAGS) - ids)
+    if orphelins_tags:
+        raise SystemExit(f"build.py : tags.py garde des morceaux retirés de la playlist : {orphelins_tags}")
     for sid, v in YEARS.items():
         if v["status"] == "verified" and not (v["url"] and v["checked"] and v["first_public"]):
             raise SystemExit(f"build.py : {sid} est verified sans source, date ou contrôle datés")
@@ -337,12 +345,13 @@ def page():
 <p>She is kept on the playlist, with the tension left visible rather than resolved in her place. A page built on the principle of taking artists at their own word cannot then quietly overwrite one of them.</p>
 </div>
 
-<h2>Three other ways in</h2>
-<p>The same artists and the same tracks, cut differently. All three pages are built from the entries above, so nothing on them is claimed that is not sourced here.</p>
+<h2>Four other ways in</h2>
+<p>The same artists and the same tracks, cut differently. All four pages are built from the entries above, so nothing on them is claimed that is not sourced here.</p>
 <ul class="plain">
 <li><strong><a href="countries.html">By country</a></strong> — a world map shaded by how many artists each country contributes, and the list behind it. The empty parts of that map are the argument.</li>
 <li><strong><a href="languages.html">By language</a></strong> — which languages these artists record in, and how lopsided the distribution is.</li>
 <li><strong><a href="years.html">By year</a></strong> — when each song first existed, on a single timeline, and how far streaming metadata moves some of them from that date.</li>
+<li><strong><a href="tags.html">By tags</a></strong> — genre, style and scene tags pulled from Discogs, MusicBrainz and Last.fm, filterable by combination. The only page here that uses a script.</li>
 </ul>
 
 <h2>What this list does not show</h2>
@@ -376,7 +385,8 @@ if __name__ == "__main__":
             PLAYLIST, ISSUES)
     for name, fn in (("countries.html", atlas.countries_page),
                      ("languages.html", atlas.languages_page),
-                     ("years.html", chrono.years_page)):
+                     ("years.html", chrono.years_page),
+                     ("tags.html", tagcloud.tags_page)):
         text = fn(*args)
         _no_email(name, text)
         open(name, "w", encoding="utf-8").write(text)
