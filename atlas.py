@@ -134,6 +134,7 @@ def _nav(here):
             + link("languages.html", "By language")
             + link("years.html", "By year")
             + link("tags.html", "By tags")
+            + link("sonic.html", "By sonic profile")
             + link("takedown.html", "Removals")
             + '</nav>')
 

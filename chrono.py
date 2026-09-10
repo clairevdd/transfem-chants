@@ -386,6 +386,7 @@ def years_page(css, esc, slug, artists_of, aliases, same_person, badge,
            '<a href="languages.html">By language</a>'
            '<span class="here">By year</span>'
            '<a href="tags.html">By tags</a>'
+           '<a href="sonic.html">By sonic profile</a>'
            '<a href="takedown.html">Removals</a>'
            '</nav>')
 
