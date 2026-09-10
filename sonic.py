@@ -1141,12 +1141,12 @@ def sonic_page(css, esc, slug, artists_of, aliases, same_person, badge,
     body = f"""
 <header>
 <h1>By sonic profile</h1>
-<p class="sub">The {n_tracks} songs on this playlist, positioned by how they
-sound rather than how they are labelled, from audio features licensed from
-Tunebat and reduced to three dimensions and six groups. No individual
-track's raw feature values are published here or anywhere in this
-repository: Tunebat's terms do not allow it. See the note at the bottom of
-this page for exactly what is shown instead, and why.</p>
+<p class="sub">{n_tracks} songs from this playlist were analysed, positioned
+by how they sound rather than how they are labelled, from audio features
+licensed from Tunebat and reduced to three dimensions and six groups. No
+individual track's raw feature values are published here or anywhere in
+this repository: Tunebat's terms do not allow it. See the note at the
+bottom of this page for exactly what is shown instead, and why.</p>
 </header>
 
 <h2>The nine measurements</h2>
@@ -1224,11 +1224,15 @@ family groupings, held together by production choices, tempo or vocal
 delivery rather than by scene or lineage. That mismatch is itself worth
 seeing, which is the reason this page exists alongside the others rather
 than restating them.</p>
-<p>Adding songs to the playlist changes the average and spread of every
-feature, which can shift the three-axis position and even the group of
-songs already here, not only the new ones. Recomputing this page after an
-addition is therefore a full recalculation over every track with usable
-Tunebat data, not an append.</p>
+<p>The playlist keeps growing after this page's analysis is done, so the
+count above can trail the playlist's current size: a track can be on the
+playlist for a while before it is added here. That gap is expected, not a
+mistake. It stays open because adding songs changes the average and spread
+of every feature, which can shift the three-axis position and even the
+group of songs already analysed, not only the new ones: bringing this page
+up to date is a full recalculation over every track with usable Tunebat
+data, not an append, so it is done in batches rather than after each single
+addition.</p>
 </div>
 
 <footer>
@@ -1248,7 +1252,7 @@ Tunebat data, not an append.</p>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Transfem chants — by sonic profile</title>
-<meta name="description" content="The {n_tracks} songs on Transfem chants, grouped by sound rather than by label, from Tunebat audio features reduced to three dimensions and six groups.">
+<meta name="description" content="{n_tracks} songs from Transfem chants, analysed and grouped by sound rather than by label, from Tunebat audio features reduced to three dimensions and six groups.">
 <style>{full_css}</style>
 {IMPORTMAP}
 </head>
