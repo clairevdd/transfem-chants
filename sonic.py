@@ -64,6 +64,51 @@ clustering, pas un bug, mais cela veut dire que les données de ce fichier ne
 se mettent pas à jour par simple ajout : il faut relancer le calcul complet
 sur l'ensemble du tableur, puis régénérer `TRACKS` et `CLUSTERS` en entier.
 Procédure détaillée dans `claude/METHODE-SONIC.md`.
+
+## Retours de Claire du 10 septembre 2026, après la première version
+
+Cinq changements sur la première mise en ligne, tous à sa demande :
+
+- **Le risque de réidentification des valeurs Tunebat par les moyennes de
+  groupe n'inquiète pas Claire** : reconstituer statistiquement les 9 valeurs
+  d'un morceau à partir de moyennes de groupe est bien plus coûteux que
+  d'aller simplement les consulter sur Tunebat. Le plancher de 4 morceaux par
+  groupe reste en place par prudence, mais la mise en garde sur ce point est
+  allégée en conséquence.
+- **Couleurs de cluster corrigées.** La palette précédente employait deux
+  bleus Okabe-Ito (`#56B4E9` et `#0072B2`) sur des groupes proches dans
+  l'espace ACP, illisibles l'un contre l'autre. La nouvelle palette
+  n'emploie plus qu'un bleu, et répartit les six teintes en priorisant
+  l'écart entre les paires de groupes les plus proches par distance de
+  centroïde (calculée sur les 146 positions ACP) plutôt qu'un ordre arbitraire.
+- **Nuage 3D : axes rendus visibles**, un trait par composante avec, à
+  chaque extrémité, le pôle correspondant en clair (« loud, energetic » /
+  « hushed, acoustic », etc.), pour s'orienter dans l'espace sans redescendre
+  à la section qui décrit les trois axes.
+- **Survol et clic corrigés.** Le survol testait une intersection 3D exacte
+  contre des sphères minuscules, ce qui les rendait quasiment impossibles à
+  viser : la détection se fait maintenant par distance à l'écran, en pixels,
+  ce qui rend chaque point beaucoup plus facile à atteindre. Le clic sur un
+  point précis renvoie désormais au morceau lui-même (ouvre sa liste si elle
+  est repliée, et le met en évidence) ; le clic sur le volume colorisé, hors
+  d'un point, renvoie à la section du groupe, comme avant.
+- **Page réordonnée.** « The six groups » remonte en tête, les six groupes se
+  suivant immédiatement pour comparer les radar plots d'un coup d'œil ; la
+  liste des morceaux de chaque groupe est repliée par défaut, visible à la
+  demande sous son radar. Le nuage 3D et « The three dimensions » descendent
+  en fin de page : Claire les juge plus difficiles à lire et moins riches en
+  information musicale que le classement en groupes lui-même, en partie parce
+  que le classement se fait sur les 9 dimensions complètes et non sur les 3
+  seuls axes de la vue 3D, ce qui produit des volumes qui se chevauchent
+  visuellement sans rien perdre côté musical.
+- **Définitions des 9 features ajoutées** (`FEATURE_INFO`), avec l'échelle
+  théorique de Tunebat quand elle existe (0 à 100 pour tout sauf le tempo et
+  le volume), affichées en infobulle sur chaque nom de feature et réunies
+  dans une section « The nine measurements ».
+- **Colonne de moyenne playlist ajoutée** (`PLAYLIST_MEANS`) à côté de la
+  moyenne de chaque groupe dans les tableaux de valeurs, pour que l'écart
+  d'un groupe à l'ensemble de la playlist se lise directement plutôt que de
+  se déduire de mémoire.
 """
 import json
 import math
@@ -96,12 +141,78 @@ FEATURES = [
     ("tb_loudness", "Loudness", "Loud", "dB", -18, 2),
 ]
 
+# Moyenne de chaque feature sur l'ensemble des 146 morceaux (pas seulement
+# ceux d'un groupe). Publiable au même titre que les moyennes de groupe : une
+# moyenne sur 146 valeurs ne se ramène à aucune valeur individuelle. Ajoutée
+# le 10 septembre 2026 à la demande de Claire, en colonne de comparaison à
+# côté de la moyenne de chaque groupe dans les tableaux de valeurs.
+PLAYLIST_MEANS = {
+    "tb_bpm": 124.7, "tb_energy": 66.2, "tb_danceability": 58.3,
+    "tb_happiness": 46.7, "tb_acousticness": 22.6,
+    "tb_instrumentalness": 6.7, "tb_liveness": 22.8,
+    "tb_speechiness": 11.3, "tb_loudness": -7.2,
+}
+
+# Définitions des 9 features, en anglais (champ publié) : ce qu'elles
+# mesurent et leur échelle théorique selon Tunebat, quand elle existe.
+# Tunebat reprend le schéma de l'ancienne API "audio features" de Spotify
+# (0-100 pour la plupart des mesures, dB pour le volume, aucune borne fixe
+# pour le tempo) ; les phrases ci-dessous sont une reformulation, pas une
+# citation. Affichées en infobulle sur chaque nom de feature et réunies dans
+# la section "The nine measurements". Ajouté le 10 septembre 2026 à la
+# demande de Claire.
+FEATURE_INFO = {
+    "tb_bpm": (
+        "The track's estimated tempo, in beats per minute. Tunebat reports "
+        "this directly; there is no fixed theoretical scale."
+    ),
+    "tb_energy": (
+        "A measure of intensity and activity, 0 to 100. Energetic tracks "
+        "tend to feel fast, loud and noisy."
+    ),
+    "tb_danceability": (
+        "How suitable a track is for dancing, 0 to 100, from its tempo, "
+        "rhythm stability, beat strength and overall regularity."
+    ),
+    "tb_happiness": (
+        "Tunebat's name for what Spotify's discontinued audio-features API "
+        "called \"valence\": how musically positive a track sounds, 0 to "
+        "100. Higher sounds more cheerful; lower sounds more sombre or tense."
+    ),
+    "tb_acousticness": (
+        "Confidence that a track is acoustic rather than electronically "
+        "produced, 0 to 100."
+    ),
+    "tb_instrumentalness": (
+        "Confidence that a track has no vocals, 0 to 100. Every song on "
+        "this playlist is sung, so scores here reflect long instrumental "
+        "passages rather than a fully instrumental track."
+    ),
+    "tb_liveness": (
+        "Confidence that the recording captures a live performance in "
+        "front of an audience, 0 to 100."
+    ),
+    "tb_speechiness": (
+        "How much a track resembles spoken word rather than sung music, "
+        "0 to 100."
+    ),
+    "tb_loudness": (
+        "The track's overall loudness, averaged across its length, in "
+        "decibels. Tunebat's scale runs roughly from -60 dB (very quiet) up "
+        "to 0 dB, though a very loudly mastered track can go slightly above."
+    ),
+}
+
 # Les 3 axes calculés par ACP : nom bipolaire, part de variance expliquée,
-# et description musicale des coefficients qui dominent chaque pôle.
+# description musicale des coefficients qui dominent chaque pôle, et une
+# étiquette courte par pôle (positif, négatif) affichée aux deux extrémités
+# de chaque axe dans le nuage 3D — ajoutée le 10 septembre 2026 pour que les
+# axes s'y voient, ce qui n'était pas le cas dans la première version.
 AXES = [
     {
         "name": "Loud and energetic ↔ hushed and acoustic",
         "variance": 33.6,
+        "poles": ("loud, energetic", "hushed, acoustic"),
         "blurb": (
             "The single largest source of variation in this playlist. High "
             "values mean loud, energetic, upbeat and danceable; low values "
@@ -113,6 +224,7 @@ AXES = [
     {
         "name": "Sung and danceable ↔ instrumental and fast",
         "variance": 16.2,
+        "poles": ("sung, danceable", "instrumental, fast"),
         "blurb": (
             "One pole is fast-tempo and heavily instrumental; the other is "
             "slower, sung throughout and danceable. It sets tracks built "
@@ -122,6 +234,7 @@ AXES = [
     },
     {
         "name": "Live and spoken ↔ studio-sung",
+        "poles": ("live, spoken", "studio-sung"),
         "variance": 12.2,
         "blurb": (
             "The most narrowly defined of the three: almost entirely "
@@ -230,13 +343,22 @@ CLUSTERS = {
 # Couleurs par cluster : palette Okabe-Ito, choisie pour rester distinguable
 # en daltonisme. Une couleur par groupe, jamais réutilisée ailleurs sur le
 # site.
+#
+# Révision du 10 septembre 2026 : la version précédente employait deux bleus
+# de la palette (#56B4E9 et #0072B2, qui ne diffèrent que par la clarté) sur
+# les groupes 2 et 5, proches l'un de l'autre dans l'espace ACP — illisibles
+# ensemble d'après Claire. Un seul bleu est conservé désormais, et les six
+# teintes sont réparties pour maximiser l'écart de teinte sur les paires de
+# groupes les plus proches par distance de centroïde sur les 146 positions
+# ACP (1-3 : 1,80 ; 3-6 : 1,48 ; 1-2 : 2,14 ; 2-3 : 2,06), ces quatre groupes
+# se tenant nettement plus près les uns des autres que 4 et 5, plus isolés.
 CLUSTER_COLORS = {
-    1: "#E69F00",
-    2: "#56B4E9",
-    3: "#009E73",
-    4: "#D55E00",
-    5: "#0072B2",
-    6: "#CC79A7",
+    1: "#56B4E9",  # bleu ciel
+    2: "#E69F00",  # orange
+    3: "#CC79A7",  # violet rosé
+    4: "#F0E442",  # jaune
+    5: "#D55E00",  # vermillon
+    6: "#009E73",  # vert bleuté
 }
 
 # Position (ACP sur 3 axes) et groupe de chacun des 146 morceaux. Dérivé,
@@ -417,8 +539,12 @@ def _track_line(r, esc, slug):
     cr = " · ".join(
         f'<a class="{"guest" if ART[n][0] == "guest" else "lead"}" '
         f'href="index.html#{slug(n)}">{esc(n)}</a>' for n in names)
-    return (f'<li><a href="{esc(url)}" target="_blank" rel="noopener">'
-            f'{esc(r["title"])}</a> <span class="cr">{cr}</span></li>')
+    # id="track-<spotify id>" : cible d'ancrage pour le clic sur un point du
+    # nuage 3D, qui doit renvoyer au morceau lui-même et pas seulement à la
+    # section de son groupe. Ajouté le 10 septembre 2026 à la demande de
+    # Claire.
+    return (f'<li id="track-{esc(r["id"])}"><a href="{esc(url)}" target="_blank" '
+            f'rel="noopener">{esc(r["title"])}</a> <span class="cr">{cr}</span></li>')
 
 
 def _cluster_results_html(tracks, esc, slug):
@@ -434,6 +560,21 @@ def _cluster_results_html(tracks, esc, slug):
             + "".join(_track_line(r, esc, slug) for r in rows)
             + '</ul></div>')
     return "".join(blocks)
+
+
+def _cluster_tracklist_html(cluster_id, esc, slug, artists_of):
+    """La liste des morceaux d'un groupe, repliée par défaut derrière un
+    <details> natif plutôt qu'un bouton en JavaScript : elle reste ouvrable
+    sans script, comme le reste de cette section, et le clic sur un point du
+    nuage 3D peut l'ouvrir par simple assignation de `.open`. Arbitrage de
+    Claire du 10 septembre 2026 : les listes encombraient la comparaison des
+    six radar plots quand elles restaient dépliées par défaut."""
+    tracks = _cluster_tracks(cluster_id, artists_of)
+    results = _cluster_results_html(tracks, esc, slug)
+    n = len(tracks)
+    return (f'<details class="tracklist" id="tracklist-{cluster_id}">'
+            f'<summary>Show {n} track{"s" if n != 1 else ""}</summary>'
+            f'{results}</details>')
 
 
 def _radar_svg(cluster_id, esc):
@@ -474,8 +615,11 @@ def _radar_svg(cluster_id, esc):
         elif math.cos(angle) < -0.35:
             anchor = "end"
         dy = "0.9em" if math.sin(angle) > 0.35 else ("-0.3em" if math.sin(angle) < -0.35 else "0.35em")
+        # <title> imbriqué : tooltip natif au survol, sans script, avec la
+        # définition complète de la feature. Ajouté le 10 septembre 2026.
         labels.append(f'<text x="{lx:.1f}" y="{ly:.1f}" dy="{dy}" text-anchor="{anchor}" '
-                       f'class="radar-label">{esc(short)}</text>')
+                       f'class="radar-label">{esc(short)}'
+                       f'<title>{esc(label)}: {esc(FEATURE_INFO[key])}</title></text>')
         val = means[key]
         t = 0.0 if hi <= lo else max(0.0, min(1.0, (val - lo) / (hi - lo)))
         poly_pts.append(point(i, t))
@@ -493,21 +637,30 @@ def _radar_svg(cluster_id, esc):
 
 
 def _radar_values_html(cluster_id, esc):
+    """Trois colonnes depuis le 10 septembre 2026 : la feature, sa moyenne
+    dans ce groupe, et sa moyenne sur l'ensemble de la playlist juste à côté
+    — demandé par Claire pour lire l'écart d'un groupe directement, sans
+    devoir se souvenir de la moyenne générale."""
     means = CLUSTERS[cluster_id]["means"]
-    rows = []
+    head = ('<div class="radar-row radar-head"><span class="rk"></span>'
+            '<span class="rv">This group</span><span class="rp">Playlist</span></div>')
+    rows = [head]
     for key, label, short, unit, lo, hi in FEATURES:
         v = means[key]
+        p = PLAYLIST_MEANS[key]
         text = f"{v:g}{unit}" if unit else f"{v:g}"
-        rows.append(f'<div class="radar-row"><span class="rk">{esc(label)}</span>'
-                     f'<span class="rv">{esc(text)}</span></div>')
+        ptext = f"{p:g}{unit}" if unit else f"{p:g}"
+        rows.append(
+            f'<div class="radar-row"><span class="rk" title="{esc(FEATURE_INFO[key])}">'
+            f'{esc(label)}</span><span class="rv">{esc(text)}</span>'
+            f'<span class="rp">{esc(ptext)}</span></div>')
     return '<div class="radar-values">' + "".join(rows) + '</div>'
 
 
 def _cluster_section(cluster_id, esc, slug, artists_of):
     c = CLUSTERS[cluster_id]
     color = CLUSTER_COLORS[cluster_id]
-    tracks = _cluster_tracks(cluster_id, artists_of)
-    results = _cluster_results_html(tracks, esc, slug)
+    tracklist = _cluster_tracklist_html(cluster_id, esc, slug, artists_of)
     return f"""
 <section class="sonic-cluster" id="cluster-{cluster_id}">
 <h3 class="cont"><span class="swatch" style="background:{color}"></span>
@@ -517,7 +670,7 @@ def _cluster_section(cluster_id, esc, slug, artists_of):
 {_radar_svg(cluster_id, esc)}
 {_radar_values_html(cluster_id, esc)}
 </div>
-{results}
+{tracklist}
 </section>
 """
 
@@ -530,6 +683,25 @@ def _axis_html(esc):
             f'<span class="cnt">{ax["variance"]:.1f}% of the variation</span></h4>'
             f'<p>{esc(ax["blurb"])}</p></div>')
     return "".join(blocks)
+
+
+def _feature_glossary_html(esc):
+    """Section "The nine measurements", ajoutée le 10 septembre 2026 à la
+    demande de Claire : les définitions étaient auparavant seulement en
+    infobulle, nulle part lisibles d'un coup."""
+    rows = []
+    for key, label, short, unit, lo, hi in FEATURES:
+        if key == "tb_bpm":
+            scale = "no fixed scale; 71-203 BPM on this playlist"
+        elif unit == "dB":
+            scale = "theoretically about −60 dB to 0 dB"
+        else:
+            scale = "0 to 100"
+        rows.append(
+            f'<div class="feat-row"><span class="fk">{esc(label)}</span>'
+            f'<span class="fs">{esc(scale)}</span>'
+            f'<span class="fd">{esc(FEATURE_INFO[key])}</span></div>')
+    return '<div class="feat-glossary">' + "".join(rows) + '</div>'
 
 
 def _legend_html(esc):
@@ -571,6 +743,13 @@ def _cluster_meta_json():
     })
 
 
+def _axes_json():
+    """Étiquettes de pôle pour les 3 axes, lues par le script afin de rendre
+    les axes visibles dans le nuage 3D. Ajouté le 10 septembre 2026 : la
+    première version ne montrait aucun repère d'orientation dans la scène."""
+    return json.dumps([{"pos": ax["poles"][0], "neg": ax["poles"][1]} for ax in AXES])
+
+
 # Import map : OrbitControls et ConvexGeometry importent 'three' par son nom
 # nu ("import ... from 'three'"), ce que seul un import map sait résoudre
 # côté navigateur, sans étape de build.
@@ -600,9 +779,11 @@ import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
   if (!mount) return;
   var dataEl = document.getElementById('sonic-data');
   var metaEl = document.getElementById('cluster-meta');
+  var axesEl = document.getElementById('sonic-axes');
   if (!dataEl || !metaEl) return;
   var rows = JSON.parse(dataEl.textContent);
   var meta = JSON.parse(metaEl.textContent);
+  var axesMeta = axesEl ? JSON.parse(axesEl.textContent) : [];
   if (!rows.length) return;
 
   mount.querySelector('.sonic3d-noscript-msg').hidden = true;
@@ -619,12 +800,17 @@ import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
   canvasWrap.appendChild(renderer.domElement);
 
   var byCluster = {};
+  var axisExtent = { x: 0.5, y: 0.5, z: 0.5 };
   rows.forEach(function (r) {
     (byCluster[r.c] = byCluster[r.c] || []).push(r);
+    axisExtent.x = Math.max(axisExtent.x, Math.abs(r.p[0]));
+    axisExtent.y = Math.max(axisExtent.y, Math.abs(r.p[1]));
+    axisExtent.z = Math.max(axisExtent.z, Math.abs(r.p[2]));
   });
 
   var box = new THREE.Box3();
   var pointMeshes = [];
+  var hullMeshes = [];
   var sphereGeo = new THREE.SphereGeometry(0.09, 14, 10);
 
   Object.keys(byCluster).forEach(function (cid) {
@@ -655,10 +841,39 @@ import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
           color: color, transparent: true, opacity: 0.16,
           side: THREE.DoubleSide, depthWrite: false
         }));
+        hull.userData.cluster = cid;
         group.add(hull);
+        hullMeshes.push(hull);
       } catch (e) { /* groupe dégénéré : on garde les points, pas le volume */ }
     }
     scene.add(group);
+  });
+
+  // Axes de l'ACP, rendus visibles : un trait neutre par composante, du
+  // négatif au positif, avec le pôle correspondant écrit à chaque bout.
+  // Ajouté le 10 septembre 2026 : sans repère, la scène ne permettait pas de
+  // s'orienter dans l'espace musical.
+  var axisColor = 0x9992a0;
+  var axisMat = new THREE.LineBasicMaterial({ color: axisColor, transparent: true, opacity: 0.55 });
+  var axisEnds = [
+    { a: new THREE.Vector3(-axisExtent.x * 1.08, 0, 0), b: new THREE.Vector3(axisExtent.x * 1.08, 0, 0) },
+    { a: new THREE.Vector3(0, -axisExtent.y * 1.08, 0), b: new THREE.Vector3(0, axisExtent.y * 1.08, 0) },
+    { a: new THREE.Vector3(0, 0, -axisExtent.z * 1.08), b: new THREE.Vector3(0, 0, axisExtent.z * 1.08) }
+  ];
+  axisEnds.forEach(function (seg) {
+    var geo = new THREE.BufferGeometry().setFromPoints([seg.a, seg.b]);
+    scene.add(new THREE.Line(geo, axisMat));
+  });
+  var axisLabelEls = [];
+  axisEnds.forEach(function (seg, i) {
+    var poles = axesMeta[i] || { pos: 'PC' + (i + 1) + ' +', neg: 'PC' + (i + 1) + ' −' };
+    [[seg.b, poles.pos], [seg.a, poles.neg]].forEach(function (pair) {
+      var el = document.createElement('div');
+      el.className = 'axis-label';
+      el.textContent = pair[1];
+      mount.appendChild(el);
+      axisLabelEls.push({ el: el, pos: pair[0] });
+    });
   });
 
   scene.add(new THREE.AmbientLight(0xffffff, 0.8));
@@ -679,20 +894,69 @@ import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
   controls.update();
 
   var raycaster = new THREE.Raycaster();
-  var mouse = new THREE.Vector2();
   var tooltip = mount.querySelector('.sonic3d-tooltip');
+  var projected = new THREE.Vector3();
 
-  function pick(clientX, clientY) {
+  function toScreen(worldPos) {
+    projected.copy(worldPos).project(camera);
+    return {
+      x: (projected.x * 0.5 + 0.5) * W,
+      y: (-projected.y * 0.5 + 0.5) * H,
+      z: projected.z
+    };
+  }
+
+  // Repérage par distance à l'écran plutôt que par intersection 3D exacte :
+  // corrigé le 10 septembre 2026. Les sphères mesurent 0.09 unité de rayon,
+  // ce qui les rend minuscules et quasiment impossibles à viser au pixel
+  // près une fois projetées ; un seuil en pixels les rend faciles à
+  // atteindre, comme des points de nuage de dispersion classiques.
+  var PICK_PX = 15;
+  function pickPoint(clientX, clientY) {
     var rect = renderer.domElement.getBoundingClientRect();
-    mouse.x = ((clientX - rect.left) / rect.width) * 2 - 1;
-    mouse.y = -((clientY - rect.top) / rect.height) * 2 + 1;
+    var px = clientX - rect.left, py = clientY - rect.top;
+    var best = null, bestDist = PICK_PX;
+    pointMeshes.forEach(function (mesh) {
+      if (!mesh.parent.visible) return;
+      var s = toScreen(mesh.position);
+      if (s.z < -1 || s.z > 1) return;
+      var dx = s.x - px, dy = s.y - py;
+      var d = Math.sqrt(dx * dx + dy * dy);
+      if (d < bestDist) { bestDist = d; best = mesh; }
+    });
+    return best;
+  }
+
+  function pickHull(clientX, clientY) {
+    var rect = renderer.domElement.getBoundingClientRect();
+    var mouse = new THREE.Vector2(
+      ((clientX - rect.left) / rect.width) * 2 - 1,
+      -((clientY - rect.top) / rect.height) * 2 + 1
+    );
     raycaster.setFromCamera(mouse, camera);
-    var hits = raycaster.intersectObjects(pointMeshes);
-    return hits.length ? hits[0].object : null;
+    var visible = hullMeshes.filter(function (h) { return h.parent.visible; });
+    var hits = raycaster.intersectObjects(visible);
+    return hits.length ? hits[0].object.userData.cluster : null;
+  }
+
+  // Ouvre la liste (repliée par défaut) du groupe d'un morceau et met le
+  // morceau en évidence : c'est ce que le clic sur un point déclenche
+  // désormais, plutôt que de renvoyer seulement à la section du groupe.
+  function openTrack(cid, trackId) {
+    var details = document.getElementById('tracklist-' + cid);
+    if (details) details.open = true;
+    var row = document.getElementById('track-' + trackId);
+    var target = row || document.getElementById('cluster-' + cid);
+    if (!target) return;
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (row) {
+      row.classList.add('track-flash');
+      setTimeout(function () { row.classList.remove('track-flash'); }, 1800);
+    }
   }
 
   renderer.domElement.addEventListener('pointermove', function (e) {
-    var hit = pick(e.clientX, e.clientY);
+    var hit = pickPoint(e.clientX, e.clientY);
     if (hit) {
       var t = hit.userData.track;
       var name = (meta[t.c] || {}).name || ('Cluster ' + t.c);
@@ -708,9 +972,16 @@ import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
   });
   renderer.domElement.addEventListener('pointerleave', function () { tooltip.hidden = true; });
   renderer.domElement.addEventListener('click', function (e) {
-    var hit = pick(e.clientX, e.clientY);
+    var hit = pickPoint(e.clientX, e.clientY);
     if (hit) {
-      var el = document.getElementById('cluster-' + hit.userData.track.c);
+      openTrack(hit.userData.track.c, hit.userData.track.id);
+      return;
+    }
+    // Rien sous le pixel exact du clic : un clic sur le volume colorisé,
+    // hors d'un point précis, renvoie seulement à la section du groupe.
+    var cid = pickHull(e.clientX, e.clientY);
+    if (cid) {
+      var el = document.getElementById('cluster-' + cid);
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
@@ -744,6 +1015,28 @@ import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
   (function animate() {
     requestAnimationFrame(animate);
     controls.update();
+    axisLabelEls.forEach(function (a) {
+      var s = toScreen(a.pos);
+      // Un pôle d'axe peut passer très près de la caméra selon l'angle de
+      // vue, et sa projection en pixels s'emballer même si sa profondeur
+      // reste dans les bornes du frustum : masquer hors d'une marge autour
+      // du canevas plutôt que de laisser une étiquette pousser la largeur de
+      // la page. Corrigé le 10 septembre 2026 (débordement horizontal
+      // observé à largeur mobile). Le calcul ne porte que sur le centre de
+      // l'étiquette (transform:translate(-50%,-50%) en CSS) : sa moitié de
+      // largeur peut encore dépasser cette marge de quelques pixels près du
+      // bord, d'où le overflow:hidden posé sur #sonic3d en filet de
+      // sécurité — une étiquette qui déborde du cadre est coupée plutôt que
+      // d'élargir la page.
+      var margin = 60;
+      var onScreen = s.z >= -1 && s.z <= 1 &&
+        s.x > -margin && s.x < W + margin && s.y > -margin && s.y < H + margin;
+      a.el.style.display = onScreen ? 'block' : 'none';
+      if (onScreen) {
+        a.el.style.left = s.x + 'px';
+        a.el.style.top = s.y + 'px';
+      }
+    });
     renderer.render(scene, camera);
   })();
 })();
@@ -758,8 +1051,9 @@ CSS = """
 .legend-item:hover{background:var(--soft)}
 .legend-item.legend-off{opacity:.4}
 .legend-item .cnt{color:var(--muted)}
-.swatch{width:13px;height:13px;border-radius:3px;display:inline-block;flex:none}
-#sonic3d{margin:18px 0 8px}
+.swatch{width:13px;height:13px;border-radius:3px;display:inline-block;flex:none;
+ outline:1px solid var(--line);outline-offset:-1px}
+#sonic3d{margin:18px 0 8px;position:relative;overflow:hidden}
 .sonic3d-canvas{width:100%;border-radius:10px;overflow:hidden;background:var(--soft);
  border:1px solid var(--line);position:relative;line-height:0}
 .sonic3d-canvas canvas{display:block;width:100%!important;cursor:grab}
@@ -767,6 +1061,10 @@ CSS = """
  border:1px solid var(--line);border-radius:7px;padding:6px 10px;font-size:.82rem;
  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;box-shadow:0 4px 14px rgba(0,0,0,.18);
  max-width:220px;line-height:1.4}
+.axis-label{position:absolute;pointer-events:none;font-size:.72rem;color:var(--muted);
+ font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;white-space:nowrap;
+ transform:translate(-50%,-50%);background:var(--panel);border:1px solid var(--line);
+ border-radius:99px;padding:1px 8px;opacity:.92}
 .sonic3d-hint{font-size:.78rem;color:var(--muted);margin:6px 0 0;
  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 .axis-card{background:var(--panel);border:1px solid var(--line);border-radius:9px;
@@ -774,6 +1072,19 @@ CSS = """
 .axis-card h4{margin:0 0 6px;font-size:1rem;font-family:ui-sans-serif,system-ui,sans-serif;
  display:flex;flex-wrap:wrap;align-items:baseline;gap:8px}
 .axis-card p{margin:0;max-width:none;font-size:.92rem}
+.feat-glossary{border:1px solid var(--line);border-radius:9px;background:var(--panel);
+ margin:0 0 28px;overflow:hidden}
+.feat-row{display:grid;grid-template-columns:9em 11em 1fr;gap:4px 14px;padding:9px 14px;
+ font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:.85rem;
+ border-bottom:1px solid var(--line)}
+.feat-row:last-child{border-bottom:none}
+.feat-row .fk{font-weight:600}
+.feat-row .fs{color:var(--muted);font-variant-numeric:tabular-nums}
+.feat-row .fd{color:var(--muted);max-width:none}
+@media (max-width:640px){
+ .feat-row{grid-template-columns:1fr;gap:2px}
+ .feat-row .fs{order:-1}
+}
 .sonic-cluster{margin:40px 0 0;padding-top:8px}
 .sonic-cluster h3.cont{display:flex;align-items:center;gap:9px}
 .radar-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin:10px 0 14px}
@@ -781,11 +1092,26 @@ svg.radar{width:280px;height:224px;flex:none}
 .radar-grid{fill:none;stroke:var(--line);stroke-width:1}
 .radar-axis{stroke:var(--line);stroke-width:1}
 .radar-label{font-size:8.5px;fill:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
-.radar-values{display:grid;grid-template-columns:auto auto;gap:2px 14px;
+.radar-values{display:grid;grid-template-columns:auto auto auto;gap:2px 14px;
  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:.85rem}
 .radar-row{display:contents}
 .radar-row .rk{color:var(--muted)}
 .radar-row .rv{font-variant-numeric:tabular-nums;font-weight:600}
+.radar-row .rp{font-variant-numeric:tabular-nums;color:var(--muted)}
+.radar-row.radar-head .rv,.radar-row.radar-head .rp{font-weight:600;font-size:.76rem;
+ color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+.tracklist{margin:6px 0 0}
+.tracklist summary{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+ font-size:.82rem;border:1px solid var(--line);background:var(--panel);color:var(--muted);
+ border-radius:99px;padding:.3em .9em;cursor:pointer;display:inline-block;list-style:none}
+.tracklist summary::-webkit-details-marker{display:none}
+.tracklist summary:hover{border-color:var(--accent);color:var(--accent)}
+.tracklist[open] summary{margin-bottom:12px}
+.track-flash{animation:sonic-flash 1.8s ease-out;border-radius:5px}
+@keyframes sonic-flash{
+ 0%{background:var(--soft);box-shadow:0 0 0 3px var(--accent)}
+ 100%{background:transparent;box-shadow:0 0 0 0 transparent}
+}
 """
 
 
@@ -794,13 +1120,24 @@ def sonic_page(css, esc, slug, artists_of, aliases, same_person, badge,
     n_tracks = len(TRACKS)
     scene_json = _scene_json(artists_of)
     cluster_meta_json = _cluster_meta_json()
+    axes_json = _axes_json()
     legend = _legend_html(esc)
     axes_html = _axis_html(esc)
+    glossary_html = _feature_glossary_html(esc)
     clusters_html = "".join(
         _cluster_section(cid, esc, slug, artists_of) for cid in sorted(CLUSTERS))
 
     nav = atlas._nav("sonic.html")
 
+    # Ordre remanié le 10 septembre 2026, à la demande de Claire : les six
+    # groupes remontent en tête (comparaison directe des radar plots, listes
+    # de morceaux repliées par défaut), le nuage 3D et la description des
+    # trois axes de l'ACP qui le sous-tendent descendent en fin de page.
+    # Claire les juge plus difficiles à lire et moins riches en information
+    # musicale que le classement en groupes, en partie parce que celui-ci se
+    # fait sur les 9 dimensions complètes plutôt que sur les 3 seuls axes du
+    # nuage, ce qui produit des volumes qui se chevauchent visuellement sans
+    # rien perdre côté musical.
     body = f"""
 <header>
 <h1>By sonic profile</h1>
@@ -812,25 +1149,46 @@ repository: Tunebat's terms do not allow it. See the note at the bottom of
 this page for exactly what is shown instead, and why.</p>
 </header>
 
-<h2>The three dimensions</h2>
-<p class="secblurb">Nine audio features (tempo, energy, danceability,
-happiness, acousticness, instrumentalness, liveness, speechiness, loudness),
-standardised and reduced by principal component analysis. Together these
-three axes explain 62% of how the nine features vary across the playlist;
-the remaining 38% is not shown here.</p>
-{axes_html}
+<h2>The nine measurements</h2>
+<p class="secblurb">Nine Tunebat audio features go into everything on this
+page. Hover a feature's name anywhere below for this same description.</p>
+{glossary_html}
+
+<h2>The six groups</h2>
+<p class="secblurb">Computed by hierarchical clustering (Ward's method) on
+all nine standardised features rather than on the three-axis reduction shown
+further down, so nothing is lost at this step. Claire set two constraints
+going in: at most six groups, so a 3D view of them could stay legible, and
+at least four songs per group, so that no averaged profile could ever be
+narrow enough to read back as a single track's numbers, though this was
+never a serious risk of reconstructing individual Tunebat values in the
+first place; a margin of safety costs nothing here. Sizes run from 10 to
+46; no group needed to be merged into another to clear that floor. Each
+radar plot is scaled to the same axis range across all six groups, so the
+shapes are directly comparable to one another; each group's average sits
+next to the same feature's average across the whole playlist, to read at
+a glance how far a group departs from the middle of this playlist. A
+group's full track list is folded by default: open "Show N tracks" under
+its radar to see it.</p>
+{clusters_html}
 
 <h2>The cloud</h2>
 <p class="secblurb">Each point is one song, positioned by its value on the
-three axes above and coloured by the group it was assigned to (see "The six
-groups" below). Drag to rotate, scroll to zoom, hover a point for its title,
-and click a point or a name in the legend to jump to that group further
-down. Click a legend entry a second time to hide that group in the scene.</p>
+three axes described below and coloured by the group it belongs to. The
+three grey lines are those axes, labelled at each end with the pole they
+point towards. Drag to rotate, scroll to zoom, hover a point for its title.
+Click a point to jump to it in its group's track list above, opening that
+list if it is folded; click elsewhere on a coloured volume to jump to that
+group's section instead. Click a name in the legend to hide or show that
+group in the scene. This view is the hardest to read on the page and shows
+less than the grouping above it: clustering was done on all nine features,
+so groups that overlap visually here are still fully distinct in the
+underlying data.</p>
 {legend}
 <div id="sonic3d">
 <div class="sonic3d-canvas" hidden></div>
 <p class="sonic3d-noscript-msg sonic3d-hint">The 3D cloud needs JavaScript
-and WebGL. Every song is still listed, grouped and described below without
+and WebGL. Every song is already listed, grouped and described above without
 either.</p>
 <div class="sonic3d-tooltip" hidden></div>
 </div>
@@ -838,17 +1196,12 @@ either.</p>
 target="_blank" rel="noopener">three.js</a>, the only external library on
 this site.</p>
 
-<h2>The six groups</h2>
-<p class="secblurb">Computed by hierarchical clustering (Ward's method) on
-all nine standardised features, not only the three shown above, so nothing
-in the remaining 38% of the variation is lost at this step. Claire set two
-constraints going in: at most six groups, so the cloud above stays legible,
-and at least four songs per group, so that no averaged profile could ever be
-narrow enough to read back as a single track's numbers. Sizes here run from
-10 to 46; no group needed to be merged into another to clear that floor.
-Each radar plot is scaled to the same axis range across all six groups, so
-the shapes are directly comparable to one another.</p>
-{clusters_html}
+<h2>The three dimensions</h2>
+<p class="secblurb">The nine features above, standardised and reduced by
+principal component analysis to the three axes drawn in the cloud. Together
+they explain 62% of how the nine features vary across the playlist; the
+remaining 38% is not shown, in the cloud or anywhere else on this page.</p>
+{axes_html}
 
 <div class="note">
 <h4>What this page does and does not show</h4>
@@ -859,10 +1212,11 @@ nine used in the analysis, not the four left out, and not the spreadsheet
 they came from. What is published instead is derived from that data rather
 than a copy of it: each track's position on the three axes above and which
 of the six groups it falls into, plus, for each group, the average of each
-feature taken over at least ten tracks. A three-axis position keeps 62% of
-the original nine-dimension picture and cannot be inverted back to the
-original values; a group average taken over ten or more tracks cannot be
-read back to any one of them either.</p>
+feature taken over at least ten tracks, next to the same average across the
+whole playlist. A three-axis position keeps 62% of the original
+nine-dimension picture and cannot be inverted back to the original values;
+a group average taken over ten or more tracks cannot be read back to any one
+of them either.</p>
 <p>Genre and style, as tagged by people, are on <a href="tags.html">the tags
 page</a>. The two do not track each other closely: several of the groups
 here mix tracks from multiple genre families on this site's own tag and
@@ -884,6 +1238,7 @@ Tunebat data, not an append.</p>
 
 <script type="application/json" id="sonic-data">{scene_json}</script>
 <script type="application/json" id="cluster-meta">{cluster_meta_json}</script>
+<script type="application/json" id="sonic-axes">{axes_json}</script>
 """
 
     full_css = css + CSS
