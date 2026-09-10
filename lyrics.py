@@ -45,6 +45,7 @@ LYRICS = {
     '7kvQptbfqq5b4MWRQOMrZC': 'https://genius.com/Femtanyl-and-issbrokie-nastywerkkkk-lyrics',
     '724utiMbqUfT1g3tqbfQYu': 'https://genius.com/Underscores-spoiled-little-brat-lyrics',
     '1PEPcLm2QEo0HCRIhQjPq1': 'https://genius.com/Underscores-second-hand-embarrassment-lyrics',
+    '0ZeVhHgvMsF6dqo2AFSfut': 'https://genius.com/search?q=TAMAGOTCHI+MASSACRE+i%27m+2+years+on+hormones+and+i%27m+still+sad+i+want+a+refund',
     '0VNjaRcmIowjLbPtYDhLuh': 'https://genius.com/Underscores-your-favorite-sidekick-lyrics',
     '54n3iwz9mr7yxZi1EOX1Mz': 'https://genius.com/Underscores-and-gabby-start-locals-girls-like-us-lyrics',
     '5dIPCgTEDagbcs5QGmni8V': 'https://genius.com/search?q=MON%C4%80E+CISPHOBIC',
@@ -192,4 +193,5 @@ SEARCH = {
     '3eBY8aZZdWNnNhNbc8B0yp',
     '2lgwylOpGMtkvhwdnUOArt',
     '4CuivW1JgPauXPA4wYsf5K',
+    '0ZeVhHgvMsF6dqo2AFSfut',
 }

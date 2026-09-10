@@ -429,6 +429,22 @@ YEARS = {
         "checked": "2026-09-04",
         "note": "A compilation sits among the known releases.",
     },
+    # TAMAGOTCHI MASSACRE — i'm 2 years on hormones and i'm still sad i want a refund
+    "0ZeVhHgvMsF6dqo2AFSfut": {
+        "first_public": "2023-01-06",
+        "first_record": None,
+        "precision": "day",
+        "kind": "first",
+        "spotify": "2023-01-06",
+        "status": "verified",
+        "source": "MusicBrainz, first-release-date of the release group; Discogs, release 32390226, released field",
+        "url": (
+            "https://musicbrainz.org/release-group/490f6ff8-c4a5-47aa-b49a-c25ea7d57a23",
+            "https://www.discogs.com/release/32390226",
+        ),
+        "checked": "2026-09-10",
+        "note": "Album i guess i'm a woman now..., confirmed via API calls to both catalogues in session; agrees with the label's own announcement (Prelude Press, 6 January 2023).",
+    },
     # underscores — Second hand embarrassment
     "1PEPcLm2QEo0HCRIhQjPq1": {
         "first_public": "2021-02-02",

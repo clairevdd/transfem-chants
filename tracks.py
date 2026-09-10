@@ -155,6 +155,7 @@ SECTIONS = [
         "blurb": 'The playlist’s online-native scene, and its most anglophone stretch: digicore, breakcore and bubblegum bass, almost all of it from the years either side of 2020.',
         "tracks": [
             # I — plus nu
+            ('0ZeVhHgvMsF6dqo2AFSfut', "i'm 2 years on hormones and i'm still sad i want a refund", 'TAMAGOTCHI MASSACRE'),
             ('1PEPcLm2QEo0HCRIhQjPq1', 'Second hand embarrassment', 'underscores'),
             ('7n7GrVTBmZMG4EULD5g0i3', 'warm and fuzzy', 'osquinn'),
             ('0VNjaRcmIowjLbPtYDhLuh', 'Your favorite sidekick', 'underscores, 8485'),
@@ -231,4 +232,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 146
+assert len(all_tracks()) == 147

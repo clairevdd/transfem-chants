@@ -264,17 +264,17 @@ ART = {
 
 "Jane Remover": ("partial","United States","English",
  "Came out as a trans woman in 2022, then clarified in 2025 that she is non-binary. She has asked not to be pinned down, and in February 2026 wrote that she uses any pronouns but prefers they. Her own words are quoted in full rather than resolved into a label.",
- "I\u2019m not not trans, but I\u2019m not a trans woman\u2026 It is exhausting to have to figure it out publicly in front of thousands of people, so I was like: let me make this easy for everybody. I\u2019m whatever you want, it\u2019s up to y\u2019all now.",
+ "I’m not not trans, but I’m not a trans woman… It is exhausting to have to figure it out publicly in front of thousands of people, so I was like: let me make this easy for everybody. I’m whatever you want, it’s up to y’all now.",
  "NME","https://www.nme.com/features/music-interviews/jane-remover-revengeseekerz-interview-3872077"),
 
 "ISSBROKIE": ("verified","United States","English",
  "Raps about being trans in the first person across her own releases, naming both the transphobia she receives and her own hormone treatment. In interview she has described that subject matter as her own.",
- "All-all-all these fuckin\u2019 comments hate on me \u2019cause I\u2019m transgender shit / Keep-keep-keep on fuckin\u2019 commentin\u2019, that shit pay for my estrogen",
- "Lyrics, \u201cI\u2019M Up Now!\u201d (2023)","https://www.shazam.com/en-us/song/1704292542/im-up-now"),
+ "All-all-all these fuckin’ comments hate on me ’cause I’m transgender shit / Keep-keep-keep on fuckin’ commentin’, that shit pay for my estrogen",
+ "Lyrics, “I’M Up Now!” (2023)","https://www.shazam.com/en-us/song/1704292542/im-up-now"),
 
 "Laura Les": ("verified","United States","English",
  "Trans woman. One half of 100 gecs with Dylan Brady. Her solo work deals directly with transition and with passing, in the first person.",
- "I\u2019m never gonna pass, I should stay home, why did I make plans?",
+ "I’m never gonna pass, I should stay home, why did I make plans?",
  "Wikipedia","https://en.wikipedia.org/wiki/Laura_Les"),
 
 "8485": ("guest","Canada","English",
@@ -307,22 +307,22 @@ ART = {
  "i did half a tab once that i got from an old hippie in san francisco and immediately realized that thinking about the fact i was actually a woman every day meant i was trans",
  "X, 17 May 2026","https://x.com/__crunge/status/2056096480474083461"),
 
-"Cae Mon\u0101e": ("verified","United States","English",
- "Chicago-based artist and performer, a fixture of the city\u2019s queer nightlife. She names her identity directly and in the first person.",
+"Cae Monāe": ("verified","United States","English",
+ "Chicago-based artist and performer, a fixture of the city’s queer nightlife. She names her identity directly and in the first person.",
  "I am what they consider, an international transsexual woman.",
  "Dazed","https://www.dazeddigital.com/beauty/article/46791/1/cae-monae-chicago-make-up-musician-artist-performer-interview"),
 
-"MON\u0100E": ("guest","United States","English",
- "Credited alongside Cae Mon\u0101e on this track. No public statement about their gender identity was found.",
+"MONĀE": ("guest","United States","English",
+ "Credited alongside Cae Monāe on this track. No public statement about their gender identity was found.",
  None,None,None),
 
 "G.L.O.S.S.": ("partial","United States","English",
- "Girls Living Outside Society\u2019s Shit, a punk band fronted by Sadie \u201cSwitchblade\u201d Smith. Her lyrics speak of being a proud trans person, but no first-person statement outside the songs was located during verification.",
+ "Girls Living Outside Society’s Shit, a punk band fronted by Sadie “Switchblade” Smith. Her lyrics speak of being a proud trans person, but no first-person statement outside the songs was located during verification.",
  None,"Wikipedia","https://en.wikipedia.org/wiki/G.L.O.S.S."),
 
 "Tingtongketz": ("verified","Malaysia","Malay, English",
  "Queercore garage band from Kuala Lumpur, founded in 2015 by Shika Corona, who sings and plays guitar, with a revolving cast of queer and trans musicians. She has spoken publicly about living as herself in a country that criminalises it.",
- "I couldn\u2019t do that. I\u2019m so sorry, because this is my true self.",
+ "I couldn’t do that. I’m so sorry, because this is my true self.",
  "Malay Mail","https://www.malaymail.com/news/malaysia/2019/03/29/transgender-guitarist-strikes-a-different-note-in-conservative-malaysia/1737637"),
 
 "Beth Elliott": ("verified","United States","English",
@@ -338,17 +338,17 @@ ART = {
  "Trans woman of Indian descent, musician and writer. Came out publicly as transgender on 15 February 2016.",
  None,"Wikipedia","https://en.wikipedia.org/wiki/Vivek_Shraya"),
 
-"Queer Songbook Orchestra": ("guest","Canada","\u2014",
+"Queer Songbook Orchestra": ("guest","Canada","—",
  "Chamber ensemble backing Vivek Shraya on this track. A collective rather than an individual; the inclusion criterion does not apply.",
  None,None,None),
 
 "Veronica Klaus": ("verified","United States","English",
- "Trans woman, cabaret and jazz singer in San Francisco. Her one-woman show \u201cFamily Jewels\u201d deals with her transition directly.",
- "I wasn\u2019t trying to change who I was through gender reassignment, but to become who I truly was.",
+ "Trans woman, cabaret and jazz singer in San Francisco. Her one-woman show “Family Jewels” deals with her transition directly.",
+ "I wasn’t trying to change who I was through gender reassignment, but to become who I truly was.",
  "SFGate","https://www.sfgate.com/performance/article/Veronica-Klaus-is-brassy-and-confident-onstage-2501415.php"),
 
 "Ah-Mer-Ah-Su": ("verified","United States","English",
- "Star Amerasu. Black transfemme singer, songwriter and producer from Oakland, using the words \u201ctrans\u201d and \u201cfemme\u201d about herself and her work.",
+ "Star Amerasu. Black transfemme singer, songwriter and producer from Oakland, using the words “trans” and “femme” about herself and her work.",
  "The whole album is really an exploration of what it means to be Black, trans, femme, and young, and having real problems.",
  "PAPER Magazine","https://www.papermag.com/ah-mer-ah-su"),
 
@@ -358,18 +358,18 @@ ART = {
 
 "Ms. Boogie": ("verified","United States","English",
  "Rose Isabel Rayos. Rapper from East New York, Brooklyn, of Dominican and Colombian heritage, part of the Ballroom scene since she was fifteen. She came out in an open letter in May 2018 and states her identity on her own terms.",
- "In a practical world, I would be a \u201ctrans woman,\u201d but in the world that I have built for myself and my loved ones, I am simply myself.",
+ "In a practical world, I would be a “trans woman,” but in the world that I have built for myself and my loved ones, I am simply myself.",
  "PAPER Magazine","https://www.papermag.com/introducing-ms-boogie"),
 
 "LALLA RAMI": ("partial","Morocco / France","Darija, French, English",
- "Moroccan rapper born in K\u00e9nitra in 2000, based in Paris since 2019. Described as a trans woman by T\u00eatu, franceinfo and Wikip\u00e9dia, and she has appeared publicly under billing that names her as such, including a JINS podcast episode and a live event at the Institut du monde arabe. No first-person statement of identity was read during verification.",
- None,"T\u00eatu","https://tetu.com/2022/01/04/2022-appartient-musique-rap-queer-lalla-rami-single-inchallah/"),
+ "Moroccan rapper born in Kénitra in 2000, based in Paris since 2019. Described as a trans woman by Têtu, franceinfo and Wikipédia, and she has appeared publicly under billing that names her as such, including a JINS podcast episode and a live event at the Institut du monde arabe. No first-person statement of identity was read during verification.",
+ None,"Têtu","https://tetu.com/2022/01/04/2022-appartient-musique-rap-queer-lalla-rami-single-inchallah/"),
 
 "Lauren Auder": ("partial","UK / France","English",
  "Singer of orchestral and baroque pop, born in Watford and raised in Albi from the age of seven. She announced her own shift to she/her pronouns publicly on Instagram on 9 July 2020; the wording is oblique and no more direct statement was located during verification.",
  None,"Wikipedia","https://en.wikipedia.org/wiki/Lauren_Auder"),
 
-"Celeste": ("guest","UK","\u2014",
+"Celeste": ("guest","UK","—",
  "Featured vocalist. Publicly referred to with she/her pronouns; no statement of her own about gender identity was located. Lauren Auder is the lead artist on this track.",
  None,None,None),
 
@@ -380,7 +380,7 @@ ART = {
 
 "Anita Velveeta": ("verified","United States","English",
  "Singer based in East St. Paul, Minnesota, moving between rock, death-metal growl and solo electronics. Described as the big sister of the Twin Cities trans music scene.",
- "I\u2019m trans.",
+ "I’m trans.",
  "The Current","https://www.thecurrent.org/feature/2023/05/24/anita-velveeta-makes-music-for-weirdos-like-herself"),
 
 "Ezra Furman": ("verified","United States","English",
@@ -398,41 +398,41 @@ ART = {
 
 "SuperKnova": ("verified","United States","English",
  "Ellie Kim. Trans Asian American singer and multi-instrumentalist from Chicago, who produces and records everything herself.",
- "I already was living a life so outside of people\u2019s \u201cnormal\u201d.",
+ "I already was living a life so outside of people’s “normal”.",
  "Qwear","https://www.qwearfashion.com/home/superknova-on-embracing-herself-as-a-queer-trans-asian-musician"),
 
 "Jinkx Monsoon": ("verified","United States","English",
  "Trans-femme and non-binary, she/her. Singer and performer from Portland with two studio albums, moving between blues, jazz, cabaret and garage rock. She has spoken publicly about her hormone therapy and facial feminisation surgery.",
- "I\u2019ve never identified as fully male. I\u2019ve always identified as more gender fluid or gender ambiguous.",
+ "I’ve never identified as fully male. I’ve always identified as more gender fluid or gender ambiguous.",
  "Wikipedia","https://en.wikipedia.org/wiki/Jinkx_Monsoon"),
 
 "Aderet": ("verified","Israel","Hebrew, English",
  "Hadar Babayof, born 1975. Israeli singer-songwriter, DJ and producer. She places herself inside the transgender community in Israel in her own words, while declining the role of spokesperson.",
- "I don\u2019t see myself as a spokesperson for the transgender community in Israel, but I\u2019ve had a positive experience overall. I\u2019ve lived in Israel as a woman, and I\u2019m mostly seen as just a singer who performs in English, without much attention to my past.",
+ "I don’t see myself as a spokesperson for the transgender community in Israel, but I’ve had a positive experience overall. I’ve lived in Israel as a woman, and I’m mostly seen as just a singer who performs in English, without much attention to my past.",
  "The Heroines of My Life","https://theheroines.blogspot.com/2014/05/interview-with-aderet.html"),
 
 "Sonja Sajzor": ("partial","Serbia","English",
- "Darkwave singer, DJ and visual artist from \u0160abac, born 1993. She speaks from inside a \u201cwe\u201d of trans women and uses feminine grammatical forms of herself in Serbian. The quotations here are compiled on Serbian Wikiquote, which sources them to interviews that have not been opened during verification \u2014 hence partial rather than verified.",
- "\u0422\u0440\u0430\u043d\u0441 \u0436\u0435\u043d\u0430 \u043a\u043e\u0458\u0430 \u0436\u0435\u043b\u0438 \u0434\u0430 \u0443\u0452\u0435 \u0443 \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u0443 \u0442\u0440\u0430\u043d\u0437\u0438\u0446\u0438\u0458\u0443 \u043d\u0438\u0458\u0435 \u201e\u0436\u0435\u043d\u0430 \u0437\u0430\u0440\u043e\u0431\u0459\u0435\u043d\u0430 \u0443 \u0442\u0435\u043b\u0443 \u043c\u0443\u0448\u043a\u0430\u0440\u0446\u0430\u201d. \u041c\u0438 \u0458\u0435\u0441\u043c\u043e \u043d\u0430\u0448\u0430 \u0442\u0435\u043b\u0430.",
- "\u0412\u0438\u043a\u0438\u0446\u0438\u0442\u0430\u0442 (sr)","https://sr.wikiquote.org/wiki/%D0%A1%D0%BE%D1%9A%D0%B0_%D0%A1%D0%B0%D1%98%D0%B7%D0%BE%D1%80"),
+ "Darkwave singer, DJ and visual artist from Šabac, born 1993. She speaks from inside a “we” of trans women and uses feminine grammatical forms of herself in Serbian. The quotations here are compiled on Serbian Wikiquote, which sources them to interviews that have not been opened during verification — hence partial rather than verified.",
+ "Транс жена која жели да уђе у медицинску транзицију није „жена заробљена у телу мушкарца“. Ми јесмо наша тела.",
+ "Википицат (sr)","https://sr.wikiquote.org/wiki/%D0%A1%D0%BE%D1%9A%D0%B0_%D0%A1%D0%B0%D1%98%D0%B7%D0%BE%D1%80"),
 
 "Tone Sekelius": ("verified","Sweden","Swedish, English",
  "Singer from Sundsvall, born 1997. Came out publicly in February 2021 and was the first openly trans person to compete in the Melodifestivalen, in 2022. In the same interview she speaks about hormones, freezing sperm and changing her name, so the direction of her transition is stated rather than inferred.",
- "Jag kände mig ju inte gay, jag var trans. \u2014 I didn\u2019t feel gay, I was trans.",
+ "Jag kände mig ju inte gay, jag var trans. — I didn’t feel gay, I was trans.",
  "QX","https://www.qx.se/livsstil/210409/tone-i-stor-intervju-om-dejting-frysta-spermier-och-att-ens-existens-blir-en-politisk-fraga/"),
 
 "Zemmoa": ("verified","Mexico","Spanish",
  "Singer-songwriter and actress from Mexico City. Speaks of herself as a trans woman in the first person, and has campaigned against the idea that a trans woman in Mexico can only be a sex worker or a hairdresser.",
- "Como mujer trans yo pensaba que no ten\u00eda esos espacios tan libres de encuentro. \u2014 As a trans woman I thought I didn\u2019t have those free spaces to meet people.",
+ "Como mujer trans yo pensaba que no tenía esos espacios tan libres de encuentro. — As a trans woman I thought I didn’t have those free spaces to meet people.",
  "Malvestida","https://malvestida.com/2020/12/zemmoa-entrevista-ligues-en-bumble/"),
 
-"Irm\u00e3s de Pau": ("verified","Brazil","Portuguese",
- "Funk duo formed in 2020 in Barueri, S\u00e3o Paulo, by Isma Almeida and Vita Pereira. They call themselves travestis, a Brazilian transfeminine identity that this page keeps in their own word rather than translating it into \u201ctrans women\u201d.",
- "Quando a gente chega, as pessoas j\u00e1 sabem que s\u00e3o duas travestis. E s\u00e3o duas travestis que amam seus corpos. \u2014 When we arrive, people already know these are two travestis. And two travestis who love their bodies.",
+"Irmãs de Pau": ("verified","Brazil","Portuguese",
+ "Funk duo formed in 2020 in Barueri, São Paulo, by Isma Almeida and Vita Pereira. They call themselves travestis, a Brazilian transfeminine identity that this page keeps in their own word rather than translating it into “trans women”.",
+ "Quando a gente chega, as pessoas já sabem que são duas travestis. E são duas travestis que amam seus corpos. — When we arrive, people already know these are two travestis. And two travestis who love their bodies.",
  "Revista O Grito!","https://revistaogrito.com/irmas-de-pau-entrevista-coquetel-molotov-2023/"),
 
 "Romy Haag": ("partial","Netherlands / Germany","German",
- "Dancer, singer, actress and cabaret owner, born 1948 in Scheveningen, long based in Berlin. She titled her own autobiography Eine Frau und mehr \u2014 A woman and more \u2014 and released the album So bin ich in 1981. Marked partial rather than verified because no first-person sentence naming her gender in her own words has yet been reproduced here; the exact wording of her identity is still open.",
+ "Dancer, singer, actress and cabaret owner, born 1948 in Scheveningen, long based in Berlin. She titled her own autobiography Eine Frau und mehr — A woman and more — and released the album So bin ich in 1981. Marked partial rather than verified because no first-person sentence naming her gender in her own words has yet been reproduced here; the exact wording of her identity is still open.",
  None,"Der Spiegel","https://www.spiegel.de/geschichte/transsexuellen-ikone-romy-haag-goettin-des-berliner-nachtlebens-a-1145891.html"),
 
 "Manuela Trasobares": ("partial","Spain","Spanish",
@@ -446,56 +446,56 @@ ART = {
 
 "Lia Larsson": ("guest","Sweden","Swedish",
  "Swedish singer. Credited alongside Tone Sekelius on the 2023 World Cup song; no statement of her own about gender identity was located.",
- None,"","")	,
+ None,"",""),
 
 "Lisa Ajax": ("guest","Sweden","Swedish",
  "Swedish singer. Credited alongside Tone Sekelius on the 2023 World Cup song; no statement of her own about gender identity was located.",
  None,"",""),
 
 "Tessa Ia": ("guest","Mexico","Spanish",
- "Mexican actress and singer. Featured on Zemmoa\u2019s \u201cMi Amor Soy Yo\u201d; no statement of her own about gender identity was located.",
+ "Mexican actress and singer. Featured on Zemmoa’s “Mi Amor Soy Yo”; no statement of her own about gender identity was located.",
  None,"",""),
 
 "Trans-X": ("guest","Canada","English",
- "Canadian synth-pop project led by Pascal Languirand. Featured on Zemmoa\u2019s \u201cMi Amor Soy Yo\u201d. The name refers to the synthesiser era, not to gender.",
+ "Canadian synth-pop project led by Pascal Languirand. Featured on Zemmoa’s “Mi Amor Soy Yo”. The name refers to the synthesiser era, not to gender.",
  None,"",""),
 
 "Brunoso": ("guest","Brazil","Portuguese",
- "Brazilian producer credited with Irm\u00e3s de Pau on \u201cMedley do Submundo\u201d; no statement of his own about gender identity was located.",
+ "Brazilian producer credited with Irmãs de Pau on “Medley do Submundo”; no statement of his own about gender identity was located.",
  None,"",""),
 
 "PEDRO SAMPAIO": ("guest","Brazil","Portuguese",
- "Brazilian DJ, producer and singer, main credited artist on \u201cSEQU\u00caNCIA CUNT\u201d, on which Irm\u00e3s de Pau feature.",
+ "Brazilian DJ, producer and singer, main credited artist on “SEQUÊNCIA CUNT”, on which Irmãs de Pau feature.",
  None,"",""),
 
 "Mc Gw": ("guest","Brazil","Portuguese",
- "Brazilian funk MC featured on \u201cSEQU\u00caNCIA CUNT\u201d.",
+ "Brazilian funk MC featured on “SEQUÊNCIA CUNT”.",
  None,"",""),
 
 "Tasha Kaiala": ("guest","Brazil","Portuguese",
- "Brazilian artist featured on \u201cSEQU\u00caNCIA CUNT\u201d.",
+ "Brazilian artist featured on “SEQUÊNCIA CUNT”.",
  None,"",""),
 
 "Clementaum": ("guest","Brazil","Portuguese",
- "Brazilian artist featured on \u201cSEQU\u00caNCIA CUNT\u201d.",
+ "Brazilian artist featured on “SEQUÊNCIA CUNT”.",
  None,"",""),
 
 "Changeline": ("verified","France","English, French",
- "Trap metal and saturated pop-rap artist from Grenoble, based in Paris, who produces and sings her own tracks, including the screamed vocals. She speaks about her transition \u2014 social, administrative and medical \u2014 openly and in the present tense.",
- "J\u2019ai eu une r\u00e9alisation relativement tardive de ma transidentit\u00e9. \u2014 I came to realise my transness relatively late.",
+ "Trap metal and saturated pop-rap artist from Grenoble, based in Paris, who produces and sings her own tracks, including the screamed vocals. She speaks about her transition — social, administrative and medical — openly and in the present tense.",
+ "J’ai eu une réalisation relativement tardive de ma transidentité. — I came to realise my transness relatively late.",
  "Nos Voix Trans","https://open.spotify.com/episode/4IKPiZViahLUHKspZLCohd"),
 
 "Dede Satria": ("guest","Indonesia","Indonesian",
- "Indonesian singer credited with Lucinta Luna on \u201cMantan Tanpa Status\u201d; no statement of his own about gender identity was located.",
+ "Indonesian singer credited with Lucinta Luna on “Mantan Tanpa Status”; no statement of his own about gender identity was located.",
  None,"",""),
 
 "Stolas": ("guest","United States","English",
- "American post-hardcore band credited with Changeline on \u201cANARCONNASSE\u201d; no statement about gender identity by its members was located.",
+ "American post-hardcore band credited with Changeline on “ANARCONNASSE”; no statement about gender identity by its members was located.",
  None,"",""),
 
 "Daniela Vega": ("verified","Chile","Spanish, Italian",
  "Actress and mezzo-soprano, born 1989 in Santiago. Known for A Fantastic Woman (2017), in which she also sings; the Handel aria that closes the film is hers. Speaks of herself as a trans woman in the first person.",
- "As an actress, I don\u2019t mind if a cisgender actor plays trans. But as a trans woman, I feel that many times we weren\u2019t allowed to show what we can do and we can do many things.",
+ "As an actress, I don’t mind if a cisgender actor plays trans. But as a trans woman, I feel that many times we weren’t allowed to show what we can do and we can do many things.",
  "The Guardian","https://www.theguardian.com/film/2018/feb/18/daniela-vega-transgender-star-film-industry-a-fantastic-woman-interview"),
 
 "Tona Brown": ("verified","United States","English",
@@ -503,36 +503,36 @@ ART = {
  "The hardest part was knowing that, as an African American transgender woman, life would be at least three times harder.",
  "The Heroines of My Life","https://theheroines.blogspot.com/2014/03/interview-with-tona-brown.html"),
 
-"Geraldine Boone": ("guest","United States","\u2014",
+"Geraldine Boone": ("guest","United States","—",
  "Pianist. Accompanies Tona Brown on This Is Who I Am; she plays, she does not sing.",
  None,"",""),
 
 "Arantxa Castilla-La Mancha": ("verified","Spain","Spanish",
  "Drag performer and singer, born 1997 in Badajoz. She came out as a trans woman between her two seasons of Drag Race, and has described the moment she understood it while filming the first.",
- "Soy una chica y mi pronombre es ella. \u2014 I am a girl and my pronoun is she.",
- "El Espa\u00f1ol","https://www.elespanol.com/corazon/bluper/20221222/arantxa-castilla-la-mancha-drag-race-espana-abiertamente/727927241_0.html"),
+ "Soy una chica y mi pronombre es ella. — I am a girl and my pronoun is she.",
+ "El Español","https://www.elespanol.com/corazon/bluper/20221222/arantxa-castilla-la-mancha-drag-race-espana-abiertamente/727927241_0.html"),
 
 "Gad Yola": ("verified","Peru","Spanish",
- "Singer and performer, born 1995 in Lima, based in Spain. Uses \u00e9l, ella and elle. The word she uses for herself is travesti \u2014 in Latin America a gender identity rather than a way of dressing \u2014 and it is the title of her 2023 album, Travesti del Per\u00fa.",
- "Yo no soy un hombre, ni mujer. \u2014 I am not a man, nor a woman.",
+ "Singer and performer, born 1995 in Lima, based in Spain. Uses él, ella and elle. The word she uses for herself is travesti — in Latin America a gender identity rather than a way of dressing — and it is the title of her 2023 album, Travesti del Perú.",
+ "Yo no soy un hombre, ni mujer. — I am not a man, nor a woman.",
  "Somos Periodismo","https://somosperiodismo.com/gad-yola-una-drag-queen-decolonial/"),
 
 "Samantha Hudson": ("partial","Spain","Spanish",
- "Singer, actress and performer, born 1999 in Le\u00f3n. She describes herself as a trans non-binary person and as a travesti, and explicitly declines the label mujer trans, so this page does not use it for her. She has also said she does not mind which pronouns are used for her. Marked partial because her own position is deliberately less settled than any single label, not because the sources are thin.",
- "Transformista y travesti de guardia las 24 horas. \u2014 A transformista and a travesti on duty 24 hours a day.",
+ "Singer, actress and performer, born 1999 in León. She describes herself as a trans non-binary person and as a travesti, and explicitly declines the label mujer trans, so this page does not use it for her. She has also said she does not mind which pronouns are used for her. Marked partial because her own position is deliberately less settled than any single label, not because the sources are thin.",
+ "Transformista y travesti de guardia las 24 horas. — A transformista and a travesti on duty 24 hours a day.",
  "leonoticias","https://www.leonoticias.com/gente-estilo/samantha-hudson-artista-20230211132401-nt.html"),
 
 "Pupi Poisson": ("guest","Spain","Spanish",
- "Spanish drag performer and singer, credited alongside Arantxa Castilla-La Mancha on \u201cLas Defectos\u201d; no statement of their own about gender identity was located.",
+ "Spanish drag performer and singer, credited alongside Arantxa Castilla-La Mancha on “Las Defectos”; no statement of their own about gender identity was located.",
  None,"",""),
 
 "CARLES CUEVAS": ("guest","Spain","Spanish",
- "Spanish singer and producer, credited on \u201cLas Defectos\u201d; no statement of his own about gender identity was located.",
+ "Spanish singer and producer, credited on “Las Defectos”; no statement of his own about gender identity was located.",
  None,"",""),
 
 "Umlilo": ("partial","South Africa","isiZulu",
- "Musician and performance artist from Johannesburg, who calls her own genre kwaai \u2014 a post-kwaito electronic music \u2014 and herself a kwaai diva. Founder of Future Kwaai and co-founder of the LeGrand Queer Arts Festival. She states her gender in the first person; what is not stated anywhere is the gender she was assigned at birth, which this page infers from what she says about her own childhood rather than from a declaration. Hence partial.",
- "I\u2019m a genderqueer mindfuck for most people.",
+ "Musician and performance artist from Johannesburg, who calls her own genre kwaai — a post-kwaito electronic music — and herself a kwaai diva. Founder of Future Kwaai and co-founder of the LeGrand Queer Arts Festival. She states her gender in the first person; what is not stated anywhere is the gender she was assigned at birth, which this page infers from what she says about her own childhood rather than from a declaration. Hence partial.",
+ "I’m a genderqueer mindfuck for most people.",
  "Scaffold","https://www.scaffold-culture.com/scaffold-archive/umlilo"),
 
 "Angel-Ho": ("verified","South Africa","English",
@@ -541,25 +541,30 @@ ART = {
  "The Quietus","https://thequietus.com/articles/26179-angel-ho-interview-hyperdub-death-becomes-her"),
 
 "Shyraa Roy": ("verified","Pakistan","Urdu",
- "Singer, actress and producer from Pakistan, based in Dubai, crowned the first Miss Trans Pakistan in 2021 and again in 2022. The Pakistani press knows her as the singer of \u201cKamli\u201d and \u201cRaat\u201d.",
+ "Singer, actress and producer from Pakistan, based in Dubai, crowned the first Miss Trans Pakistan in 2021 and again in 2022. The Pakistani press knows her as the singer of “Kamli” and “Raat”.",
  "It is true that I am a transgender woman. I am a girl who has changed her gender from a man to a woman.",
  "Parhlo","https://www.parhlo.com/transgender-singer-shyraa-roy/"),
 
-"Cindy Th\u00e1i T\u00e0i": ("verified","Vietnam","Vietnamese",
- "Singer and actress born 1971 as Nguy\u1ec5n Th\u00e1i T\u00e0i, the first Vietnamese public figure to make her transition public, in 2005. In the same interview she is careful to separate gender from sexuality: \u201cT\u00f4i chuy\u1ec3n \u0111\u1ed5i gi\u1edbi t\u00ednh ch\u1ee9 kh\u00f4ng \u0111\u1ed3ng t\u00ednh\u201d \u2014 I changed my gender, I am not gay.",
- "T\u00f4i t\u1eebng l\u00e0 \u0111\u00e0n \u00f4ng v\u00e0 b\u00e2y gi\u1edd l\u00e0 m\u1ed9t ph\u1ee5 n\u1eef trong c\u1ea3 th\u1ec3 x\u00e1c l\u1eabn t\u00e2m h\u1ed3n. \u2014 I was once a man and now I am a woman, in body as in soul.",
+"Cindy Thái Tài": ("verified","Vietnam","Vietnamese",
+ "Singer and actress born 1971 as Nguyễn Thái Tài, the first Vietnamese public figure to make her transition public, in 2005. In the same interview she is careful to separate gender from sexuality: “Tôi chuyển đổi giới tính chứ không đồng tính” — I changed my gender, I am not gay.",
+ "Tôi từng là đàn ông và bây giờ là một phụ nữ trong cả thể xác lẫn tâm hồn. — I was once a man and now I am a woman, in body as in soul.",
  "VnExpress","https://vnexpress.net/cindy-thai-tai-toi-doi-gioi-tinh-chu-khong-dong-tinh-1892073.html"),
 
 "K Rizz": ("guest","South Africa","English",
- "South African rapper, credited with Angel-Ho on \u201cLike A Girl\u201d; no statement of her own about gender identity was located.",
+ "South African rapper, credited with Angel-Ho on “Like A Girl”; no statement of her own about gender identity was located.",
  None,"",""),
 
 "Kashif Ali": ("guest","Pakistan","Urdu",
- "Pakistani singer, credited with Shyraa Roy on \u201cDuniya\u201d; no statement of his own about gender identity was located.",
+ "Pakistani singer, credited with Shyraa Roy on “Duniya”; no statement of his own about gender identity was located.",
  None,"",""),
 
-"TH\u00c9A": ("verified","France","French",
- "Th\u00e9a Barromes, born 2001. Singer, songwriter and producer; hyperpop crossed with emo, punk and nu metal. Started posting songs on YouTube in 2019 and has played live since 2020, on the labels Pont Futur then Glory Box Music.",
- "Je suis une fille trans qui s\u2019habille parfois de mani\u00e8re un peu masculine. Une fille qui a les cheveux roses, un piercing et qui a une grosse voix. \u2014 I am a trans girl who sometimes dresses a bit masculine. A girl with pink hair, a piercing and a big voice.",
+"THÉA": ("verified","France","French",
+ "Théa Barromes, born 2001. Singer, songwriter and producer; hyperpop crossed with emo, punk and nu metal. Started posting songs on YouTube in 2019 and has played live since 2020, on the labels Pont Futur then Glory Box Music.",
+ "Je suis une fille trans qui s’habille parfois de manière un peu masculine. Une fille qui a les cheveux roses, un piercing et qui a une grosse voix. — I am a trans girl who sometimes dresses a bit masculine. A girl with pink hair, a piercing and a big voice.",
  "La Sas","https://www.lasasconcerts.com/agenda-des-concerts/thea-2/"),
+
+"TAMAGOTCHI MASSACRE": ("verified","United States","English",
+ "Cleo McKenzie. Trans woman: says of her high-school years that “the world knew me as a dude”, before starting to question her gender at the beginning of the pandemic. Sings in a pitched-up register she describes as a response to her own vocal dysphoria.",
+ "All through high school, the world knew me as a dude. At the beginning of quarantine, I started to realize, “Hm, something’s funky. I don’t feel that great.”",
+ "The Idle Class","http://idleclassmag.com/qa-laughing-crying-tamagotchi-massacre/"),
 }
