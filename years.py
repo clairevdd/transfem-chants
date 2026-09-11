@@ -1947,4 +1947,30 @@ YEARS = {
         "checked": "2026-09-04",
         "note": "Spotify serves the 2004 CD compilation. A gap of 41 years.",
     },
+    # La Veneno — El Rap de la Veneno
+    "3qDqg53YIe9mM5Ehx9v9FZ": {
+        "first_public": "1996-08-30",
+        "first_record": None,
+        "precision": "day",
+        "kind": "earliest_known",
+        "spotify": "1996-08-30",
+        "status": "partial",
+        "source": "Spotify, track page metadata, read in session",
+        "url": "https://open.spotify.com/track/3qDqg53YIe9mM5Ehx9v9FZ",
+        "checked": "2026-09-11",
+        "note": "Spotify's own title carries a “Remastered” tag, exactly the kind of marker METHODE-DATES flags as a possible sign of a later reissue date rather than the true 1996 release. Not corroborated against MusicBrainz or Discogs this session; other sources agree the single dates from 1996, so the year is not in doubt, but the exact day should be treated with caution until a second source is opened.",
+    },
+    # Ella — La Drácula
+    "6fd79PtewFZgLXYiIYhhLJ": {
+        "first_public": "2023-02-10",
+        "first_record": None,
+        "precision": "day",
+        "kind": "earliest_known",
+        "spotify": "2023-02-10",
+        "status": "partial",
+        "source": "Spotify, track page metadata, read in session",
+        "url": "https://open.spotify.com/track/6fd79PtewFZgLXYiIYhhLJ",
+        "checked": "2026-09-11",
+        "note": "No entry in MusicBrainz or Discogs. Platform date, not corroborated. Track 1 of the album La Drácula.",
+    },
 }

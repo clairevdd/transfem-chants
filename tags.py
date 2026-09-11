@@ -237,4 +237,6 @@ TAGS = {
     '4yBfzgV6YA9dTKP8KUD35j': {'discogs': ['dance-pop'], 'musicbrainz': [], 'lastfm': ['pop']},  # Lia Larsson, Tone Sekelius, Lisa Ajax — VI ÄR SVERIGE (VM-låt 2023)
     '29Ga6IgetN8Xah85ZHZ8AC': {'discogs': ['villancicos', 'electroclash', 'holiday', 'euro house'], 'musicbrainz': [], 'lastfm': ['pop', 'indie', 'alternative', 'electronic', 'electrotrash']},  # Samantha Hudson, Villano Antillano — Full Lace y el Tuck
     '0pe5NUU9uGwFpj637ot84D': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Patricia Ribeiro — Conquistador
+    '3qDqg53YIe9mM5Ehx9v9FZ': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # La Veneno — El Rap de la Veneno
+    '6fd79PtewFZgLXYiIYhhLJ': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Ella — La Drácula
 }

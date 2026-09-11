@@ -567,4 +567,22 @@ ART = {
  "Cleo McKenzie. Trans woman: says of her high-school years that “the world knew me as a dude”, before starting to question her gender at the beginning of the pandemic. Sings in a pitched-up register she describes as a response to her own vocal dysphoria.",
  "All through high school, the world knew me as a dude. At the beginning of quarantine, I started to realize, “Hm, something’s funky. I don’t feel that great.”",
  "The Idle Class","http://idleclassmag.com/qa-laughing-crying-tamagotchi-massacre/"),
+
+"Ella": ("verified","Brazil","Portuguese, Spanish",
+ "Ella Viana de Holanda. Trans woman and singer, formerly a gospel star recording as Jotta A (platinum album Essência, 2012; Latin Grammy nomination, 2013). Diagnosed with gender dysphoria in adulthood, transitioned publicly, and legally changed her name in 2022 while keeping “Jotta” as a link to her own history. Now records pop music, including in Spanish.",
+ "Comecei a fazer várias perguntas a elas, sobre transição, sobre terapia hormonal… Cheguei em casa, comecei a pesquisar e a entender que uma nova pessoa nasceria dali em diante. — I started asking them lots of questions, about transition, about hormone therapy… I got home, started researching, and understood that a new person would be born from then on.",
+ None, (("Terra","https://www.terra.com.br/nos/paradasp/cantora-jotta-a-abandonou-universo-gospel-para-se-assumir-trans-me-sinto-inteira,5d847ff3f4043c56413923313fc76b78r74b3oz3.html"),
+        ("O Tempo","https://www.otempo.com.br/entretenimento/2024/12/30/ex-cantora-gospel-trans-jotta-a-faz-revelacoes-sobre-cirurgia-de-redesignacao-sexual"))),
+
+"La Veneno": ("verified","Spain","Spanish",
+ "Cristina Ortiz (1961–2021). Spanish trans icon and television personality, the subject of the HBO Max series Veneno and of Valeria Vegas's biography ¡Digo! Ni puta ni santa. Recorded two singles in 1996, “Veneno pa’ tu piel” (gold record) and “El rap de La Veneno”. Included as verified on Claire's own editorial judgement, 11 September 2026: despite extensive press coverage, no first-person statement about her gender identity specifically was found and opened during this project's own research.",
+ None,"Wikipedia","https://en.wikipedia.org/wiki/La_Veneno"),
+
+"Naomy": ("partial","Romania","Romanian",
+ "Singer, songwriter and actress (1972–2019), Romania's best-known transgender performer; competed in Romania's national Eurovision selection in 2014, released several albums including a 2008 jazz record. No first-person statement about her own gender identity has been found and opened during verification: Romanian press coverage of her life and death describes her in the third person as the country's best-known trans woman. Included on Claire's own editorial judgement, 11 September 2026.",
+ None,"Wikipedia","https://en.wikipedia.org/wiki/Naomy_(Romanian_singer)"),
+
+"Reshma of Kashmir": ("partial","India","Kashmiri",
+ "Wedding singer and prominent transgender-rights figure from Srinagar, Kashmir (died November 2022, aged around 70). One of her wedding performances went viral online. No first-person statement about her own gender identity has been found and opened during verification: coverage of her life describes her in the third person as a beloved and influential trans figure in the Kashmir Valley. Included on Claire's own editorial judgement, 11 September 2026.",
+ None,"Wikipedia","https://en.wikipedia.org/wiki/Reshma_of_Kashmir"),
 }

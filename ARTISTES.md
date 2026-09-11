@@ -4,12 +4,12 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 
 ## Où on en est
 
-- **147 morceaux**
-- **90 artistes présentées comme transféminines**, plus **2 cas ouverts**
+- **149 morceaux**
+- **92 artistes présentées comme transféminines**, plus **2 cas ouverts**
 - **34 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Pakistan, Peru, Philippines, Portugal, Puerto Rico, Serbia, South Africa, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
 - **21 langues** : Arabic, Darija, English, French, German, Hebrew, Indonesian, isiZulu, Italian, Japanese, Korean, Malay, Portuguese, Spanish, Swedish, Thai, Turkish, Twi, Urdu, Vietnamese, Zapotec
 
-Généré le 2026-09-10
+Généré le 2026-09-11
 
 ## Artistes principales
 
@@ -111,6 +111,10 @@ Généré le 2026-09-10
 | **Cindy Thái Tài** | `verified` | Vietnam | Vietnamese | 1 | [VnExpress](https://vnexpress.net/cindy-thai-tai-toi-doi-gioi-tinh-chu-khong-dong-tinh-1892073.html) |
 | **THÉA** | `verified` | France | French | 4 | [La Sas](https://www.lasasconcerts.com/agenda-des-concerts/thea-2/) |
 | **TAMAGOTCHI MASSACRE** | `verified` | United States | English | 1 | [The Idle Class](http://idleclassmag.com/qa-laughing-crying-tamagotchi-massacre/) |
+| **Ella** | `verified` | Brazil | Portuguese, Spanish | 1 | [Terra](https://www.terra.com.br/nos/paradasp/cantora-jotta-a-abandonou-universo-gospel-para-se-assumir-trans-me-sinto-inteira,5d847ff3f4043c56413923313fc76b78r74b3oz3.html), [O Tempo](https://www.otempo.com.br/entretenimento/2024/12/30/ex-cantora-gospel-trans-jotta-a-faz-revelacoes-sobre-cirurgia-de-redesignacao-sexual) |
+| **La Veneno** | `verified` | Spain | Spanish | 1 | [Wikipedia](https://en.wikipedia.org/wiki/La_Veneno) |
+| **Naomy** | `partial` | Romania | Romanian | 0 | [Wikipedia](https://en.wikipedia.org/wiki/Naomy_(Romanian_singer)) |
+| **Reshma of Kashmir** | `partial` | India | Kashmiri | 0 | [Wikipedia](https://en.wikipedia.org/wiki/Reshma_of_Kashmir) |
 
 ## Crédits invités
 
@@ -154,6 +158,8 @@ Généré le 2026-09-10
 Prêtes à entrer dès qu'un titre leur est associé.
 
 - **Manuela Trasobares** — `partial`, Spain, Spanish. Source : [dosmanzanas](https://dosmanzanas.com/2021/10/manuela-trasobares-cantante-muchas-veces-hablo-de-mi-en-tercera-persona-porque-dios-soy-yo.html)
+- **Naomy** — `partial`, Romania, Romanian. Source : [Wikipedia](https://en.wikipedia.org/wiki/Naomy_(Romanian_singer))
+- **Reshma of Kashmir** — `partial`, India, Kashmiri. Source : [Wikipedia](https://en.wikipedia.org/wiki/Reshma_of_Kashmir)
 
 ## Citations retenues
 
@@ -212,3 +218,4 @@ Reproduites mot pour mot.
 - **Cindy Thái Tài** — « Tôi từng là đàn ông và bây giờ là một phụ nữ trong cả thể xác lẫn tâm hồn. — I was once a man and now I am a woman, in body as in soul. » (VnExpress)
 - **THÉA** — « Je suis une fille trans qui s’habille parfois de manière un peu masculine. Une fille qui a les cheveux roses, un piercing et qui a une grosse voix. — I am a trans girl who sometimes dresses a bit masculine. A girl with pink hair, a piercing and a big voice. » (La Sas)
 - **TAMAGOTCHI MASSACRE** — « All through high school, the world knew me as a dude. At the beginning of quarantine, I started to realize, “Hm, something’s funky. I don’t feel that great.” » (The Idle Class)
+- **Ella** — « Comecei a fazer várias perguntas a elas, sobre transição, sobre terapia hormonal… Cheguei em casa, comecei a pesquisar e a entender que uma nova pessoa nasceria dali em diante. — I started asking them lots of questions, about transition, about hormone therapy… I got home, started researching, and understood that a new person would be born from then on. » (None)

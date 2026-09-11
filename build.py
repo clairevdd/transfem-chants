@@ -14,6 +14,7 @@ Le build échoue si un nom crédité dans tracks.py n'existe pas dans data.py.
 """
 import html
 import re
+import urllib.parse
 
 import atlas
 import chrono
@@ -232,10 +233,20 @@ def tracklist():
             ttl = "first published " + str(yv["first_public"]) if yv["first_public"] else "date not established"
             # Lien externe vers les paroles. Un lien de type "recherche" (aucune
             # fiche précise confirmée) le dit dans son titre plutôt que de se
-            # faire passer pour une fiche trouvée.
+            # faire passer pour une fiche trouvée. Dans ce cas, on ne pointe pas
+            # vers une recherche à l'aveugle sur Genius, mais vers une recherche
+            # DuckDuckGo (nom de l'artiste + titre + "lyrics"), généralement
+            # plus fiable pour retrouver la bonne page quel que soit le site.
             lyr_url = LYRICS.get(sid)
             if lyr_url:
-                lyr_ttl = "search results, no exact page confirmed" if sid in SEARCH else "lyrics"
+                if sid in SEARCH:
+                    leads = [name for name in artists_of(credit) if ART[name][0] != "guest"]
+                    lead_name = leads[0] if leads else artists_of(credit)[0]
+                    q = urllib.parse.quote_plus(f"{lead_name} {title} lyrics")
+                    lyr_url = f"https://duckduckgo.com/?q={q}"
+                    lyr_ttl = "search results, no exact page confirmed"
+                else:
+                    lyr_ttl = "lyrics"
                 lyr_cell = (f'<a href="{esc(lyr_url)}" target="_blank" rel="noopener" '
                            f'title="{esc(lyr_ttl)}">lyrics{"&nbsp;?" if sid in SEARCH else ""}</a>')
             else:
@@ -257,7 +268,15 @@ def card(name):
     meta = (f'{esc(country)} &middot; {esc(lang)} &middot; {n} track{plural}'
             if lang != "—" else f'{esc(country)} &middot; {n} track{plural}')
     q = f'<blockquote>{esc(quote)}</blockquote>' if quote else ''
-    if srcurl:
+    # Une fiche peut citer plusieurs sources plutôt qu'une seule : src vaut
+    # alors None et srcurl une liste/un tuple de paires (nom, URL), au lieu
+    # d'une URL unique. Voir Ella, entrée du 11 septembre 2026.
+    if isinstance(srcurl, (list, tuple)) and srcurl and isinstance(srcurl[0], (list, tuple)):
+        links_html = ", ".join(
+            f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(nm)}</a>'
+            for nm, u in srcurl)
+        s = f'<p class="src">Sources: {links_html}</p>'
+    elif srcurl:
         s = f'<p class="src">Source: <a href="{esc(srcurl)}" target="_blank" rel="noopener">{esc(src)}</a></p>'
     elif status in ("unresolved", "guest"):
         s = '<p class="src none">No public source found.</p>'
@@ -299,7 +318,7 @@ def page():
 </header>
 
 <h2>The tracks</h2>
-<p>In playlist order. Each title links to Spotify; each artist name links to their entry below; the year links to <a href="years.html">when the song first existed</a>; and, where one was found, <em>lyrics</em> links to an external page. A question mark after that link means no exact page could be confirmed, and it points to a search instead.</p>
+<p>In playlist order. Each title links to Spotify; each artist name links to their entry below; the year links to <a href="years.html">when the song first existed</a>; and, where one was found, <em>lyrics</em> links to an external page. A question mark after that link means no exact page could be confirmed, and it points to a DuckDuckGo search (artist name, title, and "lyrics") instead.</p>
 
 {tracklist()}
 

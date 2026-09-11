@@ -7,9 +7,11 @@ genius-releve.html, musixmatch-releve.html et paroles-44(-v2).html dans
 l'historique du projet Claude pour la méthode.
 
 `SEARCH` marque les morceaux pour lesquels aucune page de paroles précise n'a
-été confirmée : l'URL pointe alors vers une recherche Genius plutôt que vers
-une fiche, et le lien public le dit plutôt que de laisser croire à une fiche
-trouvée.
+été confirmée : l'URL stockée ici sert seulement à la vérification de
+complétude du build (chaque morceau doit avoir une entrée) ; à l'affichage,
+build.py remplace ce lien par une recherche DuckDuckGo (nom de l'artiste +
+titre + « lyrics ») générée à la volée, et le lien public le dit plutôt que
+de laisser croire à une fiche trouvée.
 """
 
 LYRICS = {
@@ -45,7 +47,7 @@ LYRICS = {
     '7kvQptbfqq5b4MWRQOMrZC': 'https://genius.com/Femtanyl-and-issbrokie-nastywerkkkk-lyrics',
     '724utiMbqUfT1g3tqbfQYu': 'https://genius.com/Underscores-spoiled-little-brat-lyrics',
     '1PEPcLm2QEo0HCRIhQjPq1': 'https://genius.com/Underscores-second-hand-embarrassment-lyrics',
-    '0ZeVhHgvMsF6dqo2AFSfut': 'https://genius.com/search?q=TAMAGOTCHI+MASSACRE+i%27m+2+years+on+hormones+and+i%27m+still+sad+i+want+a+refund',
+    '0ZeVhHgvMsF6dqo2AFSfut': 'https://genius.com/Tamagotchi-massacre-im-two-years-on-hormones-and-im-still-sad-i-want-a-refund-lyrics',
     '0VNjaRcmIowjLbPtYDhLuh': 'https://genius.com/Underscores-your-favorite-sidekick-lyrics',
     '54n3iwz9mr7yxZi1EOX1Mz': 'https://genius.com/Underscores-and-gabby-start-locals-girls-like-us-lyrics',
     '5dIPCgTEDagbcs5QGmni8V': 'https://genius.com/search?q=MON%C4%80E+CISPHOBIC',
@@ -160,9 +162,12 @@ LYRICS = {
     '0A2tFUYLertZLltvvY5uyr': 'https://genius.com/Ptite-soeur-and-gemroz-kayfabe-lyrics',
     '2lgwylOpGMtkvhwdnUOArt': 'https://genius.com/search?q=Romy+Haag+Memories+Are+Made+Of+This+-+Radio',
     '4CuivW1JgPauXPA4wYsf5K': 'https://genius.com/search?q=Coccinelle+Chercher+la+femme',
+    '3qDqg53YIe9mM5Ehx9v9FZ': 'https://genius.com/Cristina-la-veneno-el-rap-de-la-veneno-lyrics',
+    '6fd79PtewFZgLXYiIYhhLJ': 'https://genius.com/Ella-bra-la-dracula-lyrics',
 }
 
-# Morceaux dont le lien ci-dessus est une recherche Genius, pas une fiche confirmée.
+# Morceaux sans fiche de paroles confirmée : le lien public (généré par
+# build.py) pointe vers une recherche DuckDuckGo, pas vers l'URL ci-dessus.
 SEARCH = {
     '4OI2gBlHqyNks8cbIBIKYw',
     '6jiumfqTwOpXW6PDzsIBKl',
@@ -193,5 +198,4 @@ SEARCH = {
     '3eBY8aZZdWNnNhNbc8B0yp',
     '2lgwylOpGMtkvhwdnUOArt',
     '4CuivW1JgPauXPA4wYsf5K',
-    '0ZeVhHgvMsF6dqo2AFSfut',
 }

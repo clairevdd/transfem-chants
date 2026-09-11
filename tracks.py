@@ -223,6 +223,8 @@ SECTIONS = [
             ('4yBfzgV6YA9dTKP8KUD35j', 'VI ÄR SVERIGE (VM-låt 2023)', 'Lia Larsson, Tone Sekelius, Lisa Ajax'),
             ('29Ga6IgetN8Xah85ZHZ8AC', 'Full Lace y el Tuck', 'Samantha Hudson, Villano Antillano'),
             ('0pe5NUU9uGwFpj637ot84D', 'Conquistador', 'Patricia Ribeiro'),
+            ('3qDqg53YIe9mM5Ehx9v9FZ', 'El Rap de la Veneno', 'La Veneno'),
+            ('6fd79PtewFZgLXYiIYhhLJ', 'La Drácula', 'Ella'),
         ],
     },
 ]
@@ -232,4 +234,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 147
+assert len(all_tracks()) == 149

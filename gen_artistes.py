@@ -19,6 +19,10 @@ def esc(s):
 
 def src(name):
     e = ART[name]
+    srcurl = e[6]
+    # Sources multiples : e[6] est alors une liste/un tuple de paires (nom, URL).
+    if isinstance(srcurl, (list, tuple)) and srcurl and isinstance(srcurl[0], (list, tuple)):
+        return ", ".join("[%s](%s)" % (nm, u) for nm, u in srcurl)
     return "[%s](%s)" % (e[5], e[6]) if len(e) == 7 else "[%s](%s)" % (e[6], e[7])
 
 mains = [n for n, e in ART.items() if e[0] != "guest"]
