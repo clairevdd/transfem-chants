@@ -575,8 +575,10 @@ ART = {
         ("O Tempo","https://www.otempo.com.br/entretenimento/2024/12/30/ex-cantora-gospel-trans-jotta-a-faz-revelacoes-sobre-cirurgia-de-redesignacao-sexual"))),
 
 "La Veneno": ("verified","Spain","Spanish",
- "Cristina Ortiz (1961–2021). Spanish trans icon and television personality, the subject of the HBO Max series Veneno and of Valeria Vegas's biography ¡Digo! Ni puta ni santa. Recorded two singles in 1996, “Veneno pa’ tu piel” (gold record) and “El rap de La Veneno”. Included as verified on Claire's own editorial judgement, 11 September 2026: despite extensive press coverage, no first-person statement about her gender identity specifically was found and opened during this project's own research.",
- None,"Wikipedia","https://en.wikipedia.org/wiki/La_Veneno"),
+ "Cristina Ortiz (1961–2021). Spanish trans icon and television personality, the subject of the HBO Max series Veneno and of her own autobiography, written with Valeria Vegas, ¡Digo! Ni puta ni santa (2016). Recorded two singles in 1996, “Veneno pa’ tu piel” (gold record) and “El rap de La Veneno”. In the book she explains that she used the word travesti rather than transexual, because that was the word used in the street at the time and “nos entendíamos todas” — it was how they all understood one another.",
+ "A los seis años ya me sentía mujer, porque entonces yo me ponía todo lo de mi hermana, me probaba toda su ropa. — At six years old I already felt like a woman, because back then I would put on all of my sister's things, I would try on all her clothes.",
+ None, (("¡Digo! Ni puta ni santa (autobiography, read by Claire)","https://es.wikipedia.org/wiki/%C2%A1Digo!_Ni_puta,_ni_santa._Las_memorias_de_La_Veneno"),
+        ("Wikipedia","https://en.wikipedia.org/wiki/La_Veneno"))),
 
 "Naomy": ("partial","Romania","Romanian",
  "Singer, songwriter and actress (1972–2019), Romania's best-known transgender performer; competed in Romania's national Eurovision selection in 2014, released several albums including a 2008 jazz record. No first-person statement about her own gender identity has been found and opened during verification: Romanian press coverage of her life and death describes her in the third person as the country's best-known trans woman. Included on Claire's own editorial judgement, 11 September 2026.",

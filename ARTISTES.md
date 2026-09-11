@@ -112,7 +112,7 @@ Généré le 2026-09-11
 | **THÉA** | `verified` | France | French | 4 | [La Sas](https://www.lasasconcerts.com/agenda-des-concerts/thea-2/) |
 | **TAMAGOTCHI MASSACRE** | `verified` | United States | English | 1 | [The Idle Class](http://idleclassmag.com/qa-laughing-crying-tamagotchi-massacre/) |
 | **Ella** | `verified` | Brazil | Portuguese, Spanish | 1 | [Terra](https://www.terra.com.br/nos/paradasp/cantora-jotta-a-abandonou-universo-gospel-para-se-assumir-trans-me-sinto-inteira,5d847ff3f4043c56413923313fc76b78r74b3oz3.html), [O Tempo](https://www.otempo.com.br/entretenimento/2024/12/30/ex-cantora-gospel-trans-jotta-a-faz-revelacoes-sobre-cirurgia-de-redesignacao-sexual) |
-| **La Veneno** | `verified` | Spain | Spanish | 1 | [Wikipedia](https://en.wikipedia.org/wiki/La_Veneno) |
+| **La Veneno** | `verified` | Spain | Spanish | 1 | [¡Digo! Ni puta ni santa (autobiography, read by Claire)](https://es.wikipedia.org/wiki/%C2%A1Digo!_Ni_puta,_ni_santa._Las_memorias_de_La_Veneno), [Wikipedia](https://en.wikipedia.org/wiki/La_Veneno) |
 | **Naomy** | `partial` | Romania | Romanian | 0 | [Wikipedia](https://en.wikipedia.org/wiki/Naomy_(Romanian_singer)) |
 | **Reshma of Kashmir** | `partial` | India | Kashmiri | 0 | [Wikipedia](https://en.wikipedia.org/wiki/Reshma_of_Kashmir) |
 
@@ -219,3 +219,4 @@ Reproduites mot pour mot.
 - **THÉA** — « Je suis une fille trans qui s’habille parfois de manière un peu masculine. Une fille qui a les cheveux roses, un piercing et qui a une grosse voix. — I am a trans girl who sometimes dresses a bit masculine. A girl with pink hair, a piercing and a big voice. » (La Sas)
 - **TAMAGOTCHI MASSACRE** — « All through high school, the world knew me as a dude. At the beginning of quarantine, I started to realize, “Hm, something’s funky. I don’t feel that great.” » (The Idle Class)
 - **Ella** — « Comecei a fazer várias perguntas a elas, sobre transição, sobre terapia hormonal… Cheguei em casa, comecei a pesquisar e a entender que uma nova pessoa nasceria dali em diante. — I started asking them lots of questions, about transition, about hormone therapy… I got home, started researching, and understood that a new person would be born from then on. » (None)
+- **La Veneno** — « A los seis años ya me sentía mujer, porque entonces yo me ponía todo lo de mi hermana, me probaba toda su ropa. — At six years old I already felt like a woman, because back then I would put on all of my sister's things, I would try on all her clothes. » (None)
