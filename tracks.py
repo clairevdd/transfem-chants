@@ -95,6 +95,7 @@ SECTIONS = [
             ('1huN927tTdSiwF90FBHXkT', 'Immaterial', 'SOPHIE'),
             ('3qBg6BeHJlGgwl5aCa09EC', 'Revolution Lover', 'Left at London'),
             ('6RJiY28t9jWpdy1JkUhNgK', 'Mequetrefe', 'Arca'),
+            ('2PaTBoG5uDz6H3xPhnnDLz', 'Digital Empathy', 'Trevi Moran'),
         ],
     },
     {
@@ -179,6 +180,7 @@ SECTIONS = [
             ('6XeW8fjwoAFQeQpYojPtVI', 'GIRL HELL 1999', 'femtanyl'),
             ('5iAE3uBqaZm9aHUx9yy6a0', 'KATAMARI', 'femtanyl'),
             ('1w0AFg23E67l57A3RMiXjC', 'P3T', 'femtanyl'),
+            ('4DfHQvIAZmSmqcZbuO80sZ', 'Days of Girlhood', 'Dylan Mulvaney'),
         ],
     },
     {
@@ -225,6 +227,7 @@ SECTIONS = [
             ('0pe5NUU9uGwFpj637ot84D', 'Conquistador', 'Patricia Ribeiro'),
             ('3qDqg53YIe9mM5Ehx9v9FZ', 'El Rap de la Veneno', 'La Veneno'),
             ('6fd79PtewFZgLXYiIYhhLJ', 'La Drácula', 'Ella'),
+            ('4OF1mdSkA2z05DSwHNKVnz', 'Hasta Que Salga el Sol', 'Wendy Guevara'),
         ],
     },
 ]
@@ -234,4 +237,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 149
+assert len(all_tracks()) == 152

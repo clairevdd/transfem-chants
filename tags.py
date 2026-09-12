@@ -87,6 +87,7 @@ JUNK_BLOCK = {
     "artist on cover", "verrucht", "unglaublich", "unfassbar", "himmlisch",
     "so scharf", "booba", "urias", "wsum 91.7 fm madison", "pa",
     "minneapolis", "freelance", "hora", "rpa", "jovens talentos",
+    "nsbm", "war metal", "trevi moran",
 }
 
 TAGS = {
@@ -239,4 +240,7 @@ TAGS = {
     '0pe5NUU9uGwFpj637ot84D': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Patricia Ribeiro — Conquistador
     '3qDqg53YIe9mM5Ehx9v9FZ': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'rap']},  # La Veneno — El Rap de la Veneno
     '6fd79PtewFZgLXYiIYhhLJ': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'gospel']},  # Ella — La Drácula
+    '2PaTBoG5uDz6H3xPhnnDLz': {'discogs': [], 'musicbrainz': ['pop'], 'lastfm': ['pop']},  # Trevi Moran — Digital Empathy
+    '4OF1mdSkA2z05DSwHNKVnz': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'dance']},  # Wendy Guevara — Hasta Que Salga el Sol
+    '4DfHQvIAZmSmqcZbuO80sZ': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Dylan Mulvaney — Days of Girlhood
 }

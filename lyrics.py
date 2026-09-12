@@ -164,6 +164,9 @@ LYRICS = {
     '4CuivW1JgPauXPA4wYsf5K': 'https://genius.com/search?q=Coccinelle+Chercher+la+femme',
     '3qDqg53YIe9mM5Ehx9v9FZ': 'https://genius.com/Cristina-la-veneno-el-rap-de-la-veneno-lyrics',
     '6fd79PtewFZgLXYiIYhhLJ': 'https://genius.com/Ella-bra-la-dracula-lyrics',
+    '2PaTBoG5uDz6H3xPhnnDLz': 'https://genius.com/Trevi-moran-digital-empathy-lyrics',
+    '4OF1mdSkA2z05DSwHNKVnz': 'https://genius.com/Wendy-guevara-hasta-que-salga-el-sol-lyrics',
+    '4DfHQvIAZmSmqcZbuO80sZ': 'https://genius.com/Dylan-mulvaney-days-of-girlhood-lyrics',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par

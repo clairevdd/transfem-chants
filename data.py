@@ -587,4 +587,19 @@ ART = {
 "Reshma of Kashmir": ("partial","India","Kashmiri",
  "Wedding singer and prominent transgender-rights figure from Srinagar, Kashmir (died November 2022, aged around 70). One of her wedding performances went viral online. No first-person statement about her own gender identity has been found and opened during verification: coverage of her life describes her in the third person as a beloved and influential trans figure in the Kashmir Valley. Included on Claire's own editorial judgement, 11 September 2026.",
  None,"Wikipedia","https://en.wikipedia.org/wiki/Reshma_of_Kashmir"),
+
+"Trevi Moran": ("verified","United States","English",
+ "Singer and YouTube personality, a former X Factor USA contestant (2013) with a continuing music career since, including new singles after her coming out.",
+ "Hi. My name is Trevi Moran. I am a transgender female.",
+ "Entertainment Tonight (ET Online)","https://www.etonline.com/x-factor-alum-and-youtube-star-trevi-moran-comes-out-as-transgender-woman-147730"),
+
+"Wendy Guevara": ("verified","Mexico","Spanish",
+ "Mexican reality-television personality, winner of La Casa de los Famosos México (2023), formerly part of the collective Las Perdidas and now releasing music under her own name. Her own word for herself is chica transexual, not mujer trans, and this page keeps it rather than flattening it.",
+ "Yo siempre he dicho que yo no me considero una mujer, siempre he dicho que soy una chica transexual. — I have always said that I do not consider myself a woman, I have always said that I am a transsexual girl.",
+ "El Dictamen","https://www.eldictamen.mx/me-han-atacado-porque-no-me-considero-una-mujer-siempre-he-dicho-que-soy-transexual-wendy-guevara/"),
+
+"Dylan Mulvaney": ("verified","United States","English",
+ "Actress, writer and TikTok personality, known for her video series “Days of Girlhood” documenting her transition, and for the 2024 single of the same name.",
+ "I automatically have a lot of respect for you as a fellow trans woman.",
+ "NBC News","https://www.nbcnews.com/nbc-out/out-pop-culture/dylan-mulvaney-responds-caitlyn-jenners-tweets-rcna54800"),
 }
