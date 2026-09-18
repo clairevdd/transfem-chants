@@ -602,4 +602,24 @@ ART = {
  "Actress, writer and TikTok personality, known for her video series “Days of Girlhood” documenting her transition, and for the 2024 single of the same name.",
  "I automatically have a lot of respect for you as a fellow trans woman.",
  "NBC News","https://www.nbcnews.com/nbc-out/out-pop-culture/dylan-mulvaney-responds-caitlyn-jenners-tweets-rcna54800"),
+
+"Ayta Sözeri": ("verified","Türkiye","Turkish",
+ "Turkey's first trans actress, also a singer and backing vocalist (has notably sung backing vocals for Sezen Aksu). Several singles between 2018 and 2020.",
+ "Bedenimin içinde kendim değildim ki, ailemin yanında kendim olayım. — I wasn't even myself inside my own body, so how could I have been myself around my family.",
+ "Milliyet (Metin Uyar)","https://www.milliyet.com.tr/yazarlar/metin-uyar/bedenime-hapsolmustum-1689922"),
+
+"Selin Ciğerci": ("partial","Türkiye","Turkish",
+ "Turkish singer and media personality, active in pop since 2017. A modest recording output — in a 2019 interview she said she wasn't fully a singer yet, hoped to be one day — but her statement about her own identity is direct and unambiguous.",
+ "Kendimi bildim bileli yanlış bedendeyim. — For as long as I can remember, I've been in the wrong body.",
+ "Hürriyet (Ayşe Arman)","https://www.hurriyet.com.tr/yazarlar/ayse-arman/onur-haftasinda-selin-cigerciyle-kadin-kadina-kendimi-bildim-bileli-yanlis-bedendeyim-41259032"),
+
+"Gila Goldstein": ("verified","Israel","Hebrew",
+ "Cabaret singer, dancer and actress (1947–2017), a pioneering figure for transgender rights in Israel. Recorded original songs in the 1990s and co-hosted a local radio programme with Nino Orsiano in 1998. Used the word קוקסינלית (“cocksinelle”) for her own identity, saying the word “transgender” sounded strange to her ear.",
+ "לא נולדתי אישה, נעשיתי אישה. — I wasn't born a woman, I became a woman.",
+ "Mako (Keshet)","https://www.mako.co.il/pride-culture/Article-689d0715f646d81027.htm"),
+
+"Roberta Marrero": ("verified","Spain","Spanish",
+ "Visual artist, illustrator, actress and electropop musician (Las Palmas, 1968 – Madrid, 18 May 2024), author of the autobiographical comic El bebé verde. Two electropop albums under her own name and voice, A la vanguardia del peligro (2005) and Claroscuro (2007).",
+ "No nací ni hombre, ni mujer, nací bebé. Necesito tiempo para saber quién soy. — I wasn't born a man or a woman, I was born a baby. I need time to figure out who I am.",
+ "Divinity / RTVE","https://www.divinity.es/blogs/blackisnice/roberta-marrero-bebe-verde-transexual-cuestion-vital-no-capricho-quien-eres_6_2294865007.html"),
 }

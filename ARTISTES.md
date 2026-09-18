@@ -4,12 +4,12 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 
 ## Où on en est
 
-- **149 morceaux**
-- **92 artistes présentées comme transféminines**, plus **2 cas ouverts**
+- **156 morceaux**
+- **99 artistes présentées comme transféminines**, plus **2 cas ouverts**
 - **34 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Pakistan, Peru, Philippines, Portugal, Puerto Rico, Serbia, South Africa, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
 - **21 langues** : Arabic, Darija, English, French, German, Hebrew, Indonesian, isiZulu, Italian, Japanese, Korean, Malay, Portuguese, Spanish, Swedish, Thai, Turkish, Twi, Urdu, Vietnamese, Zapotec
 
-Généré le 2026-09-11
+Généré le 2026-09-18
 
 ## Artistes principales
 
@@ -115,6 +115,13 @@ Généré le 2026-09-11
 | **La Veneno** | `verified` | Spain | Spanish | 1 | [¡Digo! Ni puta ni santa (autobiography, read by Claire)](https://es.wikipedia.org/wiki/%C2%A1Digo!_Ni_puta,_ni_santa._Las_memorias_de_La_Veneno), [Wikipedia](https://en.wikipedia.org/wiki/La_Veneno) |
 | **Naomy** | `partial` | Romania | Romanian | 0 | [Wikipedia](https://en.wikipedia.org/wiki/Naomy_(Romanian_singer)) |
 | **Reshma of Kashmir** | `partial` | India | Kashmiri | 0 | [Wikipedia](https://en.wikipedia.org/wiki/Reshma_of_Kashmir) |
+| **Trevi Moran** | `verified` | United States | English | 1 | [Entertainment Tonight (ET Online)](https://www.etonline.com/x-factor-alum-and-youtube-star-trevi-moran-comes-out-as-transgender-woman-147730) |
+| **Wendy Guevara** | `verified` | Mexico | Spanish | 1 | [El Dictamen](https://www.eldictamen.mx/me-han-atacado-porque-no-me-considero-una-mujer-siempre-he-dicho-que-soy-transexual-wendy-guevara/) |
+| **Dylan Mulvaney** | `verified` | United States | English | 1 | [NBC News](https://www.nbcnews.com/nbc-out/out-pop-culture/dylan-mulvaney-responds-caitlyn-jenners-tweets-rcna54800) |
+| **Ayta Sözeri** | `verified` | Türkiye | Turkish | 1 | [Milliyet (Metin Uyar)](https://www.milliyet.com.tr/yazarlar/metin-uyar/bedenime-hapsolmustum-1689922) |
+| **Selin Ciğerci** | `partial` | Türkiye | Turkish | 1 | [Hürriyet (Ayşe Arman)](https://www.hurriyet.com.tr/yazarlar/ayse-arman/onur-haftasinda-selin-cigerciyle-kadin-kadina-kendimi-bildim-bileli-yanlis-bedendeyim-41259032) |
+| **Gila Goldstein** | `verified` | Israel | Hebrew | 1 | [Mako (Keshet)](https://www.mako.co.il/pride-culture/Article-689d0715f646d81027.htm) |
+| **Roberta Marrero** | `verified` | Spain | Spanish | 1 | [Divinity / RTVE](https://www.divinity.es/blogs/blackisnice/roberta-marrero-bebe-verde-transexual-cuestion-vital-no-capricho-quien-eres_6_2294865007.html) |
 
 ## Crédits invités
 
@@ -220,3 +227,10 @@ Reproduites mot pour mot.
 - **TAMAGOTCHI MASSACRE** — « All through high school, the world knew me as a dude. At the beginning of quarantine, I started to realize, “Hm, something’s funky. I don’t feel that great.” » (The Idle Class)
 - **Ella** — « Comecei a fazer várias perguntas a elas, sobre transição, sobre terapia hormonal… Cheguei em casa, comecei a pesquisar e a entender que uma nova pessoa nasceria dali em diante. — I started asking them lots of questions, about transition, about hormone therapy… I got home, started researching, and understood that a new person would be born from then on. » (None)
 - **La Veneno** — « A los seis años ya me sentía mujer, porque entonces yo me ponía todo lo de mi hermana, me probaba toda su ropa. — At six years old I already felt like a woman, because back then I would put on all of my sister's things, I would try on all her clothes. » (None)
+- **Trevi Moran** — « Hi. My name is Trevi Moran. I am a transgender female. » (Entertainment Tonight (ET Online))
+- **Wendy Guevara** — « Yo siempre he dicho que yo no me considero una mujer, siempre he dicho que soy una chica transexual. — I have always said that I do not consider myself a woman, I have always said that I am a transsexual girl. » (El Dictamen)
+- **Dylan Mulvaney** — « I automatically have a lot of respect for you as a fellow trans woman. » (NBC News)
+- **Ayta Sözeri** — « Bedenimin içinde kendim değildim ki, ailemin yanında kendim olayım. — I wasn't even myself inside my own body, so how could I have been myself around my family. » (Milliyet (Metin Uyar))
+- **Selin Ciğerci** — « Kendimi bildim bileli yanlış bedendeyim. — For as long as I can remember, I've been in the wrong body. » (Hürriyet (Ayşe Arman))
+- **Gila Goldstein** — « לא נולדתי אישה, נעשיתי אישה. — I wasn't born a woman, I became a woman. » (Mako (Keshet))
+- **Roberta Marrero** — « No nací ni hombre, ni mujer, nací bebé. Necesito tiempo para saber quién soy. — I wasn't born a man or a woman, I was born a baby. I need time to figure out who I am. » (Divinity / RTVE)

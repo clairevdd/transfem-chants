@@ -36,6 +36,7 @@ SECTIONS = [
             ('73xUwV4DkcelY7seMyY0PY', 'Lady on the Subway', 'Beth Elliott'),
             ('4dtyeDMnVKKo89QbbDtD5M', 'Ballad of the Oklahoma Women\'s Liberation Front', 'Beth Elliott'),
             ('3BYSoeWlqUgIwfY77C8VgE', 'Té de Malvón', 'La Bruja de Texcoco'),
+            ('2aHS8p4tspLPkOvALx8Fs0', 'Büklüm Büklüm', 'Ayta Sözeri'),
             ('7KtbrK74NNA4ySRZ49DC7R', 'Where the Lavender Grows', 'Mya Byrne'),
             ('0XIutL5epZuYV91bhCfFsR', 'Ümit Hırsızı', 'Bülent Ersoy'),
         ],
@@ -57,6 +58,7 @@ SECTIONS = [
             ('5WttRLHcZHhaIii5KwKh3Y', 'I Am Her', 'Shea Diamond'),
             ('0rK7QTyYjhPFadLH2YDl84', 'Picture of a Man', 'Our Lady J'),
             ('0gm0OruZdJlu8jamJe5OCh', 'Keisha Complexion', 'Shea Diamond'),
+            ('1jTo2GUdfyjvSBaXaV9IMh', 'שיר גאווה', 'Gila Goldstein'),
         ],
     },
     {
@@ -96,6 +98,7 @@ SECTIONS = [
             ('3qBg6BeHJlGgwl5aCa09EC', 'Revolution Lover', 'Left at London'),
             ('6RJiY28t9jWpdy1JkUhNgK', 'Mequetrefe', 'Arca'),
             ('2PaTBoG5uDz6H3xPhnnDLz', 'Digital Empathy', 'Trevi Moran'),
+            ('2rMjMkOapLVsxbDSap5Uy2', 'Humano, Demasiado Humano', 'Roberta Marrero'),
         ],
     },
     {
@@ -222,6 +225,7 @@ SECTIONS = [
             ('1EPYnBjYhYHcNthEnVWk18', '됐거든', 'Harisu'),
             ('0GSW6V6GJc4xYi8c5jOu60', 'さそり座の女', 'Ai Haruna'),
             ('2lgwylOpGMtkvhwdnUOArt', 'Memories Are Made Of This - Radio', 'Romy Haag'),
+            ('6vtcDkc68Des2RUrfTSXzK', 'Hikaye', 'Selin Ciğerci'),
             ('4X6PkqzKUvWWKoq4YiiM1V', 'Snow White', 'Harisu'),
             ('4yBfzgV6YA9dTKP8KUD35j', 'VI ÄR SVERIGE (VM-låt 2023)', 'Lia Larsson, Tone Sekelius, Lisa Ajax'),
             ('29Ga6IgetN8Xah85ZHZ8AC', 'Full Lace y el Tuck', 'Samantha Hudson, Villano Antillano'),
@@ -237,4 +241,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 152
+assert len(all_tracks()) == 156

@@ -167,6 +167,10 @@ LYRICS = {
     '2PaTBoG5uDz6H3xPhnnDLz': 'https://genius.com/Trevi-moran-digital-empathy-lyrics',
     '4OF1mdSkA2z05DSwHNKVnz': 'https://genius.com/Wendy-guevara-hasta-que-salga-el-sol-lyrics',
     '4DfHQvIAZmSmqcZbuO80sZ': 'https://genius.com/Dylan-mulvaney-days-of-girlhood-lyrics',
+    '2aHS8p4tspLPkOvALx8Fs0': 'https://www.musixmatch.com/lyrics/Ayta-S%C3%B6zeri/B%C3%BCkl%C3%BCm-B%C3%BCkl%C3%BCm',
+    '6vtcDkc68Des2RUrfTSXzK': 'https://genius.com/Selin-cigerci-hikaye-lyrics',
+    '1jTo2GUdfyjvSBaXaV9IMh': 'https://lyrics.lyricfind.com/lyrics/%D7%92%D7%99%D7%9C%D7%94-%D7%92%D7%95%D7%9C%D7%93%D7%A9%D7%98%D7%99%D7%99%D7%9F-%D7%A9%D7%99%D7%A8-%D7%92%D7%90%D7%95%D7%95%D7%94',
+    '2rMjMkOapLVsxbDSap5Uy2': 'https://acordes.lacuerda.net/roberta_marrero/humano_demasiado_humano.shtml',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par

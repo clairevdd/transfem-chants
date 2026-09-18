@@ -62,7 +62,9 @@ lui-même l'un de ces mots :
   (`booba` sur JEDET, `urias` sur les morceaux d'Urias elle-même), ou des
   fragments sans sens musical (`pa`, `3`, `hora` — ce dernier écarté par
   prudence : usage incertain, éventuellement une insulte en espagnol, sur un
-  titre suédois où aucun des deux sens n'a de raison de figurer).
+  titre suédois où aucun des deux sens n'a de raison de figurer), ou une
+  réaction subjective en italien sur Roberta Marrero (`intimisco`, adjectif
+  signifiant « intime », pas un genre musical).
 """
 
 IDENTITY_BLOCK = {
@@ -87,7 +89,7 @@ JUNK_BLOCK = {
     "artist on cover", "verrucht", "unglaublich", "unfassbar", "himmlisch",
     "so scharf", "booba", "urias", "wsum 91.7 fm madison", "pa",
     "minneapolis", "freelance", "hora", "rpa", "jovens talentos",
-    "nsbm", "war metal", "trevi moran",
+    "nsbm", "war metal", "trevi moran", "intimisco",
 }
 
 TAGS = {
@@ -243,4 +245,8 @@ TAGS = {
     '2PaTBoG5uDz6H3xPhnnDLz': {'discogs': [], 'musicbrainz': ['pop'], 'lastfm': ['pop']},  # Trevi Moran — Digital Empathy
     '4OF1mdSkA2z05DSwHNKVnz': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'dance']},  # Wendy Guevara — Hasta Que Salga el Sol
     '4DfHQvIAZmSmqcZbuO80sZ': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Dylan Mulvaney — Days of Girlhood
+    '2aHS8p4tspLPkOvALx8Fs0': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Ayta Sözeri — Büklüm Büklüm (Discogs genre "Pop" but styles empty; Last.fm artist tag "turkish" filtered by GEO_BLOCK)
+    '6vtcDkc68Des2RUrfTSXzK': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Selin Ciğerci — Hikaye
+    '1jTo2GUdfyjvSBaXaV9IMh': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Gila Goldstein — שיר גאווה
+    '2rMjMkOapLVsxbDSap5Uy2': {'discogs': ['europop', 'vocal'], 'musicbrainz': [], 'lastfm': []},  # Roberta Marrero — Humano, Demasiado Humano (Last.fm artist tag "intimisco" filtered by JUNK_BLOCK)
 }
