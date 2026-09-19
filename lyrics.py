@@ -171,6 +171,12 @@ LYRICS = {
     '6vtcDkc68Des2RUrfTSXzK': 'https://genius.com/Selin-cigerci-hikaye-lyrics',
     '1jTo2GUdfyjvSBaXaV9IMh': 'https://lyrics.lyricfind.com/lyrics/%D7%92%D7%99%D7%9C%D7%94-%D7%92%D7%95%D7%9C%D7%93%D7%A9%D7%98%D7%99%D7%99%D7%9F-%D7%A9%D7%99%D7%A8-%D7%92%D7%90%D7%95%D7%95%D7%94',
     '2rMjMkOapLVsxbDSap5Uy2': 'https://acordes.lacuerda.net/roberta_marrero/humano_demasiado_humano.shtml',
+    '5ljt7BaKAlflOjNs9jysyh': 'https://genius.com/Jup-do-bairro-intro-lyrics',
+    '1o8Xa3b70eDBgIvZTz7tKF': 'https://genius.com/Jup-do-bairro-e-se-nao-fosse-o-sonho-lyrics',
+    '1KnagH7nZ84p8vPMPZQ8hk': 'https://genius.com/Macy-rodman-tspg69-lyrics',
+    '60RgF3vDNAl6crhVg4f9wl': 'https://lyrics.lyricfind.com/lyrics/nomi-ruiz-hi-def-femme',
+    '084dIWdHoow6G00mBlxsOu': 'https://www.letras.mus.br/ventura-profana/folego/',
+    '23smC9d2TpPTGZ3GCzjL4b': 'https://genius.com/Liturgy-haelegen-ii-lyrics',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par

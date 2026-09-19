@@ -54,6 +54,7 @@ SECTIONS = [
             ('0VhGzYfT2ZOFz31b5IH7yJ', 'Un garçon qui pleure', 'Marie France, Chrissie Hynde'),
             # II — plus saturé
             ('4P9LdSPrnQl7KQwml4DUtq', 'Baby 95', 'Liniker'),
+            ('60RgF3vDNAl6crhVg4f9wl', 'Hi-Def Femme', 'Nomi Ruiz, Trace Lysette'),
             ('56xBg5e9rfrFqcqa4llUw7', 'Just Me (The Gender Binary Blues)', 'Jinkx Monsoon'),
             ('5WttRLHcZHhaIii5KwKh3Y', 'I Am Her', 'Shea Diamond'),
             ('0rK7QTyYjhPFadLH2YDl84', 'Picture of a Man', 'Our Lady J'),
@@ -94,6 +95,7 @@ SECTIONS = [
             ('2BQZhUPXdP9Nk1X84c7PtP', 'Unseen (feat. Celeste)', 'Lauren Auder, Celeste'),
             ('2CznvTOsuLh0USpHJqEc6V', 'Motorcycle', 'June Jones, Geryon'),
             ('3IDQXyHYuX2rdLnNfVzT3g', '4 DEGREES', 'ANOHNI'),
+            ('084dIWdHoow6G00mBlxsOu', 'Fôlego', 'Ventura Profana'),
             ('1huN927tTdSiwF90FBHXkT', 'Immaterial', 'SOPHIE'),
             ('3qBg6BeHJlGgwl5aCa09EC', 'Revolution Lover', 'Left at London'),
             ('6RJiY28t9jWpdy1JkUhNgK', 'Mequetrefe', 'Arca'),
@@ -117,6 +119,7 @@ SECTIONS = [
             ('3zGmkzXqXsXYVlGzJFpgCW', 'Boys', 'Venus de Mars and All the Pretty Horses'),
             ('4ltqfN12ohaVZdM6C45gMg', 'American Teenager', 'Ethel Cain'),
             ('14uL43Gg4ujizaATehrryk', 'The Ocean', 'Against Me!'),
+            ('23smC9d2TpPTGZ3GCzjL4b', 'Haelegen II', 'Haela Hunt-Hendrix'),
             ('7zBUh6s2Ca8eAURfnVHCTS', 'ANXIOLYTIQUES', 'THÉA'),
             ('3bnvoYUrPkgh0E3ZeYZ3me', 'OCTOPUS.LADY', 'Changeline'),
             ('7lc4ue2LiSfYRaABxq4YkT', 'JE.DÉTESTE.LA.FRANCE.pt1 (il y aura pas de pt2)', 'Changeline'),
@@ -152,6 +155,9 @@ SECTIONS = [
             # français
             ('0A2tFUYLertZLltvvY5uyr', 'KAYFABE', 'Ptite Soeur, Gemroz'),
             ('5Gp1fkuPV7CPtzKHfMH0kd', 'ANFO჻', 'Ptite Soeur, neophron'),
+            # portugais (Brésil)
+            ('5ljt7BaKAlflOjNs9jysyh', 'INTRO', 'Jup do Bairro, Indianarae Siqueira'),
+            ('1o8Xa3b70eDBgIvZTz7tKF', 'E Se Não Fosse O Sonho', 'Jup do Bairro'),
         ],
     },
     {
@@ -210,6 +216,7 @@ SECTIONS = [
             ('1YsFdaP9QG9NhjYS3o0g5P', 'Olha o Boneco', 'Titica, Ary'),
             ('7luHAaHXty1Nl3AcscZIDT', 'Faces', 'Mila Jam'),
             ('78iHtTxYIK2mD6oL6lXqFF', 'Travesti del Perú', 'Gad Yola'),
+            ('1KnagH7nZ84p8vPMPZQ8hk', 'TSPG69', 'Macy Rodman'),
             ('4Zhxtm6x56wEiRtSMAl28n', 'Diaba', 'Urias'),
             ('5dIPCgTEDagbcs5QGmni8V', 'CISPHOBIC', 'MONĀE, Cae Monāe'),
             ('6yAc1rz1RXRlYJac99xusK', 'Girls & Dolls', 'Tone Sekelius'),
@@ -241,4 +248,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 156
+assert len(all_tracks()) == 162

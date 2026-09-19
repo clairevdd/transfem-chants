@@ -618,8 +618,41 @@ ART = {
  "לא נולדתי אישה, נעשיתי אישה. — I wasn't born a woman, I became a woman.",
  "Mako (Keshet)","https://www.mako.co.il/pride-culture/Article-689d0715f646d81027.htm"),
 
+"Jup do Bairro": ("verified","Brazil","Portuguese",
+ "Multi-artist (music, visual art, drag) from São Paulo. Uses the word travesti for herself — a Brazilian gender identity, kept here rather than translated as “trans woman” — after first presenting as non-binary early in her career.",
+ "Hoje eu me reconheço enquanto travesti. — Today I recognise myself as travesti.",
+ "Ponte Jornalismo","https://ponte.org/jup-do-bairro-artivista-trans-nao-existe-corpo-errado-e-certo-o-certo-e-o-meu-corpo/"),
+
+"Indianarae Siqueira": ("guest","Brazil","Portuguese",
+ "Brazilian travesti activist, featured on “INTRO”. Publicly described and self-identified as travesti; kept in that word rather than translated.",
+ None,"Wikipédia (pt)","https://pt.wikipedia.org/wiki/Indianare_Siqueira"),
+
+"Macy Rodman": ("verified","United States","English",
+ "Trans woman, singer, comedian and podcaster based in New York. Speaks of moving away from drag once she began to identify as a trans woman rather than a drag queen.",
+ "I identified more as a trans woman and not a drag queen.",
+ "Judgement (Substack)","https://judgement.substack.com/p/macy-rodman-is-the-trans-pop-star"),
+
+"Nomi Ruiz": ("verified","United States","English",
+ "Singer, songwriter and producer (Jessica 6, Hercules and Love Affair). Trans woman; writes about her own transition and gender-confirmation surgery in the first person.",
+ "My trans adolescence was a war of attrition with my own body.",
+ "The Advocate","https://www.advocate.com/commentary/2019/4/14/joy-sex-after-gender-confirmation-surgery"),
+
+"Trace Lysette": ("guest","United States","English",
+ "Actress and singer, featured on “Hi-Def Femme”. Trans woman, speaks openly about her transition in interview.",
+ None,"El País (English)","https://english.elpais.com/culture/2022-11-24/trace-lysette-if-a-terf-went-to-lunch-with-a-woman-like-me-they-would-be-enlightened-and-maybe-even-ashamed.html"),
+
+"Ventura Profana": ("verified","Brazil","Portuguese",
+ "Multifaceted artist and self-described pastora travesti (travesti pastor) from Bahia, working at the crossing of evangelical music, experimental sound and performance.",
+ "Eu sou uma pessoa trans. — I am a trans person.",
+ "G1 (Globo)","https://g1.globo.com/ba/bahia/o-que-fazer-em-salvador/noticia/2025/04/25/conheca-ventura-profana-artista-multifacetada-e-pastora-travesti.ghtml"),
+
 "Roberta Marrero": ("verified","Spain","Spanish",
  "Visual artist, illustrator, actress and electropop musician (Las Palmas, 1968 – Madrid, 18 May 2024), author of the autobiographical comic El bebé verde. Two electropop albums under her own name and voice, A la vanguardia del peligro (2005) and Claroscuro (2007).",
  "No nací ni hombre, ni mujer, nací bebé. Necesito tiempo para saber quién soy. — I wasn't born a man or a woman, I was born a baby. I need time to figure out who I am.",
  "Divinity / RTVE","https://www.divinity.es/blogs/blackisnice/roberta-marrero-bebe-verde-transexual-cuestion-vital-no-capricho-quien-eres_6_2294865007.html"),
+
+"Haela Hunt-Hendrix": ("verified","United States","English",
+ "Singer, guitarist and principal songwriter of the band Liturgy (“transcendental black metal”), New York. Publicly announced her transition in May 2020, continuing the same project under the same name.",
+ "I am a woman. I've always been one.",
+ "Metal Injection","https://metalinjection.net/news/liturgys-hunter-hunt-hendrix-comes-out-as-transgender-i-am-a-woman"),
 }

@@ -79,7 +79,7 @@ GEO_BLOCK = {
     "french", "german", "ghana", "korean", "malaysia", "mexico",
     "puerto rico", "south african", "spain", "spanish", "sweden", "swedish",
     "thailand", "turkish", "united states", "american", "japanese",
-    "french rap",
+    "french rap", "usa",
 }
 
 JUNK_BLOCK = {
@@ -89,8 +89,14 @@ JUNK_BLOCK = {
     "artist on cover", "verrucht", "unglaublich", "unfassbar", "himmlisch",
     "so scharf", "booba", "urias", "wsum 91.7 fm madison", "pa",
     "minneapolis", "freelance", "hora", "rpa", "jovens talentos",
-    "nsbm", "war metal", "trevi moran", "intimisco",
+    "nsbm", "war metal", "trevi moran", "intimisco", "<3", "nacional",
 }
+# Ajouts du 19 septembre 2026, lot Jup do Bairro/Macy Rodman/Nomi Ruiz/
+# Ventura Profana : "usa" (GEO_BLOCK) est le même blocage que "united states"
+# sous une autre graphie ; "<3" (JUNK_BLOCK) est un bruit Last.fm sans rapport
+# avec la musique ; "nacional" (JUNK_BLOCK) désigne une catégorie de classement
+# de charts plutôt qu'un genre ou un pays. Décisions de l'assistant, à
+# confirmer par Claire — voir la note envoyée avec cet ajout.
 
 TAGS = {
     '1ovz0bZeO5YTBQTXIFf5Am': {'discogs': [], 'musicbrainz': ['ambient', 'classical', 'downtempo', 'electronic', 'house', 'modern classical', 'musical'], 'lastfm': []},  # Daniela Vega — Ombra Mai Fu
@@ -249,4 +255,10 @@ TAGS = {
     '6vtcDkc68Des2RUrfTSXzK': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Selin Ciğerci — Hikaye
     '1jTo2GUdfyjvSBaXaV9IMh': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Gila Goldstein — שיר גאווה
     '2rMjMkOapLVsxbDSap5Uy2': {'discogs': ['europop', 'vocal'], 'musicbrainz': [], 'lastfm': []},  # Roberta Marrero — Humano, Demasiado Humano (Last.fm artist tag "intimisco" filtered by JUNK_BLOCK)
+    '5ljt7BaKAlflOjNs9jysyh': {'discogs': [], 'musicbrainz': [], 'lastfm': ['electronic', 'rap', 'experimental', 'funk']},  # Jup do Bairro, Indianarae Siqueira — INTRO
+    '1o8Xa3b70eDBgIvZTz7tKF': {'discogs': [], 'musicbrainz': [], 'lastfm': ['electronic', 'rap', 'experimental', 'funk']},  # Jup do Bairro — E Se Não Fosse O Sonho (tags relevés à l'artiste, comme pour INTRO)
+    '1KnagH7nZ84p8vPMPZQ8hk': {'discogs': ['alt-pop', 'electroclash', 'punk', 'dance-pop'], 'musicbrainz': [], 'lastfm': ['pop', 'indie']},  # Macy Rodman — TSPG69 (Last.fm artist tags "trans"/"Canadian" filtered by IDENTITY_BLOCK/GEO_BLOCK)
+    '60RgF3vDNAl6crhVg4f9wl': {'discogs': ['electro', 'hip hop', 'contemporary r&b', 'indie pop'], 'musicbrainz': [], 'lastfm': ['hip hop', 'nu disco']},  # Nomi Ruiz, Trace Lysette — Hi-Def Femme (Last.fm artist tags "USA"/"<3" filtered — see the 19 September note on GEO_BLOCK/JUNK_BLOCK)
+    '084dIWdHoow6G00mBlxsOu': {'discogs': [], 'musicbrainz': [], 'lastfm': ['brazil', 'experimental']},  # Ventura Profana — Fôlego (Last.fm artist tag "Nacional" filtered — see the 19 September note on JUNK_BLOCK)
+    '23smC9d2TpPTGZ3GCzjL4b': {'discogs': ['black metal', 'experimental'], 'musicbrainz': [], 'lastfm': ['black metal', 'atmospheric black metal', 'brutal death metal', 'transcendental black metal']},  # Liturgy — Haelegen II (MusicBrainz blocked by robots.txt this session, not queried; Discogs styles from release 26540399)
 }
