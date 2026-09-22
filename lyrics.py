@@ -177,6 +177,10 @@ LYRICS = {
     '60RgF3vDNAl6crhVg4f9wl': 'https://lyrics.lyricfind.com/lyrics/nomi-ruiz-hi-def-femme',
     '084dIWdHoow6G00mBlxsOu': 'https://www.letras.mus.br/ventura-profana/folego/',
     '23smC9d2TpPTGZ3GCzjL4b': 'https://genius.com/Liturgy-haelegen-ii-lyrics',
+    '4bglcunoysO0W3puey06d6': 'https://genius.com/Aerea-negrot-its-lover-love-lyrics',
+    '42Opc7AzlbYad3AuWsBGuf': 'https://genius.com/Katie-dey-only-to-trip-and-fall-down-again-lyrics',
+    '36Xl4wdcXaW7zi7N01WSOo': 'https://chloealisonescott.bandcamp.com/track/hard-femme-in-argyle-2',
+    '608TXHjFnEau83A1DoyVCt': 'https://www.songlyrics.com/honey-mahogany/it-s-honey-lyrics/',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par

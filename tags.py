@@ -79,7 +79,7 @@ GEO_BLOCK = {
     "french", "german", "ghana", "korean", "malaysia", "mexico",
     "puerto rico", "south african", "spain", "spanish", "sweden", "swedish",
     "thailand", "turkish", "united states", "american", "japanese",
-    "french rap", "usa",
+    "french rap", "usa", "venezuela",
 }
 
 JUNK_BLOCK = {
@@ -90,6 +90,7 @@ JUNK_BLOCK = {
     "so scharf", "booba", "urias", "wsum 91.7 fm madison", "pa",
     "minneapolis", "freelance", "hora", "rpa", "jovens talentos",
     "nsbm", "war metal", "trevi moran", "intimisco", "<3", "nacional",
+    "hbo looking", "rpdr s5",
 }
 # Ajouts du 19 septembre 2026, lot Jup do Bairro/Macy Rodman/Nomi Ruiz/
 # Ventura Profana : "usa" (GEO_BLOCK) est le même blocage que "united states"
@@ -97,6 +98,11 @@ JUNK_BLOCK = {
 # avec la musique ; "nacional" (JUNK_BLOCK) désigne une catégorie de classement
 # de charts plutôt qu'un genre ou un pays. Décisions de l'assistant, à
 # confirmer par Claire — voir la note envoyée avec cet ajout.
+# Ajouts du 22 septembre 2026, lot Aérea Negrot/Katie Dey/Chloe Alison
+# Escott/Honey Mahogany : "venezuela" (GEO_BLOCK) est un gentilé nu comme les
+# autres pays déjà filtrés ; "hbo looking" et "rpdr s5" (JUNK_BLOCK) sont des
+# références Last.fm à la série Looking (HBO) et à RuPaul's Drag Race saison
+# 5, sans rapport avec un genre musical.
 
 TAGS = {
     '1ovz0bZeO5YTBQTXIFf5Am': {'discogs': [], 'musicbrainz': ['ambient', 'classical', 'downtempo', 'electronic', 'house', 'modern classical', 'musical'], 'lastfm': []},  # Daniela Vega — Ombra Mai Fu
@@ -261,4 +267,8 @@ TAGS = {
     '60RgF3vDNAl6crhVg4f9wl': {'discogs': ['electro', 'hip hop', 'contemporary r&b', 'indie pop'], 'musicbrainz': [], 'lastfm': ['hip hop', 'nu disco']},  # Nomi Ruiz, Trace Lysette — Hi-Def Femme (Last.fm artist tags "USA"/"<3" filtered — see the 19 September note on GEO_BLOCK/JUNK_BLOCK)
     '084dIWdHoow6G00mBlxsOu': {'discogs': [], 'musicbrainz': [], 'lastfm': ['brazil', 'experimental']},  # Ventura Profana — Fôlego (Last.fm artist tag "Nacional" filtered — see the 19 September note on JUNK_BLOCK)
     '23smC9d2TpPTGZ3GCzjL4b': {'discogs': ['black metal', 'experimental'], 'musicbrainz': [], 'lastfm': ['black metal', 'atmospheric black metal', 'brutal death metal', 'transcendental black metal']},  # Liturgy — Haelegen II (MusicBrainz blocked by robots.txt this session, not queried; Discogs styles from release 26540399)
+    '4bglcunoysO0W3puey06d6': {'discogs': ['house', 'techno', 'minimal', 'ballad'], 'musicbrainz': [], 'lastfm': ['techno', 'experimental', 'pop']},  # Aérea Negrot — It's Lover, Love (Discogs styles of master Arabxilla, 2011; Last.fm artist tag "venezuela" filtered by GEO_BLOCK, "singer-songwriter" below the count>=10 threshold; MusicBrainz blocked by robots.txt)
+    '42Opc7AzlbYad3AuWsBGuf': {'discogs': ['indie pop'], 'musicbrainz': [], 'lastfm': ['hypnagogic pop', 'indietronica', 'art pop', 'glitch pop', 'chamber pop']},  # Katie Dey — Only to Trip and Fall Down Again (Discogs style of master Flood Network, 2016; Last.fm artist tags "bedroom pop"/"electronic"/"chillwave"/"australian"/"experimental" below threshold, "australian" would also be GEO_BLOCK; MusicBrainz blocked)
+    '36Xl4wdcXaW7zi7N01WSOo': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Chloe Alison Escott — Hard Femme in Argyle (no Discogs entry for this track; Discogs does list her 2020 album Stars Under Contract under style "experimental", left out here rather than attributed from a different release — to confirm with Claire; Last.fm empty at both track and artist level; MusicBrainz blocked)
+    '608TXHjFnEau83A1DoyVCt': {'discogs': ['rhythm & blues'], 'musicbrainz': [], 'lastfm': []},  # Honey Mahogany — It's Honey (Discogs style of the 2012 single; Last.fm artist tags "hbo looking"/"rpdr s5" filtered by JUNK_BLOCK, leaving lastfm empty; MusicBrainz blocked)
 }

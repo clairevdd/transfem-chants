@@ -25,6 +25,7 @@ SECTIONS = [
             ('5l2zYkyTXtYa8xk965ofqD', 'Dream Variations', 'Tona Brown, Geraldine Boone'),
             ('1AHPsqF3EtHeWpOM06Y3Y4', 'Hope There\'s Someone', 'Antony and the Johnsons, ANOHNI'),
             ('5P9EKJfOZtuwtTR5C5362i', 'Sposa Son Disprezzata', 'Daniela Vega'),
+            ('36Xl4wdcXaW7zi7N01WSOo', 'Hard Femme in Argyle', 'Chloe Alison Escott'),
             ('02L1ngagXNRt8W3Flbe9Sw', 'Boy in a Dress', 'Namoli Brennet'),
             ('1OpCGPKSq4IfpvLptsSMR9', 'I, Too', 'Tona Brown, Geraldine Boone'),
             ('1QrL7ucS71Ih4HXBOsuajv', 'Laabe Muxhe', 'La Bruja de Texcoco'),
@@ -59,6 +60,7 @@ SECTIONS = [
             ('5WttRLHcZHhaIii5KwKh3Y', 'I Am Her', 'Shea Diamond'),
             ('0rK7QTyYjhPFadLH2YDl84', 'Picture of a Man', 'Our Lady J'),
             ('0gm0OruZdJlu8jamJe5OCh', 'Keisha Complexion', 'Shea Diamond'),
+            ('608TXHjFnEau83A1DoyVCt', "It's Honey", 'Honey Mahogany'),
             ('1jTo2GUdfyjvSBaXaV9IMh', 'שיר גאווה', 'Gila Goldstein'),
         ],
     },
@@ -74,6 +76,7 @@ SECTIONS = [
             ('7l8D5tXUVsdq95VQWn034C', '애지몽', 'Harisu'),
             ('0DZapO0gUF8XZpk2bu8AeL', 'היו לילות', 'Aderet'),
             ('3r0gvoaAkWmLdJO4UUv94v', 'Desafío', 'Arca'),
+            ('42Opc7AzlbYad3AuWsBGuf', 'Only to Trip and Fall Down Again', 'Katie Dey'),
             ('2Ff6Ghw8TRJGuAbJamtt4X', 'Serotonin Serenade', 'SuperKnova'),
             ('48XnOS1vTyzqaPps0Dalzp', 'Ponyboy', 'SOPHIE'),
             ('7tktCNlB0877dhdPZSRb7T', 'Is It Cold In The Water?', 'SOPHIE'),
@@ -197,6 +200,7 @@ SECTIONS = [
         "tracks": [
             # I — plus nu
             ('5PMtJGEDIO0eIToF0YRUQ5', 'VENENO PA\' TU PIEL', 'JEDET'),
+            ('4bglcunoysO0W3puey06d6', "It's Lover, Love", 'Aérea Negrot'),
             ('2qpx5shtNEO1DuK8iEoJoB', 'Best Sex', 'Peppermint'),
             ('3BqWvhPear6eKPwhwJRFpO', 'Bruised', 'Mila Jam'),
             ('1jFN0stMzLepoPxvPywGZj', 'Heart to Break', 'Kim Petras'),
@@ -248,4 +252,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 162
+assert len(all_tracks()) == 166
