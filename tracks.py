@@ -229,8 +229,10 @@ SECTIONS = [
             # III — plus saturé
             ('6D7zTed8zrkuKBPca2AqSI', 'Medley do Submundo', 'Irmãs de Pau, Brunoso'),
             ('71yN0yrHej3jhKXewbmtEh', 'Coconuts', 'Kim Petras'),
+            ('3qDqg53YIe9mM5Ehx9v9FZ', 'El Rap de la Veneno', 'La Veneno'),
             ('7bNgXJ9MgGG7xOkyz9SLOY', 'SEQUÊNCIA CUNT (feat. Clementaum)', 'PEDRO SAMPAIO, Irmãs de Pau, Mc Gw, Tasha Kaiala, Clementaum'),
             ('4WhyfhjZaX6AVjAZslQAFs', 'Parceira', 'Mulher Pepita, Brabo'),
+            ('6fd79PtewFZgLXYiIYhhLJ', 'La Drácula', 'Ella'),
             ('4DfHQvIAZmSmqcZbuO80sZ', 'Days of Girlhood', 'Dylan Mulvaney'),
             ('75HFFq9W7Em0dTBG8QeGcT', 'There Will Be Blood', 'Kim Petras'),
             ('1EPYnBjYhYHcNthEnVWk18', '됐거든', 'Harisu'),
@@ -241,8 +243,6 @@ SECTIONS = [
             ('4yBfzgV6YA9dTKP8KUD35j', 'VI ÄR SVERIGE (VM-låt 2023)', 'Lia Larsson, Tone Sekelius, Lisa Ajax'),
             ('29Ga6IgetN8Xah85ZHZ8AC', 'Full Lace y el Tuck', 'Samantha Hudson, Villano Antillano'),
             ('0pe5NUU9uGwFpj637ot84D', 'Conquistador', 'Patricia Ribeiro'),
-            ('3qDqg53YIe9mM5Ehx9v9FZ', 'El Rap de la Veneno', 'La Veneno'),
-            ('6fd79PtewFZgLXYiIYhhLJ', 'La Drácula', 'Ella'),
         ],
     },
 ]
