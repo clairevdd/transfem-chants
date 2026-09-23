@@ -655,4 +655,48 @@ ART = {
  "Singer, guitarist and principal songwriter of the band Liturgy (“transcendental black metal”), New York. Publicly announced her transition in May 2020, continuing the same project under the same name.",
  "I am a woman. I've always been one.",
  "Metal Injection","https://metalinjection.net/news/liturgys-hunter-hunt-hendrix-comes-out-as-transgender-i-am-a-woman"),
+
+"Aérea Negrot": ("verified","Venezuela","English",
+ "Venezuelan singer (1977 – 11 October 2023), lead/featured vocalist on several Hercules and Love Affair tracks, member of La Familia Felíz, solo album Arrebato (2011).",
+ "I started transitioning years ago and then de-transitioned and transitioned again.",
+ "Remezcla","https://remezcla.com/features/music/aerea-negrot-interview/"),
+
+"Katie Dey": ("verified","Australia","English",
+ "Singer-songwriter and producer, bedroom-pop/experimental scene, several albums (Flood Network, 2016; Solipsisters, 2018; Mydata, 2020).",
+ "...if they found out I was trans...",
+ "i-D","https://i-d.co/article/how-trans-singers-adapt-to-their-changing-voices/"),
+
+"Chloe Alison Escott": ("verified","Australia","English",
+ "Singer-songwriter and producer from Tasmania, member of The Native Cats, solo artist since coming out in 2015. The quote below, from a 2016 Vice interview, is about a different song (“Soft Chambers”, with The Native Cats) rather than the track selected here (“Hard Femme in Argyle”, 2020) — kept because it is her own first-person account of her transition, not a description of that particular track.",
+ "We wrote the bare bones (Julian's bass, my lyrics) in my last months of denial before I came out and started transitioning. This year I came back to it with my new lease on life and made it what it is now.",
+ "Vice","https://www.vice.com/en/article/listen-to-a-new-native-cats-song-and-help-support-trans-lifeline"),
+
+"Honey Mahogany": ("partial","United States","English",
+ "Singer, drag performer and political figure (former RuPaul's Drag Race contestant, San Francisco supervisor), with a music discography under her own name distinct from her drag work. Kept as partial rather than verified: the quote below places her among “trans folks” as a group rather than stating her own identity in the first person as an individual.",
+ "We, as trans folks, have the least to lose because so much has already been taken from us.",
+ "SFAF","https://www.sfaf.org/news/from-the-drag-stage-to-the-political-stage-honey-mahogany-cant-stop-fighting-for-queer-and-trans-liberation/"),
+
+"Gia Gunn": ("verified","United States","English",
+ "Reality-television personality (RuPaul's Drag Race, season 6) and singer, with a discography under her own name distinct from her drag work.",
+ "Since I came out as trans publicly a year ago, my life has been empowered.",
+ "Rigel Gemini (interview)","https://rigelgemini.com/"),
+
+"Alaska Thunderfuck": ("guest","United States","English",
+ "Drag performer and recording artist, featured on “#LaChinaMasLatina”.",
+ None,"Wikipedia","https://en.wikipedia.org/wiki/Alaska_Thunderfuck"),
+
+"Amor Romeira": ("verified","Spain","Spanish",
+ "Spanish singer and television personality, several singles.",
+ "Yo soy una mujer, le guste a la gente o no. — I am a woman, whether people like it or not.",
+ "Bekia.es (citing Cotilleo.es)","https://www.bekia.es/"),
+
+"Amanda Lepore": ("verified","United States","English",
+ "American nightlife and recording artist, longtime muse and collaborator of photographer David LaChapelle, album I...Amanda Lepore (2011).",
+ "And when the press found out I was a transsexual, they liked me even more. I was in the Times, French Vogue... It was really validating. I became kind of the 'It' transsexual, especially after working with David LaChapelle, modeling in his photographs for years.",
+ "Into The Gloss","https://intothegloss.com/2014/01/amanda-lepore"),
+
+"Jiggly Caliente": ("verified","United States / Philippines","English",
+ "Reality-television personality (RuPaul's Drag Race, season 4; All Stars 6) and singer, album T.H.O.T. Process (2018). Died 27 April 2025.",
+ "This is beyond me — the representation that I carry as a trans queen isn't just about me.",
+ "Nylon","https://www.nylon.com/entertainment/jiggly-caliente-rupauls-drag-race-all-stars-season-6-exit-interview"),
 }

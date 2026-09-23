@@ -25,6 +25,7 @@ SECTIONS = [
             ('5l2zYkyTXtYa8xk965ofqD', 'Dream Variations', 'Tona Brown, Geraldine Boone'),
             ('1AHPsqF3EtHeWpOM06Y3Y4', 'Hope There\'s Someone', 'Antony and the Johnsons, ANOHNI'),
             ('5P9EKJfOZtuwtTR5C5362i', 'Sposa Son Disprezzata', 'Daniela Vega'),
+            ('36Xl4wdcXaW7zi7N01WSOo', 'Hard Femme in Argyle', 'Chloe Alison Escott'),
             ('02L1ngagXNRt8W3Flbe9Sw', 'Boy in a Dress', 'Namoli Brennet'),
             ('1OpCGPKSq4IfpvLptsSMR9', 'I, Too', 'Tona Brown, Geraldine Boone'),
             ('1QrL7ucS71Ih4HXBOsuajv', 'Laabe Muxhe', 'La Bruja de Texcoco'),
@@ -59,6 +60,7 @@ SECTIONS = [
             ('5WttRLHcZHhaIii5KwKh3Y', 'I Am Her', 'Shea Diamond'),
             ('0rK7QTyYjhPFadLH2YDl84', 'Picture of a Man', 'Our Lady J'),
             ('0gm0OruZdJlu8jamJe5OCh', 'Keisha Complexion', 'Shea Diamond'),
+            ('608TXHjFnEau83A1DoyVCt', "It's Honey", 'Honey Mahogany'),
             ('1jTo2GUdfyjvSBaXaV9IMh', 'שיר גאווה', 'Gila Goldstein'),
         ],
     },
@@ -74,6 +76,7 @@ SECTIONS = [
             ('7l8D5tXUVsdq95VQWn034C', '애지몽', 'Harisu'),
             ('0DZapO0gUF8XZpk2bu8AeL', 'היו לילות', 'Aderet'),
             ('3r0gvoaAkWmLdJO4UUv94v', 'Desafío', 'Arca'),
+            ('42Opc7AzlbYad3AuWsBGuf', 'Only to Trip and Fall Down Again', 'Katie Dey'),
             ('2Ff6Ghw8TRJGuAbJamtt4X', 'Serotonin Serenade', 'SuperKnova'),
             ('48XnOS1vTyzqaPps0Dalzp', 'Ponyboy', 'SOPHIE'),
             ('7tktCNlB0877dhdPZSRb7T', 'Is It Cold In The Water?', 'SOPHIE'),
@@ -143,6 +146,7 @@ SECTIONS = [
             ('3eBY8aZZdWNnNhNbc8B0yp', 'Power', 'Andra Venus'),
             ('3FysLYckiMCMzjYLIgo45U', 'BLACK SAILOR MOON', 'Backxwash'),
             ('37OSQm8Gy5strUT24vn6ef', 'I LIE HERE BURIED WITH MY RINGS AND MY DRESSES', 'Backxwash, Ada Rook'),
+            ('4xHC0Cj5ujXkmL8lSU6jXw', 'Fckboi', 'Jiggly Caliente'),
             ('2iqTYCPRTqojxM7QJvBtk2', 'Breakdown', 'Ms. Boogie'),
             ('6JrmHzxhaaavRtlXTOhm63', 'Queen Of This Shit', 'Quay Dash'),
             # twi/anglais (Ghana)
@@ -197,6 +201,7 @@ SECTIONS = [
         "tracks": [
             # I — plus nu
             ('5PMtJGEDIO0eIToF0YRUQ5', 'VENENO PA\' TU PIEL', 'JEDET'),
+            ('4bglcunoysO0W3puey06d6', "It's Lover, Love", 'Aérea Negrot'),
             ('2qpx5shtNEO1DuK8iEoJoB', 'Best Sex', 'Peppermint'),
             ('3BqWvhPear6eKPwhwJRFpO', 'Bruised', 'Mila Jam'),
             ('1jFN0stMzLepoPxvPywGZj', 'Heart to Break', 'Kim Petras'),
@@ -211,6 +216,7 @@ SECTIONS = [
             ('5pkemVhnBiIzMs2NLsXomQ', 'Clarity', 'Kim Petras'),
             # II — médian
             ('4ED8r6i90zmUG4kfbiVoou', 'Heartbreaker', 'Ah-Mer-Ah-Su'),
+            ('1xVHNasMbwoQcLkf07JMv4', 'Ubikaina', 'Amor Romeira'),
             ('4hceSKjrkDTO0nMKFcb3sj', 'Villano Antillano: Bzrp Music Sessions, Vol. 51/66', 'Bizarrap, Villano Antillano'),
             ('46uGvJVhYHOVRRNnRPbkYm', 'Mantan Tanpa Status - Lucinta Luna Version', 'Lucinta Luna, Dede Satria'),
             ('1YsFdaP9QG9NhjYS3o0g5P', 'Olha o Boneco', 'Titica, Ary'),
@@ -225,9 +231,12 @@ SECTIONS = [
             # III — plus saturé
             ('6D7zTed8zrkuKBPca2AqSI', 'Medley do Submundo', 'Irmãs de Pau, Brunoso'),
             ('71yN0yrHej3jhKXewbmtEh', 'Coconuts', 'Kim Petras'),
+            ('3qDqg53YIe9mM5Ehx9v9FZ', 'El Rap de la Veneno', 'La Veneno'),
             ('7bNgXJ9MgGG7xOkyz9SLOY', 'SEQUÊNCIA CUNT (feat. Clementaum)', 'PEDRO SAMPAIO, Irmãs de Pau, Mc Gw, Tasha Kaiala, Clementaum'),
             ('4WhyfhjZaX6AVjAZslQAFs', 'Parceira', 'Mulher Pepita, Brabo'),
+            ('6fd79PtewFZgLXYiIYhhLJ', 'La Drácula', 'Ella'),
             ('4DfHQvIAZmSmqcZbuO80sZ', 'Days of Girlhood', 'Dylan Mulvaney'),
+            ('1ggQljgteCJOF8PFvCiRLa', '#LaChinaMasLatina', 'Gia Gunn, Alaska Thunderfuck'),
             ('75HFFq9W7Em0dTBG8QeGcT', 'There Will Be Blood', 'Kim Petras'),
             ('1EPYnBjYhYHcNthEnVWk18', '됐거든', 'Harisu'),
             ('0GSW6V6GJc4xYi8c5jOu60', 'さそり座の女', 'Ai Haruna'),
@@ -235,10 +244,9 @@ SECTIONS = [
             ('6vtcDkc68Des2RUrfTSXzK', 'Hikaye', 'Selin Ciğerci'),
             ('4X6PkqzKUvWWKoq4YiiM1V', 'Snow White', 'Harisu'),
             ('4yBfzgV6YA9dTKP8KUD35j', 'VI ÄR SVERIGE (VM-låt 2023)', 'Lia Larsson, Tone Sekelius, Lisa Ajax'),
+            ('2lEExBHFkGIG5bcjQCJc8P', 'Turn Me Over', 'Amanda Lepore'),
             ('29Ga6IgetN8Xah85ZHZ8AC', 'Full Lace y el Tuck', 'Samantha Hudson, Villano Antillano'),
             ('0pe5NUU9uGwFpj637ot84D', 'Conquistador', 'Patricia Ribeiro'),
-            ('3qDqg53YIe9mM5Ehx9v9FZ', 'El Rap de la Veneno', 'La Veneno'),
-            ('6fd79PtewFZgLXYiIYhhLJ', 'La Drácula', 'Ella'),
         ],
     },
 ]
@@ -248,4 +256,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 162
+assert len(all_tracks()) == 170

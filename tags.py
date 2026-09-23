@@ -69,9 +69,10 @@ lui-même l'un de ces mots :
 
 IDENTITY_BLOCK = {
     "transwoman", "trans woman", "transexual", "transsexual", "transgender",
-    "trans", "queer", "lgbt", "lgbtq", "lgbtqia", "nonbinary", "non-binary",
-    "non binary", "gay", "lesbian", "bisexual", "woman", "women", "female",
-    "ftm", "mtf", "cisgender", "cis", "genderqueer", "two spirit", "two-spirit",
+    "trans", "transex", "trannies", "queer", "lgbt", "lgbtq", "lgbtqia",
+    "nonbinary", "non-binary", "non binary", "gay", "lesbian", "bisexual",
+    "woman", "women", "female", "ftm", "mtf", "cisgender", "cis",
+    "genderqueer", "two spirit", "two-spirit",
 }
 
 GEO_BLOCK = {
@@ -79,7 +80,7 @@ GEO_BLOCK = {
     "french", "german", "ghana", "korean", "malaysia", "mexico",
     "puerto rico", "south african", "spain", "spanish", "sweden", "swedish",
     "thailand", "turkish", "united states", "american", "japanese",
-    "french rap", "usa",
+    "french rap", "usa", "venezuela",
 }
 
 JUNK_BLOCK = {
@@ -90,6 +91,10 @@ JUNK_BLOCK = {
     "so scharf", "booba", "urias", "wsum 91.7 fm madison", "pa",
     "minneapolis", "freelance", "hora", "rpa", "jovens talentos",
     "nsbm", "war metal", "trevi moran", "intimisco", "<3", "nacional",
+    "hbo looking", "rpdr s5", "crazy", "stunning", "cuckoo", "absolutely",
+    "oh hi baby", "let me feel my oats", "tilapia", "farofa",
+    "broad city", "broad city s5", "rpdr s4", "rupaul's drag race",
+    "rupaul's drag race all stars",
 }
 # Ajouts du 19 septembre 2026, lot Jup do Bairro/Macy Rodman/Nomi Ruiz/
 # Ventura Profana : "usa" (GEO_BLOCK) est le même blocage que "united states"
@@ -97,6 +102,11 @@ JUNK_BLOCK = {
 # avec la musique ; "nacional" (JUNK_BLOCK) désigne une catégorie de classement
 # de charts plutôt qu'un genre ou un pays. Décisions de l'assistant, à
 # confirmer par Claire — voir la note envoyée avec cet ajout.
+# Ajouts du 22 septembre 2026, lot Aérea Negrot/Katie Dey/Chloe Alison
+# Escott/Honey Mahogany : "venezuela" (GEO_BLOCK) est un gentilé nu comme les
+# autres pays déjà filtrés ; "hbo looking" et "rpdr s5" (JUNK_BLOCK) sont des
+# références Last.fm à la série Looking (HBO) et à RuPaul's Drag Race saison
+# 5, sans rapport avec un genre musical.
 
 TAGS = {
     '1ovz0bZeO5YTBQTXIFf5Am': {'discogs': [], 'musicbrainz': ['ambient', 'classical', 'downtempo', 'electronic', 'house', 'modern classical', 'musical'], 'lastfm': []},  # Daniela Vega — Ombra Mai Fu
@@ -261,4 +271,12 @@ TAGS = {
     '60RgF3vDNAl6crhVg4f9wl': {'discogs': ['electro', 'hip hop', 'contemporary r&b', 'indie pop'], 'musicbrainz': [], 'lastfm': ['hip hop', 'nu disco']},  # Nomi Ruiz, Trace Lysette — Hi-Def Femme (Last.fm artist tags "USA"/"<3" filtered — see the 19 September note on GEO_BLOCK/JUNK_BLOCK)
     '084dIWdHoow6G00mBlxsOu': {'discogs': [], 'musicbrainz': [], 'lastfm': ['brazil', 'experimental']},  # Ventura Profana — Fôlego (Last.fm artist tag "Nacional" filtered — see the 19 September note on JUNK_BLOCK)
     '23smC9d2TpPTGZ3GCzjL4b': {'discogs': ['black metal', 'experimental'], 'musicbrainz': [], 'lastfm': ['black metal', 'atmospheric black metal', 'brutal death metal', 'transcendental black metal']},  # Liturgy — Haelegen II (MusicBrainz blocked by robots.txt this session, not queried; Discogs styles from release 26540399)
+    '4bglcunoysO0W3puey06d6': {'discogs': ['house', 'techno', 'minimal', 'ballad'], 'musicbrainz': [], 'lastfm': ['techno', 'experimental', 'pop']},  # Aérea Negrot — It's Lover, Love (Discogs styles of master Arabxilla, 2011; Last.fm artist tag "venezuela" filtered by GEO_BLOCK, "singer-songwriter" below the count>=10 threshold; MusicBrainz blocked by robots.txt)
+    '42Opc7AzlbYad3AuWsBGuf': {'discogs': ['indie pop'], 'musicbrainz': [], 'lastfm': ['hypnagogic pop', 'indietronica', 'art pop', 'glitch pop', 'chamber pop']},  # Katie Dey — Only to Trip and Fall Down Again (Discogs style of master Flood Network, 2016; Last.fm artist tags "bedroom pop"/"electronic"/"chillwave"/"australian"/"experimental" below threshold, "australian" would also be GEO_BLOCK; MusicBrainz blocked)
+    '36Xl4wdcXaW7zi7N01WSOo': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Chloe Alison Escott — Hard Femme in Argyle (no Discogs entry for this track; Discogs does list her 2020 album Stars Under Contract under style "experimental", left out here rather than attributed from a different release — to confirm with Claire; Last.fm empty at both track and artist level; MusicBrainz blocked)
+    '608TXHjFnEau83A1DoyVCt': {'discogs': ['rhythm & blues'], 'musicbrainz': [], 'lastfm': []},  # Honey Mahogany — It's Honey (Discogs style of the 2012 single; Last.fm artist tags "hbo looking"/"rpdr s5" filtered by JUNK_BLOCK, leaving lastfm empty; MusicBrainz blocked)
+    '1ggQljgteCJOF8PFvCiRLa': {'discogs': [], 'musicbrainz': [], 'lastfm': ['electronic', 'drag']},  # Gia Gunn, Alaska Thunderfuck — #LaChinaMasLatina (Discogs genre "Pop" but styles empty; Last.fm artist tag "american" filtered by GEO_BLOCK, "crazy"/"stunning"/"cuckoo"/"absolutely"/"oh hi baby"/"let me feel my oats"/"tilapia" filtered by JUNK_BLOCK; MusicBrainz blocked)
+    '1xVHNasMbwoQcLkf07JMv4': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'dance pop']},  # Amor Romeira — Ubikaina (no Discogs entry found; Last.fm artist tag "spanish" filtered by GEO_BLOCK, "farofa" filtered by JUNK_BLOCK, "Transex" filtered by IDENTITY_BLOCK; MusicBrainz blocked)
+    '2lEExBHFkGIG5bcjQCJc8P': {'discogs': ['dance-pop', 'electro', 'house'], 'musicbrainz': [], 'lastfm': ['electropop', 'glam', 'disco', 'electro']},  # Amanda Lepore — Turn Me Over (Discogs styles of album I...Amanda Lepore, 2011; Last.fm artist tags "TRANNIES"/"queer" filtered by IDENTITY_BLOCK, "pop"/"female vocalists" below the count>=10 threshold; MusicBrainz blocked)
+    '4xHC0Cj5ujXkmL8lSU6jXw': {'discogs': ['pop rap'], 'musicbrainz': [], 'lastfm': ['drag queen', 'pop', 'rap', 'hip-hop']},  # Jiggly Caliente — Fckboi (Discogs style of the 2018 single; Last.fm artist tag "Filipino" below threshold, would also be GEO_BLOCK; MusicBrainz blocked)
 }
