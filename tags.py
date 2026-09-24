@@ -80,7 +80,7 @@ GEO_BLOCK = {
     "french", "german", "ghana", "korean", "malaysia", "mexico",
     "puerto rico", "south african", "spain", "spanish", "sweden", "swedish",
     "thailand", "turkish", "united states", "american", "japanese",
-    "french rap", "usa", "venezuela",
+    "french rap", "usa", "venezuela", "filipino", "philippines",
 }
 
 JUNK_BLOCK = {
@@ -94,7 +94,8 @@ JUNK_BLOCK = {
     "hbo looking", "rpdr s5", "crazy", "stunning", "cuckoo", "absolutely",
     "oh hi baby", "let me feel my oats", "tilapia", "farofa",
     "broad city", "broad city s5", "rpdr s4", "rupaul's drag race",
-    "rupaul's drag race all stars",
+    "rupaul's drag race all stars", "drag race philippines",
+    "rpdr uk vs the world s2",
 }
 # Ajouts du 19 septembre 2026, lot Jup do Bairro/Macy Rodman/Nomi Ruiz/
 # Ventura Profana : "usa" (GEO_BLOCK) est le même blocage que "united states"
@@ -119,7 +120,7 @@ TAGS = {
     '3nxFYWNFG2qGYEuhEzomtO': {'discogs': ['cumbia'], 'musicbrainz': [], 'lastfm': []},  # Susy Shock — Vidalita, Vidalita
     '5e0ZXu358l51ckAZvai2Ef': {'discogs': ['ottoman classical', 'volksmusik', 'éntekhno', 'folk'], 'musicbrainz': [], 'lastfm': ['turk sanat muzigi', 'tsm', 'diva']},  # Bülent Ersoy — Geceler
     '4Ykmj47fulJ1FTeCXctW91': {'discogs': ['v-pop', 'nhạc vàng', 'ballad', 'comedy'], 'musicbrainz': [], 'lastfm': ['v-pop']},  # Hương Giang — Anh Ta Bỏ Em Rồi
-    '07m5UbUHOQCofRK16k83Eg': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Shyraa Roy, Kashif Ali — Duniya
+    '07m5UbUHOQCofRK16k83Eg': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Shyraa Roy, Kashif Ali — Duniya (recontrôlé 24 septembre 2026 : Discogs sans résultat, Last.fm track vide, artist -> seulement "trans" (100, IDENTITY_BLOCK) ; MusicBrainz bloqué)
     '73xUwV4DkcelY7seMyY0PY': {'discogs': [], 'musicbrainz': [], 'lastfm': ['folk']},  # Beth Elliott — Lady on the Subway
     '4dtyeDMnVKKo89QbbDtD5M': {'discogs': [], 'musicbrainz': [], 'lastfm': ['folk']},  # Beth Elliott — Ballad of the Oklahoma Women’s Liberation Front
     '3BYSoeWlqUgIwfY77C8VgE': {'discogs': ['son'], 'musicbrainz': ['latin'], 'lastfm': ['folk', 'acoustic', 'latin']},  # La Bruja de Texcoco — Té de Malvón
@@ -134,12 +135,12 @@ TAGS = {
     '4P9LdSPrnQl7KQwml4DUtq': {'discogs': ['mpb', 'rhythm & blues', 'latin pop', 'soul'], 'musicbrainz': ['mpb'], 'lastfm': ['soul', 'mpb', 'black music']},  # Liniker — Baby 95
     '56xBg5e9rfrFqcqa4llUw7': {'discogs': ['vocal', 'easy listening', 'soul-jazz', 'alternative rock'], 'musicbrainz': [], 'lastfm': ['drag queen', 'cabaret', 'drag performer']},  # Jinkx Monsoon — Just Me (The Gender Binary Blues)
     '5WttRLHcZHhaIii5KwKh3Y': {'discogs': ['alternative rock'], 'musicbrainz': [], 'lastfm': ['rnb', 'soul']},  # Shea Diamond — I Am Her
-    '0rK7QTyYjhPFadLH2YDl84': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Our Lady J — Picture of a Man
+    '0rK7QTyYjhPFadLH2YDl84': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Our Lady J — Picture of a Man (recontrôlé 24 septembre 2026 : Discogs sans fiche correspondante, Last.fm track vide, artist vide aussi ; MusicBrainz bloqué)
     '0gm0OruZdJlu8jamJe5OCh': {'discogs': ['alternative rock'], 'musicbrainz': [], 'lastfm': ['rnb', 'soul']},  # Shea Diamond — Keisha Complexion
     '3XdXixlx3MoVzfL7pu9hx6': {'discogs': ['experimental', 'bass music', 'reggaeton', 'deconstructed club'], 'musicbrainz': ['electronic', 'ambient', 'art pop', 'cumbia', 'deconstructed club', 'epic collage', 'experimental', 'experimental hip hop', 'glitch hop', 'glitch pop', 'idm', 'industrial hip hop', 'latin', 'leftfield', 'neoperreo', 'noise', 'pop', 'post-industrial', 'reggaeton', 'latin electronic', 'nsfw cover art'], 'lastfm': ['electronic', 'experimental', 'ambient', 'glitch', 'idm']},  # Arca — Time
     '0QA1xpUuqHDHWZhi0eAbH7': {'discogs': ['hyperpop', 'bass music', 'experimental', 'dance-pop'], 'musicbrainz': ['art pop', 'synth-pop', 'avant-garde', 'deconstructed club', 'electronic', 'experimental', 'hyperpop', 'pop', 'post-industrial', 'double album', 'uk bass'], 'lastfm': ['bubblegum bass', 'electronic', 'deconstructed club', 'experimental', 'uk bass', 'wonky', 'hyperpop']},  # SOPHIE — It’s Okay To Cry
     '6EjxYTyXiBzJz6PeOvPiou': {'discogs': ['j-pop', 'ballad'], 'musicbrainz': [], 'lastfm': ['jazz', 'j-pop']},  # Ataru Nakamura — きみがすきだよ
-    '1N1F6UsRGILux57U0YbxJQ': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Cindy Thái Tài — Giọt Tình
+    '1N1F6UsRGILux57U0YbxJQ': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Cindy Thái Tài — Giọt Tình (recontrôlé 24 septembre 2026 : Discogs sans résultat pertinent, Last.fm track et artist vides ; MusicBrainz bloqué)
     '7l8D5tXUVsdq95VQWn034C': {'discogs': ['k-pop', 'house', 'rnb/swing', 'ballad'], 'musicbrainz': [], 'lastfm': ['k-pop']},  # Harisu — 애지몽
     '0DZapO0gUF8XZpk2bu8AeL': {'discogs': ['dance-pop', 'euro house', 'house'], 'musicbrainz': [], 'lastfm': []},  # Aderet — היו לילות
     '3r0gvoaAkWmLdJO4UUv94v': {'discogs': ['experimental', 'bass music', 'reggaeton', 'deconstructed club'], 'musicbrainz': ['ambient', 'electronic', 'experimental', 'leftfield', 'ambient pop', 'art pop', 'deconstructed club', 'deep house', 'ghettotech', 'glitch pop', 'hip hop', 'idm', 'jazz', 'pop', 'post-industrial', 'singer-songwriter', 'techno', 'abstract electronic'], 'lastfm': ['electronic', 'experimental', 'ambient', 'glitch', 'idm']},  # Arca — Desafío
@@ -148,7 +149,7 @@ TAGS = {
     '7tktCNlB0877dhdPZSRb7T': {'discogs': ['hyperpop', 'bass music', 'experimental', 'dance-pop'], 'musicbrainz': ['art pop', 'avant-garde', 'deconstructed club', 'electronic', 'experimental', 'hyperpop', 'pop', 'post-industrial', 'double album', 'uk bass'], 'lastfm': ['bubblegum bass', 'electronic', 'deconstructed club', 'experimental', 'uk bass', 'wonky', 'hyperpop']},  # SOPHIE — Is It Cold In The Water?
     '6JZfK4Z75nZm3VcZOVrpy0': {'discogs': ['avant-garde', 'alternative rock', 'indie pop', 'vocal'], 'musicbrainz': [], 'lastfm': ['electronic', 'art pop', 'chamber pop', 'experimental']},  # ANOHNI — Drone Bomb Me
     '0kNjtDBxrpjJTZn9w5Eq3C': {'discogs': ['indie pop'], 'musicbrainz': ['indie rock', 'pop', 'rock'], 'lastfm': ['electropop', 'pop']},  # Vivek Shraya — I Take All the Blame
-    '7EPHu29KqhsGk4dZAjM0o4': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Stef Aranas — Cvnty
+    '7EPHu29KqhsGk4dZAjM0o4': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Stef Aranas — Cvnty (recontrôlé 24 septembre 2026 : Discogs sans fiche correspondante, Last.fm track et artist vides ; MusicBrainz bloqué)
     '2fB0l9upVjg0QTeMyrIVtc': {'discogs': ['indie pop'], 'musicbrainz': ['pop', 'indie'], 'lastfm': ['electropop', 'pop']},  # Vivek Shraya, Queer Songbook Orchestra — Part-Time Woman
     '2rN1ODOsaNfYu782rw36jR': {'discogs': ['hyperpop', 'bass music', 'experimental', 'dance-pop'], 'musicbrainz': ['electronic', 'yassification'], 'lastfm': ['bubblegum bass', 'experimental', 'deconstructed club', 'hyperpop', 'wonky']},  # SOPHIE — Faceshopping
     '4lUlYGT5VvZWN3GBDIc9KT': {'discogs': ['experimental', 'bass music', 'reggaeton', 'deconstructed club'], 'musicbrainz': [], 'lastfm': ['electronic', 'experimental', 'ambient', 'glitch', 'idm']},  # Arca — Nonbinary
@@ -169,10 +170,10 @@ TAGS = {
     '2DUAIlPmzV2is5OQIZASUA': {'discogs': ['hyperpop', 'emo', 'alternative rock', 'indie rock'], 'musicbrainz': [], 'lastfm': ['digital hardcore', 'punk', 'breakcore', 'bounce hardcore']},  # Anita Velveeta — T4T
     '3ShIGvHRm0q9iIDowUMjls': {'discogs': ['acoustic', 'punk', 'folk', 'alternative rock'], 'musicbrainz': ['alternative rock', 'folk rock', 'indie rock', 'lo-fi', 'rock'], 'lastfm': ['folk punk', 'punk rock', 'singer-songwriter', 'punk']},  # Laura Jane Grace — The Best Ever Death Metal Band in Denton
     '2jFP4mAHcDmGe7DEKKLyJa': {'discogs': ['alternative rock', 'folk', 'indie rock'], 'musicbrainz': ['alternative rock', 'indie rock', 'rock'], 'lastfm': ['singer-songwriter', 'indie', 'folk']},  # jasmine.4.t — Skin On Skin
-    '7GAI6zWpmst6dSfu1wIA1O': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Venus de Mars and All the Pretty Horses — White Horses
+    '7GAI6zWpmst6dSfu1wIA1O': {'discogs': ['glam', 'punk', 'goth rock', 'hard rock'], 'musicbrainz': [], 'lastfm': []},  # Venus de Mars and All the Pretty Horses — White Horses (Discogs has no fiche for this exact track; styles taken from the artist's own discography — I Think The Darkness, 10 Bones, Take My Shoulder — all consistently tagged Glam/Punk/Goth Rock/Hard Rock; Last.fm empty at both track and artist level; MusicBrainz blocked)
     '3RXajeZOzqXWrQwLDfTzKK': {'discogs': ['acoustic', 'emo', 'hyperpop', 'indie pop'], 'musicbrainz': [], 'lastfm': ['hyperpop', 'punk', 'emo']},  # THÉA — JUSTE AMIS
     '0bWpWsvZeTTNLQ9nuXqKIN': {'discogs': ['acoustic', 'emo', 'hyperpop', 'indie pop'], 'musicbrainz': ['electropop', 'hyperpop', 'techno', 'trap'], 'lastfm': ['hyperpop', 'punk', 'emo']},  # THÉA — Guillotine
-    '3zGmkzXqXsXYVlGzJFpgCW': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Venus de Mars and All the Pretty Horses — Boys
+    '3zGmkzXqXsXYVlGzJFpgCW': {'discogs': ['glam', 'punk', 'goth rock', 'hard rock'], 'musicbrainz': [], 'lastfm': []},  # Venus de Mars and All the Pretty Horses — Boys (same reasoning as White Horses above: no Discogs fiche for this exact track, styles taken from the artist's discography)
     '4ltqfN12ohaVZdM6C45gMg': {'discogs': ['indie rock', 'ambient', 'ethereal', 'experimental'], 'musicbrainz': ['americana', 'dream pop', 'heartland rock', 'indie rock', 'pop rock', 'synth-pop', 'big music'], 'lastfm': ['dream pop', 'heartland rock', 'pop rock']},  # Ethel Cain — American Teenager
     '14uL43Gg4ujizaATehrryk': {'discogs': ['techno', 'broken beat', 'hardcore', 'sound collage'], 'musicbrainz': ['alternative rock', 'folk punk', 'pop rock', 'punk', 'rock', 'punk rock', 'rock and indie'], 'lastfm': ['punk', 'punk rock', 'folk punk', 'rock']},  # Against Me! — The Ocean
     '7zBUh6s2Ca8eAURfnVHCTS': {'discogs': ['acoustic', 'emo', 'hyperpop', 'indie pop'], 'musicbrainz': [], 'lastfm': ['hyperpop', 'punk', 'emo']},  # THÉA — ANXIOLYTIQUES
@@ -187,12 +188,12 @@ TAGS = {
     '4b1Y41U44kP7gzO7MUNGbe': {'discogs': ['techno', 'broken beat', 'hardcore', 'sound collage'], 'musicbrainz': [], 'lastfm': ['punk', 'punk rock', 'folk punk', 'rock']},  # Against Me! — Transgender Dysphoria Blues
     '0a0CwJBn8lmT5ifk63EUbP': {'discogs': ['techno', 'broken beat', 'hardcore', 'sound collage'], 'musicbrainz': ['acoustic rock', 'alternative rock', 'punk', 'rock', 'folk punk', 'folk rock'], 'lastfm': ['punk', 'punk rock', 'folk punk', 'rock']},  # Against Me! — True Trans Soul Rebel
     '20JYh6XUjLjiN1CyJ32ZiY': {'discogs': ['dark electro', 'horrorcore', 'trap', 'pop rap'], 'musicbrainz': [], 'lastfm': ['trap metal', 'rap', 'hip hop']},  # Changeline, Stolas — ANARCONNASSE
-    '3eBY8aZZdWNnNhNbc8B0yp': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Andra Venus — Power
+    '3eBY8aZZdWNnNhNbc8B0yp': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Andra Venus — Power (recontrôlé 24 septembre 2026 : Discogs sans résultat identifiable avec certitude, Last.fm track et artist vides ; MusicBrainz bloqué)
     '3FysLYckiMCMzjYLIgo45U': {'discogs': ['horrorcore', 'electro', 'dubstep', 'industrial'], 'musicbrainz': [], 'lastfm': ['horrorcore', 'industrial hip hop', 'trap', 'experimental hip hop']},  # Backxwash — BLACK SAILOR MOON
     '37OSQm8Gy5strUT24vn6ef': {'discogs': ['horrorcore', 'electro', 'dubstep', 'industrial'], 'musicbrainz': ['horrorcore', 'industrial hip hop'], 'lastfm': ['horrorcore', 'industrial hip hop', 'trap', 'experimental hip hop']},  # Backxwash, Ada Rook — I LIE HERE BURIED WITH MY RINGS AND MY DRESSES
     '2iqTYCPRTqojxM7QJvBtk2': {'discogs': ['drill', 'conscious'], 'musicbrainz': [], 'lastfm': ['drill', 'rap', 'hip hop']},  # Ms. Boogie — Breakdown
     '6JrmHzxhaaavRtlXTOhm63': {'discogs': [], 'musicbrainz': [], 'lastfm': ['rap', 'hip hop']},  # Quay Dash — Queen Of This Shit
-    '3QF7smzmw2WWm7M1jt2Rac': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Angel Maxine, Wanlov The Kubolor, Sister Deborah — Wo Fie
+    '3QF7smzmw2WWm7M1jt2Rac': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Angel Maxine, Wanlov The Kubolor, Sister Deborah — Wo Fie (recontrôlé 24 septembre 2026 : Discogs sans fiche pour ce titre ni pour Angel Maxine, Last.fm track vide, artist sur Angel Maxine vide ; MusicBrainz bloqué)
     '1RkB4Dk0CDzpaSySq91JEA': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'acoustic', 'hip hop', 'trap', 'mathcore']},  # Sasha Sathya — AKA LESBIANA SERPIENTA
     '4UfEEnq70NgLeq7NRfXPiD': {'discogs': [], 'musicbrainz': [], 'lastfm': ['rap']},  # LALLA RAMI — INCHALLAH
     '5nWecUJF2pytSxsSpylzZw': {'discogs': [], 'musicbrainz': [], 'lastfm': ['rap']},  # LALLA RAMI — 9A7BA
@@ -221,24 +222,24 @@ TAGS = {
     '6XeW8fjwoAFQeQpYojPtVI': {'discogs': ['breakcore', 'hardcore', 'footwork', 'juke'], 'musicbrainz': ['dance', 'digicore', 'digital hardcore', 'electronic', 'footwork', 'footwork jungle', 'gabber', 'hardcore breaks', 'hexd', 'horrorcore', 'juke', 'rave', 'techno', 'cringecore', 'jungle dnb', 'rap', 'scream rap'], 'lastfm': ['electronic', 'rap', 'digital hardcore', 'drum and bass', 'energetic', 'edgy', 'dnb', 'edm', 'yumi', 'y2k']},  # femtanyl — GIRL HELL 1999
     '5iAE3uBqaZm9aHUx9yy6a0': {'discogs': ['breakcore', 'hardcore', 'footwork', 'juke'], 'musicbrainz': ['dance', 'digicore', 'digital hardcore', 'electronic', 'footwork', 'footwork jungle', 'gabber', 'hardcore breaks', 'hexd', 'horrorcore', 'juke', 'rave', 'techno', 'cringecore', 'jungle dnb', 'rap', 'scream rap'], 'lastfm': ['digital hardcore', 'hardcore', 'electronic', 'dance']},  # femtanyl — KATAMARI
     '1w0AFg23E67l57A3RMiXjC': {'discogs': ['breakcore', 'hardcore', 'footwork', 'juke'], 'musicbrainz': ['dance', 'digicore', 'digital hardcore', 'electronic', 'footwork', 'footwork jungle', 'gabber', 'hardcore breaks', 'hardstyle', 'hexd', 'horrorcore', 'hyperpop', 'juke', 'rave', 'techno', 'cringecore', 'jungle dnb', 'rap', 'scream rap'], 'lastfm': ['pop']},  # femtanyl — P3T
-    '5PMtJGEDIO0eIToF0YRUQ5': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # JEDET — VENENO PA’ TU PIEL
+    '5PMtJGEDIO0eIToF0YRUQ5': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # JEDET — VENENO PA’ TU PIEL (recontrôlé 24 septembre 2026 : Discogs sans fiche correspondante, Last.fm track vide, repli artist.gettoptags également vide ; MusicBrainz bloqué)
     '2qpx5shtNEO1DuK8iEoJoB': {'discogs': ['hi nrg', 'disco', 'house', 'rnb/swing'], 'musicbrainz': [], 'lastfm': ['drag', 'rnb', 'electro']},  # Peppermint — Best Sex
     '3BqWvhPear6eKPwhwJRFpO': {'discogs': ['house', 'dance-pop', 'disco'], 'musicbrainz': [], 'lastfm': ['diva']},  # Mila Jam — Bruised
     '1jFN0stMzLepoPxvPywGZj': {'discogs': ['synth-pop', 'vocal', 'tribal house', 'house'], 'musicbrainz': ['dance-pop', 'electro-disco', 'electronic', 'electropop', 'nu disco', 'pop', 'synth-pop'], 'lastfm': ['pop', 'electropop', 'electronic']},  # Kim Petras — Heart to Break
     '4QnHaiWq1oJiTgMnRFE0q8': {'discogs': ['electro', 'dance-pop', 'disco', 'house'], 'musicbrainz': [], 'lastfm': ['pop', 'electronic']},  # Zemmoa, Tessa Ia, Trans-X — Mi Amor Soy Yo
     '2Of9piZALXa4CC7Unxoeeg': {'discogs': ['hip-house', 'tech house', 'hip hop', 'trap'], 'musicbrainz': [], 'lastfm': []},  # Villano Antillano — KLK
     '5lz6U9dCYBmEY6oLrW22VE': {'discogs': ['african', 'hip hop', 'techno', 'folk'], 'musicbrainz': [], 'lastfm': ['kuduro', 'pop']},  # Titica, Kelmer Pastilha, Mauro Xtraga — Olha a Banana
-    '5srzGYocC4qYFvckQm5AfC': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Haiifa Magic — To2i W Far2a3i
+    '5srzGYocC4qYFvckQm5AfC': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Haiifa Magic — To2i W Far2a3i (recontrôlé 24 septembre 2026 : Discogs et Last.fm (track puis artist) sans résultat ; MusicBrainz bloqué)
     '4xhYxKvAxtrRd83MiqOy29': {'discogs': ['synth-pop', 'vocal', 'tribal house', 'house'], 'musicbrainz': ['alternative pop', 'contemporary r&b', 'dance-pop', 'electronic', 'electropop', 'funktronica', 'nu disco', 'pop', 'pop rap', 'synth funk', 'synth-pop', 'teen pop'], 'lastfm': ['pop', 'electropop', 'electronic']},  # Kim Petras — I Don’t Want It At All
     '1AFPmwB6mGMCcMI2hFh7c8': {'discogs': ['abstract', 'funk', 'techno', 'favela funk'], 'musicbrainz': [], 'lastfm': ['funk', 'rap', 'experimental', 'brazil']},  # Linn da Quebrada — Enviadescer
     '1RmXibCbfLIVrN8ZRdoYbW': {'discogs': ['hyperpop', 'dance-pop', 'favela funk', 'house'], 'musicbrainz': [], 'lastfm': ['pop', 'electronic']},  # Urias — Foi Mal
     '5pkemVhnBiIzMs2NLsXomQ': {'discogs': ['synth-pop', 'vocal', 'tribal house', 'house'], 'musicbrainz': ['contemporary r&b', 'pop rap', 'alternative r&b', 'bubblegum pop', 'dance-pop', 'disco', 'electronic', 'electropop', 'emo', 'glam rock', 'hip hop', 'pop', 'r&b', 'trap'], 'lastfm': ['pop', 'electropop', 'electronic']},  # Kim Petras — Clarity
     '4ED8r6i90zmUG4kfbiVoou': {'discogs': ['house', 'nu disco', 'disco', 'rhythm & blues'], 'musicbrainz': ['alternative pop', 'chamber pop'], 'lastfm': ['rnb']},  # Ah-Mer-Ah-Su — Heartbreaker
     '4hceSKjrkDTO0nMKFcb3sj': {'discogs': ['techno', 'trap', 'reggaeton', 'electro'], 'musicbrainz': [], 'lastfm': ['rap', 'trap', 'latin']},  # Bizarrap, Villano Antillano — Villano Antillano: Bzrp Music Sessions, Vol. 51/66
-    '46uGvJVhYHOVRRNnRPbkYm': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Lucinta Luna, Dede Satria — Mantan Tanpa Status - Lucinta Luna Version
+    '46uGvJVhYHOVRRNnRPbkYm': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Lucinta Luna, Dede Satria — Mantan Tanpa Status - Lucinta Luna Version (recontrôlé 24 septembre 2026 : Discogs sans fiche pour ce titre ni pour Lucinta Luna, Last.fm track et artist vides ; MusicBrainz bloqué)
     '1YsFdaP9QG9NhjYS3o0g5P': {'discogs': ['african', 'hip hop', 'techno', 'folk'], 'musicbrainz': [], 'lastfm': ['kuduro', 'pop']},  # Titica, Ary — Olha o Boneco
     '7luHAaHXty1Nl3AcscZIDT': {'discogs': ['house', 'dance-pop', 'disco'], 'musicbrainz': [], 'lastfm': ['diva']},  # Mila Jam — Faces
-    '78iHtTxYIK2mD6oL6lXqFF': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Gad Yola — Travesti del Perú
+    '78iHtTxYIK2mD6oL6lXqFF': {'discogs': ['pop'], 'musicbrainz': [], 'lastfm': []},  # Gad Yola — Travesti del Perú (Discogs release 32168157, genre "Pop", no style listed; Last.fm empty at both track and artist level; MusicBrainz blocked)
     '4Zhxtm6x56wEiRtSMAl28n': {'discogs': ['hyperpop', 'dance-pop', 'favela funk', 'house'], 'musicbrainz': ['pop'], 'lastfm': ['pop', 'electronic']},  # Urias — Diaba
     '5dIPCgTEDagbcs5QGmni8V': {'discogs': ['house', 'electro house', 'contemporary r&b', 'neo soul'], 'musicbrainz': [], 'lastfm': []},  # MONĀE, Cae Monāe — CISPHOBIC
     '6yAc1rz1RXRlYJac99xusK': {'discogs': ['holiday', 'dance-pop', 'ballad', 'europop'], 'musicbrainz': [], 'lastfm': []},  # Tone Sekelius — Girls & Dolls
@@ -255,15 +256,15 @@ TAGS = {
     '4X6PkqzKUvWWKoq4YiiM1V': {'discogs': ['k-pop', 'house', 'rnb/swing', 'ballad'], 'musicbrainz': [], 'lastfm': ['k-pop']},  # Harisu — Snow White
     '4yBfzgV6YA9dTKP8KUD35j': {'discogs': ['dance-pop'], 'musicbrainz': [], 'lastfm': ['pop']},  # Lia Larsson, Tone Sekelius, Lisa Ajax — VI ÄR SVERIGE (VM-låt 2023)
     '29Ga6IgetN8Xah85ZHZ8AC': {'discogs': ['villancicos', 'electroclash', 'holiday', 'euro house'], 'musicbrainz': [], 'lastfm': ['pop', 'indie', 'alternative', 'electronic', 'electrotrash']},  # Samantha Hudson, Villano Antillano — Full Lace y el Tuck
-    '0pe5NUU9uGwFpj637ot84D': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Patricia Ribeiro — Conquistador
+    '0pe5NUU9uGwFpj637ot84D': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Patricia Ribeiro — Conquistador (recontrôlé 24 septembre 2026 : Discogs sans fiche identifiable avec certitude, Last.fm track et artist vides ; MusicBrainz bloqué)
     '3qDqg53YIe9mM5Ehx9v9FZ': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'rap']},  # La Veneno — El Rap de la Veneno
     '6fd79PtewFZgLXYiIYhhLJ': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'gospel']},  # Ella — La Drácula
     '2PaTBoG5uDz6H3xPhnnDLz': {'discogs': [], 'musicbrainz': ['pop'], 'lastfm': ['pop']},  # Trevi Moran — Digital Empathy
     '4OF1mdSkA2z05DSwHNKVnz': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'dance']},  # Wendy Guevara — Hasta Que Salga el Sol
-    '4DfHQvIAZmSmqcZbuO80sZ': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Dylan Mulvaney — Days of Girlhood
-    '2aHS8p4tspLPkOvALx8Fs0': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Ayta Sözeri — Büklüm Büklüm (Discogs genre "Pop" but styles empty; Last.fm artist tag "turkish" filtered by GEO_BLOCK)
-    '6vtcDkc68Des2RUrfTSXzK': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Selin Ciğerci — Hikaye
-    '1jTo2GUdfyjvSBaXaV9IMh': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Gila Goldstein — שיר גאווה
+    '4DfHQvIAZmSmqcZbuO80sZ': {'discogs': ['dance-pop'], 'musicbrainz': [], 'lastfm': []},  # Dylan Mulvaney — Days of Girlhood (Discogs release 31803494, style "Dance-pop"; Last.fm track tags empty, artist tags only "nsbm"/"war metal" (both JUNK_BLOCK, clearly mistagged); MusicBrainz blocked)
+    '2aHS8p4tspLPkOvALx8Fs0': {'discogs': ['pop'], 'musicbrainz': [], 'lastfm': []},  # Ayta Sözeri — Büklüm Büklüm (correction 24 septembre 2026 : Discogs genre "Pop" avait été trouvé mais laissé de côté à tort faute de style ; retenu maintenant en repli sur le genre, cf. note de méthode ; Last.fm artist tag "turkish" filtré par GEO_BLOCK)
+    '6vtcDkc68Des2RUrfTSXzK': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Selin Ciğerci — Hikaye (recontrôlé 24 septembre 2026 : Discogs sans fiche pour ce titre ni pour l'artiste, Last.fm track vide, repli artist.gettoptags également vide ; MusicBrainz bloqué)
+    '1jTo2GUdfyjvSBaXaV9IMh': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Gila Goldstein — שיר גאווה (recontrôlé 24 septembre 2026 : deux homonymes trouvés sur Discogs, aucun identifiable avec certitude comme la chanteuse israélienne visée ; Last.fm track et artist vides ; MusicBrainz bloqué)
     '2rMjMkOapLVsxbDSap5Uy2': {'discogs': ['europop', 'vocal'], 'musicbrainz': [], 'lastfm': []},  # Roberta Marrero — Humano, Demasiado Humano (Last.fm artist tag "intimisco" filtered by JUNK_BLOCK)
     '5ljt7BaKAlflOjNs9jysyh': {'discogs': [], 'musicbrainz': [], 'lastfm': ['electronic', 'rap', 'experimental', 'funk']},  # Jup do Bairro, Indianarae Siqueira — INTRO
     '1o8Xa3b70eDBgIvZTz7tKF': {'discogs': [], 'musicbrainz': [], 'lastfm': ['electronic', 'rap', 'experimental', 'funk']},  # Jup do Bairro — E Se Não Fosse O Sonho (tags relevés à l'artiste, comme pour INTRO)
@@ -281,11 +282,11 @@ TAGS = {
     '4xHC0Cj5ujXkmL8lSU6jXw': {'discogs': ['pop rap'], 'musicbrainz': [], 'lastfm': ['drag queen', 'pop', 'rap', 'hip-hop']},  # Jiggly Caliente — Fckboi (Discogs style of the 2018 single; Last.fm artist tag "Filipino" below threshold, would also be GEO_BLOCK; MusicBrainz blocked)
     '1Q9w2a5dvoIpE8fkP8mUK6': {'discogs': ['house'], 'musicbrainz': [], 'lastfm': []},  # Aja, Alexis Michelle, Peppermint, Sasha Velour — C.L.A.T. (Discogs genre Electronic / style House for the 2017 single; no MusicBrainz release found; Last.fm page found but no track-level or usable artist-level genre tag)
     '1cu5PHumWAqQf9M6BHQ8b7': {'discogs': [], 'musicbrainz': [], 'lastfm': ['comedy', 'rock']},  # Jordan Raskopoulos (The Axis of Awesome) — 4 Chords (no Discogs or MusicBrainz release found; Last.fm track tag "cover" dropped as non-genre, artist tag "australian" filtered by GEO_BLOCK)
-    '1DGc7wwXrjAGecJzvESW3C': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Hailie Sahar — Star Traveler (no Discogs, MusicBrainz or Last.fm genre tag found this session)
+    '1DGc7wwXrjAGecJzvESW3C': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Hailie Sahar — Star Traveler (recontrôlé 24 septembre 2026 : Discogs et Last.fm, track puis artist, toujours sans résultat ; MusicBrainz bloqué)
     '3AyUAvAQGKyMzC9jGQeIlX': {'discogs': ['musical', 'comedy'], 'musicbrainz': [], 'lastfm': []},  # Adèle Anderson (Fascinating Aïda) — Dogging (Discogs genre Stage & Screen / styles Musical, Comedy for the Silver Jubilee album; no MusicBrainz release or Last.fm tag found)
-    '5sjmWtBcZC1Tj4RoCfaK7k': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Ceréna — gender euphoria (no Discogs or MusicBrainz release found; Last.fm not opened this session; press describes it as dance-pop but that is not one of the three tagged sources)
-    '53uyQrCca3tqGU8Voaa0oC': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # d0llywood1 — Fake luv (MusicBrainz release page found but blocked by a browser check; Last.fm returned an access error; no Discogs release found; Rate Your Music tags her other releases "Digicore" but that source is not one of the three tagged here)
-    '6lB7TMkQqSn2tKZGwFuqex': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Miss Benny — Break Away (no Discogs, MusicBrainz or Last.fm genre tag found this session)
+    '5sjmWtBcZC1Tj4RoCfaK7k': {'discogs': [], 'musicbrainz': [], 'lastfm': ['dance', 'dance pop']}, # Ceréna — gender euphoria (correction 24 septembre 2026 : Last.fm ouvert cette fois, track.gettoptags vide, repli artist.gettoptags -> dance (100), dance pop (100) ; plusieurs homonymes sur Discogs, aucun identifié avec certitude comme la bonne artiste ; MusicBrainz bloqué)
+    '53uyQrCca3tqGU8Voaa0oC': {'discogs': [], 'musicbrainz': [], 'lastfm': ['digicore', 'cloud rap', 'emo rap', 'pop rap']},  # d0llywood1 — Fake luv (correction 24 septembre 2026 : Last.fm track.gettoptags vide, repli artist.gettoptags -> digicore (100), cloud rap (73), emo rap (12), pop rap (12) ; sous le seuil de 10 : hyperpop, helix tears, trap, sillyteam, taliban, glitchcore, écartés ; pas de fiche Discogs pour cette artiste ; MusicBrainz bloqué)
+    '6lB7TMkQqSn2tKZGwFuqex': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'singer-songwriter']},  # Miss Benny — Break Away (correction 24 septembre 2026 : Last.fm track.gettoptags vide, repli artist.gettoptags -> pop (100), singer-songwriter (11) ; sous le seuil de 10, ou filtrés par IDENTITY_BLOCK/GEO_BLOCK : queer, american, trans, queer pop, united states, genderqueer, lgbt ; pas de fiche Discogs correspondante trouvée ; MusicBrainz bloqué)
     '5vCE6qjJI7NhpUrLWktoN9': {'discogs': ['dance-pop'], 'musicbrainz': [], 'lastfm': []},  # Detox — Supersonic (Discogs genre Electronic / style Dance-pop for the 2016 single; no MusicBrainz release or usable Last.fm tag found)
-    '4NKAjWfWZ2tcIzjCR9G5Zl': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Marina Summers — AMAFILIPINA (Extended Version) (no Discogs or MusicBrainz release found; Last.fm not opened this session)
+    '4NKAjWfWZ2tcIzjCR9G5Zl': {'discogs': [], 'musicbrainz': [], 'lastfm': ['opm']},  # Marina Summers — AMAFILIPINA (Extended Version) (correction 24 septembre 2026 : Last.fm track.gettoptags vide, repli artist.gettoptags -> Filipino (100, gentilé, GEO_BLOCK), OPM (100, genre reconnu, conservé), drag race philippines (66, JUNK_BLOCK), philippines (66, GEO_BLOCK), RPDR UK vs The World S2 (33, JUNK_BLOCK) ; "filipino"/"philippines" ajoutés à GEO_BLOCK et "drag race philippines"/"rpdr uk vs the world s2" à JUNK_BLOCK dans le même geste ; pas de fiche Discogs trouvée ; MusicBrainz bloqué)
 }
