@@ -49,6 +49,7 @@ SECTIONS = [
             # I — plus nu
             ('3MZjOGeXhpHbQ9ESMNFFnH', 'Honeybee', 'Steam Powered Giraffe'),
             ('3ApVA7ID6PkS0fGzNF4mFw', 'A Girl Like Me', 'Peppermint'),
+            ('3AyUAvAQGKyMzC9jGQeIlX', 'Dogging', 'Adèle Anderson'),
             ('4CuivW1JgPauXPA4wYsf5K', 'Chercher la femme', 'Coccinelle'),
             ('5dtUOwEmnDAzsdodWJk4DA', 'Any Other Way', 'Jackie Shane'),
             ('5NnQ2xIeHDKc1B19rxfcV3', 'I Will Survive', 'Veronica Klaus'),
@@ -104,6 +105,7 @@ SECTIONS = [
             ('6RJiY28t9jWpdy1JkUhNgK', 'Mequetrefe', 'Arca'),
             ('2PaTBoG5uDz6H3xPhnnDLz', 'Digital Empathy', 'Trevi Moran'),
             ('2rMjMkOapLVsxbDSap5Uy2', 'Humano, Demasiado Humano', 'Roberta Marrero'),
+            ('6lB7TMkQqSn2tKZGwFuqex', 'Break Away', 'Miss Benny'),
         ],
     },
     {
@@ -112,6 +114,7 @@ SECTIONS = [
         "tracks": [
             # I — plus nu
             ('3Vk1AHIh1CoiQzFroldMhO', 'Take My Shoulder (feat. Laura Jane Grace)', 'Venus De Mars'),
+            ('1cu5PHumWAqQf9M6BHQ8b7', '4 Chords', 'Jordan Raskopoulos'),
             ('2DUAIlPmzV2is5OQIZASUA', 'T4T', 'Anita Velveeta'),
             ('3ShIGvHRm0q9iIDowUMjls', 'The Best Ever Death Metal Band in Denton', 'Laura Jane Grace'),
             ('2jFP4mAHcDmGe7DEKKLyJa', 'Skin On Skin', 'jasmine.4.t'),
@@ -179,6 +182,7 @@ SECTIONS = [
             ('6WkiWn8bf8S29wSk0VwK7h', 'Falling', 'Frost Children'),
             ('724utiMbqUfT1g3tqbfQYu', 'Spoiled little brat', 'underscores'),
             ('3RLI8S7KpEZs4SqePGjM2R', 'dui', 'estelle allen'),
+            ('53uyQrCca3tqGU8Voaa0oC', 'Fake luv', 'd0llywood1'),
             ('1XD4K4CGAKTIBmFpvuaFru', 'Dancing with your eyes closed', 'Jane Remover'),
             ('2gmwvGC1yOw8NdMcZE8nfo', 'Literal Legend', 'Ayesha Erotica'),
             # II — plus saturé
@@ -205,11 +209,13 @@ SECTIONS = [
             ('2qpx5shtNEO1DuK8iEoJoB', 'Best Sex', 'Peppermint'),
             ('3BqWvhPear6eKPwhwJRFpO', 'Bruised', 'Mila Jam'),
             ('1jFN0stMzLepoPxvPywGZj', 'Heart to Break', 'Kim Petras'),
+            ('1DGc7wwXrjAGecJzvESW3C', 'Star Traveler', 'Hailie Sahar'),
             ('4QnHaiWq1oJiTgMnRFE0q8', 'Mi Amor Soy Yo', 'Zemmoa, Tessa Ia, Trans-X'),
             ('2Of9piZALXa4CC7Unxoeeg', 'KLK', 'Villano Antillano'),
             ('5lz6U9dCYBmEY6oLrW22VE', 'Olha a Banana', 'Titica, Kelmer Pastilha, Mauro Xtraga'),
             ('4OF1mdSkA2z05DSwHNKVnz', 'Hasta Que Salga el Sol', 'Wendy Guevara'),
             ('5srzGYocC4qYFvckQm5AfC', 'To2i W Far2a3i', 'Haiifa Magic'),
+            ('1Q9w2a5dvoIpE8fkP8mUK6', 'C.L.A.T. (feat. DJ Mitch Ferrino)', 'Aja, Alexis Michelle, Peppermint, Sasha Velour'),
             ('4xhYxKvAxtrRd83MiqOy29', 'I Don\'t Want It At All', 'Kim Petras'),
             ('1AFPmwB6mGMCcMI2hFh7c8', 'Enviadescer', 'Linn da Quebrada'),
             ('1RmXibCbfLIVrN8ZRdoYbW', 'Foi Mal', 'Urias'),
@@ -217,10 +223,12 @@ SECTIONS = [
             # II — médian
             ('4ED8r6i90zmUG4kfbiVoou', 'Heartbreaker', 'Ah-Mer-Ah-Su'),
             ('1xVHNasMbwoQcLkf07JMv4', 'Ubikaina', 'Amor Romeira'),
+            ('5sjmWtBcZC1Tj4RoCfaK7k', 'gender euphoria', 'Ceréna'),
             ('4hceSKjrkDTO0nMKFcb3sj', 'Villano Antillano: Bzrp Music Sessions, Vol. 51/66', 'Bizarrap, Villano Antillano'),
             ('46uGvJVhYHOVRRNnRPbkYm', 'Mantan Tanpa Status - Lucinta Luna Version', 'Lucinta Luna, Dede Satria'),
             ('1YsFdaP9QG9NhjYS3o0g5P', 'Olha o Boneco', 'Titica, Ary'),
             ('7luHAaHXty1Nl3AcscZIDT', 'Faces', 'Mila Jam'),
+            ('4NKAjWfWZ2tcIzjCR9G5Zl', 'AMAFILIPINA (Extended Version)', 'Marina Summers'),
             ('78iHtTxYIK2mD6oL6lXqFF', 'Travesti del Perú', 'Gad Yola'),
             ('1KnagH7nZ84p8vPMPZQ8hk', 'TSPG69', 'Macy Rodman'),
             ('4Zhxtm6x56wEiRtSMAl28n', 'Diaba', 'Urias'),
@@ -241,6 +249,7 @@ SECTIONS = [
             ('1EPYnBjYhYHcNthEnVWk18', '됐거든', 'Harisu'),
             ('0GSW6V6GJc4xYi8c5jOu60', 'さそり座の女', 'Ai Haruna'),
             ('2lgwylOpGMtkvhwdnUOArt', 'Memories Are Made Of This - Radio', 'Romy Haag'),
+            ('5vCE6qjJI7NhpUrLWktoN9', 'Supersonic', 'Detox'),
             ('6vtcDkc68Des2RUrfTSXzK', 'Hikaye', 'Selin Ciğerci'),
             ('4X6PkqzKUvWWKoq4YiiM1V', 'Snow White', 'Harisu'),
             ('4yBfzgV6YA9dTKP8KUD35j', 'VI ÄR SVERIGE (VM-låt 2023)', 'Lia Larsson, Tone Sekelius, Lisa Ajax'),
@@ -256,4 +265,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 170
+assert len(all_tracks()) == 179

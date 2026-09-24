@@ -185,6 +185,15 @@ LYRICS = {
     '1xVHNasMbwoQcLkf07JMv4': 'https://www.letras.mus.br/amor-romeira/ubikaina/',
     '2lEExBHFkGIG5bcjQCJc8P': 'https://genius.com/Amanda-lepore-turn-me-over-lyrics',
     '4xHC0Cj5ujXkmL8lSU6jXw': 'https://genius.com/Jiggly-caliente-fckboi-lyrics',
+    '1Q9w2a5dvoIpE8fkP8mUK6': 'https://genius.com/Alexis-michelle-sasha-velour-aja-and-peppermint-clat-club-legend-art-theatre-lyrics',
+    '1cu5PHumWAqQf9M6BHQ8b7': 'https://genius.com/The-axis-of-awesome-4-chords-lyrics',
+    '1DGc7wwXrjAGecJzvESW3C': 'https://www.musixmatch.com/es/letras/Hailie-Sahar-1/Star-Traveler',
+    '3AyUAvAQGKyMzC9jGQeIlX': 'https://genius.com/Fascinating-aida-dogging-lyrics',
+    '5sjmWtBcZC1Tj4RoCfaK7k': 'https://lyrics.lyricfind.com/lyrics/cerena-gender-euphoria',
+    '53uyQrCca3tqGU8Voaa0oC': 'https://genius.com/D0llywood1-fake-luv-lyrics',
+    '6lB7TMkQqSn2tKZGwFuqex': 'https://genius.com/Miss-benny-break-away-lyrics',
+    '5vCE6qjJI7NhpUrLWktoN9': 'https://genius.com/Detox-icunt-supersonic-lyrics',
+    '4NKAjWfWZ2tcIzjCR9G5Zl': 'https://genius.com/Marina-summers-amafilipina-extended-version-lyrics',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par

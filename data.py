@@ -699,4 +699,57 @@ ART = {
  "Reality-television personality (RuPaul's Drag Race, season 4; All Stars 6) and singer, album T.H.O.T. Process (2018). Died 27 April 2025.",
  "This is beyond me — the representation that I carry as a trans queen isn't just about me.",
  "Nylon","https://www.nylon.com/entertainment/jiggly-caliente-rupauls-drag-race-all-stars-season-6-exit-interview"),
+
+"Aja": ("verified","United States","English",
+ "Rapper and singer (RuPaul's Drag Race, season 9), with several albums and EPs under her own name. Announced the beginning of her transition in December 2021.",
+ "Trans is who I am and drag is what I do.",
+ "PinkNews","https://www.thepinknews.com/2021/12/20/aja-trans-woman-drag-race/"),
+
+"Alexis Michelle": ("guest","United States","English",
+ "Drag performer based in New York City, credited on the single \"C.L.A.T.\" alongside Aja, Peppermint and Sasha Velour; no statement of her own about gender identity was located.",
+ None,"Wikipedia","https://en.wikipedia.org/wiki/Alexis_Michelle"),
+
+"Sasha Velour": ("guest","United States","English",
+ "Drag performer and artist, winner of RuPaul's Drag Race season 9, credited on the single \"C.L.A.T.\" alongside Aja and Peppermint; no statement of his own about gender identity was located.",
+ None,"Wikipedia","https://en.wikipedia.org/wiki/Sasha_Velour"),
+
+"Jordan Raskopoulos": ("verified","Australia","English",
+ "Musician and comedian, member of the musical comedy trio The Axis of Awesome. Came out publicly as a trans woman in a video posted in February 2016.",
+ "I am transgender. No shit. That's right, I'm a girl, I am transgender, I'm a woman.",
+ "Chortle","https://www.chortle.co.uk/news/2016/02/15/24178/im_trans..._and_im_f***ing_awesome"),
+
+"Hailie Sahar": ("verified","United States","English",
+ "Actress (Pose) and singer, debut single \"Star Traveler\" released in 2023.",
+ "I don't label myself as a transgender woman; I am just a woman with dreams.",
+ "Today.com","https://www.today.com/style/hailie-sahar-fx-s-pose-being-transgender-actress-t131847"),
+
+"Adèle Anderson": ("verified","UK","English",
+ "Singer in the cabaret and comedy group Fascinating Aïda since 1984.",
+ "Transsexual is the term I prefer.",
+ "The Heroines of My Life","https://theheroines.blogspot.com/2014/01/interview-with-adele-anderson.html"),
+
+"Ceréna": ("verified","Canada","English",
+ "Juno-nominated dance-pop singer, formerly recording as Andrés Sierra. Her 2021 album resurrection is described as her first music made as herself.",
+ "That was the first time that I asked myself if I was trans.",
+ "CBC Music","https://www.cbc.ca/music/meet-cer%C3%A9na-the-juno-nominated-dance-pop-singer-who-s-ready-to-be-heard-1.6513073"),
+
+"d0llywood1": ("verified","United States","English",
+ "Rapper, singer and producer, part of the digicore/hyperpop SoundCloud scene.",
+ "I can still rap how I want, I can still rap about fuckin' bitches and you still gotta call me a girl. Because I'm a girl.",
+ "The FADER","https://www.thefader.com/2024/06/06/d0llywood1-digicore-hyperpop-soundcloud-interview"),
+
+"Miss Benny": ("verified","United States","English",
+ "Actress and singer (Glamorous, American Horror Story), who came out publicly as a transgender woman in a TIME essay in June 2023.",
+ "And along with it, I too will come out as the transgender woman I've been privately living as for the last few years.",
+ "TIME","https://time.com/6290125/miss-benny-glamorous-transgender/"),
+
+"Detox": ("partial","United States","English",
+ "Drag performer (RuPaul's Drag Race, season 5; All Stars 2) and recording artist. Came out as transgender during a live performance in Chicago in August 2024 and uses she/they pronouns on Instagram; no first-person interview statement was located during verification, only the words reported from that performance.",
+ "I'm trans now.",
+ "GCN","https://gcn.ie/drag-race-star-detox-comes-out-trans/"),
+
+"Marina Summers": ("verified","Philippines","English, Filipino",
+ "Drag performer and musician (RuPaul's Drag Race Philippines), who announced beginning her social transition and HRT on Instagram in February 2026.",
+ "From here on, I'd love for you all to get to know me more as the woman I'm becoming.",
+ "GMA Network","https://www.gmanetwork.com/entertainment/photos/marina-summers-comes-out-as-a-trans-woman/26169/358357/"),
 }
