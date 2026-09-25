@@ -33,6 +33,7 @@ SECTIONS = [
             # II — plus saturé
             ('5e0ZXu358l51ckAZvai2Ef', 'Geceler', 'Bülent Ersoy'),
             ('4Ykmj47fulJ1FTeCXctW91', 'Anh Ta Bỏ Em Rồi', 'Hương Giang'),
+            ('6BGmeieR3l4aW0VT2nvOcX', 'Con Sangre', 'Alicia Ramos'),
             ('07m5UbUHOQCofRK16k83Eg', 'Duniya', 'Shyraa Roy, Kashif Ali'),
             ('73xUwV4DkcelY7seMyY0PY', 'Lady on the Subway', 'Beth Elliott'),
             ('4dtyeDMnVKKo89QbbDtD5M', 'Ballad of the Oklahoma Women\'s Liberation Front', 'Beth Elliott'),
@@ -58,6 +59,8 @@ SECTIONS = [
             ('4P9LdSPrnQl7KQwml4DUtq', 'Baby 95', 'Liniker'),
             ('60RgF3vDNAl6crhVg4f9wl', 'Hi-Def Femme', 'Nomi Ruiz, Trace Lysette'),
             ('56xBg5e9rfrFqcqa4llUw7', 'Just Me (The Gender Binary Blues)', 'Jinkx Monsoon'),
+            ('6BlQbt6Cnf54niyISOZ6cB', 'Menino Pele Cor de Jambo', 'Assucena'),
+            ('2YDCrMvvmBz9gVeuL8QyVG', 'Blue Beat Baby', 'Brigitte Bond'),
             ('5WttRLHcZHhaIii5KwKh3Y', 'I Am Her', 'Shea Diamond'),
             ('0rK7QTyYjhPFadLH2YDl84', 'Picture of a Man', 'Our Lady J'),
             ('0gm0OruZdJlu8jamJe5OCh', 'Keisha Complexion', 'Shea Diamond'),
@@ -76,6 +79,7 @@ SECTIONS = [
             ('1N1F6UsRGILux57U0YbxJQ', 'Giọt Tình', 'Cindy Thái Tài'),
             ('7l8D5tXUVsdq95VQWn034C', '애지몽', 'Harisu'),
             ('0DZapO0gUF8XZpk2bu8AeL', 'היו לילות', 'Aderet'),
+            ('6S04kJTdogPGPWN3jP7mNt', 'Avoid The Sun', 'Anthony Lexa'),
             ('3r0gvoaAkWmLdJO4UUv94v', 'Desafío', 'Arca'),
             ('42Opc7AzlbYad3AuWsBGuf', 'Only to Trip and Fall Down Again', 'Katie Dey'),
             ('2Ff6Ghw8TRJGuAbJamtt4X', 'Serotonin Serenade', 'SuperKnova'),
@@ -186,6 +190,7 @@ SECTIONS = [
             ('1XD4K4CGAKTIBmFpvuaFru', 'Dancing with your eyes closed', 'Jane Remover'),
             ('2gmwvGC1yOw8NdMcZE8nfo', 'Literal Legend', 'Ayesha Erotica'),
             # II — plus saturé
+            ('4qdyN6rpaGsspGeMzkCTNP', 'C U L8R', 'Amethyst, Ayesha Erotica'),
             ('1toNKayLMeCcVlsLGXJl7n', 'Haunted', 'Laura Les'),
             ('18QS9wnUr7DOhMb73monpK', 'Tongues', 'Mel 4Ever, Ayesha Erotica'),
             ('0Irj6PuEEGzi7JGJvAhdZ8', 'I Can\'t Quit', 'Mel 4Ever'),
@@ -211,6 +216,7 @@ SECTIONS = [
             ('1jFN0stMzLepoPxvPywGZj', 'Heart to Break', 'Kim Petras'),
             ('1DGc7wwXrjAGecJzvESW3C', 'Star Traveler', 'Hailie Sahar'),
             ('4QnHaiWq1oJiTgMnRFE0q8', 'Mi Amor Soy Yo', 'Zemmoa, Tessa Ia, Trans-X'),
+            ('4v5gEVQPDlPtsuQ77AJa0x', 'FASHION', 'Britney Manson'),
             ('2Of9piZALXa4CC7Unxoeeg', 'KLK', 'Villano Antillano'),
             ('5lz6U9dCYBmEY6oLrW22VE', 'Olha a Banana', 'Titica, Kelmer Pastilha, Mauro Xtraga'),
             ('4OF1mdSkA2z05DSwHNKVnz', 'Hasta Que Salga el Sol', 'Wendy Guevara'),
@@ -228,6 +234,7 @@ SECTIONS = [
             ('46uGvJVhYHOVRRNnRPbkYm', 'Mantan Tanpa Status - Lucinta Luna Version', 'Lucinta Luna, Dede Satria'),
             ('1YsFdaP9QG9NhjYS3o0g5P', 'Olha o Boneco', 'Titica, Ary'),
             ('7luHAaHXty1Nl3AcscZIDT', 'Faces', 'Mila Jam'),
+            ('2R7G2Itn0b73uthZCNPIrR', 'Maria Padilha', 'Bixarte'),
             ('4NKAjWfWZ2tcIzjCR9G5Zl', 'AMAFILIPINA (Extended Version)', 'Marina Summers'),
             ('78iHtTxYIK2mD6oL6lXqFF', 'Travesti del Perú', 'Gad Yola'),
             ('1KnagH7nZ84p8vPMPZQ8hk', 'TSPG69', 'Macy Rodman'),
@@ -265,4 +272,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 179
+assert len(all_tracks()) == 186

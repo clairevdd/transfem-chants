@@ -39,6 +39,7 @@ COUNTRIES = {
     "Philippines": ("PH", "Asia"),
     "Portugal": ("PT", "Europe"),
     "Puerto Rico": ("PR", "North America"),
+    "Russia": ("RU", "Europe"),
     "Serbia": ("RS", "Europe"),
     "South Africa": ("ZA", "Africa"),
     "South Korea": ("KR", "Asia"),

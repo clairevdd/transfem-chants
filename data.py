@@ -752,4 +752,39 @@ ART = {
  "Drag performer and musician (RuPaul's Drag Race Philippines), who announced beginning her social transition and HRT on Instagram in February 2026.",
  "From here on, I'd love for you all to get to know me more as the woman I'm becoming.",
  "GMA Network","https://www.gmanetwork.com/entertainment/photos/marina-summers-comes-out-as-a-trans-woman/26169/358357/"),
+
+"Alicia Ramos": ("verified","Spain","Spanish",
+ "Singer-songwriter and guitarist from the Canary Islands, whose albums include Lumpenprekariät (2008).",
+ "Yo no tenía referentes y no sabía qué es lo que me pasaba... Algo tan sencillo como 'soy una niña' en ese momento era una imposibilidad hasta conceptual.",
+ "OFF Magazine","https://offmagazine.es/2017/02/02/acusticoenoff-alicia-ramos-mas-dificultades-mujer-transexual/"),
+
+"Amethyst": ("verified","United States","English",
+ "Drag performer (RuPaul's Drag Race, season 15) and singer, now also performing under her own name Amy. Publicly came out as trans in July 2024.",
+ "I wanted to let you know that I'm trans, and began HRT a little over a month ago.",
+ "PinkNews","https://www.thepinknews.com/2024/07/08/amethyst-trans-drag-race-comes-out/"),
+
+"Anthony Lexa": ("verified","UK","English",
+ "Singer-songwriter and actress (Sex Education).",
+ "As trans people, we spend a lot of our young lives trying to prove who we are.",
+ "The Big Issue","https://www.bigissue.com/news/social-justice/anthony-lexa-trans-secret-santa-christmas/"),
+
+"Assucena": ("verified","Brazil","Portuguese",
+ "Singer, album Lusco-Fusco (2023).",
+ "Foi por meio dela que eu me tornei uma mulher trans.",
+ "Estado de Minas / DiversEM","https://www.em.com.br/app/noticia/diversidade/2023/10/05/noticia-diversidade,1571972/pessoas-trans-ainda-estao-na-fase-do-grito-diz-assucena-ao-lancar-disco.shtml"),
+
+"Bixarte": ("verified","Brazil","Portuguese",
+ "Singer from Paraíba, album Traviarcado (2023).",
+ "Quando eu transicionei, eu entendi para quem eu queria falar e o que eu queria falar.",
+ "Jornal da Paraíba","https://jornaldaparaiba.com.br/qualaboa/bixarte-cantora-trans-entrevista"),
+
+"Brigitte Bond": ("partial","UK","English",
+ "Ska and cabaret singer active 1964-1976, recorded for the UK label Blue Beat; her 1964 photo with Prince Buster inspired The Beat's Beat Girl logo. Her origin is disputed across press accounts (variously reported as French, Maltese or Italian). Press at the time reported that she had \"underwent a sex change operation\", and a 1966 interview reports, in indirect speech rather than her own exact words, that she asserted she was a woman. No direct first-person quote from her on her gender identity has been located; her trail goes cold after 1976.",
+ None,
+ "A Gender Variance Who's Who (Zagria)","https://zagria.blogspot.com/2022/10/brigitte-bond-1944-beat-girl-singer.html"),
+
+"Britney Manson": ("verified","Russia","English",
+ "Singer, model and influencer, born in Krasnodar, Russia, of Estonian heritage.",
+ "The fact that I'm a trans woman means nothing when it comes to my career- I have nothing to hide, but I've never used my identity as a PR tool etc.",
+ "KALTBLUT Magazine","https://www.kaltblut-magazine.com/britney-manson-american-dream/"),
 }

@@ -194,6 +194,13 @@ LYRICS = {
     '6lB7TMkQqSn2tKZGwFuqex': 'https://genius.com/Miss-benny-break-away-lyrics',
     '5vCE6qjJI7NhpUrLWktoN9': 'https://genius.com/Detox-icunt-supersonic-lyrics',
     '4NKAjWfWZ2tcIzjCR9G5Zl': 'https://genius.com/Marina-summers-amafilipina-extended-version-lyrics',
+    '6BGmeieR3l4aW0VT2nvOcX': 'https://genius.com/Alicia-ramos-con-sangre-lyrics',
+    '4qdyN6rpaGsspGeMzkCTNP': 'https://genius.com/Amethyst-drag-queen-c-u-l8r-lyrics',
+    '6S04kJTdogPGPWN3jP7mNt': 'https://www.musixmatch.com/ko/lyrics/Anthony-Lexa/Avoid-The-Sun',
+    '6BlQbt6Cnf54niyISOZ6cB': 'https://genius.com/Assucena-menino-pele-cor-de-jambo-lyrics',
+    '2R7G2Itn0b73uthZCNPIrR': 'https://genius.com/Bixarte-maria-padilha-lyrics',
+    '4v5gEVQPDlPtsuQ77AJa0x': 'https://genius.com/Britney-manson-fshion-lyrics',
+    '2YDCrMvvmBz9gVeuL8QyVG': 'https://genius.com/search?q=Brigitte+Bond+Blue+Beat+Baby',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par
@@ -228,4 +235,5 @@ SEARCH = {
     '3eBY8aZZdWNnNhNbc8B0yp',
     '2lgwylOpGMtkvhwdnUOArt',
     '4CuivW1JgPauXPA4wYsf5K',
+    '2YDCrMvvmBz9gVeuL8QyVG',
 }
