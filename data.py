@@ -277,6 +277,10 @@ ART = {
  "I’m never gonna pass, I should stay home, why did I make plans?",
  "Wikipedia","https://en.wikipedia.org/wiki/Laura_Les"),
 
+"Dylan Brady": ("guest","United States","English",
+ "Record producer and musician, the other half of 100 gecs alongside Laura Les. Runs the independent label Dog Show Records. Laura Les is the artist this playlist's inclusion criteria apply to; Brady is credited here as her collaborator.",
+ None,"Wikipedia","https://en.wikipedia.org/wiki/Dylan_Brady"),
+
 "8485": ("guest","Canada","English",
  "Featured vocalist. The press refers to her with she/her pronouns, but no statement of her own about gender identity was located, and she keeps her personal details deliberately private. underscores is the lead artist on this track.",
  None,"The FADER","https://www.thefader.com/2021/11/24/8485-profile-plague-town-gen-f-interview-2021"),

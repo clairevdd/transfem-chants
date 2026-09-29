@@ -2447,4 +2447,17 @@ YEARS = {
         "checked": "2026-09-25",
         "note": "MusicBrainz records the same recording (matching duration) as first released 2024-08-30 on the EP HOT COUTURE, a later inclusion of an earlier single; the 2023-08-11 date rests on the Tunebat screenshot, not opened directly this session.",
     },
+    # Laura Les, Dylan Brady (100 gecs) — Dumbest Girl Alive
+    "0qMZXgcLfkl5RI3q50KHMH": {
+        "first_public": "2023-03-17",
+        "first_record": None,
+        "precision": "day",
+        "kind": "first",
+        "spotify": "2023-03-17",
+        "status": "verified",
+        "source": "MusicBrainz recording 30a929a1-4034-4272-bcb3-178f6f116bbf, opened in session (matching ISRC USAT22208962 across the UK/US/EU vinyl, CD and digital releases of the album 10,000 gecs); corroborated by Discogs release 26443463, also opened in session",
+        "url": "https://musicbrainz.org/recording/30a929a1-4034-4272-bcb3-178f6f116bbf",
+        "checked": "2026-09-29",
+        "note": "Matches the Tunebat platform date Claire supplied by screenshot.",
+    },
 }

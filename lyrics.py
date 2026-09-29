@@ -201,6 +201,7 @@ LYRICS = {
     '2R7G2Itn0b73uthZCNPIrR': 'https://genius.com/Bixarte-maria-padilha-lyrics',
     '4v5gEVQPDlPtsuQ77AJa0x': 'https://genius.com/Britney-manson-fshion-lyrics',
     '2YDCrMvvmBz9gVeuL8QyVG': 'https://genius.com/search?q=Brigitte+Bond+Blue+Beat+Baby',
+    '0qMZXgcLfkl5RI3q50KHMH': 'https://genius.com/100-gecs-dumbest-girl-alive-lyrics',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par
