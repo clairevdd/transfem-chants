@@ -832,4 +832,39 @@ ART = {
 "All Girls Piss": ("partial","Ireland","English",
  "Dublin punk band, which describes itself collectively as a post-transsexual punk project. On this live recording Spotify credits Marcie O'Brien with vocals; GCN reports that every member of the band takes part in the singing. No individual first-person statement of gender identity was located.",
  None,"GCN","https://gcn.ie/trans-bands-irish-punk-scene/"),
+
+"Louisa Janssen": ("verified","Netherlands","Dutch",
+ "Dutch singer, YouTuber and television personality. Released the single Ben een transgender in 2022.",
+ "Ik ben Louisa, ik voel me een vrouw, maar ben als man geboren en zal daar ook altijd voor uit komen.",
+ "LINDA.nl, 11 January 2023","https://www.linda.nl/meiden/meiden-trending/louisa-janssen-transfobe-opmerkingen/"),
+
+"Louïz": ("verified","France","Réunion Creole, French",
+ "Singer, dancer, choreographer and activist from Saint-Denis, Réunion. Represented France at the Miss International Queen pageant in 2022.",
+ "En tant que métisse et femme trans, je pense incarner le mot diversité et c'est ce que je souhaite véhiculer au travers de ma participation",
+ "têtu·, 30 January 2020","https://tetu.com/2020/01/30/louiz-la-chanteuse-reunionnaise-trans-qui-veut-conquerir-le-monde/"),
+
+"Emma Cadenas": ("verified","Peru","Spanish",
+ "Singer-songwriter, poet, writer and journalist from Lima. In July 2025 she obtained an identity document in her own name.",
+ "Suelo presentarme como cantautora, poeta y escritora trans peruana",
+ "El Comercio, 14 June 2026","https://elcomercio.pe/luces/si-algo-politico-hago-es-existir-emma-cadenas-retoma-la-escena-limena-con-un-proyecto-que-cruza-la-musica-y-la-literatura-lgtbqi-noticia/"),
+
+"Candy Mel": ("verified","Brazil","Portuguese",
+ "Singer and presenter from Goiânia, also known as Mel Gonçalves. One of the three vocalists of Banda Uó, then solo; her album 5Estrelas came out in 2025.",
+ "Eu sou uma mulher trans que veio de Goiás, das periferias de Goiânia, e que atravessou muita coisa.",
+ "Billboard Brasil, 10 January 2024","https://billboard.com.br/tive-uma-infancia-conturbada-e-violenta-a-trajetoria-de-mel-goncalves-ate-a-fama/"),
+
+"TRAEMME": ("verified","Brazil","Portuguese",
+ "Singer, songwriter and activist from Embu-Guaçu, São Paulo, who calls herself a travesti. Debuted in 2020 with the single Me Leva.",
+ "eu falo muito que eu sou uma mulher travesti, que sou travesti pra ressignificar essa palavra, que vem cheia de estereótipos e marginalidade",
+ "POPline, 10 June 2025","https://portalpopline.com.br/sou-eu-traemme-fim-categorizacao-artistas-identidade-genero-nao-estarei-viva-pra-ver/"),
+
+"Kyros": ("verified","UK","English",
+ "The progressive rock band Shelby Logan Warne fronts as lead vocalist and keyboard player. She is a trans woman and began hormone therapy in July 2020; the album Mannequin came out in 2024.",
+ "I am also a transgender woman and I am proud of my identity and consider this to be a very important part of who I am as a person.",
+ "Shelby Logan Warne, GoFundMe page","https://www.gofundme.com/f/shelbys-transition-fund"),
+
+"JANIS": ("verified","France","English",
+ "Janis Sahraoui, French singer-songwriter who first released music as Sliimy in 2009. Came out as trans and non-binary in 2021 and has released music as JANIS since 2026.",
+ "Même si je n’avais pas d’histoires qui parlaient de qui j’étais, ça ne m’a jamais empêchée d’être une femme trans.",
+ "Nylon France, 21 June 2024","https://www.nylon.fr/lifestyle/janis-sahraoui-reveler-visages-temoignage-resilience-liberte/"),
 }

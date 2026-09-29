@@ -211,6 +211,16 @@ LYRICS = {
     '3VHdDisicXuBnW1NxIGzCI': 'https://genius.com/search?q=Carmen+de+Mairena+La+Copla+de+Cristal',
     '1E3nHn45NpD1TkDzo3jcbk': 'https://genius.com/search?q=All+Girls+Piss+No+Transphobia+On+A+Dead+Planet',
     '4Hf2Y8mG8LDZCfeycD93PP': 'https://genius.com/Endigo-huggy-wuggy-lyrics',
+    '5327YgW0EzH0cd3kWRwx2l': 'https://genius.com/search?q=Louisa+Janssen+Gifkikker',
+    '7fIsGfaxbm0UqiENtZ2l5R': 'https://genius.com/search?q=Louiz+Fanm+Zordi',
+    '6BmKLSDW8jBHD2X42PraGM': 'https://genius.com/search?q=Louiz+Kass+kasse',
+    '78vWZN7hzHidEuDGOn9jyL': 'https://genius.com/search?q=Emma+Cadenas+Baja+la+velocidad',
+    '5W7Wtg5RIj6iI8EvE9j9fP': 'https://genius.com/Candy-mel-percote-lyrics',
+    '7qpIPPj6thT3L3zefsI04T': 'https://genius.com/Candy-mel-and-jup-do-bairro-acucar-e-sal-lyrics',
+    '14oyjbbiyic1Hh2ArExQwX': 'https://genius.com/Candy-mel-and-liniker-mil-e-uma-noites-lyrics',
+    '1gs7juUrbHx9LoeAQWp8X0': 'https://genius.com/Traemme-me-ama-que-eu-sei-lyrics',
+    '2rffYJaN04Tdzha2foN2up': 'https://genius.com/Kyros-illusions-inside-lyrics',
+    '52uobAwbP5In7cc0NV677y': 'https://genius.com/search?q=JANIS+Janis+Cry+With+Us',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par
@@ -250,4 +260,9 @@ SEARCH = {
     '7itC84qelbt08WXLeJfzgU',
     '3VHdDisicXuBnW1NxIGzCI',
     '1E3nHn45NpD1TkDzo3jcbk',
+    '5327YgW0EzH0cd3kWRwx2l',
+    '7fIsGfaxbm0UqiENtZ2l5R',
+    '6BmKLSDW8jBHD2X42PraGM',
+    '78vWZN7hzHidEuDGOn9jyL',
+    '52uobAwbP5In7cc0NV677y',
 }

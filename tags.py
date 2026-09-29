@@ -96,6 +96,9 @@ JUNK_BLOCK = {
     "broad city", "broad city s5", "rpdr s4", "rupaul's drag race",
     "rupaul's drag race all stars", "drag race philippines",
     "rpdr uk vs the world s2",
+    "echte meisjes in de jungle", "echte meisjes in de jungle 2023",
+    "better than ariana grande", "better than selena gomez", "traemme",
+    "king saints", "girl power", "female vocalists",
 }
 # Ajouts du 19 septembre 2026, lot Jup do Bairro/Macy Rodman/Nomi Ruiz/
 # Ventura Profana : "usa" (GEO_BLOCK) est le même blocage que "united states"
@@ -306,4 +309,14 @@ TAGS = {
     '3VHdDisicXuBnW1NxIGzCI': {'discogs': ['copla'], 'musicbrainz': [], 'lastfm': []},  # Carmen de Mairena — La Copla de Cristal (Discogs style of release 1521088, Yo Soy La Copla; Last.fm track tags empty, artist profile "Carmen Mairena" empty and "Carmen de Mairena" carrying mocking tags ("the worst thing ever to happen to music", "lolcore") next to "folk", none used; MusicBrainz found no recording)
     '1E3nHn45NpD1TkDzo3jcbk': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # All Girls Piss — No Transphobia On A Dead Planet (live) (no Discogs artist, no MusicBrainz recording, Last.fm track and artist tags empty)
     '4Hf2Y8mG8LDZCfeycD93PP': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Endigo, Maya Fennec — Huggy Wuggy (Discogs artist 13015851 lists no release of this single; the Last.fm "Endigo" profile mixes her with a same-named trance producer (Discogs artist 2388546), so its tags are not used; MusicBrainz found no recording)
+    '5327YgW0EzH0cd3kWRwx2l': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Louisa Janssen — Gifkikker (no Discogs artist, no MusicBrainz recording or artist; Last.fm track tags empty, artist tags only the name of a reality show, added to JUNK_BLOCK)
+    '7fIsGfaxbm0UqiENtZ2l5R': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Louïz — Fanm Zordi (no Discogs artist, no MusicBrainz recording, Last.fm track and artist tags empty)
+    '6BmKLSDW8jBHD2X42PraGM': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Louïz — Kass kassé (same as above)
+    '78vWZN7hzHidEuDGOn9jyL': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Emma Cadenas — Baja la velocidad (no Discogs artist, no MusicBrainz recording, Last.fm empty)
+    '5W7Wtg5RIj6iI8EvE9j9fP': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'mpb']},  # Candy Mel — Percotê (Last.fm track tags empty, artist tags used; "brasil" geographic, "female vocalists"/"nacional" noise; MusicBrainz recording, release group 5Estrelas and artist carry no genres; 5Estrelas not on Discogs)
+    '7qpIPPj6thT3L3zefsI04T': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'mpb']},  # Candy Mel, Jup do Bairro — Açucar e Sal (same sources as Percotê)
+    '14oyjbbiyic1Hh2ArExQwX': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'mpb']},  # Candy Mel, Liniker — Mil e Uma Noites (same sources as Percotê)
+    '1gs7juUrbHx9LoeAQWp8X0': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # TRAEMME — Me Ama Que Eu Sei (Last.fm track tags empty; artist tags are identity, geography or jokes ("better than ariana grande"), none used; no Discogs artist; MusicBrainz artist without genres)
+    '2rffYJaN04Tdzha2foN2up': {'discogs': ['prog rock', 'progressive metal', 'new wave'], 'musicbrainz': [], 'lastfm': ['progressive rock', 'rock']},  # Kyros — Illusions Inside (Discogs styles of master 3389932, Mannequin; Last.fm track tags empty, artist tags used; MusicBrainz recording, release group and artist without genres)
+    '52uobAwbP5In7cc0NV677y': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # JANIS — Janis (the Last.fm "JANIS" profile belongs to a German namesake, not used; no Discogs release; MusicBrainz recording without genres)
 }

@@ -35,6 +35,7 @@ SECTIONS = [
             ('4Ykmj47fulJ1FTeCXctW91', 'Anh Ta Bỏ Em Rồi', 'Hương Giang'),
             ('6BGmeieR3l4aW0VT2nvOcX', 'Con Sangre', 'Alicia Ramos'),
             ('07m5UbUHOQCofRK16k83Eg', 'Duniya', 'Shyraa Roy, Kashif Ali'),
+            ('78vWZN7hzHidEuDGOn9jyL', 'Baja la velocidad', 'Emma Cadenas'),
             ('73xUwV4DkcelY7seMyY0PY', 'Lady on the Subway', 'Beth Elliott'),
             ('4dtyeDMnVKKo89QbbDtD5M', 'Ballad of the Oklahoma Women\'s Liberation Front', 'Beth Elliott'),
             ('3BYSoeWlqUgIwfY77C8VgE', 'Té de Malvón', 'La Bruja de Texcoco'),
@@ -55,6 +56,7 @@ SECTIONS = [
             ('5dtUOwEmnDAzsdodWJk4DA', 'Any Other Way', 'Jackie Shane'),
             ('5NnQ2xIeHDKc1B19rxfcV3', 'I Will Survive', 'Veronica Klaus'),
             ('0VhGzYfT2ZOFz31b5IH7yJ', 'Un garçon qui pleure', 'Marie France, Chrissie Hynde'),
+            ('14oyjbbiyic1Hh2ArExQwX', 'Mil e Uma Noites', 'Candy Mel, Liniker'),
             # II — plus saturé
             ('4P9LdSPrnQl7KQwml4DUtq', 'Baby 95', 'Liniker'),
             ('60RgF3vDNAl6crhVg4f9wl', 'Hi-Def Femme', 'Nomi Ruiz, Trace Lysette'),
@@ -65,6 +67,7 @@ SECTIONS = [
             ('1zVqEY9PXPpYJKMi9Kk9yn', 'Esotérico', 'CATTO'),
             ('5WttRLHcZHhaIii5KwKh3Y', 'I Am Her', 'Shea Diamond'),
             ('0rK7QTyYjhPFadLH2YDl84', 'Picture of a Man', 'Our Lady J'),
+            ('5W7Wtg5RIj6iI8EvE9j9fP', 'Percotê', 'Candy Mel'),
             ('0gm0OruZdJlu8jamJe5OCh', 'Keisha Complexion', 'Shea Diamond'),
             ('608TXHjFnEau83A1DoyVCt', "It's Honey", 'Honey Mahogany'),
             ('1jTo2GUdfyjvSBaXaV9IMh', 'שיר גאווה', 'Gila Goldstein'),
@@ -79,6 +82,7 @@ SECTIONS = [
             ('3XdXixlx3MoVzfL7pu9hx6', 'Time', 'Arca'),
             ('0QA1xpUuqHDHWZhi0eAbH7', 'It\'s Okay To Cry', 'SOPHIE'),
             ('6EjxYTyXiBzJz6PeOvPiou', 'きみがすきだよ', 'Ataru Nakamura'),
+            ('52uobAwbP5In7cc0NV677y', 'Janis', 'JANIS'),
             ('1N1F6UsRGILux57U0YbxJQ', 'Giọt Tình', 'Cindy Thái Tài'),
             ('7l8D5tXUVsdq95VQWn034C', '애지몽', 'Harisu'),
             ('0DZapO0gUF8XZpk2bu8AeL', 'היו לילות', 'Aderet'),
@@ -144,6 +148,7 @@ SECTIONS = [
             ('2inX5xyazBvcZYLx3wRBwh', 'Berubah', 'Tingtongketz'),
             # III — plus saturé
             ('0ZQLRkRyn3300WyapdPoWT', 'CAVALE! CAVALE!', 'THÉA'),
+            ('2rffYJaN04Tdzha2foN2up', 'Illusions Inside', 'Kyros'),
             ('4NYRtDYROQW2D2ctcylcri', 'Targets of Men Targets of Men', 'G.L.O.S.S.'),
             ('1IF61ped0XehHvw2CFXP3B', 'Man Enough To Be A Woman', 'Jayne County'),
             ('7yeRNInEt2DOFYW0BkETEe', 'Restless Year', 'Ezra Furman'),
@@ -225,10 +230,14 @@ SECTIONS = [
             ('1jFN0stMzLepoPxvPywGZj', 'Heart to Break', 'Kim Petras'),
             ('1DGc7wwXrjAGecJzvESW3C', 'Star Traveler', 'Hailie Sahar'),
             ('308z6pEGHS90tuDNAngZnh', 'Diva', 'Electra Elite'),
+            ('7fIsGfaxbm0UqiENtZ2l5R', 'Fanm Zordi', 'Louïz'),
+            ('1gs7juUrbHx9LoeAQWp8X0', 'Me Ama Que Eu Sei', 'TRAEMME'),
+            ('6BmKLSDW8jBHD2X42PraGM', 'Kass kassé', 'Louïz'),
             ('4QnHaiWq1oJiTgMnRFE0q8', 'Mi Amor Soy Yo', 'Zemmoa, Tessa Ia, Trans-X'),
             ('4v5gEVQPDlPtsuQ77AJa0x', 'FASHION', 'Britney Manson'),
             ('2Of9piZALXa4CC7Unxoeeg', 'KLK', 'Villano Antillano'),
             ('5lz6U9dCYBmEY6oLrW22VE', 'Olha a Banana', 'Titica, Kelmer Pastilha, Mauro Xtraga'),
+            ('7qpIPPj6thT3L3zefsI04T', 'Açucar e Sal', 'Candy Mel, Jup do Bairro'),
             ('4OF1mdSkA2z05DSwHNKVnz', 'Hasta Que Salga el Sol', 'Wendy Guevara'),
             ('5srzGYocC4qYFvckQm5AfC', 'To2i W Far2a3i', 'Haiifa Magic'),
             ('1Q9w2a5dvoIpE8fkP8mUK6', 'C.L.A.T. (feat. DJ Mitch Ferrino)', 'Aja, Alexis Michelle, Peppermint, Sasha Velour'),
@@ -262,6 +271,7 @@ SECTIONS = [
             ('6fd79PtewFZgLXYiIYhhLJ', 'La Drácula', 'Ella'),
             ('4DfHQvIAZmSmqcZbuO80sZ', 'Days of Girlhood', 'Dylan Mulvaney'),
             ('1ggQljgteCJOF8PFvCiRLa', '#LaChinaMasLatina', 'Gia Gunn, Alaska Thunderfuck'),
+            ('5327YgW0EzH0cd3kWRwx2l', 'Gifkikker', 'Louisa Janssen'),
             ('75HFFq9W7Em0dTBG8QeGcT', 'There Will Be Blood', 'Kim Petras'),
             ('1EPYnBjYhYHcNthEnVWk18', '됐거든', 'Harisu'),
             ('0GSW6V6GJc4xYi8c5jOu60', 'さそり座の女', 'Ai Haruna'),
@@ -282,4 +292,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 196
+assert len(all_tracks()) == 206
