@@ -165,10 +165,13 @@ def _cloud_html(freq, esc):
 
 def _track_line(r, esc, slug):
     url = "https://open.spotify.com/track/" + r["id"]
-    names = [n.strip() for n in r["credit"].split(",")]
-    cr = " · ".join(
+    # Le nom de l'artiste sous lequel le morceau est rangé figure déjà en
+    # en-tête du bloc : seuls les autres noms crédités sont répétés ici,
+    # précédés de « with ». Demande de Claire, 29 septembre 2026.
+    names = [n.strip() for n in r["credit"].split(",") if n.strip() != r["primary"]]
+    cr = "with " + ", ".join(
         f'<a class="{"guest" if ART[n][0] == "guest" else "lead"}" '
-        f'href="index.html#{slug(n)}">{esc(n)}</a>' for n in names)
+        f'href="index.html#{slug(n)}">{esc(n)}</a>' for n in names) if names else ""
     tags_json = esc(json.dumps(r["tags"]))
     src_lines = "".join(
         f'<div class="srcline"><b>{label}</b> {esc(", ".join(r["sources"].get(key) or []))}</div>'

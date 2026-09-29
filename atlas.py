@@ -74,7 +74,8 @@ def _index(esc, slug, artists_of, aliases, same_person):
                 continue
             key = same_person.get(name, name)
             by_artist.setdefault(key, {"tracks": [], "names": set()})
-            by_artist[key]["tracks"].append((sid, title, credit))
+            if (sid, title, credit) not in by_artist[key]["tracks"]:
+                by_artist[key]["tracks"].append((sid, title, credit))
             by_artist[key]["names"].add(name)
 
     rows = []
@@ -84,15 +85,40 @@ def _index(esc, slug, artists_of, aliases, same_person):
             aliases.get(c.strip(), c.strip()) for c in v[1].split(" / ")]
         languages = [] if v[2] == "—" else [l.strip() for l in v[2].split(",")]
         rows.append({"name": key, "status": v[0], "countries": countries,
-                     "languages": languages, "tracks": d["tracks"]})
+                     "languages": languages, "tracks": d["tracks"],
+                     "names": d["names"]})
     rows.sort(key=lambda r: r["name"].lower())
     return rows
 
 
-def _track_list(tracks, esc):
+def _others(credit, header_names):
+    """Les noms crédités autres que l'artiste de l'en-tête, déjà nommée juste
+    au-dessus. Demande de Claire, 29 septembre 2026 : la répétition sur
+    chaque ligne était redondante.
+
+    Un alias de la même personne (un nom de groupe : Against Me!, Antony and
+    the Johnsons) reste affiché tel quel, sans « with » : c'est le crédit
+    sous lequel le morceau est paru, pas une invitée."""
+    names = [n.strip() for n in credit.split(",")]
+    header, aliases = header_names
+    if header in names:
+        alias = []
+    else:
+        alias = [n for n in names if n in aliases]
+    rest = [n for n in names if n != header and n not in aliases]
+    out = ", ".join(alias)
+    if rest:
+        out = (out + " " if out else "") + "with " + ", ".join(rest)
+    return out
+
+
+def _track_list(tracks, esc, header_names=("", frozenset())):
+    def cr(credit):
+        o = _others(credit, header_names)
+        return f' <span class="cr">{esc(o)}</span>' if o else ""
     items = "".join(
         f'<li><a href="https://open.spotify.com/track/{sid}" target="_blank" rel="noopener">'
-        f'{esc(title)}</a> <span class="cr">{esc(credit)}</span></li>'
+        f'{esc(title)}</a>{cr(credit)}</li>'
         for sid, title, credit in tracks)
     return f'<ul class="atlas-tracks">{items}</ul>'
 
@@ -102,7 +128,7 @@ def _artist_block(row, esc, slug, badge):
     return (f'<div class="atlas-artist">'
             f'<h4><a href="index.html#{slug(row["name"])}">{esc(row["name"])}</a>'
             f' <span class="st {cls}">{label}</span></h4>'
-            f'{_track_list(row["tracks"], esc)}</div>')
+            f'{_track_list(row["tracks"], esc, (row["name"], frozenset(row["names"]) - {row["name"]}))}</div>')
 
 
 def _shell(title, description, css, body, nav):
