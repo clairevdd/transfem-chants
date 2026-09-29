@@ -1334,8 +1334,8 @@ going in: at most six groups, so a 3D view of them could stay legible, and
 at least four songs per group, so that no averaged profile could ever be
 narrow enough to read back as a single track's numbers, though this was
 never a serious risk of reconstructing individual Tunebat values in the
-first place; a margin of safety costs nothing here. Sizes run from 10 to
-46; no group needed to be merged into another to clear that floor. Each
+first place; a margin of safety costs nothing here. Sizes run from 12 to
+71; no group needed to be merged into another to clear that floor. Each
 radar plot is scaled to the same axis range across all six groups, so the
 shapes are directly comparable to one another; each group's average sits
 next to the same feature's average across the whole playlist, to read at
