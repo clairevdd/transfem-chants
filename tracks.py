@@ -61,6 +61,7 @@ SECTIONS = [
             ('56xBg5e9rfrFqcqa4llUw7', 'Just Me (The Gender Binary Blues)', 'Jinkx Monsoon'),
             ('6BlQbt6Cnf54niyISOZ6cB', 'Menino Pele Cor de Jambo', 'Assucena'),
             ('2YDCrMvvmBz9gVeuL8QyVG', 'Blue Beat Baby', 'Brigitte Bond'),
+            ('1zVqEY9PXPpYJKMi9Kk9yn', 'Esotérico', 'CATTO'),
             ('5WttRLHcZHhaIii5KwKh3Y', 'I Am Her', 'Shea Diamond'),
             ('0rK7QTyYjhPFadLH2YDl84', 'Picture of a Man', 'Our Lady J'),
             ('0gm0OruZdJlu8jamJe5OCh', 'Keisha Complexion', 'Shea Diamond'),
@@ -73,12 +74,14 @@ SECTIONS = [
         "blurb": 'Producers and singer-songwriters writing in an electronic idiom of their own, from SOPHIE and Arca to ANOHNI — the most multilingual family on the playlist, reaching from South African art pop to Japanese, Thai and Hebrew ballads.',
         "tracks": [
             # I — plus nu
+            ('7itC84qelbt08WXLeJfzgU', '愛在轉瞬間', '鍾潔希'),
             ('3XdXixlx3MoVzfL7pu9hx6', 'Time', 'Arca'),
             ('0QA1xpUuqHDHWZhi0eAbH7', 'It\'s Okay To Cry', 'SOPHIE'),
             ('6EjxYTyXiBzJz6PeOvPiou', 'きみがすきだよ', 'Ataru Nakamura'),
             ('1N1F6UsRGILux57U0YbxJQ', 'Giọt Tình', 'Cindy Thái Tài'),
             ('7l8D5tXUVsdq95VQWn034C', '애지몽', 'Harisu'),
             ('0DZapO0gUF8XZpk2bu8AeL', 'היו לילות', 'Aderet'),
+            ('2KwdLR2SOGSflUigzSekHZ', 'Голоса В Раю', 'Scarlett la Queen'),
             ('6S04kJTdogPGPWN3jP7mNt', 'Avoid The Sun', 'Anthony Lexa'),
             ('3r0gvoaAkWmLdJO4UUv94v', 'Desafío', 'Arca'),
             ('42Opc7AzlbYad3AuWsBGuf', 'Only to Trip and Fall Down Again', 'Katie Dey'),
@@ -123,6 +126,7 @@ SECTIONS = [
             ('3ShIGvHRm0q9iIDowUMjls', 'The Best Ever Death Metal Band in Denton', 'Laura Jane Grace'),
             ('2jFP4mAHcDmGe7DEKKLyJa', 'Skin On Skin', 'jasmine.4.t'),
             ('7GAI6zWpmst6dSfu1wIA1O', 'White Horses', 'Venus de Mars and All the Pretty Horses'),
+            ('6b4lgjut9ogXlhcbFgLgtS', 'MADRIGAL', 'CATTO'),
             ('3RXajeZOzqXWrQwLDfTzKK', 'JUSTE AMIS', 'THÉA'),
             ('0bWpWsvZeTTNLQ9nuXqKIN', 'Guillotine', 'THÉA'),
             # II — médian
@@ -169,6 +173,7 @@ SECTIONS = [
             # portugais (Brésil)
             ('5ljt7BaKAlflOjNs9jysyh', 'INTRO', 'Jup do Bairro, Indianarae Siqueira'),
             ('1o8Xa3b70eDBgIvZTz7tKF', 'E Se Não Fosse O Sonho', 'Jup do Bairro'),
+            ('7aUZM3W6RA8k47eqP985Kc', 'Tcheca', 'Danny Bond'),
         ],
     },
     {
@@ -216,6 +221,7 @@ SECTIONS = [
             ('3BqWvhPear6eKPwhwJRFpO', 'Bruised', 'Mila Jam'),
             ('1jFN0stMzLepoPxvPywGZj', 'Heart to Break', 'Kim Petras'),
             ('1DGc7wwXrjAGecJzvESW3C', 'Star Traveler', 'Hailie Sahar'),
+            ('308z6pEGHS90tuDNAngZnh', 'Diva', 'Electra Elite'),
             ('4QnHaiWq1oJiTgMnRFE0q8', 'Mi Amor Soy Yo', 'Zemmoa, Tessa Ia, Trans-X'),
             ('4v5gEVQPDlPtsuQ77AJa0x', 'FASHION', 'Britney Manson'),
             ('2Of9piZALXa4CC7Unxoeeg', 'KLK', 'Villano Antillano'),
@@ -273,4 +279,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 187
+assert len(all_tracks()) == 193

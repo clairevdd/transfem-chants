@@ -202,6 +202,12 @@ LYRICS = {
     '4v5gEVQPDlPtsuQ77AJa0x': 'https://genius.com/Britney-manson-fshion-lyrics',
     '2YDCrMvvmBz9gVeuL8QyVG': 'https://genius.com/search?q=Brigitte+Bond+Blue+Beat+Baby',
     '0qMZXgcLfkl5RI3q50KHMH': 'https://genius.com/100-gecs-dumbest-girl-alive-lyrics',
+    '1zVqEY9PXPpYJKMi9Kk9yn': 'https://genius.com/Catto-esoterico-lyrics',
+    '6b4lgjut9ogXlhcbFgLgtS': 'https://genius.com/Catto-madrigal-lyrics',
+    '7aUZM3W6RA8k47eqP985Kc': 'https://genius.com/Danny-bond-tcheca-lyrics',
+    '308z6pEGHS90tuDNAngZnh': 'https://genius.com/Electra-elite-diva-lyrics',
+    '2KwdLR2SOGSflUigzSekHZ': 'https://genius.com/search?q=Scarlett+la+Queen+%D0%93%D0%BE%D0%BB%D0%BE%D1%81%D0%B0+%D0%92+%D0%A0%D0%B0%D1%8E',
+    '7itC84qelbt08WXLeJfzgU': 'https://genius.com/search?q=%E9%8D%BE%E6%BD%94%E5%B8%8C+%E6%84%9B%E5%9C%A8%E8%BD%89%E7%9E%AC%E9%96%93',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par
@@ -237,4 +243,6 @@ SEARCH = {
     '2lgwylOpGMtkvhwdnUOArt',
     '4CuivW1JgPauXPA4wYsf5K',
     '2YDCrMvvmBz9gVeuL8QyVG',
+    '2KwdLR2SOGSflUigzSekHZ',
+    '7itC84qelbt08WXLeJfzgU',
 }

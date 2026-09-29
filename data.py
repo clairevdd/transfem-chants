@@ -791,4 +791,28 @@ ART = {
  "Singer, model and influencer, born in Krasnodar, Russia, of Estonian heritage.",
  "The fact that I'm a trans woman means nothing when it comes to my career- I have nothing to hide, but I've never used my identity as a PR tool etc.",
  "KALTBLUT Magazine","https://www.kaltblut-magazine.com/britney-manson-american-dream/"),
+
+"CATTO": ("verified","Brazil","Portuguese",
+ "Singer-songwriter recording since 2009, uses she/her (ela). Describes herself as a non-binary trans person, and recalls telling her mother as a child that she was not a boy.",
+ "rezava para poder ser quem sou hoje: uma pessoa trans não binária",
+ "Billboard Brasil","https://billboard.com.br/filipe-catto-detalha-reafirmacao-de-genero-e-redescoberta-artistica-me-da-orgulho/"),
+
+"Danny Bond": ("verified","Brazil","Portuguese",
+ "Rapper and singer from Maceió, Alagoas, recording since 2015. Describes herself as a travesti.",
+ "A galera ainda não está pronta para ver uma travesti furando a bolha",
+ "O Tempo (Folhapress)","https://www.otempo.com.br/entretenimento/danny-bond-quer-resgatar-raiz-nordestina-e-fala-de-hate-vim-para-causar-1.2629769"),
+
+"Scarlett la Queen": ("verified","Russia / United States","Russian",
+ "Singer from Nalchik, a pop star in Russia in the early 2000s under an earlier stage name, now based in New York. Came out publicly in January 2020. In her coming-out interview she likens herself to the hijra rather than seeking to look like a cisgender woman.",
+ "Моя идентичность к женскому полу была во мне, насколько я помню, лет с трех.",
+ "Korrespondent.net, quoting her Instagram post of 25 February 2020","https://korrespondent.net/lifestyle/4197530-ot-transhendernoi-pevytsy-skarlett-otkazalas-semia"),
+
+"Electra Elite": ("verified","Serbia","Serbian",
+ "Singer whose first single appeared in 2020. Describes herself as a transgender person (transrodna osoba) and speaks of her own transition in the first person.",
+ "To muškarac više ne postoji kod mene",
+ "Nova.rs","https://nova.rs/zabava/ispovest-transrodne-pevacice-electre-elite-za-nova-rs/"),
+
+"鍾潔希": ("partial","Malaysia / Australia","Mandarin",
+ "Jessie Chung. Singer, songwriter and actress from Kuching, releasing albums since 1998. Described as transgender by the press since 2005; in a 2005 interview she speaks of her own situation, but no first-person statement of her gender identity was located.",
+ None,"Malaysiakini","https://www.malaysiakini.com/news/43100"),
 }
