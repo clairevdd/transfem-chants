@@ -60,6 +60,7 @@ SECTIONS = [
             ('60RgF3vDNAl6crhVg4f9wl', 'Hi-Def Femme', 'Nomi Ruiz, Trace Lysette'),
             ('56xBg5e9rfrFqcqa4llUw7', 'Just Me (The Gender Binary Blues)', 'Jinkx Monsoon'),
             ('6BlQbt6Cnf54niyISOZ6cB', 'Menino Pele Cor de Jambo', 'Assucena'),
+            ('3VHdDisicXuBnW1NxIGzCI', 'La Copla de Cristal', 'Carmen de Mairena'),
             ('2YDCrMvvmBz9gVeuL8QyVG', 'Blue Beat Baby', 'Brigitte Bond'),
             ('1zVqEY9PXPpYJKMi9Kk9yn', 'Esotérico', 'CATTO'),
             ('5WttRLHcZHhaIii5KwKh3Y', 'I Am Her', 'Shea Diamond'),
@@ -126,7 +127,9 @@ SECTIONS = [
             ('3ShIGvHRm0q9iIDowUMjls', 'The Best Ever Death Metal Band in Denton', 'Laura Jane Grace'),
             ('2jFP4mAHcDmGe7DEKKLyJa', 'Skin On Skin', 'jasmine.4.t'),
             ('7GAI6zWpmst6dSfu1wIA1O', 'White Horses', 'Venus de Mars and All the Pretty Horses'),
+            ('1E3nHn45NpD1TkDzo3jcbk', 'No Transphobia On A Dead Planet - Live', 'All Girls Piss'),
             ('6b4lgjut9ogXlhcbFgLgtS', 'MADRIGAL', 'CATTO'),
+            ('4Hf2Y8mG8LDZCfeycD93PP', 'Huggy Wuggy', 'Endigo, Maya Fennec'),
             ('3RXajeZOzqXWrQwLDfTzKK', 'JUSTE AMIS', 'THÉA'),
             ('0bWpWsvZeTTNLQ9nuXqKIN', 'Guillotine', 'THÉA'),
             # II — médian
@@ -279,4 +282,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 193
+assert len(all_tracks()) == 196

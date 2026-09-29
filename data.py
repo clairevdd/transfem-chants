@@ -803,7 +803,7 @@ ART = {
  "O Tempo (Folhapress)","https://www.otempo.com.br/entretenimento/danny-bond-quer-resgatar-raiz-nordestina-e-fala-de-hate-vim-para-causar-1.2629769"),
 
 "Scarlett la Queen": ("verified","Russia / United States","Russian",
- "Singer from Nalchik, a pop star in Russia in the early 2000s under an earlier stage name, now based in New York. Came out publicly in January 2020. In her coming-out interview she likens herself to the hijra rather than seeking to look like a cisgender woman.",
+ "Singer from Nalchik, a pop star in Russia in the early 2000s under an earlier stage name, now based in New York. Came out publicly in January 2020. Speaks of her identity with the female gender as present since she was about three.",
  "Моя идентичность к женскому полу была во мне, насколько я помню, лет с трех.",
  "Korrespondent.net, quoting her Instagram post of 25 February 2020","https://korrespondent.net/lifestyle/4197530-ot-transhendernoi-pevytsy-skarlett-otkazalas-semia"),
 
@@ -815,4 +815,21 @@ ART = {
 "鍾潔希": ("partial","Malaysia / Australia","Mandarin",
  "Jessie Chung. Singer, songwriter and actress from Kuching, releasing albums since 1998. Described as transgender by the press since 2005; in a 2005 interview she speaks of her own situation, but no first-person statement of her gender identity was located.",
  None,"Malaysiakini","https://www.malaysiakini.com/news/43100"),
+
+"Endigo": ("verified","Sweden","English",
+ "Singer, music producer and drag performer, known for metal vocals on video-game soundtracks. Came out as trans on Instagram in November 2023, writing that she had felt this way her entire life.",
+ "I'M TRANS!",
+ "Instagram, 21 November 2023","https://www.instagram.com/endigopink/"),
+
+"Maya Fennec": ("guest","Unknown","English",
+ "Featured vocalist. No public statement about their gender identity was found.",
+ None,None,None),
+
+"Carmen de Mairena": ("partial","Spain","Spanish",
+ "Cupletista from Barcelona, performing from 1956, who lived publicly as a woman from the 1970s until her death in 2020. Described as trans by the press; no first-person statement of her gender identity was located.",
+ None,"El Español","https://www.elespanol.com/corazon/television/20200323/carmen-mairena-cupletista-transexual-llego-frikismo-television/476952611_0.html"),
+
+"All Girls Piss": ("partial","Ireland","English",
+ "Dublin punk band, which describes itself collectively as a post-transsexual punk project. On this live recording Spotify credits Marcie O'Brien with vocals; GCN reports that every member of the band takes part in the singing. No individual first-person statement of gender identity was located.",
+ None,"GCN","https://gcn.ie/trans-bands-irish-punk-scene/"),
 }

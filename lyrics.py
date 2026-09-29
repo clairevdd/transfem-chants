@@ -208,6 +208,9 @@ LYRICS = {
     '308z6pEGHS90tuDNAngZnh': 'https://genius.com/Electra-elite-diva-lyrics',
     '2KwdLR2SOGSflUigzSekHZ': 'https://genius.com/search?q=Scarlett+la+Queen+%D0%93%D0%BE%D0%BB%D0%BE%D1%81%D0%B0+%D0%92+%D0%A0%D0%B0%D1%8E',
     '7itC84qelbt08WXLeJfzgU': 'https://genius.com/search?q=%E9%8D%BE%E6%BD%94%E5%B8%8C+%E6%84%9B%E5%9C%A8%E8%BD%89%E7%9E%AC%E9%96%93',
+    '3VHdDisicXuBnW1NxIGzCI': 'https://genius.com/search?q=Carmen+de+Mairena+La+Copla+de+Cristal',
+    '1E3nHn45NpD1TkDzo3jcbk': 'https://genius.com/search?q=All+Girls+Piss+No+Transphobia+On+A+Dead+Planet',
+    '4Hf2Y8mG8LDZCfeycD93PP': 'https://genius.com/Endigo-huggy-wuggy-lyrics',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par
@@ -245,4 +248,6 @@ SEARCH = {
     '2YDCrMvvmBz9gVeuL8QyVG',
     '2KwdLR2SOGSflUigzSekHZ',
     '7itC84qelbt08WXLeJfzgU',
+    '3VHdDisicXuBnW1NxIGzCI',
+    '1E3nHn45NpD1TkDzo3jcbk',
 }

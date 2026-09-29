@@ -27,6 +27,7 @@ COUNTRIES = {
     "Germany": ("DE", "Europe"),
     "Ghana": ("GH", "Africa"),
     "Indonesia": ("ID", "Asia"),
+    "Ireland": ("IE", "Europe"),
     "Israel": ("IL", "Asia"),
     "Japan": ("JP", "Asia"),
     "Lebanon": ("LB", "Asia"),

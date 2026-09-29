@@ -2539,4 +2539,44 @@ YEARS = {
         "checked": "2026-09-29",
         "note": "Matches the platform date on Tunebat.",
     },
+
+    # Carmen de Mairena — La Copla de Cristal
+    "3VHdDisicXuBnW1NxIGzCI": {
+        "first_public": "1999",
+        "first_record": None,
+        "precision": "year",
+        "kind": "earliest_known",
+        "spotify": "1999-05-01",
+        "status": "partial",
+        "source": "Tunebat platform metadata (from a screenshot supplied by Claire); Discogs release 1521088, opened in session",
+        "url": (None, "https://api.discogs.com/releases/1521088"),
+        "checked": "2026-09-29",
+        "note": "Discogs knows the album Yo Soy la Copla only as a 2003 CD, where the song is titled La Copa de Cristal; the platform gives 1999. She sang coplas on stage from 1956, so the recording date is only an upper bound for her first performance of it.",
+    },
+    # All Girls Piss — No Transphobia On A Dead Planet (live)
+    "1E3nHn45NpD1TkDzo3jcbk": {
+        "first_public": "2025-03-21",
+        "first_record": None,
+        "precision": "day",
+        "kind": "earliest_known",
+        "spotify": "2025-03-21",
+        "status": "partial",
+        "source": "Tunebat platform metadata (from a screenshot supplied by Claire)",
+        "url": None,
+        "checked": "2026-09-29",
+        "note": "A live recording; the song was presumably performed before this release, but no earlier date was found. No Discogs or MusicBrainz entry.",
+    },
+    # Endigo, Maya Fennec — Huggy Wuggy
+    "4Hf2Y8mG8LDZCfeycD93PP": {
+        "first_public": "2021-11-07",
+        "first_record": None,
+        "precision": "day",
+        "kind": "earliest_known",
+        "spotify": "2021-11-07",
+        "status": "partial",
+        "source": "Tunebat platform metadata (from a screenshot supplied by Claire)",
+        "url": None,
+        "checked": "2026-09-29",
+        "note": "No Discogs or MusicBrainz entry for this single.",
+    },
 }
