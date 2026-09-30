@@ -867,4 +867,44 @@ ART = {
  "Janis Sahraoui, French singer-songwriter who first released music as Sliimy in 2009. Came out as trans and non-binary in 2021 and has released music as JANIS since 2026.",
  "Même si je n’avais pas d’histoires qui parlaient de qui j’étais, ça ne m’a jamais empêchée d’être une femme trans.",
  "Nylon France, 21 June 2024","https://www.nylon.fr/lifestyle/janis-sahraoui-reveler-visages-temoignage-resilience-liberte/"),
+
+"Kylie Sonique Love": ("verified","United States","English",
+ "Singer and drag performer, winner of RuPaul's Drag Race All Stars 6 in 2021.",
+ "I was born with male anatomy, but I've always considered myself a girl.",
+ "Albany Herald, 17 December 2014","https://albanyherald.com/news/kylie-sonique-love-transitioning-into-woman-she-was-born-to-be/"),
+
+"Cara Cunningham": ("verified","United States","English",
+ "Internet personality and recording artist, formerly known as Chris Crocker. Announced her transition in August 2021.",
+ "I do feel like a woman on the inside.",
+ "EDGE, 18 August 2021","https://www.edgemedianetwork.com/story/308035"),
+
+"EDWEENA BANGER": ("verified","UK","English",
+ "Former singer of the Manchester punk band Ed Banger & the Nosebleeds, formed in 1976; later recorded solo as Edweena Banger, including the album Diamond Rocks in 2021.",
+ "Edweena came out of that and I now live as a transgender person. I found out my true self as Edweena, I'm more happy now than I've ever been.",
+ "Louder Than War, 25 January 2017","https://louderthanwar.com/interview-edweena-banger-life-nosebleeds-eve-new-album/"),
+
+"Léo Áquilla": ("verified","Brazil","Portuguese",
+ "Journalist, television personality and singer from Minas Gerais.",
+ "Eu sou uma mulher trans […]",
+ "Metrópoles, 9 April 2026","https://www.metropoles.com/colunas/fabia-oliveira/leo-aquilla-revela-ser-assexual-e-detalha-cirurgia-de-redesignacao"),
+
+"Marina Mathey": ("verified","Brazil","Portuguese",
+ "Performer, actress, singer and songwriter from Americana, São Paulo, who calls herself a travesti. Debut single XV in 2019; album Boneca Pau Brasil in 2022.",
+ "a minha ficha caiu: nossa, sou travesti",
+ "Ponte Jornalismo, 4 November 2020","https://ponte.org/marina-mathey-o-processo-artistico-e-um-espaco-de-pesquisa-de-mim-mesma/"),
+
+"Juani Ruiz": ("partial","Spain","Spanish",
+ "Actress and singer, known for the series Veneno and Vestidas de azul. Marked partial because the only statement of identity found speaks collectively, of trans women as 'we'.",
+ "Las mujeres trans hemos avanzado gracias a la Veneno",
+ "Euforia, 20 June 2025","https://euforia.org.es/juani-ruiz-actriz/"),
+
+"Jennifer Maidman": ("partial","UK","English",
+ "Multi-instrumentalist, singer, producer and songwriter whose work appears on recordings from 1976 onwards. Marked partial because her own statement names her as transgender without speaking to her gender assigned at birth.",
+ "I'm an artist who happens to be transgender.",
+ "The Heroines of My Life, February 2015","https://theheroines.blogspot.com/2015/02/interview-with-jennifer-maidman.html"),
+
+"Léo Kret do Brasil": ("verified","Brazil","Portuguese",
+ "Singer, dancer and activist from Salvador, Bahia. Elected to Salvador city council in 2008, the first trans woman to sit on it.",
+ "A gente tendo esse pleito de volta vai ser depois de 15 anos a mesma mulher trans vereadora de Salvador.",
+ "Bahia Notícias, 11 February 2024","https://www.bahianoticias.com.br/noticia/289119-leo-kret-confirma-candidatura-nas-eleicoes-de-2024-depois-de-15-anos-a-mesma-mulher-trans-vereadora"),
 }

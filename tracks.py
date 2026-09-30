@@ -100,6 +100,7 @@ SECTIONS = [
             ('2fB0l9upVjg0QTeMyrIVtc', 'Part-Time Woman', 'Vivek Shraya, Queer Songbook Orchestra'),
             ('2rN1ODOsaNfYu782rw36jR', 'Faceshopping', 'SOPHIE'),
             ('4lUlYGT5VvZWN3GBDIc9KT', 'Nonbinary', 'Arca'),
+            ('0iGxHL2lPxuh1VIHQLUPUl', 'Lost Angel', 'Kylie Sonique Love'),
             ('2KryklrVDGmWL8IvoGNbb5', 'Zulu Lami', 'Umlilo'),
             ('5nnBHHzUDOGvdMBiXofB00', 'Exiliades', 'Luisa Almaguer'),
             ('5rOzcHIZaF038jMeHkUZR0', 'Reverie', 'Arca'),
@@ -133,6 +134,7 @@ SECTIONS = [
             ('7GAI6zWpmst6dSfu1wIA1O', 'White Horses', 'Venus de Mars and All the Pretty Horses'),
             ('1E3nHn45NpD1TkDzo3jcbk', 'No Transphobia On A Dead Planet - Live', 'All Girls Piss'),
             ('6b4lgjut9ogXlhcbFgLgtS', 'MADRIGAL', 'CATTO'),
+            ('3Cmc2mUlFS7MPhcwIRvcWF', 'Diamond Rocks', 'EDWEENA BANGER'),
             ('4Hf2Y8mG8LDZCfeycD93PP', 'Huggy Wuggy', 'Endigo, Maya Fennec'),
             ('3RXajeZOzqXWrQwLDfTzKK', 'JUSTE AMIS', 'THÉA'),
             ('0bWpWsvZeTTNLQ9nuXqKIN', 'Guillotine', 'THÉA'),
@@ -142,6 +144,8 @@ SECTIONS = [
             ('14uL43Gg4ujizaATehrryk', 'The Ocean', 'Against Me!'),
             ('23smC9d2TpPTGZ3GCzjL4b', 'Haelegen II', 'Haela Hunt-Hendrix'),
             ('7zBUh6s2Ca8eAURfnVHCTS', 'ANXIOLYTIQUES', 'THÉA'),
+            ('4DpGa3bX0XvKd31JXWDcv7', 'Conspiracy of Dreamers', 'Jennifer Maidman'),
+            ('7cUdrZwlyXm0LSsYOlGaXZ', 'NO FALSE IDOLS', 'Cara Cunningham'),
             ('3bnvoYUrPkgh0E3ZeYZ3me', 'OCTOPUS.LADY', 'Changeline'),
             ('7lc4ue2LiSfYRaABxq4YkT', 'JE.DÉTESTE.LA.FRANCE.pt1 (il y aura pas de pt2)', 'Changeline'),
             ('0wIpjjcXFgGtJUmBIRAAju', 'Black Me Out', 'Against Me!'),
@@ -232,6 +236,7 @@ SECTIONS = [
             ('308z6pEGHS90tuDNAngZnh', 'Diva', 'Electra Elite'),
             ('7fIsGfaxbm0UqiENtZ2l5R', 'Fanm Zordi', 'Louïz'),
             ('1gs7juUrbHx9LoeAQWp8X0', 'Me Ama Que Eu Sei', 'TRAEMME'),
+            ('4bMj9zctX5PFp8vKP4K1yP', 'Pantanal Pansexual', 'Marina Mathey'),
             ('6BmKLSDW8jBHD2X42PraGM', 'Kass kassé', 'Louïz'),
             ('4QnHaiWq1oJiTgMnRFE0q8', 'Mi Amor Soy Yo', 'Zemmoa, Tessa Ia, Trans-X'),
             ('4v5gEVQPDlPtsuQ77AJa0x', 'FASHION', 'Britney Manson'),
@@ -250,10 +255,12 @@ SECTIONS = [
             ('1xVHNasMbwoQcLkf07JMv4', 'Ubikaina', 'Amor Romeira'),
             ('5sjmWtBcZC1Tj4RoCfaK7k', 'gender euphoria', 'Ceréna'),
             ('4hceSKjrkDTO0nMKFcb3sj', 'Villano Antillano: Bzrp Music Sessions, Vol. 51/66', 'Bizarrap, Villano Antillano'),
+            ('2h9jHuAARdM9dMhNp04ahR', 'Ahora viene lo mejor', 'Juani Ruiz'),
             ('46uGvJVhYHOVRRNnRPbkYm', 'Mantan Tanpa Status - Lucinta Luna Version', 'Lucinta Luna, Dede Satria'),
             ('1YsFdaP9QG9NhjYS3o0g5P', 'Olha o Boneco', 'Titica, Ary'),
             ('7luHAaHXty1Nl3AcscZIDT', 'Faces', 'Mila Jam'),
             ('2R7G2Itn0b73uthZCNPIrR', 'Maria Padilha', 'Bixarte'),
+            ('4bJV3YH3GEV7RMe0abbMyB', 'Eu Vou Lutar', 'Léo Áquilla'),
             ('4NKAjWfWZ2tcIzjCR9G5Zl', 'AMAFILIPINA (Extended Version)', 'Marina Summers'),
             ('78iHtTxYIK2mD6oL6lXqFF', 'Travesti del Perú', 'Gad Yola'),
             ('1KnagH7nZ84p8vPMPZQ8hk', 'TSPG69', 'Macy Rodman'),
@@ -277,6 +284,7 @@ SECTIONS = [
             ('0GSW6V6GJc4xYi8c5jOu60', 'さそり座の女', 'Ai Haruna'),
             ('2lgwylOpGMtkvhwdnUOArt', 'Memories Are Made Of This - Radio', 'Romy Haag'),
             ('5vCE6qjJI7NhpUrLWktoN9', 'Supersonic', 'Detox'),
+            ('4sZgum8lh9hLPxREjgo4vo', 'Microondas da Léo Kret', 'Léo Kret do Brasil'),
             ('6vtcDkc68Des2RUrfTSXzK', 'Hikaye', 'Selin Ciğerci'),
             ('4X6PkqzKUvWWKoq4YiiM1V', 'Snow White', 'Harisu'),
             ('4yBfzgV6YA9dTKP8KUD35j', 'VI ÄR SVERIGE (VM-låt 2023)', 'Lia Larsson, Tone Sekelius, Lisa Ajax'),
@@ -292,4 +300,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 206
+assert len(all_tracks()) == 214

@@ -99,6 +99,9 @@ JUNK_BLOCK = {
     "echte meisjes in de jungle", "echte meisjes in de jungle 2023",
     "better than ariana grande", "better than selena gomez", "traemme",
     "king saints", "girl power", "female vocalists",
+    "female vocalist", "drag queen", "drag race", "drag race winner",
+    "rupauls drag race", "rupauls drag race all stars",
+    "rupauls drag race all stars winner", "bimbo", "drag music",
 }
 # Ajouts du 19 septembre 2026, lot Jup do Bairro/Macy Rodman/Nomi Ruiz/
 # Ventura Profana : "usa" (GEO_BLOCK) est le même blocage que "united states"
@@ -319,4 +322,12 @@ TAGS = {
     '1gs7juUrbHx9LoeAQWp8X0': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # TRAEMME — Me Ama Que Eu Sei (Last.fm track tags empty; artist tags are identity, geography or jokes ("better than ariana grande"), none used; no Discogs artist; MusicBrainz artist without genres)
     '2rffYJaN04Tdzha2foN2up': {'discogs': ['prog rock', 'progressive metal', 'new wave'], 'musicbrainz': [], 'lastfm': ['progressive rock', 'rock']},  # Kyros — Illusions Inside (Discogs styles of master 3389932, Mannequin; Last.fm track tags empty, artist tags used; MusicBrainz recording, release group and artist without genres)
     '52uobAwbP5In7cc0NV677y': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # JANIS — Janis (the Last.fm "JANIS" profile belongs to a German namesake, not used; no Discogs release; MusicBrainz recording without genres)
+    '0iGxHL2lPxuh1VIHQLUPUl': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop']},  # Kylie Sonique Love — Lost Angel (Last.fm track tags empty, artist tags used; the Drag Race tags are television, not music, added to JUNK_BLOCK; MusicBrainz artist tagged only "drag queen"; no Discogs artist)
+    '7cUdrZwlyXm0LSsYOlGaXZ': {'discogs': [], 'musicbrainz': [], 'lastfm': ['indie', 'pop', 'alternative', 'pop punk', 'indie pop', 'dance-pop']},  # Cara Cunningham — NO FALSE IDOLS (Last.fm track tags empty, artist tags used, "female vocalist"/"bimbo" noise, "usa" geographic; MusicBrainz artist without genres; no Discogs artist)
+    '3Cmc2mUlFS7MPhcwIRvcWF': {'discogs': ['punk', 'rock & roll'], 'musicbrainz': [], 'lastfm': []},  # EDWEENA BANGER — Diamond Rocks (Discogs styles of release 25792654; Last.fm and MusicBrainz empty)
+    '4bJV3YH3GEV7RMe0abbMyB': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'glam', 'diva', 'glamour']},  # Léo Áquilla — Eu Vou Lutar (Last.fm track tags empty, artist tags used, "drag music" noise, "brazil" geographic; MusicBrainz artist without genres; no Discogs artist)
+    '4bMj9zctX5PFp8vKP4K1yP': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Marina Mathey — Pantanal Pansexual (no Discogs artist, no MusicBrainz artist, Last.fm empty)
+    '2h9jHuAARdM9dMhNp04ahR': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Juani Ruiz — Ahora viene lo mejor (no Discogs artist, no MusicBrainz artist, Last.fm empty)
+    '4DpGa3bX0XvKd31JXWDcv7': {'discogs': ['pop rock'], 'musicbrainz': [], 'lastfm': []},  # Jennifer Maidman — Conspiracy of Dreamers (Discogs style of master 2649905, Dreamland; MusicBrainz artist without genres; Last.fm empty)
+    '4sZgum8lh9hLPxREjgo4vo': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Léo Kret do Brasil — Microondas da Léo Kret (no Discogs artist, no MusicBrainz artist, Last.fm empty)
 }

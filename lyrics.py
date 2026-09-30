@@ -221,6 +221,14 @@ LYRICS = {
     '1gs7juUrbHx9LoeAQWp8X0': 'https://genius.com/Traemme-me-ama-que-eu-sei-lyrics',
     '2rffYJaN04Tdzha2foN2up': 'https://genius.com/Kyros-illusions-inside-lyrics',
     '52uobAwbP5In7cc0NV677y': 'https://genius.com/search?q=JANIS+Janis+Cry+With+Us',
+    '0iGxHL2lPxuh1VIHQLUPUl': 'https://www.lyricsify.com/lyrics/kylie-sonique-love/lost-angel',
+    '7cUdrZwlyXm0LSsYOlGaXZ': 'https://genius.com/search?q=Cara+Cunningham+NO+FALSE+IDOLS',
+    '3Cmc2mUlFS7MPhcwIRvcWF': 'https://genius.com/search?q=Edweena+Banger+Diamond+Rocks',
+    '4bJV3YH3GEV7RMe0abbMyB': 'https://www.letras.com/leo-aquilla/eu-vou-lutar/',
+    '4bMj9zctX5PFp8vKP4K1yP': 'https://www.musixmatch.com/lyrics/Marina-Mathey/Pantanal-Pansexual',
+    '2h9jHuAARdM9dMhNp04ahR': 'https://www.musixmatch.com/es/letras/Juani-Ruiz-1/Ahora-viene-lo-mejor',
+    '4DpGa3bX0XvKd31JXWDcv7': 'https://genius.com/search?q=Jennifer+Maidman+Conspiracy+of+Dreamers',
+    '4sZgum8lh9hLPxREjgo4vo': 'https://genius.com/search?q=Leo+Kret+Microondas',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par
@@ -265,4 +273,8 @@ SEARCH = {
     '6BmKLSDW8jBHD2X42PraGM',
     '78vWZN7hzHidEuDGOn9jyL',
     '52uobAwbP5In7cc0NV677y',
+    '7cUdrZwlyXm0LSsYOlGaXZ',
+    '3Cmc2mUlFS7MPhcwIRvcWF',
+    '4DpGa3bX0XvKd31JXWDcv7',
+    '4sZgum8lh9hLPxREjgo4vo',
 }
