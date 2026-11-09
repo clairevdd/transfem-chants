@@ -360,18 +360,12 @@ def page():
 {guests}
 
 <h2>Unresolved cases</h2>
-<p>The first carries the <span class="st st-flag">unresolved</span> mark above and is not counted among transfeminine artists. The second, Jackie Shane, is counted and kept: what is open in her case is not whether she belongs on the playlist, but which words she would have accepted for herself.</p>
+<p>This case carries the <span class="st st-flag">unresolved</span> mark above and is not counted among transfeminine artists.</p>
 
 <div class="note">
 <h4>Frost Children</h4>
 <p>Angel and Lulu Prost are consistently referred to with she/her in the press, and their lyrics deal with gender dysphoria. But across the interviews read here, neither sibling makes a first-person statement about her own gender identity. What Angel says is about other people: “I care about trans people,” and “I would give every trans girl a gun to defend themselves.” Solidarity is not a declaration, and this page does not read it as one.</p>
 <p>A second question is open alongside the first: which sibling carries the vocal on these tracks could not be established from any source found, so the singing criterion is unverified too. Both tracks are kept and both questions are left visible.</p>
-</div>
-
-<div class="note">
-<h4>Jackie Shane</h4>
-<p>Shane lived and was addressed as a woman and used she/her pronouns. But in a 2017 interview she declined the labels applied to her, rejecting both “transgender” and “queer” and preferring “gay” as an umbrella for the whole alphabet. She is widely described posthumously as a trans woman, a framing she herself largely avoided while alive.</p>
-<p>She is kept on the playlist, with the tension left visible rather than resolved in her place. A page built on the principle of taking artists at their own word cannot then quietly overwrite one of them.</p>
 </div>
 
 <h2>Five other ways in</h2>
