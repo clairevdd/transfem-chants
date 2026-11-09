@@ -316,7 +316,7 @@ def page():
 <img class="cover" src="cover.jpg" width="150" height="150" alt="Playlist cover: a raised fist inside the circle of a male symbol whose arrow breaks apart, wrapped in thorned stems of white roses.">
 <h1>Transfem chants</h1>
 <p class="sub">{count} songs <em>sung</em> by transfeminine artists: trans women, and non-binary or agender people assigned male at birth. This page gives, for every artist, the gender identity as they have made it public, and the source for it.</p>
-<p class="stats"><strong>{st["tracks"]}</strong> tracks &middot; <strong>{st["presented"]}</strong> artists presented here as transfeminine, and <strong>{st["open_cases"]}</strong> entries marked unresolved and not counted among them &middot; <strong>{st["countries"]}</strong> countries and territories &middot; <strong>{st["languages"]}</strong> languages</p>
+<p class="stats"><strong>{st["tracks"]}</strong> tracks &middot; <strong>{st["presented"]}</strong> artists presented here as transfeminine, and <strong>{st["open_cases"]}</strong> {"entry" if st["open_cases"] == 1 else "entries"} marked unresolved and not counted among them &middot; <strong>{st["countries"]}</strong> countries and territories &middot; <strong>{st["languages"]}</strong> languages</p>
 <a class="hero-link" href="{PLAYLIST}" target="_blank" rel="noopener">Open the playlist on Spotify</a>
 </header>
 
@@ -360,17 +360,12 @@ def page():
 {guests}
 
 <h2>Unresolved cases</h2>
-<p>Two of these carry the <span class="st st-flag">unresolved</span> mark above and are not counted as transfeminine artists. The third, Jackie Shane, is counted and kept: what is open in her case is not whether she belongs on the playlist, but which words she would have accepted for herself.</p>
+<p>The first carries the <span class="st st-flag">unresolved</span> mark above and is not counted among transfeminine artists. The second, Jackie Shane, is counted and kept: what is open in her case is not whether she belongs on the playlist, but which words she would have accepted for herself.</p>
 
 <div class="note">
 <h4>Frost Children</h4>
 <p>Angel and Lulu Prost are consistently referred to with she/her in the press, and their lyrics deal with gender dysphoria. But across the interviews read here, neither sibling makes a first-person statement about her own gender identity. What Angel says is about other people: “I care about trans people,” and “I would give every trans girl a gun to defend themselves.” Solidarity is not a declaration, and this page does not read it as one.</p>
 <p>A second question is open alongside the first: which sibling carries the vocal on these tracks could not be established from any source found, so the singing criterion is unverified too. Both tracks are kept and both questions are left visible.</p>
-</div>
-
-<div class="note">
-<h4>Haiifa Magic</h4>
-<p>Her identity as a trans woman rests here on a single i-D article from 2018. No first-person statement by the artist was found, and no more recent source. This is the weakest line on the page. It is flagged rather than quietly dropped.</p>
 </div>
 
 <div class="note">

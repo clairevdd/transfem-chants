@@ -175,9 +175,10 @@ ART = {
  "Trans woman. Presented in the press as Portugal’s first trans woman singer; “Lotaria do Amor” earned a gold record there.",
  None,"Criativa Online","https://criativaonline.com.br/cantora-transexual-portuguesa-esta-de-volta-aos-palcos/"),
 
-"Haiifa Magic": ("unresolved","Lebanon","Arabic",
- "Presented as a trans Arab pop star based in Beirut. This rests on a single i-D article from 2018; no first-person statement by the artist and no more recent source were found. The weakest line on this page; see the unresolved cases below.",
- None,"i-D","https://i-d.co/article/transgender-pop-star-haiifa-magic-is-breaking-down-biases-in-the-arab-world/"),
+"Haiifa Magic": ("verified","Lebanon","Arabic",
+ "Pop singer based in Beirut, the first person in Lebanon to become famous after changing sex, in her own words, and a self-described role model for people judged for who they are.",
+ "First of all, I wasn’t the first person to change sex in Lebanon, but the first one that got famous. At the same time, I think I’m a role model for people that have been judged in their life for who they are. But the only thing the media focuses on is my gender identity and I’m so much more, I’m a strong business woman!",
+ "i-D, 24 January 2018","https://i-d.co/article/transgender-pop-star-haiifa-magic-is-breaking-down-biases-in-the-arab-world/"),
 
 "Harisu": ("verified","South Korea","Korean",
  "Trans woman. The second person in South Korea to have her legal gender changed, in 2002.",
