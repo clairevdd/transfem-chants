@@ -98,6 +98,18 @@ def _no_email(name, text):
             f"formulaire (constante CONTACT).")
 
 
+def source_urls(v):
+    src, url = v[5], v[6]
+    if isinstance(url, (list, tuple)):
+        return [u for _, u in url]
+    return [url] if url else []
+
+
+def wiki_only(v):
+    urls = source_urls(v)
+    return bool(urls) and all("wikipedia.org" in u for u in urls)
+
+
 def check():
     if not CONTACT:
         raise SystemExit(
@@ -147,6 +159,16 @@ def check():
     for sid, v in YEARS.items():
         if v["status"] == "verified" and not (v["url"] and v["checked"] and v["first_public"]):
             raise SystemExit(f"build.py : {sid} est verified sans source, date ou contrôle datés")
+
+    # Audit du 9 novembre 2026, arbitrage de Claire : une encyclopédie n'est
+    # jamais une source primaire. Une fiche dont toutes les sources sont des
+    # pages Wikipédia ne peut être que `unresolved` ; sinon le build échoue.
+    for name, v in ART.items():
+        if wiki_only(v) and v[0] != "unresolved":
+            raise SystemExit(
+                f"build.py : {name} n'a que Wikipédia pour source et n'est pas "
+                f"marquée unresolved. Trouver une source primaire, ou la marquer "
+                f"unresolved.")
 
     """Vérifie tracks.py contre data.py avant de générer quoi que ce soit."""
     missing = sorted({a for _, c in TRACKS for a in artists_of(c) if a not in ART})
@@ -294,6 +316,8 @@ def page():
         card(n) for n in order if ART[n][0] != "guest") + '</div>'
     guests = '<div class="cards">' + "\n".join(
         card(n) for n in order if ART[n][0] == "guest") + '</div>'
+    wiki_unresolved = [n for n in order if ART[n][0] == "unresolved" and wiki_only(ART[n])]
+    wiki_names = ", ".join(f'<a href="#{slug(n)}">{esc(n)}</a>' for n in wiki_unresolved)
     css = open("style.css", encoding="utf-8").read()
     count = len(TRACKS)
     st = stats()
@@ -360,7 +384,12 @@ def page():
 {guests}
 
 <h2>Unresolved cases</h2>
-<p>This case carries the <span class="st st-flag">unresolved</span> mark above and is not counted among transfeminine artists.</p>
+<p>Entries carrying the <span class="st st-flag">unresolved</span> mark above are not counted among transfeminine artists. Their tracks stay on the playlist while the question stays open. There are two kinds of case.</p>
+
+<div class="note">
+<h4>Entries sourced only to an encyclopedia</h4>
+<p>{len(wiki_unresolved)} entries were first written from Wikipedia alone. An encyclopedia is not the artist speaking, and nothing on this page should rest on one, so these entries are marked unresolved until a statement in the artist’s own words has been found and read. They are being worked through one by one: {wiki_names}.</p>
+</div>
 
 <div class="note">
 <h4>Frost Children</h4>
