@@ -3,24 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>(function(){var d=document.documentElement;try{if(localStorage.getItem("tc-theme")==="light")d.dataset.theme="light"}catch(e){}window.tcToggleTheme=function(){var l=d.dataset.theme!=="light";if(l)d.dataset.theme="light";else delete d.dataset.theme;try{localStorage.setItem("tc-theme",l?"light":"dark")}catch(e){}document.dispatchEvent(new Event("tc-themechange"))}})()</script>
 <title>Transfem chants — sources</title>
 <meta name="description" content="Every track in the Transfem chants playlist, with each artist's publicly stated gender identity and the source for it.">
 <style>
 *,*::before,*::after{box-sizing:border-box}
 :root{
-  --bg:#fbf9f7; --panel:#fff; --ink:#1a1720; --muted:#6b6478; --line:#e7e1ea;
-  --accent:#7b3fa0; --soft:#f4ecfa;
-  --ok:#1c6a46; --ok-bg:#e2f3ea; --her:#84651c; --her-bg:#f9efd6;
-  --flag:#9f3636; --flag-bg:#fbe6e6; --note:#455065; --note-bg:#edf0f4;
+  /* Palette tirée de la pochette (novembre 2026). Thème sombre par défaut,
+     thème clair au choix (bouton de la barre de navigation, mémorisé dans
+     le navigateur). Sombre : terre d'ombre, crème des roses, cuivre. */
+  color-scheme:dark;
+  --bg:#17110c; --panel:#211810; --ink:#f0e6d4; --muted:#b4a28a; --line:#3b2d21;
+  --accent:#e0937a; --soft:#2c1e15; --glow:#6b4a22;
+  --ok:#b9cc86; --ok-bg:#262c14; --her:#e2b867; --her-bg:#33250f;
+  --flag:#f0a08a; --flag-bg:#3a1a12; --note:#c4b6a4; --note-bg:#2a221b;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#141118; --panel:#1e1a24; --ink:#efeaf3; --muted:#a69db2; --line:#342d3e;
-  --accent:#c99cf0; --soft:#271f33;
-  --ok:#81d8aa; --ok-bg:#16301f; --her:#e2c477; --her-bg:#332a15;
-  --flag:#f0a2a2; --flag-bg:#38191c; --note:#b5bfcd; --note-bg:#23262e;
-}}
+:root[data-theme="light"]{
+  /* Clair : parchemin, terre d'ombre, rouge sang de bœuf des ongles. */
+  color-scheme:light;
+  --bg:#f5efe4; --panel:#fbf8f2; --ink:#241a12; --muted:#6f6151; --line:#e2d6c3;
+  --accent:#8e2420; --soft:#f3e3d8; --glow:#e7c98f;
+  --ok:#4b5e1f; --ok-bg:#e8ecd6; --her:#8a5a12; --her-bg:#f6e7c8;
+  --flag:#a0331f; --flag-bg:#f8e1d8; --note:#5b5048; --note-bg:#ece5da;
+}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);
+body{margin:0;background:radial-gradient(ellipse 980px 440px at 50% -140px,color-mix(in srgb,var(--glow) 38%,transparent),transparent 72%) no-repeat,var(--bg);color:var(--ink);
  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style","Times New Roman",serif}
 .wrap{max-width:960px;margin:0 auto;padding:48px 20px 96px}
 header{border-bottom:2px solid var(--ink);padding-bottom:26px;margin-bottom:34px}
@@ -81,7 +89,7 @@ ul.plain{padding-left:1.1em} ul.plain li{margin-bottom:.5em;max-width:70ch}
 blockquote{margin:8px 0 8px;padding:0 0 0 12px;border-left:2px solid var(--accent);
  font-family:ui-serif,Georgia,serif;font-style:italic;font-size:.9rem;line-height:1.5;color:var(--ink)}
 .hero-link{display:inline-block;margin-top:16px;font-family:ui-sans-serif,system-ui,sans-serif;
- font-size:.9rem;font-weight:600;background:var(--accent);color:var(--bg);
+ font-size:.9rem;font-weight:600;background:var(--accent);color:var(--bg);border:1.5px solid var(--accent);
  padding:9px 16px;border-radius:99px;text-decoration:none}
 .hero-link:hover{opacity:.88}
 .count{font-variant-numeric:tabular-nums}
@@ -102,9 +110,8 @@ blockquote{margin:8px 0 8px;padding:0 0 0 12px;border-left:2px solid var(--accen
 .worldmap .mc{stroke:var(--bg);stroke-width:1.2;vector-effect:non-scaling-stroke}
 .worldmap a{cursor:pointer}
 .worldmap a:hover path{stroke:var(--ink);stroke-width:2.2}
-:root{--l0:#e8e4e0;--l1:#ead9f5;--l2:#cfaee4;--l3:#ac7ed0;--l4:#8750b4;--l5:#5d2589}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
- --l0:#2b2733;--l1:#3d2f52;--l2:#553f74;--l3:#71539a;--l4:#9068bd;--l5:#c299e8}}
+:root{--l0:#2a2119;--l1:#3f2a1e;--l2:#5d3623;--l3:#86472c;--l4:#b9633d;--l5:#e89c72}
+:root[data-theme="light"]{--l0:#e9e1d3;--l1:#f0d6c0;--l2:#dfae8b;--l3:#c7805c;--l4:#a24f35;--l5:#74221a}
 .worldmap .l0{fill:var(--l0)}.worldmap .l1{fill:var(--l1)}
 .worldmap .l2{fill:var(--l2)}.worldmap .l3{fill:var(--l3)}
 .worldmap .l4{fill:var(--l4)}.worldmap .l5{fill:var(--l5)}
@@ -147,12 +154,30 @@ ul.atlas-tracks{list-style:none;margin:0;padding:0;font-size:.88rem}
 ul.atlas-tracks li{margin:0 0 1px}
 ul.atlas-tracks .cr{color:var(--muted);font-size:.8rem}
 @media (max-width:560px){.bar{grid-template-columns:7em 1fr 2em;font-size:.8rem}}
+
+/* --- pochette, page d'accueil seulement --- */
+header.withcover{display:grid;grid-template-columns:1fr auto;gap:8px 28px;align-items:start;justify-items:start}
+header.withcover .cover{grid-column:2;grid-row:1 / span 4;width:150px;height:150px;
+ border-radius:10px;object-fit:cover;box-shadow:0 0 0 1px var(--line),0 3px 12px -6px var(--glow)}
+@media (max-width:620px){header.withcover{grid-template-columns:1fr}
+ header.withcover .cover{grid-column:1;grid-row:auto;width:96px;height:96px;order:-1}}
+
+/* --- thème clair : bouton Spotify discret (contour seulement) --- */
+:root[data-theme="light"] .hero-link{background:transparent;color:var(--accent)}
+:root[data-theme="light"] .hero-link:hover{background:var(--soft);opacity:1}
+
+/* --- choix du thème --- */
+.themebtn{margin-left:auto;font:inherit;font-size:.78rem;line-height:1.4;background:none;
+ border:1px solid var(--line);color:var(--muted);border-radius:99px;padding:3px 11px;cursor:pointer}
+.themebtn:hover{color:var(--accent);border-color:var(--accent)}
+:root[data-theme="light"] .themebtn .to-light,:root:not([data-theme="light"]) .themebtn .to-dark{display:none}
 </style>
 </head>
 <body>
 <div class="wrap">
-<nav class="pagenav"><span class="here">Sources</span><a href="countries.html">By country</a><a href="languages.html">By language</a><a href="years.html">By year</a><a href="tags.html">By tags</a><a href="sonic.html">By sonic profile</a><a href="takedown.html">Removals</a></nav>
-<header>
+<nav class="pagenav"><span class="here">Sources</span><a href="countries.html">By country</a><a href="languages.html">By language</a><a href="years.html">By year</a><a href="tags.html">By tags</a><a href="sonic.html">By sonic profile</a><a href="takedown.html">Removals</a><button type="button" class="themebtn" onclick="tcToggleTheme()" aria-label="Switch between dark and light theme"><span class="to-light">Light theme</span><span class="to-dark">Dark theme</span></button></nav>
+<header class="withcover">
+<img class="cover" src="cover.jpg" width="150" height="150" alt="Playlist cover: a raised fist inside the circle of a male symbol whose arrow breaks apart, wrapped in thorned stems of white roses.">
 <h1>Transfem chants</h1>
 <p class="sub">233 songs <em>sung</em> by transfeminine artists: trans women, and non-binary or agender people assigned male at birth. This page gives, for every artist, the gender identity as they have made it public, and the source for it.</p>
 <p class="stats"><strong>233</strong> tracks &middot; <strong>170</strong> artists presented here as transfeminine, and <strong>2</strong> entries marked unresolved and not counted among them &middot; <strong>36</strong> countries and territories &middot; <strong>27</strong> languages</p>

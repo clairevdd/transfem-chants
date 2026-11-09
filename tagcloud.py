@@ -531,6 +531,8 @@ coverage, not a gap in the music.</p>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>(function(){{var d=document.documentElement;try{{if(localStorage.getItem("tc-theme")==="light")d.dataset.theme="light"}}catch(e){{}}window.tcToggleTheme=function(){{var l=d.dataset.theme!=="light";if(l)d.dataset.theme="light";else delete d.dataset.theme;try{{localStorage.setItem("tc-theme",l?"light":"dark")}}catch(e){{}}document.dispatchEvent(new Event("tc-themechange"))}}}})()</script>
 <title>Transfem chants — by musical tags</title>
 <meta name="description" content="The {n_tracks} songs on Transfem chants, tagged by genre, style and scene from Discogs, MusicBrainz and Last.fm, filterable by intersection or union.">
 <style>{full_css}</style>

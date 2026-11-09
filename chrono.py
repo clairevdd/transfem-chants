@@ -31,6 +31,7 @@ constante recopiée fabrique toute seule.
 Le vide n'est pas recadré : les années sans morceau gardent leur largeur réelle.
 C'est le même parti pris que les pays gris de la carte.
 """
+import atlas
 from data import ART
 from tracks import SECTIONS
 from years import YEARS
@@ -388,6 +389,7 @@ def years_page(css, esc, slug, artists_of, aliases, same_person, badge,
            '<a href="tags.html">By tags</a>'
            '<a href="sonic.html">By sonic profile</a>'
            '<a href="takedown.html">Removals</a>'
+           + atlas.THEME_BUTTON +
            '</nav>')
 
     body = f"""
@@ -472,6 +474,8 @@ a person’s identity, use the
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>(function(){{var d=document.documentElement;try{{if(localStorage.getItem("tc-theme")==="light")d.dataset.theme="light"}}catch(e){{}}window.tcToggleTheme=function(){{var l=d.dataset.theme!=="light";if(l)d.dataset.theme="light";else delete d.dataset.theme;try{{localStorage.setItem("tc-theme",l?"light":"dark")}}catch(e){{}}document.dispatchEvent(new Event("tc-themechange"))}}}})()</script>
 <title>Transfem chants — by year</title>
 <meta name="description" content="When each of the {n} songs first existed, and how far Spotify metadata moves them.">
 <style>{full}</style>

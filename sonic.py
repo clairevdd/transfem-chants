@@ -11,8 +11,8 @@ n'aurais pas pu offrir sans bibliothèque.
 
 ## Ce que cette page mesure, et ce qu'elle ne republie pas
 
-La source est un relevé manuel de 13 « audio features » Tunebat pour les 196
-morceaux de la playlist au 29 septembre 2026 (166 au 22 septembre) (tb_key, tb_camelot, tb_bpm, tb_duration,
+La source est un relevé manuel de 13 « audio features » Tunebat pour les 233
+morceaux de la playlist au 9 novembre 2026 (196 au 29 septembre, 166 au 22 septembre) (tb_key, tb_camelot, tb_bpm, tb_duration,
 tb_popularity, tb_energy, tb_danceability, tb_happiness, tb_acousticness,
 tb_instrumentalness, tb_liveness, tb_speechiness, tb_loudness), collecté par
 Claire avec l'autorisation de Tunebat. Recalcul du 22 septembre 2026 sur
@@ -202,6 +202,31 @@ vert bleuté pour l'instrumental, et le violet rosé retrouve « Fast and
 high-voltage », son profil du 10 septembre. Paires les plus proches dans
 l'espace ACP : rapide/instrumental (1,29) et modéré/dansant (1,86), portées
 par des teintes bien séparées.
+
+## Recalcul du 9 novembre 2026, sur les 233 morceaux
+
+Troisième recalcul complet, après les lots 12 à 15, à la demande de Claire.
+Contrôle de non-régression : restreint aux 196 morceaux du 29 septembre, le
+calcul redonne les positions publiées à 0,005 près.
+
+Variance expliquée 31,7 % / 16,5 % / 13,0 % (cumul 61,2 %), mêmes trois axes,
+même lecture musicale ; l'acousticness pèse un peu plus sur les axes 2 et 3.
+
+Silhouettes (Ward) : k=3 0,262 (un groupe de 197), k=4 0,201 (un groupe de
+164), k=5 0,120, k=6 0,149, k=7 0,157. k=6 retenu par Claire le 9 novembre
+2026 ; à k=7, le groupe modéré se scindait en un groupe plus sombre (49) et
+un profil « laid-back grooves » (23), au-delà de son plafond de six groupes.
+
+Les six profils du 29 septembre se retrouvent à l'identique ; seuls les
+effectifs bougent : 72, 58, 34, 33, 20, 16. « Fast and high-voltage » double
+(17 à 34), en prenant les morceaux les plus rapides du groupe modéré, ce qui
+le fait passer du 5e au 3e rang et renumérote les groupes 3 à 6.
+
+Couleurs : nouvelle palette tirée de la pochette (direction artistique du
+9 novembre 2026), toujours gardée par profil, avec une variante plus claire
+pour le thème sombre (`CLUSTER_COLORS_DARK`). Paires de centroïdes les plus
+proches : rapide/instrumental (1,17, rose poudré et sauge), modéré/dansant
+(2,05, ambre et bleu ardoise), modéré/rapide (2,06, ambre et rose poudré).
 """
 import json
 import math
@@ -218,7 +243,7 @@ import atlas
 THREE_VERSION = "0.186.0"
 
 # Les 9 dimensions retenues, dans l'ordre où elles apparaissent sur les
-# radar plots. min/max observés sur les 196 morceaux (recalcul du 29 septembre 2026), utilisés pour mettre
+# radar plots. min/max observés sur les 233 morceaux (recalcul du 9 novembre 2026), utilisés pour mettre
 # chaque axe à la même échelle visuelle malgré des unités très différentes
 # (bpm de 71 à 203, loudness de -18 à 2 dB, le reste de 0 à 100).
 FEATURES = [
@@ -226,27 +251,27 @@ FEATURES = [
     ("tb_bpm", "Tempo", "Tempo", "BPM", 71, 203),
     ("tb_energy", "Energy", "Energy", "", 9, 100),
     ("tb_danceability", "Danceability", "Dance", "", 10, 90),
-    ("tb_happiness", "Happiness", "Happy", "", 5, 97),
+    ("tb_happiness", "Happiness", "Happy", "", 4, 97),
     ("tb_acousticness", "Acousticness", "Acoustic", "", 0, 99),
     ("tb_instrumentalness", "Instrumentalness", "Instrum.", "", 0, 91),
-    ("tb_liveness", "Liveness", "Live", "", 4, 96),
-    ("tb_speechiness", "Speechiness", "Speech", "", 3, 52),
+    ("tb_liveness", "Liveness", "Live", "", 2, 97),
+    ("tb_speechiness", "Speechiness", "Speech", "", 3, 56),
     ("tb_loudness", "Loudness", "Loud", "dB", -18, 2),
 ]
 
-# Moyenne de chaque feature sur l'ensemble des 196 morceaux analysés (pas
+# Moyenne de chaque feature sur l'ensemble des 233 morceaux analysés (pas
 # seulement ceux d'un groupe). Publiable au même titre que les moyennes de
-# groupe : une moyenne sur 196 valeurs ne se ramène à aucune valeur
+# groupe : une moyenne sur 233 valeurs ne se ramène à aucune valeur
 # individuelle. Ajoutée le 10 septembre 2026 à la demande de Claire, en
 # colonne de comparaison à côté de la moyenne de chaque groupe dans les
 # tableaux de valeurs ; recalculée le 22 septembre 2026, sur l'ensemble de
 # la playlist cette fois (voir le docstring du fichier), puis le
-# 29 septembre 2026 sur les 196 morceaux.
+# 29 septembre 2026 sur les 196 morceaux, puis le 9 novembre 2026 sur 233.
 PLAYLIST_MEANS = {
-    "tb_bpm": 123.1, "tb_energy": 67.0, "tb_danceability": 59.0,
-    "tb_happiness": 48.4, "tb_acousticness": 23.0,
-    "tb_instrumentalness": 6.6, "tb_liveness": 23.2,
-    "tb_speechiness": 10.6, "tb_loudness": -7.3,
+    "tb_bpm": 123.2, "tb_energy": 67.4, "tb_danceability": 58.7,
+    "tb_happiness": 48.9, "tb_acousticness": 23.6,
+    "tb_instrumentalness": 6.9, "tb_liveness": 23.0,
+    "tb_speechiness": 10.4, "tb_loudness": -7.3,
 }
 
 # Définitions des 9 features, en anglais (champ publié) : ce qu'elles
@@ -307,7 +332,7 @@ FEATURE_INFO = {
 AXES = [
     {
         "name": "Loud and energetic ↔ hushed and acoustic",
-        "variance": 32.0,
+        "variance": 31.7,
         "poles": ("loud, energetic", "hushed, acoustic"),
         "blurb": (
             "The single largest source of variation in this playlist. High "
@@ -319,7 +344,7 @@ AXES = [
     },
     {
         "name": "Sung and danceable ↔ instrumental and fast",
-        "variance": 16.0,
+        "variance": 16.5,
         "poles": ("sung, danceable", "instrumental, fast"),
         "blurb": (
             "One pole is fast-tempo and heavily instrumental; the other is "
@@ -331,7 +356,7 @@ AXES = [
     {
         "name": "Live and spoken ↔ studio-sung",
         "poles": ("live, spoken", "studio-sung"),
-        "variance": 12.5,
+        "variance": 13.0,
         "blurb": (
             "The most narrowly defined of the three: almost entirely "
             "liveness and speechiness. High values sound like a live take "
@@ -344,7 +369,7 @@ AXES = [
 CLUSTERS = {
     1: {
         "name": "Mid-tempo and moderate",
-        "n": 71,
+        "n": 72,
         "blurb": (
             "The playlist's broad middle ground, and now its largest group: "
             "mid-tempo, moderately energetic, sung and studio-recorded, close "
@@ -353,15 +378,15 @@ CLUSTERS = {
             "playlist, from electronic and auteur pop to punk and soul."
         ),
         "means": {
-            "tb_bpm": 118.9, "tb_energy": 63.6, "tb_danceability": 57.2,
-            "tb_happiness": 42.8, "tb_acousticness": 22.0,
-            "tb_instrumentalness": 1.3, "tb_liveness": 15.2,
-            "tb_speechiness": 7.2, "tb_loudness": -7.5,
+            "tb_bpm": 110.9, "tb_energy": 57.0, "tb_danceability": 60.6,
+            "tb_happiness": 44.1, "tb_acousticness": 25.2,
+            "tb_instrumentalness": 1.7, "tb_liveness": 14.9,
+            "tb_speechiness": 7.9, "tb_loudness": -8.2,
         },
     },
     2: {
         "name": "Upbeat club and dance-pop",
-        "n": 49,
+        "n": 58,
         "blurb": (
             "The most danceable and the most cheerful-sounding group by a clear "
             "margin, loud and electronically produced, at a steady mid-tempo "
@@ -369,32 +394,49 @@ CLUSTERS = {
             "family, though not all of it."
         ),
         "means": {
-            "tb_bpm": 121.4, "tb_energy": 78.9, "tb_danceability": 74.7,
-            "tb_happiness": 71.0, "tb_acousticness": 10.0,
-            "tb_instrumentalness": 1.5, "tb_liveness": 17.0,
-            "tb_speechiness": 11.4, "tb_loudness": -5.7,
+            "tb_bpm": 122.7, "tb_energy": 83.3, "tb_danceability": 71.5,
+            "tb_happiness": 68.7, "tb_acousticness": 11.2,
+            "tb_instrumentalness": 0.6, "tb_liveness": 15.2,
+            "tb_speechiness": 10.7, "tb_loudness": -5.1,
         },
     },
     3: {
+        "name": "Fast and high-voltage",
+        "n": 34,
+        "blurb": (
+            "By far the fastest group, around 165 BPM on average against 123 "
+            "for the playlist, energetic but among the least danceable and "
+            "least cheerful-sounding: breakcore and hyperpop speeds, punk "
+            "tempos. It doubled in size at this recount, taking in the fastest "
+            "tracks of the middle-ground group as well as new arrivals."
+        ),
+        "means": {
+            "tb_bpm": 164.5, "tb_energy": 74.1, "tb_danceability": 44.9,
+            "tb_happiness": 40.0, "tb_acousticness": 12.0,
+            "tb_instrumentalness": 2.4, "tb_liveness": 24.1,
+            "tb_speechiness": 9.1, "tb_loudness": -6.7,
+        },
+    },
+    4: {
         "name": "Live-sounding and speech-forward",
-        "n": 29,
+        "n": 33,
         "blurb": (
             "The highest average liveness of any group, more than twice the "
             "playlist's, with the highest speechiness too: a spoken or rapped "
             "cadence, or the ambience of a live take, rather than a polished "
-            "studio vocal. At the previous recount these were two separate "
-            "groups; with thirty more tracks counted, they fall together again."
+            "studio vocal. At an earlier recount these were two separate "
+            "groups; they have held together since."
         ),
         "means": {
-            "tb_bpm": 117.9, "tb_energy": 75.1, "tb_danceability": 62.0,
-            "tb_happiness": 53.4, "tb_acousticness": 21.8,
-            "tb_instrumentalness": 3.7, "tb_liveness": 56.1,
-            "tb_speechiness": 23.0, "tb_loudness": -6.6,
+            "tb_bpm": 118.7, "tb_energy": 77.6, "tb_danceability": 62.0,
+            "tb_happiness": 54.2, "tb_acousticness": 20.8,
+            "tb_instrumentalness": 4.0, "tb_liveness": 58.3,
+            "tb_speechiness": 22.4, "tb_loudness": -6.6,
         },
     },
-    4: {
+    5: {
         "name": "Acoustic and understated",
-        "n": 18,
+        "n": 20,
         "blurb": (
             "The most acoustic, least energetic and quietest group by a wide "
             "margin: its average acousticness is more than three times the "
@@ -402,32 +444,15 @@ CLUSTERS = {
             "production, much of it from the voice and few instruments family."
         ),
         "means": {
-            "tb_bpm": 106.7, "tb_energy": 24.8, "tb_danceability": 43.1,
-            "tb_happiness": 26.6, "tb_acousticness": 82.4,
-            "tb_instrumentalness": 3.0, "tb_liveness": 14.5,
-            "tb_speechiness": 4.2, "tb_loudness": -12.6,
-        },
-    },
-    5: {
-        "name": "Fast and high-voltage",
-        "n": 17,
-        "blurb": (
-            "By far the fastest group, around 168 BPM on average against 123 "
-            "for the playlist, energetic but among the least danceable and "
-            "least cheerful-sounding: breakcore and hyperpop speeds, punk "
-            "tempos. This profile stands apart again at this recount, as it did "
-            "before the previous one merged it into the dance-pop group."
-        ),
-        "means": {
-            "tb_bpm": 167.9, "tb_energy": 71.3, "tb_danceability": 37.3,
-            "tb_happiness": 28.3, "tb_acousticness": 12.8,
-            "tb_instrumentalness": 4.4, "tb_liveness": 29.1,
-            "tb_speechiness": 9.4, "tb_loudness": -6.4,
+            "tb_bpm": 105.2, "tb_energy": 25.0, "tb_danceability": 42.1,
+            "tb_happiness": 25.9, "tb_acousticness": 82.2,
+            "tb_instrumentalness": 2.7, "tb_liveness": 14.7,
+            "tb_speechiness": 4.2, "tb_loudness": -12.8,
         },
     },
     6: {
         "name": "Extended instrumental passages",
-        "n": 12,
+        "n": 16,
         "blurb": (
             "A strikingly high average instrumentalness even though every track "
             "here has vocals: long instrumental intros, breakdowns or outros "
@@ -436,10 +461,10 @@ CLUSTERS = {
             "ever reading back as a single track's numbers."
         ),
         "means": {
-            "tb_bpm": 128.9, "tb_energy": 76.8, "tb_danceability": 52.3,
-            "tb_happiness": 38.7, "tb_acousticness": 9.5,
-            "tb_instrumentalness": 75.2, "tb_liveness": 20.4,
-            "tb_speechiness": 8.3, "tb_loudness": -7.4,
+            "tb_bpm": 124.8, "tb_energy": 74.1, "tb_danceability": 47.2,
+            "tb_happiness": 36.0, "tb_acousticness": 18.3,
+            "tb_instrumentalness": 74.1, "tb_liveness": 23.0,
+            "tb_speechiness": 7.2, "tb_loudness": -7.5,
         },
     },
 }
@@ -474,214 +499,265 @@ CLUSTERS = {
 # high-voltage » se détache de nouveau et retrouve le violet rosé ;
 # « Speech-forward » et « Live-sounding » se réunissent sous le jaune.
 CLUSTER_COLORS = {
-    1: "#E69F00",  # orange — Mid-tempo and moderate
-    2: "#56B4E9",  # bleu ciel — Upbeat club and dance-pop
-    3: "#F0E442",  # jaune — Live-sounding and speech-forward
-    4: "#D55E00",  # vermillon — Acoustic and understated
-    5: "#CC79A7",  # violet rosé — Fast and high-voltage (retrouve son profil du 10 septembre)
-    6: "#009E73",  # vert bleuté — Extended instrumental passages
+    1: "#C6731C",  # ambre : Mid-tempo and moderate (ex-orange)
+    2: "#2D6A85",  # bleu ardoise : Upbeat club and dance-pop (ex-bleu ciel)
+    3: "#CC8AA0",  # rose poudré : Fast and high-voltage (ex-violet rosé)
+    4: "#DCC35C",  # or pâle : Live-sounding and speech-forward (ex-jaune)
+    5: "#9A1F1F",  # sang de bœuf : Acoustic and understated (ex-vermillon)
+    6: "#729161",  # sauge : Extended instrumental passages (ex-vert bleuté)
 }
 
-# Position (ACP sur 3 axes) et groupe de chacun des 196 morceaux analysés
+# Variantes plus claires pour le thème sombre (par défaut depuis le
+# 9 novembre 2026), à la demande de Claire : sang de bœuf et bleu ardoise
+# ressortaient trop peu sur fond brun. Mêmes teintes, même ordre ;
+# distinguabilité vérifiée en simulation de deutéranopie, protanopie et
+# tritanopie (écart minimal ΔE ≥ 18 entre deux groupes).
+CLUSTER_COLORS_DARK = {
+    1: "#E08A3C",
+    2: "#5E9CC4",
+    3: "#DE9AB2",
+    4: "#E8D27A",
+    5: "#D4584A",
+    6: "#8DB57A",
+}
+
+# Position (ACP sur 3 axes) et groupe de chacun des 233 morceaux analysés
 # (recalcul du 29 septembre 2026).
 # Dérivé, pas brut : voir le docstring de ce fichier.
 TRACKS = {
-    '02L1ngagXNRt8W3Flbe9Sw': {'cluster': 4, 'pc': (-3.27, 0.52, 0.22)},
-    '06kFuqzhMk4E6IYeO0sTfx': {'cluster': 3, 'pc': (2.00, -0.35, 1.34)},
-    '07m5UbUHOQCofRK16k83Eg': {'cluster': 4, 'pc': (-2.85, 1.24, -0.16)},
-    '084dIWdHoow6G00mBlxsOu': {'cluster': 3, 'pc': (0.38, 0.76, 0.79)},
-    '0A2tFUYLertZLltvvY5uyr': {'cluster': 3, 'pc': (1.65, 0.27, 2.83)},
-    '0DZapO0gUF8XZpk2bu8AeL': {'cluster': 1, 'pc': (-2.95, 0.16, -0.31)},
-    '0GSW6V6GJc4xYi8c5jOu60': {'cluster': 2, 'pc': (1.32, -0.82, -0.94)},
-    '0Irj6PuEEGzi7JGJvAhdZ8': {'cluster': 2, 'pc': (1.84, 0.32, -0.60)},
-    '0NOume8OgBz4FCnP1QVr9A': {'cluster': 1, 'pc': (1.00, -0.05, -0.29)},
-    '0QA1xpUuqHDHWZhi0eAbH7': {'cluster': 4, 'pc': (-3.33, 0.28, 0.79)},
-    '0VNjaRcmIowjLbPtYDhLuh': {'cluster': 2, 'pc': (0.93, 1.62, 0.08)},
-    '0VhGzYfT2ZOFz31b5IH7yJ': {'cluster': 1, 'pc': (-0.92, 0.50, -0.61)},
-    '0XIutL5epZuYV91bhCfFsR': {'cluster': 1, 'pc': (0.18, 0.61, -1.00)},
-    '0ZQLRkRyn3300WyapdPoWT': {'cluster': 3, 'pc': (1.92, 0.53, 2.20)},
-    '0ZeVhHgvMsF6dqo2AFSfut': {'cluster': 4, 'pc': (-3.17, 0.83, 0.29)},
-    '0a0CwJBn8lmT5ifk63EUbP': {'cluster': 5, 'pc': (0.87, -2.74, 0.63)},
-    '0bWpWsvZeTTNLQ9nuXqKIN': {'cluster': 3, 'pc': (-0.25, -1.10, 2.56)},
-    '0gm0OruZdJlu8jamJe5OCh': {'cluster': 3, 'pc': (1.69, -0.22, 1.50)},
-    '0kNjtDBxrpjJTZn9w5Eq3C': {'cluster': 1, 'pc': (-1.88, -0.18, -0.53)},
-    '0pe5NUU9uGwFpj637ot84D': {'cluster': 2, 'pc': (2.03, -0.05, -0.55)},
-    '0qMZXgcLfkl5RI3q50KHMH': {'cluster': 5, 'pc': (0.85, -0.70, -0.07)},
-    '0rK7QTyYjhPFadLH2YDl84': {'cluster': 1, 'pc': (-0.94, 0.13, -0.43)},
-    '0wIpjjcXFgGtJUmBIRAAju': {'cluster': 1, 'pc': (0.97, -0.12, -1.11)},
-    '14uL43Gg4ujizaATehrryk': {'cluster': 6, 'pc': (0.29, -1.65, -0.85)},
-    '18QS9wnUr7DOhMb73monpK': {'cluster': 2, 'pc': (1.57, 0.57, -0.84)},
-    '1AFPmwB6mGMCcMI2hFh7c8': {'cluster': 2, 'pc': (1.80, 1.13, 0.13)},
-    '1AHPsqF3EtHeWpOM06Y3Y4': {'cluster': 4, 'pc': (-4.01, -0.18, 0.70)},
-    '1DGc7wwXrjAGecJzvESW3C': {'cluster': 2, 'pc': (0.29, 1.45, -1.13)},
-    '1E3nHn45NpD1TkDzo3jcbk': {'cluster': 3, 'pc': (-2.17, -0.87, 2.30)},
-    '1EPYnBjYhYHcNthEnVWk18': {'cluster': 3, 'pc': (2.12, -0.47, 0.51)},
-    '1IF61ped0XehHvw2CFXP3B': {'cluster': 1, 'pc': (0.42, -1.02, -0.61)},
-    '1KnagH7nZ84p8vPMPZQ8hk': {'cluster': 1, 'pc': (0.49, -0.29, -1.41)},
-    '1N1F6UsRGILux57U0YbxJQ': {'cluster': 5, 'pc': (-2.07, -1.94, 2.76)},
-    '1OpCGPKSq4IfpvLptsSMR9': {'cluster': 4, 'pc': (-4.76, 0.65, 0.65)},
-    '1PEPcLm2QEo0HCRIhQjPq1': {'cluster': 2, 'pc': (0.24, 2.25, -0.85)},
-    '1Q9w2a5dvoIpE8fkP8mUK6': {'cluster': 2, 'pc': (2.09, 1.58, -0.31)},
-    '1QrL7ucS71Ih4HXBOsuajv': {'cluster': 4, 'pc': (-3.24, 0.52, 1.03)},
-    '1RXkdiCc4TtwPacmIKyUnX': {'cluster': 1, 'pc': (-0.08, 1.00, -0.09)},
-    '1RkB4Dk0CDzpaSySq91JEA': {'cluster': 2, 'pc': (0.44, 1.74, 0.76)},
-    '1RmXibCbfLIVrN8ZRdoYbW': {'cluster': 1, 'pc': (0.26, -0.40, -1.06)},
-    '1XD4K4CGAKTIBmFpvuaFru': {'cluster': 5, 'pc': (0.94, -0.82, -0.16)},
-    '1YsFdaP9QG9NhjYS3o0g5P': {'cluster': 2, 'pc': (2.18, 1.40, 0.06)},
-    '1cu5PHumWAqQf9M6BHQ8b7': {'cluster': 1, 'pc': (-1.97, 0.08, -0.06)},
-    '1d3hBkCcMvVzsZjaMiVvNs': {'cluster': 1, 'pc': (-0.99, -0.27, -0.16)},
-    '1ggQljgteCJOF8PFvCiRLa': {'cluster': 1, 'pc': (0.72, 0.19, -1.13)},
-    '1huN927tTdSiwF90FBHXkT': {'cluster': 2, 'pc': (1.62, 0.55, -0.22)},
-    '1jFN0stMzLepoPxvPywGZj': {'cluster': 2, 'pc': (1.53, 1.51, 0.12)},
-    '1jTo2GUdfyjvSBaXaV9IMh': {'cluster': 1, 'pc': (-0.05, -0.73, -0.52)},
-    '1o8Xa3b70eDBgIvZTz7tKF': {'cluster': 3, 'pc': (1.86, 0.25, 0.99)},
-    '1ovz0bZeO5YTBQTXIFf5Am': {'cluster': 4, 'pc': (-4.83, -0.10, 0.66)},
-    '1toNKayLMeCcVlsLGXJl7n': {'cluster': 1, 'pc': (0.43, -1.16, -0.66)},
-    '1w0AFg23E67l57A3RMiXjC': {'cluster': 6, 'pc': (2.21, -3.43, -0.06)},
-    '1xVHNasMbwoQcLkf07JMv4': {'cluster': 2, 'pc': (2.06, 2.01, -0.43)},
-    '1zVqEY9PXPpYJKMi9Kk9yn': {'cluster': 1, 'pc': (-1.61, 0.19, -0.54)},
-    '20JYh6XUjLjiN1CyJ32ZiY': {'cluster': 6, 'pc': (2.54, -0.93, -0.36)},
-    '23smC9d2TpPTGZ3GCzjL4b': {'cluster': 6, 'pc': (-0.89, -2.91, -0.40)},
-    '29Ga6IgetN8Xah85ZHZ8AC': {'cluster': 2, 'pc': (1.75, -0.82, -0.72)},
-    '2BQZhUPXdP9Nk1X84c7PtP': {'cluster': 5, 'pc': (-1.38, -1.93, -0.46)},
-    '2CznvTOsuLh0USpHJqEc6V': {'cluster': 1, 'pc': (-0.68, -1.47, -0.47)},
-    '2DUAIlPmzV2is5OQIZASUA': {'cluster': 4, 'pc': (-2.50, -0.42, -0.02)},
-    '2Ff6Ghw8TRJGuAbJamtt4X': {'cluster': 1, 'pc': (-0.72, 1.06, -0.71)},
-    '2KryklrVDGmWL8IvoGNbb5': {'cluster': 2, 'pc': (0.34, 1.38, -0.89)},
-    '2KwdLR2SOGSflUigzSekHZ': {'cluster': 1, 'pc': (-1.21, -0.47, 1.14)},
-    '2Of9piZALXa4CC7Unxoeeg': {'cluster': 2, 'pc': (0.86, 1.38, -1.17)},
-    '2PaTBoG5uDz6H3xPhnnDLz': {'cluster': 2, 'pc': (1.23, 0.08, -0.89)},
-    '2R7G2Itn0b73uthZCNPIrR': {'cluster': 2, 'pc': (0.79, 0.69, -0.73)},
-    '2YDCrMvvmBz9gVeuL8QyVG': {'cluster': 1, 'pc': (1.00, 1.42, -0.95)},
-    '2aHS8p4tspLPkOvALx8Fs0': {'cluster': 1, 'pc': (-0.81, 0.68, -0.09)},
-    '2fB0l9upVjg0QTeMyrIVtc': {'cluster': 1, 'pc': (-1.09, 0.25, -0.35)},
-    '2gmwvGC1yOw8NdMcZE8nfo': {'cluster': 2, 'pc': (2.09, 0.56, -0.12)},
-    '2inX5xyazBvcZYLx3wRBwh': {'cluster': 5, 'pc': (0.87, -3.08, 1.55)},
-    '2iqTYCPRTqojxM7QJvBtk2': {'cluster': 1, 'pc': (-1.60, 1.45, -0.56)},
-    '2jFP4mAHcDmGe7DEKKLyJa': {'cluster': 1, 'pc': (-0.61, 0.67, -0.50)},
-    '2lEExBHFkGIG5bcjQCJc8P': {'cluster': 2, 'pc': (1.96, 0.72, -1.51)},
-    '2lgwylOpGMtkvhwdnUOArt': {'cluster': 2, 'pc': (1.87, 0.39, -0.27)},
-    '2qpx5shtNEO1DuK8iEoJoB': {'cluster': 1, 'pc': (-0.15, 0.20, -0.57)},
-    '2rMjMkOapLVsxbDSap5Uy2': {'cluster': 6, 'pc': (0.42, -1.75, -1.37)},
-    '2rN1ODOsaNfYu782rw36jR': {'cluster': 1, 'pc': (-0.24, 0.76, 0.02)},
-    '2sVjF25Z4JTJxi9BXm5GtJ': {'cluster': 5, 'pc': (1.41, -2.27, -0.16)},
-    '308z6pEGHS90tuDNAngZnh': {'cluster': 2, 'pc': (0.73, 0.28, -0.89)},
-    '36Xl4wdcXaW7zi7N01WSOo': {'cluster': 4, 'pc': (-3.57, 1.22, 0.40)},
-    '376mhFeloWqzQJQsqZpm9A': {'cluster': 2, 'pc': (1.11, 0.56, -1.15)},
-    '37OSQm8Gy5strUT24vn6ef': {'cluster': 3, 'pc': (0.91, -1.04, 1.10)},
-    '3ApVA7ID6PkS0fGzNF4mFw': {'cluster': 4, 'pc': (-2.51, 0.19, -0.11)},
-    '3AyUAvAQGKyMzC9jGQeIlX': {'cluster': 3, 'pc': (-0.21, 1.02, 3.23)},
-    '3BYSoeWlqUgIwfY77C8VgE': {'cluster': 3, 'pc': (0.67, 2.08, 2.69)},
-    '3BqWvhPear6eKPwhwJRFpO': {'cluster': 1, 'pc': (-0.66, -0.11, -0.79)},
-    '3FysLYckiMCMzjYLIgo45U': {'cluster': 3, 'pc': (1.67, 0.94, 2.96)},
-    '3IDQXyHYuX2rdLnNfVzT3g': {'cluster': 1, 'pc': (-0.51, -0.70, -0.29)},
-    '3MZjOGeXhpHbQ9ESMNFFnH': {'cluster': 4, 'pc': (-4.07, 0.72, 0.30)},
-    '3QF7smzmw2WWm7M1jt2Rac': {'cluster': 3, 'pc': (1.85, -0.01, 1.42)},
-    '3RLI8S7KpEZs4SqePGjM2R': {'cluster': 5, 'pc': (0.92, -1.24, -0.21)},
-    '3RXajeZOzqXWrQwLDfTzKK': {'cluster': 3, 'pc': (-0.28, 0.82, 0.32)},
-    '3ShIGvHRm0q9iIDowUMjls': {'cluster': 1, 'pc': (-1.26, 1.28, -0.27)},
-    '3VHdDisicXuBnW1NxIGzCI': {'cluster': 3, 'pc': (0.36, -0.45, 1.96)},
-    '3Vk1AHIh1CoiQzFroldMhO': {'cluster': 4, 'pc': (-3.91, 0.75, 0.43)},
-    '3XdXixlx3MoVzfL7pu9hx6': {'cluster': 4, 'pc': (-3.08, 0.42, -0.36)},
-    '3bnvoYUrPkgh0E3ZeYZ3me': {'cluster': 3, 'pc': (2.79, 0.01, 4.79)},
-    '3eBY8aZZdWNnNhNbc8B0yp': {'cluster': 6, 'pc': (-1.88, -3.16, -0.12)},
-    '3nxFYWNFG2qGYEuhEzomtO': {'cluster': 3, 'pc': (-1.64, 1.60, 2.14)},
-    '3qBg6BeHJlGgwl5aCa09EC': {'cluster': 1, 'pc': (1.07, -0.56, 0.84)},
-    '3qDqg53YIe9mM5Ehx9v9FZ': {'cluster': 2, 'pc': (1.48, 1.11, -1.06)},
-    '3r0gvoaAkWmLdJO4UUv94v': {'cluster': 5, 'pc': (-2.63, -3.13, 0.94)},
-    '3z4KIXgkhLauhNP3ubB8cF': {'cluster': 1, 'pc': (-0.95, 0.66, -1.04)},
-    '3zGmkzXqXsXYVlGzJFpgCW': {'cluster': 1, 'pc': (0.83, -0.61, -0.97)},
-    '42Opc7AzlbYad3AuWsBGuf': {'cluster': 6, 'pc': (-2.05, -1.46, -0.85)},
-    '46uGvJVhYHOVRRNnRPbkYm': {'cluster': 5, 'pc': (0.90, -1.34, 0.51)},
-    '48XnOS1vTyzqaPps0Dalzp': {'cluster': 1, 'pc': (-0.10, 1.23, -0.64)},
-    '4CuivW1JgPauXPA4wYsf5K': {'cluster': 1, 'pc': (-1.65, 1.15, 0.19)},
-    '4DfHQvIAZmSmqcZbuO80sZ': {'cluster': 2, 'pc': (2.15, 0.38, -1.13)},
-    '4ED8r6i90zmUG4kfbiVoou': {'cluster': 1, 'pc': (0.15, 0.34, -0.99)},
-    '4Hf2Y8mG8LDZCfeycD93PP': {'cluster': 5, 'pc': (0.64, -2.25, 0.22)},
-    '4NKAjWfWZ2tcIzjCR9G5Zl': {'cluster': 2, 'pc': (1.54, 1.02, 0.46)},
-    '4NYRtDYROQW2D2ctcylcri': {'cluster': 6, 'pc': (-0.04, -3.14, -0.56)},
-    '4OF1mdSkA2z05DSwHNKVnz': {'cluster': 2, 'pc': (0.91, 0.91, -1.03)},
-    '4OI2gBlHqyNks8cbIBIKYw': {'cluster': 1, 'pc': (0.49, 0.11, -0.78)},
-    '4P9LdSPrnQl7KQwml4DUtq': {'cluster': 1, 'pc': (-0.75, 0.24, -0.26)},
-    '4QnHaiWq1oJiTgMnRFE0q8': {'cluster': 2, 'pc': (0.63, 0.69, -1.18)},
-    '4UfEEnq70NgLeq7NRfXPiD': {'cluster': 2, 'pc': (0.98, 0.56, 0.50)},
-    '4WhyfhjZaX6AVjAZslQAFs': {'cluster': 2, 'pc': (1.96, 0.47, -0.17)},
-    '4X6PkqzKUvWWKoq4YiiM1V': {'cluster': 2, 'pc': (1.61, -0.33, -0.58)},
-    '4Ykmj47fulJ1FTeCXctW91': {'cluster': 1, 'pc': (-1.78, -0.03, -0.20)},
-    '4Zhxtm6x56wEiRtSMAl28n': {'cluster': 3, 'pc': (1.04, 0.76, 0.36)},
-    '4b1Y41U44kP7gzO7MUNGbe': {'cluster': 1, 'pc': (1.07, -0.72, -0.50)},
-    '4bglcunoysO0W3puey06d6': {'cluster': 1, 'pc': (-1.38, -0.20, -0.76)},
-    '4dtyeDMnVKKo89QbbDtD5M': {'cluster': 1, 'pc': (0.01, -0.96, -0.60)},
-    '4hceSKjrkDTO0nMKFcb3sj': {'cluster': 3, 'pc': (0.87, 0.06, 0.99)},
-    '4lUlYGT5VvZWN3GBDIc9KT': {'cluster': 1, 'pc': (-0.79, 1.45, 0.23)},
-    '4ltqfN12ohaVZdM6C45gMg': {'cluster': 1, 'pc': (-0.33, -1.17, -0.82)},
-    '4qdyN6rpaGsspGeMzkCTNP': {'cluster': 2, 'pc': (1.23, 0.76, -0.43)},
-    '4v5gEVQPDlPtsuQ77AJa0x': {'cluster': 3, 'pc': (0.40, -0.44, 1.42)},
-    '4xHC0Cj5ujXkmL8lSU6jXw': {'cluster': 1, 'pc': (-0.14, 0.96, -0.78)},
-    '4xhYxKvAxtrRd83MiqOy29': {'cluster': 2, 'pc': (1.32, 1.13, -1.23)},
-    '4yBfzgV6YA9dTKP8KUD35j': {'cluster': 2, 'pc': (1.82, -0.44, -0.66)},
-    '51NYFGDXYKS4FkRqkw98hx': {'cluster': 2, 'pc': (1.87, 0.45, -0.92)},
-    '53uyQrCca3tqGU8Voaa0oC': {'cluster': 5, 'pc': (0.47, -2.24, 0.36)},
-    '54n3iwz9mr7yxZi1EOX1Mz': {'cluster': 2, 'pc': (1.00, 0.48, -0.37)},
-    '56xBg5e9rfrFqcqa4llUw7': {'cluster': 1, 'pc': (-0.86, -0.64, -0.33)},
-    '5Gp1fkuPV7CPtzKHfMH0kd': {'cluster': 1, 'pc': (0.21, -0.39, 0.54)},
-    '5NnQ2xIeHDKc1B19rxfcV3': {'cluster': 3, 'pc': (-1.42, -0.15, 2.21)},
-    '5P9EKJfOZtuwtTR5C5362i': {'cluster': 4, 'pc': (-4.07, -0.09, 0.41)},
-    '5PMtJGEDIO0eIToF0YRUQ5': {'cluster': 1, 'pc': (-1.74, -0.40, -0.48)},
-    '5WttRLHcZHhaIii5KwKh3Y': {'cluster': 1, 'pc': (-0.26, 0.03, -0.80)},
-    '5dIPCgTEDagbcs5QGmni8V': {'cluster': 6, 'pc': (0.56, -2.07, -1.15)},
-    '5dtUOwEmnDAzsdodWJk4DA': {'cluster': 1, 'pc': (-1.41, 0.80, -0.50)},
-    '5e0ZXu358l51ckAZvai2Ef': {'cluster': 4, 'pc': (-2.85, 0.93, -0.07)},
-    '5iAE3uBqaZm9aHUx9yy6a0': {'cluster': 3, 'pc': (3.91, -2.59, 1.95)},
-    '5iTzaatezJzsUhX1QjT0Kp': {'cluster': 6, 'pc': (1.23, -2.97, -1.39)},
-    '5l2zYkyTXtYa8xk965ofqD': {'cluster': 4, 'pc': (-4.93, 1.62, 0.63)},
-    '5ljt7BaKAlflOjNs9jysyh': {'cluster': 3, 'pc': (0.64, 0.72, 2.40)},
-    '5lz6U9dCYBmEY6oLrW22VE': {'cluster': 2, 'pc': (1.79, 0.97, 0.75)},
-    '5nWecUJF2pytSxsSpylzZw': {'cluster': 2, 'pc': (0.95, 1.17, -1.24)},
-    '5nnBHHzUDOGvdMBiXofB00': {'cluster': 1, 'pc': (-1.34, -0.19, -0.59)},
-    '5pkemVhnBiIzMs2NLsXomQ': {'cluster': 1, 'pc': (1.23, -0.37, -0.34)},
-    '5rOzcHIZaF038jMeHkUZR0': {'cluster': 5, 'pc': (-1.95, -1.85, -0.18)},
-    '5sjmWtBcZC1Tj4RoCfaK7k': {'cluster': 1, 'pc': (-0.04, 0.11, -1.15)},
-    '5srzGYocC4qYFvckQm5AfC': {'cluster': 2, 'pc': (0.52, 2.03, -0.58)},
-    '5vCE6qjJI7NhpUrLWktoN9': {'cluster': 2, 'pc': (2.06, 0.42, -0.39)},
-    '608TXHjFnEau83A1DoyVCt': {'cluster': 1, 'pc': (0.91, 0.66, -0.88)},
-    '60RgF3vDNAl6crhVg4f9wl': {'cluster': 2, 'pc': (0.14, 1.85, -0.27)},
-    '6BGmeieR3l4aW0VT2nvOcX': {'cluster': 1, 'pc': (-2.59, 0.77, 0.10)},
-    '6BlQbt6Cnf54niyISOZ6cB': {'cluster': 2, 'pc': (-0.30, 1.53, -1.03)},
-    '6D7zTed8zrkuKBPca2AqSI': {'cluster': 2, 'pc': (2.17, 0.45, -0.48)},
-    '6EjxYTyXiBzJz6PeOvPiou': {'cluster': 1, 'pc': (-1.79, 1.12, -0.41)},
-    '6JGJdnIbq4UqKgzFaOIXwE': {'cluster': 6, 'pc': (-0.56, -2.61, -1.06)},
-    '6JZfK4Z75nZm3VcZOVrpy0': {'cluster': 1, 'pc': (-2.13, -0.57, -0.31)},
-    '6JrmHzxhaaavRtlXTOhm63': {'cluster': 1, 'pc': (0.41, 2.11, 1.28)},
-    '6RJiY28t9jWpdy1JkUhNgK': {'cluster': 3, 'pc': (1.24, 0.85, 1.87)},
-    '6S04kJTdogPGPWN3jP7mNt': {'cluster': 5, 'pc': (-2.03, -2.09, 0.83)},
-    '6WkiWn8bf8S29wSk0VwK7h': {'cluster': 1, 'pc': (-0.39, -1.40, -0.66)},
-    '6XeW8fjwoAFQeQpYojPtVI': {'cluster': 5, 'pc': (1.55, -1.48, 0.26)},
-    '6b4lgjut9ogXlhcbFgLgtS': {'cluster': 1, 'pc': (-0.66, -0.71, -0.94)},
-    '6fd79PtewFZgLXYiIYhhLJ': {'cluster': 1, 'pc': (0.95, 0.03, 0.01)},
-    '6jiumfqTwOpXW6PDzsIBKl': {'cluster': 2, 'pc': (0.39, 0.67, -0.61)},
-    '6lB7TMkQqSn2tKZGwFuqex': {'cluster': 1, 'pc': (0.45, -0.58, -0.03)},
-    '6vtcDkc68Des2RUrfTSXzK': {'cluster': 2, 'pc': (1.49, 0.20, -0.29)},
-    '6yAc1rz1RXRlYJac99xusK': {'cluster': 1, 'pc': (0.55, -0.90, 0.44)},
-    '71yN0yrHej3jhKXewbmtEh': {'cluster': 2, 'pc': (1.15, 0.32, -0.85)},
-    '724utiMbqUfT1g3tqbfQYu': {'cluster': 5, 'pc': (0.77, -1.48, 0.61)},
-    '73xUwV4DkcelY7seMyY0PY': {'cluster': 1, 'pc': (-0.77, 0.04, -0.54)},
-    '75HFFq9W7Em0dTBG8QeGcT': {'cluster': 1, 'pc': (1.08, 0.10, -0.64)},
-    '78iHtTxYIK2mD6oL6lXqFF': {'cluster': 3, 'pc': (2.05, 0.16, 0.17)},
-    '7EPHu29KqhsGk4dZAjM0o4': {'cluster': 1, 'pc': (0.32, 2.71, -0.17)},
-    '7GAI6zWpmst6dSfu1wIA1O': {'cluster': 6, 'pc': (-0.84, -1.41, -1.45)},
-    '7KtbrK74NNA4ySRZ49DC7R': {'cluster': 1, 'pc': (-0.88, 0.59, -0.91)},
-    '7aUZM3W6RA8k47eqP985Kc': {'cluster': 3, 'pc': (1.04, 0.77, 1.05)},
-    '7bNgXJ9MgGG7xOkyz9SLOY': {'cluster': 2, 'pc': (2.09, 0.63, -0.92)},
-    '7itC84qelbt08WXLeJfzgU': {'cluster': 4, 'pc': (-3.16, 1.22, -0.11)},
-    '7kvQptbfqq5b4MWRQOMrZC': {'cluster': 2, 'pc': (1.37, -0.07, -0.63)},
-    '7l8D5tXUVsdq95VQWn034C': {'cluster': 1, 'pc': (-1.38, -0.73, -0.30)},
-    '7lc4ue2LiSfYRaABxq4YkT': {'cluster': 3, 'pc': (3.12, 0.89, 3.81)},
-    '7luHAaHXty1Nl3AcscZIDT': {'cluster': 1, 'pc': (0.11, -0.84, -0.04)},
-    '7n7GrVTBmZMG4EULD5g0i3': {'cluster': 3, 'pc': (-0.20, 0.96, 1.64)},
-    '7tktCNlB0877dhdPZSRb7T': {'cluster': 5, 'pc': (-2.02, -2.63, -0.11)},
-    '7yeRNInEt2DOFYW0BkETEe': {'cluster': 1, 'pc': (1.36, 0.53, -1.06)},
-    '7zBUh6s2Ca8eAURfnVHCTS': {'cluster': 1, 'pc': (0.38, -0.71, 1.24)},
+    '02L1ngagXNRt8W3Flbe9Sw': {'cluster': 5, 'pc': (-3.27, 0.71, 0.12)},
+    '06kFuqzhMk4E6IYeO0sTfx': {'cluster': 4, 'pc': (1.99, -0.45, 1.29)},
+    '07m5UbUHOQCofRK16k83Eg': {'cluster': 5, 'pc': (-2.81, 1.35, -0.13)},
+    '084dIWdHoow6G00mBlxsOu': {'cluster': 4, 'pc': (0.40, 0.71, 0.86)},
+    '0A2tFUYLertZLltvvY5uyr': {'cluster': 4, 'pc': (1.60, 0.17, 2.78)},
+    '0DOqYCfifzpYK5SjOriuap': {'cluster': 3, 'pc': (-0.60, -1.56, -0.69)},
+    '0DZapO0gUF8XZpk2bu8AeL': {'cluster': 1, 'pc': (-2.93, 0.24, -0.38)},
+    '0GSW6V6GJc4xYi8c5jOu60': {'cluster': 2, 'pc': (1.38, -0.81, -1.07)},
+    '0Irj6PuEEGzi7JGJvAhdZ8': {'cluster': 2, 'pc': (1.89, 0.21, -0.62)},
+    '0NOume8OgBz4FCnP1QVr9A': {'cluster': 2, 'pc': (1.04, 0.02, -0.37)},
+    '0QA1xpUuqHDHWZhi0eAbH7': {'cluster': 5, 'pc': (-3.35, 0.45, 0.84)},
+    '0VNjaRcmIowjLbPtYDhLuh': {'cluster': 1, 'pc': (0.98, 1.55, 0.15)},
+    '0VhGzYfT2ZOFz31b5IH7yJ': {'cluster': 1, 'pc': (-0.89, 0.53, -0.64)},
+    '0XIutL5epZuYV91bhCfFsR': {'cluster': 2, 'pc': (0.24, 0.60, -1.00)},
+    '0ZQLRkRyn3300WyapdPoWT': {'cluster': 4, 'pc': (1.90, 0.35, 2.27)},
+    '0ZeVhHgvMsF6dqo2AFSfut': {'cluster': 5, 'pc': (-3.16, 0.97, 0.30)},
+    '0a0CwJBn8lmT5ifk63EUbP': {'cluster': 3, 'pc': (0.85, -2.74, 0.37)},
+    '0bWpWsvZeTTNLQ9nuXqKIN': {'cluster': 4, 'pc': (-0.30, -1.07, 2.46)},
+    '0gm0OruZdJlu8jamJe5OCh': {'cluster': 4, 'pc': (1.67, -0.21, 1.45)},
+    '0iGxHL2lPxuh1VIHQLUPUl': {'cluster': 1, 'pc': (-0.97, 0.08, -0.95)},
+    '0kNjtDBxrpjJTZn9w5Eq3C': {'cluster': 1, 'pc': (-1.86, -0.16, -0.63)},
+    '0pe5NUU9uGwFpj637ot84D': {'cluster': 2, 'pc': (2.09, -0.07, -0.58)},
+    '0qMZXgcLfkl5RI3q50KHMH': {'cluster': 3, 'pc': (0.87, -0.73, -0.18)},
+    '0rK7QTyYjhPFadLH2YDl84': {'cluster': 1, 'pc': (-0.91, 0.11, -0.48)},
+    '0wIpjjcXFgGtJUmBIRAAju': {'cluster': 2, 'pc': (1.03, -0.18, -1.17)},
+    '12dWvvky0ceP3vCCgwni0g': {'cluster': 1, 'pc': (-2.13, 0.24, -0.27)},
+    '14oyjbbiyic1Hh2ArExQwX': {'cluster': 3, 'pc': (-0.68, -1.75, -0.44)},
+    '14uL43Gg4ujizaATehrryk': {'cluster': 6, 'pc': (0.19, -1.67, -0.54)},
+    '18QS9wnUr7DOhMb73monpK': {'cluster': 2, 'pc': (1.63, 0.51, -0.81)},
+    '1AFPmwB6mGMCcMI2hFh7c8': {'cluster': 2, 'pc': (1.84, 1.04, 0.21)},
+    '1AHPsqF3EtHeWpOM06Y3Y4': {'cluster': 5, 'pc': (-4.04, -0.02, 0.51)},
+    '1BLFIHCwSpQf74tIjyj37K': {'cluster': 5, 'pc': (-4.52, 0.69, 0.62)},
+    '1DGc7wwXrjAGecJzvESW3C': {'cluster': 1, 'pc': (0.37, 1.44, -1.02)},
+    '1E3nHn45NpD1TkDzo3jcbk': {'cluster': 4, 'pc': (-2.25, -0.79, 2.28)},
+    '1EPYnBjYhYHcNthEnVWk18': {'cluster': 4, 'pc': (2.13, -0.56, 0.40)},
+    '1F99de97B9zXdnMdtq8KrH': {'cluster': 2, 'pc': (0.53, 0.76, -0.88)},
+    '1IF61ped0XehHvw2CFXP3B': {'cluster': 1, 'pc': (0.46, -1.02, -0.70)},
+    '1KnagH7nZ84p8vPMPZQ8hk': {'cluster': 1, 'pc': (0.52, -0.31, -1.34)},
+    '1N1F6UsRGILux57U0YbxJQ': {'cluster': 3, 'pc': (-2.16, -1.76, 2.45)},
+    '1OpCGPKSq4IfpvLptsSMR9': {'cluster': 5, 'pc': (-4.76, 0.81, 0.61)},
+    '1PEPcLm2QEo0HCRIhQjPq1': {'cluster': 1, 'pc': (0.31, 2.19, -0.73)},
+    '1Q9w2a5dvoIpE8fkP8mUK6': {'cluster': 2, 'pc': (2.15, 1.51, -0.21)},
+    '1QrL7ucS71Ih4HXBOsuajv': {'cluster': 5, 'pc': (-3.26, 0.66, 0.95)},
+    '1RXkdiCc4TtwPacmIKyUnX': {'cluster': 1, 'pc': (-0.04, 1.04, 0.03)},
+    '1RkB4Dk0CDzpaSySq91JEA': {'cluster': 1, 'pc': (0.46, 1.69, 0.93)},
+    '1RmXibCbfLIVrN8ZRdoYbW': {'cluster': 3, 'pc': (0.31, -0.38, -1.17)},
+    '1SOusugJKKzDUxR3QsQUDd': {'cluster': 1, 'pc': (0.36, 0.89, -0.08)},
+    '1XD4K4CGAKTIBmFpvuaFru': {'cluster': 3, 'pc': (0.96, -0.82, -0.29)},
+    '1YsFdaP9QG9NhjYS3o0g5P': {'cluster': 2, 'pc': (2.23, 1.31, 0.19)},
+    '1cu5PHumWAqQf9M6BHQ8b7': {'cluster': 1, 'pc': (-1.96, 0.16, -0.22)},
+    '1d3hBkCcMvVzsZjaMiVvNs': {'cluster': 1, 'pc': (-0.97, -0.15, -0.18)},
+    '1ggQljgteCJOF8PFvCiRLa': {'cluster': 2, 'pc': (0.79, 0.12, -1.14)},
+    '1gs7juUrbHx9LoeAQWp8X0': {'cluster': 3, 'pc': (0.06, -1.18, -0.72)},
+    '1huN927tTdSiwF90FBHXkT': {'cluster': 2, 'pc': (1.66, 0.53, -0.23)},
+    '1jFN0stMzLepoPxvPywGZj': {'cluster': 2, 'pc': (1.57, 1.43, 0.20)},
+    '1jTo2GUdfyjvSBaXaV9IMh': {'cluster': 1, 'pc': (-0.02, -0.75, -0.61)},
+    '1o8Xa3b70eDBgIvZTz7tKF': {'cluster': 4, 'pc': (1.88, 0.17, 1.01)},
+    '1ovz0bZeO5YTBQTXIFf5Am': {'cluster': 5, 'pc': (-4.86, 0.11, 0.48)},
+    '1toNKayLMeCcVlsLGXJl7n': {'cluster': 3, 'pc': (0.46, -1.08, -0.76)},
+    '1vOi99NYsymJomYiivTVj2': {'cluster': 4, 'pc': (0.75, 0.43, 1.21)},
+    '1w0AFg23E67l57A3RMiXjC': {'cluster': 6, 'pc': (1.98, -3.48, 0.47)},
+    '1xVHNasMbwoQcLkf07JMv4': {'cluster': 2, 'pc': (2.13, 1.93, -0.24)},
+    '1zVqEY9PXPpYJKMi9Kk9yn': {'cluster': 1, 'pc': (-1.58, 0.22, -0.57)},
+    '20JYh6XUjLjiN1CyJ32ZiY': {'cluster': 6, 'pc': (2.42, -1.01, 0.16)},
+    '23smC9d2TpPTGZ3GCzjL4b': {'cluster': 6, 'pc': (-1.01, -2.92, -0.22)},
+    '29Ga6IgetN8Xah85ZHZ8AC': {'cluster': 2, 'pc': (1.77, -0.86, -0.74)},
+    '2BQZhUPXdP9Nk1X84c7PtP': {'cluster': 3, 'pc': (-1.39, -1.86, -0.67)},
+    '2CznvTOsuLh0USpHJqEc6V': {'cluster': 1, 'pc': (-0.69, -1.40, -0.53)},
+    '2DUAIlPmzV2is5OQIZASUA': {'cluster': 5, 'pc': (-2.51, -0.30, -0.13)},
+    '2Ff6Ghw8TRJGuAbJamtt4X': {'cluster': 1, 'pc': (-0.66, 1.11, -0.67)},
+    '2KryklrVDGmWL8IvoGNbb5': {'cluster': 1, 'pc': (0.40, 1.40, -0.83)},
+    '2KwdLR2SOGSflUigzSekHZ': {'cluster': 1, 'pc': (-1.23, -0.42, 0.94)},
+    '2Of9piZALXa4CC7Unxoeeg': {'cluster': 2, 'pc': (0.94, 1.32, -1.10)},
+    '2PaTBoG5uDz6H3xPhnnDLz': {'cluster': 2, 'pc': (1.28, 0.03, -0.95)},
+    '2R7G2Itn0b73uthZCNPIrR': {'cluster': 2, 'pc': (0.84, 0.62, -0.71)},
+    '2YDCrMvvmBz9gVeuL8QyVG': {'cluster': 2, 'pc': (1.07, 1.44, -0.90)},
+    '2aHS8p4tspLPkOvALx8Fs0': {'cluster': 1, 'pc': (-0.78, 0.71, -0.09)},
+    '2fB0l9upVjg0QTeMyrIVtc': {'cluster': 1, 'pc': (-1.06, 0.28, -0.42)},
+    '2gmwvGC1yOw8NdMcZE8nfo': {'cluster': 2, 'pc': (2.13, 0.49, -0.10)},
+    '2h9jHuAARdM9dMhNp04ahR': {'cluster': 2, 'pc': (1.48, 2.24, -1.16)},
+    '2inX5xyazBvcZYLx3wRBwh': {'cluster': 3, 'pc': (0.83, -3.06, 1.22)},
+    '2iqTYCPRTqojxM7QJvBtk2': {'cluster': 1, 'pc': (-1.56, 1.44, -0.47)},
+    '2jFP4mAHcDmGe7DEKKLyJa': {'cluster': 1, 'pc': (-0.57, 0.68, -0.57)},
+    '2lEExBHFkGIG5bcjQCJc8P': {'cluster': 2, 'pc': (2.05, 0.66, -1.47)},
+    '2lgwylOpGMtkvhwdnUOArt': {'cluster': 2, 'pc': (1.92, 0.34, -0.26)},
+    '2qpx5shtNEO1DuK8iEoJoB': {'cluster': 1, 'pc': (-0.11, 0.22, -0.61)},
+    '2rMjMkOapLVsxbDSap5Uy2': {'cluster': 6, 'pc': (0.28, -1.71, -0.80)},
+    '2rN1ODOsaNfYu782rw36jR': {'cluster': 1, 'pc': (-0.22, 0.73, 0.03)},
+    '2rffYJaN04Tdzha2foN2up': {'cluster': 4, 'pc': (1.16, -2.03, 2.07)},
+    '2sVjF25Z4JTJxi9BXm5GtJ': {'cluster': 3, 'pc': (1.41, -2.27, -0.45)},
+    '308z6pEGHS90tuDNAngZnh': {'cluster': 2, 'pc': (0.78, 0.27, -0.95)},
+    '36Xl4wdcXaW7zi7N01WSOo': {'cluster': 5, 'pc': (-3.58, 1.34, 0.47)},
+    '376mhFeloWqzQJQsqZpm9A': {'cluster': 2, 'pc': (1.19, 0.53, -1.12)},
+    '37OSQm8Gy5strUT24vn6ef': {'cluster': 4, 'pc': (0.90, -1.12, 0.94)},
+    '3ApVA7ID6PkS0fGzNF4mFw': {'cluster': 5, 'pc': (-2.50, 0.33, -0.24)},
+    '3AyUAvAQGKyMzC9jGQeIlX': {'cluster': 4, 'pc': (-0.27, 1.10, 3.23)},
+    '3BYSoeWlqUgIwfY77C8VgE': {'cluster': 4, 'pc': (0.65, 2.00, 2.89)},
+    '3BqWvhPear6eKPwhwJRFpO': {'cluster': 1, 'pc': (-0.62, -0.11, -0.87)},
+    '3Cmc2mUlFS7MPhcwIRvcWF': {'cluster': 6, 'pc': (0.57, -0.80, 0.33)},
+    '3FysLYckiMCMzjYLIgo45U': {'cluster': 4, 'pc': (1.62, 0.77, 3.04)},
+    '3HO9UrofF8D3AfKY9ZLLbB': {'cluster': 6, 'pc': (-2.79, -2.78, 1.30)},
+    '3IDQXyHYuX2rdLnNfVzT3g': {'cluster': 1, 'pc': (-0.48, -0.71, -0.42)},
+    '3MZjOGeXhpHbQ9ESMNFFnH': {'cluster': 5, 'pc': (-4.07, 0.85, 0.22)},
+    '3QF7smzmw2WWm7M1jt2Rac': {'cluster': 4, 'pc': (1.78, -0.09, 1.61)},
+    '3RLI8S7KpEZs4SqePGjM2R': {'cluster': 3, 'pc': (0.94, -1.21, -0.38)},
+    '3RXajeZOzqXWrQwLDfTzKK': {'cluster': 4, 'pc': (-0.25, 0.78, 0.45)},
+    '3ShIGvHRm0q9iIDowUMjls': {'cluster': 1, 'pc': (-1.23, 1.33, -0.24)},
+    '3VHdDisicXuBnW1NxIGzCI': {'cluster': 4, 'pc': (0.33, -0.49, 1.78)},
+    '3Vk1AHIh1CoiQzFroldMhO': {'cluster': 5, 'pc': (-3.91, 0.90, 0.36)},
+    '3XdXixlx3MoVzfL7pu9hx6': {'cluster': 5, 'pc': (-3.13, 0.56, -0.13)},
+    '3bnvoYUrPkgh0E3ZeYZ3me': {'cluster': 4, 'pc': (2.71, -0.16, 4.81)},
+    '3eBY8aZZdWNnNhNbc8B0yp': {'cluster': 6, 'pc': (-2.10, -2.97, 0.34)},
+    '3nxFYWNFG2qGYEuhEzomtO': {'cluster': 1, 'pc': (-1.67, 1.68, 2.23)},
+    '3o69iXC0KGd3X2OIG0KXkP': {'cluster': 1, 'pc': (-0.81, 2.41, 0.76)},
+    '3qBg6BeHJlGgwl5aCa09EC': {'cluster': 3, 'pc': (1.08, -0.54, 0.74)},
+    '3qDqg53YIe9mM5Ehx9v9FZ': {'cluster': 2, 'pc': (1.55, 1.08, -0.93)},
+    '3r0gvoaAkWmLdJO4UUv94v': {'cluster': 3, 'pc': (-2.78, -2.95, 0.96)},
+    '3z4KIXgkhLauhNP3ubB8cF': {'cluster': 1, 'pc': (-0.89, 0.67, -1.01)},
+    '3zGmkzXqXsXYVlGzJFpgCW': {'cluster': 3, 'pc': (0.87, -0.58, -1.06)},
+    '42Opc7AzlbYad3AuWsBGuf': {'cluster': 6, 'pc': (-2.23, -1.36, -0.26)},
+    '46uGvJVhYHOVRRNnRPbkYm': {'cluster': 3, 'pc': (0.91, -1.27, 0.34)},
+    '48XnOS1vTyzqaPps0Dalzp': {'cluster': 1, 'pc': (-0.06, 1.20, -0.62)},
+    '4CuivW1JgPauXPA4wYsf5K': {'cluster': 1, 'pc': (-1.62, 1.21, 0.16)},
+    '4DfHQvIAZmSmqcZbuO80sZ': {'cluster': 2, 'pc': (2.22, 0.34, -1.14)},
+    '4DpGa3bX0XvKd31JXWDcv7': {'cluster': 3, 'pc': (0.88, -0.78, -0.80)},
+    '4ED8r6i90zmUG4kfbiVoou': {'cluster': 1, 'pc': (0.20, 0.31, -1.00)},
+    '4Hf2Y8mG8LDZCfeycD93PP': {'cluster': 3, 'pc': (0.63, -2.15, -0.08)},
+    '4NKAjWfWZ2tcIzjCR9G5Zl': {'cluster': 2, 'pc': (1.57, 0.96, 0.55)},
+    '4NYRtDYROQW2D2ctcylcri': {'cluster': 6, 'pc': (-0.25, -3.16, -0.01)},
+    '4OF1mdSkA2z05DSwHNKVnz': {'cluster': 2, 'pc': (0.97, 0.90, -0.99)},
+    '4OI2gBlHqyNks8cbIBIKYw': {'cluster': 1, 'pc': (0.55, 0.08, -0.76)},
+    '4P9LdSPrnQl7KQwml4DUtq': {'cluster': 1, 'pc': (-0.71, 0.30, -0.31)},
+    '4QnHaiWq1oJiTgMnRFE0q8': {'cluster': 1, 'pc': (0.68, 0.70, -1.09)},
+    '4UfEEnq70NgLeq7NRfXPiD': {'cluster': 2, 'pc': (0.99, 0.57, 0.50)},
+    '4WhyfhjZaX6AVjAZslQAFs': {'cluster': 2, 'pc': (2.01, 0.40, -0.15)},
+    '4X6PkqzKUvWWKoq4YiiM1V': {'cluster': 2, 'pc': (1.65, -0.41, -0.65)},
+    '4Ykmj47fulJ1FTeCXctW91': {'cluster': 1, 'pc': (-1.77, 0.03, -0.40)},
+    '4Zhxtm6x56wEiRtSMAl28n': {'cluster': 4, 'pc': (1.07, 0.65, 0.45)},
+    '4b1Y41U44kP7gzO7MUNGbe': {'cluster': 2, 'pc': (1.07, -0.79, -0.46)},
+    '4bJV3YH3GEV7RMe0abbMyB': {'cluster': 2, 'pc': (0.86, 1.10, -0.92)},
+    '4bMj9zctX5PFp8vKP4K1yP': {'cluster': 4, 'pc': (0.68, 1.06, 0.95)},
+    '4bglcunoysO0W3puey06d6': {'cluster': 1, 'pc': (-1.36, -0.15, -0.76)},
+    '4dtyeDMnVKKo89QbbDtD5M': {'cluster': 3, 'pc': (0.03, -0.79, -0.83)},
+    '4hceSKjrkDTO0nMKFcb3sj': {'cluster': 4, 'pc': (0.87, 0.03, 0.95)},
+    '4lUlYGT5VvZWN3GBDIc9KT': {'cluster': 1, 'pc': (-0.77, 1.41, 0.37)},
+    '4ltqfN12ohaVZdM6C45gMg': {'cluster': 1, 'pc': (-0.30, -1.18, -0.99)},
+    '4qdyN6rpaGsspGeMzkCTNP': {'cluster': 2, 'pc': (1.28, 0.72, -0.35)},
+    '4sZgum8lh9hLPxREjgo4vo': {'cluster': 2, 'pc': (2.25, 0.10, -1.57)},
+    '4v5gEVQPDlPtsuQ77AJa0x': {'cluster': 4, 'pc': (0.37, -0.48, 1.30)},
+    '4xHC0Cj5ujXkmL8lSU6jXw': {'cluster': 1, 'pc': (-0.10, 0.93, -0.74)},
+    '4xhYxKvAxtrRd83MiqOy29': {'cluster': 2, 'pc': (1.40, 1.07, -1.20)},
+    '4yBfzgV6YA9dTKP8KUD35j': {'cluster': 2, 'pc': (1.87, -0.45, -0.73)},
+    '51NYFGDXYKS4FkRqkw98hx': {'cluster': 2, 'pc': (1.94, 0.38, -0.92)},
+    '52uobAwbP5In7cc0NV677y': {'cluster': 6, 'pc': (-3.00, -2.32, -0.18)},
+    '5327YgW0EzH0cd3kWRwx2l': {'cluster': 2, 'pc': (1.61, 1.00, -0.93)},
+    '53uyQrCca3tqGU8Voaa0oC': {'cluster': 3, 'pc': (0.46, -2.19, 0.07)},
+    '54n3iwz9mr7yxZi1EOX1Mz': {'cluster': 2, 'pc': (1.04, 0.44, -0.36)},
+    '54nFM2BgZpX292SYKP83fS': {'cluster': 6, 'pc': (-1.21, -3.84, -0.48)},
+    '56xBg5e9rfrFqcqa4llUw7': {'cluster': 1, 'pc': (-0.85, -0.61, -0.50)},
+    '5CznIqYyWcPBQ9YaIJtLLF': {'cluster': 2, 'pc': (1.58, 0.91, -0.15)},
+    '5Gp1fkuPV7CPtzKHfMH0kd': {'cluster': 1, 'pc': (0.22, -0.46, 0.44)},
+    '5NnQ2xIeHDKc1B19rxfcV3': {'cluster': 4, 'pc': (-1.46, -0.15, 2.10)},
+    '5P9EKJfOZtuwtTR5C5362i': {'cluster': 5, 'pc': (-4.08, 0.06, 0.23)},
+    '5PMtJGEDIO0eIToF0YRUQ5': {'cluster': 1, 'pc': (-1.73, -0.30, -0.61)},
+    '5W7Wtg5RIj6iI8EvE9j9fP': {'cluster': 2, 'pc': (0.42, 0.72, -0.56)},
+    '5WttRLHcZHhaIii5KwKh3Y': {'cluster': 1, 'pc': (-0.23, 0.06, -0.88)},
+    '5dIPCgTEDagbcs5QGmni8V': {'cluster': 6, 'pc': (0.40, -2.06, -0.59)},
+    '5dtUOwEmnDAzsdodWJk4DA': {'cluster': 1, 'pc': (-1.37, 0.85, -0.58)},
+    '5e0ZXu358l51ckAZvai2Ef': {'cluster': 5, 'pc': (-2.82, 1.07, -0.07)},
+    '5h8uDAcGUluOe7U8CZr0KB': {'cluster': 5, 'pc': (-3.71, 0.79, 0.31)},
+    '5iAE3uBqaZm9aHUx9yy6a0': {'cluster': 4, 'pc': (3.72, -2.71, 2.14)},
+    '5iTzaatezJzsUhX1QjT0Kp': {'cluster': 6, 'pc': (1.06, -2.96, -0.89)},
+    '5ipp3YpFKrJzWU7P1GHfgk': {'cluster': 4, 'pc': (1.47, -0.32, 0.64)},
+    '5l2zYkyTXtYa8xk965ofqD': {'cluster': 5, 'pc': (-4.93, 1.76, 0.68)},
+    '5ljt7BaKAlflOjNs9jysyh': {'cluster': 4, 'pc': (0.62, 0.67, 2.44)},
+    '5lz6U9dCYBmEY6oLrW22VE': {'cluster': 2, 'pc': (1.81, 0.87, 0.80)},
+    '5nWecUJF2pytSxsSpylzZw': {'cluster': 2, 'pc': (1.02, 1.11, -1.18)},
+    '5nnBHHzUDOGvdMBiXofB00': {'cluster': 1, 'pc': (-1.30, -0.12, -0.65)},
+    '5pkemVhnBiIzMs2NLsXomQ': {'cluster': 3, 'pc': (1.25, -0.37, -0.45)},
+    '5q7SGc4ngIhrYciZcgJ9Oe': {'cluster': 3, 'pc': (1.36, -0.16, 0.23)},
+    '5rOzcHIZaF038jMeHkUZR0': {'cluster': 3, 'pc': (-1.99, -1.77, -0.29)},
+    '5sjmWtBcZC1Tj4RoCfaK7k': {'cluster': 1, 'pc': (0.01, 0.11, -1.17)},
+    '5srzGYocC4qYFvckQm5AfC': {'cluster': 1, 'pc': (0.60, 2.04, -0.35)},
+    '5vCE6qjJI7NhpUrLWktoN9': {'cluster': 2, 'pc': (2.10, 0.35, -0.33)},
+    '608TXHjFnEau83A1DoyVCt': {'cluster': 2, 'pc': (0.98, 0.67, -0.87)},
+    '60RgF3vDNAl6crhVg4f9wl': {'cluster': 1, 'pc': (0.19, 1.80, -0.16)},
+    '67aVjLV3z4QqlXMBrGoOOJ': {'cluster': 3, 'pc': (1.32, -1.42, -0.61)},
+    '6BGmeieR3l4aW0VT2nvOcX': {'cluster': 1, 'pc': (-2.58, 0.87, 0.06)},
+    '6BlQbt6Cnf54niyISOZ6cB': {'cluster': 1, 'pc': (-0.32, 1.56, -0.57)},
+    '6BmKLSDW8jBHD2X42PraGM': {'cluster': 3, 'pc': (0.18, -0.06, -0.18)},
+    '6CfzlfApu49tOWGfvQSNDX': {'cluster': 3, 'pc': (1.24, -1.44, -0.37)},
+    '6D7zTed8zrkuKBPca2AqSI': {'cluster': 2, 'pc': (2.23, 0.35, -0.48)},
+    '6EjxYTyXiBzJz6PeOvPiou': {'cluster': 1, 'pc': (-1.77, 1.18, -0.37)},
+    '6F40qXj1WiSFfGnroqlNMd': {'cluster': 1, 'pc': (0.33, 1.69, -0.55)},
+    '6JGJdnIbq4UqKgzFaOIXwE': {'cluster': 6, 'pc': (-0.76, -2.59, -0.61)},
+    '6JZfK4Z75nZm3VcZOVrpy0': {'cluster': 1, 'pc': (-2.12, -0.54, -0.45)},
+    '6JrmHzxhaaavRtlXTOhm63': {'cluster': 1, 'pc': (0.42, 2.08, 1.50)},
+    '6R1183MokEiLiN6rYpzQO6': {'cluster': 1, 'pc': (-1.96, 1.31, -0.42)},
+    '6RJiY28t9jWpdy1JkUhNgK': {'cluster': 4, 'pc': (1.24, 0.77, 1.97)},
+    '6S04kJTdogPGPWN3jP7mNt': {'cluster': 3, 'pc': (-2.07, -1.91, 0.51)},
+    '6WkiWn8bf8S29wSk0VwK7h': {'cluster': 1, 'pc': (-0.37, -1.39, -0.88)},
+    '6XeW8fjwoAFQeQpYojPtVI': {'cluster': 3, 'pc': (1.54, -1.50, 0.18)},
+    '6b4lgjut9ogXlhcbFgLgtS': {'cluster': 1, 'pc': (-0.69, -0.69, -0.80)},
+    '6fd79PtewFZgLXYiIYhhLJ': {'cluster': 1, 'pc': (0.98, -0.07, -0.04)},
+    '6jAc23BgzNtiMCAGHe1buc': {'cluster': 4, 'pc': (0.91, 0.64, 5.87)},
+    '6jiumfqTwOpXW6PDzsIBKl': {'cluster': 1, 'pc': (0.42, 0.68, -0.54)},
+    '6lB7TMkQqSn2tKZGwFuqex': {'cluster': 3, 'pc': (0.48, -0.56, -0.09)},
+    '6vtcDkc68Des2RUrfTSXzK': {'cluster': 2, 'pc': (1.54, 0.17, -0.27)},
+    '6xbLVLgDmohMNPF9qGgDfc': {'cluster': 1, 'pc': (-0.72, -0.08, -0.19)},
+    '6yAc1rz1RXRlYJac99xusK': {'cluster': 3, 'pc': (0.55, -0.86, 0.35)},
+    '71yN0yrHej3jhKXewbmtEh': {'cluster': 2, 'pc': (1.20, 0.25, -0.86)},
+    '724utiMbqUfT1g3tqbfQYu': {'cluster': 3, 'pc': (0.76, -1.45, 0.39)},
+    '73xUwV4DkcelY7seMyY0PY': {'cluster': 2, 'pc': (-0.73, 0.15, -0.66)},
+    '75HFFq9W7Em0dTBG8QeGcT': {'cluster': 2, 'pc': (1.13, 0.04, -0.66)},
+    '78iHtTxYIK2mD6oL6lXqFF': {'cluster': 4, 'pc': (2.04, 0.11, 0.28)},
+    '78vWZN7hzHidEuDGOn9jyL': {'cluster': 1, 'pc': (-0.80, 1.57, -0.62)},
+    '7EPHu29KqhsGk4dZAjM0o4': {'cluster': 1, 'pc': (0.38, 2.64, 0.07)},
+    '7GAI6zWpmst6dSfu1wIA1O': {'cluster': 6, 'pc': (-0.99, -1.39, -1.02)},
+    '7KtbrK74NNA4ySRZ49DC7R': {'cluster': 1, 'pc': (-0.83, 0.58, -0.94)},
+    '7aUZM3W6RA8k47eqP985Kc': {'cluster': 4, 'pc': (1.07, 0.69, 1.08)},
+    '7bNgXJ9MgGG7xOkyz9SLOY': {'cluster': 2, 'pc': (2.15, 0.54, -0.90)},
+    '7cUdrZwlyXm0LSsYOlGaXZ': {'cluster': 2, 'pc': (1.14, -0.45, -0.93)},
+    '7fIsGfaxbm0UqiENtZ2l5R': {'cluster': 1, 'pc': (0.02, 0.24, -0.56)},
+    '7itC84qelbt08WXLeJfzgU': {'cluster': 5, 'pc': (-3.13, 1.30, -0.13)},
+    '7kvQptbfqq5b4MWRQOMrZC': {'cluster': 2, 'pc': (1.43, -0.11, -0.63)},
+    '7l8D5tXUVsdq95VQWn034C': {'cluster': 1, 'pc': (-1.37, -0.65, -0.56)},
+    '7lc4ue2LiSfYRaABxq4YkT': {'cluster': 4, 'pc': (3.06, 0.71, 3.91)},
+    '7luHAaHXty1Nl3AcscZIDT': {'cluster': 1, 'pc': (0.14, -0.88, -0.20)},
+    '7n7GrVTBmZMG4EULD5g0i3': {'cluster': 4, 'pc': (-0.20, 0.91, 1.74)},
+    '7qpIPPj6thT3L3zefsI04T': {'cluster': 2, 'pc': (1.29, 1.15, -0.33)},
+    '7tktCNlB0877dhdPZSRb7T': {'cluster': 3, 'pc': (-2.04, -2.51, -0.49)},
+    '7yeRNInEt2DOFYW0BkETEe': {'cluster': 2, 'pc': (1.43, 0.43, -1.03)},
+    '7zBUh6s2Ca8eAURfnVHCTS': {'cluster': 3, 'pc': (0.37, -0.71, 1.22)},
 }
 
 
@@ -755,7 +831,7 @@ def _cluster_tracklist_html(cluster_id, esc, slug, artists_of):
 def _radar_svg(cluster_id, esc):
     """Radar plot statique (pas besoin de script : les moyennes ne changent
     pas au clic). Chaque axe est mis à l'échelle sur le min/max observé sur
-    les 196 morceaux, pas sur celui du cluster, pour que les neuf formes
+    les 233 morceaux, pas sur celui du cluster, pour que les neuf formes
     restent comparables entre elles d'un cluster à l'autre."""
     means = CLUSTERS[cluster_id]["means"]
     color = CLUSTER_COLORS[cluster_id]
@@ -800,9 +876,10 @@ def _radar_svg(cluster_id, esc):
         poly_pts.append(point(i, t))
 
     poly = " ".join(f"{x:.1f},{y:.1f}" for x, y in poly_pts)
-    shape = (f'<polygon points="{poly}" fill="{color}" fill-opacity="0.28" '
-             f'stroke="{color}" stroke-width="2"/>')
-    dots = "".join(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2.6" fill="{color}"/>' for x, y in poly_pts)
+    cv = f"var(--c{cluster_id})"
+    shape = (f'<polygon points="{poly}" style="fill:{cv};stroke:{cv}" fill-opacity="0.28" '
+             f'stroke-width="2"/>')
+    dots = "".join(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2.6" style="fill:{cv}"/>' for x, y in poly_pts)
 
     name = esc(CLUSTERS[cluster_id]["name"])
     return (f'<svg class="radar" viewBox="0 0 {vb_w:.0f} {vb_h:.0f}" role="img" '
@@ -838,7 +915,7 @@ def _cluster_section(cluster_id, esc, slug, artists_of):
     tracklist = _cluster_tracklist_html(cluster_id, esc, slug, artists_of)
     return f"""
 <section class="sonic-cluster" id="cluster-{cluster_id}">
-<h3 class="cont"><span class="swatch" style="background:{color}"></span>
+<h3 class="cont"><span class="swatch" style="background:var(--c{cluster_id})"></span>
 {esc(c['name'])} <span class="cnt">{c['n']} tracks</span></h3>
 <p class="secblurb">{esc(c['blurb'])}</p>
 <div class="radar-wrap">
@@ -886,7 +963,7 @@ def _legend_html(esc):
         color = CLUSTER_COLORS[cid]
         items.append(
             f'<a class="legend-item" href="#cluster-{cid}" data-cluster="{cid}">'
-            f'<span class="swatch" style="background:{color}"></span>'
+            f'<span class="swatch" style="background:var(--c{cid})"></span>'
             f'{esc(c["name"])} <span class="cnt">{c["n"]}</span></a>')
     return '<div class="sonic-legend" id="sonic-legend">' + "".join(items) + '</div>'
 
@@ -913,7 +990,7 @@ def _scene_json(artists_of):
 
 def _cluster_meta_json():
     return json.dumps({
-        str(cid): {"name": CLUSTERS[cid]["name"], "color": CLUSTER_COLORS[cid]}
+        str(cid): {"name": CLUSTERS[cid]["name"], "color": CLUSTER_COLORS[cid], "dark": CLUSTER_COLORS_DARK[cid]}
         for cid in CLUSTERS
     })
 
@@ -988,8 +1065,12 @@ import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
   var hullMeshes = [];
   var sphereGeo = new THREE.SphereGeometry(0.09, 14, 10);
 
+  function isLight() { return document.documentElement.dataset.theme === 'light'; }
+  function clusterHex(cid) { var m = meta[cid] || {}; return (isLight() ? m.color : m.dark) || '#888'; }
+  var matsByCluster = {};
   Object.keys(byCluster).forEach(function (cid) {
-    var color = new THREE.Color((meta[cid] || {}).color || '#888');
+    var color = new THREE.Color(clusterHex(cid));
+    var mats = matsByCluster[cid] = [];
     var group = new THREE.Group();
     group.userData.cluster = cid;
     var pts = [];
@@ -1000,6 +1081,7 @@ import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
       var mesh = new THREE.Mesh(sphereGeo, new THREE.MeshStandardMaterial({
         color: color, roughness: 0.5, metalness: 0.05
       }));
+      mats.push(mesh.material);
       mesh.position.copy(v);
       mesh.userData.track = r;
       group.add(mesh);
@@ -1016,6 +1098,7 @@ import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
           color: color, transparent: true, opacity: 0.16,
           side: THREE.DoubleSide, depthWrite: false
         }));
+        mats.push(hull.material);
         hull.userData.cluster = cid;
         group.add(hull);
         hullMeshes.push(hull);
@@ -1028,8 +1111,17 @@ import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
   // négatif au positif, avec le pôle correspondant écrit à chaque bout.
   // Ajouté le 10 septembre 2026 : sans repère, la scène ne permettait pas de
   // s'orienter dans l'espace musical.
-  var axisColor = 0x9992a0;
+  var axisColor = isLight() ? 0x9c8f7c : 0x8a7a66;
   var axisMat = new THREE.LineBasicMaterial({ color: axisColor, transparent: true, opacity: 0.55 });
+  // Changement de thème (bouton de la barre de navigation) : on recolore
+  // points, volumes et axes sans reconstruire la scène.
+  document.addEventListener('tc-themechange', function () {
+    Object.keys(matsByCluster).forEach(function (cid) {
+      var hex = clusterHex(cid);
+      matsByCluster[cid].forEach(function (m) { m.color.set(hex); });
+    });
+    axisMat.color.set(isLight() ? 0x9c8f7c : 0x8a7a66);
+  });
   var axisEnds = [
     { a: new THREE.Vector3(-axisExtent.x * 1.08, 0, 0), b: new THREE.Vector3(axisExtent.x * 1.08, 0, 0) },
     { a: new THREE.Vector3(0, -axisExtent.y * 1.08, 0), b: new THREE.Vector3(0, axisExtent.y * 1.08, 0) },
@@ -1219,6 +1311,8 @@ import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
 """
 
 CSS = """
+:root{--c1:#E08A3C;--c2:#5E9CC4;--c3:#DE9AB2;--c4:#E8D27A;--c5:#D4584A;--c6:#8DB57A}
+:root[data-theme="light"]{--c1:#C6731C;--c2:#2D6A85;--c3:#CC8AA0;--c4:#DCC35C;--c5:#9A1F1F;--c6:#729161}
 .sonic-legend{display:flex;flex-wrap:wrap;gap:8px 14px;margin:14px 0 8px;
  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:.85rem}
 .legend-item{display:inline-flex;align-items:center;gap:7px;color:var(--ink);
@@ -1337,8 +1431,8 @@ going in: at most six groups, so a 3D view of them could stay legible, and
 at least four songs per group, so that no averaged profile could ever be
 narrow enough to read back as a single track's numbers, though this was
 never a serious risk of reconstructing individual Tunebat values in the
-first place; a margin of safety costs nothing here. Sizes run from 12 to
-71; no group needed to be merged into another to clear that floor. Each
+first place; a margin of safety costs nothing here. Sizes run from 16 to
+72; no group needed to be merged into another to clear that floor. Each
 radar plot is scaled to the same axis range across all six groups, so the
 shapes are directly comparable to one another; each group's average sits
 next to the same feature's average across the whole playlist, to read at
@@ -1426,6 +1520,8 @@ addition.</p>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>(function(){{var d=document.documentElement;try{{if(localStorage.getItem("tc-theme")==="light")d.dataset.theme="light"}}catch(e){{}}window.tcToggleTheme=function(){{var l=d.dataset.theme!=="light";if(l)d.dataset.theme="light";else delete d.dataset.theme;try{{localStorage.setItem("tc-theme",l?"light":"dark")}}catch(e){{}}document.dispatchEvent(new Event("tc-themechange"))}}}})()</script>
 <title>Transfem chants — by sonic profile</title>
 <meta name="description" content="{n_tracks} songs from Transfem chants, analysed and grouped by sound rather than by label, from Tunebat audio features reduced to three dimensions and six groups.">
 <style>{full_css}</style>

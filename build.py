@@ -303,6 +303,8 @@ def page():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>(function(){{var d=document.documentElement;try{{if(localStorage.getItem("tc-theme")==="light")d.dataset.theme="light"}}catch(e){{}}window.tcToggleTheme=function(){{var l=d.dataset.theme!=="light";if(l)d.dataset.theme="light";else delete d.dataset.theme;try{{localStorage.setItem("tc-theme",l?"light":"dark")}}catch(e){{}}document.dispatchEvent(new Event("tc-themechange"))}}}})()</script>
 <title>Transfem chants — sources</title>
 <meta name="description" content="Every track in the Transfem chants playlist, with each artist's publicly stated gender identity and the source for it.">
 <style>{css}</style>
@@ -310,7 +312,8 @@ def page():
 <body>
 <div class="wrap">
 {atlas._nav("index.html")}
-<header>
+<header class="withcover">
+<img class="cover" src="cover.jpg" width="150" height="150" alt="Playlist cover: a raised fist inside the circle of a male symbol whose arrow breaks apart, wrapped in thorned stems of white roses.">
 <h1>Transfem chants</h1>
 <p class="sub">{count} songs <em>sung</em> by transfeminine artists: trans women, and non-binary or agender people assigned male at birth. This page gives, for every artist, the gender identity as they have made it public, and the source for it.</p>
 <p class="stats"><strong>{st["tracks"]}</strong> tracks &middot; <strong>{st["presented"]}</strong> artists presented here as transfeminine, and <strong>{st["open_cases"]}</strong> entries marked unresolved and not counted among them &middot; <strong>{st["countries"]}</strong> countries and territories &middot; <strong>{st["languages"]}</strong> languages</p>

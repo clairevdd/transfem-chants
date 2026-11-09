@@ -139,6 +139,8 @@ def _shell(title, description, css, body, nav):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>(function(){{var d=document.documentElement;try{{if(localStorage.getItem("tc-theme")==="light")d.dataset.theme="light"}}catch(e){{}}window.tcToggleTheme=function(){{var l=d.dataset.theme!=="light";if(l)d.dataset.theme="light";else delete d.dataset.theme;try{{localStorage.setItem("tc-theme",l?"light":"dark")}}catch(e){{}}document.dispatchEvent(new Event("tc-themechange"))}}}})()</script>
 <title>{title}</title>
 <meta name="description" content="{description}">
 <style>{css}</style>
@@ -151,6 +153,12 @@ def _shell(title, description, css, body, nav):
 </body>
 </html>
 """
+
+
+# Bouton de choix du thème (sombre par défaut, clair au choix), ajouté le
+# 9 novembre 2026 à la demande de Claire. Le script qui le fait marcher est
+# dans l'en-tête de chaque page.
+THEME_BUTTON = ('<button type="button" class="themebtn" onclick="tcToggleTheme()" aria-label="Switch between dark and light theme"><span class="to-light">Light theme</span><span class="to-dark">Dark theme</span></button>')
 
 
 def _nav(here):
@@ -166,6 +174,7 @@ def _nav(here):
             + link("tags.html", "By tags")
             + link("sonic.html", "By sonic profile")
             + link("takedown.html", "Removals")
+            + THEME_BUTTON
             + '</nav>')
 
 
