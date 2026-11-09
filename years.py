@@ -2899,10 +2899,10 @@ YEARS = {
         "kind": "first",
         "spotify": "2008-08-29",
         "status": "partial",
-        "source": 'Tunebat platform metadata (from a screenshot supplied by Claire); Discogs release 2963112, opened in session',
-        "url": (None, "https://www.discogs.com/release/2963112"),
+        "source": 'Tunebat platform metadata (from a screenshot supplied by Claire); Discogs release 2963112, opened in session; Genius',
+        "url": (None, "https://www.discogs.com/release/2963112", "https://genius.com/Dick-feller-the-credit-card-song-lyrics"),
         "checked": "2026-11-09",
-        "note": 'First released in 1973 as a United Artists 7-inch single (UA-XW535-X). The version on the playlist is a later re-recording, issued by K-Tel in 2008; the date here is that of the song, not of this recording.',
+        "note": 'First released in 1973 as a United Artists 7-inch single (UA-XW535-X). The version on the playlist is a later re-recording, which appeared on the album Centaur of Attention in 2001 according to Genius and was reissued by K-Tel in 2008; the date here is that of the song, not of this recording.',
     },
     # Marcie Free — Say It Like You Mean It
     "6CfzlfApu49tOWGfvQSNDX": {
@@ -2945,7 +2945,7 @@ YEARS = {
     },
     # saoirse dream — grimdark
     "0DOqYCfifzpYK5SjOriuap": {
-        "first_public": "2026-08-26",
+        "first_public": "2026-10-09",
         "first_record": None,
         "precision": "day",
         "kind": "earliest_known",
@@ -2954,7 +2954,7 @@ YEARS = {
         "source": 'Tunebat platform metadata (from a screenshot supplied by Claire); MusicBrainz recording, opened in session',
         "url": (None, "https://musicbrainz.org/recording/557b5209-837d-4e63-8ea3-76af398f872d"),
         "checked": "2026-11-09",
-        "note": 'MusicBrainz gives a first release on 26 August 2026, ahead of the album of the same name (9 October 2026).',
+        "note": 'Title track of the album grimdark. MusicBrainz lists an earlier release of the recording on 26 August 2026; the album date is kept.',
     },
     # Michaela Jaé — Something To Say
     "5CznIqYyWcPBQ9YaIJtLLF": {
@@ -3006,12 +3006,12 @@ YEARS = {
         "source": 'Tunebat platform metadata (from a screenshot supplied by Claire); MusicBrainz recording and Discogs release 960466, opened in session',
         "url": ("https://musicbrainz.org/recording/28be29d4-6f80-4f80-b6f9-33462dd2311c", "https://www.discogs.com/release/960466"),
         "checked": "2026-11-09",
-        "note": "First on the album Love's Small Song (Durtro, 2002). The platform date is that of the 2026 album Child of Joy; its version runs 3:16 against 3:37 in 2002, so it may be a new recording.",
+        "note": "First on the album Love's Small Song (Durtro, 2002). The platform date is that of the 2026 album Child of Joy; its version runs 3:16 against 3:37 in 2002, so it may be a new recording. A 2019 recording on Spotify has the same lyrics.",
     },
     # Lucia Lucas — Lili Elbe, Act II Scene 1 (live)
     "1BLFIHCwSpQf74tIjyj37K": {
         "first_public": "2023-10",
-        "first_record": None,
+        "first_record": "2023",
         "precision": "month",
         "kind": "first",
         "spotify": "2026-07-31",
@@ -3019,7 +3019,7 @@ YEARS = {
         "source": 'Wikipedia, Lili Elbe (opera), opened in session',
         "url": "https://en.wikipedia.org/wiki/Lili_Elbe_(opera)",
         "checked": "2026-11-09",
-        "note": 'Dated by the world premiere at Theater St. Gallen in October 2023, with Lucia Lucas in the title role; Wikipedia gives both 22 and 23 October. The live recording was released in July 2026.',
+        "note": 'Dated by the world premiere at Theater St. Gallen in October 2023, with Lucia Lucas in the title role; Wikipedia gives both 22 and 23 October. The live recording was made in that 2023 production and released in July 2026.',
     },
     # Katey Red — Punk Under Pressure
     "1F99de97B9zXdnMdtq8KrH": {
@@ -3032,7 +3032,7 @@ YEARS = {
         "source": 'Tunebat platform metadata (from a screenshot supplied by Claire); Discogs release 3314014, opened in session',
         "url": (None, "https://www.discogs.com/release/3314014"),
         "checked": "2026-11-09",
-        "note": "Spotify also lists this song as Melpomeme Block Party (Punk Under Pressure); Melpomene Block Party first appeared on a 1999 Take Fo' Records EP. That the two titles are the same song rests on Spotify's title. The platform date is that of the 2013 compilation Katey's Hits.",
+        "note": "Spotify also lists this song as Melpomeme Block Party (Punk Under Pressure); Melpomene Block Party first appeared on a 1999 Take Fo' Records EP. Spotify's 2000 recording under that title sounds almost identical to the 2013 version on the playlist, from the compilation Katey's Hits.",
     },
     # Portraits Of Tracy — Caught In A Jam
     "67aVjLV3z4QqlXMBrGoOOJ": {
