@@ -29,13 +29,16 @@ SECTIONS = [
             ('02L1ngagXNRt8W3Flbe9Sw', 'Boy in a Dress', 'Namoli Brennet'),
             ('1OpCGPKSq4IfpvLptsSMR9', 'I, Too', 'Tona Brown, Geraldine Boone'),
             ('1QrL7ucS71Ih4HXBOsuajv', 'Laabe Muxhe', 'La Bruja de Texcoco'),
+            ('1BLFIHCwSpQf74tIjyj37K', 'Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live', "Tobias Picker, Aryeh Lev Stollman, Sinfonieorchester St. Gallen, Lucia Lucas, Sylvia D'Eramo, Modestas Pitrenas"),
             ('3nxFYWNFG2qGYEuhEzomtO', 'Vidalita, Vidalita', 'Susy Shock'),
+            ('5h8uDAcGUluOe7U8CZr0KB', 'If I Was a Woman', 'Taylor Abrahamse'),
             # II — plus saturé
             ('5e0ZXu358l51ckAZvai2Ef', 'Geceler', 'Bülent Ersoy'),
             ('4Ykmj47fulJ1FTeCXctW91', 'Anh Ta Bỏ Em Rồi', 'Hương Giang'),
             ('6BGmeieR3l4aW0VT2nvOcX', 'Con Sangre', 'Alicia Ramos'),
             ('07m5UbUHOQCofRK16k83Eg', 'Duniya', 'Shyraa Roy, Kashif Ali'),
             ('78vWZN7hzHidEuDGOn9jyL', 'Baja la velocidad', 'Emma Cadenas'),
+            ('3o69iXC0KGd3X2OIG0KXkP', 'The Credit Card Song - Rerecorded', 'Dick Feller'),
             ('73xUwV4DkcelY7seMyY0PY', 'Lady on the Subway', 'Beth Elliott'),
             ('4dtyeDMnVKKo89QbbDtD5M', 'Ballad of the Oklahoma Women\'s Liberation Front', 'Beth Elliott'),
             ('3BYSoeWlqUgIwfY77C8VgE', 'Té de Malvón', 'La Bruja de Texcoco'),
@@ -54,6 +57,8 @@ SECTIONS = [
             ('3AyUAvAQGKyMzC9jGQeIlX', 'Dogging', 'Adèle Anderson'),
             ('4CuivW1JgPauXPA4wYsf5K', 'Chercher la femme', 'Coccinelle'),
             ('5dtUOwEmnDAzsdodWJk4DA', 'Any Other Way', 'Jackie Shane'),
+            ('6R1183MokEiLiN6rYpzQO6', 'So Bad', 'Baby Dee'),
+            ('12dWvvky0ceP3vCCgwni0g', 'Hello Grindr', 'Lady Red Couture'),
             ('5NnQ2xIeHDKc1B19rxfcV3', 'I Will Survive', 'Veronica Klaus'),
             ('0VhGzYfT2ZOFz31b5IH7yJ', 'Un garçon qui pleure', 'Marie France, Chrissie Hynde'),
             ('14oyjbbiyic1Hh2ArExQwX', 'Mil e Uma Noites', 'Candy Mel, Liniker'),
@@ -69,6 +74,7 @@ SECTIONS = [
             ('5WttRLHcZHhaIii5KwKh3Y', 'I Am Her', 'Shea Diamond'),
             ('0rK7QTyYjhPFadLH2YDl84', 'Picture of a Man', 'Our Lady J'),
             ('5W7Wtg5RIj6iI8EvE9j9fP', 'Percotê', 'Candy Mel'),
+            ('6xbLVLgDmohMNPF9qGgDfc', 'An Old Fashioned Love Song', 'Cait Brennan'),
             ('0gm0OruZdJlu8jamJe5OCh', 'Keisha Complexion', 'Shea Diamond'),
             ('608TXHjFnEau83A1DoyVCt', "It's Honey", 'Honey Mahogany'),
             ('1jTo2GUdfyjvSBaXaV9IMh', 'שיר גאווה', 'Gila Goldstein'),
@@ -91,6 +97,7 @@ SECTIONS = [
             ('6S04kJTdogPGPWN3jP7mNt', 'Avoid The Sun', 'Anthony Lexa'),
             ('3r0gvoaAkWmLdJO4UUv94v', 'Desafío', 'Arca'),
             ('42Opc7AzlbYad3AuWsBGuf', 'Only to Trip and Fall Down Again', 'Katie Dey'),
+            ('3HO9UrofF8D3AfKY9ZLLbB', 'Oracle', 'Alif Hilal'),
             ('2Ff6Ghw8TRJGuAbJamtt4X', 'Serotonin Serenade', 'SuperKnova'),
             ('48XnOS1vTyzqaPps0Dalzp', 'Ponyboy', 'SOPHIE'),
             ('7tktCNlB0877dhdPZSRb7T', 'Is It Cold In The Water?', 'SOPHIE'),
@@ -105,6 +112,7 @@ SECTIONS = [
             ('2KryklrVDGmWL8IvoGNbb5', 'Zulu Lami', 'Umlilo'),
             ('5nnBHHzUDOGvdMBiXofB00', 'Exiliades', 'Luisa Almaguer'),
             ('5rOzcHIZaF038jMeHkUZR0', 'Reverie', 'Arca'),
+            ('1SOusugJKKzDUxR3QsQUDd', 'Rolling Stoner', 'Adore Delano'),
             # III — plus saturé
             ('6jiumfqTwOpXW6PDzsIBKl', 'I Keep Doing This to Myself', 'Sonja Sajzor'),
             ('6JGJdnIbq4UqKgzFaOIXwE', 'Mataronomatar', 'Luisa Almaguer'),
@@ -116,10 +124,12 @@ SECTIONS = [
             ('084dIWdHoow6G00mBlxsOu', 'Fôlego', 'Ventura Profana'),
             ('1huN927tTdSiwF90FBHXkT', 'Immaterial', 'SOPHIE'),
             ('3qBg6BeHJlGgwl5aCa09EC', 'Revolution Lover', 'Left at London'),
+            ('54nFM2BgZpX292SYKP83fS', 'Emergency', 'Lotic'),
             ('6RJiY28t9jWpdy1JkUhNgK', 'Mequetrefe', 'Arca'),
             ('2PaTBoG5uDz6H3xPhnnDLz', 'Digital Empathy', 'Trevi Moran'),
             ('2rMjMkOapLVsxbDSap5Uy2', 'Humano, Demasiado Humano', 'Roberta Marrero'),
             ('6lB7TMkQqSn2tKZGwFuqex', 'Break Away', 'Miss Benny'),
+            ('67aVjLV3z4QqlXMBrGoOOJ', 'Caught In A Jam', 'Portraits Of Tracy'),
         ],
     },
     {
@@ -149,6 +159,7 @@ SECTIONS = [
             ('7cUdrZwlyXm0LSsYOlGaXZ', 'NO FALSE IDOLS', 'Cara Cunningham'),
             ('3bnvoYUrPkgh0E3ZeYZ3me', 'OCTOPUS.LADY', 'Changeline'),
             ('7lc4ue2LiSfYRaABxq4YkT', 'JE.DÉTESTE.LA.FRANCE.pt1 (il y aura pas de pt2)', 'Changeline'),
+            ('6CfzlfApu49tOWGfvQSNDX', 'Say It Like You Mean It', 'Marcie Free'),
             ('0wIpjjcXFgGtJUmBIRAAju', 'Black Me Out', 'Against Me!'),
             ('2inX5xyazBvcZYLx3wRBwh', 'Berubah', 'Tingtongketz'),
             # III — plus saturé
@@ -173,6 +184,7 @@ SECTIONS = [
             ('4xHC0Cj5ujXkmL8lSU6jXw', 'Fckboi', 'Jiggly Caliente'),
             ('2iqTYCPRTqojxM7QJvBtk2', 'Breakdown', 'Ms. Boogie'),
             ('6JrmHzxhaaavRtlXTOhm63', 'Queen Of This Shit', 'Quay Dash'),
+            ('1F99de97B9zXdnMdtq8KrH', 'Punk Under Pressure', 'Katey Red'),
             # twi/anglais (Ghana)
             ('3QF7smzmw2WWm7M1jt2Rac', 'Wo Fie', 'Angel Maxine, Wanlov The Kubolor, Sister Deborah'),
             # espagnol (Argentine)
@@ -196,6 +208,7 @@ SECTIONS = [
             # I — plus nu
             ('0ZeVhHgvMsF6dqo2AFSfut', "i'm 2 years on hormones and i'm still sad i want a refund", 'TAMAGOTCHI MASSACRE'),
             ('1PEPcLm2QEo0HCRIhQjPq1', 'Second hand embarrassment', 'underscores'),
+            ('0DOqYCfifzpYK5SjOriuap', 'grimdark', 'saoirse dream'),
             ('7n7GrVTBmZMG4EULD5g0i3', 'warm and fuzzy', 'osquinn'),
             ('0VNjaRcmIowjLbPtYDhLuh', 'Your favorite sidekick', 'underscores, 8485'),
             ('1d3hBkCcMvVzsZjaMiVvNs', 'SRS', 'Chase Icon'),
@@ -239,6 +252,7 @@ SECTIONS = [
             ('308z6pEGHS90tuDNAngZnh', 'Diva', 'Electra Elite'),
             ('7fIsGfaxbm0UqiENtZ2l5R', 'Fanm Zordi', 'Louïz'),
             ('1gs7juUrbHx9LoeAQWp8X0', 'Me Ama Que Eu Sei', 'TRAEMME'),
+            ('1vOi99NYsymJomYiivTVj2', 'Poison Ivy', 'Laganja Estranja'),
             ('4bMj9zctX5PFp8vKP4K1yP', 'Pantanal Pansexual', 'Marina Mathey'),
             ('6BmKLSDW8jBHD2X42PraGM', 'Kass kassé', 'Louïz'),
             ('4QnHaiWq1oJiTgMnRFE0q8', 'Mi Amor Soy Yo', 'Zemmoa, Tessa Ia, Trans-X'),
@@ -264,6 +278,7 @@ SECTIONS = [
             ('7luHAaHXty1Nl3AcscZIDT', 'Faces', 'Mila Jam'),
             ('2R7G2Itn0b73uthZCNPIrR', 'Maria Padilha', 'Bixarte'),
             ('4bJV3YH3GEV7RMe0abbMyB', 'Eu Vou Lutar', 'Léo Áquilla'),
+            ('5CznIqYyWcPBQ9YaIJtLLF', 'Something To Say', 'Michaela Jaé'),
             ('4NKAjWfWZ2tcIzjCR9G5Zl', 'AMAFILIPINA (Extended Version)', 'Marina Summers'),
             ('78iHtTxYIK2mD6oL6lXqFF', 'Travesti del Perú', 'Gad Yola'),
             ('1KnagH7nZ84p8vPMPZQ8hk', 'TSPG69', 'Macy Rodman'),
@@ -304,4 +319,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 218
+assert len(all_tracks()) == 233

@@ -81,6 +81,7 @@ GEO_BLOCK = {
     "puerto rico", "south african", "spain", "spanish", "sweden", "swedish",
     "thailand", "turkish", "united states", "american", "japanese",
     "french rap", "usa", "venezuela", "filipino", "philippines",
+    "memphis music",
 }
 
 JUNK_BLOCK = {
@@ -103,6 +104,10 @@ JUNK_BLOCK = {
     "rupauls drag race", "rupauls drag race all stars",
     "rupauls drag race all stars winner", "bimbo", "drag music",
     "drag pop", "drag queencore",
+    "female vocals", "female artists", "brazilian polka metal", "big star",
+    "treble", "little star", "youngstar", "under 300 plays", "under 60 plays",
+    "under 10 listeners", "under 40 plays", "under 20 listeners",
+    "under 200 plays", "under 50 plays", "non-music",
 }
 # Ajouts du 19 septembre 2026, lot Jup do Bairro/Macy Rodman/Nomi Ruiz/
 # Ventura Profana : "usa" (GEO_BLOCK) est le même blocage que "united states"
@@ -335,4 +340,19 @@ TAGS = {
     '5ipp3YpFKrJzWU7P1GHfgk': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop']},  # Juriji Der Klee — XIXI (Last.fm track tags empty, artist tags used; "spanish"/"belgium" geographic, drag tags not musical; MusicBrainz recording and artist without genres; no Discogs artist)
     "5q7SGc4ngIhrYciZcgJ9Oe": {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'hyperpop']},  # Ve'ondre — Scene Boy (Last.fm track tags empty, artist tags used, "american" geographic; MusicBrainz recording and artist without genres; no Discogs artist)
     '6jAc23BgzNtiMCAGHe1buc': {'discogs': ['comedy', 'musical'], 'musicbrainz': [], 'lastfm': []},  # Violeta La Burra — Mi Tragedia (Discogs styles of master 1626184; MusicBrainz artist without genres; Last.fm empty)
+    '1vOi99NYsymJomYiivTVj2': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'rap']},  # Laganja Estranja — Poison Ivy (Last.fm track tags empty, artist tags used; MusicBrainz artist tagged only "drag queen", blocked; no Discogs entry)
+    '1SOusugJKKzDUxR3QsQUDd': {'discogs': ['alternative rock'], 'musicbrainz': [], 'lastfm': ['pop', 'rock', 'hip hop']},  # Adore Delano — Rolling Stoner (Discogs release 19465222, Dirty Laundry; MusicBrainz recording and EP without genres, artist tags identity only; Last.fm artist tags, "drag queen" blocked)
+    '3o69iXC0KGd3X2OIG0KXkP': {'discogs': ['country'], 'musicbrainz': [], 'lastfm': ['country', 'singer-songwriter']},  # Dick Feller — The Credit Card Song (Discogs master 969422; MusicBrainz recording and artist without genres; Last.fm artist tags, "singer/songwriter" merged)
+    '6CfzlfApu49tOWGfvQSNDX': {'discogs': ['aor', 'hard rock'], 'musicbrainz': ['aor', 'rock'], 'lastfm': ['hard rock', 'melodic rock']},  # Marcie Free — Say It Like You Mean It (Discogs release 22112593; MusicBrainz artist genres, "transgender" blocked; Last.fm artist tags)
+    '3HO9UrofF8D3AfKY9ZLLbB': {'discogs': ['experimental', 'choral', 'contemporary', 'electroacoustic', 'folk'], 'musicbrainz': ['electronic', 'experimental'], 'lastfm': ['experimental', 'electronic', 'electroacoustic']},  # Alif Hilal — Oracle (Discogs master 3903052, Hymnal; MusicBrainz artist genres, "transgender" blocked; Last.fm artist tags, "usa" geographic)
+    '54nFM2BgZpX292SYKP83fS': {'discogs': ['experimental', 'contemporary r&b', 'bass music'], 'musicbrainz': ['art pop', 'avant-garde', 'electronic', 'electronica', 'experimental'], 'lastfm': ['electronic', 'experimental', 'deconstructed club', 'grime', 'bass']},  # Lotic — Emergency (Discogs master 2400712, Water; MusicBrainz release group Water; Last.fm artist tags)
+    '0DOqYCfifzpYK5SjOriuap': {'discogs': ['emo', 'chiptune', 'indie rock'], 'musicbrainz': ['bedroom pop', 'digicore', 'hyperpop', 'pop'], 'lastfm': ['hyperpop', 'electronic', 'emo-pop', 'bitpop']},  # saoirse dream — grimdark (Discogs master 4400588; MusicBrainz artist genres, "queer" blocked; Last.fm artist tags)
+    '5CznIqYyWcPBQ9YaIJtLLF': {'discogs': [], 'musicbrainz': ['pop'], 'lastfm': ['funk', 'pop', 'rnb', 'vocal']},  # Michaela Jaé — Something To Say (MusicBrainz release group; Last.fm artist tags; no Discogs entry)
+    '5h8uDAcGUluOe7U8CZr0KB': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Taylor Abrahamse — If I Was a Woman (Last.fm artist tags are all listening-count noise, blocked; no MusicBrainz or Discogs entry)
+    '6xbLVLgDmohMNPF9qGgDfc': {'discogs': ['power pop'], 'musicbrainz': [], 'lastfm': ['soul', 'singer-songwriter', 'pop']},  # Cait Brennan — An Old Fashioned Love Song (Discogs master 1573951; MusicBrainz without genres; Last.fm artist tags, "female vocalist"/"female" variants and noise blocked, "memphis music" geographic)
+    '6R1183MokEiLiN6rYpzQO6': {'discogs': ['folk', 'modern', 'field recording'], 'musicbrainz': ['classical', 'field recording', 'folk'], 'lastfm': ['cabaret', 'singer-songwriter', 'freak folk', 'chamber pop', 'avant-garde']},  # Baby Dee — So Bad (Discogs master 1495113 and MusicBrainz release group, Love's Small Song, "non-music" blocked; Last.fm artist tags, "avantgarde" merged)
+    '1BLFIHCwSpQf74tIjyj37K': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Lucia Lucas — Lili Elbe, Act II Scene 1 (no Discogs, MusicBrainz or Last.fm tags)
+    '1F99de97B9zXdnMdtq8KrH': {'discogs': [], 'musicbrainz': [], 'lastfm': ['sissy bounce', 'rap', 'hip hop']},  # Katey Red — Punk Under Pressure (Last.fm artist tags, "queer" blocked; MusicBrainz recording and artist without genres; Discogs release of this version not identified)
+    '67aVjLV3z4QqlXMBrGoOOJ': {'discogs': [], 'musicbrainz': ['alternative hip hop', 'hip hop', 'indie pop', 'rock', 'synth-pop', 'alternative', 'r&b and neo-soul'], 'lastfm': ['new rave', 'indietronica', 'neo-psychedelia']},  # Portraits Of Tracy — Caught In A Jam (MusicBrainz artist genres; Last.fm track tags; no Discogs entry)
+    '12dWvvky0ceP3vCCgwni0g': {'discogs': [], 'musicbrainz': [], 'lastfm': ['dance', 'pop']},  # Lady Red Couture — Hello Grindr (Last.fm artist tags, "united states" geographic, "drag queen" blocked; MusicBrainz artist without genres; no Discogs entry)
 }

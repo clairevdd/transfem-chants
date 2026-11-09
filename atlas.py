@@ -25,6 +25,8 @@ COUNTRIES = {
     "Chile": ("CL", "South America"),
     "France": ("FR", "Europe"),
     "Germany": ("DE", "Europe"),
+    "Lithuania": ("LT", "Europe"),
+    "Switzerland": ("CH", "Europe"),
     "Ghana": ("GH", "Africa"),
     "Indonesia": ("ID", "Asia"),
     "Ireland": ("IE", "Europe"),

@@ -927,4 +927,84 @@ ART = {
  "Copla, flamenco and cabaret performer from Herrera, Seville, a pioneer of the Spanish travesti stage from the late 1970s, in Barcelona and Paris. Died in January 2020. Marked partial: no first-person statement of a female or trans identity was found; in her later years she described herself, in the words reported by El Salto, as neither travesti nor drag queen, only as an artist.",
  "soy artista",
  "El Salto, 30 January 2020","https://www.elsaltodiario.com/obituario/violeta-burra-pedro-moreno-fallece-travesti"),
+
+'Laganja Estranja': ('verified','United States','English',
+ "Choreographer, singer and drag performer based in Los Angeles, known from the sixth season of RuPaul's Drag Race. She came out as a trans woman in 2021.",
+ "I'm able to come off stage and take my makeup off and still see a beautiful woman in the mirror.",'Entertainment Weekly, 15 June 2021','https://ew.com/tv/rupauls-drag-race-laganja-estranja-comes-out-trans/'),
+
+'Adore Delano': ('verified','United States','English',
+ "Singer-songwriter and drag performer, first seen on American Idol in 2008 and later on RuPaul's Drag Race. She came out as transgender in July 2023, after describing herself as non-binary for several years.",
+ 'I am transgender','Entertainment Weekly, 26 July 2023','https://ew.com/tv/adore-delano-comes-out-trans-rupauls-drag-race-american-idol/'),
+
+'Dick Feller': ('verified','United States','English',
+ 'Deena Kaye Rose, country singer-songwriter who wrote and recorded for United Artists from the 1970s under the name Dick Feller, the name under which her recordings are still credited. She has since come out publicly as a trans woman and goes by Deena Kaye Rose; her memoir, Some Days Are Diamonds, tells of her struggle to transition.',
+ "I'm a mature lady; I'm an older woman; I'm a senior citizen and I struggled with this at a time when we didn't even have the word.",'HuffPost, 12 May 2016','https://www.huffpost.com/entry/deena-kaye-rose-talks-tra_b_9902330'),
+
+'Marcie Free': ('verified','United States','English',
+ 'Hard rock and AOR singer, lead voice of King Kobra, Signal and Unruly Child. She came out as a trans woman in 1993. Died in October 2025.',
+ 'I think that is pretty much obvious by now being that I am transsexual and the world was not ready for the likes of me or anyone like me.','MelodicRock interview (archived June 2012)','https://web.archive.org/web/20120603125453/http://melodicrock.com/interviews/marciefree.html'),
+
+'Alif Hilal': ('verified','United States / Germany','—',
+ 'Vocalist, composer and producer born in Pennsylvania and based in Berlin, who built her work from her own layered voice. She recorded as Lyra Pramuk until June 2026, when she took the name Alif Hilal after her conversion to Islam.',
+ 'When I first started transitioning and asserting an identity, I wanted to place myself and have an identity as a queer person and as a trans woman.','Pitchfork, 23 June 2020','https://pitchfork.com/features/rising/lyra-pramuk-fountain-interview/'),
+
+'Lotic': ('verified','United States / Germany','English',
+ "J'Kerian Morgan, electronic musician from Texas based in Berlin, who came up through the Janus collective and began singing on her own records with Water (2021).",
+ "But also I didn't think about it too much, but it's more an image thing, especially now being a woman.",'Flaunt (interview on Water)','https://flaunt.com/blog/lotic'),
+
+'saoirse dream': ('verified','United States','English',
+ 'Catherine Egbert, musician based in Portland, Oregon, whose work runs from bedroom pop and chiptune to emo; grimdark (2026) draws on her anger as a trans woman.',
+ 'It probably won’t surprise you to hear a trans woman say she’s got a lot to be angry about.','New Noise Magazine, 9 October 2026','https://newnoisemagazine.com/todays-new-noise-saoirse-dream/'),
+
+'Michaela Jaé': ('verified','United States','English',
+ 'Michaela Jaé Rodriguez, actress and singer, known for Rent off-Broadway and for Pose, which made her the first trans woman nominated for an Emmy in a major acting category. She released her first single in 2021.',
+ 'That’s a cis female role, and a trans woman was called in for that, and I think that’s actually very, very important,','Playbill, 7 June 2016','https://www.playbill.com/article/mj-rodriguez-talks-her-transition-and-hamilton-audition'),
+
+'Taylor Abrahamse': ('verified','Canada','English',
+ "Singer-songwriter and voice actress from Peterborough, Ontario, who also records children's songs; she organises Fredathon, a music marathon raising funds for queer and trans people.",
+ 'Few things are more empowering and dissolve division and bigotry faster than a Queen song, so making Fredathon was a natural extension of the world I want to see as a trans woman.','kawarthaNOW, 12 August 2026','https://kawarthanow.com/2026/08/12/fredathon-will-channel-the-music-of-queen-and-freddie-mercury-into-support-for-queer-and-trans-people/'),
+
+'Cait Brennan': ('verified','United States','English',
+ 'Singer-songwriter and producer from Phoenix, working in power pop, glam and soul. She began performing as a teenager, at the start of her transition.',
+ 'I understood to the core of my being that I was a girl. Not a trans girl. Trans is the circumstances, trans is the journey, girl is the identity, at least for me. Quasi-human female.','Popdose, 8 February 2016','https://popdose.com/the-popdose-interview-the-incredible-music-and-story-of-cait-brennan/'),
+
+'Baby Dee': ('verified','United States','English',
+ 'Singer, harpist and pianist from Cleveland, a former church organist and Coney Island performer who began recording in the 2000s, with Anohni among her early supporters. In the interview cited she describes herself with a reclaimed slur.',
+ "To keep a job like that and be tranny is like, that's a bit of a stretch.",'NPR, Day to Day, 22 January 2008','https://www.npr.org/transcripts/17940655'),
+
+'Lucia Lucas': ('verified','United States','English',
+ "Baritone, the first trans singer to take a principal role on an American opera stage (2018). She created the title role of Tobias Picker's opera Lili Elbe at Theater St. Gallen in 2023.",
+ 'The only thing that’s different is that I am now privately living my life as a woman. There’s no difference aside from that. Do you have a problem with that?','WFMT, 3 May 2019','https://www.wfmt.com/2019/05/03/trans-baritone-lucia-lucas-on-making-her-us-debut/'),
+
+'Katey Red': ('partial','United States','English',
+ 'Bounce MC from New Orleans, credited with founding sissy bounce at the end of the 1990s. Marked partial: her statement, in a 2019 Know Wave interview, could not be checked word for word during this session; she refers to herself in the feminine.',
+ "I'm just the first homosexual, openly gay, transgender to do Bounce music.",'Know Wave, 2019 (interview, not checked word for word)','https://know-wave.com/?p=348'),
+
+'Portraits Of Tracy': ('partial','United States','English',
+ 'Tracy Geneviève Amare, singer, multi-instrumentalist and producer. Marked partial: the press describes her as a trans woman, but no first-person statement was found; her earlier record re-imagined her upbringing as a trans teenager through a character named Junie.',
+ None,'The FADER, 23 July 2026; The Line of Best Fit, 24 July 2026','https://www.thefader.com/2026/07/23/portraits-of-tracy-q-from-where-do-our-primal-instincts-originate-a-mtv-interview'),
+
+'Lady Red Couture': ('verified','United States','English',
+ 'Kareemia Baines, singer and drag performer from Los Angeles, co-host of Hey Qween!, known for singing live rather than lip-syncing. Died in July 2020.',
+ "I am a Black, American trans woman who is making a difference in this world and all I'm asking is that you love me like I love you",'The Advocate, 27 July 2020 (from one of her last Instagram videos)','https://www.advocate.com/news/2020/7/27/la-drag-fixture-hey-qween-star-lady-red-couture-has-died'),
+
+'Tobias Picker': ('guest','United States','—',
+ 'Composer of the opera Lili Elbe.',
+ None,'',''),
+
+'Aryeh Lev Stollman': ('guest','United States','—',
+ 'Librettist of the opera Lili Elbe.',
+ None,'',''),
+
+'Sinfonieorchester St. Gallen': ('guest','Switzerland','—',
+ 'Orchestra of Theater St. Gallen, on the live recording of Lili Elbe.',
+ None,'',''),
+
+"Sylvia D'Eramo": ('guest','United States','—',
+ 'Soprano, sings Gerda Wegener in Lili Elbe.',
+ None,'',''),
+
+'Modestas Pitrenas': ('guest','Lithuania','—',
+ 'Conductor of the live recording of Lili Elbe.',
+ None,'',''),
 }

@@ -233,6 +233,21 @@ LYRICS = {
     '5ipp3YpFKrJzWU7P1GHfgk': 'https://genius.com/Juriji-der-klee-xixi-lyrics',
     '5q7SGc4ngIhrYciZcgJ9Oe': 'https://genius.com/Veondre-scene-boy-lyrics',
     '6jAc23BgzNtiMCAGHe1buc': 'https://genius.com/search?q=Violeta+La+Burra+Mi+Tragedia',
+    '1vOi99NYsymJomYiivTVj2': 'https://genius.com/Laganja-estranja-poison-ivy-lyrics',
+    '1SOusugJKKzDUxR3QsQUDd': 'https://genius.com/Adore-delano-rolling-stoner-lyrics',
+    '3o69iXC0KGd3X2OIG0KXkP': 'https://genius.com/Dick-feller-the-new-credit-card-song-lyrics',
+    '6CfzlfApu49tOWGfvQSNDX': 'https://genius.com/Marcie-free-say-it-like-you-mean-it-lyrics',
+    '3HO9UrofF8D3AfKY9ZLLbB': 'https://genius.com/search?q=Alif+Hilal+Oracle',
+    '54nFM2BgZpX292SYKP83fS': 'https://genius.com/Lotic-emergency-lyrics',
+    '0DOqYCfifzpYK5SjOriuap': 'https://genius.com/Saoirse-dream-grimdark-lyrics',
+    '5CznIqYyWcPBQ9YaIJtLLF': 'https://genius.com/Michaela-jae-something-to-say-lyrics',
+    '5h8uDAcGUluOe7U8CZr0KB': 'https://lyrics.lyricfind.com/lyrics/taylor-abrahamse-if-i-was-a-woman',
+    '6xbLVLgDmohMNPF9qGgDfc': 'https://genius.com/search?q=Cait+Brennan+An+Old+Fashioned+Love+Song',
+    '6R1183MokEiLiN6rYpzQO6': 'https://genius.com/Baby-dee-so-bad-lyrics',
+    '1BLFIHCwSpQf74tIjyj37K': 'https://genius.com/search?q=Lili+Elbe+Picker+Recovery+Room',
+    '1F99de97B9zXdnMdtq8KrH': 'https://genius.com/search?q=Katey+Red+Punk+Under+Pressure',
+    '67aVjLV3z4QqlXMBrGoOOJ': 'https://genius.com/Portraits-of-tracy-caught-in-a-jam-lyrics',
+    '12dWvvky0ceP3vCCgwni0g': 'https://genius.com/Lady-red-couture-hello-grindr-lyrics',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par
@@ -282,4 +297,8 @@ SEARCH = {
     '4DpGa3bX0XvKd31JXWDcv7',
     '4sZgum8lh9hLPxREjgo4vo',
     '6jAc23BgzNtiMCAGHe1buc',
+    '3HO9UrofF8D3AfKY9ZLLbB',
+    '6xbLVLgDmohMNPF9qGgDfc',
+    '1BLFIHCwSpQf74tIjyj37K',
+    '1F99de97B9zXdnMdtq8KrH',
 }
