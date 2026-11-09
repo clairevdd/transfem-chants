@@ -102,6 +102,7 @@ JUNK_BLOCK = {
     "female vocalist", "drag queen", "drag race", "drag race winner",
     "rupauls drag race", "rupauls drag race all stars",
     "rupauls drag race all stars winner", "bimbo", "drag music",
+    "drag pop", "drag queencore",
 }
 # Ajouts du 19 septembre 2026, lot Jup do Bairro/Macy Rodman/Nomi Ruiz/
 # Ventura Profana : "usa" (GEO_BLOCK) est le même blocage que "united states"
@@ -330,4 +331,8 @@ TAGS = {
     '2h9jHuAARdM9dMhNp04ahR': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Juani Ruiz — Ahora viene lo mejor (no Discogs artist, no MusicBrainz artist, Last.fm empty)
     '4DpGa3bX0XvKd31JXWDcv7': {'discogs': ['pop rock'], 'musicbrainz': [], 'lastfm': []},  # Jennifer Maidman — Conspiracy of Dreamers (Discogs style of master 2649905, Dreamland; MusicBrainz artist without genres; Last.fm empty)
     '4sZgum8lh9hLPxREjgo4vo': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Léo Kret do Brasil — Microondas da Léo Kret (no Discogs artist, no MusicBrainz artist, Last.fm empty)
+    '6F40qXj1WiSFfGnroqlNMd': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Nany People — SOBREVIVA (no Discogs artist, no MusicBrainz recording or artist, Last.fm empty)
+    '5ipp3YpFKrJzWU7P1GHfgk': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop']},  # Juriji Der Klee — XIXI (Last.fm track tags empty, artist tags used; "spanish"/"belgium" geographic, drag tags not musical; MusicBrainz recording and artist without genres; no Discogs artist)
+    "5q7SGc4ngIhrYciZcgJ9Oe": {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'hyperpop']},  # Ve'ondre — Scene Boy (Last.fm track tags empty, artist tags used, "american" geographic; MusicBrainz recording and artist without genres; no Discogs artist)
+    '6jAc23BgzNtiMCAGHe1buc': {'discogs': ['comedy', 'musical'], 'musicbrainz': [], 'lastfm': []},  # Violeta La Burra — Mi Tragedia (Discogs styles of master 1626184; MusicBrainz artist without genres; Last.fm empty)
 }

@@ -229,6 +229,10 @@ LYRICS = {
     '2h9jHuAARdM9dMhNp04ahR': 'https://www.musixmatch.com/es/letras/Juani-Ruiz-1/Ahora-viene-lo-mejor',
     '4DpGa3bX0XvKd31JXWDcv7': 'https://genius.com/search?q=Jennifer+Maidman+Conspiracy+of+Dreamers',
     '4sZgum8lh9hLPxREjgo4vo': 'https://genius.com/search?q=Leo+Kret+Microondas',
+    '6F40qXj1WiSFfGnroqlNMd': 'https://lyrics.lyricfind.com/lyrics/nany-people-sobreviva',
+    '5ipp3YpFKrJzWU7P1GHfgk': 'https://genius.com/Juriji-der-klee-xixi-lyrics',
+    '5q7SGc4ngIhrYciZcgJ9Oe': 'https://genius.com/Veondre-scene-boy-lyrics',
+    '6jAc23BgzNtiMCAGHe1buc': 'https://genius.com/search?q=Violeta+La+Burra+Mi+Tragedia',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par
@@ -277,4 +281,5 @@ SEARCH = {
     '3Cmc2mUlFS7MPhcwIRvcWF',
     '4DpGa3bX0XvKd31JXWDcv7',
     '4sZgum8lh9hLPxREjgo4vo',
+    '6jAc23BgzNtiMCAGHe1buc',
 }

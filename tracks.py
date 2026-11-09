@@ -62,6 +62,7 @@ SECTIONS = [
             ('60RgF3vDNAl6crhVg4f9wl', 'Hi-Def Femme', 'Nomi Ruiz, Trace Lysette'),
             ('56xBg5e9rfrFqcqa4llUw7', 'Just Me (The Gender Binary Blues)', 'Jinkx Monsoon'),
             ('6BlQbt6Cnf54niyISOZ6cB', 'Menino Pele Cor de Jambo', 'Assucena'),
+            ('6jAc23BgzNtiMCAGHe1buc', 'Mi Tragedia', 'Violeta La Burra'),
             ('3VHdDisicXuBnW1NxIGzCI', 'La Copla de Cristal', 'Carmen de Mairena'),
             ('2YDCrMvvmBz9gVeuL8QyVG', 'Blue Beat Baby', 'Brigitte Bond'),
             ('1zVqEY9PXPpYJKMi9Kk9yn', 'Esotérico', 'CATTO'),
@@ -212,6 +213,7 @@ SECTIONS = [
             ('1toNKayLMeCcVlsLGXJl7n', 'Haunted', 'Laura Les'),
             ('18QS9wnUr7DOhMb73monpK', 'Tongues', 'Mel 4Ever, Ayesha Erotica'),
             ('0Irj6PuEEGzi7JGJvAhdZ8', 'I Can\'t Quit', 'Mel 4Ever'),
+            ("5q7SGc4ngIhrYciZcgJ9Oe", 'Scene Boy', "Ve'ondre"),
             ('06kFuqzhMk4E6IYeO0sTfx', 'RADIO (feat. Kim Petras)', 'Frost Children, Kim Petras'),
             ('2sVjF25Z4JTJxi9BXm5GtJ', 'ACT RIGHT', 'femtanyl'),
             ('51NYFGDXYKS4FkRqkw98hx', 'Like Me', 'Chase Icon'),
@@ -228,6 +230,7 @@ SECTIONS = [
         "tracks": [
             # I — plus nu
             ('5PMtJGEDIO0eIToF0YRUQ5', 'VENENO PA\' TU PIEL', 'JEDET'),
+            ('6F40qXj1WiSFfGnroqlNMd', 'SOBREVIVA', 'Nany People'),
             ('4bglcunoysO0W3puey06d6', "It's Lover, Love", 'Aérea Negrot'),
             ('2qpx5shtNEO1DuK8iEoJoB', 'Best Sex', 'Peppermint'),
             ('3BqWvhPear6eKPwhwJRFpO', 'Bruised', 'Mila Jam'),
@@ -266,6 +269,7 @@ SECTIONS = [
             ('1KnagH7nZ84p8vPMPZQ8hk', 'TSPG69', 'Macy Rodman'),
             ('4Zhxtm6x56wEiRtSMAl28n', 'Diaba', 'Urias'),
             ('5dIPCgTEDagbcs5QGmni8V', 'CISPHOBIC', 'MONĀE, Cae Monāe'),
+            ('5ipp3YpFKrJzWU7P1GHfgk', 'XIXI', 'Juriji Der Klee'),
             ('6yAc1rz1RXRlYJac99xusK', 'Girls & Dolls', 'Tone Sekelius'),
             ('376mhFeloWqzQJQsqZpm9A', 'Las Defectos', 'Pupi Poisson, Arantxa Castilla-La Mancha, CARLES CUEVAS'),
             ('4OI2gBlHqyNks8cbIBIKYw', 'Like A Girl', 'Angel-Ho, K Rizz'),
@@ -300,4 +304,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 214
+assert len(all_tracks()) == 218

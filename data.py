@@ -907,4 +907,24 @@ ART = {
  "Singer, dancer and activist from Salvador, Bahia. Elected to Salvador city council in 2008, the first trans woman to sit on it.",
  "A gente tendo esse pleito de volta vai ser depois de 15 anos a mesma mulher trans vereadora de Salvador.",
  "Bahia Notícias, 11 February 2024","https://www.bahianoticias.com.br/noticia/289119-leo-kret-confirma-candidatura-nas-eleicoes-de-2024-depois-de-15-anos-a-mesma-mulher-trans-vereadora"),
+
+"Nany People": ("verified","Brazil","Portuguese",
+ "Comedian, singer, actress and journalist from Minas Gerais, a long-standing figure of Brazilian television and theatre.",
+ "Muita gente ainda não sabe que eu sou uma mulher trans.",
+ "Cidade da Barra, 15 July 2023","https://www.cidadedabarra.com.br/2023/07/muita-gente-ainda-nao-sabe-que-sou-uma.html"),
+
+"Juriji Der Klee": ("verified","Spain","Spanish",
+ "Belgian-Spanish singer, actress and drag performer, known from Drag Race España and the series Vestidas de azul.",
+ "Por ser mujer, por ser una mujer trans, por hacer drag, por ser una mujer trans que hace drag.",
+ "Shangay, 26 July 2024","https://shangay.com/2024/07/26/juriji-der-klee-drag-race-espana-entrevista/"),
+
+"Ve'ondre": ("verified","United States","English",
+ "Ve'ondre Mitchell, influencer, activist and recording artist who has released music since 2024.",
+ "That was motivating to continue being loud and unapologetic about the experiences I go through as a Trans woman everyday.",
+ "Galore, 21 June 2024","https://galoremag.com/veondremitchell/"),
+
+"Violeta La Burra": ("partial","Spain","Spanish",
+ "Copla, flamenco and cabaret performer from Herrera, Seville, a pioneer of the Spanish travesti stage from the late 1970s, in Barcelona and Paris. Died in January 2020. Marked partial: no first-person statement of a female or trans identity was found; in her later years she described herself, in the words reported by El Salto, as neither travesti nor drag queen, only as an artist.",
+ "soy artista",
+ "El Salto, 30 January 2020","https://www.elsaltodiario.com/obituario/violeta-burra-pedro-moreno-fallece-travesti"),
 }
