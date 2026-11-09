@@ -151,7 +151,7 @@ ART = {
 "Jackie Shane": ("verified","United States / Canada","English",
  "Soul singer from Nashville who made her career in Toronto in the 1960s. She described herself as a woman born in this body, not as a cisgender woman; she is not known to have used the word “trans” for herself, and this page does not put it in her mouth. She is listed among transfeminine artists in that sense, with her own word for herself kept as she said it.",
  "That's what it is. I was born a woman in this body. That's how it's always been. I'm not putting on an act. I could not be anyone else if I tried. It would be the most ridiculous thing in the world for me to try to be a male.",
- "Numero Group, Baby, Do What You Want","https://numerogroup.com/blogs/stories/jackie-shane-baby-do-what-you-want"),
+ "Numero Group, Baby, Do What You Want, 13 October 2015","https://numerogroup.com/blogs/stories/jackie-shane-baby-do-what-you-want"),
 
 "Shea Diamond": ("verified","United States","English",
  "Trans woman, in her own words. Her songwriting centres Black trans experience.",
