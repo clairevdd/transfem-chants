@@ -5,7 +5,7 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 ## Où on en est
 
 - **228 morceaux**
-- **168 artistes présentées comme transféminines**, plus **0 cas ouverts**
+- **170 artistes présentées comme transféminines**, plus **0 cas ouverts**
 - **36 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Ireland, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Pakistan, Peru, Philippines, Portugal, Puerto Rico, Russia, Serbia, South Africa, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
 - **27 langues** : Arabic, Darija, Dutch, English, Filipino, French, German, Hebrew, Indonesian, isiZulu, Italian, Japanese, Korean, Malay, Mandarin, Portuguese, Russian, Réunion Creole, Serbian, Spanish, Swedish, Thai, Turkish, Twi, Urdu, Vietnamese, Zapotec
 
@@ -118,8 +118,10 @@ Généré le 2026-11-10
 | **Selin Ciğerci** | `partial` | Türkiye | Turkish | 1 | [Hürriyet (Ayşe Arman), 30 June 2019](https://www.hurriyet.com.tr/yazarlar/ayse-arman/onur-haftasinda-selin-cigerciyle-kadin-kadina-kendimi-bildim-bileli-yanlis-bedendeyim-41259032) |
 | **Gila Goldstein** | `verified` | Israel | Hebrew | 1 | [Mako (Keshet), 2 February 2024](https://www.mako.co.il/pride-culture/Article-689d0715f646d81027.htm) |
 | **Jup do Bairro** | `verified` | Brazil | Portuguese | 3 | [Ponte Jornalismo, 30 June 2020](https://ponte.org/jup-do-bairro-artivista-trans-nao-existe-corpo-errado-e-certo-o-certo-e-o-meu-corpo/) |
+| **Indianarae Siqueira** | `verified` | Brazil | Portuguese | 1 | [El Salto, 3 August 2016 (interview translated into Spanish)](https://www.elsaltodiario.com/hemeroteca-diagonal/indianara-siqueira-las-trans-no-tenemos-derechos-reconocidos) |
 | **Macy Rodman** | `verified` | United States | English | 1 | [Judgement (Substack), 14 August 2020](https://judgement.substack.com/p/macy-rodman-is-the-trans-pop-star) |
 | **Nomi Ruiz** | `verified` | United States | English | 1 | [The Advocate, 14 April 2019](https://www.advocate.com/commentary/2019/4/14/joy-sex-after-gender-confirmation-surgery) |
+| **Trace Lysette** | `verified` | United States | English | 1 | [El País (English), 24 November 2022](https://english.elpais.com/culture/2022-11-24/trace-lysette-if-a-terf-went-to-lunch-with-a-woman-like-me-they-would-be-enlightened-and-maybe-even-ashamed.html) |
 | **Ventura Profana** | `verified` | Brazil | Portuguese | 1 | [G1 (Globo), 25 April 2025](https://g1.globo.com/ba/bahia/o-que-fazer-em-salvador/noticia/2025/04/25/conheca-ventura-profana-artista-multifacetada-e-pastora-travesti.ghtml) |
 | **Roberta Marrero** | `verified` | Spain | Spanish | 1 | [Divinity, 2 January 2017](https://www.divinity.es/blogs/blackisnice/roberta-marrero-bebe-verde-transexual-cuestion-vital-no-capricho-quien-eres_6_2294865007.html) |
 | **Haela Hunt-Hendrix** | `verified` | United States | English | 1 | [Metal Injection, 12 May 2020](https://metalinjection.net/news/liturgys-hunter-hunt-hendrix-comes-out-as-transgender-i-am-a-woman) |
@@ -229,8 +231,6 @@ Généré le 2026-11-10
 | CARLES CUEVAS | Spain | _aucune_ |
 | K Rizz | South Africa | _aucune_ |
 | Kashif Ali | Pakistan | _aucune_ |
-| Indianarae Siqueira | Brazil | _aucune_ |
-| Trace Lysette | United States | [El País (English)](https://english.elpais.com/culture/2022-11-24/trace-lysette-if-a-terf-went-to-lunch-with-a-woman-like-me-they-would-be-enlightened-and-maybe-even-ashamed.html) |
 | Alaska Thunderfuck | United States | _aucune_ |
 | Alexis Michelle | United States | _aucune_ |
 | Sasha Velour | United States | _aucune_ |
@@ -348,8 +348,10 @@ Reproduites mot pour mot.
 - **Selin Ciğerci** — « Kendimi bildim bileli yanlış bedendeyim. — For as long as I can remember, I've been in the wrong body. » (Hürriyet (Ayşe Arman), 30 June 2019)
 - **Gila Goldstein** — « לא נולדתי אישה, נעשיתי אישה. — I wasn't born a woman, I became a woman. » (Mako (Keshet), 2 February 2024)
 - **Jup do Bairro** — « Hoje eu me reconheço enquanto travesti, o signo feminino faz parte do meu corpo […] — Today I recognise myself as travesti, the feminine sign is part of my body […] » (Ponte Jornalismo, 30 June 2020)
+- **Indianarae Siqueira** — « yo, como en mis documentos estoy registrada como hombre, les planteé que sí podía hacer topless — since my documents register me as a man, I told them that I could go topless » (El Salto, 3 August 2016 (interview translated into Spanish))
 - **Macy Rodman** — « I identified more as a trans woman and not a drag queen. » (Judgement (Substack), 14 August 2020)
 - **Nomi Ruiz** — « Early in my transition, I was fed pessimistic anecdotes by other trans women, and ended up carrying these perspectives with me throughout my trans adolescence. » (The Advocate, 14 April 2019)
+- **Trace Lysette** — « I was at a crossroads, and I made the choice to just have more of a binary transfem experience. » (El País (English), 24 November 2022)
 - **Ventura Profana** — « Em determinado momento, eu rompo com a igreja, justamente por conta da minha travestilidade, então isso passa a ser algo incompatível. — At a certain point, I break with the church, precisely because of my travestilidade, so it becomes something incompatible. » (G1 (Globo), 25 April 2025)
 - **Roberta Marrero** — « […] todo el mundo dijo que era un niño, pero no… era una niña. — […] everyone said I was a boy, but no… I was a girl. » (Divinity, 2 January 2017)
 - **Haela Hunt-Hendrix** — « I am a woman. I’ve always been one. » (Metal Injection, 12 May 2020)

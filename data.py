@@ -573,9 +573,9 @@ ART = {
  "Multi-artist (music, visual art) from São Paulo. Uses the word travesti for herself — a Brazilian gender identity, kept here rather than translated as “trans woman” — after first understanding herself as non-binary when she began making music.",
  "Hoje eu me reconheço enquanto travesti, o signo feminino faz parte do meu corpo […] — Today I recognise myself as travesti, the feminine sign is part of my body […]","Ponte Jornalismo, 30 June 2020","https://ponte.org/jup-do-bairro-artivista-trans-nao-existe-corpo-errado-e-certo-o-certo-e-o-meu-corpo/"),
 
-"Indianarae Siqueira": ("guest",'Brazil','Portuguese',
- 'Brazilian travesti activist, featured on “INTRO”. Publicly described and self-identified as travesti; kept in that word rather than translated.',
- None,'',''),
+"Indianarae Siqueira": ("verified","Brazil","Portuguese",
+ "Brazilian trans activist, founder of the Transrevolução group and of Casa Nem in Rio de Janeiro, featured on “INTRO” with Jup do Bairro. In the interview cited she points out that her documents still register her as a man, which she has turned into a challenge to the law, so the direction of her transition is stated rather than inferred.",
+ "yo, como en mis documentos estoy registrada como hombre, les planteé que sí podía hacer topless — since my documents register me as a man, I told them that I could go topless","El Salto, 3 August 2016 (interview translated into Spanish)","https://www.elsaltodiario.com/hemeroteca-diagonal/indianara-siqueira-las-trans-no-tenemos-derechos-reconocidos"),
 
 "Macy Rodman": ("verified","United States","English",
  "Singer and performer. Speaks of moving away from drag once she began to identify as a trans woman rather than a drag queen.",
@@ -585,9 +585,9 @@ ART = {
  "Writer, singer, songwriter and producer. Trans woman; writes about her own transition and gender-confirmation surgery in the first person.",
  "Early in my transition, I was fed pessimistic anecdotes by other trans women, and ended up carrying these perspectives with me throughout my trans adolescence.","The Advocate, 14 April 2019","https://www.advocate.com/commentary/2019/4/14/joy-sex-after-gender-confirmation-surgery"),
 
-"Trace Lysette": ("guest","United States","English",
- "Actress and singer, featured on “Hi-Def Femme”. Trans woman, speaks openly about her transition in interview.",
- None,"El País (English)","https://english.elpais.com/culture/2022-11-24/trace-lysette-if-a-terf-went-to-lunch-with-a-woman-like-me-they-would-be-enlightened-and-maybe-even-ashamed.html"),
+"Trace Lysette": ("verified","United States","English",
+ "Actress and singer, who also raps; featured on “Hi-Def Femme” with Nomi Ruiz. She speaks of her own transition in the first person, and of having chosen a binary transfeminine path.",
+ "I was at a crossroads, and I made the choice to just have more of a binary transfem experience.","El País (English), 24 November 2022","https://english.elpais.com/culture/2022-11-24/trace-lysette-if-a-terf-went-to-lunch-with-a-woman-like-me-they-would-be-enlightened-and-maybe-even-ashamed.html"),
 
 "Ventura Profana": ("verified","Brazil","Portuguese",
  "Multifaceted artist and pastor from Bahia, who grew up in the Baptist church and works at the crossing of religious music and performance. She speaks of her own travestilidade, the condition of being travesti: a gender identity in Brazil, kept here in her own word rather than translated.",
