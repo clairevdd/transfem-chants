@@ -480,8 +480,8 @@ ART = {
  "Drag performer and singer from Extremadura. She introduced herself as non-binary on the first season of Drag Race España, and in December 2022 said on her social media and her podcast that she is a trans woman, adding that she does not want this to be used as an argument against non-binary identities.",
  "Soy una chica y mi pronombre es ella. — I am a girl and my pronoun is she.","El Español, 22 December 2022","https://www.elespanol.com/corazon/bluper/20221222/arantxa-castilla-la-mancha-drag-race-espana-abiertamente/727927241_0.html"),
 
-"Gad Yola": ("verified","Peru","Spanish",
- "Peruvian drag performer, singer and activist, living in Spain since the age of ten. Her first album, released in June 2024, is titled Travesti del Perú and pays tribute to the travesti activist Giuseppe Campuzano. In Latin America travesti is a gender identity rather than a way of dressing.",
+"Gad Yola": ("partial","Peru","Spanish",
+ "Peruvian drag performer, singer and activist, living in Spain since the age of ten. Her first album, released in June 2024, is titled Travesti del Perú and pays tribute to the travesti activist Giuseppe Campuzano, whose book Museo Travesti del Perú she says spoke to her personally. In Latin America travesti is a gender identity rather than a way of dressing. Marked partial: she says she is neither a man nor a woman, but no source was found in which she calls herself travesti, and nothing she says bears on the gender she was assigned at birth.",
  "Siempre le digo a mi mamá: “No soy un hombre, ni mujer”. — I always tell my mum: “I’m not a man, nor a woman”.","Somos Periodismo, 28 June 2024","https://somosperiodismo.com/gad-yola-una-drag-queen-decolonial/"),
 
 "Samantha Hudson": ("partial","Spain","Spanish",
@@ -590,8 +590,8 @@ ART = {
  None,"El País (English)","https://english.elpais.com/culture/2022-11-24/trace-lysette-if-a-terf-went-to-lunch-with-a-woman-like-me-they-would-be-enlightened-and-maybe-even-ashamed.html"),
 
 "Ventura Profana": ("verified","Brazil","Portuguese",
- "Multifaceted artist from Bahia, described by G1 as a pastora travesti (travesti pastor), who grew up in the Baptist church and works at the crossing of religious music and performance.",
- "[…] meus pais e minha família sintam ainda mais orgulho de mim por saber que eu sou uma pessoa trans […] — […] my parents and my family feel even prouder of me knowing that I am a trans person […]","G1 (Globo), 25 April 2025","https://g1.globo.com/ba/bahia/o-que-fazer-em-salvador/noticia/2025/04/25/conheca-ventura-profana-artista-multifacetada-e-pastora-travesti.ghtml"),
+ "Multifaceted artist and pastor from Bahia, who grew up in the Baptist church and works at the crossing of religious music and performance. She speaks of her own travestilidade, the condition of being travesti: a gender identity in Brazil, kept here in her own word rather than translated.",
+ "Em determinado momento, eu rompo com a igreja, justamente por conta da minha travestilidade, então isso passa a ser algo incompatível. — At a certain point, I break with the church, precisely because of my travestilidade, so it becomes something incompatible.","G1 (Globo), 25 April 2025","https://g1.globo.com/ba/bahia/o-que-fazer-em-salvador/noticia/2025/04/25/conheca-ventura-profana-artista-multifacetada-e-pastora-travesti.ghtml"),
 
 "Roberta Marrero": ("verified","Spain","Spanish",
  "Visual artist, illustrator, actress and electropop singer, who died in Madrid in May 2024. In her autobiographical graphic novel El bebé verde she tells her own story, starting from the day she was born.",
@@ -626,8 +626,8 @@ ART = {
  None,'',''),
 
 "Amor Romeira": ("verified","Spain","Spanish",
- "Spanish singer and television personality. In a televised debate in 2024 she said that denying that trans women are women is violence against her personally.",
- "Cuando tú determinas que las mujeres trans no son mujeres, ejerces una violencia contra el colectivo y contra mí personalmente — When you decide that trans women are not women, you commit violence against the community and against me personally","FórmulaTV, 23 April 2024","https://www.formulatv.com/noticias/amor-romeira-culpa-sonia-ferrer-transfobia-127891/"),
+ "Spanish singer and television personality. She has described the day her mother told her father, on her behalf, that she was a transsexual woman, and has said publicly that denying that trans women are women is violence against her personally.",
+ "'¿Y qué tiene que ver? Aquella quiere ser una mujer, que es transexual', le dijo mi madre — “What does that have to do with it? She wants to be a woman, she is transsexual,” my mother told him",None,(("20minutos, 4 April 2022", "https://www.20minutos.es/noticia/4980865/0/amor-romeira-cuenta-como-su-padre-paso-de-ser-transfobo-a-aceptarla-el-mejor-del-mundo-es-una-leccion-de-vida/"), ("FórmulaTV, 23 April 2024", "https://www.formulatv.com/noticias/amor-romeira-culpa-sonia-ferrer-transfobia-127891/"))),
 
 "Amanda Lepore": ("verified","United States","English",
  "New York nightlife figure and recording artist, longtime muse of the photographer David LaChapelle.",
@@ -730,9 +730,9 @@ ART = {
  "Jessie Chung. Singer, songwriter and actress from Kuching, releasing albums since 1998. Described as transgender by the press since 2005; in a 2005 interview she speaks of her own situation, but no first-person statement of her gender identity was located.",
  None,"Malaysiakini","https://www.malaysiakini.com/news/43100"),
 
-"Endigo": ("partial","Sweden","English",
- "Swedish singer, music producer and drag performer (Drag Race Sverige), known for metal vocals on video-game soundtracks. Her Instagram profile gives she/they. The coming-out post this page cited, from November 2023, could not be located again during verification, so the entry is partial until it is.",
- None,"Instagram profile","https://www.instagram.com/endigopink/"),
+"Endigo": ("verified","Sweden","English",
+ "Swedish singer, music producer and drag performer (Drag Race Sverige), known for metal vocals on video-game soundtracks. Came out as trans on Instagram in November 2023, tagging the post #transgirl.",
+ "I'M TRANS! […] tbh I've felt this way.. well, my entire life.","Instagram, 21 November 2023","https://www.instagram.com/p/Cz61W8tN1kK/"),
 
 "Maya Fennec": ("guest","Unknown","English",
  "Featured vocalist. No public statement about their gender identity was found.",

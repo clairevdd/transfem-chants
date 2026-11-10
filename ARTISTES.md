@@ -99,7 +99,7 @@ Généré le 2026-11-10
 | **Daniela Vega** | `verified` | Chile | Spanish, Italian | 2 | [The Guardian, 18 February 2018](https://www.theguardian.com/film/2018/feb/18/daniela-vega-transgender-star-film-industry-a-fantastic-woman-interview) |
 | **Tona Brown** | `verified` | United States | English | 2 | [The Heroines of My Life](https://theheroines.blogspot.com/2014/03/interview-with-tona-brown.html) |
 | **Arantxa Castilla-La Mancha** | `verified` | Spain | Spanish | 1 | [El Español, 22 December 2022](https://www.elespanol.com/corazon/bluper/20221222/arantxa-castilla-la-mancha-drag-race-espana-abiertamente/727927241_0.html) |
-| **Gad Yola** | `verified` | Peru | Spanish | 1 | [Somos Periodismo, 28 June 2024](https://somosperiodismo.com/gad-yola-una-drag-queen-decolonial/) |
+| **Gad Yola** | `partial` | Peru | Spanish | 1 | [Somos Periodismo, 28 June 2024](https://somosperiodismo.com/gad-yola-una-drag-queen-decolonial/) |
 | **Samantha Hudson** | `partial` | Spain | Spanish | 1 | [leonoticias, 11 February 2023](https://www.leonoticias.com/gente-estilo/samantha-hudson-artista-20230211132401-nt.html) |
 | **Umlilo** | `partial` | South Africa | isiZulu | 1 | [Scaffold, 21 June 2020](https://www.scaffold-culture.com/scaffold-archive/umlilo) |
 | **Angel-Ho** | `verified` | South Africa | English | 1 | [The Quietus, 12 March 2019](https://thequietus.com/articles/26179-angel-ho-interview-hyperdub-death-becomes-her) |
@@ -128,7 +128,7 @@ Généré le 2026-11-10
 | **Chloe Alison Escott** | `verified` | Australia | English | 1 | [Vice, 10 November 2016](https://www.vice.com/en/article/listen-to-a-new-native-cats-song-and-help-support-trans-lifeline) |
 | **Honey Mahogany** | `partial` | United States | English | 1 | [San Francisco AIDS Foundation, 7 July 2023](https://www.sfaf.org/news/from-the-drag-stage-to-the-political-stage-honey-mahogany-cant-stop-fighting-for-queer-and-trans-liberation/) |
 | **Gia Gunn** | `verified` | United States | English | 1 | [Rigel Gemini, 28 March 2018](https://www.rigelgemini.com/home/2018/3/28/interview-gia-gunn) |
-| **Amor Romeira** | `verified` | Spain | Spanish | 1 | [FórmulaTV, 23 April 2024](https://www.formulatv.com/noticias/amor-romeira-culpa-sonia-ferrer-transfobia-127891/) |
+| **Amor Romeira** | `verified` | Spain | Spanish | 1 | [20minutos, 4 April 2022](https://www.20minutos.es/noticia/4980865/0/amor-romeira-cuenta-como-su-padre-paso-de-ser-transfobo-a-aceptarla-el-mejor-del-mundo-es-una-leccion-de-vida/), [FórmulaTV, 23 April 2024](https://www.formulatv.com/noticias/amor-romeira-culpa-sonia-ferrer-transfobia-127891/) |
 | **Amanda Lepore** | `verified` | United States | English | 1 | [Into The Gloss, January 2014](https://intothegloss.com/2014/01/amanda-lepore) |
 | **Jiggly Caliente** | `verified` | United States / Philippines | English | 1 | [Nylon, 30 June 2021](https://www.nylon.com/entertainment/jiggly-caliente-rupauls-drag-race-all-stars-season-6-exit-interview), [Fox 5 New York, 27 April 2025](https://www.fox5ny.com/news/jiggly-caliente-dies-rupauls-drag-race-star) |
 | **Aja** | `verified` | United States | English | 1 | [PinkNews, 20 December 2021](https://www.thepinknews.com/2021/12/20/aja-trans-woman-drag-race/) |
@@ -152,7 +152,7 @@ Généré le 2026-11-10
 | **Scarlett la Queen** | `verified` | Russia / United States | Russian | 1 | [Korrespondent.net, quoting her social-media post](https://korrespondent.net/lifestyle/4197530-ot-transhendernoi-pevytsy-skarlett-otkazalas-semia) |
 | **Electra Elite** | `verified` | Serbia | Serbian | 1 | [Nova.rs, 10 September 2020](https://nova.rs/zabava/ispovest-transrodne-pevacice-electre-elite-za-nova-rs/) |
 | **鍾潔希** | `partial` | Malaysia / Australia | Mandarin | 1 | [Malaysiakini](https://www.malaysiakini.com/news/43100) |
-| **Endigo** | `partial` | Sweden | English | 1 | [Instagram profile](https://www.instagram.com/endigopink/) |
+| **Endigo** | `verified` | Sweden | English | 1 | [Instagram, 21 November 2023](https://www.instagram.com/p/Cz61W8tN1kK/) |
 | **Carmen de Mairena** | `partial` | Spain | Spanish | 1 | [El Español](https://www.elespanol.com/corazon/television/20200323/carmen-mairena-cupletista-transexual-llego-frikismo-television/476952611_0.html) |
 | **All Girls Piss** | `partial` | Ireland | English | 1 | [GCN](https://gcn.ie/trans-bands-irish-punk-scene/) |
 | **Louisa Janssen** | `verified` | Netherlands | Dutch | 1 | [LINDA.nl, 11 January 2023](https://www.linda.nl/meiden/meiden-trending/louisa-janssen-transfobe-opmerkingen/) |
@@ -350,7 +350,7 @@ Reproduites mot pour mot.
 - **Jup do Bairro** — « Hoje eu me reconheço enquanto travesti, o signo feminino faz parte do meu corpo […] — Today I recognise myself as travesti, the feminine sign is part of my body […] » (Ponte Jornalismo, 30 June 2020)
 - **Macy Rodman** — « I identified more as a trans woman and not a drag queen. » (Judgement (Substack), 14 August 2020)
 - **Nomi Ruiz** — « Early in my transition, I was fed pessimistic anecdotes by other trans women, and ended up carrying these perspectives with me throughout my trans adolescence. » (The Advocate, 14 April 2019)
-- **Ventura Profana** — « […] meus pais e minha família sintam ainda mais orgulho de mim por saber que eu sou uma pessoa trans […] — […] my parents and my family feel even prouder of me knowing that I am a trans person […] » (G1 (Globo), 25 April 2025)
+- **Ventura Profana** — « Em determinado momento, eu rompo com a igreja, justamente por conta da minha travestilidade, então isso passa a ser algo incompatível. — At a certain point, I break with the church, precisely because of my travestilidade, so it becomes something incompatible. » (G1 (Globo), 25 April 2025)
 - **Roberta Marrero** — « […] todo el mundo dijo que era un niño, pero no… era una niña. — […] everyone said I was a boy, but no… I was a girl. » (Divinity, 2 January 2017)
 - **Haela Hunt-Hendrix** — « I am a woman. I’ve always been one. » (Metal Injection, 12 May 2020)
 - **Aérea Negrot** — « I started transitioning years ago and then de-transitioned and transitioned again. » (None)
@@ -358,7 +358,7 @@ Reproduites mot pour mot.
 - **Chloe Alison Escott** — « We wrote the bare bones (Julian’s bass, my lyrics) in my last months of denial before I came out and started transitioning. This year I came back to it with my new lease on life and made it what it is now. » (Vice, 10 November 2016)
 - **Honey Mahogany** — « We, as trans folks, have the least to lose because so much has already been taken from us. » (San Francisco AIDS Foundation, 7 July 2023)
 - **Gia Gunn** — « Since I came out as trans publicly a year ago, my life has been empowered. » (Rigel Gemini, 28 March 2018)
-- **Amor Romeira** — « Cuando tú determinas que las mujeres trans no son mujeres, ejerces una violencia contra el colectivo y contra mí personalmente — When you decide that trans women are not women, you commit violence against the community and against me personally » (FórmulaTV, 23 April 2024)
+- **Amor Romeira** — « '¿Y qué tiene que ver? Aquella quiere ser una mujer, que es transexual', le dijo mi madre — “What does that have to do with it? She wants to be a woman, she is transsexual,” my mother told him » (None)
 - **Amanda Lepore** — « And when the press found out I was a transsexual, they liked me even more. I was in the Times, French Vogue... It was really validating. I became kind of the 'It' transsexual, especially after working with David LaChapelle, modeling in his photographs for years. » (Into The Gloss, January 2014)
 - **Jiggly Caliente** — « this is beyond me — the representation that I carry as a trans queen isn't just about me. » (None)
 - **Aja** — « […] trans is who I am and drag is what I do » (PinkNews, 20 December 2021)
@@ -380,6 +380,7 @@ Reproduites mot pour mot.
 - **Danny Bond** — « A galera ainda não está pronta para ver uma travesti furando a bolha, estando em locais que são nossos por direito — People still aren’t ready to see a travesti breaking out of the bubble, being in places that are ours by right » (O Tempo (Folhapress), 10 March 2022)
 - **Scarlett la Queen** — « Моя идентичность к женскому полу была во мне, насколько я помню, лет с трех. — My identification with the female gender has been in me, as far as I remember, since I was about three. » (Korrespondent.net, quoting her social-media post)
 - **Electra Elite** — « To muškarac više ne postoji kod mene, ali recimo, dvanaest-trinaest godina živim u ovom svetlu u kojem me trenutno vidite. — That man no longer exists in me; I have been living for some twelve or thirteen years in the light you see me in now. » (Nova.rs, 10 September 2020)
+- **Endigo** — « I'M TRANS! […] tbh I've felt this way.. well, my entire life. » (Instagram, 21 November 2023)
 - **Louisa Janssen** — « Ik ben Louisa, ik voel me een vrouw, maar ben als man geboren en zal daar ook altijd voor uit komen. — I am Louisa, I feel like a woman, but I was born a man and I will always be open about that. » (LINDA.nl, 11 January 2023)
 - **Louïz** — « En tant que métisse et femme trans, je pense incarner le mot diversité et c’est ce que je souhaite véhiculer au travers de ma participation — As a mixed-race woman and a trans woman, I think I embody the word diversity, and that is what I want to convey through taking part » (têtu·, 30 January 2020)
 - **Emma Cadenas** — « Suelo presentarme como cantautora, poeta y escritora trans peruana… — I usually introduce myself as a Peruvian trans singer-songwriter, poet and writer… » (El Comercio, 14 June 2026)
