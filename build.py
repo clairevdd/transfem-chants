@@ -159,6 +159,12 @@ def check():
     for sid, v in YEARS.items():
         if v["status"] == "verified" and not (v["url"] and v["checked"] and v["first_public"]):
             raise SystemExit(f"build.py : {sid} est verified sans source, date ou contrôle datés")
+        # Arbitrage de Claire, 10 novembre 2026 : une date qui ne repose que sur
+        # Wikipédia reste `partial`, jamais `verified`.
+        urls = v["url"] if isinstance(v["url"], (list, tuple)) else [v["url"]]
+        urls = [u for u in urls if u]
+        if v["status"] == "verified" and urls and all("wikipedia.org" in u for u in urls):
+            raise SystemExit(f"build.py : {sid} est verified avec Wikipédia pour seule source ; le passer en partial")
 
     # Audit du 9 novembre 2026, arbitrage de Claire : une encyclopédie n'est
     # jamais une source primaire. Règle du 10 novembre 2026 : une fiche

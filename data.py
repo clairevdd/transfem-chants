@@ -4,14 +4,12 @@
 
 ART = {
 "SOPHIE": ("verified","Scotland, UK","English",
- "Trans woman. Came out publicly with the single and video for “It’s Okay to Cry” (2017), in which she appears and sings herself.",
- "For me, transness is taking control to bring your body more in line with your soul and spirit so the two aren’t fighting against each other.",
- "PAPER Magazine","https://www.papermag.com/sophie-pride"),
+ "Producer and singer, who died in 2021. The single and video “It’s Okay to Cry” (2017), in which she appears and sings herself, introduced her for the first time as a trans pop star.",
+ "For me, transness is taking control to bring your body more in line with your soul and spirit so the two aren't fighting against each other and struggling to survive.","PAPER Magazine, 18 June 2018","https://www.papermag.com/sophie-pride"),
 
 "Arca": ("verified","Venezuela","Spanish, English",
- "Trans woman who also describes her gender as non-binary. Shifted to she/her pronouns around 2018–2020.",
- "I identify as a transwoman, and I see my gender identity as nonbinary.",
- "PAPER Magazine","https://www.papermag.com/arca-transformation"),
+ "Venezuelan producer and singer. She identifies as a trans woman and sees her gender identity as non-binary, and has gradually shifted to she/her pronouns.",
+ "I identify as a transwoman, and I see my gender identity as nonbinary.","PAPER Magazine, 7 April 2020","https://www.papermag.com/arca-transformation"),
 
 "ANOHNI": ("verified",'UK / United States','English',
  'Describes herself as a transgender person who wants to be recognised for her feminine essence, and asked to be addressed as “she” to honour her spirit. She has said she was always clear about being transgender in her work, and took ANOHNI as a spirit name.',
@@ -21,41 +19,37 @@ ART = {
  'The project fronted by ANOHNI, under an earlier band name. Same person: see her entry.',
  None,None,(('VICE, 16 May 2016', 'https://www.vice.com/en/article/one-decaf-cappuccino-and-orange-juice-with-anohni-briefs-v23n3/'), ('Noisey, 7 December 2015', 'https://www.vice.com/en/article/anohni-interview-2015/'))),
 
-"Bülent Ersoy": ("verified","Türkiye","Turkish",
- "Trans woman. Had surgery in London in 1981 and was legally recognised as a woman after Turkish law changed in 1989. A defining figure of Turkish classical and arabesque music.",
- None,"Daily Sabah","https://www.dailysabah.com/arts/portrait/bulent-ersoy-turkeys-transgender-diva"),
+"Bülent Ersoy": ("partial","Türkiye","Turkish",
+ "Singer, a defining figure of Turkish classical and arabesque music. She had surgery in London in 1981 and was legally recognised as a woman after Turkish law changed in 1989. Asked in 2021 about a remark that she had “become a woman”, she answered that she had done what she believed was right for herself; no more explicit statement in her own words was found.",
+ "Ben kendimce doğru olduğuna inandığım şeyi yaptım. — I did what I believed was right for myself.",None,(("Daily Sabah, 12 October 2021", "https://www.dailysabah.com/arts/portrait/bulent-ersoy-turkeys-transgender-diva"), ("Posta, 10 January 2021", "https://www.posta.com.tr/magazin/bulent-ersoydan-anlamli-cevap-insanlari-bacak-arasiyla-degerlendirmeyin-2297093"))),
 
 "Kim Petras": ("verified","Germany","English",
- "Trans woman. Began transitioning as a child; widely covered in German media as a teenager.",
- "I want to thank all the incredible transgender legends before me who kicked these doors open for me so I could be here tonight.",
- "NBC News","https://www.nbcnews.com/nbc-out/out-pop-culture/kim-petras-thanks-incredible-transgender-legends-grammy-speech-rcna69296"),
+ "Pop singer from Germany. Accepting her first Grammy Award in 2023, she spoke as the first transgender woman to win it and thanked the transgender artists who came before her.",
+ "Sam graciously wanted me to accept this award because I'm the first transgender woman to win this award","NBC News, 6 February 2023","https://www.nbcnews.com/nbc-out/out-pop-culture/kim-petras-thanks-incredible-transgender-legends-grammy-speech-rcna69296"),
 
 "femtanyl": ("verified","Canada","English",
- "Noelle Stockwood. Trans woman, using the words “trans woman” and “transfem” about herself in interview.",
- "Being a trans woman, or transfem, comes with a high level of experimentation with yourself and also through interests like music.",
- "Metal Magazine","https://metalmagazine.eu/en/post/femtanyl"),
+ "Project started in 2023 by Noelle Stockwood, who has spoken of beginning her transition and of music as the only place she could first feel that part of herself.",
+ "When I first started transitioning, music was the only place I could feel that aspect of myself. I could augment my vocals and talk about it openly.","METAL Magazine, 3 March 2026","https://metalmagazine.eu/en/post/femtanyl"),
 
 "Petal Supply": ("partial","Canada","English",
- "Described as a “trans-femme artist” in a feature on trans women in electronic music, and has referred to herself publicly as a visibly trans person. No long-form interview with a first-person statement was located.",
+ "Electronic pop artist, included in a feature on trans women in electronic music. No statement in her own words about her gender identity was found and read.",
  None,"Era Journal","https://erajournal.co.uk/our-journal/immaterial-girls-trans-women-in-synthesis/"),
 
 "Chase Icon": ("verified","United States","English",
- "Trans woman, she/her. The Vice profile covers her transition and gender confirmation surgery in her own words.",
- "Being trans, so much relies on your voice being able to sound a certain way.",
- "Vice","https://www.vice.com/en/article/internet-star-celebrity-impersonator-chase-icon-profile-v28n1/"),
+ "Internet personality, celebrity impersonator and singer. She has spoken of what being trans asks of a voice; her transition was rejected by her family, except for her sister.",
+ "Being trans, so much relies on your voice being able to sound a certain way.","VICE, 29 March 2021","https://www.vice.com/en/article/internet-star-celebrity-impersonator-chase-icon-profile-v28n1/"),
 
-"Stef Aranas": ("verified","Philippines","English",
- "Trans woman. Presented as a “trans Pinay pop star” and the first trans artist signed to the independent label Offshore Music.",
- "It’s really all about empowering queer people, especially femmes, in all shapes and forms.",
- "The Beat Asia","https://thebeat.asia/manila/vibe/artists/the-beat-manilas-up-and-coming-artist-trans-pinay-pop-star-stef-aranas"),
+"Stef Aranas": ("partial","Philippines","English",
+ "Pop singer from Manila, presented by the press as a trans Pinay pop star and the first transgender artist signed to the independent label Offshore Music. No statement in her own words about her gender identity was found and read.",
+ "It’s really all about empowering queer people, especially femmes, in all shapes and forms.","The Beat Asia, 23 August 2024","https://thebeat.asia/manila/vibe/artists/the-beat-manilas-up-and-coming-artist-trans-pinay-pop-star-stef-aranas"),
 
 "Ayesha Erotica": ("guest",'United States','—',
  'Producer and singer, credited here as a featured artist. Referred to with she/her in the press. No statement in her own words about her gender identity was found and read, so this page makes no claim about it.',
  None,'',''),
 
 "Villano Antillano": ("verified","Puerto Rico","Spanish",
- "Trans woman who describes herself as transfemme. The first trans woman to enter Spotify’s Top 50.",
- None,"NPR","https://www.npr.org/2023/03/13/1158426326/villano-antillano-la-sustancia-x-interview"),
+ "Rapper from Puerto Rico. She has spoken of becoming a better musician once she took steps that brought her closer to her womanhood and her femininity.",
+ "I feel like I really became a better musician once I took steps that closened me to my womanhood and my femininity.","NPR, 13 March 2023","https://www.npr.org/2023/03/13/1158426326/villano-antillano-la-sustancia-x-interview"),
 
 "Bizarrap": ("guest",'Argentina','—',
  'Producer. Publicly referred to with he/him pronouns; no statement of his own about gender identity was located. He does not sing: the voice on the track is Villano Antillano’s.',
@@ -91,48 +85,44 @@ ART = {
  'Dear God, please, when I wake up, I want a female body.','Rolling Stone, 31 May 2012','https://www.rollingstone.com/music/music-news/the-secret-life-of-transgender-rocker-laura-jane-grace-tom-gabel-99788/'),
 
 "Jayne County": ("verified","United States","English",
- "Trans woman, she/her. Rock’s first openly trans singer, out from the beginning of her career in the early 1970s.",
- "I was an out transgender artist. There were other transgender artists around but they weren’t out. I was out from the very beginning.",
- "Interview Magazine","https://www.interviewmagazine.com/culture/jayne-county-trans-rocknroll-star-influenced-david-bowie-words"),
+ "Rock singer, out as transgender from the very beginning of her career, at a time when other transgender artists were not.",
+ "I was too outrageous on stage and plus being an out transgender artist—there were other transgender artists around but they weren't out. I was out from the very beginning.","Interview Magazine, 19 April 2018","https://www.interviewmagazine.com/culture/jayne-county-trans-rocknroll-star-influenced-david-bowie-words"),
 
 "Marie France": ("verified","France","French",
- "Trans woman. A pioneer of the Parisian scene of the 1970s and 80s, at the Alcazar and the Palace. She rejects the word “transsexuelle” as dated.",
- None,"Melody TV","https://www.melody.tv/actualite/marie-france-lune-des-premieres-chanteuses-transgenres-sort-un-nouvel-album/"),
+ "Singer and performer of the Parisian scene, at the Alcazar from 1969 and later at the Palace. She hates the word “transsexuel”, asking why anyone who has crossed to the other side should keep that label.",
+ "Quand on est passé de l’autre côté, pourquoi est-ce qu’on garde cette appellation ? — When you have crossed to the other side, why keep that label?","Melody TV, 29 November 2019","https://www.melody.tv/actualite/marie-france-lune-des-premieres-chanteuses-transgenres-sort-un-nouvel-album/"),
 
 "Chrissie Hynde": ("guest",'United States / UK','—',
  'Duet partner. Publicly referred to with she/her pronouns; no statement of her own about gender identity was located. Marie France is the lead artist on this track.',
  None,'',''),
 
 "Venus De Mars": ("verified","United States","English",
- "Trans, she/her, in terms she frames as sitting outside the binary rather than as a binary trans woman. Publicly out since 1988.",
- "I’m trans, male to female. That’s my gender. I don’t feel male at all. But I don’t feel female, either. I feel that I’m trans.",
- "The Current (MPR)","https://www.thecurrent.org/feature/2015/04/03/venus-de-mars-reflects-on-touring-with-against-me-and-her-journey-as-trans-artist"),
+ "Trans, male to female, in her own words, which she frames outside the binary rather than as a binary trans woman. She said in 2015 that she had come out twenty years earlier.",
+ "I don't feel male at all. But I don't feel female, either. I feel that I'm trans. I'm trans, male to female. That's my gender.","The Current, 3 April 2015","https://www.thecurrent.org/feature/2015/04/03/venus-de-mars-reflects-on-touring-with-against-me-and-her-journey-as-trans-artist"),
 
 "Venus de Mars and All the Pretty Horses": ("verified","United States","English",
- "The band fronted by Venus De Mars, who is trans and has been publicly out since 1988.",
- "I’m trans, male to female. That’s my gender. I don’t feel male at all. But I don’t feel female, either. I feel that I’m trans.",
- "The Current (MPR)","https://www.thecurrent.org/feature/2015/04/03/venus-de-mars-reflects-on-touring-with-against-me-and-her-journey-as-trans-artist"),
+ "The band fronted by Venus De Mars, who is trans, male to female, in her own words.",
+ "I don't feel male at all. But I don't feel female, either. I feel that I'm trans. I'm trans, male to female. That's my gender.","The Current, 3 April 2015","https://www.thecurrent.org/feature/2015/04/03/venus-de-mars-reflects-on-touring-with-against-me-and-her-journey-as-trans-artist"),
 
 "Left at London": ("verified","United States","English",
- "Nat Puff. A non-binary trans woman, she/her, in her own clarification: both, not one or the other.",
- "Nonbinary trans woman, to be specific.",
- "NBC News","https://www.nbcnews.com/pop-culture/viral/nat-puff-tiktok-becoming-left-london-turning-25-online-rcna12617"),
+ "Nat Puff, from Seattle. She describes herself as a trans lesbian musician, and has released her EPs under the title Transgender Street Legend.",
+ "I’m a 22-year old trans lesbian musician […]",None,(("KEXP, 26 March 2019", "https://kexp.org/read/2019/3/26/sound-vision-left-london-her-path-recovery/"), ("Dazed, 12 June 2019", "https://www.dazeddigital.com/music/article/44764/1/left-at-london-vine-frank-ocean-mitski-tyler-the-creator"), ("NBC News, 20 January 2022", "https://www.nbcnews.com/pop-culture/viral/nat-puff-tiktok-becoming-left-london-turning-25-online-rcna12617"))),
 
 "June Jones": ("verified","Australia","English",
- "Trans woman. Her solo work draws explicitly on her experience as a trans woman; she previously fronted the band Two Steps on the Water.",
- None,"NME","https://www.nme.com/features/june-jones-interview-leafcutter-album-2021-2885314"),
+ "Melbourne singer, formerly the leader of Two Steps on the Water. Her solo albums deal with her experiences as a trans woman, including what that means for her singing voice.",
+ "As a trans woman singer, there’s this constant tension about the natural sounds your voice can make","NME, 22 February 2021","https://www.nme.com/features/june-jones-interview-leafcutter-album-2021-2885314"),
 
 "Geryon": ("guest","Australia","English",
  "Seth Geryon Suda. Their Arts Access Victoria profile uses they/them but makes no statement about gender identity, and no other source was found that does. Featured credit; June Jones is the lead artist.",
  None,"Arts Access Victoria","https://www.artsaccess.com.au/artists/seth-geryon-suda/"),
 
 "jasmine.4.t": ("verified","UK","English",
- "Trans woman. Came out in 2021, an experience she has discussed at length in the music press.",
- None,"DIY Magazine","https://diymag.com/interview/jasmine4t-you-are-the-morning-february-2025"),
+ "Singer-songwriter from Manchester. She speaks of going on tour as a trans woman, and of wanting to raise other trans women up.",
+ "I think being able to go over there as a trans woman and foster some kind of international solidarity is such a big reason why I’m doing this","DIY Magazine, 20 February 2025","https://diymag.com/interview/jasmine4t-you-are-the-morning-february-2025"),
 
 "Luisa Almaguer": ("verified","Mexico","Spanish",
- "Trans woman. Singer, actress and activist; she builds her work around that identity and around accompanying others.",
- None,"Rolling Stone en Español","https://es.rollingstone.com/future-of-music-luisa-almaguer/"),
+ "Singer, actor and activist. Her album “Weyes” is about the relationship of trans women, herself among them, with men; she speaks of wanting to accompany others.",
+ "Weyes es un disco que quería hacer sobre la relación que tenemos las mujeres trans con los hombres, que está mediada por el peligro y la muerte, pero también por la ternura y el amor — Weyes is a record I wanted to make about the relationship we trans women have with men, which is shaped by danger and death, but also by tenderness and love","Rolling Stone en Español, 6 May 2025","https://es.rollingstone.com/future-of-music-luisa-almaguer/"),
 
 "Susy Shock": ("verified",'Argentina','Spanish',
  'Artist, poet and singer. She calls herself a trava, her own word, which this page keeps rather than translates.',
@@ -140,12 +130,12 @@ ART = {
  'La Izquierda Diario, 3 June 2016','https://www.izquierdadiario.es/Susy-Shock-Sin-las-travas-no-hay-Ni-una-menos'),
 
 "La Bruja de Texcoco": ("verified","Mexico","Spanish, Zapotec",
- "Trans woman. She frames her transfemininity as the explicit engine of her work on Mexican traditional music.",
- None,"Bandcamp Daily","https://daily.bandcamp.com/features/la-bruja-de-texcoco-feature"),
+ "Singer working with Mexican traditional music. She frames her trans femininity as bound up with the music she makes, and has said she wants to be a different kind of woman through it.",
+ "I want to be a different kind of woman through music","Bandcamp Daily, 25 April 2019","https://daily.bandcamp.com/features/la-bruja-de-texcoco-feature"),
 
-"Ethel Cain": ("verified",'United States','English',
- 'Hayden Anhedönia. Trans woman, who came out publicly on her twentieth birthday.',
- 'I was too scared to come out as a trans woman ’cause I was dreading the thought of having to come out for a second time after how it went the first time',None,(('Pitchfork, 20 April 2021', 'https://pitchfork.com/features/rising/ethel-cain-interview/'), ('W Magazine, 13 May 2022', 'https://www.wmagazine.com/culture/ethel-cain-preachers-daughter-album-interview'))),
+"Ethel Cain": ("verified","United States","English",
+ "Hayden Anhedönia. Singer, songwriter and producer, raised in a Baptist household. She has spoken of being too scared, at first, to come out as a trans woman.",
+ "I was too scared to come out as a trans woman ’cause I was dreading the thought of having to come out for a second time after how it went the first time",None,(("Pitchfork, 20 April 2021", "https://pitchfork.com/features/rising/ethel-cain-interview/"), ("W Magazine, 13 May 2022", "https://www.wmagazine.com/culture/ethel-cain-preachers-daughter-album-interview"))),
 
 "Jackie Shane": ("verified","United States / Canada","English",
  "Soul singer from Nashville who made her career in Toronto in the 1960s. She described herself as a woman born in this body, not as a cisgender woman; she is not known to have used the word “trans” for herself, and this page does not put it in her mouth. She is listed among transfeminine artists in that sense, with her own word for herself kept as she said it.",
@@ -153,25 +143,24 @@ ART = {
  "Numero Group, Baby, Do What You Want, 13 October 2015","https://numerogroup.com/blogs/stories/jackie-shane-baby-do-what-you-want"),
 
 "Shea Diamond": ("verified","United States","English",
- "Trans woman, in her own words. Her songwriting centres Black trans experience.",
- "A 40-year-old woman, a trans woman.",
- "Variety","https://variety.com/2018/music/news/shea-diamond-trans-singer-justin-tranter-interview-1202865265/"),
+ "Singer. She describes herself as a woman, a trans woman, and speaks of what it takes for a trans woman to survive.",
+ "So to be a 40-year-old woman, a trans woman, to make it to that age it's not really heard of.","Variety, 4 July 2018","https://variety.com/2018/music/news/shea-diamond-trans-singer-justin-tranter-interview-1202865265/"),
 
-"Mila Jam": ("verified",'United States','English',
- 'Jahmila Adderley. Trans woman, who frames her transition as becoming the woman she is.',
- 'I’ve always been a woman, but that’s just not been the shell and it’s time to catch up with that, it’s time to make sure the shell reflects who I really am on the inside.',None,(('I’m From Driftwood', 'https://imfromdriftwood.com/mila_jam/'), ('HuffPost, 2015', 'https://www.huffpost.com/entry/i-literally-went-back-to_b_7070030'))),
+"Mila Jam": ("verified","United States","English",
+ "Singer. She frames her transition as making her outward shell reflect the woman she has always been.",
+ "I’ve always been a woman, but that’s just not been the shell and it’s time to catch up with that, it’s time to make sure the shell reflects who I really am on the inside.",None,(("I’m From Driftwood", "https://imfromdriftwood.com/mila_jam/"), ("HuffPost, 2015", "https://www.huffpost.com/entry/i-literally-went-back-to_b_7070030"))),
 
 "Peppermint": ("verified","United States","English",
- "Black trans woman. Her music and interviews deal explicitly with trans experience.",
- None,"Metro Weekly","https://www.metroweekly.com/2020/10/peppermint-centers-the-trans-experience-in-new-ep-a-girl-like-me/"),
+ "Singer and performer. She has said that her drag always led her back to the realisation that she is a trans woman, and her music deals explicitly with trans experience.",
+ "But I kind of evolved to realize that all the drag things that I wanted to do, it always led back to the realization that I'm a trans woman.",None,(("The Advocate, 28 April 2017", "https://www.advocate.com/television/2017/4/28/drag-races-peppermint-comes-out-transgender"), ("Metro Weekly, 12 October 2020", "https://www.metroweekly.com/2020/10/peppermint-centers-the-trans-experience-in-new-ep-a-girl-like-me/"))),
 
-"Our Lady J": ("verified",'United States','English',
- 'Yona Speidel. Trans woman, who came out in 2004. The first openly trans woman to perform at Carnegie Hall.',
- 'I wouldn’t be doing what I’m doing now if I hadn’t come out as a trans woman and if I hadn’t been born as a trans woman.','Out, 10 August 2010','https://www.out.com/entertainment/2010/08/10/need-know-our-lady-j'),
+"Our Lady J": ("verified","United States","English",
+ "Singer and songwriter. She says her work would not exist had she not come out as a trans woman.",
+ "I wouldn’t be doing what I’m doing now if I hadn’t come out as a trans woman and if I hadn’t been born as a trans woman.","Out, 10 August 2010","https://www.out.com/entertainment/2010/08/10/need-know-our-lady-j"),
 
 "Patricia Ribeiro": ("verified","Portugal","Portuguese",
- "Trans woman. Presented in the press as Portugal’s first trans woman singer; “Lotaria do Amor” earned a gold record there.",
- None,"Criativa Online","https://criativaonline.com.br/cantora-transexual-portuguesa-esta-de-volta-aos-palcos/"),
+ "Singer, presented in the press as the first trans woman to build a professional music career in Portugal; she has two gold records. In 2014 she published an autobiography whose title is her own summary of her life.",
+ "Ontem Homem, Hoje Mulher — Yesterday a Man, Today a Woman (title of her 2014 autobiography)","Tribuna do Sertão, 4 September 2026","https://www.tribunadosertao.com.br/cultura-pop/2026/09/04/973581-apos-sucesso-no-bbb-de-portugal-patricia-ribeiro-sonha-com-vaga-no-big-brother-brasil"),
 
 "Haiifa Magic": ("verified","Lebanon","Arabic",
  "Pop singer based in Beirut, the first person in Lebanon to become famous after changing sex, in her own words, and a self-described role model for people judged for who they are.",
@@ -206,9 +195,8 @@ ART = {
  'CartaCapital, 29 July 2018','https://www.cartacapital.com.br/diversidade/liniker-201csou-dona-do-meu-corpo-e-das-coisas-que-escolho-para-mim201d/'),
 
 "Linn da Quebrada": ("verified","Brazil","Portuguese",
- "Identifies specifically as a travesti rather than as a trans woman — a distinct Brazilian category, not a translation of either English term. Her work also reclaims the word “bicha”.",
- "Me sinto livre para não ser nem homem nem mulher. — I feel free to be neither man nor woman.",
- "Diário do Nordeste","https://diariodonordeste.verdesmares.com.br/entretenimento/zoeira/linn-da-quebrada-do-bbb22-identifica-se-como-travesti-e-nao-como-mulher-trans-entenda-a-diferenca-1.3182855"),
+ "Singer, rapper and actor. She identifies as a travesti rather than as a trans woman, in her own words: a Brazilian identity, not a translation of either English term.",
+ "Me sinto livre para não ser nem homem nem mulher. Se aos 30 anos eu venho me perguntando quem sou eu, agora não tenho dúvida: eu sou travesti — I feel free to be neither man nor woman. If at 30 I have been asking myself who I am, now I have no doubt: I am a travesti","Diário do Nordeste, 20 January 2022, quoting her words of March 2021","https://diariodonordeste.verdesmares.com.br/entretenimento/zoeira/linn-da-quebrada-do-bbb22-identifica-se-como-travesti-e-nao-como-mulher-trans-entenda-a-diferenca-1.3182855"),
 
 "Mulher Pepita": ("verified",'Brazil','Portuguese',
  'Funk carioca singer. She calls herself a travesti, the word she has said she was born to and will die with; this page keeps it as she uses it.',
@@ -220,8 +208,8 @@ ART = {
  None,None,None),
 
 "Backxwash": ("verified","Zambia / Canada","English",
- "Ashanti Mutinta. Trans woman, she/her.",
- None,"Cult MTL","https://cultmtl.com/2020/10/montreal-ottawa-trans-rapper-hip-hop-artist-backxwash-delivers-unfiltered-rhymes-on-god-has-nothing-to-do-with-this-leave-him-out-of-it-new-album-interview/"),
+ "Ashanti Mutinta. Rapper who grew up in Zambia and is based in Montreal. She has spoken of coming out first as bi, then as a trans woman.",
+ "I thought that would be the end of it, but it was just the beginning, I’m a trans woman now.","Louder, 24 August 2021","https://cultmtl.com/2020/10/montreal-ottawa-trans-rapper-hip-hop-artist-backxwash-delivers-unfiltered-rhymes-on-god-has-nothing-to-do-with-this-leave-him-out-of-it-new-album-interview/"),
 
 "Ada Rook": ("guest",'Canada','—',
  'Musician, half of Black Dresses, credited here as a featured artist. Referred to with she/her in the press. This page makes no claim about her gender identity.',
@@ -241,14 +229,12 @@ ART = {
  None,"GhanaWeb","https://www.ghanaweb.com/GhanaHomePage/entertainment/I-m-an-ally-of-the-LGBTQ-community-not-a-member-Sister-Deborah-clarifies-1717823"),
 
 "Quay Dash": ("verified","United States","English",
- "Black trans woman, in her own words.",
- "I’m black, I’m trans, and I can actually rap.",
- "Dazed","https://www.dazeddigital.com/music/article/37529/1/quay-dash-interview"),
+ "Rapper from New York. Black and trans, in her own words.",
+ "I’m black, I’m trans, and I can actually rap.","Dazed, 25 September 2017","https://www.dazeddigital.com/music/article/37529/1/quay-dash-interview"),
 
 "Andra Venus": ("verified","Spain","Spanish, English",
- "Trans woman, previously recording as Fuckin’ Rainbow. Her work centres empowerment within the trans community.",
- "The project was born from the need to be the artist that young Alejandra would have wanted as a reference.",
- "Neo2","https://www.neo2.com/andra-venus-cantante-trans-andaluza-fuckin-rainbow/"),
+ "Singer, songwriter and activist from Andalusia, previously recording as Fuckin’ Rainbow. She calls herself a trans girl, and describes her stage name as a statement that places her in possession of femininity.",
+ "Todo esto junto viene a decir que la Venus se ha hecho humana, que un ente del planeta Venus ha bajado a La Tierra, el nombre de una nueva constelación o un statement anti-TERF que me posiciona a mí, una chica trans, en posesión de la feminidad. — All of this together says that Venus has become human, that a being from the planet Venus has come down to Earth, the name of a new constellation, or an anti-TERF statement that places me, a trans girl, in possession of femininity.","Neo2, 13 March 2023","https://www.neo2.com/andra-venus-cantante-trans-andaluza-fuckin-rainbow/"),
 
 "Coccinelle": ("verified",'France','French',
  'Cabaret singer and showgirl, and one of the first women operated on by Georges Burou in Casablanca, in the late 1950s. In her memoirs she called the operation a “rectification”.',
@@ -256,22 +242,20 @@ ART = {
  'Slate.fr, 6 March 2024, quoting her memoirs','https://www.slate.fr/story/266050/coccinelle-jacqueline-dufresnoy-robert-badinter-mariage-trans-eglise'),
 
 "Ptite Soeur": ("partial","France","French",
- "French rapper described as transgender by multiple press outlets (Le Canal Auditif, Mosaïque Magazine, franceinfo). No first-person statement about her gender identity was located; the artist keeps her offstage identity largely private.",
+ "French rapper, described as a French trans rapper by Le Canal Auditif. No first-person statement about her gender identity was found and read.",
  None,"Le Canal Auditif","https://lecanalauditif.ca/artistes/ptite-soeur/"),
 
 "underscores": ("partial","United States","English",
- "April Harper Grey. Described as a transgender woman by NME and by Wikipedia, which cites a first-person statement to Pitchfork. That Pitchfork interview could not be opened during verification, so no first-person statement has been read directly here.",
- None,"NME","https://www.nme.com/features/music-interviews/underscores-u-interview-3934922"),
+ "Producer and singer; April Harper Grey is her stage name. Described as a transgender woman by NME, and by The FADER as the woman behind the persona. No first-person statement about her gender identity has been read here.",
+ None,None,(("NME", "https://www.nme.com/features/music-interviews/underscores-u-interview-3934922"), ("The FADER, cover story", "https://features.thefader.com/underscores"))),
 
 "Jane Remover": ("partial","United States","English",
- "Came out as a trans woman in 2022, then clarified in 2025 that she is non-binary. She has asked not to be pinned down, and in February 2026 wrote that she uses any pronouns but prefers they. Her own words are quoted in full rather than resolved into a label.",
- "I’m not not trans, but I’m not a trans woman… It is exhausting to have to figure it out publicly in front of thousands of people, so I was like: let me make this easy for everybody. I’m whatever you want, it’s up to y’all now.",
- "NME","https://www.nme.com/features/music-interviews/jane-remover-revengeseekerz-interview-3872077"),
+ "Came out as a trans woman in 2022, then clarified in 2025 that they are non-binary. They have asked not to be pinned down; their own words are quoted in full rather than resolved into a label.",
+ "I’m not not trans, but I’m not a trans woman… It is exhausting to have to figure it out publicly in front of thousands of people, so I was like: let me make this easy for everybody. I’m whatever you want, it’s up to y’all now.","NME, 24 June 2025","https://www.nme.com/features/music-interviews/jane-remover-revengeseekerz-interview-3872077"),
 
 "ISSBROKIE": ("verified","United States","English",
  "Raps about being trans in the first person across her own releases, naming both the transphobia she receives and her own hormone treatment. In interview she has described that subject matter as her own.",
- "All-all-all these fuckin’ comments hate on me ’cause I’m transgender shit / Keep-keep-keep on fuckin’ commentin’, that shit pay for my estrogen",
- "Lyrics, “I’M Up Now!” (2023)","https://www.shazam.com/en-us/song/1704292542/im-up-now"),
+ "All-all-all these fuckin' comments hate on me 'cause I'm transgender shit / Keep-keep-keep on fuckin' commentin', that shit pay for my estrogen","Lyrics, “I’M Up Now!” (2023)","https://www.shazam.com/en-us/song/1704292542/im-up-now"),
 
 "Laura Les": ("verified",'United States','English',
  'Trans woman. One half of 100 gecs with Dylan Brady. Her solo work deals directly with transition and with passing, in the first person.',
@@ -294,9 +278,8 @@ ART = {
  None,None,None),
 
 "Mel 4Ever": ("verified","United States","English",
- "Trans woman. Born in Alabama, made her name in the Brooklyn scene before moving to Los Angeles. She speaks about her transition and about passing in the first person.",
- "I no longer was so obviously trans. But the transphobia that I started to receive felt a little more insidious rather than blatant because I suddenly was a little more passing.",
- "NYLON","https://www.nylon.com/entertainment/mel-4ever-she-culture1-profile-hyperpop"),
+ "Born in Alabama, she made her name in the Brooklyn scene. She speaks about her transition and about passing in the first person.",
+ "It changed the course of my life, I no longer was so obviously trans […] But the transphobia that I started to receive felt a little more insidious rather than blatant because I suddenly was a little more passing.","NYLON, 19 October 2023","https://www.nylon.com/entertainment/mel-4ever-she-culture1-profile-hyperpop"),
 
 "gabby start": ("guest","United States","English",
  "Featured vocalist. No public statement about their gender identity was found. underscores is the lead artist on this track.",
@@ -308,9 +291,8 @@ ART = {
  "X, 17 May 2026","https://x.com/__crunge/status/2056096480474083461"),
 
 "Cae Monāe": ("verified","United States","English",
- "Chicago-based artist and performer, a fixture of the city’s queer nightlife. She names her identity directly and in the first person.",
- "I am what they consider, an international transsexual woman.",
- "Dazed","https://www.dazeddigital.com/beauty/article/46791/1/cae-monae-chicago-make-up-musician-artist-performer-interview"),
+ "Chicago-based artist and performer, an icon of the city’s queer community. She names her identity directly and in the first person.",
+ "I am what they consider, an international transsexual woman.","Dazed, 14 November 2019","https://www.dazeddigital.com/beauty/article/46791/1/cae-monae-chicago-make-up-musician-artist-performer-interview"),
 
 "MONĀE": ("guest","United States","English",
  "Credited alongside Cae Monāe on this track. No public statement about their gender identity was found.",
@@ -322,9 +304,8 @@ ART = {
  'Phoenix New Times, 4 May 2016','https://www.phoenixnewtimes.com/music/heartbroken-trans-gay-and-on-tour-its-all-just-dyke-drama-8244599/'),
 
 "Tingtongketz": ("verified","Malaysia","Malay, English",
- "Queercore garage band from Kuala Lumpur, founded in 2015 by Shika Corona, who sings and plays guitar, with a revolving cast of queer and trans musicians. She has spoken publicly about living as herself in a country that criminalises it.",
- "I couldn’t do that. I’m so sorry, because this is my true self.",
- "Malay Mail","https://www.malaymail.com/news/malaysia/2019/03/29/transgender-guitarist-strikes-a-different-note-in-conservative-malaysia/1737637"),
+ "Band from Malaysia founded in 2015 by Shika Corona, who sings and plays guitar. She has spoken of her mother asking her to reverse her transition, and of refusing because it is her true self.",
+ "But I couldn't do that […] I'm so sorry, because this is my true self.","Malay Mail, 29 March 2019","https://www.malaymail.com/news/malaysia/2019/03/29/transgender-guitarist-strikes-a-different-note-in-conservative-malaysia/1737637"),
 
 "Beth Elliott": ("verified",'United States','English',
  'Folk singer and songwriter, active in the San Francisco lesbian movement from the late 1960s. She has described knowing from an early age that she was a girl, while being expected, as the first-born son, to restore her family’s fortunes.',
@@ -332,9 +313,8 @@ ART = {
  'The Outwords Archive, oral history interview with Mason Funk','https://theoutwordsarchive.org/interview/beth-elliott/'),
 
 "Namoli Brennet": ("verified","United States","English",
- "Trans woman, singer-songwriter, self-produced across a dozen albums since 2002. Her own biography sets out her transition and her voice in the first person.",
- "I want to transition and I want to be a songwriter.",
- "Her own biography","https://namolibrennet.com/bio"),
+ "Folk singer-songwriter, who has self-released thirteen albums since 2002. Her own biography sets out her transition, and what it meant for her singing voice, in the first person.",
+ "The answers were, I want to transition and I want to be a songwriter. The first songs, like the first steps in transitioning, were cautious and awkward.","Her own biography","https://namolibrennet.com/bio"),
 
 "Vivek Shraya": ("verified",'Canada','English',
  'Musician, writer and artist. She describes herself as trans and femme, and has spoken of being assigned male at birth and of reclaiming her femininity through “she” and “her”.',
@@ -346,26 +326,23 @@ ART = {
  None,None,None),
 
 "Veronica Klaus": ("verified","United States","English",
- "Trans woman, cabaret and jazz singer in San Francisco. Her one-woman show “Family Jewels” deals with her transition directly.",
- "I wasn’t trying to change who I was through gender reassignment, but to become who I truly was.",
- "SFGate","https://www.sfgate.com/performance/article/Veronica-Klaus-is-brassy-and-confident-onstage-2501415.php"),
+ "Cabaret and jazz singer in San Francisco. Her one-woman show “Family Jewels” deals with her transition directly; offstage she protects her privacy.",
+ "wasn't trying to change who I was […] but to become who I truly was.","SFGate, 20 March 2006","https://www.sfgate.com/performance/article/Veronica-Klaus-is-brassy-and-confident-onstage-2501415.php"),
 
 "Ah-Mer-Ah-Su": ("verified","United States","English",
- "Star Amerasu. Black transfemme singer, songwriter and producer from Oakland, using the words “trans” and “femme” about herself and her work.",
- "The whole album is really an exploration of what it means to be Black, trans, femme, and young, and having real problems.",
- "PAPER Magazine","https://www.papermag.com/ah-mer-ah-su"),
+ "Black transfemme singer, songwriter and producer from Oakland, who describes her album as an exploration of being Black, trans, femme and young.",
+ "The whole album is really an exploration of what it means to be Black, trans, femme, and young, and having real problems.","PAPER Magazine, 23 May 2018","https://www.papermag.com/ah-mer-ah-su"),
 
 "Ataru Nakamura": ("verified",'Japan','Japanese',
  'Singer-songwriter from Tokyo, working in both rock and enka. She has said that the public disclosure of her gender history, at her debut in 2006, was pressed on her by the people promoting her rather than chosen, and that she now looks back on the attention it brought with gratitude as well as pain.',
  '注目していただけたのは、今となっては本当にありがたいこと。でも当時は『苦しい』という気持ちの方が大きくて。 — The attention I received, I am truly grateful for it now. But at the time, the feeling of pain was greater.',None,(('ENCOUNT, 18 June 2026', 'https://encount.press/archives/1002517'), ('FRaU, 28 June 2021', 'https://gendai.media/articles/-/84549'))),
 
 "Ms. Boogie": ("verified","United States","English",
- "Rose Isabel Rayos. Rapper from East New York, Brooklyn, of Dominican and Colombian heritage, part of the Ballroom scene since she was fifteen. She came out in an open letter in May 2018 and states her identity on her own terms.",
- "In a practical world, I would be a “trans woman,” but in the world that I have built for myself and my loved ones, I am simply myself.",
- "PAPER Magazine","https://www.papermag.com/introducing-ms-boogie"),
+ "Rose Isabel Rayos. Rapper from East New York, Brooklyn, of Dominican and Colombian heritage. She announced her womanhood in an open letter in May 2018 and states her identity on her own terms.",
+ "In a practical world, I would be a “trans woman,” but in the world that I have built for myself and my loved ones, I am simply myself.","PAPER Magazine, 9 May 2018","https://www.papermag.com/introducing-ms-boogie"),
 
 "LALLA RAMI": ("partial","Morocco / France","Darija, French, English",
- "Moroccan rapper born in Kénitra in 2000, based in Paris since 2019. Described as a trans woman by Têtu, franceinfo and Wikipédia, and she has appeared publicly under billing that names her as such, including a JINS podcast episode and a live event at the Institut du monde arabe. No first-person statement of identity was read during verification.",
+ "Moroccan rapper based in Paris. Described as a young transgender woman by Têtu, and she has appeared publicly under billing that names her as such. No first-person statement of identity was found and read.",
  None,"Têtu","https://tetu.com/2022/01/04/2022-appartient-musique-rap-queer-lalla-rami-single-inchallah/"),
 
 "Lauren Auder": ("verified",'UK / France','English',
@@ -378,18 +355,16 @@ ART = {
  None,None,None),
 
 "osquinn": ("verified","United States","English",
- "Formerly p4rkr. Rapper, singer and producer from Baltimore, born 2004, and one of the founding figures of digicore. She speaks about her coming out and her deadname in her own words.",
- "I go by both, but p4rkr represents my deadname before I came out as trans, sort of like someone I used to be.",
- "The FADER","https://www.thefader.com/2020/07/31/5-fast-facts-with-osquinn-aka-p4rkr-hyperpops-once-and-future-queen"),
+ "Formerly p4rkr. Rapper, singer and producer, fifteen years old in 2020. She speaks about her coming out and her deadname in her own words.",
+ "I go by both, but p4rkr represents my deadname before I came out as trans, sort of like someone I used to be.","The FADER, 31 July 2020","https://www.thefader.com/2020/07/31/5-fast-facts-with-osquinn-aka-p4rkr-hyperpops-once-and-future-queen"),
 
 "Anita Velveeta": ("verified","United States","English",
- "Singer based in East St. Paul, Minnesota, moving between rock, death-metal growl and solo electronics. Described as the big sister of the Twin Cities trans music scene.",
- "I’m trans.",
- "The Current","https://www.thecurrent.org/feature/2023/05/24/anita-velveeta-makes-music-for-weirdos-like-herself"),
+ "Singer based in St. Paul, Minnesota. She has spoken of coming out as trans after a long period of isolation, and her song “T4T” is about trans love.",
+ "I was compartmentalizing it and not just accepting, looking in the mirror [and saying] ‘I'm trans.’","The Current, 24 May 2023","https://www.thecurrent.org/feature/2023/05/24/anita-velveeta-makes-music-for-weirdos-like-herself"),
 
-"Ezra Furman": ("verified",'United States','English',
- 'Trans woman, she/her and they/them. Singer and guitarist since the mid-2000s, first with the Harpoons, then solo. She came out publicly on Instagram on 21 April 2021, and has also used the name Liz since 2025.',
- 'I wanted to share with everyone that I am a trans woman, and also that I am a mom and have been for a while now (like 2+ years)','Pitchfork, 21 April 2021 (quoting her Instagram announcement)','https://pitchfork.com/news/ezra-furman-comes-out-as-a-transgender-woman/'),
+"Ezra Furman": ("verified","United States","English",
+ "Singer and songwriter. She came out publicly as a trans woman on Instagram on 21 April 2021, in the same announcement in which she said she had been a mother for over two years.",
+ "I wanted to share with everyone that I am a trans woman, and also that I am a mom and have been for a while now (like 2+ years)","Pitchfork, 21 April 2021 (quoting her Instagram announcement)","https://pitchfork.com/news/ezra-furman-comes-out-as-a-transgender-woman/"),
 
 "Mya Byrne": ("verified",'United States','English',
  'Americana and roots singer-songwriter from Brooklyn, who describes herself as a Jewish queer trans woman.',
@@ -402,13 +377,12 @@ ART = {
  'San Diego Reader, 1 September 2022','https://www.sandiegoreader.com/news/2022/sep/01/blurt-steam-powered-giraffes-rabbit-transition/'),
 
 "SuperKnova": ("verified","United States","English",
- "Ellie Kim. Trans Asian American singer and multi-instrumentalist from Chicago, who produces and records everything herself.",
- "I already was living a life so outside of people’s “normal”.",
- "Qwear","https://www.qwearfashion.com/home/superknova-on-embracing-herself-as-a-queer-trans-asian-musician"),
+ "Ellie Kim. Musician and producer from Chicago, who speaks of growing up as a trans Asian American and of coming out as trans.",
+ "Something I realized when I was growing up and especially when I was coming out as trans [is that] I already was living a life so outside of people's 'normal,'","Qwear, 27 January 2022","https://www.qwearfashion.com/home/superknova-on-embracing-herself-as-a-queer-trans-asian-musician"),
 
-"Jinkx Monsoon": ("verified",'United States','English',
- 'Trans-femme and non-binary, she/her. Singer and performer from Portland with two studio albums, moving between blues, jazz, cabaret and garage rock. She has spoken publicly about her hormone therapy and facial feminisation surgery.',
- 'In my own trans identity and my own gender journey, I’m constantly self-manifesting and constantly finding ways to be more myself',None,(('WWD, 27 February 2024', 'https://wwd.com/pop-culture/new-fashion-releases/jinkx-monsoon-perfume-hera-release-info-1236221768/'), ('Queerty, 25 April 2017', 'https://www.queerty.com/hey-qween-jinx-monsoon-talks-new-album-gender-fluidity-drag-race-20170425'))),
+"Jinkx Monsoon": ("verified","United States","English",
+ "Singer and performer, who identifies as trans-femme and speaks of her own trans identity and gender journey.",
+ "In my own trans identity and my own gender journey, I’m constantly self-manifesting and constantly finding ways to be more myself",None,(("WWD, 27 February 2024", "https://wwd.com/pop-culture/new-fashion-releases/jinkx-monsoon-perfume-hera-release-info-1236221768/"), ("Queerty, 25 April 2017", "https://www.queerty.com/hey-qween-jinx-monsoon-talks-new-album-gender-fluidity-drag-race-20170425"))),
 
 "Aderet": ("verified","Israel","Hebrew, English",
  "Hadar Babayof, born 1975. Israeli singer-songwriter, DJ and producer. She places herself inside the transgender community in Israel in her own words, while declining the role of spokesperson.",

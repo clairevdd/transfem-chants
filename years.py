@@ -712,7 +712,7 @@ YEARS = {
         "precision": "day",
         "kind": "first",
         "spotify": "2011-10-15",
-        "status": "verified",
+        "status": "partial",
         "source": "Portuguese Wikipedia, album Chão..., seventh track",
         "url": "https://pt.wikipedia.org/wiki/Ch%C3%A3o..._(%C3%A1lbum)",
         "checked": "2026-09-04",
