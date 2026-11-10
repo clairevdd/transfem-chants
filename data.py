@@ -209,7 +209,7 @@ ART = {
 
 "Backxwash": ("verified","Zambia / Canada","English",
  "Ashanti Mutinta. Rapper who grew up in Zambia and is based in Montreal. She has spoken of coming out first as bi, then as a trans woman.",
- "I thought that would be the end of it, but it was just the beginning, I’m a trans woman now.","Louder, 24 August 2021","https://cultmtl.com/2020/10/montreal-ottawa-trans-rapper-hip-hop-artist-backxwash-delivers-unfiltered-rhymes-on-god-has-nothing-to-do-with-this-leave-him-out-of-it-new-album-interview/"),
+ "I thought that would be the end of it, but it was just the beginning, I’m a trans woman now.","Louder, 24 August 2021","https://www.loudersound.com/features/backxwash-i-had-planned-i-was-going-to-die-at-the-end-of-the-year"),
 
 "Ada Rook": ("guest","Canada","—",
  "Credited with Backxwash on “I LIE HERE BURIED WITH MY RINGS AND MY DRESSES”.",
@@ -345,10 +345,9 @@ ART = {
  "Moroccan rapper based in Paris. Described as a young transgender woman by Têtu, and she has appeared publicly under billing that names her as such. No first-person statement of identity was found and read.",
  None,"Têtu","https://tetu.com/2022/01/04/2022-appartient-musique-rap-queer-lalla-rami-single-inchallah/"),
 
-"Lauren Auder": ("verified",'UK / France','English',
- 'Singer of orchestral and baroque pop. She has described her songs since 2021 as drawn from her experiences since being an out trans woman.',
- 'Here I’m truly presenting five songs that are only connected through, well, me and my experiences since being an out trans woman.',
- 'METAL Magazine, 21 January 2021','https://metalmagazine.eu/en/post/lauren-auder'),
+"Lauren Auder": ("verified","France / UK","English",
+ "London-based French singer of orchestral and baroque pop. She has described her songs since 2021 as drawn from her experiences since being an out trans woman.",
+ "Here I’m truly presenting five songs that are only connected through, well, me and my experiences since being an out trans woman.","METAL Magazine, 21 January 2021","https://metalmagazine.eu/en/post/lauren-auder"),
 
 "Celeste": ("guest","UK","—",
  "Credited with Lauren Auder on “Unseen (feat. Celeste)”.",
@@ -480,7 +479,7 @@ ART = {
  "Drag performer and singer from Extremadura. She introduced herself as non-binary on the first season of Drag Race España, and in December 2022 said on her social media and her podcast that she is a trans woman, adding that she does not want this to be used as an argument against non-binary identities.",
  "Soy una chica y mi pronombre es ella. — I am a girl and my pronoun is she.","El Español, 22 December 2022","https://www.elespanol.com/corazon/bluper/20221222/arantxa-castilla-la-mancha-drag-race-espana-abiertamente/727927241_0.html"),
 
-"Gad Yola": ("partial","Peru","Spanish",
+"Gad Yola": ("partial","Peru / Spain","Spanish",
  "Peruvian drag performer, singer and activist, living in Spain since the age of ten. Her first album, released in June 2024, is titled Travesti del Perú and pays tribute to the travesti activist Giuseppe Campuzano, whose book Museo Travesti del Perú she says spoke to her personally. In Latin America travesti is a gender identity rather than a way of dressing. Marked partial: she says she is neither a man nor a woman, but no source was found in which she calls herself travesti, and nothing she says bears on the gender she was assigned at birth.",
  "Siempre le digo a mi mamá: “No soy un hombre, ni mujer”. — I always tell my mum: “I’m not a man, nor a woman”.","Somos Periodismo, 28 June 2024","https://somosperiodismo.com/gad-yola-una-drag-queen-decolonial/"),
 
@@ -601,7 +600,7 @@ ART = {
  "Vocalist and principal songwriter of the New York post-black metal band Liturgy. Publicly announced in May 2020 that she is a woman, continuing the same project under the same name.",
  "I am a woman. I’ve always been one.","Metal Injection, 12 May 2020","https://metalinjection.net/news/liturgys-hunter-hunt-hendrix-comes-out-as-transgender-i-am-a-woman"),
 
-"Aérea Negrot": ("verified","Venezuela","English",
+"Aérea Negrot": ("verified","Venezuela / Germany","English",
  "Venezuelan DJ, singer-songwriter and dancer, born in Caracas and based in Berlin, who sang with Hercules and Love Affair from 2008 and formed the electropop group La Familia Felíz in 2002. She identified as trans and described her transition as a process that had gone back and forth. She died in October 2023, aged 43.",
  "I started transitioning years ago and then de-transitioned and transitioned again.",None,(("Remezcla, 1 December 2016", "https://remezcla.com/features/music/aerea-negrot-interview/"), ("Resident Advisor, 14 October 2023", "https://ra.co/news/79687"))),
 
@@ -633,7 +632,7 @@ ART = {
  "New York nightlife figure and recording artist, longtime muse of the photographer David LaChapelle.",
  "And when the press found out I was a transsexual, they liked me even more. I was in the Times, French Vogue... It was really validating. I became kind of the 'It' transsexual, especially after working with David LaChapelle, modeling in his photographs for years.","Into The Gloss, January 2014","https://intothegloss.com/2014/01/amanda-lepore"),
 
-"Jiggly Caliente": ("verified","United States / Philippines","English",
+"Jiggly Caliente": ("verified","Philippines / United States","English",
  "Reality-television personality (RuPaul's Drag Race, season 4; All Stars 6), actress and singer. Died 27 April 2025.",
  "this is beyond me — the representation that I carry as a trans queen isn't just about me.",None,(("Nylon, 30 June 2021", "https://www.nylon.com/entertainment/jiggly-caliente-rupauls-drag-race-all-stars-season-6-exit-interview"), ("Fox 5 New York, 27 April 2025", "https://www.fox5ny.com/news/jiggly-caliente-dies-rupauls-drag-race-star"))),
 
@@ -726,13 +725,13 @@ ART = {
  "Serbian singer, who became known in 2020 with the duet “Lepa sam”. Describes herself as a transgender person (transrodna osoba) and speaks of her own transition in the first person.",
  "To muškarac više ne postoji kod mene, ali recimo, dvanaest-trinaest godina živim u ovom svetlu u kojem me trenutno vidite. — That man no longer exists in me; I have been living for some twelve or thirteen years in the light you see me in now.","Nova.rs, 10 September 2020","https://nova.rs/zabava/ispovest-transrodne-pevacice-electre-elite-za-nova-rs/"),
 
-"鍾潔希": ("partial","Malaysia / Australia","Mandarin",
+"鍾潔希": ("partial","Malaysia","Mandarin",
  "Jessie Chung. Singer, songwriter and actress from Kuching, releasing albums since 1998. Described as transgender by the press since 2005; in a 2005 interview she speaks of her own situation, but no first-person statement of her gender identity was located.",
  None,"Malaysiakini","https://www.malaysiakini.com/news/43100"),
 
-"Endigo": ("verified","Sweden","English",
- "Swedish singer, music producer and drag performer (Drag Race Sverige), known for metal vocals on video-game soundtracks. Came out as trans on Instagram in November 2023, tagging the post #transgirl.",
- "I'M TRANS! […] tbh I've felt this way.. well, my entire life.","Instagram, 21 November 2023","https://www.instagram.com/p/Cz61W8tN1kK/"),
+"Endigo": ("verified","Sweden / Japan","English",
+ "Swedish singer, music producer and drag performer (Drag Race Sverige), from Stockholm, who moved to Tokyo in 2019 and works in voice and music there, notably metal vocals on video-game soundtracks. Came out as trans on Instagram in November 2023, tagging the post #transgirl.",
+ "I'M TRANS! […] tbh I've felt this way.. well, my entire life.",None,(("Instagram, 21 November 2023", "https://www.instagram.com/p/Cz61W8tN1kK/"), ("Gayming Magazine, 27 May 2024", "https://gaymingmag.com/2024/05/celebrity-gaymer-endigo/"))),
 
 "Maya Fennec": ("guest","Unknown","English",
  "Credited with Endigo on “Huggy Wuggy”.",
@@ -843,8 +842,8 @@ ART = {
  "When I first started transitioning and asserting an identity, I wanted to place myself and have an identity as a queer person and as a trans woman.",None,(("Pitchfork, 23 June 2020", "https://pitchfork.com/features/rising/lyra-pramuk-fountain-interview/"), ("Resident Advisor, 10 June 2026", "https://ra.co/news/85389"))),
 
 "Lotic": ("verified","United States / Germany","English",
- "Producer from Texas who, after years of making instrumental club music, introduced her own voice and lyrics for the first time and insists she still makes everything herself.",
- "But also I didn’t think about it too much, but it’s more an image thing, especially now being a woman.","Flaunt (interview on Water)","https://flaunt.com/blog/lotic"),
+ "Producer from Texas, based in Berlin since 2012, who, after years of making instrumental club music, introduced her own voice and lyrics for the first time and insists she still makes everything herself.",
+ "But also I didn’t think about it too much, but it’s more an image thing, especially now being a woman.",None,(("Flaunt (interview on Water)", "https://flaunt.com/blog/lotic"), ("The Alcalde, 1 November 2021", "https://alcalde.texasexes.org/2021/11/a-texas-born-berlin-based-electronic-musician-finds-her-voice/"))),
 
 "saoirse dream": ("verified","United States","English",
  "Hyperpop-emo artist; her second album grimdark (2026) draws on her anger as a trans woman.",

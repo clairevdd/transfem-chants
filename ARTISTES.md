@@ -56,7 +56,7 @@ Généré le 2026-11-10
 | **Liniker** | `verified` | Brazil | Portuguese | 2 | [CartaCapital, 29 July 2018](https://www.cartacapital.com.br/diversidade/liniker-201csou-dona-do-meu-corpo-e-das-coisas-que-escolho-para-mim201d/) |
 | **Linn da Quebrada** | `verified` | Brazil | Portuguese | 1 | [Diário do Nordeste, 20 January 2022, quoting her words of March 2021](https://diariodonordeste.verdesmares.com.br/entretenimento/zoeira/linn-da-quebrada-do-bbb22-identifica-se-como-travesti-e-nao-como-mulher-trans-entenda-a-diferenca-1.3182855) |
 | **Mulher Pepita** | `verified` | Brazil | Portuguese | 1 | [Bahia Notícias, 30 November 2017](https://www.bahianoticias.com.br/cultura/noticia/30077-sou-travesti-e-nasci-uma-travesti-discursa-mulher-pepita-em-premiacao-feminina) |
-| **Backxwash** | `verified` | Zambia / Canada | English | 2 | [Louder, 24 August 2021](https://cultmtl.com/2020/10/montreal-ottawa-trans-rapper-hip-hop-artist-backxwash-delivers-unfiltered-rhymes-on-god-has-nothing-to-do-with-this-leave-him-out-of-it-new-album-interview/) |
+| **Backxwash** | `verified` | Zambia / Canada | English | 2 | [Louder, 24 August 2021](https://www.loudersound.com/features/backxwash-i-had-planned-i-was-going-to-die-at-the-end-of-the-year) |
 | **Angel Maxine** | `verified` | Ghana | English, Twi | 1 | [African Arguments, 28 October 2021](https://africanarguments.org/2021/10/becoming-angel-maxine-ghana-first-openly-transgender-musician/) |
 | **Quay Dash** | `verified` | United States | English | 1 | [Dazed, 25 September 2017](https://www.dazeddigital.com/music/article/37529/1/quay-dash-interview) |
 | **Andra Venus** | `verified` | Spain | Spanish, English | 1 | [Neo2, 13 March 2023](https://www.neo2.com/andra-venus-cantante-trans-andaluza-fuckin-rainbow/) |
@@ -79,7 +79,7 @@ Généré le 2026-11-10
 | **Ataru Nakamura** | `verified` | Japan | Japanese | 1 | [ENCOUNT, 18 June 2026](https://encount.press/archives/1002517), [FRaU, 28 June 2021](https://gendai.media/articles/-/84549) |
 | **Ms. Boogie** | `verified` | United States | English | 1 | [PAPER Magazine, 9 May 2018](https://www.papermag.com/introducing-ms-boogie) |
 | **LALLA RAMI** | `partial` | Morocco / France | Darija, French, English | 2 | [Têtu](https://tetu.com/2022/01/04/2022-appartient-musique-rap-queer-lalla-rami-single-inchallah/) |
-| **Lauren Auder** | `verified` | UK / France | English | 1 | [METAL Magazine, 21 January 2021](https://metalmagazine.eu/en/post/lauren-auder) |
+| **Lauren Auder** | `verified` | France / UK | English | 1 | [METAL Magazine, 21 January 2021](https://metalmagazine.eu/en/post/lauren-auder) |
 | **osquinn** | `verified` | United States | English | 1 | [The FADER, 31 July 2020](https://www.thefader.com/2020/07/31/5-fast-facts-with-osquinn-aka-p4rkr-hyperpops-once-and-future-queen) |
 | **Anita Velveeta** | `verified` | United States | English | 1 | [The Current, 24 May 2023](https://www.thecurrent.org/feature/2023/05/24/anita-velveeta-makes-music-for-weirdos-like-herself) |
 | **Ezra Furman** | `verified` | United States | English | 1 | [Pitchfork, 21 April 2021 (quoting her Instagram announcement)](https://pitchfork.com/news/ezra-furman-comes-out-as-a-transgender-woman/) |
@@ -99,7 +99,7 @@ Généré le 2026-11-10
 | **Daniela Vega** | `verified` | Chile | Spanish, Italian | 2 | [The Guardian, 18 February 2018](https://www.theguardian.com/film/2018/feb/18/daniela-vega-transgender-star-film-industry-a-fantastic-woman-interview) |
 | **Tona Brown** | `verified` | United States | English | 2 | [The Heroines of My Life](https://theheroines.blogspot.com/2014/03/interview-with-tona-brown.html) |
 | **Arantxa Castilla-La Mancha** | `verified` | Spain | Spanish | 1 | [El Español, 22 December 2022](https://www.elespanol.com/corazon/bluper/20221222/arantxa-castilla-la-mancha-drag-race-espana-abiertamente/727927241_0.html) |
-| **Gad Yola** | `partial` | Peru | Spanish | 1 | [Somos Periodismo, 28 June 2024](https://somosperiodismo.com/gad-yola-una-drag-queen-decolonial/) |
+| **Gad Yola** | `partial` | Peru / Spain | Spanish | 1 | [Somos Periodismo, 28 June 2024](https://somosperiodismo.com/gad-yola-una-drag-queen-decolonial/) |
 | **Samantha Hudson** | `partial` | Spain | Spanish | 1 | [leonoticias, 11 February 2023](https://www.leonoticias.com/gente-estilo/samantha-hudson-artista-20230211132401-nt.html) |
 | **Umlilo** | `partial` | South Africa | isiZulu | 1 | [Scaffold, 21 June 2020](https://www.scaffold-culture.com/scaffold-archive/umlilo) |
 | **Angel-Ho** | `verified` | South Africa | English | 1 | [The Quietus, 12 March 2019](https://thequietus.com/articles/26179-angel-ho-interview-hyperdub-death-becomes-her) |
@@ -125,14 +125,14 @@ Généré le 2026-11-10
 | **Ventura Profana** | `verified` | Brazil | Portuguese | 1 | [G1 (Globo), 25 April 2025](https://g1.globo.com/ba/bahia/o-que-fazer-em-salvador/noticia/2025/04/25/conheca-ventura-profana-artista-multifacetada-e-pastora-travesti.ghtml) |
 | **Roberta Marrero** | `verified` | Spain | Spanish | 1 | [Divinity, 2 January 2017](https://www.divinity.es/blogs/blackisnice/roberta-marrero-bebe-verde-transexual-cuestion-vital-no-capricho-quien-eres_6_2294865007.html) |
 | **Haela Hunt-Hendrix** | `verified` | United States | English | 1 | [Metal Injection, 12 May 2020](https://metalinjection.net/news/liturgys-hunter-hunt-hendrix-comes-out-as-transgender-i-am-a-woman) |
-| **Aérea Negrot** | `verified` | Venezuela | English | 1 | [Remezcla, 1 December 2016](https://remezcla.com/features/music/aerea-negrot-interview/), [Resident Advisor, 14 October 2023](https://ra.co/news/79687) |
+| **Aérea Negrot** | `verified` | Venezuela / Germany | English | 1 | [Remezcla, 1 December 2016](https://remezcla.com/features/music/aerea-negrot-interview/), [Resident Advisor, 14 October 2023](https://ra.co/news/79687) |
 | **Katie Dey** | `verified` | Australia | English | 1 | [i-D](https://i-d.co/article/how-trans-singers-adapt-to-their-changing-voices/) |
 | **Chloe Alison Escott** | `verified` | Australia | English | 1 | [Vice, 10 November 2016](https://www.vice.com/en/article/listen-to-a-new-native-cats-song-and-help-support-trans-lifeline) |
 | **Honey Mahogany** | `partial` | United States | English | 1 | [San Francisco AIDS Foundation, 7 July 2023](https://www.sfaf.org/news/from-the-drag-stage-to-the-political-stage-honey-mahogany-cant-stop-fighting-for-queer-and-trans-liberation/) |
 | **Gia Gunn** | `verified` | United States | English | 1 | [Rigel Gemini, 28 March 2018](https://www.rigelgemini.com/home/2018/3/28/interview-gia-gunn) |
 | **Amor Romeira** | `verified` | Spain | Spanish | 1 | [20minutos, 4 April 2022](https://www.20minutos.es/noticia/4980865/0/amor-romeira-cuenta-como-su-padre-paso-de-ser-transfobo-a-aceptarla-el-mejor-del-mundo-es-una-leccion-de-vida/), [FórmulaTV, 23 April 2024](https://www.formulatv.com/noticias/amor-romeira-culpa-sonia-ferrer-transfobia-127891/) |
 | **Amanda Lepore** | `verified` | United States | English | 1 | [Into The Gloss, January 2014](https://intothegloss.com/2014/01/amanda-lepore) |
-| **Jiggly Caliente** | `verified` | United States / Philippines | English | 1 | [Nylon, 30 June 2021](https://www.nylon.com/entertainment/jiggly-caliente-rupauls-drag-race-all-stars-season-6-exit-interview), [Fox 5 New York, 27 April 2025](https://www.fox5ny.com/news/jiggly-caliente-dies-rupauls-drag-race-star) |
+| **Jiggly Caliente** | `verified` | Philippines / United States | English | 1 | [Nylon, 30 June 2021](https://www.nylon.com/entertainment/jiggly-caliente-rupauls-drag-race-all-stars-season-6-exit-interview), [Fox 5 New York, 27 April 2025](https://www.fox5ny.com/news/jiggly-caliente-dies-rupauls-drag-race-star) |
 | **Aja** | `verified` | United States | English | 1 | [PinkNews, 20 December 2021](https://www.thepinknews.com/2021/12/20/aja-trans-woman-drag-race/) |
 | **Jordan Raskopoulos** | `verified` | Australia | English | 1 | [Chortle, 15 February 2016](https://www.chortle.co.uk/news/2016/02/15/24178/im_trans..._and_im_f***ing_awesome) |
 | **Hailie Sahar** | `verified` | United States | English | 1 | [Today, 20 September 2018](https://www.today.com/style/hailie-sahar-fx-s-pose-being-transgender-actress-t131847) |
@@ -153,8 +153,8 @@ Généré le 2026-11-10
 | **Danny Bond** | `verified` | Brazil | Portuguese | 1 | [O Tempo (Folhapress), 10 March 2022](https://www.otempo.com.br/entretenimento/danny-bond-quer-resgatar-raiz-nordestina-e-fala-de-hate-vim-para-causar-1.2629769) |
 | **Scarlett la Queen** | `verified` | Russia / United States | Russian | 1 | [Korrespondent.net, quoting her social-media post](https://korrespondent.net/lifestyle/4197530-ot-transhendernoi-pevytsy-skarlett-otkazalas-semia) |
 | **Electra Elite** | `verified` | Serbia | Serbian | 1 | [Nova.rs, 10 September 2020](https://nova.rs/zabava/ispovest-transrodne-pevacice-electre-elite-za-nova-rs/) |
-| **鍾潔希** | `partial` | Malaysia / Australia | Mandarin | 1 | [Malaysiakini](https://www.malaysiakini.com/news/43100) |
-| **Endigo** | `verified` | Sweden | English | 1 | [Instagram, 21 November 2023](https://www.instagram.com/p/Cz61W8tN1kK/) |
+| **鍾潔希** | `partial` | Malaysia | Mandarin | 1 | [Malaysiakini](https://www.malaysiakini.com/news/43100) |
+| **Endigo** | `verified` | Sweden / Japan | English | 1 | [Instagram, 21 November 2023](https://www.instagram.com/p/Cz61W8tN1kK/), [Gayming Magazine, 27 May 2024](https://gaymingmag.com/2024/05/celebrity-gaymer-endigo/) |
 | **Carmen de Mairena** | `partial` | Spain | Spanish | 1 | [El Español](https://www.elespanol.com/corazon/television/20200323/carmen-mairena-cupletista-transexual-llego-frikismo-television/476952611_0.html) |
 | **All Girls Piss** | `partial` | Ireland | English | 1 | [GCN](https://gcn.ie/trans-bands-irish-punk-scene/) |
 | **Louisa Janssen** | `verified` | Netherlands | Dutch | 1 | [LINDA.nl, 11 January 2023](https://www.linda.nl/meiden/meiden-trending/louisa-janssen-transfobe-opmerkingen/) |
@@ -181,7 +181,7 @@ Généré le 2026-11-10
 | **Dick Feller** | `verified` | United States | English | 1 | [HuffPost, 12 May 2016](https://www.huffpost.com/entry/deena-kaye-rose-talks-tra_b_9902330) |
 | **Marcie Free** | `verified` | United States | English | 1 | [MelodicRock interview (archived June 2012)](https://web.archive.org/web/20120603125453/http://melodicrock.com/interviews/marciefree.html), [Blabbermouth, 24 October 2025](https://blabbermouth.net/news/unruly-child-ex-king-kobra-singer-marcie-free-dead-at-71) |
 | **Alif Hilal** | `verified` | United States / Germany | — | 1 | [Pitchfork, 23 June 2020](https://pitchfork.com/features/rising/lyra-pramuk-fountain-interview/), [Resident Advisor, 10 June 2026](https://ra.co/news/85389) |
-| **Lotic** | `verified` | United States / Germany | English | 1 | [Flaunt (interview on Water)](https://flaunt.com/blog/lotic) |
+| **Lotic** | `verified` | United States / Germany | English | 1 | [Flaunt (interview on Water)](https://flaunt.com/blog/lotic), [The Alcalde, 1 November 2021](https://alcalde.texasexes.org/2021/11/a-texas-born-berlin-based-electronic-musician-finds-her-voice/) |
 | **saoirse dream** | `verified` | United States | English | 1 | [New Noise Magazine, 9 October 2026](https://newnoisemagazine.com/todays-new-noise-saoirse-dream/) |
 | **Michaela Jaé** | `verified` | United States | English | 1 | [Playbill, 7 June 2016](https://www.playbill.com/article/mj-rodriguez-talks-her-transition-and-hamilton-audition) |
 | **Taylor Abrahamse** | `verified` | Canada | English | 1 | [kawarthaNOW, 12 August 2026](https://kawarthanow.com/2026/08/12/fredathon-will-channel-the-music-of-queen-and-freddie-mercury-into-support-for-queer-and-trans-people/) |
@@ -382,7 +382,7 @@ Reproduites mot pour mot.
 - **Danny Bond** — « A galera ainda não está pronta para ver uma travesti furando a bolha, estando em locais que são nossos por direito — People still aren’t ready to see a travesti breaking out of the bubble, being in places that are ours by right » (O Tempo (Folhapress), 10 March 2022)
 - **Scarlett la Queen** — « Моя идентичность к женскому полу была во мне, насколько я помню, лет с трех. — My identification with the female gender has been in me, as far as I remember, since I was about three. » (Korrespondent.net, quoting her social-media post)
 - **Electra Elite** — « To muškarac više ne postoji kod mene, ali recimo, dvanaest-trinaest godina živim u ovom svetlu u kojem me trenutno vidite. — That man no longer exists in me; I have been living for some twelve or thirteen years in the light you see me in now. » (Nova.rs, 10 September 2020)
-- **Endigo** — « I'M TRANS! […] tbh I've felt this way.. well, my entire life. » (Instagram, 21 November 2023)
+- **Endigo** — « I'M TRANS! […] tbh I've felt this way.. well, my entire life. » (None)
 - **Louisa Janssen** — « Ik ben Louisa, ik voel me een vrouw, maar ben als man geboren en zal daar ook altijd voor uit komen. — I am Louisa, I feel like a woman, but I was born a man and I will always be open about that. » (LINDA.nl, 11 January 2023)
 - **Louïz** — « En tant que métisse et femme trans, je pense incarner le mot diversité et c’est ce que je souhaite véhiculer au travers de ma participation — As a mixed-race woman and a trans woman, I think I embody the word diversity, and that is what I want to convey through taking part » (têtu·, 30 January 2020)
 - **Emma Cadenas** — « Suelo presentarme como cantautora, poeta y escritora trans peruana… — I usually introduce myself as a Peruvian trans singer-songwriter, poet and writer… » (El Comercio, 14 June 2026)
@@ -407,7 +407,7 @@ Reproduites mot pour mot.
 - **Dick Feller** — « I'm a mature lady; I'm an older woman; I'm a senior citizen and I struggled with this at a time when we didn't even have the word. » (HuffPost, 12 May 2016)
 - **Marcie Free** — « I think that is pretty much obvious by now being that I am transsexual and the world was not ready for the likes of me or anyone like me. » (None)
 - **Alif Hilal** — « When I first started transitioning and asserting an identity, I wanted to place myself and have an identity as a queer person and as a trans woman. » (None)
-- **Lotic** — « But also I didn’t think about it too much, but it’s more an image thing, especially now being a woman. » (Flaunt (interview on Water))
+- **Lotic** — « But also I didn’t think about it too much, but it’s more an image thing, especially now being a woman. » (None)
 - **saoirse dream** — « It probably won’t surprise you to hear a trans woman say she’s got a lot to be angry about. » (New Noise Magazine, 9 October 2026)
 - **Michaela Jaé** — « That’s a cis female role, and a trans woman was called in for that, and I think that’s actually very, very important, » (Playbill, 7 June 2016)
 - **Taylor Abrahamse** — « Few things are more empowering and dissolve division and bigotry faster than a Queen song, so making Fredathon was a natural extension of the world I want to see as a trans woman. » (kawarthaNOW, 12 August 2026)
