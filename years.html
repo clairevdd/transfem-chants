@@ -325,6 +325,6 @@ a person’s identity, use the
 </footer>
 
 </div>
-<script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);if(e&&e.tagName==="DETAILS"){e.open=true;e.scrollIntoView({block:"center"})}}addEventListener("hashchange",o);addEventListener("load",function(){setTimeout(o,60)});o()})()</script>
+<script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);if(e&&e.tagName==="DETAILS"){e.open=true;e.scrollIntoView({block:"center",behavior:"instant"})}}var n=0;function u(){n=1}addEventListener("touchstart",u,{passive:true});addEventListener("wheel",u,{passive:true});function t(){if(!n)o()}addEventListener("hashchange",o);o();[150,500,1200].forEach(function(d){setTimeout(t,d)});addEventListener("load",function(){setTimeout(t,50)})})()</script>
 </body>
 </html>
