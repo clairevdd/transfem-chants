@@ -400,7 +400,7 @@ def page():
 {leads}
 
 <h2>Featured credits</h2>
-<p>People credited on a track without being its lead artist. The inclusion criterion does not apply to them, so their gender identity is not a condition of anything here. It is documented anyway, for completeness, and the same rule holds: where nothing has been publicly stated, nothing is inferred. Being referred to with he/him or she/her in the press is not a statement of identity, and this page does not treat it as one.</p>
+<p>People credited on a track without being its lead artist. The inclusion criteria apply to the lead artist, not to them, and no claim is made here about their gender identity.</p>
 
 {guests}
 

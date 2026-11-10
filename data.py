@@ -44,7 +44,7 @@ ART = {
  "It’s really all about empowering queer people, especially femmes, in all shapes and forms.","The Beat Asia, 23 August 2024","https://thebeat.asia/manila/vibe/artists/the-beat-manilas-up-and-coming-artist-trans-pinay-pop-star-stef-aranas"),
 
 "Ayesha Erotica": ("guest","United States","—",
- "Credited with Amethyst and Mel 4Ever on “C U L8R” and “Tongues”. No claim is made here about this person’s gender identity.",
+ "Credited with Amethyst and Mel 4Ever on “C U L8R” and “Tongues”.",
  None,None,None),
 
 "Villano Antillano": ("verified","Puerto Rico","Spanish",
@@ -52,7 +52,7 @@ ART = {
  "I feel like I really became a better musician once I took steps that closened me to my womanhood and my femininity.","NPR, 13 March 2023","https://www.npr.org/2023/03/13/1158426326/villano-antillano-la-sustancia-x-interview"),
 
 "Bizarrap": ("guest","Argentina","—",
- "Producer. Credited with Villano Antillano on “Villano Antillano: Bzrp Music Sessions, Vol. 51/66”. No claim is made here about this person’s gender identity.",
+ "Producer. Credited with Villano Antillano on “Villano Antillano: Bzrp Music Sessions, Vol. 51/66”.",
  None,None,None),
 
 "JEDET": ("verified",'Spain','Spanish',
@@ -65,15 +65,15 @@ ART = {
  'Open letter on her official Facebook page, 24 June 2025','https://www.facebook.com/cantoratiticaoficial/posts/pfbid02P4PbbCtG69uzVqmeL1aDmGffFHjDzKBuL5TZjXTj2QaaZ5gtmD4MxYXrED11DqmTl'),
 
 "Ary": ("guest","Angola","Portuguese",
- "Credited with Titica on “Olha o Boneco”. No claim is made here about this person’s gender identity.",
+ "Credited with Titica on “Olha o Boneco”.",
  None,None,None),
 
 "Kelmer Pastilha": ("guest","Angola","Portuguese",
- "Credited with Titica on “Olha a Banana”. No claim is made here about this person’s gender identity.",
+ "Credited with Titica on “Olha a Banana”.",
  None,None,None),
 
 "Mauro Xtraga": ("guest","Angola","Portuguese",
- "Credited with Titica on “Olha a Banana”. No claim is made here about this person’s gender identity.",
+ "Credited with Titica on “Olha a Banana”.",
  None,None,None),
 
 "Against Me!": ("verified",'United States','English',
@@ -93,7 +93,7 @@ ART = {
  "Quand on est passé de l’autre côté, pourquoi est-ce qu’on garde cette appellation ? — When you have crossed to the other side, why keep that label?","Melody TV, 29 November 2019","https://www.melody.tv/actualite/marie-france-lune-des-premieres-chanteuses-transgenres-sort-un-nouvel-album/"),
 
 "Chrissie Hynde": ("guest","United States / UK","—",
- "Credited with Marie France on “Un garçon qui pleure”. No claim is made here about this person’s gender identity.",
+ "Credited with Marie France on “Un garçon qui pleure”.",
  None,None,None),
 
 "Venus De Mars": ("verified","United States","English",
@@ -113,7 +113,7 @@ ART = {
  "As a trans woman singer, there’s this constant tension about the natural sounds your voice can make","NME, 22 February 2021","https://www.nme.com/features/june-jones-interview-leafcutter-album-2021-2885314"),
 
 "Geryon": ("guest","Australia","English",
- "Credited with June Jones on “Motorcycle”. No claim is made here about this person’s gender identity.",
+ "Credited with June Jones on “Motorcycle”.",
  None,None,None),
 
 "jasmine.4.t": ("verified","UK","English",
@@ -204,7 +204,7 @@ ART = {
  'Bahia Notícias, 30 November 2017','https://www.bahianoticias.com.br/cultura/noticia/30077-sou-travesti-e-nasci-uma-travesti-discursa-mulher-pepita-em-premiacao-feminina'),
 
 "Brabo": ("guest","Brazil","—",
- "Production credit, apparently the Brabo Music Team collective rather than one person. Credited with Mulher Pepita on “Parceira”. No claim is made here about the gender identity of its members.",
+ "Production credit, apparently the Brabo Music Team collective rather than one person. Credited with Mulher Pepita on “Parceira”.",
  None,None,None),
 
 "Backxwash": ("verified","Zambia / Canada","English",
@@ -212,7 +212,7 @@ ART = {
  "I thought that would be the end of it, but it was just the beginning, I’m a trans woman now.","Louder, 24 August 2021","https://cultmtl.com/2020/10/montreal-ottawa-trans-rapper-hip-hop-artist-backxwash-delivers-unfiltered-rhymes-on-god-has-nothing-to-do-with-this-leave-him-out-of-it-new-album-interview/"),
 
 "Ada Rook": ("guest","Canada","—",
- "Credited with Backxwash on “I LIE HERE BURIED WITH MY RINGS AND MY DRESSES”. No claim is made here about this person’s gender identity.",
+ "Credited with Backxwash on “I LIE HERE BURIED WITH MY RINGS AND MY DRESSES”.",
  None,None,None),
 
 "Angel Maxine": ("verified",'Ghana','English, Twi',
@@ -221,11 +221,11 @@ ART = {
  'African Arguments, 28 October 2021','https://africanarguments.org/2021/10/becoming-angel-maxine-ghana-first-openly-transgender-musician/'),
 
 "Wanlov The Kubolor": ("guest","Ghana","—",
- "Credited with Angel Maxine on “Wo Fie”. No claim is made here about this person’s gender identity.",
+ "Credited with Angel Maxine on “Wo Fie”.",
  None,None,None),
 
 "Sister Deborah": ("guest","Ghana","—",
- "Credited with Angel Maxine on “Wo Fie”. No claim is made here about this person’s gender identity.",
+ "Credited with Angel Maxine on “Wo Fie”.",
  None,None,None),
 
 "Quay Dash": ("verified","United States","English",
@@ -262,19 +262,19 @@ ART = {
  'I’m never gonna pass/I should stay home/Why did I make plans?',None,(('them., 16 January 2020', 'https://www.them.us/story/100-gecs-interview-dylan-brady-laura-les'), ('Underground Underdogs, 26 December 2018 (archived)', 'https://web.archive.org/web/20190812055434/https://undergroundunderdogs.com/2018/12/26/laura-les-interview-upcoming-albums-osno1-100-gecs/'))),
 
 "Dylan Brady": ("guest","United States","English",
- "Producer and musician, the other half of 100 gecs. Credited with Laura Les on “Dumbest Girl Alive”. No claim is made here about this person’s gender identity.",
+ "Producer and musician, the other half of 100 gecs. Credited with Laura Les on “Dumbest Girl Alive”.",
  None,None,None),
 
 "8485": ("guest","Canada","English",
- "Credited with underscores on “Your favorite sidekick”. No claim is made here about this person’s gender identity.",
+ "Credited with underscores on “Your favorite sidekick”.",
  None,None,None),
 
 "neophron": ("guest","France","French",
- "Credited with Ptite Soeur on “ANFO჻”. No claim is made here about this person’s gender identity.",
+ "Credited with Ptite Soeur on “ANFO჻”.",
  None,None,None),
 
 "Gemroz": ("guest","France","French",
- "Credited with Ptite Soeur on “KAYFABE”. No claim is made here about this person’s gender identity.",
+ "Credited with Ptite Soeur on “KAYFABE”.",
  None,None,None),
 
 "Mel 4Ever": ("verified","United States","English",
@@ -282,7 +282,7 @@ ART = {
  "It changed the course of my life, I no longer was so obviously trans […] But the transphobia that I started to receive felt a little more insidious rather than blatant because I suddenly was a little more passing.","NYLON, 19 October 2023","https://www.nylon.com/entertainment/mel-4ever-she-culture1-profile-hyperpop"),
 
 "gabby start": ("guest","United States","English",
- "Credited with underscores on “Locals (Girls like us) [with gabby start]”. No claim is made here about this person’s gender identity.",
+ "Credited with underscores on “Locals (Girls like us) [with gabby start]”.",
  None,None,None),
 
 "estelle allen": ("verified","United States","English",
@@ -295,7 +295,7 @@ ART = {
  "I am what they consider, an international transsexual woman.","Dazed, 14 November 2019","https://www.dazeddigital.com/beauty/article/46791/1/cae-monae-chicago-make-up-musician-artist-performer-interview"),
 
 "MONĀE": ("guest","United States","English",
- "Credited with Cae Monāe on “CISPHOBIC”. No claim is made here about this person’s gender identity.",
+ "Credited with Cae Monāe on “CISPHOBIC”.",
  None,None,None),
 
 "G.L.O.S.S.": ("verified",'United States','English',
@@ -322,7 +322,7 @@ ART = {
  'Autostraddle, 19 May 2016','https://www.autostraddle.com/girl-its-your-time-trans-artist-vivek-shraya-on-finding-freedom-and-wholeness-336300/'),
 
 "Queer Songbook Orchestra": ("guest","Canada","—",
- "Chamber ensemble. Credited with Vivek Shraya on “Part-Time Woman”. No claim is made here about the gender identity of its members.",
+ "Chamber ensemble. Credited with Vivek Shraya on “Part-Time Woman”.",
  None,None,None),
 
 "Veronica Klaus": ("verified","United States","English",
@@ -351,7 +351,7 @@ ART = {
  'METAL Magazine, 21 January 2021','https://metalmagazine.eu/en/post/lauren-auder'),
 
 "Celeste": ("guest","UK","—",
- "Credited with Lauren Auder on “Unseen (feat. Celeste)”. No claim is made here about this person’s gender identity.",
+ "Credited with Lauren Auder on “Unseen (feat. Celeste)”.",
  None,None,None),
 
 "osquinn": ("verified","United States","English",
@@ -417,39 +417,39 @@ ART = {
  "I am Lucinta Luna, also known as Ayuna Putri, legally recognized by the court. But my real name is Muhammad Fatah, and I was born a man.","Jakarta Globe, 11 December 2024","https://jakartaglobe.id/lifestyle/transgender-celebrity-lucinta-luna-plans-to-perform-umrah-as-a-man"),
 
 "Lia Larsson": ("guest","Sweden","Swedish",
- "Credited with Tone Sekelius on “VI ÄR SVERIGE (VM-låt 2023)”. No claim is made here about this person’s gender identity.",
+ "Credited with Tone Sekelius on “VI ÄR SVERIGE (VM-låt 2023)”.",
  None,None,None),
 
 "Lisa Ajax": ("guest","Sweden","Swedish",
- "Credited with Tone Sekelius on “VI ÄR SVERIGE (VM-låt 2023)”. No claim is made here about this person’s gender identity.",
+ "Credited with Tone Sekelius on “VI ÄR SVERIGE (VM-låt 2023)”.",
  None,None,None),
 
 "Tessa Ia": ("guest","Mexico","Spanish",
- "Credited with Zemmoa on “Mi Amor Soy Yo”. No claim is made here about this person’s gender identity.",
+ "Credited with Zemmoa on “Mi Amor Soy Yo”.",
  None,None,None),
 
 "Trans-X": ("guest","Canada","English",
- "Synth-pop project. Credited with Zemmoa on “Mi Amor Soy Yo”. No claim is made here about the gender identity of its members.",
+ "Synth-pop project. Credited with Zemmoa on “Mi Amor Soy Yo”.",
  None,None,None),
 
 "Brunoso": ("guest","Brazil","Portuguese",
- "Producer. Credited with Irmãs de Pau on “Medley do Submundo”. No claim is made here about this person’s gender identity.",
+ "Producer. Credited with Irmãs de Pau on “Medley do Submundo”.",
  None,None,None),
 
 "PEDRO SAMPAIO": ("guest","Brazil","Portuguese",
- "Credited with Irmãs de Pau on “SEQUÊNCIA CUNT (feat. Clementaum)”. No claim is made here about this person’s gender identity.",
+ "Credited with Irmãs de Pau on “SEQUÊNCIA CUNT (feat. Clementaum)”.",
  None,None,None),
 
 "Mc Gw": ("guest","Brazil","Portuguese",
- "Credited with Irmãs de Pau on “SEQUÊNCIA CUNT (feat. Clementaum)”. No claim is made here about this person’s gender identity.",
+ "Credited with Irmãs de Pau on “SEQUÊNCIA CUNT (feat. Clementaum)”.",
  None,None,None),
 
 "Tasha Kaiala": ("guest","Brazil","Portuguese",
- "Credited with Irmãs de Pau on “SEQUÊNCIA CUNT (feat. Clementaum)”. No claim is made here about this person’s gender identity.",
+ "Credited with Irmãs de Pau on “SEQUÊNCIA CUNT (feat. Clementaum)”.",
  None,None,None),
 
 "Clementaum": ("guest","Brazil","Portuguese",
- "Credited with Irmãs de Pau on “SEQUÊNCIA CUNT (feat. Clementaum)”. No claim is made here about this person’s gender identity.",
+ "Credited with Irmãs de Pau on “SEQUÊNCIA CUNT (feat. Clementaum)”.",
  None,None,None),
 
 "Changeline": ("verified","France","English, French",
@@ -457,11 +457,11 @@ ART = {
  "J’ai eu une réalisation relativement tardive de ma transidentité. — I came to realise my transness relatively late.","Nos Voix Trans","https://open.spotify.com/episode/4IKPiZViahLUHKspZLCohd"),
 
 "Dede Satria": ("guest","Indonesia","Indonesian",
- "Credited with Lucinta Luna on “Mantan Tanpa Status - Lucinta Luna Version”. No claim is made here about this person’s gender identity.",
+ "Credited with Lucinta Luna on “Mantan Tanpa Status - Lucinta Luna Version”.",
  None,None,None),
 
 "Stolas": ("guest","United States","English",
- "Post-hardcore band. Credited with Changeline on “ANARCONNASSE”. No claim is made here about the gender identity of its members.",
+ "Post-hardcore band. Credited with Changeline on “ANARCONNASSE”.",
  None,None,None),
 
 "Daniela Vega": ("verified","Chile","Spanish, Italian",
@@ -473,7 +473,7 @@ ART = {
  "The hardest part was knowing that, as an African American transgender woman, life would be at least three times harder.","The Heroines of My Life","https://theheroines.blogspot.com/2014/03/interview-with-tona-brown.html"),
 
 "Geraldine Boone": ("guest","United States","—",
- "Pianist; she plays, she does not sing. Credited with Tona Brown on “Dream Variations” and “I, Too”. No claim is made here about this person’s gender identity.",
+ "Pianist; she plays, she does not sing. Credited with Tona Brown on “Dream Variations” and “I, Too”.",
  None,None,None),
 
 "Arantxa Castilla-La Mancha": ("verified","Spain","Spanish",
@@ -489,11 +489,11 @@ ART = {
  "[…] transformista y travesti de guardia las 24 horas — […] a transformista and a travesti on duty 24 hours a day","leonoticias, 11 February 2023","https://www.leonoticias.com/gente-estilo/samantha-hudson-artista-20230211132401-nt.html"),
 
 "Pupi Poisson": ("guest","Spain","Spanish",
- "Credited with Arantxa Castilla-La Mancha on “Las Defectos”. No claim is made here about this person’s gender identity.",
+ "Credited with Arantxa Castilla-La Mancha on “Las Defectos”.",
  None,None,None),
 
 "CARLES CUEVAS": ("guest","Spain","Spanish",
- "Credited with Arantxa Castilla-La Mancha on “Las Defectos”. No claim is made here about this person’s gender identity.",
+ "Credited with Arantxa Castilla-La Mancha on “Las Defectos”.",
  None,None,None),
 
 "Umlilo": ("partial","South Africa","isiZulu",
@@ -513,11 +513,11 @@ ART = {
  "Tôi từng là đàn ông và bây giờ là một phụ nữ trong cả thể xác lẫn tâm hồn. — I was once a man and now I am a woman, in body as in soul.","VnExpress, 17 March 2007","https://vnexpress.net/cindy-thai-tai-toi-doi-gioi-tinh-chu-khong-dong-tinh-1892073.html"),
 
 "K Rizz": ("guest","South Africa","English",
- "Credited with Angel-Ho on “Like A Girl”. No claim is made here about this person’s gender identity.",
+ "Credited with Angel-Ho on “Like A Girl”.",
  None,None,None),
 
 "Kashif Ali": ("guest","Pakistan","Urdu",
- "Credited with Shyraa Roy on “Duniya”. No claim is made here about this person’s gender identity.",
+ "Credited with Shyraa Roy on “Duniya”.",
  None,None,None),
 
 "THÉA": ("verified","France","French",
@@ -622,7 +622,7 @@ ART = {
  "Since I came out as trans publicly a year ago, my life has been empowered.","Rigel Gemini, 28 March 2018","https://www.rigelgemini.com/home/2018/3/28/interview-gia-gunn"),
 
 "Alaska Thunderfuck": ("guest","United States","English",
- "Credited with Gia Gunn on “#LaChinaMasLatina”. No claim is made here about this person’s gender identity.",
+ "Credited with Gia Gunn on “#LaChinaMasLatina”.",
  None,None,None),
 
 "Amor Romeira": ("verified","Spain","Spanish",
@@ -642,11 +642,11 @@ ART = {
  "[…] trans is who I am and drag is what I do","PinkNews, 20 December 2021","https://www.thepinknews.com/2021/12/20/aja-trans-woman-drag-race/"),
 
 "Alexis Michelle": ("guest","United States","English",
- "Credited with Aja and Peppermint on “C.L.A.T. (feat. DJ Mitch Ferrino)”. No claim is made here about this person’s gender identity.",
+ "Credited with Aja and Peppermint on “C.L.A.T. (feat. DJ Mitch Ferrino)”.",
  None,None,None),
 
 "Sasha Velour": ("guest","United States","English",
- "Credited with Aja and Peppermint on “C.L.A.T. (feat. DJ Mitch Ferrino)”. No claim is made here about this person’s gender identity.",
+ "Credited with Aja and Peppermint on “C.L.A.T. (feat. DJ Mitch Ferrino)”.",
  None,None,None),
 
 "Jordan Raskopoulos": ("verified","Australia","English",
@@ -735,7 +735,7 @@ ART = {
  "I'M TRANS! […] tbh I've felt this way.. well, my entire life.","Instagram, 21 November 2023","https://www.instagram.com/p/Cz61W8tN1kK/"),
 
 "Maya Fennec": ("guest","Unknown","English",
- "Credited with Endigo on “Huggy Wuggy”. No claim is made here about this person’s gender identity.",
+ "Credited with Endigo on “Huggy Wuggy”.",
  None,None,None),
 
 "Carmen de Mairena": ("partial","Spain","Spanish",
@@ -883,22 +883,22 @@ ART = {
  "I am a Black, American trans woman who is making a difference in this world and all I'm asking is that you love me like I love you","The Advocate, 27 July 2020 (from one of her last Instagram videos)","https://www.advocate.com/news/2020/7/27/la-drag-fixture-hey-qween-star-lady-red-couture-has-died"),
 
 "Tobias Picker": ("guest","United States","—",
- "Composer of the opera. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”. No claim is made here about this person’s gender identity.",
+ "Composer of the opera. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”.",
  None,None,None),
 
 "Aryeh Lev Stollman": ("guest","United States","—",
- "Librettist of the opera. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”. No claim is made here about this person’s gender identity.",
+ "Librettist of the opera. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”.",
  None,None,None),
 
 "Sinfonieorchester St. Gallen": ("guest","Switzerland","—",
- "Orchestra of Theater St. Gallen. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”. No claim is made here about the gender identity of its members.",
+ "Orchestra of Theater St. Gallen. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”.",
  None,None,None),
 
 "Sylvia D'Eramo": ("guest","United States","—",
- "Soprano. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”. No claim is made here about this person’s gender identity.",
+ "Soprano. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”.",
  None,None,None),
 
 "Modestas Pitrenas": ("guest","Lithuania","—",
- "Conductor. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”. No claim is made here about this person’s gender identity.",
+ "Conductor. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”.",
  None,None,None),
 }
