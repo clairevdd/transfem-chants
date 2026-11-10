@@ -575,32 +575,6 @@ YEARS = {
         "checked": "2026-09-04",
         "note": "No entry in MusicBrainz or Discogs. Platform date, not corroborated.",
     },
-    # Ayesha Erotica — Vacation Bible School  [pilote]
-    "1RXkdiCc4TtwPacmIKyUnX": {
-        "first_public": 2018,
-        "first_record": None,
-        "precision": "year",
-        "kind": "earliest_known",
-        "spotify": "2018-12-31",
-        "status": "partial",
-        "source": "Ayeshapedia, entry for the track",
-        "url": "https://ayeshaerotica.miraheze.org/wiki/Vacation_Bible_School",
-        "checked": "2026-09-04",
-        "note": "Three competing dates within 2018: 15 March per MusicBrainz, 25 September per the fan wiki, 31 December per Spotify. The original was deleted soon after and reposted in March 2024. A fan wiki is a tertiary source, so this stays partial.",
-    },
-    # Ayesha Erotica — Literal Legend
-    "2gmwvGC1yOw8NdMcZE8nfo": {
-        "first_public": "2017-08",
-        "first_record": None,
-        "precision": "month",
-        "kind": "earliest_known",
-        "spotify": "2017-10-25",
-        "status": "partial",
-        "source": "MusicBrainz, first-release-date of the recording, title and artist match checked",
-        "url": "https://musicbrainz.org/search?query=Ayesha%20Erotica%20Literal%20Legend&type=recording",
-        "checked": "2026-09-04",
-        "note": "A compilation sits among the known releases.",
-    },
     # Jane Remover — Dancing with your eyes closed
     "1XD4K4CGAKTIBmFpvuaFru": {
         "first_public": "2025-02-26",
@@ -639,32 +613,6 @@ YEARS = {
         "url": "https://open.spotify.com/track/7n7GrVTBmZMG4EULD5g0i3",
         "checked": "2026-09-04",
         "note": "No entry in MusicBrainz or Discogs. Platform date, not corroborated.",
-    },
-    # Frost Children — Falling
-    "6WkiWn8bf8S29wSk0VwK7h": {
-        "first_public": "2025-07-01",
-        "first_record": None,
-        "precision": "day",
-        "kind": "earliest_known",
-        "spotify": "2025-09-12",
-        "status": "partial",
-        "source": "MusicBrainz, first-release-date of the recording, title and artist match checked",
-        "url": "https://musicbrainz.org/search?query=Frost%20Children%20Falling&type=recording",
-        "checked": "2026-09-04",
-        "note": "A compilation sits among the known releases.",
-    },
-    # Frost Children, Kim Petras — RADIO (feat. Kim Petras)
-    "06kFuqzhMk4E6IYeO0sTfx": {
-        "first_public": "2025-09-12",
-        "first_record": None,
-        "precision": "day",
-        "kind": "earliest_known",
-        "spotify": "2025-09-12",
-        "status": "partial",
-        "source": "MusicBrainz, first-release-date of the recording, title and artist match checked",
-        "url": "https://musicbrainz.org/search?query=Frost%20Children%20RADIO%20%28feat.%20Kim%20Petras%29&type=recording",
-        "checked": "2026-09-04",
-        "note": "",
     },
     # Villano Antillano — KLK
     "2Of9piZALXa4CC7Unxoeeg": {
@@ -1855,19 +1803,6 @@ YEARS = {
         "url": "https://open.spotify.com/track/3eBY8aZZdWNnNhNbc8B0yp",
         "checked": "2026-09-04",
         "note": "No entry in MusicBrainz or Discogs. Platform date, not corroborated. EP La Estrella. Replaces a false MusicBrainz match.",
-    },
-    # Sasha Sathya — AKA LESBIANA SERPIENTA
-    "1RkB4Dk0CDzpaSySq91JEA": {
-        "first_public": "2021-03-26",
-        "first_record": None,
-        "precision": "day",
-        "kind": "earliest_known",
-        "spotify": "2021-03-26",
-        "status": "partial",
-        "source": "Spotify, track page metadata, read in session",
-        "url": "https://open.spotify.com/track/1RkB4Dk0CDzpaSySq91JEA",
-        "checked": "2026-09-04",
-        "note": "No entry in MusicBrainz or Discogs. Platform date, not corroborated.",
     },
     # LALLA RAMI — INCHALLAH
     "4UfEEnq70NgLeq7NRfXPiD": {

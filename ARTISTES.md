@@ -4,12 +4,12 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 
 ## Où on en est
 
-- **233 morceaux**
-- **148 artistes présentées comme transféminines**, plus **24 cas ouverts**
+- **228 morceaux**
+- **168 artistes présentées comme transféminines**, plus **0 cas ouverts**
 - **36 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Ireland, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Pakistan, Peru, Philippines, Portugal, Puerto Rico, Russia, Serbia, South Africa, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
 - **27 langues** : Arabic, Darija, Dutch, English, Filipino, French, German, Hebrew, Indonesian, isiZulu, Italian, Japanese, Korean, Malay, Mandarin, Portuguese, Russian, Réunion Creole, Serbian, Spanish, Swedish, Thai, Turkish, Twi, Urdu, Vietnamese, Zapotec
 
-Généré le 2026-11-09
+Généré le 2026-11-10
 
 ## Artistes principales
 
@@ -17,18 +17,17 @@ Généré le 2026-11-09
 |---|---|---|---|---|---|
 | **SOPHIE** | `verified` | Scotland, UK | English | 5 | [PAPER Magazine](https://www.papermag.com/sophie-pride) |
 | **Arca** | `verified` | Venezuela | Spanish, English | 5 | [PAPER Magazine](https://www.papermag.com/arca-transformation) |
-| **ANOHNI** | `unresolved` | UK / United States | English | 3 | [Wikipedia](https://en.wikipedia.org/wiki/Anohni) |
-| **Antony and the Johnsons** | `unresolved` | UK / United States | English | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Anohni) |
+| **ANOHNI** | `verified` | UK / United States | English | 3 | [VICE, 16 May 2016](https://www.vice.com/en/article/one-decaf-cappuccino-and-orange-juice-with-anohni-briefs-v23n3/), [Noisey, 7 December 2015](https://www.vice.com/en/article/anohni-interview-2015/) |
+| **Antony and the Johnsons** | `verified` | UK / United States | English | 1 | [VICE, 16 May 2016](https://www.vice.com/en/article/one-decaf-cappuccino-and-orange-juice-with-anohni-briefs-v23n3/), [Noisey, 7 December 2015](https://www.vice.com/en/article/anohni-interview-2015/) |
 | **Bülent Ersoy** | `verified` | Türkiye | Turkish | 2 | [Daily Sabah](https://www.dailysabah.com/arts/portrait/bulent-ersoy-turkeys-transgender-diva) |
-| **Kim Petras** | `verified` | Germany | English | 6 | [NBC News](https://www.nbcnews.com/nbc-out/out-pop-culture/kim-petras-thanks-incredible-transgender-legends-grammy-speech-rcna69296) |
+| **Kim Petras** | `verified` | Germany | English | 5 | [NBC News](https://www.nbcnews.com/nbc-out/out-pop-culture/kim-petras-thanks-incredible-transgender-legends-grammy-speech-rcna69296) |
 | **femtanyl** | `verified` | Canada | English | 5 | [Metal Magazine](https://metalmagazine.eu/en/post/femtanyl) |
 | **Petal Supply** | `partial` | Canada | English | 1 | [Era Journal](https://erajournal.co.uk/our-journal/immaterial-girls-trans-women-in-synthesis/) |
 | **Chase Icon** | `verified` | United States | English | 2 | [Vice](https://www.vice.com/en/article/internet-star-celebrity-impersonator-chase-icon-profile-v28n1/) |
 | **Stef Aranas** | `verified` | Philippines | English | 1 | [The Beat Asia](https://thebeat.asia/manila/vibe/artists/the-beat-manilas-up-and-coming-artist-trans-pinay-pop-star-stef-aranas) |
-| **Ayesha Erotica** | `unresolved` | United States | English | 4 | [Wikipedia](https://en.wikipedia.org/wiki/Ayesha_Erotica) |
 | **Villano Antillano** | `verified` | Puerto Rico | Spanish | 3 | [NPR](https://www.npr.org/2023/03/13/1158426326/villano-antillano-la-sustancia-x-interview) |
-| **JEDET** | `unresolved` | Spain | Spanish | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Jedet) |
-| **Titica** | `unresolved` | Angola | Portuguese | 2 | [Wikipedia](https://en.wikipedia.org/wiki/Titica) |
+| **JEDET** | `verified` | Spain | Spanish | 1 | [Público, 21 June 2020](https://www.publico.es/actualidad/sociedad-establece-mujer-real-seria-imitacion.html), [Neo2, 21 March 2023](https://www.neo2.com/jedet-cancelada-entrevista-nuevo-disco-critica/) |
+| **Titica** | `verified` | Angola | Portuguese | 2 | [Open letter on her official Facebook page, 24 June 2025](https://www.facebook.com/cantoratiticaoficial/posts/pfbid02P4PbbCtG69uzVqmeL1aDmGffFHjDzKBuL5TZjXTj2QaaZ5gtmD4MxYXrED11DqmTl) |
 | **Against Me!** | `verified` | United States | English | 4 | [Rolling Stone, 31 May 2012](https://www.rollingstone.com/music/music-news/the-secret-life-of-transgender-rocker-laura-jane-grace-tom-gabel-99788/) |
 | **Laura Jane Grace** | `verified` | United States | English | 1 | [Rolling Stone, 31 May 2012](https://www.rollingstone.com/music/music-news/the-secret-life-of-transgender-rocker-laura-jane-grace-tom-gabel-99788/) |
 | **Jayne County** | `verified` | United States | English | 1 | [Interview Magazine](https://www.interviewmagazine.com/culture/jayne-county-trans-rocknroll-star-influenced-david-bowie-words) |
@@ -39,7 +38,7 @@ Généré le 2026-11-09
 | **June Jones** | `verified` | Australia | English | 1 | [NME](https://www.nme.com/features/june-jones-interview-leafcutter-album-2021-2885314) |
 | **jasmine.4.t** | `verified` | UK | English | 1 | [DIY Magazine](https://diymag.com/interview/jasmine4t-you-are-the-morning-february-2025) |
 | **Luisa Almaguer** | `verified` | Mexico | Spanish | 2 | [Rolling Stone en Español](https://es.rollingstone.com/future-of-music-luisa-almaguer/) |
-| **Susy Shock** | `unresolved` | Argentina | Spanish | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Susy_Shock) |
+| **Susy Shock** | `verified` | Argentina | Spanish | 1 | [La Izquierda Diario, 3 June 2016](https://www.izquierdadiario.es/Susy-Shock-Sin-las-travas-no-hay-Ni-una-menos) |
 | **La Bruja de Texcoco** | `verified` | Mexico | Spanish, Zapotec | 2 | [Bandcamp Daily](https://daily.bandcamp.com/features/la-bruja-de-texcoco-feature) |
 | **Ethel Cain** | `verified` | United States | English | 1 | [Pitchfork, 20 April 2021](https://pitchfork.com/features/rising/ethel-cain-interview/), [W Magazine, 13 May 2022](https://www.wmagazine.com/culture/ethel-cain-preachers-daughter-album-interview) |
 | **Jackie Shane** | `verified` | United States / Canada | English | 1 | [Numero Group, Baby, Do What You Want, 13 October 2015](https://numerogroup.com/blogs/stories/jackie-shane-baby-do-what-you-want) |
@@ -49,46 +48,43 @@ Généré le 2026-11-09
 | **Our Lady J** | `verified` | United States | English | 1 | [Out, 10 August 2010](https://www.out.com/entertainment/2010/08/10/need-know-our-lady-j) |
 | **Patricia Ribeiro** | `verified` | Portugal | Portuguese | 1 | [Criativa Online](https://criativaonline.com.br/cantora-transexual-portuguesa-esta-de-volta-aos-palcos/) |
 | **Haiifa Magic** | `verified` | Lebanon | Arabic | 1 | [i-D, 24 January 2018](https://i-d.co/article/transgender-pop-star-haiifa-magic-is-breaking-down-biases-in-the-arab-world/) |
-| **Harisu** | `unresolved` | South Korea | Korean | 3 | [Wikipedia](https://en.wikipedia.org/wiki/Harisu) |
-| **Hương Giang** | `unresolved` | Vietnam | Vietnamese | 1 | [Wikipedia](https://en.wikipedia.org/wiki/H%C6%B0%C6%A1ng_Giang) |
-| **Bell Nuntita** | `unresolved` | Thailand | Thai | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Bell_Nuntita) |
-| **Ai Haruna** | `unresolved` | Japan | Japanese | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Ai_Haruna) |
-| **Urias** | `unresolved` | Brazil | Portuguese | 2 | [Wikipedia](https://en.wikipedia.org/wiki/Urias_(singer)) |
-| **Liniker** | `unresolved` | Brazil | Portuguese | 2 | [Wikipedia](https://en.wikipedia.org/wiki/Liniker) |
+| **Harisu** | `verified` | South Korea | Korean | 3 | [The Korea Times (Xportsnews), 11 September 2025, translated from Korean](https://www.koreatimes.co.kr/entertainment/others/20250911/trans-star-harisu-opens-up-about-sexual-harassment-and-outing-threats-in-korean-entertainment) |
+| **Hương Giang** | `verified` | Vietnam | Vietnamese | 1 | [Bangkok Post, 17 March 2018 (archived)](https://web.archive.org/web/20241127055246/https://www.bangkokpost.com/life/social-and-lifestyle/1429867/bringing-home-tolerance), [VTC News, 4 March 2018](https://vtcnews.vn/hanh-trinh-7-nam-tro-ve-la-chinh-minh-cua-huong-giang-idol-ar384319.html) |
+| **Bell Nuntita** | `verified` | Thailand | Thai | 1 | [Bangkok Post, 19 December 2012, quoting Time Out Hong Kong](https://www.bangkokpost.com/thailand/politics/326988/bell-aims-to-be-role-model-for-transgenders), [Thairath, 19 September 2023](https://www.thairath.co.th/entertain/celeb/2726447) |
+| **Ai Haruna** | `verified` | Japan | Japanese | 1 | [The Heroines of My Life, interview, part 2](https://theheroines.blogspot.com/p/interview-with-ai-haruna-part-2.html), [Life in Cartoon Motion, 12 November 2023](https://lifeincartoonmotion.com/2023/11/12/ai-haruna-sunshine-and-rainbows-at-oc-japan-fair/), [Bunshun Online, 19 August 2022](https://bunshun.jp/articles/-/56519) |
+| **Urias** | `verified` | Brazil | Portuguese | 2 | [VICE Brasil, 24 October 2019](https://www.vice.com/pt/article/a-estranheza-de-urias/) |
+| **Liniker** | `verified` | Brazil | Portuguese | 2 | [CartaCapital, 29 July 2018](https://www.cartacapital.com.br/diversidade/liniker-201csou-dona-do-meu-corpo-e-das-coisas-que-escolho-para-mim201d/) |
 | **Linn da Quebrada** | `verified` | Brazil | Portuguese | 1 | [Diário do Nordeste](https://diariodonordeste.verdesmares.com.br/entretenimento/zoeira/linn-da-quebrada-do-bbb22-identifica-se-como-travesti-e-nao-como-mulher-trans-entenda-a-diferenca-1.3182855) |
-| **Mulher Pepita** | `unresolved` | Brazil | Portuguese | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Mulher_Pepita) |
+| **Mulher Pepita** | `verified` | Brazil | Portuguese | 1 | [Bahia Notícias, 30 November 2017](https://www.bahianoticias.com.br/cultura/noticia/30077-sou-travesti-e-nasci-uma-travesti-discursa-mulher-pepita-em-premiacao-feminina) |
 | **Backxwash** | `verified` | Zambia / Canada | English | 2 | [Cult MTL](https://cultmtl.com/2020/10/montreal-ottawa-trans-rapper-hip-hop-artist-backxwash-delivers-unfiltered-rhymes-on-god-has-nothing-to-do-with-this-leave-him-out-of-it-new-album-interview/) |
-| **Ada Rook** | `unresolved` | Canada | English | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Black_Dresses) |
-| **Angel Maxine** | `unresolved` | Ghana | English, Twi | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Angel_Maxine) |
+| **Angel Maxine** | `verified` | Ghana | English, Twi | 1 | [African Arguments, 28 October 2021](https://africanarguments.org/2021/10/becoming-angel-maxine-ghana-first-openly-transgender-musician/) |
 | **Quay Dash** | `verified` | United States | English | 1 | [Dazed](https://www.dazeddigital.com/music/article/37529/1/quay-dash-interview) |
 | **Andra Venus** | `verified` | Spain | Spanish, English | 1 | [Neo2](https://www.neo2.com/andra-venus-cantante-trans-andaluza-fuckin-rainbow/) |
-| **Sasha Sathya** | `unresolved` | Argentina | Spanish | 1 | [Wikipedia (es)](https://es.wikipedia.org/wiki/Sasha_Sathya) |
-| **Coccinelle** | `unresolved` | France | French | 1 | [Wikipédia (fr)](https://fr.wikipedia.org/wiki/Coccinelle_(artiste)) |
+| **Coccinelle** | `verified` | France | French | 1 | [Slate.fr, 6 March 2024, quoting her memoirs](https://www.slate.fr/story/266050/coccinelle-jacqueline-dufresnoy-robert-badinter-mariage-trans-eglise) |
 | **Ptite Soeur** | `partial` | France | French | 2 | [Le Canal Auditif](https://lecanalauditif.ca/artistes/ptite-soeur/) |
 | **underscores** | `partial` | United States | English | 4 | [NME](https://www.nme.com/features/music-interviews/underscores-u-interview-3934922) |
 | **Jane Remover** | `partial` | United States | English | 1 | [NME](https://www.nme.com/features/music-interviews/jane-remover-revengeseekerz-interview-3872077) |
 | **ISSBROKIE** | `verified` | United States | English | 1 | [Lyrics, “I’M Up Now!” (2023)](https://www.shazam.com/en-us/song/1704292542/im-up-now) |
 | **Laura Les** | `verified` | United States | English | 2 | [them., 16 January 2020](https://www.them.us/story/100-gecs-interview-dylan-brady-laura-les), [Underground Underdogs, 26 December 2018 (archived)](https://web.archive.org/web/20190812055434/https://undergroundunderdogs.com/2018/12/26/laura-les-interview-upcoming-albums-osno1-100-gecs/) |
 | **Mel 4Ever** | `verified` | United States | English | 2 | [NYLON](https://www.nylon.com/entertainment/mel-4ever-she-culture1-profile-hyperpop) |
-| **Frost Children** | `unresolved` | United States | English | 2 | [The Face](https://theface.com/music/frost-children-interview-lulu-angel-prost-hyperpop-speed-run-album) |
 | **estelle allen** | `verified` | United States | English | 1 | [X, 17 May 2026](https://x.com/__crunge/status/2056096480474083461) |
 | **Cae Monāe** | `verified` | United States | English | 1 | [Dazed](https://www.dazeddigital.com/beauty/article/46791/1/cae-monae-chicago-make-up-musician-artist-performer-interview) |
-| **G.L.O.S.S.** | `unresolved` | United States | English | 1 | [Wikipedia](https://en.wikipedia.org/wiki/G.L.O.S.S.) |
+| **G.L.O.S.S.** | `verified` | United States | English | 1 | [Phoenix New Times, 4 May 2016](https://www.phoenixnewtimes.com/music/heartbroken-trans-gay-and-on-tour-its-all-just-dyke-drama-8244599/) |
 | **Tingtongketz** | `verified` | Malaysia | Malay, English | 1 | [Malay Mail](https://www.malaymail.com/news/malaysia/2019/03/29/transgender-guitarist-strikes-a-different-note-in-conservative-malaysia/1737637) |
-| **Beth Elliott** | `unresolved` | United States | English | 2 | [Wikipedia](https://en.wikipedia.org/wiki/Beth_Elliott) |
+| **Beth Elliott** | `verified` | United States | English | 2 | [The Outwords Archive, oral history interview with Mason Funk](https://theoutwordsarchive.org/interview/beth-elliott/) |
 | **Namoli Brennet** | `verified` | United States | English | 1 | [Her own biography](https://namolibrennet.com/bio) |
-| **Vivek Shraya** | `unresolved` | Canada | English | 2 | [Wikipedia](https://en.wikipedia.org/wiki/Vivek_Shraya) |
+| **Vivek Shraya** | `verified` | Canada | English | 2 | [Autostraddle, 19 May 2016](https://www.autostraddle.com/girl-its-your-time-trans-artist-vivek-shraya-on-finding-freedom-and-wholeness-336300/) |
 | **Veronica Klaus** | `verified` | United States | English | 1 | [SFGate](https://www.sfgate.com/performance/article/Veronica-Klaus-is-brassy-and-confident-onstage-2501415.php) |
 | **Ah-Mer-Ah-Su** | `verified` | United States | English | 1 | [PAPER Magazine](https://www.papermag.com/ah-mer-ah-su) |
-| **Ataru Nakamura** | `unresolved` | Japan | Japanese | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Ataru_Nakamura) |
+| **Ataru Nakamura** | `verified` | Japan | Japanese | 1 | [ENCOUNT, 18 June 2026](https://encount.press/archives/1002517), [FRaU, 28 June 2021](https://gendai.media/articles/-/84549) |
 | **Ms. Boogie** | `verified` | United States | English | 1 | [PAPER Magazine](https://www.papermag.com/introducing-ms-boogie) |
 | **LALLA RAMI** | `partial` | Morocco / France | Darija, French, English | 2 | [Têtu](https://tetu.com/2022/01/04/2022-appartient-musique-rap-queer-lalla-rami-single-inchallah/) |
-| **Lauren Auder** | `unresolved` | UK / France | English | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Lauren_Auder) |
+| **Lauren Auder** | `verified` | UK / France | English | 1 | [METAL Magazine, 21 January 2021](https://metalmagazine.eu/en/post/lauren-auder) |
 | **osquinn** | `verified` | United States | English | 1 | [The FADER](https://www.thefader.com/2020/07/31/5-fast-facts-with-osquinn-aka-p4rkr-hyperpops-once-and-future-queen) |
 | **Anita Velveeta** | `verified` | United States | English | 1 | [The Current](https://www.thecurrent.org/feature/2023/05/24/anita-velveeta-makes-music-for-weirdos-like-herself) |
 | **Ezra Furman** | `verified` | United States | English | 1 | [Pitchfork, 21 April 2021 (quoting her Instagram announcement)](https://pitchfork.com/news/ezra-furman-comes-out-as-a-transgender-woman/) |
-| **Mya Byrne** | `unresolved` | United States | English | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Mya_Byrne) |
-| **Steam Powered Giraffe** | `unresolved` | United States | English | 1 | [Wikipedia](https://en.wikipedia.org/wiki/Steam_Powered_Giraffe) |
+| **Mya Byrne** | `verified` | United States | English | 1 | [Atwood Magazine, essay by Mya Byrne, 22 June 2023](https://atwoodmagazine.com/pride2306-mya-byrne-pride-month-essay-our-promised-land/) |
+| **Steam Powered Giraffe** | `verified` | United States | English | 1 | [San Diego Reader, 1 September 2022](https://www.sandiegoreader.com/news/2022/sep/01/blurt-steam-powered-giraffes-rabbit-transition/) |
 | **SuperKnova** | `verified` | United States | English | 1 | [Qwear](https://www.qwearfashion.com/home/superknova-on-embracing-herself-as-a-queer-trans-asian-musician) |
 | **Jinkx Monsoon** | `verified` | United States | English | 1 | [WWD, 27 February 2024](https://wwd.com/pop-culture/new-fashion-releases/jinkx-monsoon-perfume-hera-release-info-1236221768/), [Queerty, 25 April 2017](https://www.queerty.com/hey-qween-jinx-monsoon-talks-new-album-gender-fluidity-drag-race-20170425) |
 | **Aderet** | `verified` | Israel | Hebrew, English | 1 | [The Heroines of My Life](https://theheroines.blogspot.com/2014/05/interview-with-aderet.html) |
@@ -113,8 +109,8 @@ Généré le 2026-11-09
 | **TAMAGOTCHI MASSACRE** | `verified` | United States | English | 1 | [The Idle Class](http://idleclassmag.com/qa-laughing-crying-tamagotchi-massacre/) |
 | **Ella** | `verified` | Brazil | Portuguese, Spanish | 1 | [Terra](https://www.terra.com.br/nos/paradasp/cantora-jotta-a-abandonou-universo-gospel-para-se-assumir-trans-me-sinto-inteira,5d847ff3f4043c56413923313fc76b78r74b3oz3.html), [O Tempo](https://www.otempo.com.br/entretenimento/2024/12/30/ex-cantora-gospel-trans-jotta-a-faz-revelacoes-sobre-cirurgia-de-redesignacao-sexual) |
 | **La Veneno** | `verified` | Spain | Spanish | 1 | [¡Digo! Ni puta ni santa, memoir written with Valeria Vegas, Plastic Books, 2016 (read by Claire)](https://www.plasticbooks.com/en/products/digo-ni-puta-ni-santa-las-memorias-de-la-veneno) |
-| **Naomy** | `unresolved` | Romania | Romanian | 0 | [Wikipedia](https://en.wikipedia.org/wiki/Naomy_(Romanian_singer)) |
-| **Reshma of Kashmir** | `unresolved` | India | Kashmiri | 0 | [Wikipedia](https://en.wikipedia.org/wiki/Reshma_of_Kashmir) |
+| **Naomy** | `partial` | Romania | Romanian | 0 | [România TV, 19 April 2024](https://www.romaniatv.net/naomy-a-murit-cantareata-transgender-avea-47-de-ani_8258224.html) |
+| **Reshma of Kashmir** | `partial` | India | Kashmiri | 0 | [Kashmir Life, 12 November 2017](https://kashmirlife.net/from-ab-rashid-to-reshma-is-third-gender-finally-getting-its-voice-155649/) |
 | **Trevi Moran** | `verified` | United States | English | 1 | [Entertainment Tonight (ET Online)](https://www.etonline.com/x-factor-alum-and-youtube-star-trevi-moran-comes-out-as-transgender-woman-147730) |
 | **Wendy Guevara** | `verified` | Mexico | Spanish | 1 | [El Dictamen](https://www.eldictamen.mx/me-han-atacado-porque-no-me-considero-una-mujer-siempre-he-dicho-que-soy-transexual-wendy-guevara/) |
 | **Dylan Mulvaney** | `verified` | United States | English | 1 | [NBC News](https://www.nbcnews.com/nbc-out/out-pop-culture/dylan-mulvaney-responds-caitlyn-jenners-tweets-rcna54800) |
@@ -198,6 +194,7 @@ Généré le 2026-11-09
 
 | Artiste | Pays | Source |
 |---|---|---|
+| Ayesha Erotica | United States | _aucune_ |
 | Bizarrap | Argentina | _aucune_ |
 | Ary | Angola | _aucune_ |
 | Kelmer Pastilha | Angola | _aucune_ |
@@ -205,6 +202,7 @@ Généré le 2026-11-09
 | Chrissie Hynde | United States / UK | _aucune_ |
 | Geryon | Australia | [Arts Access Victoria](https://www.artsaccess.com.au/artists/seth-geryon-suda/) |
 | Brabo | Brazil | _aucune_ |
+| Ada Rook | Canada | _aucune_ |
 | Wanlov The Kubolor | Ghana | [Graphic Online](https://www.graphic.com.gh/features/opinion/ghana-news-the-anti-lgbtq-bill-and-freedom-who-is-wanlov-the-kubolor-and-why-is-he-good-for-ghana.html) |
 | Sister Deborah | Ghana | [GhanaWeb](https://www.ghanaweb.com/GhanaHomePage/entertainment/I-m-an-ally-of-the-LGBTQ-community-not-a-member-Sister-Deborah-clarifies-1717823) |
 | Dylan Brady | United States | _aucune_ |
@@ -248,8 +246,8 @@ Généré le 2026-11-09
 Prêtes à entrer dès qu'un titre leur est associé.
 
 - **Manuela Trasobares** — `partial`, Spain, Spanish. Source : [dosmanzanas](https://dosmanzanas.com/2021/10/manuela-trasobares-cantante-muchas-veces-hablo-de-mi-en-tercera-persona-porque-dios-soy-yo.html)
-- **Naomy** — `unresolved`, Romania, Romanian. Source : [Wikipedia](https://en.wikipedia.org/wiki/Naomy_(Romanian_singer))
-- **Reshma of Kashmir** — `unresolved`, India, Kashmiri. Source : [Wikipedia](https://en.wikipedia.org/wiki/Reshma_of_Kashmir)
+- **Naomy** — `partial`, Romania, Romanian. Source : [România TV, 19 April 2024](https://www.romaniatv.net/naomy-a-murit-cantareata-transgender-avea-47-de-ani_8258224.html)
+- **Reshma of Kashmir** — `partial`, India, Kashmiri. Source : [Kashmir Life, 12 November 2017](https://kashmirlife.net/from-ab-rashid-to-reshma-is-third-gender-finally-getting-its-voice-155649/)
 
 ## Citations retenues
 
@@ -257,39 +255,59 @@ Reproduites mot pour mot.
 
 - **SOPHIE** — « For me, transness is taking control to bring your body more in line with your soul and spirit so the two aren’t fighting against each other. » (PAPER Magazine)
 - **Arca** — « I identify as a transwoman, and I see my gender identity as nonbinary. » (PAPER Magazine)
+- **ANOHNI** — « I finally got the courage to say, ‘I want you to address me as “she,” because I want you to honor my spirit. I’m a transgender person who wants to be recognized for my feminine essence and aspect.’ » (None)
 - **Kim Petras** — « I want to thank all the incredible transgender legends before me who kicked these doors open for me so I could be here tonight. » (NBC News)
 - **femtanyl** — « Being a trans woman, or transfem, comes with a high level of experimentation with yourself and also through interests like music. » (Metal Magazine)
 - **Chase Icon** — « Being trans, so much relies on your voice being able to sound a certain way. » (Vice)
 - **Stef Aranas** — « It’s really all about empowering queer people, especially femmes, in all shapes and forms. » (The Beat Asia)
+- **JEDET** — « Sí, la sociedad establece lo que es una mujer real y lo que no. Para ellos yo sería una imitación. A las mujeres trans nos presionan: existe la falsa creencia de que si no te sometes a la cirugía de reasignación de sexo no eres lo suficientemente mujer. — Yes, society decides what a real woman is and what she is not. To them I would be an imitation. We trans women are put under pressure: there is a false belief that if you do not undergo sex reassignment surgery you are not woman enough. » (None)
+- **Titica** — « Sou Titica. Sou mulher. Sou trans. E exijo respeito. — I am Titica. I am a woman. I am trans. And I demand respect. » (Open letter on her official Facebook page, 24 June 2025)
 - **Against Me!** — « Dear God, please, when I wake up, I want a female body. » (Rolling Stone, 31 May 2012)
 - **Laura Jane Grace** — « Dear God, please, when I wake up, I want a female body. » (Rolling Stone, 31 May 2012)
 - **Jayne County** — « I was an out transgender artist. There were other transgender artists around but they weren’t out. I was out from the very beginning. » (Interview Magazine)
 - **Venus De Mars** — « I’m trans, male to female. That’s my gender. I don’t feel male at all. But I don’t feel female, either. I feel that I’m trans. » (The Current (MPR))
 - **Venus de Mars and All the Pretty Horses** — « I’m trans, male to female. That’s my gender. I don’t feel male at all. But I don’t feel female, either. I feel that I’m trans. » (The Current (MPR))
 - **Left at London** — « Nonbinary trans woman, to be specific. » (NBC News)
+- **Susy Shock** — « Pero después desde lo humana que soy, desde lo trava que soy, todo lo que he sido y seré (porque andá a saber en qué otra cosa me convertiré) los libros expresan mis devenires y mi aire propio. — But then, from the human that I am, from the trava that I am, everything I have been and will be (because who knows what else I will turn into), the books express my becomings and my own air. » (La Izquierda Diario, 3 June 2016)
 - **Ethel Cain** — « I was too scared to come out as a trans woman ’cause I was dreading the thought of having to come out for a second time after how it went the first time » (None)
 - **Jackie Shane** — « That's what it is. I was born a woman in this body. That's how it's always been. I'm not putting on an act. I could not be anyone else if I tried. It would be the most ridiculous thing in the world for me to try to be a male. » (Numero Group, Baby, Do What You Want, 13 October 2015)
 - **Shea Diamond** — « A 40-year-old woman, a trans woman. » (Variety)
 - **Mila Jam** — « I’ve always been a woman, but that’s just not been the shell and it’s time to catch up with that, it’s time to make sure the shell reflects who I really am on the inside. » (None)
 - **Our Lady J** — « I wouldn’t be doing what I’m doing now if I hadn’t come out as a trans woman and if I hadn’t been born as a trans woman. » (Out, 10 August 2010)
 - **Haiifa Magic** — « First of all, I wasn’t the first person to change sex in Lebanon, but the first one that got famous. At the same time, I think I’m a role model for people that have been judged in their life for who they are. But the only thing the media focuses on is my gender identity and I’m so much more, I’m a strong business woman! » (i-D, 24 January 2018)
+- **Harisu** — « I underwent gender reassignment surgery because I wanted to live as a woman, and I thought I had achieved everything by doing so. But that was just the starting point of my life. In society’s eyes, I was still just a transgender person. » (The Korea Times (Xportsnews), 11 September 2025, translated from Korean)
+- **Hương Giang** — « Ever since I was young, I've never thought of myself as a boy. I used to dream of wearing a fishtail dress. My hand was holding a microphone. And after I woke up, I realised I wanted to be like that, to grow up to become a girl -- a good, beautiful girl. » (None)
+- **Bell Nuntita** — « If I wasn’t transgender I wouldn’t have had the fame. If I didn’t come out, I wouldn’t be able to be a role model or an idol for transgender people in Thailand. » (None)
+- **Ai Haruna** — « I had to learn that becoming a woman was not the end of my journey. For a long time, I believed that if I could change my body, I would finally feel complete and all my worries would disappear. But even after surgery, I sometimes struggled with the feeling that I was not a "real woman." » (None)
+- **Urias** — « Hoje em dia, olho pra trás e vejo que não cresci como uma gay afeminada, mas sim como uma mulher trans que ainda não tinha se descoberto. — Today I look back and see that I did not grow up as an effeminate gay, but as a trans woman who had not yet discovered herself. » (VICE Brasil, 24 October 2019)
+- **Liniker** — « Sou uma mulher negra, eu sou travesti. — I am a Black woman, I am a travesti. » (CartaCapital, 29 July 2018)
 - **Linn da Quebrada** — « Me sinto livre para não ser nem homem nem mulher. — I feel free to be neither man nor woman. » (Diário do Nordeste)
+- **Mulher Pepita** — « Eu sempre vou bater na tecla que eu sou travesti, vou morrer travesti e nasci uma travesti. E nunca vou ter vergonha disso, porque eu sou feliz assim — I will always insist that I am a travesti, I will die a travesti and I was born a travesti. And I will never be ashamed of it, because I am happy this way. » (Bahia Notícias, 30 November 2017)
+- **Angel Maxine** — « As I was doing the music, dressing, appearing on stage, and performing like a woman, these things informed my decision to fully transition. I just felt that if I am coming out to people, on the music stage, as a woman, why didn’t I do it well, truly and fully? » (African Arguments, 28 October 2021)
 - **Quay Dash** — « I’m black, I’m trans, and I can actually rap. » (Dazed)
 - **Andra Venus** — « The project was born from the need to be the artist that young Alejandra would have wanted as a reference. » (Neo2)
+- **Coccinelle** — « mais quel baume sur les plaies à vif que de se savoir enfin libérée de cet encombrant morceau de chair avec lequel on n'aurait jamais dû naître! — But what a balm on raw wounds, to know oneself freed at last of that cumbersome piece of flesh one should never have been born with! » (Slate.fr, 6 March 2024, quoting her memoirs)
 - **Jane Remover** — « I’m not not trans, but I’m not a trans woman… It is exhausting to have to figure it out publicly in front of thousands of people, so I was like: let me make this easy for everybody. I’m whatever you want, it’s up to y’all now. » (NME)
 - **ISSBROKIE** — « All-all-all these fuckin’ comments hate on me ’cause I’m transgender shit / Keep-keep-keep on fuckin’ commentin’, that shit pay for my estrogen » (Lyrics, “I’M Up Now!” (2023))
 - **Laura Les** — « I’m never gonna pass/I should stay home/Why did I make plans? » (None)
 - **Mel 4Ever** — « I no longer was so obviously trans. But the transphobia that I started to receive felt a little more insidious rather than blatant because I suddenly was a little more passing. » (NYLON)
 - **estelle allen** — « i did half a tab once that i got from an old hippie in san francisco and immediately realized that thinking about the fact i was actually a woman every day meant i was trans » (X, 17 May 2026)
 - **Cae Monāe** — « I am what they consider, an international transsexual woman. » (Dazed)
+- **G.L.O.S.S.** — « The first couple songs, like “Thing I do Best” and “Hardest Years,” I guess touch on themes of being a transwoman and my experience with that. » (Phoenix New Times, 4 May 2016)
 - **Tingtongketz** — « I couldn’t do that. I’m so sorry, because this is my true self. » (Malay Mail)
+- **Beth Elliott** — « What it meant to me is well, what it means, objectively, early onset severe gender dysphoria. I knew from an early age, I felt I'm a girl. Why does nobody see this? Why are they trying to force me to be a boy? » (The Outwords Archive, oral history interview with Mason Funk)
 - **Namoli Brennet** — « I want to transition and I want to be a songwriter. » (Her own biography)
+- **Vivek Shraya** — « I feel like I was robbed of my femininity and using “she” and “her” is a way to reclaim this. » (Autostraddle, 19 May 2016)
 - **Veronica Klaus** — « I wasn’t trying to change who I was through gender reassignment, but to become who I truly was. » (SFGate)
 - **Ah-Mer-Ah-Su** — « The whole album is really an exploration of what it means to be Black, trans, femme, and young, and having real problems. » (PAPER Magazine)
+- **Ataru Nakamura** — « 注目していただけたのは、今となっては本当にありがたいこと。でも当時は『苦しい』という気持ちの方が大きくて。 — The attention I received, I am truly grateful for it now. But at the time, the feeling of pain was greater. » (None)
 - **Ms. Boogie** — « In a practical world, I would be a “trans woman,” but in the world that I have built for myself and my loved ones, I am simply myself. » (PAPER Magazine)
+- **Lauren Auder** — « Here I’m truly presenting five songs that are only connected through, well, me and my experiences since being an out trans woman. » (METAL Magazine, 21 January 2021)
 - **osquinn** — « I go by both, but p4rkr represents my deadname before I came out as trans, sort of like someone I used to be. » (The FADER)
 - **Anita Velveeta** — « I’m trans. » (The Current)
 - **Ezra Furman** — « I wanted to share with everyone that I am a trans woman, and also that I am a mom and have been for a while now (like 2+ years) » (Pitchfork, 21 April 2021 (quoting her Instagram announcement))
+- **Mya Byrne** — « As a songwriter and a Jewish queer trans woman, I’ve found myself consistently drawn to the concept of “Mitzrayim,” » (Atwood Magazine, essay by Mya Byrne, 22 June 2023)
+- **Steam Powered Giraffe** — « It made it easier, seeing other trans people out and about on the internet, doing, like, video blogs saying, ‘Hey, I’m out here, this is what I did,’ and eventually I think it just kind of cracked through my egg and I was able to hatch, finally. » (San Diego Reader, 1 September 2022)
 - **SuperKnova** — « I already was living a life so outside of people’s “normal”. » (Qwear)
 - **Jinkx Monsoon** — « In my own trans identity and my own gender journey, I’m constantly self-manifesting and constantly finding ways to be more myself » (None)
 - **Aderet** — « I don’t see myself as a spokesperson for the transgender community in Israel, but I’ve had a positive experience overall. I’ve lived in Israel as a woman, and I’m mostly seen as just a singer who performs in English, without much attention to my past. » (The Heroines of My Life)
@@ -312,6 +330,7 @@ Reproduites mot pour mot.
 - **TAMAGOTCHI MASSACRE** — « All through high school, the world knew me as a dude. At the beginning of quarantine, I started to realize, “Hm, something’s funky. I don’t feel that great.” » (The Idle Class)
 - **Ella** — « Comecei a fazer várias perguntas a elas, sobre transição, sobre terapia hormonal… Cheguei em casa, comecei a pesquisar e a entender que uma nova pessoa nasceria dali em diante. — I started asking them lots of questions, about transition, about hormone therapy… I got home, started researching, and understood that a new person would be born from then on. » (None)
 - **La Veneno** — « A los seis años ya me sentía mujer, porque entonces yo me ponía todo lo de mi hermana, me probaba toda su ropa. — At six years old I already felt like a woman, because back then I would put on all of my sister's things, I would try on all her clothes. » (None)
+- **Reshma of Kashmir** — « Our community must be led by example. We should get education and step into different professions which the third gender community is doing elsewhere in the world. If they can do it, why can’t we? » (Kashmir Life, 12 November 2017)
 - **Trevi Moran** — « Hi. My name is Trevi Moran. I am a transgender female. » (Entertainment Tonight (ET Online))
 - **Wendy Guevara** — « Yo siempre he dicho que yo no me considero una mujer, siempre he dicho que soy una chica transexual. — I have always said that I do not consider myself a woman, I have always said that I am a transsexual girl. » (El Dictamen)
 - **Dylan Mulvaney** — « I automatically have a lot of respect for you as a fellow trans woman. » (NBC News)

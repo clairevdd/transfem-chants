@@ -161,14 +161,21 @@ def check():
             raise SystemExit(f"build.py : {sid} est verified sans source, date ou contrôle datés")
 
     # Audit du 9 novembre 2026, arbitrage de Claire : une encyclopédie n'est
-    # jamais une source primaire. Une fiche dont toutes les sources sont des
-    # pages Wikipédia ne peut être que `unresolved` ; sinon le build échoue.
+    # jamais une source primaire. Règle du 10 novembre 2026 : une fiche
+    # `unresolved` ne vit plus que dans le projet Claude, jamais dans le dépôt
+    # ni sur le site, et ses morceaux sortent de la playlist. Le build refuse
+    # donc toute fiche `unresolved`, et toute fiche dont toutes les sources sont
+    # des pages Wikipédia (elle ne pourrait être qu'`unresolved`).
     for name, v in ART.items():
-        if wiki_only(v) and v[0] != "unresolved":
+        if v[0] == "unresolved":
             raise SystemExit(
-                f"build.py : {name} n'a que Wikipédia pour source et n'est pas "
-                f"marquée unresolved. Trouver une source primaire, ou la marquer "
-                f"unresolved.")
+                f"build.py : {name} est unresolved. Une fiche unresolved ne va "
+                f"pas dans le dépôt : la déplacer dans le projet Claude et "
+                f"retirer ses morceaux de la playlist.")
+        if wiki_only(v):
+            raise SystemExit(
+                f"build.py : {name} n'a que Wikipédia pour source. Trouver une "
+                f"source primaire, ou sortir la fiche du dépôt.")
 
     """Vérifie tracks.py contre data.py avant de générer quoi que ce soit."""
     missing = sorted({a for _, c in TRACKS for a in artists_of(c) if a not in ART})
@@ -282,6 +289,13 @@ def tracklist():
     return "\n".join(out)
 
 
+# Fiches qui portent un lien direct vers la page de retrait. Arbitrage de
+# Claire, 10 novembre 2026 : Ataru Nakamura a dit que la révélation publique
+# de 2006 lui avait été imposée ; la fiche est gardée au jugé, et doit rendre
+# un retrait aussi simple que possible.
+TAKEDOWN_LINK = {"Ataru Nakamura"}
+
+
 def card(name):
     status, country, lang, identity, quote, src, srcurl = ART[name]
     label, cls = BADGE[status]
@@ -304,6 +318,10 @@ def card(name):
         s = '<p class="src none">No public source found.</p>'
     else:
         s = ''
+    if name in TAKEDOWN_LINK:
+        s += ('<p class="src">To ask for this entry to be taken down, use the '
+              '<a href="takedown.html">private channel</a>: a request from her, '
+              'or from someone writing for her, is enough.</p>')
     extra = " card-note" if status == "guest" else ""
     return (f'<article class="card{extra}" id="{slug(name)}">'
             f'<h4>{esc(name)}<span class="st {cls}">{esc(label)}</span></h4>'
@@ -316,8 +334,6 @@ def page():
         card(n) for n in order if ART[n][0] != "guest") + '</div>'
     guests = '<div class="cards">' + "\n".join(
         card(n) for n in order if ART[n][0] == "guest") + '</div>'
-    wiki_unresolved = [n for n in order if ART[n][0] == "unresolved" and wiki_only(ART[n])]
-    wiki_names = ", ".join(f'<a href="#{slug(n)}">{esc(n)}</a>' for n in wiki_unresolved)
     css = open("style.css", encoding="utf-8").read()
     count = len(TRACKS)
     st = stats()
@@ -340,7 +356,7 @@ def page():
 <img class="cover" src="cover.jpg" width="150" height="150" alt="Playlist cover: a raised fist inside the circle of a male symbol whose arrow breaks apart, wrapped in thorned stems of white roses.">
 <h1>Transfem chants</h1>
 <p class="sub">{count} songs <em>sung</em> by transfeminine artists: trans women, and non-binary or agender people assigned male at birth. This page gives, for every artist, the gender identity as they have made it public, and the source for it.</p>
-<p class="stats"><strong>{st["tracks"]}</strong> tracks &middot; <strong>{st["presented"]}</strong> artists presented here as transfeminine, and <strong>{st["open_cases"]}</strong> {"entry" if st["open_cases"] == 1 else "entries"} marked unresolved and not counted among them &middot; <strong>{st["countries"]}</strong> countries and territories &middot; <strong>{st["languages"]}</strong> languages</p>
+<p class="stats"><strong>{st["tracks"]}</strong> tracks &middot; <strong>{st["presented"]}</strong> artists presented here as transfeminine &middot; <strong>{st["countries"]}</strong> countries and territories &middot; <strong>{st["languages"]}</strong> languages</p>
 <a class="hero-link" href="{PLAYLIST}" target="_blank" rel="noopener">Open the playlist on Spotify</a>
 </header>
 
@@ -356,12 +372,12 @@ def page():
 <li><strong>A transfeminine identity.</strong> Anyone who does not recognise herself in the masculine gender she was assigned at birth — nearly every modern society assigns one administratively. Trans women, and non-binary or agender people assigned male at birth, but also artists whose own word for themselves comes from a tradition that maps onto none of those. Where an artist names her identity in her own terms, this page keeps her terms rather than translating them into ours.</li>
 <li><strong>Made public by the artist.</strong> An identity inferred from gender expression, with no statement or confirmation, is not enough.</li>
 <li><strong>Still current, and still willing.</strong> Artists who no longer identify this way were left out. So is anyone still trans who has since chosen to live stealth and would rather their transness not be published. That second case cannot be established from outside, so it rests on being told — and on being told somewhere that costs the person telling nothing. See <a href="takedown.html">taking an entry down</a>.</li>
-<li><strong>Arbitrary inclusions.</strong> Where a case did not resolve cleanly, the track was kept and the doubt written down instead. See the <span class="st st-her">partial</span> and <span class="st st-flag">unresolved</span> entries.</li>
+<li><strong>Arbitrary inclusions.</strong> Where the evidence meets these criteria without settling every question, the track was kept and the doubt written down: see the <span class="st st-her">partial</span> entries. Where it does not meet them, the artist and her tracks are left out until a statement in her own words is found.</li>
 </ul>
 
 <div class="note">
 <h4>What the sources are worth</h4>
-<p>Not every line here carries the same weight, and the page says so rather than hiding it. <span class="st st-ok">verified</span> means the source was opened and read, and states the claim explicitly. <span class="st st-her">partial</span> means the source is suggestive but carries no explicit first-person statement, or the artist’s own position is more complicated than the label. <span class="st st-flag">unresolved</span> marks an open case, set out in full below. <span class="st st-note">featured</span> marks someone credited on a track without being its lead artist.</p>
+<p>Not every line here carries the same weight, and the page says so rather than hiding it. <span class="st st-ok">verified</span> means the source was opened and read, and states the claim explicitly. <span class="st st-her">partial</span> means the source is suggestive but carries no explicit first-person statement, or the artist’s own position is more complicated than the label. <span class="st st-note">featured</span> marks someone credited on a track without being its lead artist.</p>
 <p>Where an artist has described themselves in their own words, those words are quoted rather than paraphrased. The distinction matters: the criterion is what the artist said, not what the compiler concluded.</p>
 <p>A <span class="st st-ok">verified</span> mark is never permanent. It records that a source was read on a given day; it does not close the question. This page began after an artist was nearly cut from the playlist on the strength of an unsourced claim about their gender, apparently confused with a different musician entirely. The correction was made, and then sat untouched until it too had quietly stopped being true. Both mistakes came from the same habit: repeating what was already written instead of going back to look.</p>
 <p>Rechecking older entries on a schedule would not fix that, and would make something else worse. The artists easiest to recheck are the ones a press already follows; those who speak to their audience only through their own accounts would be rechecked last and least, which is the bias set out further down, reintroduced as a maintenance routine. So this page relies on being told instead — that someone’s identity has changed, that she now lives stealth, that she wants her entry gone. All of that goes through <a href="takedown.html">a private channel, on its own page</a>, never through a public thread.</p>
@@ -373,7 +389,6 @@ def page():
 <ul class="legend">
 <li><span class="st st-ok">verified</span> source read directly</li>
 <li><span class="st st-her">partial</span> no explicit self-statement</li>
-<li><span class="st st-flag">unresolved</span> open case</li>
 </ul>
 
 {leads}
@@ -382,20 +397,6 @@ def page():
 <p>People credited on a track without being its lead artist. The inclusion criterion does not apply to them, so their gender identity is not a condition of anything here. It is documented anyway, for completeness, and the same rule holds: where nothing has been publicly stated, nothing is inferred. Being referred to with he/him or she/her in the press is not a statement of identity, and this page does not treat it as one.</p>
 
 {guests}
-
-<h2>Unresolved cases</h2>
-<p>Entries carrying the <span class="st st-flag">unresolved</span> mark above are not counted among transfeminine artists. Their tracks stay on the playlist while the question stays open. There are two kinds of case.</p>
-
-<div class="note">
-<h4>Entries sourced only to an encyclopedia</h4>
-<p>{len(wiki_unresolved)} entries were first written from Wikipedia alone. An encyclopedia is not the artist speaking, and nothing on this page should rest on one, so these entries are marked unresolved until a statement in the artist’s own words has been found and read. They are being worked through one by one: {wiki_names}.</p>
-</div>
-
-<div class="note">
-<h4>Frost Children</h4>
-<p>Angel and Lulu Prost are consistently referred to with she/her in the press, and their lyrics deal with gender dysphoria. But across the interviews read here, neither sibling makes a first-person statement about her own gender identity. What Angel says is about other people: “I care about trans people,” and “I would give every trans girl a gun to defend themselves.” Solidarity is not a declaration, and this page does not read it as one.</p>
-<p>A second question is open alongside the first: which sibling carries the vocal on these tracks could not be established from any source found, so the singing criterion is unverified too. Both tracks are kept and both questions are left visible.</p>
-</div>
 
 <h2>Five other ways in</h2>
 <p>The same artists and the same tracks, cut differently. All five pages are built from the entries above, so nothing on them is claimed that is not sourced here.</p>

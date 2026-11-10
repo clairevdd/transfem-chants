@@ -187,8 +187,6 @@ SECTIONS = [
             ('1F99de97B9zXdnMdtq8KrH', 'Punk Under Pressure', 'Katey Red'),
             # twi/anglais (Ghana)
             ('3QF7smzmw2WWm7M1jt2Rac', 'Wo Fie', 'Angel Maxine, Wanlov The Kubolor, Sister Deborah'),
-            # espagnol (Argentine)
-            ('1RkB4Dk0CDzpaSySq91JEA', 'AKA LESBIANA SERPIENTA', 'Sasha Sathya'),
             # darija/français (Maroc)
             ('4UfEEnq70NgLeq7NRfXPiD', 'INCHALLAH', 'LALLA RAMI'),
             ('5nWecUJF2pytSxsSpylzZw', '9A7BA', 'LALLA RAMI'),
@@ -212,22 +210,18 @@ SECTIONS = [
             ('7n7GrVTBmZMG4EULD5g0i3', 'warm and fuzzy', 'osquinn'),
             ('0VNjaRcmIowjLbPtYDhLuh', 'Your favorite sidekick', 'underscores, 8485'),
             ('1d3hBkCcMvVzsZjaMiVvNs', 'SRS', 'Chase Icon'),
-            ('1RXkdiCc4TtwPacmIKyUnX', 'Vacation Bible School', 'Ayesha Erotica'),
             ('54n3iwz9mr7yxZi1EOX1Mz', 'Locals (Girls like us) [with gabby start]', 'underscores, gabby start'),
-            ('6WkiWn8bf8S29wSk0VwK7h', 'Falling', 'Frost Children'),
             ('724utiMbqUfT1g3tqbfQYu', 'Spoiled little brat', 'underscores'),
             ('3RLI8S7KpEZs4SqePGjM2R', 'dui', 'estelle allen'),
             ('0qMZXgcLfkl5RI3q50KHMH', 'Dumbest Girl Alive', 'Laura Les, Dylan Brady'),
             ('53uyQrCca3tqGU8Voaa0oC', 'Fake luv', 'd0llywood1'),
             ('1XD4K4CGAKTIBmFpvuaFru', 'Dancing with your eyes closed', 'Jane Remover'),
-            ('2gmwvGC1yOw8NdMcZE8nfo', 'Literal Legend', 'Ayesha Erotica'),
             # II — plus saturé
             ('4qdyN6rpaGsspGeMzkCTNP', 'C U L8R', 'Amethyst, Ayesha Erotica'),
             ('1toNKayLMeCcVlsLGXJl7n', 'Haunted', 'Laura Les'),
             ('18QS9wnUr7DOhMb73monpK', 'Tongues', 'Mel 4Ever, Ayesha Erotica'),
             ('0Irj6PuEEGzi7JGJvAhdZ8', 'I Can\'t Quit', 'Mel 4Ever'),
             ("5q7SGc4ngIhrYciZcgJ9Oe", 'Scene Boy', "Ve'ondre"),
-            ('06kFuqzhMk4E6IYeO0sTfx', 'RADIO (feat. Kim Petras)', 'Frost Children, Kim Petras'),
             ('2sVjF25Z4JTJxi9BXm5GtJ', 'ACT RIGHT', 'femtanyl'),
             ('51NYFGDXYKS4FkRqkw98hx', 'Like Me', 'Chase Icon'),
             ('5iTzaatezJzsUhX1QjT0Kp', 'Person - Angel Mix', 'Petal Supply'),
@@ -319,4 +313,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 233
+assert len(all_tracks()) == 228

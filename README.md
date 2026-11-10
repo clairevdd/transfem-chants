@@ -123,11 +123,11 @@ Les mêmes noms servent pour l'identité dans `data.py` et pour les dates dans
 |---|---|---|
 | `verified` | verified | source ouverte et lue, affirmation explicite |
 | `partial` | partial | source suggestive, unique ou tertiaire ; pas de déclaration à la première personne |
-| `unresolved` | unresolved | cas ouvert, sources en conflit, détaillé sur la page |
+| `unresolved` | unresolved | pour `years.py` seulement : sources en conflit sur une date, conflit décrit dans la fiche. Dans `data.py`, une identité non établie ne figure pas : la fiche et ses morceaux sortent du dépôt et de la playlist (règle du 10 novembre 2026), et le build refuse toute fiche `unresolved` |
 | `guest` | featured | personne créditée sans être l'artiste principale |
 
 Aucun statut ne monte d'un cran sans une nouvelle source lue. Un statut peut
-descendre. Le doute se documente, il ne se lisse pas.
+descendre ; pour l'identité, descendre sous `partial` veut dire sortir du dépôt. Le doute se documente, il ne se lisse pas.
 
 Deux champs de `years.py` portent le reste de la nuance : `kind` distingue une
 première parution établie d'une simple borne (`earliest_known`, « aucune trace
