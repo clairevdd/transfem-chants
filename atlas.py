@@ -232,7 +232,7 @@ def _nav(here):
             return f'<span class="here">{label}</span>'
         return f'<a href="{href}">{label}</a>'
     return ('<nav class="pagenav" id="tc-nav">'
-            + '<a class="brand" href="index.html">Transfem chants</a>'
+            + '<a class="brand" href="index.html">Transfem Tracks</a>'
             + '<button type="button" class="menubtn" id="tc-menu" hidden aria-expanded="false" aria-controls="tc-links">'
             + '<svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
             + '<span>Menu</span></button>'
@@ -361,14 +361,14 @@ def countries_page(css, esc, slug, artists_of, aliases, same_person, badge,
 {''.join(blocks)}
 
 <footer>
-<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
+<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem Tracks</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
 <p class="colophon">Country boundaries derived from the public-domain world map shipped with pygal_maps_world, simplified for weight. Borders shown are those of that dataset and are not a position on any of them.</p>
 <p class="colophon">To have an entry taken down, or to raise anything about a person’s identity, use the <a href="takedown.html">private channel</a> rather than a public issue thread.</p>
 <p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>
 """
-    return _shell("Transfem chants — by country",
-                  "The Transfem chants playlist mapped by country, and what the "
+    return _shell("Transfem Tracks — by country",
+                  "The Transfem Tracks playlist mapped by country, and what the "
                   "empty parts of that map actually record.",
                   css, body, _nav("countries.html"))
 
@@ -426,13 +426,13 @@ def languages_page(css, esc, slug, artists_of, aliases, same_person, badge,
 {''.join(blocks)}
 
 <footer>
-<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
+<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem Tracks</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
 <p class="colophon">A missing language is a missing source, not a missing artist. If you know of one, <a href="{issues}" target="_blank" rel="noopener">open an issue</a>. To have an entry taken down, or to raise anything about a person’s identity, use the <a href="takedown.html">private channel</a> instead: issue threads are public.</p>
 <p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>
 """
-    return _shell("Transfem chants — by language",
-                  "The Transfem chants playlist broken down by the languages its "
+    return _shell("Transfem Tracks — by language",
+                  "The Transfem Tracks playlist broken down by the languages its "
                   "artists record in, and why the distribution is so uneven.",
                   css, body, _nav("languages.html"))
 
@@ -466,12 +466,12 @@ def takedown_page(css, playlist, issues, contact):
 </div>
 
 <footer>
-<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Back to <a href="index.html">the sources page</a>.</p>
+<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem Tracks</strong></a>. Back to <a href="index.html">the sources page</a>.</p>
 <p class="colophon">Found an error, a better source, or an artist who should be here? <a href="{issues}" target="_blank" rel="noopener">Open an issue</a> instead — that thread is public, which is fine for a date or a citation.</p>
 <p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>
 """
-    return _shell("Transfem chants — taking an entry down",
+    return _shell("Transfem Tracks — taking an entry down",
                   "How to have an entry removed or changed on the Transfem "
                   "chants sources pages, and why it does not run through a "
                   "public issue thread.",

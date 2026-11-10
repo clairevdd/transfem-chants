@@ -48,7 +48,7 @@ for n, e in canon.items():
             langs.add(l.strip())
 
 L = []
-L.append("# Transfem chants — table des artistes\n")
+L.append("# Transfem Tracks — table des artistes\n")
 L.append("Export lisible de `data.py`. **`data.py` fait foi.**\n")
 L.append("## Où on en est\n")
 L.append("- **%d morceaux**" % len(all_tracks()))

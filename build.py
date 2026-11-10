@@ -30,7 +30,7 @@ from lyrics import LYRICS, SEARCH
 from tags import TAGS
 
 PLAYLIST = "https://open.spotify.com/playlist/4rK80rB8ycyAUdIKX6FOIk"
-ISSUES = "https://github.com/clairevdd/transfem-chants/issues"
+ISSUES = "https://github.com/clairevdd/transfem-tracks/issues"
 
 # Canal privé pour tout ce qui touche à l'identité d'une personne : demande de
 # retrait, passage en stealth, changement d'identité.
@@ -353,8 +353,8 @@ def page():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script>(function(){{var d=document.documentElement;try{{if(localStorage.getItem("tc-theme")==="light")d.dataset.theme="light"}}catch(e){{}}window.tcToggleTheme=function(){{var l=d.dataset.theme!=="light";if(l)d.dataset.theme="light";else delete d.dataset.theme;try{{localStorage.setItem("tc-theme",l?"light":"dark")}}catch(e){{}}document.dispatchEvent(new Event("tc-themechange"))}}}})()</script>
-<title>Transfem chants — sources</title>
-<meta name="description" content="Every track in the Transfem chants playlist, with each artist's publicly stated gender identity and the source for it.">
+<title>Transfem Tracks — sources</title>
+<meta name="description" content="Every track in the Transfem Tracks playlist, with each artist's publicly stated gender identity and the source for it.">
 <style>{css}</style>
 </head>
 <body>
@@ -362,7 +362,7 @@ def page():
 {atlas._nav("index.html")}
 <header class="withcover">
 <img class="cover" src="cover.jpg" width="150" height="150" alt="Playlist cover: a raised fist inside the circle of a male symbol whose arrow breaks apart, wrapped in thorned stems of white roses.">
-<h1>Transfem chants</h1>
+<h1>Transfem Tracks</h1>
 <p class="sub">{count} songs <em>sung</em> by transfeminine artists: trans women, and non-binary or agender people assigned male at birth. This page gives, for every artist, the gender identity as they have made it public, and the source for it.</p>
 <p class="stats"><strong>{st["tracks"]}</strong> tracks &middot; <strong>{st["presented"]}</strong> artists presented here as transfeminine &middot; <strong>{st["countries"]}</strong> countries and territories &middot; <strong>{st["languages"]}</strong> languages</p>
 <a class="hero-link" href="{PLAYLIST}" target="_blank" rel="noopener">Open the playlist on Spotify</a>
@@ -423,7 +423,7 @@ def page():
 <p>Found an error, a better source, or an artist who should be here? <a href="{ISSUES}" target="_blank" rel="noopener">Open an issue</a> — that thread is public, which is fine for a date or a citation. Anything touching a particular person’s identity, taking an entry down first among them, goes through <a href="takedown.html">a channel of its own</a> instead.</p>
 
 <footer>
-<p>Companion page to the Spotify playlist <a href="{PLAYLIST}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. The identities described here are the ones the artists have made public themselves; every link goes to the source for the claim beside it.</p>
+<p>Companion page to the Spotify playlist <a href="{PLAYLIST}" target="_blank" rel="noopener"><strong>Transfem Tracks</strong></a>. The identities described here are the ones the artists have made public themselves; every link goes to the source for the claim beside it.</p>
 <p class="colophon">Compiled <time datetime="2026-08">August 2026</time>. The playlist is by <a href="https://github.com/clairevdd" target="_blank" rel="noopener">Claire</a>, who set the criteria and made every call about what stays and what goes. The source research behind this page, the verification of each artist’s public statement, and the page itself were done by Claude, Anthropic’s AI assistant, working from those criteria. Where a claim could not be verified, that is written down rather than smoothed over.</p>
 <p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>

@@ -520,7 +520,7 @@ coverage, not a gap in the music.</p>
 </div>
 
 <footer>
-<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every artist's stated gender identity, with its source, is on the <a href="index.html">sources page</a>; this page is about the music only.</p>
+<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem Tracks</strong></a>. Every artist's stated gender identity, with its source, is on the <a href="index.html">sources page</a>; this page is about the music only.</p>
 <p class="colophon">Tag data collected via the Discogs, MusicBrainz and Last.fm APIs. A missing tag is a missing source, not a missing genre: if you know a better one, <a href="{issues}" target="_blank" rel="noopener">open an issue</a>. To have an entry taken down, or to raise anything about a person's identity, use the <a href="takedown.html">private channel</a> instead.</p>
 <p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>
@@ -534,8 +534,8 @@ coverage, not a gap in the music.</p>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script>(function(){{var d=document.documentElement;try{{if(localStorage.getItem("tc-theme")==="light")d.dataset.theme="light"}}catch(e){{}}window.tcToggleTheme=function(){{var l=d.dataset.theme!=="light";if(l)d.dataset.theme="light";else delete d.dataset.theme;try{{localStorage.setItem("tc-theme",l?"light":"dark")}}catch(e){{}}document.dispatchEvent(new Event("tc-themechange"))}}}})()</script>
-<title>Transfem chants — by musical tags</title>
-<meta name="description" content="The {n_tracks} songs on Transfem chants, tagged by genre, style and scene from Discogs, MusicBrainz and Last.fm, filterable by intersection or union.">
+<title>Transfem Tracks — by musical tags</title>
+<meta name="description" content="The {n_tracks} songs on Transfem Tracks, tagged by genre, style and scene from Discogs, MusicBrainz and Last.fm, filterable by intersection or union.">
 <style>{full_css}</style>
 </head>
 <body>

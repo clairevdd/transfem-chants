@@ -1523,7 +1523,7 @@ addition.</p>
 </div>
 
 <footer>
-<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every artist's stated gender identity, with its source, is on the <a href="index.html">sources page</a>; this page is about the sound only.</p>
+<p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem Tracks</strong></a>. Every artist's stated gender identity, with its source, is on the <a href="index.html">sources page</a>; this page is about the sound only.</p>
 <p class="colophon">Audio features licensed from <a href="https://tunebat.com/" target="_blank" rel="noopener">Tunebat</a>. Found an error in a title or credit? <a href="{issues}" target="_blank" rel="noopener">Open an issue</a>. To have an entry taken down, or to raise anything about a person's identity, use the <a href="takedown.html">private channel</a> instead.</p>
 <p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>
@@ -1541,8 +1541,8 @@ addition.</p>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script>(function(){{var d=document.documentElement;try{{if(localStorage.getItem("tc-theme")==="light")d.dataset.theme="light"}}catch(e){{}}window.tcToggleTheme=function(){{var l=d.dataset.theme!=="light";if(l)d.dataset.theme="light";else delete d.dataset.theme;try{{localStorage.setItem("tc-theme",l?"light":"dark")}}catch(e){{}}document.dispatchEvent(new Event("tc-themechange"))}}}})()</script>
-<title>Transfem chants — by sonic profile</title>
-<meta name="description" content="{n_tracks} songs from Transfem chants, analysed and grouped by sound rather than by label, from Tunebat audio features reduced to three dimensions and five groups.">
+<title>Transfem Tracks — by sonic profile</title>
+<meta name="description" content="{n_tracks} songs from Transfem Tracks, analysed and grouped by sound rather than by label, from Tunebat audio features reduced to three dimensions and five groups.">
 <style>{full_css}</style>
 {IMPORTMAP}
 </head>

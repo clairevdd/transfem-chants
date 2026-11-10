@@ -468,7 +468,7 @@ a person’s identity, use the
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script>(function(){{var d=document.documentElement;try{{if(localStorage.getItem("tc-theme")==="light")d.dataset.theme="light"}}catch(e){{}}window.tcToggleTheme=function(){{var l=d.dataset.theme!=="light";if(l)d.dataset.theme="light";else delete d.dataset.theme;try{{localStorage.setItem("tc-theme",l?"light":"dark")}}catch(e){{}}document.dispatchEvent(new Event("tc-themechange"))}}}})()</script>
-<title>Transfem chants — by year</title>
+<title>Transfem Tracks — by year</title>
 <meta name="description" content="When each of the {n} songs first existed, and how far Spotify metadata moves them.">
 <style>{full}</style>
 </head>
