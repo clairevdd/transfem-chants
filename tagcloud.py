@@ -522,6 +522,7 @@ coverage, not a gap in the music.</p>
 <footer>
 <p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every artist's stated gender identity, with its source, is on the <a href="index.html">sources page</a>; this page is about the music only.</p>
 <p class="colophon">Tag data collected via the Discogs, MusicBrainz and Last.fm APIs. A missing tag is a missing source, not a missing genre: if you know a better one, <a href="{issues}" target="_blank" rel="noopener">open an issue</a>. To have an entry taken down, or to raise anything about a person's identity, use the <a href="takedown.html">private channel</a> instead.</p>
+<p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>
 """
 

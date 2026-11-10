@@ -423,6 +423,7 @@ def page():
 <footer>
 <p>Companion page to the Spotify playlist <a href="{PLAYLIST}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. The identities described here are the ones the artists have made public themselves; every link goes to the source for the claim beside it.</p>
 <p class="colophon">Compiled <time datetime="2026-08">August 2026</time>. The playlist is by <a href="https://github.com/clairevdd" target="_blank" rel="noopener">Claire</a>, who set the criteria and made every call about what stays and what goes. The source research behind this page, the verification of each artist’s public statement, and the page itself were done by Claude, Anthropic’s AI assistant, working from those criteria. Where a claim could not be verified, that is written down rather than smoothed over.</p>
+<p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>
 
 </div>

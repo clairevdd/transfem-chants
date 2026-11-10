@@ -465,6 +465,7 @@ which is a public thread. To have an entry taken down, or to raise anything abou
 a person’s identity, use the
 <a href="takedown.html">private channel</a> instead.</p>
 <p class="colophon"><a href="{playlist}" target="_blank" rel="noopener">Listen to the playlist</a></p>
+<p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>
 """
 

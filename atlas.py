@@ -295,6 +295,7 @@ def countries_page(css, esc, slug, artists_of, aliases, same_person, badge,
 <p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
 <p class="colophon">Country boundaries derived from the public-domain world map shipped with pygal_maps_world, simplified for weight. Borders shown are those of that dataset and are not a position on any of them.</p>
 <p class="colophon">To have an entry taken down, or to raise anything about a person’s identity, use the <a href="takedown.html">private channel</a> rather than a public issue thread.</p>
+<p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>
 """
     return _shell("Transfem chants — by country",
@@ -358,6 +359,7 @@ def languages_page(css, esc, slug, artists_of, aliases, same_person, badge,
 <footer>
 <p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every statement of identity, with its source, is on the <a href="index.html">sources page</a>.</p>
 <p class="colophon">A missing language is a missing source, not a missing artist. If you know of one, <a href="{issues}" target="_blank" rel="noopener">open an issue</a>. To have an entry taken down, or to raise anything about a person’s identity, use the <a href="takedown.html">private channel</a> instead: issue threads are public.</p>
+<p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>
 """
     return _shell("Transfem chants — by language",
@@ -387,9 +389,17 @@ def takedown_page(css, playlist, issues, contact):
 <p>Removals are complete. The entry, the quotation and the track all go, nothing is left behind saying that someone used to be here, and the repository’s history is replaced rather than left holding a copy. What other sites have already published, and what search engines have already copied, is not mine to take back, but this page will not be the thing that keeps it current.</p>
 </div>
 
+<h2 id="legal">Legal notice and privacy</h2>
+<div class="note">
+<p><strong>Publisher and host.</strong> This site is published on a personal, non-commercial basis by the person who compiled the playlist. As French law allows for non-professional publishers (LCEN, article 1-1, II), her identity has been given to the host rather than shown here. The site is hosted on GitHub Pages by GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States.</p>
+<p><strong>About the artists.</strong> These pages publish information about real people: the name each artist records under, the gender identity she has stated in public, and where she said it. Only what an artist has made public herself is used here (GDPR, article 9(2)(e)), and only to document the playlist. The publisher is responsible for this use. Anyone concerned can have an entry changed or removed through the <a href="{contact}" target="_blank" rel="noopener">private form</a> described above, which is also the way to exercise any other right under the GDPR. You can also lodge a complaint with the French data protection authority, the <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>.</p>
+<p><strong>About visitors.</strong> No cookies, no analytics, no tracking. Your choice of light or dark theme is stored in your own browser and never leaves it. As host, GitHub receives the technical data of any web request, such as your IP address (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's privacy statement</a>). The sonic profile page loads its 3D library from the jsDelivr network, which receives your IP address in the same way (<a href="https://www.jsdelivr.com/terms" target="_blank" rel="noopener">jsDelivr's terms</a>). What you send through the private form is received by its provider, Tally (<a href="https://tally.so/help/privacy-policy" target="_blank" rel="noopener">Tally's privacy notice</a>), and read only to handle your request.</p>
+</div>
+
 <footer>
 <p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Back to <a href="index.html">the sources page</a>.</p>
 <p class="colophon">Found an error, a better source, or an artist who should be here? <a href="{issues}" target="_blank" rel="noopener">Open an issue</a> instead — that thread is public, which is fine for a date or a citation.</p>
+<p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>
 """
     return _shell("Transfem chants — taking an entry down",

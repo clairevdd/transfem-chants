@@ -1525,6 +1525,7 @@ addition.</p>
 <footer>
 <p>Companion page to the Spotify playlist <a href="{playlist}" target="_blank" rel="noopener"><strong>Transfem chants</strong></a>. Every artist's stated gender identity, with its source, is on the <a href="index.html">sources page</a>; this page is about the sound only.</p>
 <p class="colophon">Audio features licensed from <a href="https://tunebat.com/" target="_blank" rel="noopener">Tunebat</a>. Found an error in a title or credit? <a href="{issues}" target="_blank" rel="noopener">Open an issue</a>. To have an entry taken down, or to raise anything about a person's identity, use the <a href="takedown.html">private channel</a> instead.</p>
+<p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
 </footer>
 
 <script type="application/json" id="sonic-data">{scene_json}</script>
