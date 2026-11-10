@@ -320,7 +320,7 @@ def card(name):
         s = f'<p class="src">Sources: {links_html}</p>'
     elif srcurl:
         s = f'<p class="src">Source: <a href="{esc(srcurl)}" target="_blank" rel="noopener">{esc(src)}</a></p>'
-    elif status in ("unresolved", "guest"):
+    elif status == "unresolved":
         s = '<p class="src none">No public source found.</p>'
     else:
         s = ''

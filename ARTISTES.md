@@ -200,13 +200,13 @@ Généré le 2026-11-10
 | Kelmer Pastilha | Angola | _aucune_ |
 | Mauro Xtraga | Angola | _aucune_ |
 | Chrissie Hynde | United States / UK | _aucune_ |
-| Geryon | Australia | [Arts Access Victoria](https://www.artsaccess.com.au/artists/seth-geryon-suda/) |
+| Geryon | Australia | _aucune_ |
 | Brabo | Brazil | _aucune_ |
 | Ada Rook | Canada | _aucune_ |
-| Wanlov The Kubolor | Ghana | [Graphic Online](https://www.graphic.com.gh/features/opinion/ghana-news-the-anti-lgbtq-bill-and-freedom-who-is-wanlov-the-kubolor-and-why-is-he-good-for-ghana.html) |
-| Sister Deborah | Ghana | [GhanaWeb](https://www.ghanaweb.com/GhanaHomePage/entertainment/I-m-an-ally-of-the-LGBTQ-community-not-a-member-Sister-Deborah-clarifies-1717823) |
+| Wanlov The Kubolor | Ghana | _aucune_ |
+| Sister Deborah | Ghana | _aucune_ |
 | Dylan Brady | United States | _aucune_ |
-| 8485 | Canada | [The FADER](https://www.thefader.com/2021/11/24/8485-profile-plague-town-gen-f-interview-2021) |
+| 8485 | Canada | _aucune_ |
 | neophron | France | _aucune_ |
 | Gemroz | France | _aucune_ |
 | gabby start | United States | _aucune_ |

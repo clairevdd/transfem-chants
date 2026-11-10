@@ -43,17 +43,17 @@ ART = {
  "Pop singer from Manila, presented by the press as a trans Pinay pop star and the first transgender artist signed to the independent label Offshore Music. No statement in her own words about her gender identity was found and read.",
  "It’s really all about empowering queer people, especially femmes, in all shapes and forms.","The Beat Asia, 23 August 2024","https://thebeat.asia/manila/vibe/artists/the-beat-manilas-up-and-coming-artist-trans-pinay-pop-star-stef-aranas"),
 
-"Ayesha Erotica": ("guest",'United States','—',
- 'Producer and singer, credited here as a featured artist. Referred to with she/her in the press. No statement in her own words about her gender identity was found and read, so this page makes no claim about it.',
- None,'',''),
+"Ayesha Erotica": ("guest","United States","—",
+ "Credited with Amethyst and Mel 4Ever on “C U L8R” and “Tongues”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Villano Antillano": ("verified","Puerto Rico","Spanish",
  "Rapper from Puerto Rico. She has spoken of becoming a better musician once she took steps that brought her closer to her womanhood and her femininity.",
  "I feel like I really became a better musician once I took steps that closened me to my womanhood and my femininity.","NPR, 13 March 2023","https://www.npr.org/2023/03/13/1158426326/villano-antillano-la-sustancia-x-interview"),
 
-"Bizarrap": ("guest",'Argentina','—',
- 'Producer. Publicly referred to with he/him pronouns; no statement of his own about gender identity was located. He does not sing: the voice on the track is Villano Antillano’s.',
- None,'',''),
+"Bizarrap": ("guest","Argentina","—",
+ "Producer. Credited with Villano Antillano on “Villano Antillano: Bzrp Music Sessions, Vol. 51/66”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "JEDET": ("verified",'Spain','Spanish',
  'Singer and actor. She speaks of herself among the trans women whom society pressures into surgery, and of the beginning of her transition. She performs the theme song of the series Veneno.',
@@ -64,16 +64,16 @@ ART = {
  'Sou Titica. Sou mulher. Sou trans. E exijo respeito. — I am Titica. I am a woman. I am trans. And I demand respect.',
  'Open letter on her official Facebook page, 24 June 2025','https://www.facebook.com/cantoratiticaoficial/posts/pfbid02P4PbbCtG69uzVqmeL1aDmGffFHjDzKBuL5TZjXTj2QaaZ5gtmD4MxYXrED11DqmTl'),
 
-"Ary": ("guest",'Angola','Portuguese',
- 'Featured vocalist. Publicly presented and described as a woman; no statement about cisgender or trans status was located.',
- None,'',''),
+"Ary": ("guest","Angola","Portuguese",
+ "Credited with Titica on “Olha o Boneco”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Kelmer Pastilha": ("guest","Angola","Portuguese",
- "Featured vocalist. No public statement about their gender identity was found.",
+ "Credited with Titica on “Olha a Banana”. No claim is made here about this person’s gender identity.",
  None,None,None),
 
 "Mauro Xtraga": ("guest","Angola","Portuguese",
- "Featured kuduro vocalist. Publicly referred to with he/him pronouns; no statement of his own was located.",
+ "Credited with Titica on “Olha a Banana”. No claim is made here about this person’s gender identity.",
  None,None,None),
 
 "Against Me!": ("verified",'United States','English',
@@ -92,9 +92,9 @@ ART = {
  "Singer and performer of the Parisian scene, at the Alcazar from 1969 and later at the Palace. She hates the word “transsexuel”, asking why anyone who has crossed to the other side should keep that label.",
  "Quand on est passé de l’autre côté, pourquoi est-ce qu’on garde cette appellation ? — When you have crossed to the other side, why keep that label?","Melody TV, 29 November 2019","https://www.melody.tv/actualite/marie-france-lune-des-premieres-chanteuses-transgenres-sort-un-nouvel-album/"),
 
-"Chrissie Hynde": ("guest",'United States / UK','—',
- 'Duet partner. Publicly referred to with she/her pronouns; no statement of her own about gender identity was located. Marie France is the lead artist on this track.',
- None,'',''),
+"Chrissie Hynde": ("guest","United States / UK","—",
+ "Credited with Marie France on “Un garçon qui pleure”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Venus De Mars": ("verified","United States","English",
  "Trans, male to female, in her own words, which she frames outside the binary rather than as a binary trans woman. She said in 2015 that she had come out twenty years earlier.",
@@ -113,8 +113,8 @@ ART = {
  "As a trans woman singer, there’s this constant tension about the natural sounds your voice can make","NME, 22 February 2021","https://www.nme.com/features/june-jones-interview-leafcutter-album-2021-2885314"),
 
 "Geryon": ("guest","Australia","English",
- "Seth Geryon Suda. Their Arts Access Victoria profile uses they/them but makes no statement about gender identity, and no other source was found that does. Featured credit; June Jones is the lead artist.",
- None,"Arts Access Victoria","https://www.artsaccess.com.au/artists/seth-geryon-suda/"),
+ "Credited with June Jones on “Motorcycle”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "jasmine.4.t": ("verified","UK","English",
  "Singer-songwriter from Manchester. She speaks of going on tour as a trans woman, and of wanting to raise other trans women up.",
@@ -204,16 +204,16 @@ ART = {
  'Bahia Notícias, 30 November 2017','https://www.bahianoticias.com.br/cultura/noticia/30077-sou-travesti-e-nasci-uma-travesti-discursa-mulher-pepita-em-premiacao-feminina'),
 
 "Brabo": ("guest","Brazil","—",
- "Production credit. “Brabo” appears to refer to Brabo Music Team, a Brazilian production collective rather than one named person, so no individual identity can be documented.",
+ "Production credit, apparently the Brabo Music Team collective rather than one person. Credited with Mulher Pepita on “Parceira”. No claim is made here about the gender identity of its members.",
  None,None,None),
 
 "Backxwash": ("verified","Zambia / Canada","English",
  "Ashanti Mutinta. Rapper who grew up in Zambia and is based in Montreal. She has spoken of coming out first as bi, then as a trans woman.",
  "I thought that would be the end of it, but it was just the beginning, I’m a trans woman now.","Louder, 24 August 2021","https://cultmtl.com/2020/10/montreal-ottawa-trans-rapper-hip-hop-artist-backxwash-delivers-unfiltered-rhymes-on-god-has-nothing-to-do-with-this-leave-him-out-of-it-new-album-interview/"),
 
-"Ada Rook": ("guest",'Canada','—',
- 'Musician, half of Black Dresses, credited here as a featured artist. Referred to with she/her in the press. This page makes no claim about her gender identity.',
- None,'',''),
+"Ada Rook": ("guest","Canada","—",
+ "Credited with Backxwash on “I LIE HERE BURIED WITH MY RINGS AND MY DRESSES”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Angel Maxine": ("verified",'Ghana','English, Twi',
  'Singer, often described as Ghana’s first openly transgender musician. She has spoken of how performing on stage as a woman led her to transition fully.',
@@ -221,12 +221,12 @@ ART = {
  'African Arguments, 28 October 2021','https://africanarguments.org/2021/10/becoming-angel-maxine-ghana-first-openly-transgender-musician/'),
 
 "Wanlov The Kubolor": ("guest","Ghana","—",
- "Featured vocalist. Publicly an LGBTQ+ ally rather than someone who has stated an LGBTQ+ identity; no statement about his own gender identity was located. Angel Maxine is the lead artist.",
- None,"Graphic Online","https://www.graphic.com.gh/features/opinion/ghana-news-the-anti-lgbtq-bill-and-freedom-who-is-wanlov-the-kubolor-and-why-is-he-good-for-ghana.html"),
+ "Credited with Angel Maxine on “Wo Fie”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Sister Deborah": ("guest","Ghana","—",
- "Featured vocalist. She has publicly clarified her sexuality — an ally, not a member of the community — which speaks to orientation, not gender identity. No statement about her gender identity was located.",
- None,"GhanaWeb","https://www.ghanaweb.com/GhanaHomePage/entertainment/I-m-an-ally-of-the-LGBTQ-community-not-a-member-Sister-Deborah-clarifies-1717823"),
+ "Credited with Angel Maxine on “Wo Fie”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Quay Dash": ("verified","United States","English",
  "Rapper from New York. Black and trans, in her own words.",
@@ -261,20 +261,20 @@ ART = {
  'Trans woman. One half of 100 gecs with Dylan Brady. Her solo work deals directly with transition and with passing, in the first person.',
  'I’m never gonna pass/I should stay home/Why did I make plans?',None,(('them., 16 January 2020', 'https://www.them.us/story/100-gecs-interview-dylan-brady-laura-les'), ('Underground Underdogs, 26 December 2018 (archived)', 'https://web.archive.org/web/20190812055434/https://undergroundunderdogs.com/2018/12/26/laura-les-interview-upcoming-albums-osno1-100-gecs/'))),
 
-"Dylan Brady": ("guest",'United States','English',
- "Record producer and musician, the other half of 100 gecs alongside Laura Les. Runs the independent label Dog Show Records. Laura Les is the artist this playlist's inclusion criteria apply to; Brady is credited here as her collaborator.",
- None,'',''),
+"Dylan Brady": ("guest","United States","English",
+ "Producer and musician, the other half of 100 gecs. Credited with Laura Les on “Dumbest Girl Alive”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "8485": ("guest","Canada","English",
- "Featured vocalist. The press refers to her with she/her pronouns, but no statement of her own about gender identity was located, and she keeps her personal details deliberately private. underscores is the lead artist on this track.",
- None,"The FADER","https://www.thefader.com/2021/11/24/8485-profile-plague-town-gen-f-interview-2021"),
+ "Credited with underscores on “Your favorite sidekick”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "neophron": ("guest","France","French",
- "Featured artist on the track. No public statement about their gender identity was found. Ptite Soeur is the lead artist.",
+ "Credited with Ptite Soeur on “ANFO჻”. No claim is made here about this person’s gender identity.",
  None,None,None),
 
 "Gemroz": ("guest","France","French",
- "Featured artist on the track. No public statement about their gender identity was found. Ptite Soeur is the lead artist.",
+ "Credited with Ptite Soeur on “KAYFABE”. No claim is made here about this person’s gender identity.",
  None,None,None),
 
 "Mel 4Ever": ("verified","United States","English",
@@ -282,7 +282,7 @@ ART = {
  "It changed the course of my life, I no longer was so obviously trans […] But the transphobia that I started to receive felt a little more insidious rather than blatant because I suddenly was a little more passing.","NYLON, 19 October 2023","https://www.nylon.com/entertainment/mel-4ever-she-culture1-profile-hyperpop"),
 
 "gabby start": ("guest","United States","English",
- "Featured vocalist. No public statement about their gender identity was found. underscores is the lead artist on this track.",
+ "Credited with underscores on “Locals (Girls like us) [with gabby start]”. No claim is made here about this person’s gender identity.",
  None,None,None),
 
 "estelle allen": ("verified","United States","English",
@@ -295,7 +295,7 @@ ART = {
  "I am what they consider, an international transsexual woman.","Dazed, 14 November 2019","https://www.dazeddigital.com/beauty/article/46791/1/cae-monae-chicago-make-up-musician-artist-performer-interview"),
 
 "MONĀE": ("guest","United States","English",
- "Credited alongside Cae Monāe on this track. No public statement about their gender identity was found.",
+ "Credited with Cae Monāe on “CISPHOBIC”. No claim is made here about this person’s gender identity.",
  None,None,None),
 
 "G.L.O.S.S.": ("verified",'United States','English',
@@ -322,7 +322,7 @@ ART = {
  'Autostraddle, 19 May 2016','https://www.autostraddle.com/girl-its-your-time-trans-artist-vivek-shraya-on-finding-freedom-and-wholeness-336300/'),
 
 "Queer Songbook Orchestra": ("guest","Canada","—",
- "Chamber ensemble backing Vivek Shraya on this track. A collective rather than an individual; the inclusion criterion does not apply.",
+ "Chamber ensemble. Credited with Vivek Shraya on “Part-Time Woman”. No claim is made here about the gender identity of its members.",
  None,None,None),
 
 "Veronica Klaus": ("verified","United States","English",
@@ -351,7 +351,7 @@ ART = {
  'METAL Magazine, 21 January 2021','https://metalmagazine.eu/en/post/lauren-auder'),
 
 "Celeste": ("guest","UK","—",
- "Featured vocalist. Publicly referred to with she/her pronouns; no statement of her own about gender identity was located. Lauren Auder is the lead artist on this track.",
+ "Credited with Lauren Auder on “Unseen (feat. Celeste)”. No claim is made here about this person’s gender identity.",
  None,None,None),
 
 "osquinn": ("verified","United States","English",
@@ -417,52 +417,52 @@ ART = {
  "I am Lucinta Luna, also known as Ayuna Putri, legally recognized by the court. But my real name is Muhammad Fatah, and I was born a man.","Jakarta Globe, 11 December 2024","https://jakartaglobe.id/lifestyle/transgender-celebrity-lucinta-luna-plans-to-perform-umrah-as-a-man"),
 
 "Lia Larsson": ("guest","Sweden","Swedish",
- "Swedish singer. Credited alongside Tone Sekelius on the 2023 World Cup song; no statement of her own about gender identity was located.",
- None,"",""),
+ "Credited with Tone Sekelius on “VI ÄR SVERIGE (VM-låt 2023)”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Lisa Ajax": ("guest","Sweden","Swedish",
- "Swedish singer. Credited alongside Tone Sekelius on the 2023 World Cup song; no statement of her own about gender identity was located.",
- None,"",""),
+ "Credited with Tone Sekelius on “VI ÄR SVERIGE (VM-låt 2023)”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Tessa Ia": ("guest","Mexico","Spanish",
- "Mexican actress and singer. Featured on Zemmoa’s “Mi Amor Soy Yo”; no statement of her own about gender identity was located.",
- None,"",""),
+ "Credited with Zemmoa on “Mi Amor Soy Yo”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Trans-X": ("guest","Canada","English",
- "Canadian synth-pop project led by Pascal Languirand. Featured on Zemmoa’s “Mi Amor Soy Yo”. The name refers to the synthesiser era, not to gender.",
- None,"",""),
+ "Synth-pop project. Credited with Zemmoa on “Mi Amor Soy Yo”. No claim is made here about the gender identity of its members.",
+ None,None,None),
 
 "Brunoso": ("guest","Brazil","Portuguese",
- "Brazilian producer credited with Irmãs de Pau on “Medley do Submundo”; no statement of his own about gender identity was located.",
- None,"",""),
+ "Producer. Credited with Irmãs de Pau on “Medley do Submundo”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "PEDRO SAMPAIO": ("guest","Brazil","Portuguese",
- "Brazilian DJ, producer and singer, main credited artist on “SEQUÊNCIA CUNT”, on which Irmãs de Pau feature.",
- None,"",""),
+ "Credited with Irmãs de Pau on “SEQUÊNCIA CUNT (feat. Clementaum)”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Mc Gw": ("guest","Brazil","Portuguese",
- "Brazilian funk MC featured on “SEQUÊNCIA CUNT”.",
- None,"",""),
+ "Credited with Irmãs de Pau on “SEQUÊNCIA CUNT (feat. Clementaum)”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Tasha Kaiala": ("guest","Brazil","Portuguese",
- "Brazilian artist featured on “SEQUÊNCIA CUNT”.",
- None,"",""),
+ "Credited with Irmãs de Pau on “SEQUÊNCIA CUNT (feat. Clementaum)”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Clementaum": ("guest","Brazil","Portuguese",
- "Brazilian artist featured on “SEQUÊNCIA CUNT”.",
- None,"",""),
+ "Credited with Irmãs de Pau on “SEQUÊNCIA CUNT (feat. Clementaum)”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Changeline": ("verified","France","English, French",
  "Trap metal and saturated pop-rap artist who produces and sings her own tracks, including the screamed vocals. She speaks about her transition openly in the podcast Nos Voix Trans; the quotation was transcribed from the audio.",
  "J’ai eu une réalisation relativement tardive de ma transidentité. — I came to realise my transness relatively late.","Nos Voix Trans","https://open.spotify.com/episode/4IKPiZViahLUHKspZLCohd"),
 
 "Dede Satria": ("guest","Indonesia","Indonesian",
- "Indonesian singer credited with Lucinta Luna on “Mantan Tanpa Status”; no statement of his own about gender identity was located.",
- None,"",""),
+ "Credited with Lucinta Luna on “Mantan Tanpa Status - Lucinta Luna Version”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Stolas": ("guest","United States","English",
- "American post-hardcore band credited with Changeline on “ANARCONNASSE”; no statement about gender identity by its members was located.",
- None,"",""),
+ "Post-hardcore band. Credited with Changeline on “ANARCONNASSE”. No claim is made here about the gender identity of its members.",
+ None,None,None),
 
 "Daniela Vega": ("verified","Chile","Spanish, Italian",
  "Actress and singer from Santiago, who has sung since the age of eight and trained towards opera. Known for A Fantastic Woman (2017). Speaks of herself as a trans woman in the first person.",
@@ -473,8 +473,8 @@ ART = {
  "The hardest part was knowing that, as an African American transgender woman, life would be at least three times harder.","The Heroines of My Life","https://theheroines.blogspot.com/2014/03/interview-with-tona-brown.html"),
 
 "Geraldine Boone": ("guest","United States","—",
- "Pianist. Accompanies Tona Brown on This Is Who I Am; she plays, she does not sing.",
- None,"",""),
+ "Pianist; she plays, she does not sing. Credited with Tona Brown on “Dream Variations” and “I, Too”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Arantxa Castilla-La Mancha": ("verified","Spain","Spanish",
  "Drag performer and singer from Extremadura. She introduced herself as non-binary on the first season of Drag Race España, and in December 2022 said on her social media and her podcast that she is a trans woman, adding that she does not want this to be used as an argument against non-binary identities.",
@@ -489,12 +489,12 @@ ART = {
  "[…] transformista y travesti de guardia las 24 horas — […] a transformista and a travesti on duty 24 hours a day","leonoticias, 11 February 2023","https://www.leonoticias.com/gente-estilo/samantha-hudson-artista-20230211132401-nt.html"),
 
 "Pupi Poisson": ("guest","Spain","Spanish",
- "Spanish drag performer and singer, credited alongside Arantxa Castilla-La Mancha on “Las Defectos”; no statement of their own about gender identity was located.",
- None,"",""),
+ "Credited with Arantxa Castilla-La Mancha on “Las Defectos”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "CARLES CUEVAS": ("guest","Spain","Spanish",
- "Spanish singer and producer, credited on “Las Defectos”; no statement of his own about gender identity was located.",
- None,"",""),
+ "Credited with Arantxa Castilla-La Mancha on “Las Defectos”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Umlilo": ("partial","South Africa","isiZulu",
  "Musician, performance artist and activist, born in Johannesburg in the 1980s, known as Kwaai Diva and using she/her. She states her gender in the first person; what is not stated anywhere is the gender she was assigned at birth, which this page infers from what she says about her own childhood rather than from a declaration. Hence partial.",
@@ -513,12 +513,12 @@ ART = {
  "Tôi từng là đàn ông và bây giờ là một phụ nữ trong cả thể xác lẫn tâm hồn. — I was once a man and now I am a woman, in body as in soul.","VnExpress, 17 March 2007","https://vnexpress.net/cindy-thai-tai-toi-doi-gioi-tinh-chu-khong-dong-tinh-1892073.html"),
 
 "K Rizz": ("guest","South Africa","English",
- "South African rapper, credited with Angel-Ho on “Like A Girl”; no statement of her own about gender identity was located.",
- None,"",""),
+ "Credited with Angel-Ho on “Like A Girl”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Kashif Ali": ("guest","Pakistan","Urdu",
- "Pakistani singer, credited with Shyraa Roy on “Duniya”; no statement of his own about gender identity was located.",
- None,"",""),
+ "Credited with Shyraa Roy on “Duniya”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "THÉA": ("verified","France","French",
  "Singer, songwriter and producer, born 2001; hyperpop crossed with emo and punk.",
@@ -621,9 +621,9 @@ ART = {
  "Reality-television personality from RuPaul's Drag Race and singer, with a discography under her own name distinct from her drag work. She came out publicly as transgender on Instagram and YouTube for Transgender Day of Visibility in 2017.",
  "Since I came out as trans publicly a year ago, my life has been empowered.","Rigel Gemini, 28 March 2018","https://www.rigelgemini.com/home/2018/3/28/interview-gia-gunn"),
 
-"Alaska Thunderfuck": ("guest",'United States','English',
- 'Drag performer and recording artist, featured on “#LaChinaMasLatina”.',
- None,'',''),
+"Alaska Thunderfuck": ("guest","United States","English",
+ "Credited with Gia Gunn on “#LaChinaMasLatina”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Amor Romeira": ("verified","Spain","Spanish",
  "Spanish singer and television personality. She has described the day her mother told her father, on her behalf, that she was a transsexual woman, and has said publicly that denying that trans women are women is violence against her personally.",
@@ -641,13 +641,13 @@ ART = {
  "Rapper and singer from RuPaul's Drag Race, with releases under her own name. She has written of battling intense gender dysphoria since 2018, and in December 2021 changed the pronouns in her bio to she/her.",
  "[…] trans is who I am and drag is what I do","PinkNews, 20 December 2021","https://www.thepinknews.com/2021/12/20/aja-trans-woman-drag-race/"),
 
-"Alexis Michelle": ("guest",'United States','English',
- 'Drag performer based in New York City, credited on the single "C.L.A.T." alongside Aja, Peppermint and Sasha Velour; no statement of her own about gender identity was located.',
- None,'',''),
+"Alexis Michelle": ("guest","United States","English",
+ "Credited with Aja and Peppermint on “C.L.A.T. (feat. DJ Mitch Ferrino)”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
-"Sasha Velour": ("guest",'United States','English',
- 'Drag performer and artist, winner of RuPaul\'s Drag Race season 9, credited on the single "C.L.A.T." alongside Aja and Peppermint; no statement of his own about gender identity was located.',
- None,'',''),
+"Sasha Velour": ("guest","United States","English",
+ "Credited with Aja and Peppermint on “C.L.A.T. (feat. DJ Mitch Ferrino)”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
 "Jordan Raskopoulos": ("verified","Australia","English",
  "Musician and comedian, member of the musical comedy trio The Axis of Awesome. Came out publicly as transgender in a video posted in February 2016.",
@@ -735,7 +735,7 @@ ART = {
  "I'M TRANS! […] tbh I've felt this way.. well, my entire life.","Instagram, 21 November 2023","https://www.instagram.com/p/Cz61W8tN1kK/"),
 
 "Maya Fennec": ("guest","Unknown","English",
- "Featured vocalist. No public statement about their gender identity was found.",
+ "Credited with Endigo on “Huggy Wuggy”. No claim is made here about this person’s gender identity.",
  None,None,None),
 
 "Carmen de Mairena": ("partial","Spain","Spanish",
@@ -882,23 +882,23 @@ ART = {
  "Singer and drag performer from Los Angeles, co-host of Hey Qween!, known as the “largest live-singing drag queen”. Died in July 2020.",
  "I am a Black, American trans woman who is making a difference in this world and all I'm asking is that you love me like I love you","The Advocate, 27 July 2020 (from one of her last Instagram videos)","https://www.advocate.com/news/2020/7/27/la-drag-fixture-hey-qween-star-lady-red-couture-has-died"),
 
-'Tobias Picker': ('guest','United States','—',
- 'Composer of the opera Lili Elbe.',
- None,'',''),
+"Tobias Picker": ("guest","United States","—",
+ "Composer of the opera. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
-'Aryeh Lev Stollman': ('guest','United States','—',
- 'Librettist of the opera Lili Elbe.',
- None,'',''),
+"Aryeh Lev Stollman": ("guest","United States","—",
+ "Librettist of the opera. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
-'Sinfonieorchester St. Gallen': ('guest','Switzerland','—',
- 'Orchestra of Theater St. Gallen, on the live recording of Lili Elbe.',
- None,'',''),
+"Sinfonieorchester St. Gallen": ("guest","Switzerland","—",
+ "Orchestra of Theater St. Gallen. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”. No claim is made here about the gender identity of its members.",
+ None,None,None),
 
-"Sylvia D'Eramo": ('guest','United States','—',
- 'Soprano, sings Gerda Wegener in Lili Elbe.',
- None,'',''),
+"Sylvia D'Eramo": ("guest","United States","—",
+ "Soprano. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 
-'Modestas Pitrenas': ('guest','Lithuania','—',
- 'Conductor of the live recording of Lili Elbe.',
- None,'',''),
+"Modestas Pitrenas": ("guest","Lithuania","—",
+ "Conductor. Credited with Lucia Lucas on “Lili Elbe, Act II Scene 1: The Recovery Room in the Municipal Women’s Clinic - Live”. No claim is made here about this person’s gender identity.",
+ None,None,None),
 }
