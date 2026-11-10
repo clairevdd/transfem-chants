@@ -163,6 +163,41 @@ def _shell(title, description, css, body, nav):
 THEME_BUTTON = ('<button type="button" class="themebtn" onclick="tcToggleTheme()" aria-label="Switch between dark and light theme"><span class="to-light">Light theme</span><span class="to-dark">Dark theme</span></button>')
 
 
+# Recherche (artistes et titres), ajoutée le 10 novembre 2026 à la demande de
+# Claire : une loupe dans la barre de navigation ouvre un champ. L'index
+# (search-index.json) est généré par build.py et chargé seulement à
+# l'ouverture. Tout se passe dans le navigateur, sans service extérieur. Sans
+# JavaScript, la loupe reste masquée.
+SEARCH_UI = (
+    '<button type="button" class="searchbtn" id="tcs-btn" hidden aria-label="Search artists and songs" aria-expanded="false" aria-controls="tcs-panel">'
+    '<svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+    '</button>'
+    '<div class="searchpanel" id="tcs-panel" hidden>'
+    '<input type="search" id="tcs-in" placeholder="Search an artist or a song" autocomplete="off" spellcheck="false" aria-label="Search an artist or a song">'
+    '<ul id="tcs-out" class="searchout"></ul>'
+    '</div>'
+    '<script>(function(){var b=document.getElementById("tcs-btn"),p=document.getElementById("tcs-panel"),'
+    'i=document.getElementById("tcs-in"),o=document.getElementById("tcs-out"),D=null,L=null;b.hidden=false;'
+    'function n(s){return s.normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase()'
+    '.replace(/\\u0153/g,"oe").replace(/\\u00e6/g,"ae").replace(/\\u00df/g,"ss").replace(/[\x27\\u2019]/g,"").replace(/[^\\p{L}\\p{N}]+/gu," ").trim()}'
+    'function e(s){return s.replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\\"":"&quot;"}[c]})}'
+    'function ld(){if(!L)L=fetch("search-index.json").then(function(r){return r.json()}).then(function(j){'
+    'j.forEach(function(x){x.k=n(x.t);x.q=" "+n(x.t+" "+(x.s||""))});D=j;return j});return L}'
+    'function run(){var q=n(i.value.trim());if(!q){o.innerHTML="";return}ld().then(function(d){'
+    'var w=q.split(" "),r=d.filter(function(x){return w.every(function(v){return x.q.indexOf(" "+v)>=0})});'
+    'r.sort(function(a,c){var sa=a.k.indexOf(q)===0?0:1,sc=c.k.indexOf(q)===0?0:1;'
+    'return sa-sc||(a.c==="artist"?0:1)-(c.c==="artist"?0:1)||a.k.localeCompare(c.k)});'
+    'o.innerHTML=r.length?r.slice(0,30).map(function(x){return\'<li><a href="\'+x.h+\'"><span class="sk">\'+x.c+\'</span>\'+e(x.t)'
+    '+(x.s?\'<span class="ss">\'+e(x.s)+"</span>":"")+"</a></li>"}).join("")+(r.length>30?\'<li class="more">\'+(r.length-30)+" more, keep typing</li>":"")'
+    ':\'<li class="more">Nothing found</li>\'})}'
+    'function sh(v){p.hidden=!v;b.setAttribute("aria-expanded",v?"true":"false");if(v){ld();i.focus()}}'
+    'b.addEventListener("click",function(){sh(p.hidden)});i.addEventListener("input",run);'
+    'i.addEventListener("keydown",function(k){if(k.key==="Escape"){sh(false);b.focus()}'
+    'else if(k.key==="Enter"){var f=o.querySelector("a");if(f){k.preventDefault();f.click()}}});'
+    'o.addEventListener("click",function(k){if(k.target.closest("a"))sh(false)})})()</script>'
+)
+
+
 def _nav(here):
     def link(href, label):
         if href == here:
@@ -176,7 +211,7 @@ def _nav(here):
             + link("tags.html", "By tags")
             + link("sonic.html", "By sonic profile")
             + link("takedown.html", "Removals")
-            + THEME_BUTTON
+            + '<span class="navtools">' + SEARCH_UI + THEME_BUTTON + '</span>'
             + '</nav>')
 
 

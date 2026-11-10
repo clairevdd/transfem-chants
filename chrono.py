@@ -298,7 +298,7 @@ def _table(rows, esc, badge):
             chips.append('<span class="chip kind">at the latest</span>')
         src = _sources(r["source"], r["url"], esc)
         items.append(
-            f'<details class="row k{i}">'
+            f'<details class="row k{i}" id="y-{r["id"]}">'
             f'<summary><span class="yr">{r["y"]}</span>'
             f'<span class="st {cls}">{esc(lab)}</span>'
             f'<span class="tt">{esc(r["title"])}</span>'
@@ -381,16 +381,7 @@ def years_page(css, esc, slug, artists_of, aliases, same_person, badge,
     unres = sum(1 for r in rows if r["status"] == "unresolved")
     occupied = len({r["y"] for r in rows})
 
-    nav = ('<nav class="pagenav">'
-           '<a href="index.html">Sources</a>'
-           '<a href="countries.html">By country</a>'
-           '<a href="languages.html">By language</a>'
-           '<span class="here">By year</span>'
-           '<a href="tags.html">By tags</a>'
-           '<a href="sonic.html">By sonic profile</a>'
-           '<a href="takedown.html">Removals</a>'
-           + atlas.THEME_BUTTON +
-           '</nav>')
+    nav = atlas._nav("years.html")
 
     body = f"""
 <header>
@@ -486,6 +477,7 @@ a person’s identity, use the
 {nav}
 {body}
 </div>
+<script>(function(){{function o(){{var h=location.hash.slice(1),e=h&&document.getElementById(h);if(e&&e.tagName==="DETAILS"){{e.open=true;e.scrollIntoView({{block:"center"}})}}}}addEventListener("hashchange",o);addEventListener("load",function(){{setTimeout(o,60)}});o()}})()</script>
 </body>
 </html>
 """

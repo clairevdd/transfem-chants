@@ -171,11 +171,35 @@ header.withcover .cover{grid-column:2;grid-row:1 / span 4;width:150px;height:150
  border:1px solid var(--line);color:var(--muted);border-radius:99px;padding:3px 11px;cursor:pointer}
 .themebtn:hover{color:var(--accent);border-color:var(--accent)}
 :root[data-theme="light"] .themebtn .to-light,:root:not([data-theme="light"]) .themebtn .to-dark{display:none}
+
+/* --- recherche (10 novembre 2026) --- */
+.pagenav{position:relative}
+.navtools{margin-left:auto;display:inline-flex;align-items:center;gap:8px}
+.navtools .themebtn{margin-left:0}
+.searchbtn{display:inline-flex;align-items:center;justify-content:center;background:none;
+ border:1px solid var(--line);color:var(--muted);border-radius:99px;width:30px;height:26px;padding:0;cursor:pointer}
+.searchbtn:hover,.searchbtn[aria-expanded="true"]{color:var(--accent);border-color:var(--accent)}
+.searchbtn[hidden]{display:none}
+.searchpanel{position:absolute;right:0;top:calc(100% + 8px);z-index:20;width:min(420px,100%);
+ background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:10px;
+ box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.searchpanel[hidden]{display:none}
+.searchpanel input{width:100%;box-sizing:border-box;font:inherit;font-size:.95rem;color:var(--ink);
+ background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:7px 10px}
+.searchpanel input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.searchout{list-style:none;margin:6px 0 0;padding:0;max-height:60vh;overflow-y:auto}
+.searchout li a{display:block;padding:6px 6px;border-radius:5px;color:var(--ink);text-decoration:none;line-height:1.35}
+.searchout li a:hover,.searchout li a:focus{background:var(--soft)}
+.searchout .sk{display:inline-block;min-width:44px;margin-right:8px;font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.searchout .ss{display:block;margin-left:52px;font-size:.78rem;color:var(--muted)}
+.searchout .more{padding:6px;font-size:.8rem;color:var(--muted)}
+tr:target td{background:var(--soft)}
+details.row:target>summary{background:var(--soft)}
 </style>
 </head>
 <body>
 <div class="wrap">
-<nav class="pagenav"><a href="index.html">Sources</a><a href="countries.html">By country</a><a href="languages.html">By language</a><a href="years.html">By year</a><a href="tags.html">By tags</a><a href="sonic.html">By sonic profile</a><span class="here">Removals</span><button type="button" class="themebtn" onclick="tcToggleTheme()" aria-label="Switch between dark and light theme"><span class="to-light">Light theme</span><span class="to-dark">Dark theme</span></button></nav>
+<nav class="pagenav"><a href="index.html">Sources</a><a href="countries.html">By country</a><a href="languages.html">By language</a><a href="years.html">By year</a><a href="tags.html">By tags</a><a href="sonic.html">By sonic profile</a><span class="here">Removals</span><span class="navtools"><button type="button" class="searchbtn" id="tcs-btn" hidden aria-label="Search artists and songs" aria-expanded="false" aria-controls="tcs-panel"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="searchpanel" id="tcs-panel" hidden><input type="search" id="tcs-in" placeholder="Search an artist or a song" autocomplete="off" spellcheck="false" aria-label="Search an artist or a song"><ul id="tcs-out" class="searchout"></ul></div><script>(function(){var b=document.getElementById("tcs-btn"),p=document.getElementById("tcs-panel"),i=document.getElementById("tcs-in"),o=document.getElementById("tcs-out"),D=null,L=null;b.hidden=false;function n(s){return s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/\u0153/g,"oe").replace(/\u00e6/g,"ae").replace(/\u00df/g,"ss").replace(/['\u2019]/g,"").replace(/[^\p{L}\p{N}]+/gu," ").trim()}function e(s){return s.replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]})}function ld(){if(!L)L=fetch("search-index.json").then(function(r){return r.json()}).then(function(j){j.forEach(function(x){x.k=n(x.t);x.q=" "+n(x.t+" "+(x.s||""))});D=j;return j});return L}function run(){var q=n(i.value.trim());if(!q){o.innerHTML="";return}ld().then(function(d){var w=q.split(" "),r=d.filter(function(x){return w.every(function(v){return x.q.indexOf(" "+v)>=0})});r.sort(function(a,c){var sa=a.k.indexOf(q)===0?0:1,sc=c.k.indexOf(q)===0?0:1;return sa-sc||(a.c==="artist"?0:1)-(c.c==="artist"?0:1)||a.k.localeCompare(c.k)});o.innerHTML=r.length?r.slice(0,30).map(function(x){return'<li><a href="'+x.h+'"><span class="sk">'+x.c+'</span>'+e(x.t)+(x.s?'<span class="ss">'+e(x.s)+"</span>":"")+"</a></li>"}).join("")+(r.length>30?'<li class="more">'+(r.length-30)+" more, keep typing</li>":""):'<li class="more">Nothing found</li>'})}function sh(v){p.hidden=!v;b.setAttribute("aria-expanded",v?"true":"false");if(v){ld();i.focus()}}b.addEventListener("click",function(){sh(p.hidden)});i.addEventListener("input",run);i.addEventListener("keydown",function(k){if(k.key==="Escape"){sh(false);b.focus()}else if(k.key==="Enter"){var f=o.querySelector("a");if(f){k.preventDefault();f.click()}}});o.addEventListener("click",function(k){if(k.target.closest("a"))sh(false)})})()</script><button type="button" class="themebtn" onclick="tcToggleTheme()" aria-label="Switch between dark and light theme"><span class="to-light">Light theme</span><span class="to-dark">Dark theme</span></button></span></nav>
 
 <header>
 <h1>Taking an entry down, or changing it</h1>

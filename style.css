@@ -162,3 +162,27 @@ header.withcover .cover{grid-column:2;grid-row:1 / span 4;width:150px;height:150
  border:1px solid var(--line);color:var(--muted);border-radius:99px;padding:3px 11px;cursor:pointer}
 .themebtn:hover{color:var(--accent);border-color:var(--accent)}
 :root[data-theme="light"] .themebtn .to-light,:root:not([data-theme="light"]) .themebtn .to-dark{display:none}
+
+/* --- recherche (10 novembre 2026) --- */
+.pagenav{position:relative}
+.navtools{margin-left:auto;display:inline-flex;align-items:center;gap:8px}
+.navtools .themebtn{margin-left:0}
+.searchbtn{display:inline-flex;align-items:center;justify-content:center;background:none;
+ border:1px solid var(--line);color:var(--muted);border-radius:99px;width:30px;height:26px;padding:0;cursor:pointer}
+.searchbtn:hover,.searchbtn[aria-expanded="true"]{color:var(--accent);border-color:var(--accent)}
+.searchbtn[hidden]{display:none}
+.searchpanel{position:absolute;right:0;top:calc(100% + 8px);z-index:20;width:min(420px,100%);
+ background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:10px;
+ box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.searchpanel[hidden]{display:none}
+.searchpanel input{width:100%;box-sizing:border-box;font:inherit;font-size:.95rem;color:var(--ink);
+ background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:7px 10px}
+.searchpanel input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.searchout{list-style:none;margin:6px 0 0;padding:0;max-height:60vh;overflow-y:auto}
+.searchout li a{display:block;padding:6px 6px;border-radius:5px;color:var(--ink);text-decoration:none;line-height:1.35}
+.searchout li a:hover,.searchout li a:focus{background:var(--soft)}
+.searchout .sk{display:inline-block;min-width:44px;margin-right:8px;font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.searchout .ss{display:block;margin-left:52px;font-size:.78rem;color:var(--muted)}
+.searchout .more{padding:6px;font-size:.8rem;color:var(--muted)}
+tr:target td{background:var(--soft)}
+details.row:target>summary{background:var(--soft)}

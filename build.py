@@ -13,6 +13,8 @@ La page produite est autonome : aucune police distante, aucun script, aucun CDN.
 Le build échoue si un nom crédité dans tracks.py n'existe pas dans data.py.
 """
 import html
+import json
+import sys
 import re
 import urllib.parse
 
@@ -286,10 +288,10 @@ def tracklist():
                            f'title="{esc(lyr_ttl)}">lyrics{"&nbsp;?" if sid in SEARCH else ""}</a>')
             else:
                 lyr_cell = ""
-            out.append(f'<tr><td class="n">{n}</td>'
+            out.append(f'<tr id="t-{sid}"><td class="n">{n}</td>'
                        f'<td class="ti"><a href="{esc(url)}" target="_blank" rel="noopener">{esc(title)}</a></td>'
                        f'<td class="cr">{" · ".join(links)}</td>'
-                       f'<td class="yr"><a href="years.html" title="{esc(ttl)}">{yr}</a></td>'
+                       f'<td class="yr"><a href="years.html#y-{sid}" title="{esc(ttl)}">{yr}</a></td>'
                        f'<td class="ly">{lyr_cell}</td></tr>')
         out.append('</tbody></table></div>')
     return "\n".join(out)
@@ -432,6 +434,27 @@ def page():
 """
 
 
+def search_index():
+    """Index de la recherche (artistes et titres), arbitrage de Claire du
+    10 novembre 2026. Une artiste mène à sa fiche, un morceau à sa ligne dans
+    la playlist de la page d'accueil. Pas de citations ni de descriptions."""
+    on_page = {n for _, c in TRACKS for n in artists_of(c)}
+    idx = [{"t": n, "c": "artist", "h": "index.html#" + slug(n)}
+           for n in sorted(on_page, key=str.lower)]
+    idx += [{"t": t, "s": c, "c": "song", "h": "index.html#t-" + sid}
+            for sid, t, c in all_tracks()]
+    return idx
+
+
+def check_search(idx, pages):
+    """Chaque résultat doit mener à une ancre qui existe vraiment."""
+    ids = {name: set(re.findall(r'id="([^"]+)"', text)) for name, text in pages.items()}
+    bad = [x["h"] for x in idx
+           if x["h"].split("#")[1] not in ids.get(x["h"].split("#")[0], set())]
+    if bad:
+        sys.exit(f"ERREUR recherche : {len(bad)} ancres introuvables, ex. {bad[:3]}")
+
+
 if __name__ == "__main__":
     check()
     css = open("style.css", encoding="utf-8").read()
@@ -460,6 +483,17 @@ if __name__ == "__main__":
     _no_email("takedown.html", take)
     open("takedown.html", "w", encoding="utf-8").write(take)
     print(f"takedown.html écrit : {len(take)} octets")
+
+    idx = search_index()
+    years_text = open("years.html", encoding="utf-8").read()
+    check_search(idx, {"index.html": out})
+    missing_y = [sid for sid, _, _ in all_tracks() if f'id="y-{sid}"' not in years_text]
+    if missing_y:
+        sys.exit(f"ERREUR : {len(missing_y)} morceaux sans ancre dans years.html")
+    js = json.dumps(idx, ensure_ascii=False, separators=(",", ":"))
+    _no_email("search-index.json", js)
+    open("search-index.json", "w", encoding="utf-8").write(js)
+    print(f"search-index.json écrit : {len(idx)} entrées, {len(js.encode())} octets")
 
     print(f"  {st['presented']} artistes présentées comme transfem + {st['open_cases']} cas ouverts")
     print(f"  {st['countries']} pays/territoires : {', '.join(st['country_list'])}")
