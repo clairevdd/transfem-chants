@@ -245,6 +245,16 @@ rapide devient plus dansant et plus enjoué (happiness 53 contre 39), d'où la
 réécriture de sa description ; le groupe modéré devient seul le plus grand.
 Paires les plus proches : dansant/rapide (1,65, bleu ardoise et rose poudré),
 rapide/instrumental (1,81), modéré/rapide (1,87).
+
+**Arbitrage de Claire, 10 novembre 2026, au vu de ce recalcul : k=5.** Ward
+réunit le groupe club (55) et le groupe rapide (37) en un seul, renommé
+« Club, dance-pop and high-energy » (92), comme le 22 septembre ; les quatre
+autres groupes ne bougent pas d'un morceau. Effectifs : 92, 74, 31, 19, 17.
+Couleurs gardées par profil : bleu ardoise pour le groupe fusionné, le rose
+poudré n'est plus utilisé. Paires de centroïdes les plus proches : club et
+modéré (1,99), club et live (2,35). Descriptions validées par Claire ; le
+groupe modéré devient « second in size only to the club group », et le
+groupe fusionné reçoit une description nouvelle.
 """
 import json
 import math
@@ -387,10 +397,30 @@ AXES = [
 
 CLUSTERS = {
     1: {
+        "name": "Club, dance-pop and high-energy",
+        "n": 92,
+        "blurb": (
+            "The largest group, and the most energetic, loudest, most "
+            "danceable and most cheerful-sounding of the five, with the least "
+            "acoustic sound. Its tempo spans almost the whole range of the "
+            "playlist, from steady club tempos around 120 BPM to hyperpop, "
+            "breakcore and punk speeds above 160: at five groups, fast tracks "
+            "and dance-pop no longer separate. Close to half of it comes from "
+            "the club, funk and dance-pop family, and about a fifth from "
+            "hyperpop and digicore."
+        ),
+        "means": {
+            "tb_bpm": 136.0, "tb_energy": 81.2, "tb_danceability": 64.7,
+            "tb_happiness": 61.7, "tb_acousticness": 11.5,
+            "tb_instrumentalness": 0.6, "tb_liveness": 17.7,
+            "tb_speechiness": 10.9, "tb_loudness": -5.5,
+        },
+    },
+    2: {
         "name": "Mid-tempo and moderate",
         "n": 74,
         "blurb": (
-            "The playlist's broad middle ground and its largest group: "
+            "The playlist's broad middle ground, second in size only to the club group: "
             "mid-tempo, moderately energetic, sung and studio-recorded, close "
             "to the playlist average on almost every measure while sounding a "
             "little less upbeat and less danceable than the rest. It draws on every family of the "
@@ -403,41 +433,7 @@ CLUSTERS = {
             "tb_speechiness": 7.0, "tb_loudness": -8.5,
         },
     },
-    2: {
-        "name": "Upbeat club and dance-pop",
-        "n": 55,
-        "blurb": (
-            "The most danceable and the most cheerful-sounding group by a clear "
-            "margin, loud and electronically produced, at a steady mid-tempo "
-            "around 120 BPM. Most of it comes from the club, funk and dance-pop "
-            "family, though not all of it."
-        ),
-        "means": {
-            "tb_bpm": 118.2, "tb_energy": 83.3, "tb_danceability": 72.3,
-            "tb_happiness": 67.4, "tb_acousticness": 9.6,
-            "tb_instrumentalness": 0.6, "tb_liveness": 15.1,
-            "tb_speechiness": 11.1, "tb_loudness": -5.0,
-        },
-    },
     3: {
-        "name": "Fast and high-voltage",
-        "n": 37,
-        "blurb": (
-            "By far the fastest group, around 160 BPM on average against 124 "
-            "for the playlist, and energetic: breakcore and hyperpop speeds, "
-            "punk tempos, and since November the fastest of the club and "
-            "dance-pop tracks too. Those arrivals have brought its danceability "
-            "and happiness close to the playlist average, where it used to be "
-            "among the least cheerful-sounding groups."
-        ),
-        "means": {
-            "tb_bpm": 162.5, "tb_energy": 78.1, "tb_danceability": 53.5,
-            "tb_happiness": 53.1, "tb_acousticness": 14.3,
-            "tb_instrumentalness": 0.6, "tb_liveness": 21.5,
-            "tb_speechiness": 10.7, "tb_loudness": -6.3,
-        },
-    },
-    4: {
         "name": "Live-sounding and speech-forward",
         "n": 31,
         "blurb": (
@@ -454,7 +450,7 @@ CLUSTERS = {
             "tb_speechiness": 22.3, "tb_loudness": -6.9,
         },
     },
-    5: {
+    4: {
         "name": "Acoustic and understated",
         "n": 19,
         "blurb": (
@@ -470,13 +466,13 @@ CLUSTERS = {
             "tb_speechiness": 4.2, "tb_loudness": -12.5,
         },
     },
-    6: {
+    5: {
         "name": "Extended instrumental passages",
         "n": 17,
         "blurb": (
             "A strikingly high average instrumentalness even though every track "
             "here has vocals: long instrumental intros, breakdowns or outros "
-            "pull the average up. The smallest of the six groups, comfortably "
+            "pull the average up. The smallest of the five groups, comfortably "
             "above the four-track floor set to keep an averaged profile from "
             "ever reading back as a single track's numbers."
         ),
@@ -518,13 +514,16 @@ CLUSTERS = {
 # Recalcul du 29 septembre 2026 sur les 196 morceaux : « Fast and
 # high-voltage » se détache de nouveau et retrouve le violet rosé ;
 # « Speech-forward » et « Live-sounding » se réunissent sous le jaune.
+#
+# 10 novembre 2026, passage à cinq groupes (arbitrage de Claire) : le groupe
+# rapide rejoint le groupe club, qui garde le bleu ardoise ; le rose poudré
+# n'est plus utilisé.
 CLUSTER_COLORS = {
-    1: "#C6731C",  # ambre : Mid-tempo and moderate (ex-orange)
-    2: "#2D6A85",  # bleu ardoise : Upbeat club and dance-pop (ex-bleu ciel)
-    3: "#CC8AA0",  # rose poudré : Fast and high-voltage (ex-violet rosé)
-    4: "#DCC35C",  # or pâle : Live-sounding and speech-forward (ex-jaune)
-    5: "#9A1F1F",  # sang de bœuf : Acoustic and understated (ex-vermillon)
-    6: "#729161",  # sauge : Extended instrumental passages (ex-vert bleuté)
+    1: "#2D6A85",  # bleu ardoise : Club, dance-pop and high-energy (ex-Upbeat club and dance-pop)
+    2: "#C6731C",  # ambre : Mid-tempo and moderate
+    3: "#DCC35C",  # or pâle : Live-sounding and speech-forward
+    4: "#9A1F1F",  # sang de bœuf : Acoustic and understated
+    5: "#729161",  # sauge : Extended instrumental passages
 }
 
 # Variantes plus claires pour le thème sombre (par défaut depuis le
@@ -533,251 +532,250 @@ CLUSTER_COLORS = {
 # distinguabilité vérifiée en simulation de deutéranopie, protanopie et
 # tritanopie (écart minimal ΔE ≥ 18 entre deux groupes).
 CLUSTER_COLORS_DARK = {
-    1: "#E08A3C",
-    2: "#5E9CC4",
-    3: "#DE9AB2",
-    4: "#E8D27A",
-    5: "#D4584A",
-    6: "#8DB57A",
+    1: "#5E9CC4",
+    2: "#E08A3C",
+    3: "#E8D27A",
+    4: "#D4584A",
+    5: "#8DB57A",
 }
 
 # Position (ACP sur 3 axes) et groupe de chacun des 233 morceaux analysés
 # (second recalcul du 10 novembre 2026).
 # Dérivé, pas brut : voir le docstring de ce fichier.
 TRACKS = {
-    '02L1ngagXNRt8W3Flbe9Sw': {'cluster': 5, 'pc': (-3.28, 0.73, 0.14)},
-    '06kFuqzhMk4E6IYeO0sTfx': {'cluster': 4, 'pc': (2.00, -0.46, 1.29)},
-    '07m5UbUHOQCofRK16k83Eg': {'cluster': 5, 'pc': (-2.82, 1.35, -0.10)},
-    '084dIWdHoow6G00mBlxsOu': {'cluster': 4, 'pc': (0.39, 0.68, 0.88)},
-    '0A2tFUYLertZLltvvY5uyr': {'cluster': 4, 'pc': (1.60, 0.12, 2.79)},
-    '0DOqYCfifzpYK5SjOriuap': {'cluster': 3, 'pc': (-0.60, -1.51, -0.70)},
-    '0DZapO0gUF8XZpk2bu8AeL': {'cluster': 1, 'pc': (-2.94, 0.24, -0.38)},
-    '0GSW6V6GJc4xYi8c5jOu60': {'cluster': 2, 'pc': (1.37, -0.76, -1.08)},
-    '0Irj6PuEEGzi7JGJvAhdZ8': {'cluster': 2, 'pc': (1.89, 0.24, -0.61)},
-    '0NOume8OgBz4FCnP1QVr9A': {'cluster': 3, 'pc': (1.03, 0.07, -0.36)},
-    '0QA1xpUuqHDHWZhi0eAbH7': {'cluster': 1, 'pc': (-3.36, 0.44, 0.86)},
-    '0VNjaRcmIowjLbPtYDhLuh': {'cluster': 2, 'pc': (0.97, 1.55, 0.18)},
-    '0VhGzYfT2ZOFz31b5IH7yJ': {'cluster': 1, 'pc': (-0.89, 0.56, -0.62)},
-    '0XIutL5epZuYV91bhCfFsR': {'cluster': 2, 'pc': (0.24, 0.63, -0.98)},
-    '0ZQLRkRyn3300WyapdPoWT': {'cluster': 4, 'pc': (1.90, 0.28, 2.28)},
-    '0ZeVhHgvMsF6dqo2AFSfut': {'cluster': 5, 'pc': (-3.17, 0.97, 0.33)},
-    '0a0CwJBn8lmT5ifk63EUbP': {'cluster': 3, 'pc': (0.86, -2.73, 0.33)},
-    '0bWpWsvZeTTNLQ9nuXqKIN': {'cluster': 4, 'pc': (-0.31, -1.12, 2.45)},
-    '0gm0OruZdJlu8jamJe5OCh': {'cluster': 3, 'pc': (1.67, -0.22, 1.47)},
-    '0iGxHL2lPxuh1VIHQLUPUl': {'cluster': 1, 'pc': (-0.96, 0.11, -0.94)},
-    '0kNjtDBxrpjJTZn9w5Eq3C': {'cluster': 1, 'pc': (-1.86, -0.15, -0.63)},
-    '0pe5NUU9uGwFpj637ot84D': {'cluster': 2, 'pc': (2.08, -0.03, -0.57)},
-    '0qMZXgcLfkl5RI3q50KHMH': {'cluster': 3, 'pc': (0.87, -0.71, -0.17)},
-    '0rK7QTyYjhPFadLH2YDl84': {'cluster': 1, 'pc': (-0.91, 0.12, -0.47)},
-    '0wIpjjcXFgGtJUmBIRAAju': {'cluster': 2, 'pc': (1.03, -0.14, -1.17)},
-    '12dWvvky0ceP3vCCgwni0g': {'cluster': 1, 'pc': (-2.13, 0.24, -0.26)},
-    '14oyjbbiyic1Hh2ArExQwX': {'cluster': 3, 'pc': (-0.67, -1.69, -0.45)},
-    '14uL43Gg4ujizaATehrryk': {'cluster': 6, 'pc': (0.19, -1.66, -0.62)},
-    '18QS9wnUr7DOhMb73monpK': {'cluster': 2, 'pc': (1.63, 0.55, -0.79)},
-    '1AFPmwB6mGMCcMI2hFh7c8': {'cluster': 2, 'pc': (1.84, 1.05, 0.25)},
-    '1AHPsqF3EtHeWpOM06Y3Y4': {'cluster': 5, 'pc': (-4.04, -0.02, 0.52)},
-    '1BLFIHCwSpQf74tIjyj37K': {'cluster': 5, 'pc': (-4.52, 0.67, 0.64)},
-    '1DGc7wwXrjAGecJzvESW3C': {'cluster': 1, 'pc': (0.36, 1.48, -0.98)},
-    '1E3nHn45NpD1TkDzo3jcbk': {'cluster': 4, 'pc': (-2.25, -0.86, 2.26)},
-    '1EPYnBjYhYHcNthEnVWk18': {'cluster': 4, 'pc': (2.13, -0.55, 0.39)},
-    '1F99de97B9zXdnMdtq8KrH': {'cluster': 2, 'pc': (0.53, 0.79, -0.86)},
-    '1IF61ped0XehHvw2CFXP3B': {'cluster': 1, 'pc': (0.46, -1.00, -0.71)},
-    '1JT4sq2xhusrAuLNajJqFz': {'cluster': 3, 'pc': (0.55, -1.25, 0.23)},
-    '1KnagH7nZ84p8vPMPZQ8hk': {'cluster': 1, 'pc': (0.52, -0.28, -1.35)},
-    '1N1F6UsRGILux57U0YbxJQ': {'cluster': 1, 'pc': (-2.16, -1.79, 2.43)},
-    '1OpCGPKSq4IfpvLptsSMR9': {'cluster': 5, 'pc': (-4.77, 0.79, 0.63)},
-    '1PEPcLm2QEo0HCRIhQjPq1': {'cluster': 2, 'pc': (0.30, 2.21, -0.69)},
-    '1Q9w2a5dvoIpE8fkP8mUK6': {'cluster': 2, 'pc': (2.14, 1.54, -0.17)},
-    '1QrL7ucS71Ih4HXBOsuajv': {'cluster': 5, 'pc': (-3.26, 0.65, 0.97)},
-    '1RmXibCbfLIVrN8ZRdoYbW': {'cluster': 3, 'pc': (0.31, -0.34, -1.16)},
-    '1SOusugJKKzDUxR3QsQUDd': {'cluster': 1, 'pc': (0.35, 0.91, -0.06)},
-    '1XD4K4CGAKTIBmFpvuaFru': {'cluster': 3, 'pc': (0.96, -0.80, -0.29)},
-    '1YsFdaP9QG9NhjYS3o0g5P': {'cluster': 2, 'pc': (2.23, 1.32, 0.23)},
-    '1cu5PHumWAqQf9M6BHQ8b7': {'cluster': 1, 'pc': (-1.96, 0.18, -0.21)},
-    '1d3hBkCcMvVzsZjaMiVvNs': {'cluster': 1, 'pc': (-0.96, -0.13, -0.15)},
-    '1ggQljgteCJOF8PFvCiRLa': {'cluster': 2, 'pc': (0.78, 0.15, -1.14)},
-    '1gs7juUrbHx9LoeAQWp8X0': {'cluster': 3, 'pc': (0.07, -1.14, -0.73)},
-    '1huN927tTdSiwF90FBHXkT': {'cluster': 3, 'pc': (1.65, 0.57, -0.21)},
-    '1jFN0stMzLepoPxvPywGZj': {'cluster': 2, 'pc': (1.56, 1.44, 0.24)},
-    '1jTo2GUdfyjvSBaXaV9IMh': {'cluster': 1, 'pc': (-0.02, -0.73, -0.62)},
-    '1o8Xa3b70eDBgIvZTz7tKF': {'cluster': 4, 'pc': (1.87, 0.16, 1.02)},
-    '1ovz0bZeO5YTBQTXIFf5Am': {'cluster': 5, 'pc': (-4.86, 0.10, 0.50)},
-    '1toNKayLMeCcVlsLGXJl7n': {'cluster': 3, 'pc': (0.46, -1.04, -0.76)},
-    '1vOi99NYsymJomYiivTVj2': {'cluster': 4, 'pc': (0.75, 0.41, 1.22)},
-    '1w0AFg23E67l57A3RMiXjC': {'cluster': 6, 'pc': (1.98, -3.48, 0.34)},
-    '1xVHNasMbwoQcLkf07JMv4': {'cluster': 2, 'pc': (2.12, 1.96, -0.19)},
-    '1zVqEY9PXPpYJKMi9Kk9yn': {'cluster': 1, 'pc': (-1.58, 0.23, -0.55)},
-    '20JYh6XUjLjiN1CyJ32ZiY': {'cluster': 6, 'pc': (2.41, -1.00, 0.09)},
-    '23smC9d2TpPTGZ3GCzjL4b': {'cluster': 6, 'pc': (-1.01, -2.94, -0.31)},
-    '29Ga6IgetN8Xah85ZHZ8AC': {'cluster': 2, 'pc': (1.77, -0.82, -0.75)},
-    '2BQZhUPXdP9Nk1X84c7PtP': {'cluster': 1, 'pc': (-1.38, -1.84, -0.70)},
-    '2CznvTOsuLh0USpHJqEc6V': {'cluster': 1, 'pc': (-0.69, -1.37, -0.56)},
-    '2DUAIlPmzV2is5OQIZASUA': {'cluster': 5, 'pc': (-2.51, -0.28, -0.13)},
-    '2Ff6Ghw8TRJGuAbJamtt4X': {'cluster': 1, 'pc': (-0.67, 1.14, -0.64)},
-    '2KryklrVDGmWL8IvoGNbb5': {'cluster': 1, 'pc': (0.39, 1.44, -0.79)},
-    '2KwdLR2SOGSflUigzSekHZ': {'cluster': 1, 'pc': (-1.24, -0.43, 0.93)},
-    '2Of9piZALXa4CC7Unxoeeg': {'cluster': 2, 'pc': (0.93, 1.36, -1.07)},
-    '2PaTBoG5uDz6H3xPhnnDLz': {'cluster': 2, 'pc': (1.28, 0.07, -0.94)},
-    '2R7G2Itn0b73uthZCNPIrR': {'cluster': 2, 'pc': (0.84, 0.65, -0.69)},
-    '2YDCrMvvmBz9gVeuL8QyVG': {'cluster': 3, 'pc': (1.06, 1.50, -0.86)},
-    '2aHS8p4tspLPkOvALx8Fs0': {'cluster': 1, 'pc': (-0.79, 0.72, -0.07)},
-    '2fB0l9upVjg0QTeMyrIVtc': {'cluster': 1, 'pc': (-1.07, 0.30, -0.41)},
-    '2gmwvGC1yOw8NdMcZE8nfo': {'cluster': 2, 'pc': (2.13, 0.51, -0.07)},
-    '2h9jHuAARdM9dMhNp04ahR': {'cluster': 2, 'pc': (1.47, 2.28, -1.11)},
-    '2inX5xyazBvcZYLx3wRBwh': {'cluster': 3, 'pc': (0.83, -3.07, 1.17)},
-    '2iqTYCPRTqojxM7QJvBtk2': {'cluster': 1, 'pc': (-1.56, 1.44, -0.43)},
-    '2jFP4mAHcDmGe7DEKKLyJa': {'cluster': 1, 'pc': (-0.57, 0.71, -0.56)},
-    '2lEExBHFkGIG5bcjQCJc8P': {'cluster': 2, 'pc': (2.04, 0.71, -1.46)},
-    '2lgwylOpGMtkvhwdnUOArt': {'cluster': 2, 'pc': (1.91, 0.36, -0.25)},
-    '2qpx5shtNEO1DuK8iEoJoB': {'cluster': 1, 'pc': (-0.11, 0.25, -0.60)},
-    '2rMjMkOapLVsxbDSap5Uy2': {'cluster': 6, 'pc': (0.27, -1.69, -0.88)},
-    '2rN1ODOsaNfYu782rw36jR': {'cluster': 1, 'pc': (-0.21, 0.73, 0.06)},
-    '2rffYJaN04Tdzha2foN2up': {'cluster': 4, 'pc': (1.16, -2.05, 2.05)},
-    '2sVjF25Z4JTJxi9BXm5GtJ': {'cluster': 3, 'pc': (1.43, -2.23, -0.47)},
-    '308z6pEGHS90tuDNAngZnh': {'cluster': 2, 'pc': (0.78, 0.31, -0.94)},
-    '36Xl4wdcXaW7zi7N01WSOo': {'cluster': 5, 'pc': (-3.59, 1.33, 0.49)},
-    '376mhFeloWqzQJQsqZpm9A': {'cluster': 2, 'pc': (1.18, 0.58, -1.10)},
-    '37OSQm8Gy5strUT24vn6ef': {'cluster': 4, 'pc': (0.90, -1.14, 0.91)},
-    '3ApVA7ID6PkS0fGzNF4mFw': {'cluster': 5, 'pc': (-2.50, 0.36, -0.22)},
-    '3AyUAvAQGKyMzC9jGQeIlX': {'cluster': 4, 'pc': (-0.28, 1.05, 3.26)},
-    '3BYSoeWlqUgIwfY77C8VgE': {'cluster': 4, 'pc': (0.64, 1.93, 2.94)},
-    '3BqWvhPear6eKPwhwJRFpO': {'cluster': 1, 'pc': (-0.62, -0.09, -0.86)},
-    '3Cmc2mUlFS7MPhcwIRvcWF': {'cluster': 6, 'pc': (0.55, -0.80, 0.27)},
-    '3FysLYckiMCMzjYLIgo45U': {'cluster': 4, 'pc': (1.63, 0.69, 3.07)},
-    '3HO9UrofF8D3AfKY9ZLLbB': {'cluster': 6, 'pc': (-2.79, -2.83, 1.17)},
-    '3IDQXyHYuX2rdLnNfVzT3g': {'cluster': 1, 'pc': (-0.48, -0.69, -0.43)},
-    '3MZjOGeXhpHbQ9ESMNFFnH': {'cluster': 5, 'pc': (-4.08, 0.85, 0.24)},
-    '3QF7smzmw2WWm7M1jt2Rac': {'cluster': 4, 'pc': (1.76, -0.11, 1.59)},
-    '3RLI8S7KpEZs4SqePGjM2R': {'cluster': 3, 'pc': (0.94, -1.18, -0.39)},
-    '3RXajeZOzqXWrQwLDfTzKK': {'cluster': 4, 'pc': (-0.25, 0.76, 0.48)},
-    '3ShIGvHRm0q9iIDowUMjls': {'cluster': 1, 'pc': (-1.23, 1.35, -0.21)},
-    '3UC5TaXqpcEnfSepGyKwqZ': {'cluster': 3, 'pc': (0.48, 1.27, 0.07)},
-    '3VHdDisicXuBnW1NxIGzCI': {'cluster': 4, 'pc': (0.32, -0.52, 1.76)},
-    '3Vk1AHIh1CoiQzFroldMhO': {'cluster': 5, 'pc': (-3.92, 0.90, 0.39)},
-    '3XdXixlx3MoVzfL7pu9hx6': {'cluster': 5, 'pc': (-3.14, 0.57, -0.13)},
-    '3bnvoYUrPkgh0E3ZeYZ3me': {'cluster': 4, 'pc': (2.70, -0.27, 4.82)},
-    '3eBY8aZZdWNnNhNbc8B0yp': {'cluster': 6, 'pc': (-2.10, -2.96, 0.24)},
-    '3nxFYWNFG2qGYEuhEzomtO': {'cluster': 1, 'pc': (-1.67, 1.65, 2.29)},
-    '3o69iXC0KGd3X2OIG0KXkP': {'cluster': 1, 'pc': (-0.82, 2.41, 0.82)},
-    '3qBg6BeHJlGgwl5aCa09EC': {'cluster': 3, 'pc': (1.07, -0.53, 0.74)},
-    '3qDqg53YIe9mM5Ehx9v9FZ': {'cluster': 2, 'pc': (1.54, 1.11, -0.90)},
-    '3r0gvoaAkWmLdJO4UUv94v': {'cluster': 1, 'pc': (-2.78, -2.96, 0.88)},
-    '3z4KIXgkhLauhNP3ubB8cF': {'cluster': 1, 'pc': (-0.89, 0.69, -1.00)},
-    '3zGmkzXqXsXYVlGzJFpgCW': {'cluster': 3, 'pc': (0.87, -0.53, -1.06)},
-    '42Opc7AzlbYad3AuWsBGuf': {'cluster': 6, 'pc': (-2.24, -1.36, -0.35)},
-    '46uGvJVhYHOVRRNnRPbkYm': {'cluster': 3, 'pc': (0.91, -1.25, 0.33)},
-    '48XnOS1vTyzqaPps0Dalzp': {'cluster': 1, 'pc': (-0.06, 1.23, -0.59)},
-    '4CuivW1JgPauXPA4wYsf5K': {'cluster': 1, 'pc': (-1.63, 1.22, 0.18)},
-    '4DfHQvIAZmSmqcZbuO80sZ': {'cluster': 2, 'pc': (2.21, 0.40, -1.12)},
-    '4DpGa3bX0XvKd31JXWDcv7': {'cluster': 3, 'pc': (0.88, -0.73, -0.80)},
-    '4ED8r6i90zmUG4kfbiVoou': {'cluster': 1, 'pc': (0.20, 0.34, -0.98)},
-    '4Hf2Y8mG8LDZCfeycD93PP': {'cluster': 3, 'pc': (0.63, -2.10, -0.09)},
-    '4NKAjWfWZ2tcIzjCR9G5Zl': {'cluster': 2, 'pc': (1.57, 0.96, 0.58)},
-    '4NYRtDYROQW2D2ctcylcri': {'cluster': 6, 'pc': (-0.25, -3.18, -0.14)},
-    '4OF1mdSkA2z05DSwHNKVnz': {'cluster': 2, 'pc': (0.97, 0.94, -0.96)},
-    '4OI2gBlHqyNks8cbIBIKYw': {'cluster': 1, 'pc': (0.55, 0.11, -0.75)},
-    '4P9LdSPrnQl7KQwml4DUtq': {'cluster': 1, 'pc': (-0.72, 0.32, -0.30)},
-    '4QnHaiWq1oJiTgMnRFE0q8': {'cluster': 1, 'pc': (0.67, 0.75, -1.07)},
-    '4UfEEnq70NgLeq7NRfXPiD': {'cluster': 3, 'pc': (0.99, 0.58, 0.52)},
-    '4WhyfhjZaX6AVjAZslQAFs': {'cluster': 2, 'pc': (2.00, 0.43, -0.14)},
-    '4X6PkqzKUvWWKoq4YiiM1V': {'cluster': 2, 'pc': (1.65, -0.38, -0.65)},
-    '4Ykmj47fulJ1FTeCXctW91': {'cluster': 1, 'pc': (-1.77, 0.06, -0.39)},
-    '4Zhxtm6x56wEiRtSMAl28n': {'cluster': 4, 'pc': (1.07, 0.63, 0.47)},
-    '4b1Y41U44kP7gzO7MUNGbe': {'cluster': 2, 'pc': (1.07, -0.78, -0.49)},
-    '4bJV3YH3GEV7RMe0abbMyB': {'cluster': 2, 'pc': (0.85, 1.12, -0.89)},
-    '4bMj9zctX5PFp8vKP4K1yP': {'cluster': 4, 'pc': (0.67, 1.04, 0.98)},
-    '4bglcunoysO0W3puey06d6': {'cluster': 1, 'pc': (-1.36, -0.13, -0.75)},
-    '4dtyeDMnVKKo89QbbDtD5M': {'cluster': 3, 'pc': (0.03, -0.72, -0.82)},
-    '4hceSKjrkDTO0nMKFcb3sj': {'cluster': 4, 'pc': (0.86, 0.03, 0.96)},
-    '4lUlYGT5VvZWN3GBDIc9KT': {'cluster': 1, 'pc': (-0.76, 1.40, 0.41)},
-    '4ltqfN12ohaVZdM6C45gMg': {'cluster': 1, 'pc': (-0.29, -1.15, -1.01)},
-    '4qdyN6rpaGsspGeMzkCTNP': {'cluster': 2, 'pc': (1.28, 0.75, -0.33)},
-    '4sZgum8lh9hLPxREjgo4vo': {'cluster': 2, 'pc': (2.25, 0.16, -1.57)},
-    '4v5gEVQPDlPtsuQ77AJa0x': {'cluster': 4, 'pc': (0.37, -0.49, 1.29)},
-    '4xHC0Cj5ujXkmL8lSU6jXw': {'cluster': 1, 'pc': (-0.10, 0.95, -0.71)},
-    '4xhYxKvAxtrRd83MiqOy29': {'cluster': 2, 'pc': (1.39, 1.12, -1.17)},
-    '4yBfzgV6YA9dTKP8KUD35j': {'cluster': 2, 'pc': (1.86, -0.40, -0.73)},
-    '51NYFGDXYKS4FkRqkw98hx': {'cluster': 2, 'pc': (1.93, 0.42, -0.91)},
-    '52uobAwbP5In7cc0NV677y': {'cluster': 6, 'pc': (-3.00, -2.32, -0.27)},
-    '5327YgW0EzH0cd3kWRwx2l': {'cluster': 2, 'pc': (1.60, 1.04, -0.91)},
-    '53uyQrCca3tqGU8Voaa0oC': {'cluster': 3, 'pc': (0.46, -2.17, 0.04)},
-    '54n3iwz9mr7yxZi1EOX1Mz': {'cluster': 2, 'pc': (1.04, 0.46, -0.34)},
-    '54nFM2BgZpX292SYKP83fS': {'cluster': 6, 'pc': (-1.21, -3.83, -0.61)},
-    '56xBg5e9rfrFqcqa4llUw7': {'cluster': 1, 'pc': (-0.84, -0.58, -0.49)},
-    '5CznIqYyWcPBQ9YaIJtLLF': {'cluster': 2, 'pc': (1.58, 0.93, -0.13)},
-    '5Gp1fkuPV7CPtzKHfMH0kd': {'cluster': 1, 'pc': (0.22, -0.47, 0.43)},
-    '5NnQ2xIeHDKc1B19rxfcV3': {'cluster': 4, 'pc': (-1.46, -0.20, 2.09)},
-    '5P9EKJfOZtuwtTR5C5362i': {'cluster': 5, 'pc': (-4.08, 0.06, 0.24)},
-    '5PMtJGEDIO0eIToF0YRUQ5': {'cluster': 1, 'pc': (-1.72, -0.28, -0.60)},
-    '5W7Wtg5RIj6iI8EvE9j9fP': {'cluster': 2, 'pc': (0.41, 0.74, -0.54)},
-    '5WttRLHcZHhaIii5KwKh3Y': {'cluster': 1, 'pc': (-0.23, 0.10, -0.87)},
-    '5dIPCgTEDagbcs5QGmni8V': {'cluster': 6, 'pc': (0.40, -2.04, -0.68)},
-    '5dtUOwEmnDAzsdodWJk4DA': {'cluster': 1, 'pc': (-1.38, 0.88, -0.56)},
-    '5e0ZXu358l51ckAZvai2Ef': {'cluster': 5, 'pc': (-2.83, 1.07, -0.04)},
-    '5h8uDAcGUluOe7U8CZr0KB': {'cluster': 5, 'pc': (-3.72, 0.78, 0.33)},
-    '5iAE3uBqaZm9aHUx9yy6a0': {'cluster': 6, 'pc': (3.72, -2.73, 2.04)},
-    '5iTzaatezJzsUhX1QjT0Kp': {'cluster': 6, 'pc': (1.06, -2.92, -1.00)},
-    '5ipp3YpFKrJzWU7P1GHfgk': {'cluster': 4, 'pc': (1.46, -0.32, 0.63)},
-    '5l2zYkyTXtYa8xk965ofqD': {'cluster': 5, 'pc': (-4.93, 1.73, 0.72)},
-    '5ljt7BaKAlflOjNs9jysyh': {'cluster': 4, 'pc': (0.61, 0.62, 2.46)},
-    '5lz6U9dCYBmEY6oLrW22VE': {'cluster': 2, 'pc': (1.81, 0.87, 0.83)},
-    '5nWecUJF2pytSxsSpylzZw': {'cluster': 2, 'pc': (1.02, 1.15, -1.16)},
-    '5nnBHHzUDOGvdMBiXofB00': {'cluster': 1, 'pc': (-1.30, -0.10, -0.65)},
-    '5pkemVhnBiIzMs2NLsXomQ': {'cluster': 3, 'pc': (1.26, -0.33, -0.44)},
-    '5q7SGc4ngIhrYciZcgJ9Oe': {'cluster': 3, 'pc': (1.36, -0.15, 0.25)},
-    '5rOzcHIZaF038jMeHkUZR0': {'cluster': 1, 'pc': (-1.98, -1.76, -0.32)},
-    '5sjmWtBcZC1Tj4RoCfaK7k': {'cluster': 1, 'pc': (0.01, 0.15, -1.16)},
-    '5srzGYocC4qYFvckQm5AfC': {'cluster': 1, 'pc': (0.58, 2.06, -0.30)},
-    '5vCE6qjJI7NhpUrLWktoN9': {'cluster': 2, 'pc': (2.09, 0.38, -0.33)},
-    '608TXHjFnEau83A1DoyVCt': {'cluster': 3, 'pc': (0.97, 0.71, -0.85)},
-    '60RgF3vDNAl6crhVg4f9wl': {'cluster': 2, 'pc': (0.18, 1.81, -0.13)},
-    '67aVjLV3z4QqlXMBrGoOOJ': {'cluster': 3, 'pc': (1.32, -1.39, -0.62)},
-    '6BGmeieR3l4aW0VT2nvOcX': {'cluster': 1, 'pc': (-2.58, 0.87, 0.09)},
-    '6BlQbt6Cnf54niyISOZ6cB': {'cluster': 1, 'pc': (-0.33, 1.58, -0.56)},
-    '6BmKLSDW8jBHD2X42PraGM': {'cluster': 3, 'pc': (0.18, -0.03, -0.16)},
-    '6CfzlfApu49tOWGfvQSNDX': {'cluster': 3, 'pc': (1.24, -1.40, -0.39)},
-    '6D7zTed8zrkuKBPca2AqSI': {'cluster': 2, 'pc': (2.23, 0.38, -0.46)},
-    '6EjxYTyXiBzJz6PeOvPiou': {'cluster': 1, 'pc': (-1.77, 1.20, -0.34)},
-    '6F40qXj1WiSFfGnroqlNMd': {'cluster': 1, 'pc': (0.32, 1.71, -0.50)},
-    '6JGJdnIbq4UqKgzFaOIXwE': {'cluster': 6, 'pc': (-0.75, -2.58, -0.72)},
-    '6JZfK4Z75nZm3VcZOVrpy0': {'cluster': 1, 'pc': (-2.11, -0.54, -0.46)},
-    '6JrmHzxhaaavRtlXTOhm63': {'cluster': 1, 'pc': (0.41, 2.05, 1.56)},
-    '6R1183MokEiLiN6rYpzQO6': {'cluster': 1, 'pc': (-1.97, 1.32, -0.39)},
-    '6RJiY28t9jWpdy1JkUhNgK': {'cluster': 4, 'pc': (1.23, 0.72, 1.99)},
-    '6S04kJTdogPGPWN3jP7mNt': {'cluster': 1, 'pc': (-2.06, -1.89, 0.50)},
-    '6WkiWn8bf8S29wSk0VwK7h': {'cluster': 1, 'pc': (-0.36, -1.36, -0.89)},
-    '6XeW8fjwoAFQeQpYojPtVI': {'cluster': 3, 'pc': (1.55, -1.48, 0.18)},
-    '6b4lgjut9ogXlhcbFgLgtS': {'cluster': 1, 'pc': (-0.69, -0.67, -0.83)},
-    '6fd79PtewFZgLXYiIYhhLJ': {'cluster': 1, 'pc': (0.97, -0.07, -0.05)},
-    '6jAc23BgzNtiMCAGHe1buc': {'cluster': 4, 'pc': (0.90, 0.50, 5.89)},
-    '6jiumfqTwOpXW6PDzsIBKl': {'cluster': 1, 'pc': (0.41, 0.71, -0.52)},
-    '6lB7TMkQqSn2tKZGwFuqex': {'cluster': 3, 'pc': (0.48, -0.55, -0.09)},
-    '6vtcDkc68Des2RUrfTSXzK': {'cluster': 2, 'pc': (1.53, 0.19, -0.26)},
-    '6xbLVLgDmohMNPF9qGgDfc': {'cluster': 1, 'pc': (-0.72, -0.08, -0.19)},
-    '6yAc1rz1RXRlYJac99xusK': {'cluster': 3, 'pc': (0.55, -0.85, 0.35)},
-    '71yN0yrHej3jhKXewbmtEh': {'cluster': 2, 'pc': (1.20, 0.28, -0.85)},
-    '724utiMbqUfT1g3tqbfQYu': {'cluster': 3, 'pc': (0.77, -1.43, 0.38)},
-    '73xUwV4DkcelY7seMyY0PY': {'cluster': 3, 'pc': (-0.74, 0.20, -0.64)},
-    '75HFFq9W7Em0dTBG8QeGcT': {'cluster': 2, 'pc': (1.13, 0.06, -0.66)},
-    '78iHtTxYIK2mD6oL6lXqFF': {'cluster': 4, 'pc': (2.03, 0.13, 0.27)},
-    '78vWZN7hzHidEuDGOn9jyL': {'cluster': 1, 'pc': (-0.81, 1.61, -0.59)},
-    '7EPHu29KqhsGk4dZAjM0o4': {'cluster': 1, 'pc': (0.37, 2.64, 0.14)},
-    '7GAI6zWpmst6dSfu1wIA1O': {'cluster': 6, 'pc': (-0.99, -1.36, -1.10)},
-    '7KtbrK74NNA4ySRZ49DC7R': {'cluster': 1, 'pc': (-0.83, 0.60, -0.93)},
-    '7aUZM3W6RA8k47eqP985Kc': {'cluster': 4, 'pc': (1.05, 0.67, 1.08)},
-    '7bNgXJ9MgGG7xOkyz9SLOY': {'cluster': 2, 'pc': (2.15, 0.58, -0.87)},
-    '7cUdrZwlyXm0LSsYOlGaXZ': {'cluster': 2, 'pc': (1.14, -0.40, -0.92)},
-    '7fIsGfaxbm0UqiENtZ2l5R': {'cluster': 1, 'pc': (0.02, 0.27, -0.54)},
-    '7itC84qelbt08WXLeJfzgU': {'cluster': 5, 'pc': (-3.14, 1.30, -0.11)},
-    '7kvQptbfqq5b4MWRQOMrZC': {'cluster': 2, 'pc': (1.43, -0.08, -0.62)},
-    '7l8D5tXUVsdq95VQWn034C': {'cluster': 1, 'pc': (-1.36, -0.61, -0.57)},
-    '7lc4ue2LiSfYRaABxq4YkT': {'cluster': 4, 'pc': (3.06, 0.63, 3.93)},
-    '7luHAaHXty1Nl3AcscZIDT': {'cluster': 1, 'pc': (0.14, -0.87, -0.22)},
-    '7n7GrVTBmZMG4EULD5g0i3': {'cluster': 4, 'pc': (-0.20, 0.87, 1.76)},
-    '7qpIPPj6thT3L3zefsI04T': {'cluster': 2, 'pc': (1.28, 1.17, -0.30)},
-    '7tktCNlB0877dhdPZSRb7T': {'cluster': 1, 'pc': (-2.03, -2.48, -0.52)},
-    '7yeRNInEt2DOFYW0BkETEe': {'cluster': 2, 'pc': (1.42, 0.46, -1.02)},
-    '7zBUh6s2Ca8eAURfnVHCTS': {'cluster': 3, 'pc': (0.37, -0.73, 1.22)},
+    '02L1ngagXNRt8W3Flbe9Sw': {'cluster': 4, 'pc': (-3.28, 0.73, 0.14)},
+    '06kFuqzhMk4E6IYeO0sTfx': {'cluster': 3, 'pc': (2.00, -0.46, 1.29)},
+    '07m5UbUHOQCofRK16k83Eg': {'cluster': 4, 'pc': (-2.82, 1.35, -0.10)},
+    '084dIWdHoow6G00mBlxsOu': {'cluster': 3, 'pc': (0.39, 0.68, 0.88)},
+    '0A2tFUYLertZLltvvY5uyr': {'cluster': 3, 'pc': (1.60, 0.12, 2.79)},
+    '0DOqYCfifzpYK5SjOriuap': {'cluster': 1, 'pc': (-0.60, -1.51, -0.70)},
+    '0DZapO0gUF8XZpk2bu8AeL': {'cluster': 2, 'pc': (-2.94, 0.24, -0.38)},
+    '0GSW6V6GJc4xYi8c5jOu60': {'cluster': 1, 'pc': (1.37, -0.76, -1.08)},
+    '0Irj6PuEEGzi7JGJvAhdZ8': {'cluster': 1, 'pc': (1.89, 0.24, -0.61)},
+    '0NOume8OgBz4FCnP1QVr9A': {'cluster': 1, 'pc': (1.03, 0.07, -0.36)},
+    '0QA1xpUuqHDHWZhi0eAbH7': {'cluster': 2, 'pc': (-3.36, 0.44, 0.86)},
+    '0VNjaRcmIowjLbPtYDhLuh': {'cluster': 1, 'pc': (0.97, 1.55, 0.18)},
+    '0VhGzYfT2ZOFz31b5IH7yJ': {'cluster': 2, 'pc': (-0.89, 0.56, -0.62)},
+    '0XIutL5epZuYV91bhCfFsR': {'cluster': 1, 'pc': (0.24, 0.63, -0.98)},
+    '0ZQLRkRyn3300WyapdPoWT': {'cluster': 3, 'pc': (1.90, 0.28, 2.28)},
+    '0ZeVhHgvMsF6dqo2AFSfut': {'cluster': 4, 'pc': (-3.17, 0.97, 0.33)},
+    '0a0CwJBn8lmT5ifk63EUbP': {'cluster': 1, 'pc': (0.86, -2.73, 0.33)},
+    '0bWpWsvZeTTNLQ9nuXqKIN': {'cluster': 3, 'pc': (-0.31, -1.12, 2.45)},
+    '0gm0OruZdJlu8jamJe5OCh': {'cluster': 1, 'pc': (1.67, -0.22, 1.47)},
+    '0iGxHL2lPxuh1VIHQLUPUl': {'cluster': 2, 'pc': (-0.96, 0.11, -0.94)},
+    '0kNjtDBxrpjJTZn9w5Eq3C': {'cluster': 2, 'pc': (-1.86, -0.15, -0.63)},
+    '0pe5NUU9uGwFpj637ot84D': {'cluster': 1, 'pc': (2.08, -0.03, -0.57)},
+    '0qMZXgcLfkl5RI3q50KHMH': {'cluster': 1, 'pc': (0.87, -0.71, -0.17)},
+    '0rK7QTyYjhPFadLH2YDl84': {'cluster': 2, 'pc': (-0.91, 0.12, -0.47)},
+    '0wIpjjcXFgGtJUmBIRAAju': {'cluster': 1, 'pc': (1.03, -0.14, -1.17)},
+    '12dWvvky0ceP3vCCgwni0g': {'cluster': 2, 'pc': (-2.13, 0.24, -0.26)},
+    '14oyjbbiyic1Hh2ArExQwX': {'cluster': 1, 'pc': (-0.67, -1.69, -0.45)},
+    '14uL43Gg4ujizaATehrryk': {'cluster': 5, 'pc': (0.19, -1.66, -0.62)},
+    '18QS9wnUr7DOhMb73monpK': {'cluster': 1, 'pc': (1.63, 0.55, -0.79)},
+    '1AFPmwB6mGMCcMI2hFh7c8': {'cluster': 1, 'pc': (1.84, 1.05, 0.25)},
+    '1AHPsqF3EtHeWpOM06Y3Y4': {'cluster': 4, 'pc': (-4.04, -0.02, 0.52)},
+    '1BLFIHCwSpQf74tIjyj37K': {'cluster': 4, 'pc': (-4.52, 0.67, 0.64)},
+    '1DGc7wwXrjAGecJzvESW3C': {'cluster': 2, 'pc': (0.36, 1.48, -0.98)},
+    '1E3nHn45NpD1TkDzo3jcbk': {'cluster': 3, 'pc': (-2.25, -0.86, 2.26)},
+    '1EPYnBjYhYHcNthEnVWk18': {'cluster': 3, 'pc': (2.13, -0.55, 0.39)},
+    '1F99de97B9zXdnMdtq8KrH': {'cluster': 1, 'pc': (0.53, 0.79, -0.86)},
+    '1IF61ped0XehHvw2CFXP3B': {'cluster': 2, 'pc': (0.46, -1.00, -0.71)},
+    '1JT4sq2xhusrAuLNajJqFz': {'cluster': 1, 'pc': (0.55, -1.25, 0.23)},
+    '1KnagH7nZ84p8vPMPZQ8hk': {'cluster': 2, 'pc': (0.52, -0.28, -1.35)},
+    '1N1F6UsRGILux57U0YbxJQ': {'cluster': 2, 'pc': (-2.16, -1.79, 2.43)},
+    '1OpCGPKSq4IfpvLptsSMR9': {'cluster': 4, 'pc': (-4.77, 0.79, 0.63)},
+    '1PEPcLm2QEo0HCRIhQjPq1': {'cluster': 1, 'pc': (0.30, 2.21, -0.69)},
+    '1Q9w2a5dvoIpE8fkP8mUK6': {'cluster': 1, 'pc': (2.14, 1.54, -0.17)},
+    '1QrL7ucS71Ih4HXBOsuajv': {'cluster': 4, 'pc': (-3.26, 0.65, 0.97)},
+    '1RmXibCbfLIVrN8ZRdoYbW': {'cluster': 1, 'pc': (0.31, -0.34, -1.16)},
+    '1SOusugJKKzDUxR3QsQUDd': {'cluster': 2, 'pc': (0.35, 0.91, -0.06)},
+    '1XD4K4CGAKTIBmFpvuaFru': {'cluster': 1, 'pc': (0.96, -0.80, -0.29)},
+    '1YsFdaP9QG9NhjYS3o0g5P': {'cluster': 1, 'pc': (2.23, 1.32, 0.23)},
+    '1cu5PHumWAqQf9M6BHQ8b7': {'cluster': 2, 'pc': (-1.96, 0.18, -0.21)},
+    '1d3hBkCcMvVzsZjaMiVvNs': {'cluster': 2, 'pc': (-0.96, -0.13, -0.15)},
+    '1ggQljgteCJOF8PFvCiRLa': {'cluster': 1, 'pc': (0.78, 0.15, -1.14)},
+    '1gs7juUrbHx9LoeAQWp8X0': {'cluster': 1, 'pc': (0.07, -1.14, -0.73)},
+    '1huN927tTdSiwF90FBHXkT': {'cluster': 1, 'pc': (1.65, 0.57, -0.21)},
+    '1jFN0stMzLepoPxvPywGZj': {'cluster': 1, 'pc': (1.56, 1.44, 0.24)},
+    '1jTo2GUdfyjvSBaXaV9IMh': {'cluster': 2, 'pc': (-0.02, -0.73, -0.62)},
+    '1o8Xa3b70eDBgIvZTz7tKF': {'cluster': 3, 'pc': (1.87, 0.16, 1.02)},
+    '1ovz0bZeO5YTBQTXIFf5Am': {'cluster': 4, 'pc': (-4.86, 0.10, 0.50)},
+    '1toNKayLMeCcVlsLGXJl7n': {'cluster': 1, 'pc': (0.46, -1.04, -0.76)},
+    '1vOi99NYsymJomYiivTVj2': {'cluster': 3, 'pc': (0.75, 0.41, 1.22)},
+    '1w0AFg23E67l57A3RMiXjC': {'cluster': 5, 'pc': (1.98, -3.48, 0.34)},
+    '1xVHNasMbwoQcLkf07JMv4': {'cluster': 1, 'pc': (2.12, 1.96, -0.19)},
+    '1zVqEY9PXPpYJKMi9Kk9yn': {'cluster': 2, 'pc': (-1.58, 0.23, -0.55)},
+    '20JYh6XUjLjiN1CyJ32ZiY': {'cluster': 5, 'pc': (2.41, -1.00, 0.09)},
+    '23smC9d2TpPTGZ3GCzjL4b': {'cluster': 5, 'pc': (-1.01, -2.94, -0.31)},
+    '29Ga6IgetN8Xah85ZHZ8AC': {'cluster': 1, 'pc': (1.77, -0.82, -0.75)},
+    '2BQZhUPXdP9Nk1X84c7PtP': {'cluster': 2, 'pc': (-1.38, -1.84, -0.70)},
+    '2CznvTOsuLh0USpHJqEc6V': {'cluster': 2, 'pc': (-0.69, -1.37, -0.56)},
+    '2DUAIlPmzV2is5OQIZASUA': {'cluster': 4, 'pc': (-2.51, -0.28, -0.13)},
+    '2Ff6Ghw8TRJGuAbJamtt4X': {'cluster': 2, 'pc': (-0.67, 1.14, -0.64)},
+    '2KryklrVDGmWL8IvoGNbb5': {'cluster': 2, 'pc': (0.39, 1.44, -0.79)},
+    '2KwdLR2SOGSflUigzSekHZ': {'cluster': 2, 'pc': (-1.24, -0.43, 0.93)},
+    '2Of9piZALXa4CC7Unxoeeg': {'cluster': 1, 'pc': (0.93, 1.36, -1.07)},
+    '2PaTBoG5uDz6H3xPhnnDLz': {'cluster': 1, 'pc': (1.28, 0.07, -0.94)},
+    '2R7G2Itn0b73uthZCNPIrR': {'cluster': 1, 'pc': (0.84, 0.65, -0.69)},
+    '2YDCrMvvmBz9gVeuL8QyVG': {'cluster': 1, 'pc': (1.06, 1.50, -0.86)},
+    '2aHS8p4tspLPkOvALx8Fs0': {'cluster': 2, 'pc': (-0.79, 0.72, -0.07)},
+    '2fB0l9upVjg0QTeMyrIVtc': {'cluster': 2, 'pc': (-1.07, 0.30, -0.41)},
+    '2gmwvGC1yOw8NdMcZE8nfo': {'cluster': 1, 'pc': (2.13, 0.51, -0.07)},
+    '2h9jHuAARdM9dMhNp04ahR': {'cluster': 1, 'pc': (1.47, 2.28, -1.11)},
+    '2inX5xyazBvcZYLx3wRBwh': {'cluster': 1, 'pc': (0.83, -3.07, 1.17)},
+    '2iqTYCPRTqojxM7QJvBtk2': {'cluster': 2, 'pc': (-1.56, 1.44, -0.43)},
+    '2jFP4mAHcDmGe7DEKKLyJa': {'cluster': 2, 'pc': (-0.57, 0.71, -0.56)},
+    '2lEExBHFkGIG5bcjQCJc8P': {'cluster': 1, 'pc': (2.04, 0.71, -1.46)},
+    '2lgwylOpGMtkvhwdnUOArt': {'cluster': 1, 'pc': (1.91, 0.36, -0.25)},
+    '2qpx5shtNEO1DuK8iEoJoB': {'cluster': 2, 'pc': (-0.11, 0.25, -0.60)},
+    '2rMjMkOapLVsxbDSap5Uy2': {'cluster': 5, 'pc': (0.27, -1.69, -0.88)},
+    '2rN1ODOsaNfYu782rw36jR': {'cluster': 2, 'pc': (-0.21, 0.73, 0.06)},
+    '2rffYJaN04Tdzha2foN2up': {'cluster': 3, 'pc': (1.16, -2.05, 2.05)},
+    '2sVjF25Z4JTJxi9BXm5GtJ': {'cluster': 1, 'pc': (1.43, -2.23, -0.47)},
+    '308z6pEGHS90tuDNAngZnh': {'cluster': 1, 'pc': (0.78, 0.31, -0.94)},
+    '36Xl4wdcXaW7zi7N01WSOo': {'cluster': 4, 'pc': (-3.59, 1.33, 0.49)},
+    '376mhFeloWqzQJQsqZpm9A': {'cluster': 1, 'pc': (1.18, 0.58, -1.10)},
+    '37OSQm8Gy5strUT24vn6ef': {'cluster': 3, 'pc': (0.90, -1.14, 0.91)},
+    '3ApVA7ID6PkS0fGzNF4mFw': {'cluster': 4, 'pc': (-2.50, 0.36, -0.22)},
+    '3AyUAvAQGKyMzC9jGQeIlX': {'cluster': 3, 'pc': (-0.28, 1.05, 3.26)},
+    '3BYSoeWlqUgIwfY77C8VgE': {'cluster': 3, 'pc': (0.64, 1.93, 2.94)},
+    '3BqWvhPear6eKPwhwJRFpO': {'cluster': 2, 'pc': (-0.62, -0.09, -0.86)},
+    '3Cmc2mUlFS7MPhcwIRvcWF': {'cluster': 5, 'pc': (0.55, -0.80, 0.27)},
+    '3FysLYckiMCMzjYLIgo45U': {'cluster': 3, 'pc': (1.63, 0.69, 3.07)},
+    '3HO9UrofF8D3AfKY9ZLLbB': {'cluster': 5, 'pc': (-2.79, -2.83, 1.17)},
+    '3IDQXyHYuX2rdLnNfVzT3g': {'cluster': 2, 'pc': (-0.48, -0.69, -0.43)},
+    '3MZjOGeXhpHbQ9ESMNFFnH': {'cluster': 4, 'pc': (-4.08, 0.85, 0.24)},
+    '3QF7smzmw2WWm7M1jt2Rac': {'cluster': 3, 'pc': (1.76, -0.11, 1.59)},
+    '3RLI8S7KpEZs4SqePGjM2R': {'cluster': 1, 'pc': (0.94, -1.18, -0.39)},
+    '3RXajeZOzqXWrQwLDfTzKK': {'cluster': 3, 'pc': (-0.25, 0.76, 0.48)},
+    '3ShIGvHRm0q9iIDowUMjls': {'cluster': 2, 'pc': (-1.23, 1.35, -0.21)},
+    '3UC5TaXqpcEnfSepGyKwqZ': {'cluster': 1, 'pc': (0.48, 1.27, 0.07)},
+    '3VHdDisicXuBnW1NxIGzCI': {'cluster': 3, 'pc': (0.32, -0.52, 1.76)},
+    '3Vk1AHIh1CoiQzFroldMhO': {'cluster': 4, 'pc': (-3.92, 0.90, 0.39)},
+    '3XdXixlx3MoVzfL7pu9hx6': {'cluster': 4, 'pc': (-3.14, 0.57, -0.13)},
+    '3bnvoYUrPkgh0E3ZeYZ3me': {'cluster': 3, 'pc': (2.70, -0.27, 4.82)},
+    '3eBY8aZZdWNnNhNbc8B0yp': {'cluster': 5, 'pc': (-2.10, -2.96, 0.24)},
+    '3nxFYWNFG2qGYEuhEzomtO': {'cluster': 2, 'pc': (-1.67, 1.65, 2.29)},
+    '3o69iXC0KGd3X2OIG0KXkP': {'cluster': 2, 'pc': (-0.82, 2.41, 0.82)},
+    '3qBg6BeHJlGgwl5aCa09EC': {'cluster': 1, 'pc': (1.07, -0.53, 0.74)},
+    '3qDqg53YIe9mM5Ehx9v9FZ': {'cluster': 1, 'pc': (1.54, 1.11, -0.90)},
+    '3r0gvoaAkWmLdJO4UUv94v': {'cluster': 2, 'pc': (-2.78, -2.96, 0.88)},
+    '3z4KIXgkhLauhNP3ubB8cF': {'cluster': 2, 'pc': (-0.89, 0.69, -1.00)},
+    '3zGmkzXqXsXYVlGzJFpgCW': {'cluster': 1, 'pc': (0.87, -0.53, -1.06)},
+    '42Opc7AzlbYad3AuWsBGuf': {'cluster': 5, 'pc': (-2.24, -1.36, -0.35)},
+    '46uGvJVhYHOVRRNnRPbkYm': {'cluster': 1, 'pc': (0.91, -1.25, 0.33)},
+    '48XnOS1vTyzqaPps0Dalzp': {'cluster': 2, 'pc': (-0.06, 1.23, -0.59)},
+    '4CuivW1JgPauXPA4wYsf5K': {'cluster': 2, 'pc': (-1.63, 1.22, 0.18)},
+    '4DfHQvIAZmSmqcZbuO80sZ': {'cluster': 1, 'pc': (2.21, 0.40, -1.12)},
+    '4DpGa3bX0XvKd31JXWDcv7': {'cluster': 1, 'pc': (0.88, -0.73, -0.80)},
+    '4ED8r6i90zmUG4kfbiVoou': {'cluster': 2, 'pc': (0.20, 0.34, -0.98)},
+    '4Hf2Y8mG8LDZCfeycD93PP': {'cluster': 1, 'pc': (0.63, -2.10, -0.09)},
+    '4NKAjWfWZ2tcIzjCR9G5Zl': {'cluster': 1, 'pc': (1.57, 0.96, 0.58)},
+    '4NYRtDYROQW2D2ctcylcri': {'cluster': 5, 'pc': (-0.25, -3.18, -0.14)},
+    '4OF1mdSkA2z05DSwHNKVnz': {'cluster': 1, 'pc': (0.97, 0.94, -0.96)},
+    '4OI2gBlHqyNks8cbIBIKYw': {'cluster': 2, 'pc': (0.55, 0.11, -0.75)},
+    '4P9LdSPrnQl7KQwml4DUtq': {'cluster': 2, 'pc': (-0.72, 0.32, -0.30)},
+    '4QnHaiWq1oJiTgMnRFE0q8': {'cluster': 2, 'pc': (0.67, 0.75, -1.07)},
+    '4UfEEnq70NgLeq7NRfXPiD': {'cluster': 1, 'pc': (0.99, 0.58, 0.52)},
+    '4WhyfhjZaX6AVjAZslQAFs': {'cluster': 1, 'pc': (2.00, 0.43, -0.14)},
+    '4X6PkqzKUvWWKoq4YiiM1V': {'cluster': 1, 'pc': (1.65, -0.38, -0.65)},
+    '4Ykmj47fulJ1FTeCXctW91': {'cluster': 2, 'pc': (-1.77, 0.06, -0.39)},
+    '4Zhxtm6x56wEiRtSMAl28n': {'cluster': 3, 'pc': (1.07, 0.63, 0.47)},
+    '4b1Y41U44kP7gzO7MUNGbe': {'cluster': 1, 'pc': (1.07, -0.78, -0.49)},
+    '4bJV3YH3GEV7RMe0abbMyB': {'cluster': 1, 'pc': (0.85, 1.12, -0.89)},
+    '4bMj9zctX5PFp8vKP4K1yP': {'cluster': 3, 'pc': (0.67, 1.04, 0.98)},
+    '4bglcunoysO0W3puey06d6': {'cluster': 2, 'pc': (-1.36, -0.13, -0.75)},
+    '4dtyeDMnVKKo89QbbDtD5M': {'cluster': 1, 'pc': (0.03, -0.72, -0.82)},
+    '4hceSKjrkDTO0nMKFcb3sj': {'cluster': 3, 'pc': (0.86, 0.03, 0.96)},
+    '4lUlYGT5VvZWN3GBDIc9KT': {'cluster': 2, 'pc': (-0.76, 1.40, 0.41)},
+    '4ltqfN12ohaVZdM6C45gMg': {'cluster': 2, 'pc': (-0.29, -1.15, -1.01)},
+    '4qdyN6rpaGsspGeMzkCTNP': {'cluster': 1, 'pc': (1.28, 0.75, -0.33)},
+    '4sZgum8lh9hLPxREjgo4vo': {'cluster': 1, 'pc': (2.25, 0.16, -1.57)},
+    '4v5gEVQPDlPtsuQ77AJa0x': {'cluster': 3, 'pc': (0.37, -0.49, 1.29)},
+    '4xHC0Cj5ujXkmL8lSU6jXw': {'cluster': 2, 'pc': (-0.10, 0.95, -0.71)},
+    '4xhYxKvAxtrRd83MiqOy29': {'cluster': 1, 'pc': (1.39, 1.12, -1.17)},
+    '4yBfzgV6YA9dTKP8KUD35j': {'cluster': 1, 'pc': (1.86, -0.40, -0.73)},
+    '51NYFGDXYKS4FkRqkw98hx': {'cluster': 1, 'pc': (1.93, 0.42, -0.91)},
+    '52uobAwbP5In7cc0NV677y': {'cluster': 5, 'pc': (-3.00, -2.32, -0.27)},
+    '5327YgW0EzH0cd3kWRwx2l': {'cluster': 1, 'pc': (1.60, 1.04, -0.91)},
+    '53uyQrCca3tqGU8Voaa0oC': {'cluster': 1, 'pc': (0.46, -2.17, 0.04)},
+    '54n3iwz9mr7yxZi1EOX1Mz': {'cluster': 1, 'pc': (1.04, 0.46, -0.34)},
+    '54nFM2BgZpX292SYKP83fS': {'cluster': 5, 'pc': (-1.21, -3.83, -0.61)},
+    '56xBg5e9rfrFqcqa4llUw7': {'cluster': 2, 'pc': (-0.84, -0.58, -0.49)},
+    '5CznIqYyWcPBQ9YaIJtLLF': {'cluster': 1, 'pc': (1.58, 0.93, -0.13)},
+    '5Gp1fkuPV7CPtzKHfMH0kd': {'cluster': 2, 'pc': (0.22, -0.47, 0.43)},
+    '5NnQ2xIeHDKc1B19rxfcV3': {'cluster': 3, 'pc': (-1.46, -0.20, 2.09)},
+    '5P9EKJfOZtuwtTR5C5362i': {'cluster': 4, 'pc': (-4.08, 0.06, 0.24)},
+    '5PMtJGEDIO0eIToF0YRUQ5': {'cluster': 2, 'pc': (-1.72, -0.28, -0.60)},
+    '5W7Wtg5RIj6iI8EvE9j9fP': {'cluster': 1, 'pc': (0.41, 0.74, -0.54)},
+    '5WttRLHcZHhaIii5KwKh3Y': {'cluster': 2, 'pc': (-0.23, 0.10, -0.87)},
+    '5dIPCgTEDagbcs5QGmni8V': {'cluster': 5, 'pc': (0.40, -2.04, -0.68)},
+    '5dtUOwEmnDAzsdodWJk4DA': {'cluster': 2, 'pc': (-1.38, 0.88, -0.56)},
+    '5e0ZXu358l51ckAZvai2Ef': {'cluster': 4, 'pc': (-2.83, 1.07, -0.04)},
+    '5h8uDAcGUluOe7U8CZr0KB': {'cluster': 4, 'pc': (-3.72, 0.78, 0.33)},
+    '5iAE3uBqaZm9aHUx9yy6a0': {'cluster': 5, 'pc': (3.72, -2.73, 2.04)},
+    '5iTzaatezJzsUhX1QjT0Kp': {'cluster': 5, 'pc': (1.06, -2.92, -1.00)},
+    '5ipp3YpFKrJzWU7P1GHfgk': {'cluster': 3, 'pc': (1.46, -0.32, 0.63)},
+    '5l2zYkyTXtYa8xk965ofqD': {'cluster': 4, 'pc': (-4.93, 1.73, 0.72)},
+    '5ljt7BaKAlflOjNs9jysyh': {'cluster': 3, 'pc': (0.61, 0.62, 2.46)},
+    '5lz6U9dCYBmEY6oLrW22VE': {'cluster': 1, 'pc': (1.81, 0.87, 0.83)},
+    '5nWecUJF2pytSxsSpylzZw': {'cluster': 1, 'pc': (1.02, 1.15, -1.16)},
+    '5nnBHHzUDOGvdMBiXofB00': {'cluster': 2, 'pc': (-1.30, -0.10, -0.65)},
+    '5pkemVhnBiIzMs2NLsXomQ': {'cluster': 1, 'pc': (1.26, -0.33, -0.44)},
+    '5q7SGc4ngIhrYciZcgJ9Oe': {'cluster': 1, 'pc': (1.36, -0.15, 0.25)},
+    '5rOzcHIZaF038jMeHkUZR0': {'cluster': 2, 'pc': (-1.98, -1.76, -0.32)},
+    '5sjmWtBcZC1Tj4RoCfaK7k': {'cluster': 2, 'pc': (0.01, 0.15, -1.16)},
+    '5srzGYocC4qYFvckQm5AfC': {'cluster': 2, 'pc': (0.58, 2.06, -0.30)},
+    '5vCE6qjJI7NhpUrLWktoN9': {'cluster': 1, 'pc': (2.09, 0.38, -0.33)},
+    '608TXHjFnEau83A1DoyVCt': {'cluster': 1, 'pc': (0.97, 0.71, -0.85)},
+    '60RgF3vDNAl6crhVg4f9wl': {'cluster': 1, 'pc': (0.18, 1.81, -0.13)},
+    '67aVjLV3z4QqlXMBrGoOOJ': {'cluster': 1, 'pc': (1.32, -1.39, -0.62)},
+    '6BGmeieR3l4aW0VT2nvOcX': {'cluster': 2, 'pc': (-2.58, 0.87, 0.09)},
+    '6BlQbt6Cnf54niyISOZ6cB': {'cluster': 2, 'pc': (-0.33, 1.58, -0.56)},
+    '6BmKLSDW8jBHD2X42PraGM': {'cluster': 1, 'pc': (0.18, -0.03, -0.16)},
+    '6CfzlfApu49tOWGfvQSNDX': {'cluster': 1, 'pc': (1.24, -1.40, -0.39)},
+    '6D7zTed8zrkuKBPca2AqSI': {'cluster': 1, 'pc': (2.23, 0.38, -0.46)},
+    '6EjxYTyXiBzJz6PeOvPiou': {'cluster': 2, 'pc': (-1.77, 1.20, -0.34)},
+    '6F40qXj1WiSFfGnroqlNMd': {'cluster': 2, 'pc': (0.32, 1.71, -0.50)},
+    '6JGJdnIbq4UqKgzFaOIXwE': {'cluster': 5, 'pc': (-0.75, -2.58, -0.72)},
+    '6JZfK4Z75nZm3VcZOVrpy0': {'cluster': 2, 'pc': (-2.11, -0.54, -0.46)},
+    '6JrmHzxhaaavRtlXTOhm63': {'cluster': 2, 'pc': (0.41, 2.05, 1.56)},
+    '6R1183MokEiLiN6rYpzQO6': {'cluster': 2, 'pc': (-1.97, 1.32, -0.39)},
+    '6RJiY28t9jWpdy1JkUhNgK': {'cluster': 3, 'pc': (1.23, 0.72, 1.99)},
+    '6S04kJTdogPGPWN3jP7mNt': {'cluster': 2, 'pc': (-2.06, -1.89, 0.50)},
+    '6WkiWn8bf8S29wSk0VwK7h': {'cluster': 2, 'pc': (-0.36, -1.36, -0.89)},
+    '6XeW8fjwoAFQeQpYojPtVI': {'cluster': 1, 'pc': (1.55, -1.48, 0.18)},
+    '6b4lgjut9ogXlhcbFgLgtS': {'cluster': 2, 'pc': (-0.69, -0.67, -0.83)},
+    '6fd79PtewFZgLXYiIYhhLJ': {'cluster': 2, 'pc': (0.97, -0.07, -0.05)},
+    '6jAc23BgzNtiMCAGHe1buc': {'cluster': 3, 'pc': (0.90, 0.50, 5.89)},
+    '6jiumfqTwOpXW6PDzsIBKl': {'cluster': 2, 'pc': (0.41, 0.71, -0.52)},
+    '6lB7TMkQqSn2tKZGwFuqex': {'cluster': 1, 'pc': (0.48, -0.55, -0.09)},
+    '6vtcDkc68Des2RUrfTSXzK': {'cluster': 1, 'pc': (1.53, 0.19, -0.26)},
+    '6xbLVLgDmohMNPF9qGgDfc': {'cluster': 2, 'pc': (-0.72, -0.08, -0.19)},
+    '6yAc1rz1RXRlYJac99xusK': {'cluster': 1, 'pc': (0.55, -0.85, 0.35)},
+    '71yN0yrHej3jhKXewbmtEh': {'cluster': 1, 'pc': (1.20, 0.28, -0.85)},
+    '724utiMbqUfT1g3tqbfQYu': {'cluster': 1, 'pc': (0.77, -1.43, 0.38)},
+    '73xUwV4DkcelY7seMyY0PY': {'cluster': 1, 'pc': (-0.74, 0.20, -0.64)},
+    '75HFFq9W7Em0dTBG8QeGcT': {'cluster': 1, 'pc': (1.13, 0.06, -0.66)},
+    '78iHtTxYIK2mD6oL6lXqFF': {'cluster': 3, 'pc': (2.03, 0.13, 0.27)},
+    '78vWZN7hzHidEuDGOn9jyL': {'cluster': 2, 'pc': (-0.81, 1.61, -0.59)},
+    '7EPHu29KqhsGk4dZAjM0o4': {'cluster': 2, 'pc': (0.37, 2.64, 0.14)},
+    '7GAI6zWpmst6dSfu1wIA1O': {'cluster': 5, 'pc': (-0.99, -1.36, -1.10)},
+    '7KtbrK74NNA4ySRZ49DC7R': {'cluster': 2, 'pc': (-0.83, 0.60, -0.93)},
+    '7aUZM3W6RA8k47eqP985Kc': {'cluster': 3, 'pc': (1.05, 0.67, 1.08)},
+    '7bNgXJ9MgGG7xOkyz9SLOY': {'cluster': 1, 'pc': (2.15, 0.58, -0.87)},
+    '7cUdrZwlyXm0LSsYOlGaXZ': {'cluster': 1, 'pc': (1.14, -0.40, -0.92)},
+    '7fIsGfaxbm0UqiENtZ2l5R': {'cluster': 2, 'pc': (0.02, 0.27, -0.54)},
+    '7itC84qelbt08WXLeJfzgU': {'cluster': 4, 'pc': (-3.14, 1.30, -0.11)},
+    '7kvQptbfqq5b4MWRQOMrZC': {'cluster': 1, 'pc': (1.43, -0.08, -0.62)},
+    '7l8D5tXUVsdq95VQWn034C': {'cluster': 2, 'pc': (-1.36, -0.61, -0.57)},
+    '7lc4ue2LiSfYRaABxq4YkT': {'cluster': 3, 'pc': (3.06, 0.63, 3.93)},
+    '7luHAaHXty1Nl3AcscZIDT': {'cluster': 2, 'pc': (0.14, -0.87, -0.22)},
+    '7n7GrVTBmZMG4EULD5g0i3': {'cluster': 3, 'pc': (-0.20, 0.87, 1.76)},
+    '7qpIPPj6thT3L3zefsI04T': {'cluster': 1, 'pc': (1.28, 1.17, -0.30)},
+    '7tktCNlB0877dhdPZSRb7T': {'cluster': 2, 'pc': (-2.03, -2.48, -0.52)},
+    '7yeRNInEt2DOFYW0BkETEe': {'cluster': 1, 'pc': (1.42, 0.46, -1.02)},
+    '7zBUh6s2Ca8eAURfnVHCTS': {'cluster': 1, 'pc': (0.37, -0.73, 1.22)},
 }
 
 
@@ -1331,8 +1329,8 @@ import { ConvexGeometry } from 'three/addons/geometries/ConvexGeometry.js';
 """
 
 CSS = """
-:root{--c1:#E08A3C;--c2:#5E9CC4;--c3:#DE9AB2;--c4:#E8D27A;--c5:#D4584A;--c6:#8DB57A}
-:root[data-theme="light"]{--c1:#C6731C;--c2:#2D6A85;--c3:#CC8AA0;--c4:#DCC35C;--c5:#9A1F1F;--c6:#729161}
+:root{--c1:#5E9CC4;--c2:#E08A3C;--c3:#E8D27A;--c4:#D4584A;--c5:#8DB57A}
+:root[data-theme="light"]{--c1:#2D6A85;--c2:#C6731C;--c3:#DCC35C;--c4:#9A1F1F;--c5:#729161}
 .sonic-legend{display:flex;flex-wrap:wrap;gap:8px 14px;margin:14px 0 8px;
  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:.85rem}
 .legend-item{display:inline-flex;align-items:center;gap:7px;color:var(--ink);
@@ -1432,7 +1430,7 @@ def sonic_page(css, esc, slug, artists_of, aliases, same_person, badge,
 <h1>By sonic profile</h1>
 <p class="sub">{n_tracks} songs from this playlist were analysed, positioned
 by how they sound rather than how they are labelled, from audio features
-licensed from Tunebat and reduced to three dimensions and six groups. No
+licensed from Tunebat and reduced to three dimensions and five groups. No
 individual track's raw feature values are published here or anywhere in
 this repository: Tunebat's terms do not allow it. See the note at the
 bottom of this page for exactly what is shown instead, and why.</p>
@@ -1443,7 +1441,7 @@ bottom of this page for exactly what is shown instead, and why.</p>
 page. Hover a feature's name anywhere below for this same description.</p>
 {glossary_html}
 
-<h2>The six groups</h2>
+<h2>The five groups</h2>
 <p class="secblurb">Computed by hierarchical clustering (Ward's method) on
 all nine standardised features rather than on the three-axis reduction shown
 further down, so nothing is lost at this step. Claire set two constraints
@@ -1452,8 +1450,8 @@ at least four songs per group, so that no averaged profile could ever be
 narrow enough to read back as a single track's numbers, though this was
 never a serious risk of reconstructing individual Tunebat values in the
 first place; a margin of safety costs nothing here. Sizes run from 17 to
-74; no group needed to be merged into another to clear that floor. Each
-radar plot is scaled to the same axis range across all six groups, so the
+92; no group needed to be merged into another to clear that floor. Each
+radar plot is scaled to the same axis range across all five groups, so the
 shapes are directly comparable to one another; each group's average sits
 next to the same feature's average across the whole playlist, to read at
 a glance how far a group departs from the middle of this playlist. A
@@ -1500,7 +1498,7 @@ republishing those values per track, so none are published here: not the
 nine used in the analysis, not the four left out, and not the spreadsheet
 they came from. What is published instead is derived from that data rather
 than a copy of it: each track's position on the three axes above and which
-of the six groups it falls into, plus, for each group, the average of each
+of the five groups it falls into, plus, for each group, the average of each
 feature taken over at least ten tracks, next to the same average across the
 whole playlist. A three-axis position keeps 61% of the original
 nine-dimension picture and cannot be inverted back to the original values;
@@ -1543,7 +1541,7 @@ addition.</p>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script>(function(){{var d=document.documentElement;try{{if(localStorage.getItem("tc-theme")==="light")d.dataset.theme="light"}}catch(e){{}}window.tcToggleTheme=function(){{var l=d.dataset.theme!=="light";if(l)d.dataset.theme="light";else delete d.dataset.theme;try{{localStorage.setItem("tc-theme",l?"light":"dark")}}catch(e){{}}document.dispatchEvent(new Event("tc-themechange"))}}}})()</script>
 <title>Transfem chants — by sonic profile</title>
-<meta name="description" content="{n_tracks} songs from Transfem chants, analysed and grouped by sound rather than by label, from Tunebat audio features reduced to three dimensions and six groups.">
+<meta name="description" content="{n_tracks} songs from Transfem chants, analysed and grouped by sound rather than by label, from Tunebat audio features reduced to three dimensions and five groups.">
 <style>{full_css}</style>
 {IMPORTMAP}
 </head>
