@@ -4,9 +4,9 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 
 ## Où on en est
 
-- **228 morceaux**
-- **170 artistes présentées comme transféminines**, plus **0 cas ouverts**
-- **36 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, France, Germany, Ghana, Indonesia, Ireland, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Pakistan, Peru, Philippines, Portugal, Puerto Rico, Russia, Serbia, South Africa, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
+- **230 morceaux**
+- **171 artistes présentées comme transféminines**, plus **0 cas ouverts**
+- **38 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, Estonia, France, Germany, Ghana, Indonesia, Ireland, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Pakistan, Peru, Philippines, Poland, Portugal, Puerto Rico, Russia, Serbia, South Africa, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
 - **27 langues** : Arabic, Darija, Dutch, English, Filipino, French, German, Hebrew, Indonesian, isiZulu, Italian, Japanese, Korean, Malay, Mandarin, Portuguese, Russian, Réunion Creole, Serbian, Spanish, Swedish, Thai, Turkish, Twi, Urdu, Vietnamese, Zapotec
 
 Généré le 2026-11-10
@@ -20,7 +20,8 @@ Généré le 2026-11-10
 | **ANOHNI** | `verified` | UK / United States | English | 3 | [VICE, 16 May 2016](https://www.vice.com/en/article/one-decaf-cappuccino-and-orange-juice-with-anohni-briefs-v23n3/), [Noisey, 7 December 2015](https://www.vice.com/en/article/anohni-interview-2015/) |
 | **Antony and the Johnsons** | `verified` | UK / United States | English | 1 | [VICE, 16 May 2016](https://www.vice.com/en/article/one-decaf-cappuccino-and-orange-juice-with-anohni-briefs-v23n3/), [Noisey, 7 December 2015](https://www.vice.com/en/article/anohni-interview-2015/) |
 | **Bülent Ersoy** | `partial` | Türkiye | Turkish | 2 | [Daily Sabah, 12 October 2021](https://www.dailysabah.com/arts/portrait/bulent-ersoy-turkeys-transgender-diva), [Posta, 10 January 2021](https://www.posta.com.tr/magazin/bulent-ersoydan-anlamli-cevap-insanlari-bacak-arasiyla-degerlendirmeyin-2297093) |
-| **Kim Petras** | `verified` | Germany | English | 5 | [NBC News, 6 February 2023](https://www.nbcnews.com/nbc-out/out-pop-culture/kim-petras-thanks-incredible-transgender-legends-grammy-speech-rcna69296) |
+| **Frost Children** | `partial` | United States | English | 2 | [METAL Magazine (Angel Prost)](https://metalmagazine.eu/en/post/frost-children-metal-53) |
+| **Kim Petras** | `verified` | Germany | English | 6 | [NBC News, 6 February 2023](https://www.nbcnews.com/nbc-out/out-pop-culture/kim-petras-thanks-incredible-transgender-legends-grammy-speech-rcna69296) |
 | **femtanyl** | `verified` | Canada | English | 5 | [METAL Magazine, 3 March 2026](https://metalmagazine.eu/en/post/femtanyl) |
 | **Petal Supply** | `partial` | Canada | English | 1 | [Era Journal](https://erajournal.co.uk/our-journal/immaterial-girls-trans-women-in-synthesis/) |
 | **Chase Icon** | `verified` | United States | English | 2 | [VICE, 29 March 2021](https://www.vice.com/en/article/internet-star-celebrity-impersonator-chase-icon-profile-v28n1/) |
@@ -148,7 +149,7 @@ Généré le 2026-11-10
 | **Assucena** | `verified` | Brazil | Portuguese | 1 | [Estado de Minas / Folhapress, 5 October 2023](https://www.em.com.br/app/noticia/diversidade/2023/10/05/noticia-diversidade,1571972/pessoas-trans-ainda-estao-na-fase-do-grito-diz-assucena-ao-lancar-disco.shtml) |
 | **Bixarte** | `verified` | Brazil | Portuguese | 1 | [Jornal da Paraíba, 24 March 2024](https://jornaldaparaiba.com.br/qualaboa/bixarte-cantora-trans-entrevista) |
 | **Brigitte Bond** | `partial` | UK | English | 1 | [A Gender Variance Who's Who (Zagria)](https://zagria.blogspot.com/2022/10/brigitte-bond-1944-beat-girl-singer.html) |
-| **Britney Manson** | `verified` | Russia | English | 1 | [KALTBLUT Magazine, 27 May 2024](https://www.kaltblut-magazine.com/britney-manson-american-dream/) |
+| **Britney Manson** | `verified` | Russia / Estonia / Poland | English | 1 | [KALTBLUT Magazine, 27 May 2024](https://www.kaltblut-magazine.com/britney-manson-american-dream/), [Sweety High, 27 November 2024](https://www.sweetyhigh.com/read/britney-manson-wcw-trivia-112724), [Pride.com, 31 August 2023](https://www.pride.com/interviews/britney-manson) |
 | **CATTO** | `verified` | Brazil | Portuguese | 2 | [Billboard Brasil, 26 June 2025](https://billboard.com.br/filipe-catto-detalha-reafirmacao-de-genero-e-redescoberta-artistica-me-da-orgulho/) |
 | **Danny Bond** | `verified` | Brazil | Portuguese | 1 | [O Tempo (Folhapress), 10 March 2022](https://www.otempo.com.br/entretenimento/danny-bond-quer-resgatar-raiz-nordestina-e-fala-de-hate-vim-para-causar-1.2629769) |
 | **Scarlett la Queen** | `verified` | Russia / United States | Russian | 1 | [Korrespondent.net, quoting her social-media post](https://korrespondent.net/lifestyle/4197530-ot-transhendernoi-pevytsy-skarlett-otkazalas-semia) |
@@ -257,6 +258,7 @@ Reproduites mot pour mot.
 - **Arca** — « I identify as a transwoman, and I see my gender identity as nonbinary. » (PAPER Magazine, 7 April 2020)
 - **ANOHNI** — « I finally got the courage to say, ‘I want you to address me as “she,” because I want you to honor my spirit. I’m a transgender person who wants to be recognized for my feminine essence and aspect.’ » (None)
 - **Bülent Ersoy** — « Ben kendimce doğru olduğuna inandığım şeyi yaptım. — I did what I believed was right for myself. » (None)
+- **Frost Children** — « I care about family. I care about trans people. I think it’s a beautiful world, but scary people are in it. I care about our trans fans. I want to make the world a better place for us and them. » (METAL Magazine (Angel Prost))
 - **Kim Petras** — « Sam graciously wanted me to accept this award because I'm the first transgender woman to win this award » (NBC News, 6 February 2023)
 - **femtanyl** — « When I first started transitioning, music was the only place I could feel that aspect of myself. I could augment my vocals and talk about it openly. » (METAL Magazine, 3 March 2026)
 - **Chase Icon** — « Being trans, so much relies on your voice being able to sound a certain way. » (VICE, 29 March 2021)
@@ -377,7 +379,7 @@ Reproduites mot pour mot.
 - **Anthony Lexa** — « As trans people, we spend a lot of our young lives trying to prove who we are […] » (The Big Issue, 13 December 2023)
 - **Assucena** — « Foi por meio dela que eu me tornei uma mulher trans. Foi ela que me deu coragem para ser quem eu sou — It was through music that I became a trans woman. It was music that gave me the courage to be who I am » (Estado de Minas / Folhapress, 5 October 2023)
 - **Bixarte** — « Quando eu transicionei, eu entendi para quem eu queria falar e o que eu queria falar — When I transitioned, I understood who I wanted to speak to and what I wanted to say » (Jornal da Paraíba, 24 March 2024)
-- **Britney Manson** — « The fact that I’m a trans woman means nothing when it comes to my career- I have nothing to hide, but I’ve never used my identity as a PR tool etc. » (KALTBLUT Magazine, 27 May 2024)
+- **Britney Manson** — « The fact that I’m a trans woman means nothing when it comes to my career- I have nothing to hide, but I’ve never used my identity as a PR tool etc. » (None)
 - **CATTO** — « Quando eu era criança, chegava para a minha mãe e falava que não era menino. Não me sentia daquela forma e rezava para poder ser quem sou hoje: uma pessoa trans não binária. — When I was a child, I would go to my mother and say I was not a boy. I didn’t feel that way, and I prayed to be who I am today: a non-binary trans person. » (Billboard Brasil, 26 June 2025)
 - **Danny Bond** — « A galera ainda não está pronta para ver uma travesti furando a bolha, estando em locais que são nossos por direito — People still aren’t ready to see a travesti breaking out of the bubble, being in places that are ours by right » (O Tempo (Folhapress), 10 March 2022)
 - **Scarlett la Queen** — « Моя идентичность к женскому полу была во мне, насколько я помню, лет с трех. — My identification with the female gender has been in me, as far as I remember, since I was about three. » (Korrespondent.net, quoting her social-media post)

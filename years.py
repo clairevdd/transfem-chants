@@ -2995,4 +2995,30 @@ YEARS = {
         "checked": "2026-11-09",
         "note": 'From the album #Stuntqueen. No Discogs or MusicBrainz entry for this track.',
     },
+    # Frost Children — Falling
+    "6WkiWn8bf8S29wSk0VwK7h": {
+        "first_public": "2025-07-01",
+        "first_record": None,
+        "precision": "day",
+        "kind": "earliest_known",
+        "spotify": "2025-09-12",
+        "status": "partial",
+        "source": "MusicBrainz, first-release-date of the recording, title and artist match checked",
+        "url": "https://musicbrainz.org/search?query=Frost%20Children%20Falling&type=recording",
+        "checked": "2026-09-04",
+        "note": "One of the releases on record is a compilation, so this date could belong to a later inclusion; not yet checked against the original release.",
+    },
+    # Frost Children, Kim Petras — RADIO (feat. Kim Petras)
+    "06kFuqzhMk4E6IYeO0sTfx": {
+        "first_public": "2025-09-12",
+        "first_record": None,
+        "precision": "day",
+        "kind": "earliest_known",
+        "spotify": "2025-09-12",
+        "status": "partial",
+        "source": "MusicBrainz, first-release-date of the recording, title and artist match checked",
+        "url": "https://musicbrainz.org/search?query=Frost%20Children%20RADIO%20%28feat.%20Kim%20Petras%29&type=recording",
+        "checked": "2026-09-04",
+        "note": "",
+    },
 }

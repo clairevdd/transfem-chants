@@ -23,6 +23,11 @@ ART = {
  "Singer, a defining figure of Turkish classical and arabesque music. She had surgery in London in 1981 and was legally recognised as a woman after Turkish law changed in 1989. Asked in 2021 about a remark that she had “become a woman”, she answered that she had done what she believed was right for herself; no more explicit statement in her own words was found.",
  "Ben kendimce doğru olduğuna inandığım şeyi yaptım. — I did what I believed was right for myself.",None,(("Daily Sabah, 12 October 2021", "https://www.dailysabah.com/arts/portrait/bulent-ersoy-turkeys-transgender-diva"), ("Posta, 10 January 2021", "https://www.posta.com.tr/magazin/bulent-ersoydan-anlamli-cevap-insanlari-bacak-arasiyla-degerlendirmeyin-2297093"))),
 
+"Frost Children": ("partial","United States","English",
+ "Sibling duo of Angel and Lulu Prost, from emotional dance music to hyperpop. Angel speaks of trans people and of “our trans fans”, and of making the world better “for us and them”, which places her among trans people in her own words. Marked partial: it is a collective “us” rather than a first-person statement, and nothing comparable from Lulu was found.",
+ "I care about family. I care about trans people. I think it’s a beautiful world, but scary people are in it. I care about our trans fans. I want to make the world a better place for us and them.",
+ "METAL Magazine (Angel Prost)","https://metalmagazine.eu/en/post/frost-children-metal-53"),
+
 "Kim Petras": ("verified","Germany","English",
  "Pop singer from Germany. Accepting her first Grammy Award in 2023, she spoke as the first transgender woman to win it and thanked the transgender artists who came before her.",
  "Sam graciously wanted me to accept this award because I'm the first transgender woman to win this award","NBC News, 6 February 2023","https://www.nbcnews.com/nbc-out/out-pop-culture/kim-petras-thanks-incredible-transgender-legends-grammy-speech-rcna69296"),
@@ -705,9 +710,9 @@ ART = {
  None,
  "A Gender Variance Who's Who (Zagria)","https://zagria.blogspot.com/2022/10/brigitte-bond-1944-beat-girl-singer.html"),
 
-"Britney Manson": ("verified","Russia","English",
- "Singer, model and influencer.",
- "The fact that I’m a trans woman means nothing when it comes to my career- I have nothing to hide, but I’ve never used my identity as a PR tool etc.","KALTBLUT Magazine, 27 May 2024","https://www.kaltblut-magazine.com/britney-manson-american-dream/"),
+"Britney Manson": ("verified","Russia / Estonia / Poland","English",
+ "Singer, model and influencer of Russian and Estonian origin, based in Warsaw.",
+ "The fact that I’m a trans woman means nothing when it comes to my career- I have nothing to hide, but I’ve never used my identity as a PR tool etc.",None,(("KALTBLUT Magazine, 27 May 2024", "https://www.kaltblut-magazine.com/britney-manson-american-dream/"), ("Sweety High, 27 November 2024", "https://www.sweetyhigh.com/read/britney-manson-wcw-trivia-112724"), ("Pride.com, 31 August 2023", "https://www.pride.com/interviews/britney-manson"))),
 
 "CATTO": ("verified","Brazil","Portuguese",
  "Singer recording since 2009 (Saga), who uses she/her (ela). Describes herself as a non-binary trans person, and recalls telling her mother as a child that she was not a boy.",

@@ -243,6 +243,8 @@ LYRICS = {
     '1F99de97B9zXdnMdtq8KrH': 'https://genius.com/search?q=Katey+Red+Punk+Under+Pressure',
     '67aVjLV3z4QqlXMBrGoOOJ': 'https://genius.com/Portraits-of-tracy-caught-in-a-jam-lyrics',
     '12dWvvky0ceP3vCCgwni0g': 'https://genius.com/Lady-red-couture-hello-grindr-lyrics',
+    '6WkiWn8bf8S29wSk0VwK7h': 'https://genius.com/Frost-children-falling-lyrics',
+    '06kFuqzhMk4E6IYeO0sTfx': 'https://genius.com/Frost-children-and-kim-petras-radio-lyrics',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par
