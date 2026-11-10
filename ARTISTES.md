@@ -4,8 +4,8 @@ Export lisible de `data.py`. **`data.py` fait foi.**
 
 ## Où on en est
 
-- **230 morceaux**
-- **171 artistes présentées comme transféminines**, plus **0 cas ouverts**
+- **233 morceaux**
+- **172 artistes présentées comme transféminines**, plus **0 cas ouverts**
 - **38 pays ou territoires** : Angola, Argentina, Australia, Brazil, Canada, Chile, Estonia, France, Germany, Ghana, Indonesia, Ireland, Israel, Japan, Lebanon, Malaysia, Mexico, Morocco, Netherlands, Pakistan, Peru, Philippines, Poland, Portugal, Puerto Rico, Russia, Serbia, South Africa, South Korea, Spain, Sweden, Thailand, Türkiye, UK, United States, Venezuela, Vietnam, Zambia
 - **27 langues** : Arabic, Darija, Dutch, English, Filipino, French, German, Hebrew, Indonesian, isiZulu, Italian, Japanese, Korean, Malay, Mandarin, Portuguese, Russian, Réunion Creole, Serbian, Spanish, Swedish, Thai, Turkish, Twi, Urdu, Vietnamese, Zapotec
 
@@ -25,7 +25,8 @@ Généré le 2026-11-10
 | **femtanyl** | `verified` | Canada | English | 5 | [METAL Magazine, 3 March 2026](https://metalmagazine.eu/en/post/femtanyl) |
 | **Petal Supply** | `partial` | Canada | English | 1 | [Era Journal](https://erajournal.co.uk/our-journal/immaterial-girls-trans-women-in-synthesis/) |
 | **Chase Icon** | `verified` | United States | English | 2 | [VICE, 29 March 2021](https://www.vice.com/en/article/internet-star-celebrity-impersonator-chase-icon-profile-v28n1/) |
-| **Stef Aranas** | `partial` | Philippines | English | 1 | [The Beat Asia, 23 August 2024](https://thebeat.asia/manila/vibe/artists/the-beat-manilas-up-and-coming-artist-trans-pinay-pop-star-stef-aranas) |
+| **Stef Aranas** | `partial` | Philippines | English, Filipino | 2 | [The Beat Asia, 23 August 2024](https://thebeat.asia/manila/vibe/artists/the-beat-manilas-up-and-coming-artist-trans-pinay-pop-star-stef-aranas) |
+| **Ayesha Erotica** | `partial` | United States | English | 4 | [X (@AyeshaOnline69), 11 February 2024](https://x.com/AyeshaOnline69/status/1756717588636459453) |
 | **Villano Antillano** | `verified` | Puerto Rico | Spanish | 3 | [NPR, 13 March 2023](https://www.npr.org/2023/03/13/1158426326/villano-antillano-la-sustancia-x-interview) |
 | **JEDET** | `verified` | Spain | Spanish | 1 | [Público, 21 June 2020](https://www.publico.es/actualidad/sociedad-establece-mujer-real-seria-imitacion.html), [Neo2, 21 March 2023](https://www.neo2.com/jedet-cancelada-entrevista-nuevo-disco-critica/) |
 | **Titica** | `verified` | Angola | Portuguese | 2 | [Open letter on her official Facebook page, 24 June 2025](https://www.facebook.com/cantoratiticaoficial/posts/pfbid02P4PbbCtG69uzVqmeL1aDmGffFHjDzKBuL5TZjXTj2QaaZ5gtmD4MxYXrED11DqmTl) |
@@ -197,7 +198,8 @@ Généré le 2026-11-10
 
 | Artiste | Pays | Source |
 |---|---|---|
-| Ayesha Erotica | United States | _aucune_ |
+| Donatachi | Unknown | _aucune_ |
+| Yvncc | Unknown | _aucune_ |
 | Bizarrap | Argentina | _aucune_ |
 | Ary | Angola | _aucune_ |
 | Kelmer Pastilha | Angola | _aucune_ |
@@ -263,6 +265,7 @@ Reproduites mot pour mot.
 - **femtanyl** — « When I first started transitioning, music was the only place I could feel that aspect of myself. I could augment my vocals and talk about it openly. » (METAL Magazine, 3 March 2026)
 - **Chase Icon** — « Being trans, so much relies on your voice being able to sound a certain way. » (VICE, 29 March 2021)
 - **Stef Aranas** — « It’s really all about empowering queer people, especially femmes, in all shapes and forms. » (The Beat Asia, 23 August 2024)
+- **Ayesha Erotica** — « My man knows my dead name, my mom, my dad, this shit don't scare me sorry. » (X (@AyeshaOnline69), 11 February 2024)
 - **Villano Antillano** — « I feel like I really became a better musician once I took steps that closened me to my womanhood and my femininity. » (NPR, 13 March 2023)
 - **JEDET** — « Sí, la sociedad establece lo que es una mujer real y lo que no. Para ellos yo sería una imitación. A las mujeres trans nos presionan: existe la falsa creencia de que si no te sometes a la cirugía de reasignación de sexo no eres lo suficientemente mujer. — Yes, society decides what a real woman is and what she is not. To them I would be an imitation. We trans women are put under pressure: there is a false belief that if you do not undergo sex reassignment surgery you are not woman enough. » (None)
 - **Titica** — « Sou Titica. Sou mulher. Sou trans. E exijo respeito. — I am Titica. I am a woman. I am trans. And I demand respect. » (Open letter on her official Facebook page, 24 June 2025)

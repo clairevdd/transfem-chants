@@ -245,6 +245,9 @@ LYRICS = {
     '12dWvvky0ceP3vCCgwni0g': 'https://genius.com/Lady-red-couture-hello-grindr-lyrics',
     '6WkiWn8bf8S29wSk0VwK7h': 'https://genius.com/Frost-children-falling-lyrics',
     '06kFuqzhMk4E6IYeO0sTfx': 'https://genius.com/Frost-children-and-kim-petras-radio-lyrics',
+    '3UC5TaXqpcEnfSepGyKwqZ': 'https://genius.com/Stef-aranas-aji-ang-sarap-lyrics',
+    '2gmwvGC1yOw8NdMcZE8nfo': 'https://genius.com/Ayesha-erotica-literal-legend-lyrics',
+    '1JT4sq2xhusrAuLNajJqFz': 'https://genius.com/Donatachi-and-ayesha-erotica-futr-lyrics',
 }
 
 # Morceaux sans fiche de paroles confirmée : le lien public (généré par

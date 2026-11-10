@@ -44,12 +44,20 @@ ART = {
  "Internet personality, celebrity impersonator and singer. She has spoken of what being trans asks of a voice; her transition was rejected by her family, except for her sister.",
  "Being trans, so much relies on your voice being able to sound a certain way.","VICE, 29 March 2021","https://www.vice.com/en/article/internet-star-celebrity-impersonator-chase-icon-profile-v28n1/"),
 
-"Stef Aranas": ("partial","Philippines","English",
+"Stef Aranas": ("partial","Philippines","English, Filipino",
  "Pop singer from Manila, presented by the press as a trans Pinay pop star and the first transgender artist signed to the independent label Offshore Music. No statement in her own words about her gender identity was found and read.",
  "It’s really all about empowering queer people, especially femmes, in all shapes and forms.","The Beat Asia, 23 August 2024","https://thebeat.asia/manila/vibe/artists/the-beat-manilas-up-and-coming-artist-trans-pinay-pop-star-stef-aranas"),
 
-"Ayesha Erotica": ("guest","United States","—",
- "Credited with Amethyst and Mel 4Ever on “C U L8R” and “Tongues”.",
+"Ayesha Erotica": ("partial","United States","English",
+ "American singer, songwriter and producer of club pop and hyperpop, also credited with Amethyst, Mel 4Ever and Donatachi. In a post on X she refers to her own dead name, which speaks of a transition; no statement naming her gender identity in her own words was found and read, hence partial.",
+ "My man knows my dead name, my mom, my dad, this shit don't scare me sorry.","X (@AyeshaOnline69), 11 February 2024","https://x.com/AyeshaOnline69/status/1756717588636459453"),
+
+"Donatachi": ("guest","Unknown","English",
+ "Credited with Ayesha Erotica on “FUTR (feat. Yvncc)”.",
+ None,None,None),
+
+"Yvncc": ("guest","Unknown","English",
+ "Credited with Ayesha Erotica on “FUTR (feat. Yvncc)”.",
  None,None,None),
 
 "Villano Antillano": ("verified","Puerto Rico","Spanish",

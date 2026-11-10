@@ -3021,4 +3021,43 @@ YEARS = {
         "checked": "2026-09-04",
         "note": "",
     },
+    # Stef Aranas — Aji (Ang Sarap)
+    "3UC5TaXqpcEnfSepGyKwqZ": {
+        "first_public": "2024-11-15",
+        "first_record": None,
+        "precision": "day",
+        "kind": "earliest_known",
+        "spotify": "2024-11-15",
+        "status": "partial",
+        "source": "Platform release date (Spotify metadata, via Tunebat), album Miss Worldwide",
+        "url": "https://open.spotify.com/track/3UC5TaXqpcEnfSepGyKwqZ",
+        "checked": "2026-11-10",
+        "note": "Absent from MusicBrainz and Discogs. Platform date only, not corroborated by a second source.",
+    },
+    # Ayesha Erotica — Literal Legend
+    "2gmwvGC1yOw8NdMcZE8nfo": {
+        "first_public": "2017-08",
+        "first_record": None,
+        "precision": "month",
+        "kind": "earliest_known",
+        "spotify": "2017-10-25",
+        "status": "partial",
+        "source": "MusicBrainz, first-release-date of the recording, title and artist match checked",
+        "url": "https://musicbrainz.org/search?query=Ayesha%20Erotica%20Literal%20Legend&type=recording",
+        "checked": "2026-09-04",
+        "note": "One of the releases on record is a compilation, so this date could belong to a later inclusion; not yet checked against the original release.",
+    },
+    # Donatachi, Ayesha Erotica, Yvncc — FUTR (feat. Yvncc)
+    "1JT4sq2xhusrAuLNajJqFz": {
+        "first_public": "2024-08-29",
+        "first_record": None,
+        "precision": "day",
+        "kind": "first",
+        "spotify": "2024-08-29",
+        "status": "partial",
+        "source": "MusicBrainz, first-release-date of the recording (album Ascension), title and artist match checked",
+        "url": "https://musicbrainz.org/recording/20bf6393-f68a-4a16-b75d-240726c2aa72",
+        "checked": "2026-11-10",
+        "note": "Matches the platform date. Not on Discogs.",
+    },
 }

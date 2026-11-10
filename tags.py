@@ -352,4 +352,7 @@ TAGS = {
     '12dWvvky0ceP3vCCgwni0g': {'discogs': [], 'musicbrainz': [], 'lastfm': ['dance', 'pop']},  # Lady Red Couture — Hello Grindr (Last.fm artist tags, "united states" geographic, "drag queen" blocked; MusicBrainz artist without genres; no Discogs entry)
     '6WkiWn8bf8S29wSk0VwK7h': {'discogs': ['hyperpop', 'dance-pop', 'electro', 'indie pop'], 'musicbrainz': [], 'lastfm': ['hyperpop', 'electropop', 'indie pop', 'electronic']},  # Frost Children — Falling
     '06kFuqzhMk4E6IYeO0sTfx': {'discogs': ['hyperpop', 'dance-pop', 'electro', 'indie pop'], 'musicbrainz': [], 'lastfm': ['fidget house', 'electropop', 'electroclash', 'electro house']},  # Frost Children, Kim Petras — RADIO (feat. Kim Petras)
+    '3UC5TaXqpcEnfSepGyKwqZ': {'discogs': [], 'musicbrainz': [], 'lastfm': []},  # Stef Aranas — Aji (Ang Sarap)
+    '2gmwvGC1yOw8NdMcZE8nfo': {'discogs': ['electroclash', 'dance-pop', 'hyperpop', 'hip-house'], 'musicbrainz': [], 'lastfm': ['hip-house', 'ballroom', 'hyperpop']},  # Ayesha Erotica — Literal Legend
+    '1JT4sq2xhusrAuLNajJqFz': {'discogs': [], 'musicbrainz': [], 'lastfm': ['pop', 'electronic', 'hyperpop', 'bubblegum pop']},  # Donatachi — FUTR (Last.fm, artist level)
 }

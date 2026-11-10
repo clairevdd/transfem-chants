@@ -109,6 +109,7 @@ SECTIONS = [
             ('2rN1ODOsaNfYu782rw36jR', 'Faceshopping', 'SOPHIE'),
             ('4lUlYGT5VvZWN3GBDIc9KT', 'Nonbinary', 'Arca'),
             ('0iGxHL2lPxuh1VIHQLUPUl', 'Lost Angel', 'Kylie Sonique Love'),
+            ('3UC5TaXqpcEnfSepGyKwqZ', 'Aji (Ang Sarap)', 'Stef Aranas'),
             ('2KryklrVDGmWL8IvoGNbb5', 'Zulu Lami', 'Umlilo'),
             ('5nnBHHzUDOGvdMBiXofB00', 'Exiliades', 'Luisa Almaguer'),
             ('5rOzcHIZaF038jMeHkUZR0', 'Reverie', 'Arca'),
@@ -217,12 +218,14 @@ SECTIONS = [
             ('0qMZXgcLfkl5RI3q50KHMH', 'Dumbest Girl Alive', 'Laura Les, Dylan Brady'),
             ('53uyQrCca3tqGU8Voaa0oC', 'Fake luv', 'd0llywood1'),
             ('1XD4K4CGAKTIBmFpvuaFru', 'Dancing with your eyes closed', 'Jane Remover'),
+            ('2gmwvGC1yOw8NdMcZE8nfo', 'Literal Legend', 'Ayesha Erotica'),
             # II — plus saturé
             ('4qdyN6rpaGsspGeMzkCTNP', 'C U L8R', 'Amethyst, Ayesha Erotica'),
             ('1toNKayLMeCcVlsLGXJl7n', 'Haunted', 'Laura Les'),
             ('18QS9wnUr7DOhMb73monpK', 'Tongues', 'Mel 4Ever, Ayesha Erotica'),
             ('0Irj6PuEEGzi7JGJvAhdZ8', 'I Can\'t Quit', 'Mel 4Ever'),
             ("5q7SGc4ngIhrYciZcgJ9Oe", 'Scene Boy', "Ve'ondre"),
+            ('1JT4sq2xhusrAuLNajJqFz', 'FUTR (feat. Yvncc)', 'Donatachi, Ayesha Erotica, Yvncc'),
             ('06kFuqzhMk4E6IYeO0sTfx', 'RADIO (feat. Kim Petras)', 'Frost Children, Kim Petras'),
             ('2sVjF25Z4JTJxi9BXm5GtJ', 'ACT RIGHT', 'femtanyl'),
             ('51NYFGDXYKS4FkRqkw98hx', 'Like Me', 'Chase Icon'),
@@ -315,4 +318,4 @@ def all_tracks():
     return [t for s in SECTIONS for t in s["tracks"]]
 
 
-assert len(all_tracks()) == 230
+assert len(all_tracks()) == 233
