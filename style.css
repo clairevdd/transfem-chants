@@ -186,3 +186,32 @@ header.withcover .cover{grid-column:2;grid-row:1 / span 4;width:150px;height:150
 .searchout .more{padding:6px;font-size:.8rem;color:var(--muted)}
 tr:target td{background:var(--soft)}
 details.row:target>summary{background:var(--soft)}
+
+/* --- barre collée, nom du site et menu (10 novembre 2026) --- */
+html{scroll-padding-top:72px}
+.pagenav.js{position:sticky;top:0;z-index:60;padding:12px 0;margin-top:-12px}
+.pagenav.js::before{content:"";position:absolute;top:0;bottom:0;left:calc(50% - 50vw);width:100vw;z-index:-1;
+ background:color-mix(in srgb,var(--bg) 90%,transparent);border-bottom:1px solid var(--line);
+ -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+body{overflow-x:clip}
+.pagenav{gap:16px}
+.pagenav .brand{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:1rem;
+ color:var(--ink);letter-spacing:.01em;white-space:nowrap;border-bottom:0;margin-right:4px}
+.pagenav .brand:hover{color:var(--accent)}
+.navlinks{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.menubtn{display:none;align-items:center;gap:6px;font:inherit;font-size:.8rem;background:none;
+ color:var(--muted);border:1px solid var(--line);border-radius:99px;height:26px;padding:0 10px;cursor:pointer}
+.menubtn:hover,.menubtn[aria-expanded="true"]{color:var(--accent);border-color:var(--accent)}
+@media (max-width:1000px){
+ .pagenav.js{flex-wrap:nowrap}
+ .pagenav.js .menubtn{display:inline-flex}
+ .pagenav.js .menubtn[hidden]{display:none}
+ .pagenav.js .navlinks{display:none;position:absolute;left:0;top:calc(100% + 6px);z-index:70;
+  flex-direction:column;align-items:flex-start;gap:0;min-width:220px;padding:6px;
+  background:var(--panel);border:1px solid var(--line);border-radius:9px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+ .pagenav.js.open .navlinks{display:flex}
+ .pagenav.js .navlinks a,.pagenav.js .navlinks .here{display:block;width:100%;box-sizing:border-box;padding:9px 10px;border-radius:6px;border-bottom:0}
+ .pagenav.js .navlinks a:hover{background:var(--soft)}
+ .pagenav.js .navlinks .here{background:var(--soft)}
+}
+@media (max-width:420px){.pagenav .brand{font-size:.92rem}.menubtn span{display:none}.menubtn{padding:0 8px}}

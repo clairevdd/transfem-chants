@@ -198,12 +198,41 @@ SEARCH_UI = (
 )
 
 
+# Barre de navigation collée en haut au défilement, avec le nom du site
+# (10 novembre 2026, à la demande de Claire). Sur écran étroit, les onglets
+# passent derrière un bouton « Menu » (choix de Claire) ; sans JavaScript, ils
+# restent affichés en clair et la barre n'est pas collée.
+MENU_SCRIPT = (
+    '<script>(function(){var n=document.getElementById("tc-nav"),b=document.getElementById("tc-menu"),'
+    'l=document.getElementById("tc-links");n.classList.add("js");b.hidden=false;'
+    'function s(v){n.classList.toggle("open",v);b.setAttribute("aria-expanded",v?"true":"false")}'
+    'b.addEventListener("click",function(e){e.stopPropagation();s(!n.classList.contains("open"))});'
+    'l.addEventListener("click",function(e){if(e.target.closest("a"))s(false)});'
+    'document.addEventListener("click",function(e){if(!n.contains(e.target))s(false)});'
+    'document.addEventListener("keydown",function(e){if(e.key==="Escape"&&n.classList.contains("open")){s(false);b.focus()}});'
+    # Arrivée sur une ancre depuis une autre page : saut immédiat, pas de
+    # défilement animé sur des pages de plusieurs dizaines de milliers de
+    # pixels (il s'interrompait sur Android). La page « by year » a son propre
+    # saut, qui ouvre la fiche.
+    'if(location.hash){var t=0;addEventListener("touchstart",function(){t=1},{passive:true});addEventListener("wheel",function(){t=1},{passive:true});'
+    'var j=function(){if(t)return;var e=document.getElementById(decodeURIComponent(location.hash.slice(1)));'
+    'if(e&&e.tagName!=="DETAILS")e.scrollIntoView({behavior:"instant"})};'
+    'document.addEventListener("DOMContentLoaded",j);addEventListener("load",function(){setTimeout(j,50)});[300,900].forEach(function(d){setTimeout(j,d)})}'
+    '})()</script>'
+)
+
+
 def _nav(here):
     def link(href, label):
         if href == here:
             return f'<span class="here">{label}</span>'
         return f'<a href="{href}">{label}</a>'
-    return ('<nav class="pagenav">'
+    return ('<nav class="pagenav" id="tc-nav">'
+            + '<a class="brand" href="index.html">Transfem chants</a>'
+            + '<button type="button" class="menubtn" id="tc-menu" hidden aria-expanded="false" aria-controls="tc-links">'
+            + '<svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+            + '<span>Menu</span></button>'
+            + '<span class="navlinks" id="tc-links">'
             + link("index.html", "Sources")
             + link("countries.html", "By country")
             + link("languages.html", "By language")
@@ -211,8 +240,9 @@ def _nav(here):
             + link("tags.html", "By tags")
             + link("sonic.html", "By sonic profile")
             + link("takedown.html", "Removals")
+            + '</span>'
             + '<span class="navtools">' + SEARCH_UI + THEME_BUTTON + '</span>'
-            + '</nav>')
+            + '</nav>' + MENU_SCRIPT)
 
 
 # Paliers fixes plutôt que relatifs au maximum : les effectifs sont petits, et
