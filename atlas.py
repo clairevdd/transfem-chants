@@ -206,7 +206,11 @@ MENU_SCRIPT = (
     '<script>(function(){var n=document.getElementById("tc-nav"),b=document.getElementById("tc-menu"),'
     'l=document.getElementById("tc-links");n.classList.add("js");b.hidden=false;'
     'function s(v){n.classList.toggle("open",v);b.setAttribute("aria-expanded",v?"true":"false")}'
-    'b.addEventListener("click",function(e){e.stopPropagation();s(!n.classList.contains("open"))});'
+    'var sb=document.getElementById("tcs-btn"),sp=document.getElementById("tcs-panel");'
+    # Menu et recherche ne s'ouvrent jamais ensemble : ouvrir l'un ferme l'autre.
+    'if(sb)sb.addEventListener("click",function(){s(false)});'
+    'b.addEventListener("click",function(e){e.stopPropagation();var v=!n.classList.contains("open");'
+    'if(v&&sp&&!sp.hidden){sp.hidden=true;sb.setAttribute("aria-expanded","false")}s(v)});'
     'l.addEventListener("click",function(e){if(e.target.closest("a"))s(false)});'
     'document.addEventListener("click",function(e){if(!n.contains(e.target))s(false)});'
     'document.addEventListener("keydown",function(e){if(e.key==="Escape"&&n.classList.contains("open")){s(false);b.focus()}});'
