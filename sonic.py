@@ -1438,7 +1438,6 @@ bottom of this page for exactly what is shown instead, and why.</p>
 </header>
 
 <h2>The cloud</h2>
-{legend}
 <div id="sonic3d">
 <div class="sonic3d-canvas" hidden></div>
 <p class="sonic3d-noscript-msg sonic3d-hint">The 3D cloud needs JavaScript
@@ -1446,6 +1445,7 @@ and WebGL. Every song is already listed, grouped and described below without
 either.</p>
 <div class="sonic3d-tooltip" hidden></div>
 </div>
+{legend}
 <p class="sonic3d-hint">Loaded from <a href="https://threejs.org/"
 target="_blank" rel="noopener">three.js</a>, the only external library on
 this site.</p>
