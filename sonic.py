@@ -1430,14 +1430,14 @@ def sonic_page(css, esc, slug, artists_of, aliases, same_person, badge,
 <h1>By sonic profile</h1>
 <p class="sub">{n_tracks} songs from this playlist were analysed, positioned
 by how they sound rather than how they are labelled, from audio features
-licensed from Tunebat and reduced to <a href="#dimensions">three dimensions</a>
+licensed from Tunebat and reduced to <a href="#cloud">three dimensions</a>
 and <a href="#groups">five groups</a>. No
 individual track's raw feature values are published here or anywhere in
 this repository: Tunebat's terms do not allow it. See the note at the
 bottom of this page for exactly what is shown instead, and why.</p>
 </header>
 
-<h2>The cloud</h2>
+<h2 id="cloud">The cloud</h2>
 <div id="sonic3d">
 <div class="sonic3d-canvas" hidden></div>
 <p class="sonic3d-noscript-msg sonic3d-hint">The 3D cloud needs JavaScript
@@ -1461,7 +1461,7 @@ less than the grouping below it: clustering was done on all nine features,
 so groups that overlap visually here are still fully distinct in the
 underlying data.</p>
 
-<h2 id="dimensions">The three dimensions</h2>
+<h3 class="sec" id="dimensions">What the three dimensions show</h3>
 <p class="secblurb">The nine features described at the bottom of this page, standardised and reduced by
 principal component analysis to the three axes drawn in the cloud. Together
 they explain 61% of how the nine features vary across the playlist; the
@@ -1470,6 +1470,7 @@ remaining 39% is not shown, in the cloud or anywhere else on this page.</p>
 
 <h2 id="groups">The five groups</h2>
 {clusters_html}
+<h3 class="sec">How groups are built</h3>
 <p class="secblurb">Computed by hierarchical clustering (Ward's method) on
 all nine standardised features rather than on the three-axis reduction shown
 above, so nothing is lost at this step. Claire set two constraints
