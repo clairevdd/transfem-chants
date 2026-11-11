@@ -36,7 +36,7 @@ ISSUES = "https://github.com/clairevdd/transfem-tracks/issues"
 # balises canonical et Open Graph et au plan du site (sitemap.xml).
 SITE = "https://clairevdd.github.io/transfem-tracks/"
 PAGES = ["index.html", "countries.html", "languages.html", "years.html",
-         "tags.html", "sonic.html", "takedown.html"]
+         "tags.html", "sonic.html"]
 
 # Canal privé pour tout ce qui touche à l'identité d'une personne : demande de
 # retrait, passage en stealth, changement d'identité.
@@ -51,7 +51,7 @@ PAGES = ["index.html", "countries.html", "languages.html", "years.html",
 # pages générées, ni dans l'historique git, qui est public et définitif.
 # Le contrôle _no_email() ci-dessous refuse de générer les pages si une adresse
 # ou un lien mailto s'y glisse.
-CONTACT = "https://tally.so/r/2EWdyg"
+CONTACT = atlas.CONTACT  # défini dans atlas.py, utilisé par la barre de navigation
 
 BADGE = {
     "verified": ("verified", "st-ok"),
@@ -365,7 +365,7 @@ def card(name):
         s = ''
     if name in TAKEDOWN_LINK:
         s += ('<p class="src">To ask for this entry to be taken down, use the '
-              '<a href="takedown.html">private channel</a>: a request from her, '
+              f'<a href="{CONTACT}" target="_blank" rel="noopener">private form</a>: a request from her, '
               'or from someone writing for her, is enough.</p>')
     extra = " card-note" if status == "guest" else ""
     return (f'<article class="card{extra}" id="{slug(name)}">'
@@ -420,7 +420,7 @@ def page():
 <li><strong>Singing, not only composing.</strong> The artist has to carry the vocal. Trans composers and producers whose relevant work is instrumental were left out for that reason alone.</li>
 <li><strong>A transfeminine identity.</strong> Anyone who does not recognise herself in the masculine gender she was assigned at birth — nearly every modern society assigns one administratively. Trans women, and non-binary or agender people assigned male at birth, but also artists whose own word for themselves comes from a tradition that maps onto none of those. Where an artist names her identity in her own terms, this page keeps her terms rather than translating them into ours.</li>
 <li><strong>Made public by the artist.</strong> An identity inferred from gender expression, with no statement or confirmation, is not enough.</li>
-<li><strong>Still current, and still willing.</strong> Artists who no longer identify this way were left out. So is anyone still trans who has since chosen to live stealth and would rather their transness not be published. That second case cannot be established from outside, so it rests on being told — and on being told somewhere that costs the person telling nothing. See <a href="takedown.html">taking an entry down</a>.</li>
+<li><strong>Still current, and still willing.</strong> Artists who no longer identify this way were left out. So is anyone still trans who has since chosen to live stealth and would rather their transness not be published. That second case cannot be established from outside, so it rests on being told — and on being told somewhere that costs the person telling nothing. The <a href="{CONTACT}" target="_blank" rel="noopener">private form for changes and removals</a> is that place.</li>
 <li><strong>Arbitrary inclusions.</strong> Where the evidence meets these criteria without settling every question, the track was kept and the doubt written down: see the <span class="st st-her">partial</span> entries. Where it does not meet them, the artist and her tracks are left out until a statement in her own words is found.</li>
 </ul>
 
@@ -429,7 +429,7 @@ def page():
 <p>Not every line here carries the same weight, and the page says so rather than hiding it. <span class="st st-ok">verified</span> means the source was opened and read, and states the claim explicitly. <span class="st st-her">partial</span> means the source is suggestive but carries no explicit first-person statement, or the artist’s own position is more complicated than the label. <span class="st st-note">featured</span> marks someone credited on a track without being its lead artist.</p>
 <p>Where an artist has described themselves in their own words, those words are quoted rather than paraphrased. The distinction matters: the criterion is what the artist said, not what the compiler concluded.</p>
 <p>A <span class="st st-ok">verified</span> mark is never permanent. It records that a source was read on a given day; it does not close the question. This page began after an artist was nearly cut from the playlist on the strength of an unsourced claim about their gender, apparently confused with a different musician entirely. The correction was made, and then sat untouched until it too had quietly stopped being true. Both mistakes came from the same habit: repeating what was already written instead of going back to look.</p>
-<p>Rechecking older entries on a schedule would not fix that, and would make something else worse. The artists easiest to recheck are the ones a press already follows; those who speak to their audience only through their own accounts would be rechecked last and least, which is the bias set out further down, reintroduced as a maintenance routine. So this page relies on being told instead — that someone’s identity has changed, that she now lives stealth, that she wants her entry gone. All of that goes through <a href="takedown.html">a private channel, on its own page</a>, never through a public thread.</p>
+<p>Rechecking older entries on a schedule would not fix that, and would make something else worse. The artists easiest to recheck are the ones a press already follows; those who speak to their audience only through their own accounts would be rechecked last and least, which is the bias set out further down, reintroduced as a maintenance routine. So this page relies on being told instead — that someone’s identity has changed, that she now lives stealth, that she wants her entry gone. All of that goes through <a href="{CONTACT}" target="_blank" rel="noopener">a private form</a>, never through a public thread.</p>
 </div>
 
 <h2>The artists</h2>
@@ -461,12 +461,14 @@ def page():
 <p>There is a bias built into the third criterion, and it is better named than hidden. Requiring a public statement means requiring that someone was interviewed, recorded and published — which happens to artists a press has already decided are worth covering. An artist with no interviews, no profile and no biography cannot meet the criterion however out she is among the people who know her. So this page over-represents the already visible and under-represents the precarious, the very young, and anyone working outside the reach of a music press. Several artists were left off these pages for that reason alone, and their absence says nothing about them.</p>
 
 <p>Several language areas are still missing: nothing in Persian, Hindi, or the languages of East Africa, and one song each in most of what is here. That is not an absence of artists. It is an absence of usable public sources. In a number of those contexts, declaring yourself publicly carries real risk, and the shape of this page reflects that before it reflects anything about the music. The gaps do close: German, Indonesian and Urdu were each named here as missing until an artist turned up who had said something about herself in public, in her own words, and could be read.</p>
-<p>Know an artist who should be here? <a href="{atlas.SUGGEST}" target="_blank" rel="noopener">Suggest her</a> through the form. Found an error in a date or a source? <a href="{ISSUES}" target="_blank" rel="noopener">Open an issue</a>: that thread is public, which is fine for a date or a citation. Anything touching a particular person’s identity, taking an entry down first among them, goes through <a href="takedown.html">a channel of its own</a> instead.</p>
+<p>Know an artist who should be here? <a href="{atlas.SUGGEST}" target="_blank" rel="noopener">Suggest her</a> through the form. Found an error in a date or a source? <a href="{ISSUES}" target="_blank" rel="noopener">Open an issue</a>: that thread is public, which is fine for a date or a citation. Anything touching a particular person’s identity, taking an entry down first among them, goes through <a href="{CONTACT}" target="_blank" rel="noopener">a channel of its own</a> instead.</p>
+
+{atlas.legal_html()}
 
 <footer>
 <p>Companion page to the Spotify playlist <a href="{PLAYLIST}" target="_blank" rel="noopener"><strong>Transfem Tracks</strong></a>. The identities described here are the ones the artists have made public themselves; every link goes to the source for the claim beside it.</p>
 <p class="colophon">Compiled <time datetime="2026-08">August 2026</time>. The playlist is by <a href="https://github.com/clairevdd" target="_blank" rel="noopener">Claire</a>, who set the criteria and made every call about what stays and what goes. The source research behind this page, the verification of each artist’s public statement, and the page itself were done by Claude, Anthropic’s AI assistant, working from those criteria. Where a claim could not be verified, that is written down rather than smoothed over.</p>
-<p class="colophon"><a href="takedown.html#legal">Legal notice and privacy</a></p>
+<p class="colophon"><a href="#legal">Legal notice and privacy</a></p>
 </footer>
 
 </div>
@@ -579,10 +581,11 @@ if __name__ == "__main__":
 
     # La politique de retrait, sur sa propre page depuis le 9 septembre 2026 :
     # elle prenait trop de place dans index.html.
-    take = atlas.takedown_page(css, PLAYLIST, ISSUES, CONTACT)
-    _no_email("takedown.html", take)
-    open("takedown.html", "w", encoding="utf-8").write(take)
-    print(f"takedown.html écrit : {len(take)} octets")
+    # La page Removals n'existe plus (11 novembre 2026) : aucun lien ne
+    # doit y mener.
+    for p in PAGES:
+        if "takedown.html" in open(p, encoding="utf-8").read():
+            raise SystemExit(f"build.py : {p} renvoie encore vers takedown.html")
 
     idx = search_index()
     years_text = open("years.html", encoding="utf-8").read()
