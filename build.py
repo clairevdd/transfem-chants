@@ -324,7 +324,11 @@ def card(name):
         links_html = ", ".join(
             f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(nm)}</a>'
             for nm, u in srcurl)
-        s = f'<p class="src">Sources: {links_html}</p>'
+        # Le pluriel compte les sources, pas les liens : une copie archivée
+        # est un second lien vers la même source (11 novembre 2026).
+        n_src = sum(1 for nm, _ in srcurl if not nm.lower().startswith("archived copy"))
+        label = "Sources" if n_src > 1 else "Source"
+        s = f'<p class="src">{label}: {links_html}</p>'
     elif srcurl:
         s = f'<p class="src">Source: <a href="{esc(srcurl)}" target="_blank" rel="noopener">{esc(src)}</a></p>'
     elif status == "unresolved":
