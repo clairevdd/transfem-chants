@@ -474,7 +474,9 @@ def seo_tags():
         d = re.search(r'<meta name="description" content="([^"]*)"', text)
         title = m.group(1).strip() if m else "Transfem Tracks"
         desc = d.group(1) if d else ""
-        tags = (f'<link rel="canonical" href="{url}">\n'
+        verif = ('<meta name="google-site-verification" content="qT6yrEeij9IixiRGg5rg4eShdPrTJ2TBa4QzXn78iuY">\n'
+                 if name == "index.html" else "")
+        tags = (verif + f'<link rel="canonical" href="{url}">\n'
                 f'<meta property="og:type" content="website">\n'
                 f'<meta property="og:site_name" content="Transfem Tracks">\n'
                 f'<meta property="og:title" content="{title}">\n'
