@@ -314,8 +314,22 @@ def card(name):
     label, cls = BADGE[status]
     n = sum(1 for _, c in TRACKS if name in artists_of(c))
     plural = "s" if n > 1 else ""
-    meta = (f'{esc(country)} &middot; {esc(lang)} &middot; {n} track{plural}'
-            if lang != "—" else f'{esc(country)} &middot; {n} track{plural}')
+    # Pays et langues liés à leur section de « by country » / « by language »
+    # (demande de Claire, 11 novembre 2026). Mêmes découpages que atlas._index ;
+    # pas de lien pour les invitées ni pour une artiste sans morceau, absentes
+    # de ces pages. check_atlas_links() vérifie que chaque ancre existe.
+    linked = status != "guest" and n > 0
+    def c_link(c):
+        key = COUNTRY_ALIASES.get(c.strip(), c.strip())
+        if not linked or key == "Unknown" or key not in atlas.COUNTRIES:
+            return esc(c)
+        return f'<a href="countries.html#c-{atlas.COUNTRIES[key][0]}">{esc(c)}</a>'
+    def l_link(l):
+        return f'<a href="languages.html#l-{slug(l.strip())}">{esc(l.strip())}</a>' if linked else esc(l.strip())
+    country_html = " / ".join(c_link(c) for c in country.split(" / "))
+    lang_html = ", ".join(l_link(l) for l in lang.split(","))
+    meta = (f'{country_html} &middot; {lang_html} &middot; {n} track{plural}'
+            if lang != "—" else f'{country_html} &middot; {n} track{plural}')
     q = f'<blockquote>{esc(quote)}</blockquote>' if quote else ''
     # Une fiche peut citer plusieurs sources plutôt qu'une seule : src vaut
     # alors None et srcurl une liste/un tuple de paires (nom, URL), au lieu
@@ -464,6 +478,15 @@ def check_search(idx, pages):
         sys.exit(f"ERREUR recherche : {len(bad)} ancres introuvables, ex. {bad[:3]}")
 
 
+def check_atlas_links(index_html):
+    """Chaque lien pays/langue d'une fiche mène à une ancre qui existe."""
+    for page, pre in (("countries.html", "c-"), ("languages.html", "l-")):
+        ids = set(re.findall(r'id="([^"]+)"', open(page, encoding="utf-8").read()))
+        for a in set(re.findall(rf'href="{page}#({pre}[^"]+)"', index_html)):
+            if a not in ids:
+                raise SystemExit(f"build.py : lien {page}#{a} sans ancre")
+
+
 def seo_tags():
     """Indexation, décision de Claire du 11 novembre 2026 : tout le site est
     indexable. Ajoute à chaque page générée une balise canonical et des
@@ -540,6 +563,7 @@ if __name__ == "__main__":
     _no_email("search-index.json", js)
     open("search-index.json", "w", encoding="utf-8").write(js)
     print(f"search-index.json écrit : {len(idx)} entrées, {len(js.encode())} octets")
+    check_atlas_links(open("index.html", encoding="utf-8").read())
     seo_tags()
 
     print(f"  {st['presented']} artistes présentées comme transfem + {st['open_cases']} cas ouverts")
