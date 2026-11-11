@@ -32,6 +32,7 @@ Le vide n'est pas recadré : les années sans morceau gardent leur largeur réel
 C'est le même parti pris que les pays gris de la carte.
 """
 import atlas
+import roman
 from data import ART
 from tracks import SECTIONS
 from years import YEARS
@@ -148,7 +149,7 @@ def _timeline(rows, esc, badge):
             x = PAD + (r["y"] - Y0) * colw
             w = colw
             yy = base - (k + 1) * rowh + 1.4
-            lab = f'{esc(r["credit"])} — {esc(r["title"])} — {esc(r["pub"])}'
+            lab = f'{esc(roman.rom_text(r["credit"]))} — {esc(roman.rom_text(r["title"]))} — {esc(r["pub"])}'
             marks.append(
                 f'<rect class="mk {CLS[r["status"]]}" x="{x:.2f}" y="{yy:.1f}" '
                 f'width="{w:.2f}" height="{rowh - 2.8:.1f}" rx="1">'
@@ -197,7 +198,7 @@ def _gaps(rows, esc):
     for i, r in enumerate(sel):
         yy = 20 + i * rowh
         xp, xs = sx(r["y"]), sx(r["sy"]) if r["sy"] is not None else None
-        name = f'{r["credit"]} — {r["title"]}'
+        name = roman.rom_text(f'{r["credit"]} — {r["title"]}')
         if len(name) > 36:
             name = name[:35] + "…"
         body.append(f'<text class="lb" x="{LAB - 10:.1f}" y="{yy + 4:.1f}">{esc(name)}</text>')
@@ -301,8 +302,8 @@ def _table(rows, esc, badge):
             f'<details class="row k{i}" id="y-{r["id"]}">'
             f'<summary><span class="yr">{r["y"]}</span>'
             f'<span class="st {cls}">{esc(lab)}</span>'
-            f'<span class="tt">{esc(r["title"])}</span>'
-            f'<span class="cr">{esc(r["credit"])}</span></summary>'
+            f'<span class="tt">{roman.rom_html(r["title"], esc)}</span>'
+            f'<span class="cr">{roman.rom_html(r["credit"], esc)}</span></summary>'
             f'<div class="fiche">'
             f'<p class="meta">First publication held: <strong>{esc(r["pub"])}</strong>'
             f' · known to the {esc(r["prec"] or "year")}</p>'

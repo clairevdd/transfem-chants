@@ -264,6 +264,7 @@ from data import ART
 from tracks import all_tracks
 
 import atlas
+import roman
 
 # three.js, chargée depuis jsdelivr (miroir direct de npm, mêmes chemins) :
 # c'est la seule bibliothèque externe de tout le dépôt. Version figée pour
@@ -807,13 +808,13 @@ def _track_line(r, esc, slug):
     names = [n.strip() for n in r["credit"].split(",") if n.strip() != r["primary"]]
     cr = "with " + ", ".join(
         f'<a class="{"guest" if ART[n][0] == "guest" else "lead"}" '
-        f'href="index.html#{slug(n)}">{esc(n)}</a>' for n in names) if names else ""
+        f'href="index.html#{slug(n)}">{roman.rom_html(n, esc)}</a>' for n in names) if names else ""
     # id="track-<spotify id>" : cible d'ancrage pour le clic sur un point du
     # nuage 3D, qui doit renvoyer au morceau lui-même et pas seulement à la
     # section de son groupe. Ajouté le 10 septembre 2026 à la demande de
     # Claire.
     return (f'<li id="track-{esc(r["id"])}"><a href="{esc(url)}" target="_blank" '
-            f'rel="noopener">{esc(r["title"])}</a> <span class="cr">{cr}</span></li>')
+            f'rel="noopener">{roman.rom_html(r["title"], esc)}</a> <span class="cr">{cr}</span></li>')
 
 
 def _cluster_results_html(tracks, esc, slug):
@@ -821,11 +822,11 @@ def _cluster_results_html(tracks, esc, slug):
     for r in tracks:
         by_artist[r["primary"]].append(r)
     blocks = []
-    for name in sorted(by_artist, key=str.lower):
+    for name in sorted(by_artist, key=roman.sort_key):
         rows = by_artist[name]
         blocks.append(
             f'<div class="atlas-artist"><h4><a href="index.html#{slug(name)}">'
-            f'{esc(name)}</a></h4><ul class="atlas-tracks">'
+            f'{roman.rom_html(name, esc)}</a></h4><ul class="atlas-tracks">'
             + "".join(_track_line(r, esc, slug) for r in rows)
             + '</ul></div>')
     return "".join(blocks)
@@ -998,8 +999,8 @@ def _scene_json(artists_of):
             continue
         rows.append({
             "id": sid,
-            "t": title,
-            "a": _primary(credit, artists_of),
+            "t": roman.rom_text(title),
+            "a": roman.rom_text(_primary(credit, artists_of)),
             "c": info["cluster"],
             "p": list(info["pc"]),
         })

@@ -77,6 +77,7 @@ from tracks import all_tracks
 from tags import TAGS
 
 import atlas
+import roman
 
 # Tags dominants affichés en nuage ; le reste va dans la liste alphabétique
 # repliée. Doit rester identique à DOMINANT_N dans le script embarqué plus bas.
@@ -171,7 +172,7 @@ def _track_line(r, esc, slug):
     names = [n.strip() for n in r["credit"].split(",") if n.strip() != r["primary"]]
     cr = "with " + ", ".join(
         f'<a class="{"guest" if ART[n][0] == "guest" else "lead"}" '
-        f'href="index.html#{slug(n)}">{esc(n)}</a>' for n in names) if names else ""
+        f'href="index.html#{slug(n)}">{roman.rom_html(n, esc)}</a>' for n in names) if names else ""
     tags_json = esc(json.dumps(r["tags"]))
     src_lines = "".join(
         f'<div class="srcline"><b>{label}</b> {esc(", ".join(r["sources"].get(key) or []))}</div>'
@@ -179,7 +180,7 @@ def _track_line(r, esc, slug):
     if not src_lines:
         src_lines = '<div class="srcline none">No source tag found (unclassified)</div>'
     return (f'<li data-tags="{tags_json}">'
-            f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(r["title"])}</a> '
+            f'<a href="{esc(url)}" target="_blank" rel="noopener">{roman.rom_html(r["title"], esc)}</a> '
             f'<span class="cr">{cr}</span>'
             f'{src_lines}</li>')
 
@@ -189,11 +190,11 @@ def _results_html(records, esc, slug):
     for r in records:
         by_artist.setdefault(r["primary"], []).append(r)
     blocks = []
-    for name in sorted(by_artist, key=str.lower):
+    for name in sorted(by_artist, key=roman.sort_key):
         rows = by_artist[name]
         blocks.append(
             f'<section class="atlas-group" data-artist="{esc(name)}">'
-            f'<h4 class="ctry"><a href="index.html#{slug(name)}">{esc(name)}</a> '
+            f'<h4 class="ctry"><a href="index.html#{slug(name)}">{roman.rom_html(name, esc)}</a> '
             f'<span class="cnt">{len(rows)}</span></h4>'
             f'<ul class="atlas-tracks">'
             + "".join(_track_line(r, esc, slug) for r in rows)

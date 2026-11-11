@@ -19,6 +19,7 @@ import re
 import urllib.parse
 
 import atlas
+import roman
 import chrono
 import tagcloud
 import sonic
@@ -76,10 +77,15 @@ def esc(s):
 
 
 def slug(name):
-    s = name.lower()
+    # Un nom non latin prend l'ancre de sa transcription (roman.py) ; sans
+    # elle, l'ancre de 鍾潔希 était « a- », vide (corrigé le 11 novembre 2026).
+    s = roman.ROMAN.get(name, (name,))[0].lower()
     for k, v in ACCENTS.items():
         s = s.replace(k, v)
-    return "a-" + re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    out = "a-" + re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    if out == "a-" and roman.non_latin(name):
+        raise SystemExit(f"build.py : ancre vide pour {name!r}")
+    return out
 
 
 # Une adresse écrite dans un fichier du dépôt y reste : les pages se regénèrent,
@@ -118,6 +124,8 @@ def wiki_only(v):
 
 
 def check():
+    # Transcriptions latines : chaque nom ou titre non latin en a une.
+    roman.check(ART.keys(), [t for _, t, _ in all_tracks()])
     if not CONTACT:
         raise SystemExit(
             "build.py : CONTACT est vide. Renseigner en tête de build.py l'URL du "
@@ -266,7 +274,7 @@ def tracklist():
             links = []
             for name in artists_of(credit):
                 cls = "guest" if ART[name][0] == "guest" else "lead"
-                links.append(f'<a class="{cls}" href="#{slug(name)}">{esc(name)}</a>')
+                links.append(f'<a class="{cls}" href="#{slug(name)}">{roman.rom_html(name, esc)}</a>')
             url = "https://open.spotify.com/track/" + sid
             # L'année de première parution vient de years.py. La page « by year »
             # porte la source et la réserve ; ici on ne donne que le millésime.
@@ -294,7 +302,7 @@ def tracklist():
             else:
                 lyr_cell = ""
             out.append(f'<tr id="t-{sid}"><td class="n">{n}</td>'
-                       f'<td class="ti"><a href="{esc(url)}" target="_blank" rel="noopener">{esc(title)}</a></td>'
+                       f'<td class="ti"><a href="{esc(url)}" target="_blank" rel="noopener">{roman.rom_html(title, esc)}</a></td>'
                        f'<td class="cr">{" · ".join(links)}</td>'
                        f'<td class="yr"><a href="years.html#y-{sid}" title="{esc(ttl)}">{yr}</a></td>'
                        f'<td class="ly">{lyr_cell}</td></tr>')
@@ -355,12 +363,16 @@ def card(name):
               'or from someone writing for her, is enough.</p>')
     extra = " card-note" if status == "guest" else ""
     return (f'<article class="card{extra}" id="{slug(name)}">'
-            f'<h4>{esc(name)}<span class="st {cls}">{esc(label)}</span></h4>'
+            f'<h4>{roman.rom_html(name, esc)}<span class="st {cls}">{esc(label)}</span></h4>'
             f'<p class="meta">{meta}</p><p class="desc">{esc(identity)}</p>{q}{s}</article>')
 
 
 def page():
-    order = order_of_appearance()
+    # Fiches par ordre alphabétique (demande de Claire, 11 novembre 2026),
+    # sans tenir compte de la casse ni des accents ; même ensemble d'artistes
+    # qu'avant, seul l'ordre change.
+    # Un nom en écriture non latine se range à sa transcription (roman.py).
+    order = sorted(order_of_appearance(), key=roman.sort_key)
     leads = '<div class="cards">' + "\n".join(
         card(n) for n in order if ART[n][0] != "guest") + '</div>'
     guests = '<div class="cards">' + "\n".join(
@@ -415,7 +427,7 @@ def page():
 </div>
 
 <h2>The artists</h2>
-<p>In order of appearance.</p>
+<p>In alphabetical order.</p>
 <p class="statnote">Countries and languages are counted per artist, not per track: they record where an artist is from and which languages she records in, so a language listed here does not guarantee a song in that language on the playlist.</p>
 <ul class="legend">
 <li><span class="st st-ok">verified</span> source read directly</li>
@@ -462,9 +474,13 @@ def search_index():
     10 novembre 2026. Une artiste mène à sa fiche, un morceau à sa ligne dans
     la playlist de la page d'accueil. Pas de citations ni de descriptions."""
     on_page = {n for _, c in TRACKS for n in artists_of(c)}
-    idx = [{"t": n, "c": "artist", "h": "index.html#" + slug(n)}
-           for n in sorted(on_page, key=str.lower)]
-    idx += [{"t": t, "s": c, "c": "song", "h": "index.html#t-" + sid}
+    # « r » : transcription latine (roman.py), cherchée et affichée aussi.
+    def r(x):
+        return {"r": roman.ROMAN[x][0]} if x in roman.ROMAN else {}
+    idx = [{"t": n, **r(n), "c": "artist", "h": "index.html#" + slug(n)}
+           for n in sorted(on_page, key=roman.sort_key)]
+    idx += [{"t": t, **r(t), "s": roman.rom_text(c), "c": "song",
+             "h": "index.html#t-" + sid}
             for sid, t, c in all_tracks()]
     return idx
 

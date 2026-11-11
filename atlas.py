@@ -9,6 +9,7 @@ compte d'artistes. Elle est faite pour montrer le vide autant que le plein :
 les pays gris ne sont pas des pays sans artistes transféminines, ce sont des
 pays sans sources publiques lisibles d'ici. La page le dit.
 """
+import roman
 from data import ART
 from tracks import all_tracks
 from worldmap import SHAPES, VIEWBOX
@@ -91,7 +92,7 @@ def _index(esc, slug, artists_of, aliases, same_person):
         rows.append({"name": key, "status": v[0], "countries": countries,
                      "languages": languages, "tracks": d["tracks"],
                      "names": d["names"]})
-    rows.sort(key=lambda r: r["name"].lower())
+    rows.sort(key=lambda r: roman.sort_key(r["name"]))
     return rows
 
 
@@ -119,10 +120,10 @@ def _others(credit, header_names):
 def _track_list(tracks, esc, header_names=("", frozenset())):
     def cr(credit):
         o = _others(credit, header_names)
-        return f' <span class="cr">{esc(o)}</span>' if o else ""
+        return f' <span class="cr">{roman.rom_html(o, esc)}</span>' if o else ""
     items = "".join(
         f'<li><a href="https://open.spotify.com/track/{sid}" target="_blank" rel="noopener">'
-        f'{esc(title)}</a>{cr(credit)}</li>'
+        f'{roman.rom_html(title, esc)}</a>{cr(credit)}</li>'
         for sid, title, credit in tracks)
     return f'<ul class="atlas-tracks">{items}</ul>'
 
@@ -130,7 +131,7 @@ def _track_list(tracks, esc, header_names=("", frozenset())):
 def _artist_block(row, esc, slug, badge):
     label, cls = badge[row["status"]]
     return (f'<div class="atlas-artist">'
-            f'<h4><a href="index.html#{slug(row["name"])}">{esc(row["name"])}</a>'
+            f'<h4><a href="index.html#{slug(row["name"])}">{roman.rom_html(row["name"], esc)}</a>'
             f' <span class="st {cls}">{label}</span></h4>'
             f'{_track_list(row["tracks"], esc, (row["name"], frozenset(row["names"]) - {row["name"]}))}</div>')
 
@@ -182,13 +183,13 @@ SEARCH_UI = (
     '.replace(/\\u0153/g,"oe").replace(/\\u00e6/g,"ae").replace(/\\u00df/g,"ss").replace(/[\x27\\u2019]/g,"").replace(/[^\\p{L}\\p{N}]+/gu," ").trim()}'
     'function e(s){return s.replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\\"":"&quot;"}[c]})}'
     'function ld(){if(!L)L=fetch("search-index.json").then(function(r){return r.json()}).then(function(j){'
-    'j.forEach(function(x){x.k=n(x.t);x.q=" "+n(x.t+" "+(x.s||""))});D=j;return j});return L}'
+    'j.forEach(function(x){x.k=n(x.r||x.t);x.q=" "+n(x.t+" "+(x.r||"")+" "+(x.s||""))});D=j;return j});return L}'
     'function run(){var q=n(i.value.trim());if(!q){o.innerHTML="";return}ld().then(function(d){'
     'var w=q.split(" "),r=d.filter(function(x){return w.every(function(v){return x.q.indexOf(" "+v)>=0})});'
     'r.sort(function(a,c){var sa=a.k.indexOf(q)===0?0:1,sc=c.k.indexOf(q)===0?0:1;'
     'return sa-sc||(a.c==="artist"?0:1)-(c.c==="artist"?0:1)||a.k.localeCompare(c.k)});'
     'o.innerHTML=r.length?r.slice(0,30).map(function(x){return\'<li><a href="\'+x.h+\'"><span class="sk">\'+x.c+\'</span>\'+e(x.t)'
-    '+(x.s?\'<span class="ss">\'+e(x.s)+"</span>":"")+"</a></li>"}).join("")+(r.length>30?\'<li class="more">\'+(r.length-30)+" more, keep typing</li>":"")'
+    '+(x.r?\' <span class="sr">\'+e(x.r)+"</span>":"")+(x.s?\'<span class="ss">\'+e(x.s)+"</span>":"")+"</a></li>"}).join("")+(r.length>30?\'<li class="more">\'+(r.length-30)+" more, keep typing</li>":"")'
     ':\'<li class="more">Nothing found</li>\'})}'
     'function sh(v){p.hidden=!v;b.setAttribute("aria-expanded",v?"true":"false");if(v){ld();i.focus()}}'
     'b.addEventListener("click",function(){sh(p.hidden)});i.addEventListener("input",run);'

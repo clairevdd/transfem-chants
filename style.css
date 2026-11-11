@@ -215,3 +215,7 @@ body{overflow-x:clip}
  .pagenav.js .navlinks .here{background:var(--soft)}
 }
 @media (max-width:420px){.pagenav .brand{font-size:.92rem}.menubtn span{display:none}.menubtn{padding:0 8px}}
+
+/* Transcription latine d'un nom ou d'un titre non latin (roman.py). */
+.rom{font-size:.82em;font-style:italic;font-weight:400;color:var(--muted);letter-spacing:0;text-transform:none}
+.searchout .sr{font-size:.85em;font-style:italic;color:var(--muted)}
