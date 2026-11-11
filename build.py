@@ -140,6 +140,12 @@ def check():
         raise SystemExit(
             "build.py : CONTACT contient une adresse e-mail. Mettre l'URL d'un "
             "formulaire, dont le prestataire seul connaît la destination.")
+    # Formulaire de suggestion (atlas.SUGGEST) : mêmes garde-fous, et
+    # distinct du formulaire de retrait, qui doit rester un canal à part.
+    if (not atlas.SUGGEST or "github.com" in atlas.SUGGEST
+            or MAIL.search(atlas.SUGGEST) or atlas.SUGGEST == CONTACT):
+        raise SystemExit("build.py : atlas.SUGGEST doit être l'URL d'un formulaire "
+                         "de suggestion, distinct de CONTACT.")
 
     ids = {sid for sid, _, _ in all_tracks()}
     manquants = sorted(ids - set(YEARS))
@@ -455,7 +461,7 @@ def page():
 <p>There is a bias built into the third criterion, and it is better named than hidden. Requiring a public statement means requiring that someone was interviewed, recorded and published — which happens to artists a press has already decided are worth covering. An artist with no interviews, no profile and no biography cannot meet the criterion however out she is among the people who know her. So this page over-represents the already visible and under-represents the precarious, the very young, and anyone working outside the reach of a music press. Several artists were left off these pages for that reason alone, and their absence says nothing about them.</p>
 
 <p>Several language areas are still missing: nothing in Persian, Hindi, or the languages of East Africa, and one song each in most of what is here. That is not an absence of artists. It is an absence of usable public sources. In a number of those contexts, declaring yourself publicly carries real risk, and the shape of this page reflects that before it reflects anything about the music. The gaps do close: German, Indonesian and Urdu were each named here as missing until an artist turned up who had said something about herself in public, in her own words, and could be read.</p>
-<p>Found an error, a better source, or an artist who should be here? <a href="{ISSUES}" target="_blank" rel="noopener">Open an issue</a> — that thread is public, which is fine for a date or a citation. Anything touching a particular person’s identity, taking an entry down first among them, goes through <a href="takedown.html">a channel of its own</a> instead.</p>
+<p>Know an artist who should be here? <a href="{atlas.SUGGEST}" target="_blank" rel="noopener">Suggest her</a> through the form. Found an error in a date or a source? <a href="{ISSUES}" target="_blank" rel="noopener">Open an issue</a>: that thread is public, which is fine for a date or a citation. Anything touching a particular person’s identity, taking an entry down first among them, goes through <a href="takedown.html">a channel of its own</a> instead.</p>
 
 <footer>
 <p>Companion page to the Spotify playlist <a href="{PLAYLIST}" target="_blank" rel="noopener"><strong>Transfem Tracks</strong></a>. The identities described here are the ones the artists have made public themselves; every link goes to the source for the claim beside it.</p>
