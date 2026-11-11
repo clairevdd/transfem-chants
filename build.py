@@ -31,6 +31,11 @@ from tags import TAGS
 
 PLAYLIST = "https://open.spotify.com/playlist/4rK80rB8ycyAUdIKX6FOIk"
 ISSUES = "https://github.com/clairevdd/transfem-tracks/issues"
+# Adresse publique du site (dépôt renommé le 11 novembre 2026). Sert aux
+# balises canonical et Open Graph et au plan du site (sitemap.xml).
+SITE = "https://clairevdd.github.io/transfem-tracks/"
+PAGES = ["index.html", "countries.html", "languages.html", "years.html",
+         "tags.html", "sonic.html", "takedown.html"]
 
 # Canal privé pour tout ce qui touche à l'identité d'une personne : demande de
 # retrait, passage en stealth, changement d'identité.
@@ -455,6 +460,41 @@ def check_search(idx, pages):
         sys.exit(f"ERREUR recherche : {len(bad)} ancres introuvables, ex. {bad[:3]}")
 
 
+def seo_tags():
+    """Indexation, décision de Claire du 11 novembre 2026 : tout le site est
+    indexable. Ajoute à chaque page générée une balise canonical et des
+    balises de partage (Open Graph), puis écrit sitemap.xml."""
+    import datetime
+    for name in PAGES:
+        text = open(name, encoding="utf-8").read()
+        if 'rel="canonical"' in text:
+            continue
+        url = SITE if name == "index.html" else SITE + name
+        m = re.search(r"<title>(.*?)</title>", text, re.S)
+        d = re.search(r'<meta name="description" content="([^"]*)"', text)
+        title = m.group(1).strip() if m else "Transfem Tracks"
+        desc = d.group(1) if d else ""
+        tags = (f'<link rel="canonical" href="{url}">\n'
+                f'<meta property="og:type" content="website">\n'
+                f'<meta property="og:site_name" content="Transfem Tracks">\n'
+                f'<meta property="og:title" content="{title}">\n'
+                f'<meta property="og:description" content="{desc}">\n'
+                f'<meta property="og:url" content="{url}">\n'
+                f'<meta property="og:image" content="{SITE}cover.jpg">\n'
+                f'<meta name="twitter:card" content="summary">\n')
+        text = text.replace("</head>", tags + "</head>", 1)
+        open(name, "w", encoding="utf-8").write(text)
+    today = datetime.date.today().isoformat()
+    urls = "".join(
+        f"  <url><loc>{SITE if n == 'index.html' else SITE + n}</loc><lastmod>{today}</lastmod></url>\n"
+        for n in PAGES)
+    open("sitemap.xml", "w", encoding="utf-8").write(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + urls + "</urlset>\n")
+    print(f"balises canonical et Open Graph ajoutées ; sitemap.xml : {len(PAGES)} pages")
+
+
 if __name__ == "__main__":
     check()
     css = open("style.css", encoding="utf-8").read()
@@ -494,6 +534,7 @@ if __name__ == "__main__":
     _no_email("search-index.json", js)
     open("search-index.json", "w", encoding="utf-8").write(js)
     print(f"search-index.json écrit : {len(idx)} entrées, {len(js.encode())} octets")
+    seo_tags()
 
     print(f"  {st['presented']} artistes présentées comme transfem + {st['open_cases']} cas ouverts")
     print(f"  {st['countries']} pays/territoires : {', '.join(st['country_list'])}")
