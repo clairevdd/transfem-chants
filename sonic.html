@@ -323,33 +323,45 @@ svg.radar{width:280px;height:224px;flex:none}
 <h1>By sonic profile</h1>
 <p class="sub">233 songs from this playlist were analysed, positioned
 by how they sound rather than how they are labelled, from audio features
-licensed from Tunebat and reduced to three dimensions and five groups. No
+licensed from Tunebat and reduced to <a href="#dimensions">three dimensions</a>
+and <a href="#groups">five groups</a>. No
 individual track's raw feature values are published here or anywhere in
 this repository: Tunebat's terms do not allow it. See the note at the
 bottom of this page for exactly what is shown instead, and why.</p>
 </header>
 
-<h2>The nine measurements</h2>
-<p class="secblurb">Nine Tunebat audio features go into everything on this
-page. Hover a feature's name anywhere below for this same description.</p>
-<div class="feat-glossary"><div class="feat-row"><span class="fk">Tempo</span><span class="fs">no fixed scale; 71-203 BPM on this playlist</span><span class="fd">The track&#x27;s estimated tempo, in beats per minute. Tunebat reports this directly; there is no fixed theoretical scale.</span></div><div class="feat-row"><span class="fk">Energy</span><span class="fs">0 to 100</span><span class="fd">A measure of intensity and activity, 0 to 100. Energetic tracks tend to feel fast, loud and noisy.</span></div><div class="feat-row"><span class="fk">Danceability</span><span class="fs">0 to 100</span><span class="fd">How suitable a track is for dancing, 0 to 100, from its tempo, rhythm stability, beat strength and overall regularity.</span></div><div class="feat-row"><span class="fk">Happiness</span><span class="fs">0 to 100</span><span class="fd">Tunebat&#x27;s name for what Spotify&#x27;s discontinued audio-features API called &quot;valence&quot;: how musically positive a track sounds, 0 to 100. Higher sounds more cheerful; lower sounds more sombre or tense.</span></div><div class="feat-row"><span class="fk">Acousticness</span><span class="fs">0 to 100</span><span class="fd">Confidence that a track is acoustic rather than electronically produced, 0 to 100.</span></div><div class="feat-row"><span class="fk">Instrumentalness</span><span class="fs">0 to 100</span><span class="fd">Confidence that a track has no vocals, 0 to 100. Every song on this playlist is sung, so scores here reflect long instrumental passages rather than a fully instrumental track.</span></div><div class="feat-row"><span class="fk">Liveness</span><span class="fs">0 to 100</span><span class="fd">Confidence that the recording captures a live performance in front of an audience, 0 to 100.</span></div><div class="feat-row"><span class="fk">Speechiness</span><span class="fs">0 to 100</span><span class="fd">How much a track resembles spoken word rather than sung music, 0 to 100.</span></div><div class="feat-row"><span class="fk">Loudness</span><span class="fs">theoretically about −60 dB to 0 dB</span><span class="fd">The track&#x27;s overall loudness, averaged across its length, in decibels. Tunebat&#x27;s scale runs roughly from -60 dB (very quiet) up to 0 dB, though a very loudly mastered track can go slightly above.</span></div></div>
+<h2>The cloud</h2>
+<div class="sonic-legend" id="sonic-legend"><a class="legend-item" href="#cluster-1" data-cluster="1"><span class="swatch" style="background:var(--c1)"></span>Club, dance-pop and high-energy <span class="cnt">92</span></a><a class="legend-item" href="#cluster-2" data-cluster="2"><span class="swatch" style="background:var(--c2)"></span>Mid-tempo and moderate <span class="cnt">74</span></a><a class="legend-item" href="#cluster-3" data-cluster="3"><span class="swatch" style="background:var(--c3)"></span>Live-sounding and speech-forward <span class="cnt">31</span></a><a class="legend-item" href="#cluster-4" data-cluster="4"><span class="swatch" style="background:var(--c4)"></span>Acoustic and understated <span class="cnt">19</span></a><a class="legend-item" href="#cluster-5" data-cluster="5"><span class="swatch" style="background:var(--c5)"></span>Extended instrumental passages <span class="cnt">17</span></a></div>
+<div id="sonic3d">
+<div class="sonic3d-canvas" hidden></div>
+<p class="sonic3d-noscript-msg sonic3d-hint">The 3D cloud needs JavaScript
+and WebGL. Every song is already listed, grouped and described below without
+either.</p>
+<div class="sonic3d-tooltip" hidden></div>
+</div>
+<p class="sonic3d-hint">Loaded from <a href="https://threejs.org/"
+target="_blank" rel="noopener">three.js</a>, the only external library on
+this site.</p>
+<p class="secblurb">Each point is one song, positioned by its value on the
+three axes described below and coloured by the group it belongs to. The
+three grey lines are those axes, labelled at each end with the pole they
+point towards. Drag to rotate, scroll to zoom, hover a point for its title.
+Click a point to jump to it in its group's track list below, opening that
+list if it is folded; click elsewhere on a coloured volume to jump to that
+group's section instead. Click a name in the legend to hide or show that
+group in the scene. This view is the hardest to read on the page and shows
+less than the grouping below it: clustering was done on all nine features,
+so groups that overlap visually here are still fully distinct in the
+underlying data.</p>
 
-<h2>The five groups</h2>
-<p class="secblurb">Computed by hierarchical clustering (Ward's method) on
-all nine standardised features rather than on the three-axis reduction shown
-further down, so nothing is lost at this step. Claire set two constraints
-going in: at most six groups, so a 3D view of them could stay legible, and
-at least four songs per group, so that no averaged profile could ever be
-narrow enough to read back as a single track's numbers, though this was
-never a serious risk of reconstructing individual Tunebat values in the
-first place; a margin of safety costs nothing here. Sizes run from 17 to
-92; no group needed to be merged into another to clear that floor. Each
-radar plot is scaled to the same axis range across all five groups, so the
-shapes are directly comparable to one another; each group's average sits
-next to the same feature's average across the whole playlist, to read at
-a glance how far a group departs from the middle of this playlist. A
-group's full track list is folded by default: open "Show N tracks" under
-its radar to see it.</p>
+<h2 id="dimensions">The three dimensions</h2>
+<p class="secblurb">The nine features described at the bottom of this page, standardised and reduced by
+principal component analysis to the three axes drawn in the cloud. Together
+they explain 61% of how the nine features vary across the playlist; the
+remaining 39% is not shown, in the cloud or anywhere else on this page.</p>
+<div class="axis-card"><h4>Axis 1: Loud and energetic ↔ hushed and acoustic <span class="cnt">31.7% of the variation</span></h4><p>The single largest source of variation in this playlist. High values mean loud, energetic, upbeat and danceable; low values mean quiet and acoustic. It is the axis that separates a solo voice-and-guitar recording from a track at full club volume.</p></div><div class="axis-card"><h4>Axis 2: Sung and danceable ↔ instrumental and fast <span class="cnt">16.4% of the variation</span></h4><p>One pole is fast-tempo and heavily instrumental; the other is slower, sung throughout and danceable. It sets tracks built around extended instrumental sections apart from vocal-forward, groove-driven ones.</p></div><div class="axis-card"><h4>Axis 3: Live and spoken ↔ studio-sung <span class="cnt">12.9% of the variation</span></h4><p>The most narrowly defined of the three: almost entirely liveness and speechiness. High values sound like a live take with a spoken or rapped cadence; low values sound like a sung vocal recorded in a studio.</p></div>
+
+<h2 id="groups">The five groups</h2>
 
 <section class="sonic-cluster" id="cluster-1">
 <h3 class="cont"><span class="swatch" style="background:var(--c1)"></span>
@@ -406,37 +418,26 @@ Extended instrumental passages <span class="cnt">17 tracks</span></h3>
 <details class="tracklist" id="tracklist-5"><summary>Show 17 tracks</summary><div class="atlas-artist"><h4><a href="index.html#a-against-me">Against Me!</a></h4><ul class="atlas-tracks"><li id="track-14uL43Gg4ujizaATehrryk"><a href="https://open.spotify.com/track/14uL43Gg4ujizaATehrryk" target="_blank" rel="noopener">The Ocean</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-alif-hilal">Alif Hilal</a></h4><ul class="atlas-tracks"><li id="track-3HO9UrofF8D3AfKY9ZLLbB"><a href="https://open.spotify.com/track/3HO9UrofF8D3AfKY9ZLLbB" target="_blank" rel="noopener">Oracle</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-andra-venus">Andra Venus</a></h4><ul class="atlas-tracks"><li id="track-3eBY8aZZdWNnNhNbc8B0yp"><a href="https://open.spotify.com/track/3eBY8aZZdWNnNhNbc8B0yp" target="_blank" rel="noopener">Power</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-cae-mon-e">Cae Monāe</a></h4><ul class="atlas-tracks"><li id="track-5dIPCgTEDagbcs5QGmni8V"><a href="https://open.spotify.com/track/5dIPCgTEDagbcs5QGmni8V" target="_blank" rel="noopener">CISPHOBIC</a> <span class="cr">with <a class="guest" href="index.html#a-mon-e">MONĀE</a></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-changeline">Changeline</a></h4><ul class="atlas-tracks"><li id="track-20JYh6XUjLjiN1CyJ32ZiY"><a href="https://open.spotify.com/track/20JYh6XUjLjiN1CyJ32ZiY" target="_blank" rel="noopener">ANARCONNASSE</a> <span class="cr">with <a class="guest" href="index.html#a-stolas">Stolas</a></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-edweena-banger">EDWEENA BANGER</a></h4><ul class="atlas-tracks"><li id="track-3Cmc2mUlFS7MPhcwIRvcWF"><a href="https://open.spotify.com/track/3Cmc2mUlFS7MPhcwIRvcWF" target="_blank" rel="noopener">Diamond Rocks</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-femtanyl">femtanyl</a></h4><ul class="atlas-tracks"><li id="track-5iAE3uBqaZm9aHUx9yy6a0"><a href="https://open.spotify.com/track/5iAE3uBqaZm9aHUx9yy6a0" target="_blank" rel="noopener">KATAMARI</a> <span class="cr"></span></li><li id="track-1w0AFg23E67l57A3RMiXjC"><a href="https://open.spotify.com/track/1w0AFg23E67l57A3RMiXjC" target="_blank" rel="noopener">P3T</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-g-l-o-s-s">G.L.O.S.S.</a></h4><ul class="atlas-tracks"><li id="track-4NYRtDYROQW2D2ctcylcri"><a href="https://open.spotify.com/track/4NYRtDYROQW2D2ctcylcri" target="_blank" rel="noopener">Targets of Men Targets of Men</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-haela-hunt-hendrix">Haela Hunt-Hendrix</a></h4><ul class="atlas-tracks"><li id="track-23smC9d2TpPTGZ3GCzjL4b"><a href="https://open.spotify.com/track/23smC9d2TpPTGZ3GCzjL4b" target="_blank" rel="noopener">Haelegen II</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-janis">JANIS</a></h4><ul class="atlas-tracks"><li id="track-52uobAwbP5In7cc0NV677y"><a href="https://open.spotify.com/track/52uobAwbP5In7cc0NV677y" target="_blank" rel="noopener">Janis</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-katie-dey">Katie Dey</a></h4><ul class="atlas-tracks"><li id="track-42Opc7AzlbYad3AuWsBGuf"><a href="https://open.spotify.com/track/42Opc7AzlbYad3AuWsBGuf" target="_blank" rel="noopener">Only to Trip and Fall Down Again</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-lotic">Lotic</a></h4><ul class="atlas-tracks"><li id="track-54nFM2BgZpX292SYKP83fS"><a href="https://open.spotify.com/track/54nFM2BgZpX292SYKP83fS" target="_blank" rel="noopener">Emergency</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-luisa-almaguer">Luisa Almaguer</a></h4><ul class="atlas-tracks"><li id="track-6JGJdnIbq4UqKgzFaOIXwE"><a href="https://open.spotify.com/track/6JGJdnIbq4UqKgzFaOIXwE" target="_blank" rel="noopener">Mataronomatar</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-petal-supply">Petal Supply</a></h4><ul class="atlas-tracks"><li id="track-5iTzaatezJzsUhX1QjT0Kp"><a href="https://open.spotify.com/track/5iTzaatezJzsUhX1QjT0Kp" target="_blank" rel="noopener">Person - Angel Mix</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-roberta-marrero">Roberta Marrero</a></h4><ul class="atlas-tracks"><li id="track-2rMjMkOapLVsxbDSap5Uy2"><a href="https://open.spotify.com/track/2rMjMkOapLVsxbDSap5Uy2" target="_blank" rel="noopener">Humano, Demasiado Humano</a> <span class="cr"></span></li></ul></div><div class="atlas-artist"><h4><a href="index.html#a-venus-de-mars-and-all-the-pretty-horses">Venus de Mars and All the Pretty Horses</a></h4><ul class="atlas-tracks"><li id="track-7GAI6zWpmst6dSfu1wIA1O"><a href="https://open.spotify.com/track/7GAI6zWpmst6dSfu1wIA1O" target="_blank" rel="noopener">White Horses</a> <span class="cr"></span></li></ul></div></details>
 </section>
 
+<p class="secblurb">Computed by hierarchical clustering (Ward's method) on
+all nine standardised features rather than on the three-axis reduction shown
+above, so nothing is lost at this step. Claire set two constraints
+going in: at most six groups, so a 3D view of them could stay legible, and
+at least four songs per group, so that no averaged profile could ever be
+narrow enough to read back as a single track's numbers, though this was
+never a serious risk of reconstructing individual Tunebat values in the
+first place; a margin of safety costs nothing here. Sizes run from 17 to
+92; no group needed to be merged into another to clear that floor. Each
+radar plot is scaled to the same axis range across all five groups, so the
+shapes are directly comparable to one another; each group's average sits
+next to the same feature's average across the whole playlist, to read at
+a glance how far a group departs from the middle of this playlist. A
+group's full track list is folded by default: open "Show N tracks" under
+its radar to see it.</p>
 
-<h2>The cloud</h2>
-<p class="secblurb">Each point is one song, positioned by its value on the
-three axes described below and coloured by the group it belongs to. The
-three grey lines are those axes, labelled at each end with the pole they
-point towards. Drag to rotate, scroll to zoom, hover a point for its title.
-Click a point to jump to it in its group's track list above, opening that
-list if it is folded; click elsewhere on a coloured volume to jump to that
-group's section instead. Click a name in the legend to hide or show that
-group in the scene. This view is the hardest to read on the page and shows
-less than the grouping above it: clustering was done on all nine features,
-so groups that overlap visually here are still fully distinct in the
-underlying data.</p>
-<div class="sonic-legend" id="sonic-legend"><a class="legend-item" href="#cluster-1" data-cluster="1"><span class="swatch" style="background:var(--c1)"></span>Club, dance-pop and high-energy <span class="cnt">92</span></a><a class="legend-item" href="#cluster-2" data-cluster="2"><span class="swatch" style="background:var(--c2)"></span>Mid-tempo and moderate <span class="cnt">74</span></a><a class="legend-item" href="#cluster-3" data-cluster="3"><span class="swatch" style="background:var(--c3)"></span>Live-sounding and speech-forward <span class="cnt">31</span></a><a class="legend-item" href="#cluster-4" data-cluster="4"><span class="swatch" style="background:var(--c4)"></span>Acoustic and understated <span class="cnt">19</span></a><a class="legend-item" href="#cluster-5" data-cluster="5"><span class="swatch" style="background:var(--c5)"></span>Extended instrumental passages <span class="cnt">17</span></a></div>
-<div id="sonic3d">
-<div class="sonic3d-canvas" hidden></div>
-<p class="sonic3d-noscript-msg sonic3d-hint">The 3D cloud needs JavaScript
-and WebGL. Every song is already listed, grouped and described above without
-either.</p>
-<div class="sonic3d-tooltip" hidden></div>
-</div>
-<p class="sonic3d-hint">Loaded from <a href="https://threejs.org/"
-target="_blank" rel="noopener">three.js</a>, the only external library on
-this site.</p>
-
-<h2>The three dimensions</h2>
-<p class="secblurb">The nine features above, standardised and reduced by
-principal component analysis to the three axes drawn in the cloud. Together
-they explain 61% of how the nine features vary across the playlist; the
-remaining 39% is not shown, in the cloud or anywhere else on this page.</p>
-<div class="axis-card"><h4>Axis 1: Loud and energetic ↔ hushed and acoustic <span class="cnt">31.7% of the variation</span></h4><p>The single largest source of variation in this playlist. High values mean loud, energetic, upbeat and danceable; low values mean quiet and acoustic. It is the axis that separates a solo voice-and-guitar recording from a track at full club volume.</p></div><div class="axis-card"><h4>Axis 2: Sung and danceable ↔ instrumental and fast <span class="cnt">16.4% of the variation</span></h4><p>One pole is fast-tempo and heavily instrumental; the other is slower, sung throughout and danceable. It sets tracks built around extended instrumental sections apart from vocal-forward, groove-driven ones.</p></div><div class="axis-card"><h4>Axis 3: Live and spoken ↔ studio-sung <span class="cnt">12.9% of the variation</span></h4><p>The most narrowly defined of the three: almost entirely liveness and speechiness. High values sound like a live take with a spoken or rapped cadence; low values sound like a sung vocal recorded in a studio.</p></div>
+<h2>The nine measurements</h2>
+<p class="secblurb">Nine Tunebat audio features go into everything on this
+page. Hover a feature's name anywhere on this page for this same description.</p>
+<div class="feat-glossary"><div class="feat-row"><span class="fk">Tempo</span><span class="fs">no fixed scale; 71-203 BPM on this playlist</span><span class="fd">The track&#x27;s estimated tempo, in beats per minute. Tunebat reports this directly; there is no fixed theoretical scale.</span></div><div class="feat-row"><span class="fk">Energy</span><span class="fs">0 to 100</span><span class="fd">A measure of intensity and activity, 0 to 100. Energetic tracks tend to feel fast, loud and noisy.</span></div><div class="feat-row"><span class="fk">Danceability</span><span class="fs">0 to 100</span><span class="fd">How suitable a track is for dancing, 0 to 100, from its tempo, rhythm stability, beat strength and overall regularity.</span></div><div class="feat-row"><span class="fk">Happiness</span><span class="fs">0 to 100</span><span class="fd">Tunebat&#x27;s name for what Spotify&#x27;s discontinued audio-features API called &quot;valence&quot;: how musically positive a track sounds, 0 to 100. Higher sounds more cheerful; lower sounds more sombre or tense.</span></div><div class="feat-row"><span class="fk">Acousticness</span><span class="fs">0 to 100</span><span class="fd">Confidence that a track is acoustic rather than electronically produced, 0 to 100.</span></div><div class="feat-row"><span class="fk">Instrumentalness</span><span class="fs">0 to 100</span><span class="fd">Confidence that a track has no vocals, 0 to 100. Every song on this playlist is sung, so scores here reflect long instrumental passages rather than a fully instrumental track.</span></div><div class="feat-row"><span class="fk">Liveness</span><span class="fs">0 to 100</span><span class="fd">Confidence that the recording captures a live performance in front of an audience, 0 to 100.</span></div><div class="feat-row"><span class="fk">Speechiness</span><span class="fs">0 to 100</span><span class="fd">How much a track resembles spoken word rather than sung music, 0 to 100.</span></div><div class="feat-row"><span class="fk">Loudness</span><span class="fs">theoretically about −60 dB to 0 dB</span><span class="fd">The track&#x27;s overall loudness, averaged across its length, in decibels. Tunebat&#x27;s scale runs roughly from -60 dB (very quiet) up to 0 dB, though a very loudly mastered track can go slightly above.</span></div></div>
 
 <div class="note">
 <h4>What this page does and does not show</h4>

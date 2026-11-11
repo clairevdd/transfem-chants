@@ -1430,21 +1430,49 @@ def sonic_page(css, esc, slug, artists_of, aliases, same_person, badge,
 <h1>By sonic profile</h1>
 <p class="sub">{n_tracks} songs from this playlist were analysed, positioned
 by how they sound rather than how they are labelled, from audio features
-licensed from Tunebat and reduced to three dimensions and five groups. No
+licensed from Tunebat and reduced to <a href="#dimensions">three dimensions</a>
+and <a href="#groups">five groups</a>. No
 individual track's raw feature values are published here or anywhere in
 this repository: Tunebat's terms do not allow it. See the note at the
 bottom of this page for exactly what is shown instead, and why.</p>
 </header>
 
-<h2>The nine measurements</h2>
-<p class="secblurb">Nine Tunebat audio features go into everything on this
-page. Hover a feature's name anywhere below for this same description.</p>
-{glossary_html}
+<h2>The cloud</h2>
+{legend}
+<div id="sonic3d">
+<div class="sonic3d-canvas" hidden></div>
+<p class="sonic3d-noscript-msg sonic3d-hint">The 3D cloud needs JavaScript
+and WebGL. Every song is already listed, grouped and described below without
+either.</p>
+<div class="sonic3d-tooltip" hidden></div>
+</div>
+<p class="sonic3d-hint">Loaded from <a href="https://threejs.org/"
+target="_blank" rel="noopener">three.js</a>, the only external library on
+this site.</p>
+<p class="secblurb">Each point is one song, positioned by its value on the
+three axes described below and coloured by the group it belongs to. The
+three grey lines are those axes, labelled at each end with the pole they
+point towards. Drag to rotate, scroll to zoom, hover a point for its title.
+Click a point to jump to it in its group's track list below, opening that
+list if it is folded; click elsewhere on a coloured volume to jump to that
+group's section instead. Click a name in the legend to hide or show that
+group in the scene. This view is the hardest to read on the page and shows
+less than the grouping below it: clustering was done on all nine features,
+so groups that overlap visually here are still fully distinct in the
+underlying data.</p>
 
-<h2>The five groups</h2>
+<h2 id="dimensions">The three dimensions</h2>
+<p class="secblurb">The nine features described at the bottom of this page, standardised and reduced by
+principal component analysis to the three axes drawn in the cloud. Together
+they explain 61% of how the nine features vary across the playlist; the
+remaining 39% is not shown, in the cloud or anywhere else on this page.</p>
+{axes_html}
+
+<h2 id="groups">The five groups</h2>
+{clusters_html}
 <p class="secblurb">Computed by hierarchical clustering (Ward's method) on
 all nine standardised features rather than on the three-axis reduction shown
-further down, so nothing is lost at this step. Claire set two constraints
+above, so nothing is lost at this step. Claire set two constraints
 going in: at most six groups, so a 3D view of them could stay legible, and
 at least four songs per group, so that no averaged profile could ever be
 narrow enough to read back as a single track's numbers, though this was
@@ -1457,38 +1485,11 @@ next to the same feature's average across the whole playlist, to read at
 a glance how far a group departs from the middle of this playlist. A
 group's full track list is folded by default: open "Show N tracks" under
 its radar to see it.</p>
-{clusters_html}
 
-<h2>The cloud</h2>
-<p class="secblurb">Each point is one song, positioned by its value on the
-three axes described below and coloured by the group it belongs to. The
-three grey lines are those axes, labelled at each end with the pole they
-point towards. Drag to rotate, scroll to zoom, hover a point for its title.
-Click a point to jump to it in its group's track list above, opening that
-list if it is folded; click elsewhere on a coloured volume to jump to that
-group's section instead. Click a name in the legend to hide or show that
-group in the scene. This view is the hardest to read on the page and shows
-less than the grouping above it: clustering was done on all nine features,
-so groups that overlap visually here are still fully distinct in the
-underlying data.</p>
-{legend}
-<div id="sonic3d">
-<div class="sonic3d-canvas" hidden></div>
-<p class="sonic3d-noscript-msg sonic3d-hint">The 3D cloud needs JavaScript
-and WebGL. Every song is already listed, grouped and described above without
-either.</p>
-<div class="sonic3d-tooltip" hidden></div>
-</div>
-<p class="sonic3d-hint">Loaded from <a href="https://threejs.org/"
-target="_blank" rel="noopener">three.js</a>, the only external library on
-this site.</p>
-
-<h2>The three dimensions</h2>
-<p class="secblurb">The nine features above, standardised and reduced by
-principal component analysis to the three axes drawn in the cloud. Together
-they explain 61% of how the nine features vary across the playlist; the
-remaining 39% is not shown, in the cloud or anywhere else on this page.</p>
-{axes_html}
+<h2>The nine measurements</h2>
+<p class="secblurb">Nine Tunebat audio features go into everything on this
+page. Hover a feature's name anywhere on this page for this same description.</p>
+{glossary_html}
 
 <div class="note">
 <h4>What this page does and does not show</h4>
