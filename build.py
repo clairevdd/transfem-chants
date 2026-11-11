@@ -495,7 +495,16 @@ def check_search(idx, pages):
 
 
 def check_atlas_links(index_html):
-    """Chaque lien pays/langue d'une fiche mène à une ancre qui existe."""
+    """Chaque lien pays/langue d'une fiche mène à une ancre qui existe, et
+    chaque lien de nom d'artiste, sur toutes les pages, à une fiche."""
+    ids_index = set(re.findall(r'id="([^"]+)"', index_html))
+    for page in PAGES:
+        if page == "index.html":
+            continue
+        for a in set(re.findall(r'href="index.html#(a-[^"]+)"',
+                                open(page, encoding="utf-8").read())):
+            if a not in ids_index:
+                raise SystemExit(f"build.py : {page} renvoie vers index.html#{a}, sans fiche")
     for page, pre in (("countries.html", "c-"), ("languages.html", "l-")):
         ids = set(re.findall(r'id="([^"]+)"', open(page, encoding="utf-8").read()))
         for a in set(re.findall(rf'href="{page}#({pre}[^"]+)"', index_html)):

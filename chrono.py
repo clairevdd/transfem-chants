@@ -271,7 +271,14 @@ def _sources(source, url, esc):
     return " · ".join(out)
 
 
-def _table(rows, esc, badge):
+def _table(rows, esc, badge, slug, artists_of):
+    # Noms d'artistes liés à leur fiche de l'accueil (demande de Claire,
+    # 11 novembre 2026), comme dans la playlist de l'accueil.
+    def cr_links(credit):
+        return ", ".join(
+            f'<a class="{"guest" if ART[n][0] == "guest" else "lead"}" '
+            f'href="index.html#{slug(n)}">{roman.rom_html(n, esc)}</a>'
+            for n in artists_of(credit))
     # Les boutons radio sont des frères de .rows, sans quoi le sélecteur
     # #s1:checked~.rows ne peut pas les atteindre. Les libellés viennent après.
     ctrl = []
@@ -303,7 +310,7 @@ def _table(rows, esc, badge):
             f'<summary><span class="yr">{r["y"]}</span>'
             f'<span class="st {cls}">{esc(lab)}</span>'
             f'<span class="tt">{roman.rom_html(r["title"], esc)}</span>'
-            f'<span class="cr">{roman.rom_html(r["credit"], esc)}</span></summary>'
+            f'<span class="cr">{cr_links(r["credit"])}</span></summary>'
             f'<div class="fiche">'
             f'<p class="meta">First publication held: <strong>{esc(r["pub"])}</strong>'
             f' · known to the {esc(r["prec"] or "year")}</p>'
@@ -357,6 +364,9 @@ details.row[open]{background:var(--soft)}
 .yr{font-variant-numeric:tabular-nums;color:var(--ink);font-weight:600;font-size:.85rem;min-width:4.2ch}
 .tt{font-weight:600;flex:1 1 16ch}
 summary .cr{color:var(--muted);font-size:.85rem}
+summary .cr a{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line)}
+summary .cr a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+summary .cr a.guest{opacity:.62;font-style:italic}
 .fiche{padding:2px 14px 14px 14px;font-family:ui-sans-serif,system-ui,sans-serif}
 .fiche p{max-width:74ch}
 .fiche .meta{margin:0 0 8px;font-size:.8rem;color:var(--muted)}
@@ -374,7 +384,7 @@ def years_page(css, esc, slug, artists_of, aliases, same_person, badge,
     rows = _rows()
     tl, tl_leg, empty, tallest = _timeline(rows, esc, badge)
     gp, gp_leg, ngap, total_gap = _gaps(rows, esc)
-    table = _table(rows, esc, badge)
+    table = _table(rows, esc, badge, slug, artists_of)
 
     n = len(rows)
     verified = sum(1 for r in rows if r["status"] == "verified")
